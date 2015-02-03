@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: testpage 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-03 21:01+0530\n"
+"POT-Creation-Date: 2015-02-03 21:07+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,22 +26,22 @@ msgstr ""
 msgid "Contents:"
 msgstr ""
 
-#: ../../source/index.rst:17
+#: ../../source/index.rst:18
 # 491ac870f6bc4af8bd7c57289b0d7443
 msgid "Indices and tables"
 msgstr ""
 
-#: ../../source/index.rst:19
+#: ../../source/index.rst:20
 # d60fdec157bf407794f2b1d5464a247b
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:20
+#: ../../source/index.rst:21
 # f29bb6d17b3844fc95ceb8896fcfab53
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/index.rst:21
+#: ../../source/index.rst:22
 # 3e5e42289e194f41b11da2857a183151
 msgid ":ref:`search`"
 msgstr ""
