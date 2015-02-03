@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: testpage 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-02 17:32+0530\n"
+"POT-Creation-Date: 2015-02-03 06:30+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,88 +18,88 @@ msgstr ""
 
 #: ../../source/kevell.rst:3
 #: ../../source/kevell.rst:53
-# 6d6689d17f754e8dbf51a2e67538ae1c
-# 695ff7aa84984cfe8dc319e65219af9a
+# a6d8261329aa4d8b91133a1f8425f096
+# 616f80e039f24c42ace9d0702a586469
 msgid "Box"
 msgstr ""
 
 #: ../../source/kevell.rst:6
-# 5754c306a59b49a2abc154001729ee00
+# 9f17b39de73f412c8be984677230f501
 msgid "Synopsis"
 msgstr ""
 
 #: ../../source/kevell.rst:8
-# 4d3ecd0459e84ecbb090ed66ba505cab
+# 8456af8d70bf4949bf96808731831756
 msgid "This module assists the users in handling and managing the boxes that are available in the phlagrant. Let us see how this module works in handling the functions of box."
 msgstr ""
 
 #: ../../source/kevell.rst:11
-# 5809a15345df485f9595a38145857ef3
+# b030c18ca98b4799b4e9b5e0c3144b25
 msgid "Help Command"
 msgstr ""
 
 #: ../../source/kevell.rst:13
-# 87970ba6718e4a5eaeffc18991e96187
+# d545e82b9d5246d7b63b7223b843b5b5
 msgid "The help command guides the users regarding the purpose and as well as about the options that are included in the Box module. It lists out the alternative parameters of Box module. It also describes the syntax for using the add, remove, package ,list commands. The help command for Box module is shown as below."
 msgstr ""
 
 #: ../../source/kevell.rst:19
-# 6c5d0aff7c55411d9dc732ed5d42ac91
+# 50a7d5545ba94c99a6bbe9083a5eecc2
 msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Box."
 msgstr ""
 
 #: ../../source/kevell.rst:39
-# 2d79584186f0476698c01ad5acde4e70
+# 3d9492525c4849e8a46789368af50dc0
 msgid "List"
 msgstr ""
 
 #: ../../source/kevell.rst:41
-# a92fb2ed244d4978ba64a52f5962df14
+# d3a5b3128e774c0aab6cf7123c52c8dd
 msgid "This function is used for listing the boxes that are installed in phlagrant. This can be done by using the following command,"
 msgstr ""
 
 #: ../../source/kevell.rst:47
-# 2201e8affe6f4eabba71897b1c094d30
+# e6f57b6ec4854be3a6fdf9e92384bd13
 msgid "By using the command above, the list of phlagrant boxes that are newly installed will be displayed."
 msgstr ""
 
 #: ../../source/kevell.rst:51
-# cb5fba51583949939363bf6f6d071903
+# 832879202f2d4a7f88416b523003c8f4
 msgid "Alternative Parameters"
 msgstr ""
 
 #: ../../source/kevell.rst:54
-# 9ea24667c31c497b950a1760094ce7db
+# c64dc95afb0044bd8a74e56a677e43d7
 msgid "box"
 msgstr ""
 
 #: ../../source/kevell.rst:57
-# cc6353dd53ae40a4b3417220028ed365
+# 6b2a4ad3a4e540949b7eeea9e8aef732
 msgid "In the above mentioned list, any of the alternative parameters can be used in declaration."
 msgstr ""
 
 #: ../../source/kevell.rst:61
-# a6b45a8f30de45f58b7f52873baefacb
+# b265b4b7d00845d6aedc042302e72824
 msgid "Benefits"
 msgstr ""
 
 #: ../../source/kevell.rst:63
-# 29286819a116430b8fcd802f06f9759f
+# 3aaccd75482d4441b55c707664f80452
 msgid "The parameters used in help is not case sensitive which is an added advantage while compared to others."
 msgstr ""
 
 #: ../../source/kevell.rst:64
-# b1e991bf3d68434b8d920753af711615
+# 85514f436abc420e8b0044b8446de9e2
 msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
 msgstr ""
 
 #: ../../source/kevell.rst:65
-# 530a1362fd9146f49e04c455dc4ee705
+# d3c2f56d9f674dee88a0afbef83869e6
 msgid "The syntax for using add, remove, package, list are not case sensitive."
 msgstr ""
 
 #: ../../source/kevell.rst:66
-# 360f28dc447b4bb6ae4ee83e7d6a5c27
+# ca3d3a2ecb1e4c8eb9f76bb564e95b3f
 msgid "Type  :quit<Enter>  to exit Vim                                                                                                163,1         Bot"
 msgstr ""
 

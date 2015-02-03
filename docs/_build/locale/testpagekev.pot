@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: testpage 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-02 17:32+0530\n"
+"POT-Creation-Date: 2015-02-03 06:30+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/testpagekev.rst:3
-# 53c11b5436284c86ba98e4514b2331da
+# b6b32e2f693244e58e60026125e7c667
 msgid "this is test page"
 msgstr ""
 
 #: ../../source/testpagekev.rst:7
-# fc53ec46558e40dcb6c17646e31be2b9
+# 1f79e695f4c2470c9145bb5ff60cc4ec
 msgid "this is gughn from america. he like to live in india.he like to drink only budwiser"
 msgstr ""
 

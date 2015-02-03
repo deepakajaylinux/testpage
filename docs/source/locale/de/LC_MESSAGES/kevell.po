@@ -24,11 +24,13 @@ msgid ""
 "This module assists the users in handling and managing the boxes that are "
 "available in the phlagrant. Let us see how this module works in handling the"
 " functions of box."
-msgstr ""
+msgstr "このモジュールは、「あるボックスを処理し、管理する上でユーザを支援
+「phlagrantで利用可能に。このモジュールは取り扱いにはどのように機能するかを私たちは見てみましょう」
+ボックスの「機能している。"
 
 #: ../../source/kevell.rst:11
 msgid "Help Command"
-msgstr ""
+msgstr "helpコマンド"
 
 #: ../../source/kevell.rst:13
 msgid ""
@@ -44,23 +46,23 @@ msgid ""
 "The syntax for declaring the help command is not case sensitive which is an "
 "added advantage. The following screenshot visualize you about the help "
 "command under Box."
-msgstr ""
+msgstr "helpコマンドは、約だけでなく、目的とするに関するユーザーをガイド"
 
 #: ../../source/kevell.rst:39
 msgid "List"
-msgstr ""
+msgstr "リスト"
 
 #: ../../source/kevell.rst:41
 msgid ""
 "This function is used for listing the boxes that are installed in phlagrant."
 " This can be done by using the following command,"
-msgstr ""
+msgstr "この関数は、phlagrantにインストールされているボックスをリストするために使用される。"
 
 #: ../../source/kevell.rst:47
 msgid ""
 "By using the command above, the list of phlagrant boxes that are newly "
 "installed will be displayed."
-msgstr ""
+msgstr "、上記の新たいるphlagrantボックスのリストをコマンドを使用することにより"
 
 #: ../../source/kevell.rst:51
 msgid "Alternative Parameters"

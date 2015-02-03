@@ -1,5 +1,4 @@
-# 
-msgid ""
+""
 msgstr ""
 "Project-Id-Version: testpage 0.1\n"
 "Report-Msgid-Bugs-To: \n"
@@ -13,15 +12,15 @@ msgstr ""
 
 #: ../../source/index.rst:7
 msgid "Welcome to testpage's documentation!"
-msgstr ""
+msgstr "testpageのドキュメントへようこそ"
 
 #: ../../source/index.rst:9
 msgid "Contents:"
-msgstr ""
+msgstr "内容："
 
 #: ../../source/index.rst:18
 msgid "Indices and tables"
-msgstr ""
+msgstr "インデックスとテーブル"
 
 #: ../../source/index.rst:20
 msgid ":ref:`genindex`"
