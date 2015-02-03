@@ -1,5 +1,5 @@
 .. testpage documentation master file, created by
-   sphinx-quickstart on Mon Feb  2 17:09:53 2015.
+   sphinx-quickstart on Tue Feb  3 21:00:04 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -11,8 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   testpagekev
-   kevell
+
 
 Indices and tables
 ==================
