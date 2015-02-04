@@ -1,0 +1,32 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/builds.rst:2
+msgid ":mod:`builds`"
+msgstr ""
+
+#: ../../api/builds.rst:5
+msgid ":mod:`builds.admin`"
+msgstr ""
+
+#: ../../api/builds.rst:10
+msgid ":mod:`builds.models`"
+msgstr ""
+
+#: ../../api/builds.rst:15
+msgid ":mod:`builds.urls`"
+msgstr ""
+
+#: ../../api/builds.rst:20
+msgid ":mod:`builds.views`"
+msgstr ""

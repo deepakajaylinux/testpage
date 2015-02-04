@@ -1,0 +1,75 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/doc_builder.rst:2
+msgid ":mod:`doc_builder`"
+msgstr ""
+
+#: ../../api/doc_builder.rst:5
+msgid ":mod:`doc_builder.base`"
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder:1
+msgid "The Base for all Builders. Defines the API for subclasses."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder:3
+msgid ""
+"Expects subclasses to define ``old_artifact_path``, which points at the "
+"directory where artifacts should be copied from."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.build:1
+msgid "Do the actual building of the documentation."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.clean:1
+msgid "Clean the path where documentation will be built"
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.create_index:1
+msgid "Create an index file if it needs it."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.docs_dir:1
+msgid "Handle creating a custom docs_dir if it doesn't exist."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.force:1
+msgid "An optional step to force a build even when nothing has changed."
+msgstr ""
+
+#: ../../../readthedocs/doc_builder/base.pydocstring of
+#: doc_builder.base.BaseBuilder.move:1
+msgid ""
+"Move the documentation from it's generated place to its artifact directory."
+msgstr ""
+
+#: ../../api/doc_builder.rst:10
+msgid ":mod:`doc_builder.envrionments`"
+msgstr ""
+
+#: ../../api/doc_builder.rst:15
+msgid ":mod:`doc_builder.backends`"
+msgstr ""
+
+#: ../../api/doc_builder.rst:19
+msgid ":mod:`doc_builder.backends.sphinx`"
+msgstr ""

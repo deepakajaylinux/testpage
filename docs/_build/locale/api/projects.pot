@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/projects.rst:2
+# 5de604c0227b4f1b84b4131277fd6d5d
+msgid ":mod:`projects`"
+msgstr ""
+
+#: ../../api/projects.rst:5
+# 789b705b7c0c4558863cea61f628db4f
+msgid ":mod:`projects.admin`"
+msgstr ""
+
+#: ../../api/projects.rst:10
+# 112e074470fe4f2cbf2ea26f7bd1894a
+msgid ":mod:`projects.constants`"
+msgstr ""
+
+#: ../../../readthedocs/projects/constants.py:docstring of projects.constants:1
+# 8ce4ca7666a8465a99d61beb878260de
+msgid "Default values and other various configuration for projects, including available theme names and repository types."
+msgstr ""
+
+#: ../../api/projects.rst:15
+# 1ee6f9074d784621a0be392a0164b818
+msgid ":mod:`projects.forms`"
+msgstr ""
+
+#: ../../api/projects.rst:20
+# 844337e11f1a479183ae82c2f990bfb8
+msgid ":mod:`projects.models`"
+msgstr ""
+
+#: ../../api/projects.rst:25
+# 9acfd551eb874068b94181a3d596587b
+msgid ":mod:`projects.search_indexes`"
+msgstr ""
+
+#: ../../api/projects.rst:30
+# 63502c6426374a28a202075596ab9603
+msgid ":mod:`projects.tasks`"
+msgstr ""
+
+#: ../../api/projects.rst:35
+# 75fef0b9e9c04da495f4f1caf7644c75
+msgid ":mod:`projects.utils`"
+msgstr ""
+
+#: ../../api/projects.rst:40
+# 1c3472725725464db8b139ae61d27b66
+msgid ":mod:`projects.views`"
+msgstr ""
+
+#: ../../api/projects.rst:43
+# 8e89076e901d40eaadae78701d08d427
+msgid ":mod:`projects.views.public`"
+msgstr ""
+
+#: ../../api/projects.rst:48
+# 415b0be5bb7f4aff8ab21353f2216fe6
+msgid ":mod:`projects.views.private`"
+msgstr ""
+

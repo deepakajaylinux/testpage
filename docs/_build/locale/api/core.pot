@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/core.rst:2
+# d9e64b3f1c9941c9a08c7736f036dce4
+msgid ":mod:`core`"
+msgstr ""
+
+#: ../../api/core.rst:5
+# 189b3a798b234700953c413c87540898
+msgid ":mod:`core.admin`"
+msgstr ""
+
+#: ../../api/core.rst:10
+# f89a9e27e75c4542bdb4fa1793a34168
+msgid ":mod:`core.forms`"
+msgstr ""
+
+#: ../../api/core.rst:15
+# 842f1b98707a4a028390aa5fa1912496
+msgid ":mod:`core.middleware`"
+msgstr ""
+
+#: ../../api/core.rst:20
+# 054f0892234846c1808ee3f1fc2ebc44
+msgid ":mod:`core.models`"
+msgstr ""
+
+#: ../../api/core.rst:25
+# 295402e8d896409bbb747c4fd2b060bd
+msgid ":mod:`core.search_sites`"
+msgstr ""
+
+#: ../../api/core.rst:30
+# 4b5da1db901c4e6a99d1f5bd31c76d8c
+msgid ":mod:`core.views`"
+msgstr ""
+
+#: ../../api/core.rst:36
+# 08ba01eb08f0435c82b1c1a65aaa73b4
+msgid ":mod:`core.management.commands`"
+msgstr ""
+
+#: ../../api/core.rst:37
+# bfeb3a8b078a411581b79aa9b949214e
+msgid "This is where custom ``manage.py`` commands are defined."
+msgstr ""
+

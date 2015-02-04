@@ -1,0 +1,62 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/projects.rst:2
+msgid ":mod:`projects`"
+msgstr ""
+
+#: ../../api/projects.rst:5
+msgid ":mod:`projects.admin`"
+msgstr ""
+
+#: ../../api/projects.rst:10
+msgid ":mod:`projects.constants`"
+msgstr ""
+
+#: ../../../readthedocs/projects/constants.pydocstring of projects.constants:1
+msgid ""
+"Default values and other various configuration for projects, including "
+"available theme names and repository types."
+msgstr ""
+
+#: ../../api/projects.rst:15
+msgid ":mod:`projects.forms`"
+msgstr ""
+
+#: ../../api/projects.rst:20
+msgid ":mod:`projects.models`"
+msgstr ""
+
+#: ../../api/projects.rst:25
+msgid ":mod:`projects.search_indexes`"
+msgstr ""
+
+#: ../../api/projects.rst:30
+msgid ":mod:`projects.tasks`"
+msgstr ""
+
+#: ../../api/projects.rst:35
+msgid ":mod:`projects.utils`"
+msgstr ""
+
+#: ../../api/projects.rst:40
+msgid ":mod:`projects.views`"
+msgstr ""
+
+#: ../../api/projects.rst:43
+msgid ":mod:`projects.views.public`"
+msgstr ""
+
+#: ../../api/projects.rst:48
+msgid ":mod:`projects.views.private`"
+msgstr ""

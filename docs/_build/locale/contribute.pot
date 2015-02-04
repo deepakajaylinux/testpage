@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../contribute.rst:4
+# fb2112b470284f29b54ea702419f8f05
+msgid "Contributing to Read the Docs"
+msgstr ""
+
+#: ../../contribute.rst:6
+# 6083fd1ea5384693bc3baa6d808e3d8c
+msgid "Read the Docs follows the standard Contribution Guidelines set forth at `contribution-guide.org`_. Please read that site and follow the instructions to make sure your patches will be accepted."
+msgstr ""
+
+#: ../../contribute.rst:12
+# ceb396ded667408ebad5a1ef483da0c3
+msgid "Tickets"
+msgstr ""
+
+#: ../../contribute.rst:14
+# 38a8a077b0204f959cc9c4ddc2fe2f9b
+msgid "If you are just getting started with the project, we have tickets labeled `Good First Bug`_. This is a great way to get started."
+msgstr ""
+
+#: ../../contribute.rst:18
+# c36f201b06254ecc936daf5471f06107
+msgid "If you want to help with a bigger feature, there are a set of tickets with a `Feature Overview`_ tag. These tickets have a general overview and description of the work required to finish. If you want to start somewhere, this would be a good place to start. That said, these aren't necessarily the easiest tickets. They are simply things that are explained."
+msgstr ""
+
+#: ../../contribute.rst:31
+# 4b834f9fb1b34cda92ebae68d0590a54
+msgid "Translations"
+msgstr ""
+
+#: ../../contribute.rst:33
+# 39fad270d18845e687cb9f195fa4b427
+msgid "If you wish to contribute translations, please do so on `Transifex`_."
+msgstr ""
+

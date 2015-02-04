@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../custom_installs/customization.rst:2
+# c60e01139c314c14ba47e7b3a9216ddb
+msgid "Customizing your install"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:4
+# 10bd18f83e624437b01146051b2879fe
+msgid "Read the Docs has a lot of :doc:`/settings` that help customize your install. This document will outline some of the more useful ways that these can be combined."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:8
+# 12ff6a47d1ee443a97783a119a2b5c98
+msgid "Have a local settings file"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:10
+# c6aa79923ee441678fe117e05fb08510
+msgid "If you put a file named ``local_settings.py`` in the ``readthedocs/settings`` directory, it will override settings available in the base install."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:13
+# 761a1dec75d44c2b93122ca00f4794a1
+msgid "Adding your own title to pages"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:15
+# 011274bba78d46a485b0bb87dbc2c1d2
+msgid "This requires 2 parts of setup. First, you need to add a custom :setting:`TEMPLATE_DIRS` setting that points at your template overrides. Then, in those template overrides you have to insert your logo where the normal RTD logo goes."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:17
+# f464037adb284aaab62ad6895ec79680
+msgid "This works for any setting you wish to change."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:19
+# 1f5f86546e3a4876b9e16b46f52a7379
+msgid "Example ``local_settings.py``::"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:31
+# 98e9a7304884495481a865eb1335e930
+msgid "Example ``base.html`` in your template overrides::"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:38
+# ef3745c9af884b8b87b9653cdfea55e1
+msgid "You can of course override any block in the template. If there is something that you would like to be able to customize, but isn't currently in a block, please `submit an issue`_."
+msgstr ""
+

@@ -1,0 +1,41 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../tests.rst:2
+msgid "Running tests"
+msgstr ""
+
+#: ../../tests.rst:4
+msgid ""
+"Read the Docs ships with a test suite that tests the application. You should"
+" run these tests when you are doing development before committing code."
+msgstr ""
+
+#: ../../tests.rst:6
+msgid "They can be run easily::"
+msgstr ""
+
+#: ../../tests.rst:11
+msgid "This should print out a bunch of information and pass with 0 errors."
+msgstr ""
+
+#: ../../tests.rst:14
+msgid "Continuous Integration"
+msgstr ""
+
+#: ../../tests.rst:16
+msgid ""
+"The RTD test suite is exercised by Travis CI on every push to our repo at "
+"GitHub. You can check out the current build status: https://travis-"
+"ci.org/rtfd/readthedocs.org"
+msgstr ""

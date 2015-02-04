@@ -1,0 +1,512 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api.rst:2
+msgid "Read the Docs Public API"
+msgstr ""
+
+#: ../../api.rst:4
+msgid ""
+"We have a limited public API that is available for you to get data out of "
+"the site. This page will only show a few of the basic parts, please file a "
+"ticket or ping us on IRC (#readthedocs on `Freenode (chat.freenode.net) "
+"<http://webchat.freenode.net>`_) if you have feature requests."
+msgstr ""
+
+#: ../../api.rst:6
+msgid ""
+"This document covers the read-only API provided. We have plans to create a "
+"read/write API, so that you can easily automate interactions with your "
+"project."
+msgstr ""
+
+#: ../../api.rst:8
+msgid ""
+"The API is written in Tastypie, which provides a nice ability to browse the "
+"API from your browser. If you go to "
+"http://readthedocs.org/api/v1/?format=json and just poke around, you should "
+"be able to figure out what is going on."
+msgstr ""
+
+#: ../../api.rst:11
+msgid "A basic API client using slumber"
+msgstr ""
+
+#: ../../api.rst:13
+msgid ""
+"You can use `Slumber <http://slumber.in/>`_ to build basic API wrappers in "
+"python. Here is a simple example of using slumber to interact with the RTD "
+"API::"
+msgstr ""
+
+#: ../../api.rst:42
+msgid "Example of adding a user to a project"
+msgstr ""
+
+#: ../../api.rst:74
+msgid "API Endpoints"
+msgstr ""
+
+#: ../../api.rst:76
+msgid ""
+"Feel free to use cURL and python to look at formatted json examples. You can"
+" also look at them in your browser, if it handles returned json."
+msgstr ""
+
+#: ../../api.rst:83
+msgid "Root"
+msgstr ""
+
+#: ../../api.rst:113
+msgid "API endpoint for resource."
+msgstr ""
+
+#: ../../api.rst:114
+msgid "API endpoint for schema of resource."
+msgstr ""
+
+#: ../../api.rst:117
+msgid "Builds"
+msgstr ""
+
+#: ../../api.rst:135
+msgid "Number of Builds returned."
+msgstr ""
+
+#: ../../api.rst:136
+msgid "URI for next set of Builds."
+msgstr ""
+
+#: ../../api.rst:137 ../../api.rst:204 ../../api.rst:258 ../../api.rst:353
+#: ../../api.rst:408
+msgid "Current offset used for pagination."
+msgstr ""
+
+#: ../../api.rst:138
+msgid "URI for previous set of Builds."
+msgstr ""
+
+#: ../../api.rst:139
+msgid "Total number of Builds."
+msgstr ""
+
+#: ../../api.rst:140
+msgid "Array of `Build`_ objects."
+msgstr ""
+
+#: ../../api.rst:144
+msgid "Build"
+msgstr ""
+
+#: ../../api.rst:147
+msgid "A Build id."
+msgstr ""
+
+#: ../../api.rst:169
+msgid "Date of Build."
+msgstr ""
+
+#: ../../api.rst:170
+msgid "Error from Sphinx build process."
+msgstr ""
+
+#: ../../api.rst:171
+msgid "Build id."
+msgstr ""
+
+#: ../../api.rst:172
+msgid "Output from Sphinx build process."
+msgstr ""
+
+#: ../../api.rst:173
+msgid "URI for Project of Build."
+msgstr ""
+
+#: ../../api.rst:174
+msgid "URI for Build."
+msgstr ""
+
+#: ../../api.rst:175
+msgid "Setup output from Sphinx build process."
+msgstr ""
+
+#: ../../api.rst:176
+msgid "Setup error from Sphinx build process."
+msgstr ""
+
+#: ../../api.rst:177
+msgid "\"triggered\", \"building\", or \"finished\""
+msgstr ""
+
+#: ../../api.rst:178
+msgid "Was build successful?"
+msgstr ""
+
+#: ../../api.rst:179
+msgid "Build type (\"html\", \"pdf\", \"man\", or \"epub\")"
+msgstr ""
+
+#: ../../api.rst:180
+msgid "URI for Version of Build."
+msgstr ""
+
+#: ../../api.rst:183
+msgid "Files"
+msgstr ""
+
+#: ../../api.rst:202
+msgid "Number of Files returned."
+msgstr ""
+
+#: ../../api.rst:203
+msgid "URI for next set of Files."
+msgstr ""
+
+#: ../../api.rst:205
+msgid "URI for previous set of Files."
+msgstr ""
+
+#: ../../api.rst:206
+msgid "Total number of Files."
+msgstr ""
+
+#: ../../api.rst:207
+msgid "Array of `File`_ objects."
+msgstr ""
+
+#: ../../api.rst:210
+msgid "File"
+msgstr ""
+
+#: ../../api.rst:213
+msgid "A File id."
+msgstr ""
+
+#: ../../api.rst:229
+msgid "URI for actual file (not the File object from the API.)"
+msgstr ""
+
+#: ../../api.rst:230
+msgid "File id."
+msgstr ""
+
+#: ../../api.rst:231
+msgid "Name of File."
+msgstr ""
+
+#: ../../api.rst:232
+msgid "Name of Path."
+msgstr ""
+
+#: ../../api.rst:233
+msgid "A `Project`_ object for the file's project."
+msgstr ""
+
+#: ../../api.rst:234
+msgid "URI for File object."
+msgstr ""
+
+#: ../../api.rst:237
+msgid "Projects"
+msgstr ""
+
+#: ../../api.rst:256
+msgid "Number of Projects returned."
+msgstr ""
+
+#: ../../api.rst:257
+msgid "URI for next set of Projects."
+msgstr ""
+
+#: ../../api.rst:259
+msgid "URI for previous set of Projects."
+msgstr ""
+
+#: ../../api.rst:260
+msgid "Total number of Projects."
+msgstr ""
+
+#: ../../api.rst:261
+msgid "Array of `Project`_ objects."
+msgstr ""
+
+#: ../../api.rst:265
+msgid "Project"
+msgstr ""
+
+#: ../../api.rst:268
+msgid "A Project id."
+msgstr ""
+
+#: ../../api.rst:305
+msgid "URI for project (not the Project object from the API.)"
+msgstr ""
+
+#: ../../api.rst:306
+msgid "Analytics tracking code."
+msgstr ""
+
+#: ../../api.rst:307
+msgid "Copyright"
+msgstr ""
+
+#: ../../api.rst:308
+msgid "Crate.io URI."
+msgstr ""
+
+#: ../../api.rst:309
+msgid "Default branch."
+msgstr ""
+
+#: ../../api.rst:310
+msgid "Default version."
+msgstr ""
+
+#: ../../api.rst:311
+msgid "Description of project."
+msgstr ""
+
+#: ../../api.rst:312
+msgid "Djangopackages.com URI."
+msgstr ""
+
+#: ../../api.rst:313
+msgid "Either \"sphinx\" or \"sphinx_html\"."
+msgstr ""
+
+#: ../../api.rst:314
+msgid "Project id."
+msgstr ""
+
+#: ../../api.rst:315
+msgid "Last modified date."
+msgstr ""
+
+#: ../../api.rst:316
+msgid "Project name."
+msgstr ""
+
+#: ../../api.rst:317
+msgid "Project homepage."
+msgstr ""
+
+#: ../../api.rst:318
+msgid "Last published date."
+msgstr ""
+
+#: ../../api.rst:319
+msgid "URI for VCS repository."
+msgstr ""
+
+#: ../../api.rst:320
+msgid "Type of VCS repository."
+msgstr ""
+
+#: ../../api.rst:321
+msgid "Pip requirements file for packages needed for building docs."
+msgstr ""
+
+#: ../../api.rst:322
+msgid "URI for Project."
+msgstr ""
+
+#: ../../api.rst:323
+msgid "Slug."
+msgstr ""
+
+#: ../../api.rst:324
+msgid "Subdomain."
+msgstr ""
+
+#: ../../api.rst:325
+msgid "File suffix of docfiles. (Usually \".rst\".)"
+msgstr ""
+
+#: ../../api.rst:326
+msgid "Sphinx theme."
+msgstr ""
+
+#: ../../api.rst:327
+msgid "Build project in a virtualenv? (True or False)"
+msgstr ""
+
+#: ../../api.rst:328
+msgid "Array of readthedocs.org user URIs for administrators of Project."
+msgstr ""
+
+#: ../../api.rst:329
+msgid "DEPRECATED."
+msgstr ""
+
+#: ../../api.rst:333
+msgid "Users"
+msgstr ""
+
+#: ../../api.rst:351
+msgid "Number of Users returned."
+msgstr ""
+
+#: ../../api.rst:352
+msgid "URI for next set of Users."
+msgstr ""
+
+#: ../../api.rst:354
+msgid "URI for previous set of Users."
+msgstr ""
+
+#: ../../api.rst:355
+msgid "Total number of Users."
+msgstr ""
+
+#: ../../api.rst:356
+msgid "Array of `User`_ objects."
+msgstr ""
+
+#: ../../api.rst:360
+msgid "User"
+msgstr ""
+
+#: ../../api.rst:363
+msgid "A User id."
+msgstr ""
+
+#: ../../api.rst:378
+msgid "First name."
+msgstr ""
+
+#: ../../api.rst:379
+msgid "User id."
+msgstr ""
+
+#: ../../api.rst:380
+msgid "Timestamp of last login."
+msgstr ""
+
+#: ../../api.rst:381
+msgid "Last name."
+msgstr ""
+
+#: ../../api.rst:382
+msgid "URI for this user."
+msgstr ""
+
+#: ../../api.rst:383
+msgid "User name."
+msgstr ""
+
+#: ../../api.rst:387
+msgid "Versions"
+msgstr ""
+
+#: ../../api.rst:406
+msgid "Number of Versions returned."
+msgstr ""
+
+#: ../../api.rst:407
+msgid "URI for next set of Versions."
+msgstr ""
+
+#: ../../api.rst:409
+msgid "URI for previous set of Versions."
+msgstr ""
+
+#: ../../api.rst:410
+msgid "Total number of Versions."
+msgstr ""
+
+#: ../../api.rst:411
+msgid "Array of `Version`_ objects."
+msgstr ""
+
+#: ../../api.rst:415
+msgid "Version"
+msgstr ""
+
+#: ../../api.rst:418 ../../api.rst:459 ../../api.rst:487
+msgid "A Version id."
+msgstr ""
+
+#: ../../api.rst:437
+msgid "Are we continuing to build docs for this version?"
+msgstr ""
+
+#: ../../api.rst:438
+msgid "Have docs been built for this version?"
+msgstr ""
+
+#: ../../api.rst:439
+msgid "Version id."
+msgstr ""
+
+#: ../../api.rst:440
+msgid "Identifier of Version."
+msgstr ""
+
+#: ../../api.rst:441
+msgid "A `Project`_ object for the version's project."
+msgstr ""
+
+#: ../../api.rst:442
+msgid "URI for Version object."
+msgstr ""
+
+#: ../../api.rst:443
+msgid "String that uniquely identifies a project"
+msgstr ""
+
+#: ../../api.rst:444
+msgid "Were docs uploaded? (As opposed to being build by Read the Docs.)"
+msgstr ""
+
+#: ../../api.rst:445
+msgid "Usually the same as Slug."
+msgstr ""
+
+#: ../../api.rst:449
+msgid "Filtering Examples"
+msgstr ""
+
+#: ../../api.rst:452
+msgid "Find Highest Version"
+msgstr ""
+
+#: ../../api.rst:477
+msgid "Compare Highest Version"
+msgstr ""
+
+#: ../../api.rst:479
+msgid ""
+"This will allow you to compare whether a certain version is the highest "
+"version of a specific project. The below query should return a "
+"`'is_highest': false` in the returned dictionary."
+msgstr ""
+
+#: ../../api.rst:488
+msgid "A Version number or string."
+msgstr ""
+
+#: ../../api.rst:506
+msgid "File Search"
+msgstr ""
+
+#: ../../api.rst:513
+msgid "Perform search with this term."
+msgstr ""
+
+#: ../../api.rst:563
+msgid "Anchor Search"
+msgstr ""
+
+#: ../../api.rst:570
+msgid "Perform search of files containing anchor text with this term."
+msgstr ""

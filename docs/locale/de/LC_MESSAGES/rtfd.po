@@ -1,0 +1,208 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../rtfd.rst:2
+msgid "Configuration of the production servers"
+msgstr ""
+
+#: ../../rtfd.rst:4
+msgid ""
+"This document is to help people who are involved in the production instance "
+"of Read the Docs running on readthedocs.org. It contains implementation "
+"details and useful hints for the people handling operations of the servers."
+msgstr ""
+
+#: ../../rtfd.rst:7
+msgid "Deploying Code"
+msgstr ""
+
+#: ../../rtfd.rst:9
+msgid "This uses the ``fabfile.py`` located in the root of project."
+msgstr ""
+
+#: ../../rtfd.rst:11
+msgid "Pushing code to servers. This updates code & media::"
+msgstr ""
+
+#: ../../rtfd.rst:15
+msgid "Restart the webs::"
+msgstr ""
+
+#: ../../rtfd.rst:19
+msgid "Restart the build servers celery::"
+msgstr ""
+
+#: ../../rtfd.rst:24
+msgid "Deploying Nginx"
+msgstr ""
+
+#: ../../rtfd.rst:26
+msgid ""
+"This uses the fabfile located in ``deploy/fab/fabfile.py`` to deploy the "
+"nginx configs in ``deploy/nginx/``."
+msgstr ""
+
+#: ../../rtfd.rst:28
+msgid "To update the nginx configs::"
+msgstr ""
+
+#: ../../rtfd.rst:32
+msgid "To reload nginx after the configs have been updated::"
+msgstr ""
+
+#: ../../rtfd.rst:37
+msgid "Elastic Search Setup"
+msgstr ""
+
+#: ../../rtfd.rst:39
+msgid "You need to install the ICU plugin to make ES work::"
+msgstr ""
+
+#: ../../rtfd.rst:63
+msgid "Servers"
+msgstr ""
+
+#: ../../rtfd.rst:64
+msgid ""
+"The servers are themed somewhere between Norse mythology and Final Fantasy "
+"Aeons. I tried to keep them topical, and have some sense of their historical"
+" meaning and their purpose in the infrastructure."
+msgstr ""
+
+#: ../../rtfd.rst:67
+msgid "Domain"
+msgstr ""
+
+#: ../../rtfd.rst:69
+msgid "readthedocs.com"
+msgstr ""
+
+#: ../../rtfd.rst:72
+msgid "Load Balancer (nginx)"
+msgstr ""
+
+#: ../../rtfd.rst:73 ../../rtfd.rst:91
+msgid "Asgard"
+msgstr ""
+
+#: ../../rtfd.rst:76 ../../rtfd.rst:94 ../../rtfd.rst:114
+msgid "Important Files"
+msgstr ""
+
+#: ../../rtfd.rst:77
+msgid "``/etc/nginx/sites-enabled/lb``"
+msgstr ""
+
+#: ../../rtfd.rst:80 ../../rtfd.rst:99 ../../rtfd.rst:118 ../../rtfd.rst:130
+msgid "Important Services"
+msgstr ""
+
+#: ../../rtfd.rst:81 ../../rtfd.rst:100
+msgid "nginx running from init"
+msgstr ""
+
+#: ../../rtfd.rst:84 ../../rtfd.rst:104 ../../rtfd.rst:121
+msgid "Restart"
+msgstr ""
+
+#: ../../rtfd.rst:86 ../../rtfd.rst:106
+msgid "``/etc/init.d/nginx restart``"
+msgstr ""
+
+#: ../../rtfd.rst:89
+msgid "Web"
+msgstr ""
+
+#: ../../rtfd.rst:90
+msgid "Chimera"
+msgstr ""
+
+#: ../../rtfd.rst:95
+msgid "/etc/nginx/sites-enabled/readthedocs"
+msgstr ""
+
+#: ../../rtfd.rst:96
+msgid "/home/docs/sites/readthedocs.org/run/gunicorn.log"
+msgstr ""
+
+#: ../../rtfd.rst:101
+msgid "gunicorn (running from supervisord as docs user)"
+msgstr ""
+
+#: ../../rtfd.rst:109 ../../rtfd.rst:110 ../../rtfd.rst:145
+msgid "Build"
+msgstr ""
+
+#: ../../rtfd.rst:111
+msgid "Bari"
+msgstr ""
+
+#: ../../rtfd.rst:115
+msgid "/home/docs/sites/readthedocs.org/run/celery.log"
+msgstr ""
+
+#: ../../rtfd.rst:119
+msgid "celery (running from supervisord as docs user)"
+msgstr ""
+
+#: ../../rtfd.rst:123
+msgid "``supervisorctl restart celery``"
+msgstr ""
+
+#: ../../rtfd.rst:126
+msgid "Database"
+msgstr ""
+
+#: ../../rtfd.rst:127 ../../rtfd.rst:136 ../../rtfd.rst:141
+msgid "DB"
+msgstr ""
+
+#: ../../rtfd.rst:131
+msgid "Postgres running under init"
+msgstr ""
+
+#: ../../rtfd.rst:134
+msgid "Elastic Search"
+msgstr ""
+
+#: ../../rtfd.rst:137
+msgid "Backup"
+msgstr ""
+
+#: ../../rtfd.rst:140
+msgid "Solr"
+msgstr ""
+
+#: ../../rtfd.rst:144
+msgid "Redis"
+msgstr ""
+
+#: ../../rtfd.rst:148
+msgid "Site Checkout"
+msgstr ""
+
+#: ../../rtfd.rst:150
+msgid "``/home/docs/sites/readthedocs.org/checkouts/readthedocs``"
+msgstr ""
+
+#: ../../rtfd.rst:153
+msgid "Bash Aliases"
+msgstr ""
+
+#: ../../rtfd.rst:155
+msgid "`chk` - Will take you to the checkout directory"
+msgstr ""
+
+#: ../../rtfd.rst:156
+msgid "`run` - Will take you to the run directory"
+msgstr ""

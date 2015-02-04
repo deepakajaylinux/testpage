@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../automatic-redirects.rst:2
+# fee3eb25f947465784f75cc3f39e95cb
+msgid "Automatic Redirects"
+msgstr ""
+
+#: ../../automatic-redirects.rst:4
+# d9caf333c1304898929567dffb1c1652
+msgid "Read the Docs supports redirecting certain URLs automatically. This is an overview of the set of redirects that are fully supported and will work into the future."
+msgstr ""
+
+#: ../../automatic-redirects.rst:8
+# 448dca11f40d467694487cc3911288ce
+msgid "Root URL"
+msgstr ""
+
+#: ../../automatic-redirects.rst:10
+# 644001d37fbd400d8c468c406130ea72
+msgid "A link to the root of your documentation will redirect to the *default version*, as set in your project settings. For example::"
+msgstr ""
+
+#: ../../automatic-redirects.rst:17
+# c9dec8c0dbb64055a2dd042409637bc1
+msgid "This only works for the root url, not for internal pages. It's designed to redirect people from http://pip.readthedocs.org/ to the default version of your documentation, since serving up a 404 here would be a pretty terrible user experience. (If your \"develop\" branch was designated as your default version, then it would redirect to http://pip.readthedocs.org/en/develop.) But, it's not a universal redirecting solution. So, for example, a link to an internal page like http://pip.readthedocs.org/usage.html doesn't redirect to http://pip.readthedocs.org/en/latest/usage.html."
+msgstr ""
+
+#: ../../automatic-redirects.rst:19
+# b9c273f0364f4ff2bc262fb5aa142417
+msgid "The reasoning behind this is that RTD organizes the URLs for docs so that multiple translations and multiple versions of your docs can be organized logically and consistently for all projects that RTD hosts. For the way that RTD views docs, http://pip.readthedocs.org/en/latest/ is the root directory for your default documentation in English, not http://pip.readthedocs.org/. Just like http://pip.readthedocs.org/en/develop/ is the root for your development documentation in English."
+msgstr ""
+
+#: ../../automatic-redirects.rst:21
+# 908d7e04b43e4e8890080870c84c6f40
+msgid "Among all the multiple versions of docs, you can choose which is the \"default\" version for RTD to display, which usually corresponds to the git branch of the most recent official release from your project."
+msgstr ""
+
+#: ../../automatic-redirects.rst:24
+# c21c4c9c7ce7492ca7648183c54bcd0e
+msgid "rtfd.org"
+msgstr ""
+
+#: ../../automatic-redirects.rst:26
+# f260e71d45484a8b8781ebb37ef4b8ee
+msgid "Links to rtfd.org are treated the same way as above. They redirect the root URL to the default version of the project. They are intended to be easy and short for people to type."
+msgstr ""
+
+#: ../../automatic-redirects.rst:31
+# b5ad40fb44c04f67a88d9afa5cc395b5
+msgid "Supported Top-Level Redirects"
+msgstr ""
+
+#: ../../automatic-redirects.rst:33
+# 54c6a7d14de54be5a97442e6cd1dbca8
+msgid "These \"implicit\" redirects are supported for legacy reasons. We will not be adding support for any more magic redirects. If you want additional redirects, they should live at a prefix like :ref:`page-redirect`"
+msgstr ""
+
+#: ../../automatic-redirects.rst:38
+# 488c66a2dddd4789a89f0263b61e4a06
+msgid "The main challenge of URL routing in Read the Docs is handling redirects correctly. Both in the interest of redirecting older URLs that are now obsolete, and in the interest of handling \"logical-looking\" URLs (leaving out the lang_slug or version_slug shouldn't result in a 404), the following redirects are supported::"
+msgstr ""
+
+#: ../../automatic-redirects.rst:44
+# 0ae9a75f26a947469470c8d502fd35a0
+msgid "The language redirect will work for any of the defined ``LANGUAGE_CODES`` we support. The version redirect will work for supported versions."
+msgstr ""
+
+#: ../../automatic-redirects.rst:50
+# 3462175f4ff84b1882d5a39563ca215e
+msgid "Redirecting to a Page"
+msgstr ""
+
+#: ../../automatic-redirects.rst:52
+# 0fae10c731f6457fa5290cac925fee31
+msgid "You can link to a specific page and have it redirect to your default version. This is done with the ``/page/`` URL. For example::"
+msgstr ""
+
+#: ../../automatic-redirects.rst:59
+# 5383a7926b8c4f1f915f8a37a29bcd68
+msgid "This allows you to create links that are always up to date."
+msgstr ""
+
+#: ../../automatic-redirects.rst:61
+# 8e1fe137f5654a76805c96e427e1f8ec
+msgid "Another way to handle this is the *latest* version. You can set your ``latest`` version to a specific version and just always link to latest."
+msgstr ""
+

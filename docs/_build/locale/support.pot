@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../support.rst:2
+# fb97a91f2cfd49aaad987eca018b1742
+msgid "Support"
+msgstr ""
+
+#: ../../support.rst:5
+# 26c4b32a4efa456db0a32f342a141757
+msgid "Getting Help"
+msgstr ""
+
+#: ../../support.rst:7
+# 7754e6cce51a4fe0a714bbbe2b0fa064
+msgid "The easiest way to get help with the project is to join the ``#readthedocs`` channel on Freenode_. We hang out there and you can get real-time help with your projects.  The other good way is to open an issue on Github_."
+msgstr ""
+
+#: ../../support.rst:11
+# 0af15b14f4df431488d1129908a84a8e
+msgid "The mailing list at https://groups.google.com/forum/#!forum/read-the-docs is also available for support."
+msgstr ""
+
+#: ../../support.rst:17
+# abe07a9bfc9c42718be7aad6d8564b00
+msgid "Backwards Incompatible Changes"
+msgstr ""
+
+#: ../../support.rst:19
+# e6aac3d85c2b471ab9390abaa8ba03cd
+msgid "Backwards Incompatible Changes will be emailed to the `mailing list`_. They will be prefixed with \"Backwards Incompatible Changes\". We are thinking about having some kind of Backwards Incompatible Changes policy, much like the 1.0 of a code base, once we define the redirects and interfaces that we wish to expose permanently."
+msgstr ""
+
+#: ../../support.rst:28
+# df6f784e920549799155810006482933
+msgid "Commercial Support"
+msgstr ""
+
+#: ../../support.rst:30
+# f3eb5b523ba4467cbb82b3e42d26fa82
+msgid "We offer commerical support for Read the Docs, commerical hosting, as well as consulting around all documentation systems. You can contact us at hello@readthedocs.com to learn more, or visit us at https://readthedocs.com."
+msgstr ""
+

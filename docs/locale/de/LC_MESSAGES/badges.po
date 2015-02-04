@@ -1,0 +1,81 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../badges.rst:2
+msgid "Badges"
+msgstr ""
+
+#: ../../badges.rst:4
+msgid ""
+"Badges let you show the state of your documentation to your users. They are "
+"great for embedding in your README, or putting inside your actual doc pages."
+msgstr ""
+
+#: ../../badges.rst:9
+msgid "Status Badges"
+msgstr ""
+
+#: ../../badges.rst:11
+msgid ""
+"They will display in green for passing, red for failing, and yellow for "
+"unknown states."
+msgstr ""
+
+#: ../../badges.rst:15
+msgid "Here are a few examples:"
+msgstr ""
+
+#: ../../badges.rst:17
+msgid "|green| |nbsp| |red| |nbsp| |yellow|"
+msgstr ""
+
+#: ../../badges.rst:19
+msgid ""
+"You can see it in action in the `Read the Docs README`_. They will link back"
+" to your project's documentation page on Read the Docs."
+msgstr ""
+
+#: ../../badges.rst:23
+msgid "Project Pages"
+msgstr ""
+
+#: ../../badges.rst:25
+msgid ""
+"You will now see badges embedded in your `project page`_. The default badge "
+"will be pointed at the *default version* you have specified for your "
+"project. The badge URLs look like this::"
+msgstr ""
+
+#: ../../badges.rst:31
+msgid ""
+"You can replace the version argument with any version that you want to show "
+"a badge for. If you click on the badge icon, you will be given snippets for "
+"RST, Markdown, and HTML; to make embedding it easier."
+msgstr ""
+
+#: ../../badges.rst:36
+msgid ""
+"If you leave the version argument off, it will default to your latest "
+"version. This is probably best to include in your README, since it will stay"
+" up to date with your Read the Docs project::"
+msgstr ""
+
+#: ../../badges.rst:44
+msgid "Style"
+msgstr ""
+
+#: ../../badges.rst:46
+msgid ""
+"If you pass the ``style`` GET argument, we will pass it along to shields.io "
+"as is. This will allow you to have custom style badges."
+msgstr ""

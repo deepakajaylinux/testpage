@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../rtfd.rst:2
+# a380c68fa1dd4839873a62c26528d6b4
+msgid "Configuration of the production servers"
+msgstr ""
+
+#: ../../rtfd.rst:4
+# 40b97b23eb2940a2866c5e2198724f39
+msgid "This document is to help people who are involved in the production instance of Read the Docs running on readthedocs.org. It contains implementation details and useful hints for the people handling operations of the servers."
+msgstr ""
+
+#: ../../rtfd.rst:7
+# e5c86bbefc524d72aa8501a2e6f96489
+msgid "Deploying Code"
+msgstr ""
+
+#: ../../rtfd.rst:9
+# 7070fcc6acc6481d85cda062c706fc89
+msgid "This uses the ``fabfile.py`` located in the root of project."
+msgstr ""
+
+#: ../../rtfd.rst:11
+# 9244e56cbb4940af96c7095de80fda87
+msgid "Pushing code to servers. This updates code & media::"
+msgstr ""
+
+#: ../../rtfd.rst:15
+# 405d8f624257476fb9207fe19c719d97
+msgid "Restart the webs::"
+msgstr ""
+
+#: ../../rtfd.rst:19
+# 311c6a8de0554f28a4c6dbc8c8e73561
+msgid "Restart the build servers celery::"
+msgstr ""
+
+#: ../../rtfd.rst:24
+# 296f1c3cc3724e88998d544e737af62b
+msgid "Deploying Nginx"
+msgstr ""
+
+#: ../../rtfd.rst:26
+# 866b95076f9349169b16279fed3182ed
+msgid "This uses the fabfile located in ``deploy/fab/fabfile.py`` to deploy the nginx configs in ``deploy/nginx/``."
+msgstr ""
+
+#: ../../rtfd.rst:28
+# addecdf3c35c497eba3cf690f253a369
+msgid "To update the nginx configs::"
+msgstr ""
+
+#: ../../rtfd.rst:32
+# 539cf3e837e44068a042d561f99b6e09
+msgid "To reload nginx after the configs have been updated::"
+msgstr ""
+
+#: ../../rtfd.rst:37
+# ee420061dc494f55911529693465b4c5
+msgid "Elastic Search Setup"
+msgstr ""
+
+#: ../../rtfd.rst:39
+# 70e9e718934e402e87303702b920fa04
+msgid "You need to install the ICU plugin to make ES work::"
+msgstr ""
+
+#: ../../rtfd.rst:63
+# b65552e8f3444a6a944b89c95c520387
+msgid "Servers"
+msgstr ""
+
+#: ../../rtfd.rst:64
+# 61861b55afdc48ada79e0bd9c58d9ad9
+msgid "The servers are themed somewhere between Norse mythology and Final Fantasy Aeons. I tried to keep them topical, and have some sense of their historical meaning and their purpose in the infrastructure."
+msgstr ""
+
+#: ../../rtfd.rst:67
+# 1c6859ce41614fa59f0c01cba3bacc4d
+msgid "Domain"
+msgstr ""
+
+#: ../../rtfd.rst:69
+# e6cd89067cf74e1cbc1d7ec89fe1685d
+msgid "readthedocs.com"
+msgstr ""
+
+#: ../../rtfd.rst:72
+# 167874e58750452a9dfc224b453f2a36
+msgid "Load Balancer (nginx)"
+msgstr ""
+
+#: ../../rtfd.rst:73
+#: ../../rtfd.rst:91
+# 361eae63ae2f45ac8cbc565b30ea95e0
+# 09d5f2469f324f50958ca3171ce94d32
+msgid "Asgard"
+msgstr ""
+
+#: ../../rtfd.rst:76
+#: ../../rtfd.rst:94
+#: ../../rtfd.rst:114
+# d78a6b699c754fa6a3385654c19f8b4c
+# 95544fc05e18472cb61309638bad19a7
+# 61d83a75b0c54a729c6adafefa9edb82
+msgid "Important Files"
+msgstr ""
+
+#: ../../rtfd.rst:77
+# 270ea9a4f14b4646acb84030892025e9
+msgid "``/etc/nginx/sites-enabled/lb``"
+msgstr ""
+
+#: ../../rtfd.rst:80
+#: ../../rtfd.rst:99
+#: ../../rtfd.rst:118
+#: ../../rtfd.rst:130
+# 2fe3690476264fe687f9f3c806867dfd
+# 72a19f9538fe4bfcbc49e24337a28d00
+# d663d918374a43c281175c74d8cab54e
+# f0882559b60749c8bce37d6e119851fe
+msgid "Important Services"
+msgstr ""
+
+#: ../../rtfd.rst:81
+#: ../../rtfd.rst:100
+# 127c6b1cb8f74ba49fb6627c68aecf0d
+# 8dc51f78e4bb44508bee7cbb1a46e93a
+msgid "nginx running from init"
+msgstr ""
+
+#: ../../rtfd.rst:84
+#: ../../rtfd.rst:104
+#: ../../rtfd.rst:121
+# 9702cf61649744b089d169984c223871
+# b2df70d1e16f46969fd2e446e5ee21c9
+# 01bec862e5db4a39b66f18dfa8fcbbcc
+msgid "Restart"
+msgstr ""
+
+#: ../../rtfd.rst:86
+#: ../../rtfd.rst:106
+# 06c2f2229c244415b99b60f634bbf2d3
+# 00dac48e2b6d47fd86437d56bffa08d1
+msgid "``/etc/init.d/nginx restart``"
+msgstr ""
+
+#: ../../rtfd.rst:89
+# 8257edb0f1b445ef8b97794b718abef1
+msgid "Web"
+msgstr ""
+
+#: ../../rtfd.rst:90
+# ab92f4c577f344268a507d6671416b94
+msgid "Chimera"
+msgstr ""
+
+#: ../../rtfd.rst:95
+# 77dfbff2650943b4ba54be11d86db657
+msgid "/etc/nginx/sites-enabled/readthedocs"
+msgstr ""
+
+#: ../../rtfd.rst:96
+# c24fdcbb0987472fadecd16291bb09bc
+msgid "/home/docs/sites/readthedocs.org/run/gunicorn.log"
+msgstr ""
+
+#: ../../rtfd.rst:101
+# 2264b8470c9249f0b03a33120dafddc5
+msgid "gunicorn (running from supervisord as docs user)"
+msgstr ""
+
+#: ../../rtfd.rst:109
+#: ../../rtfd.rst:110
+#: ../../rtfd.rst:145
+# 4a70f07767f64aaaa72f078c2f9e1445
+# 2d18fa87ee62452e8b2176c77518fcf5
+# 746e782bb6a24dc3b3dee19d365c7727
+msgid "Build"
+msgstr ""
+
+#: ../../rtfd.rst:111
+# 285e6a6d57a144e08cc0ea98ae835f15
+msgid "Bari"
+msgstr ""
+
+#: ../../rtfd.rst:115
+# 40b59268652044afa75b0337f9874896
+msgid "/home/docs/sites/readthedocs.org/run/celery.log"
+msgstr ""
+
+#: ../../rtfd.rst:119
+# bf0bb63858fc4da48c6fc752e26df26c
+msgid "celery (running from supervisord as docs user)"
+msgstr ""
+
+#: ../../rtfd.rst:123
+# 71319c78168b48b39ed627eb8f506f71
+msgid "``supervisorctl restart celery``"
+msgstr ""
+
+#: ../../rtfd.rst:126
+# 243b80c0a63c47f7bc14788ba3179494
+msgid "Database"
+msgstr ""
+
+#: ../../rtfd.rst:127
+#: ../../rtfd.rst:136
+#: ../../rtfd.rst:141
+# 839e057d42984cf0992e4b5d8155957c
+# 2b3bf6486bf540a4bf390ec8ee630ec5
+# 7b36dd9a11cf41e7ad1fc8d65c1e69be
+msgid "DB"
+msgstr ""
+
+#: ../../rtfd.rst:131
+# b7d5a759399549de87eb159c68f048ba
+msgid "Postgres running under init"
+msgstr ""
+
+#: ../../rtfd.rst:134
+# f2d420a7b04a46f09b05275a24d93013
+msgid "Elastic Search"
+msgstr ""
+
+#: ../../rtfd.rst:137
+# 6a89138c837f4c7093bb852f09db73ed
+msgid "Backup"
+msgstr ""
+
+#: ../../rtfd.rst:140
+# 37973baad4fe45c1b3c8e52c58ab7448
+msgid "Solr"
+msgstr ""
+
+#: ../../rtfd.rst:144
+# 405efab5773448f18a0708193601f19b
+msgid "Redis"
+msgstr ""
+
+#: ../../rtfd.rst:148
+# 59639b27dd2648ed8105ee5e799ada57
+msgid "Site Checkout"
+msgstr ""
+
+#: ../../rtfd.rst:150
+# 8659ee789d1c435799c5d3995f48dd4e
+msgid "``/home/docs/sites/readthedocs.org/checkouts/readthedocs``"
+msgstr ""
+
+#: ../../rtfd.rst:153
+# cb3291278a3f47aa9c1e945bd29e67ab
+msgid "Bash Aliases"
+msgstr ""
+
+#: ../../rtfd.rst:155
+# 841c28bca40843a4adef60febe0fad45
+msgid "`chk` - Will take you to the checkout directory"
+msgstr ""
+
+#: ../../rtfd.rst:156
+# 2fe6f7d970864d4bbd5b8173c7b8cb79
+msgid "`run` - Will take you to the run directory"
+msgstr ""
+

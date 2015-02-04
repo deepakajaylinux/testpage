@@ -1,0 +1,134 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../settings.rst:2
+msgid "Interesting Settings"
+msgstr ""
+
+#: ../../settings.rst:5
+msgid "SLUMBER_USERNAME"
+msgstr ""
+
+#: ../../settings.rst:7 ../../settings.rst:14
+msgid "Default: `test`"
+msgstr ""
+
+#: ../../settings.rst:9
+msgid ""
+"The username to use when connecting to the Read the Docs API. Used for "
+"hitting the API while building the docs."
+msgstr ""
+
+#: ../../settings.rst:12
+msgid "SLUMBER_PASSWORD"
+msgstr ""
+
+#: ../../settings.rst:16
+msgid ""
+"The password to use when connecting to the Read the Docs API. Used for "
+"hitting the API while building the docs."
+msgstr ""
+
+#: ../../settings.rst:19
+msgid "USE_SUBDOMAIN"
+msgstr ""
+
+#: ../../settings.rst:21 ../../settings.rst:52 ../../settings.rst:67
+msgid "Default: `False`"
+msgstr ""
+
+#: ../../settings.rst:23
+msgid ""
+"Whether to use subdomains in URLs on the site, or the Django-served content."
+" When used in production, this should be ``True``, as Nginx will serve this "
+"content. During development and other possible deployments, this might be "
+"``False``."
+msgstr ""
+
+#: ../../settings.rst:28
+msgid "PRODUCTION_DOMAIN"
+msgstr ""
+
+#: ../../settings.rst:30
+msgid "Default: `readthedocs.org`"
+msgstr ""
+
+#: ../../settings.rst:32
+msgid ""
+"This is the domain that gets linked to throughout the site when used in "
+"production. It depends on `USE_SUBDOMAIN`, otherwise it isn't used."
+msgstr ""
+
+#: ../../settings.rst:36
+msgid "MULTIPLE_APP_SERVERS"
+msgstr ""
+
+#: ../../settings.rst:38
+msgid "Default: `undefined`"
+msgstr ""
+
+#: ../../settings.rst:40
+msgid ""
+"This is a list of application servers that built documentation is copied to."
+" This allows you to run an independent build server, and then have it rsync "
+"your built documentation across multiple front end documentation/app "
+"servers."
+msgstr ""
+
+#: ../../settings.rst:43
+msgid "DEFAULT_PRIVACY_LEVEL"
+msgstr ""
+
+#: ../../settings.rst:45
+msgid "Default: `public`"
+msgstr ""
+
+#: ../../settings.rst:47
+msgid ""
+"What privacy projects default to having. Generally set to `public`. Also "
+"acts as a proxy setting for blocking certain historically insecure options, "
+"like serving generated artifacts directly from the media server."
+msgstr ""
+
+#: ../../settings.rst:50
+msgid "INDEX_ONLY_LATEST"
+msgstr ""
+
+#: ../../settings.rst:54
+msgid "In search, only index the `latest` version of a Project."
+msgstr ""
+
+#: ../../settings.rst:57
+msgid "DOCUMENT_PYQUERY_PATH"
+msgstr ""
+
+#: ../../settings.rst:59
+msgid "Default: `div.document`"
+msgstr ""
+
+#: ../../settings.rst:61
+msgid ""
+"The Pyquery path to an HTML element that is the root of your document. This "
+"is used for making sure we are only searching the main content of a "
+"document."
+msgstr ""
+
+#: ../../settings.rst:65
+msgid "USE_PIP_INSTALL"
+msgstr ""
+
+#: ../../settings.rst:69
+msgid ""
+"Whether to use `pip install .` or `python setup.py install` when installing "
+"packages into the Virtualenv. Default is to use `python setup.py install`."
+msgstr ""

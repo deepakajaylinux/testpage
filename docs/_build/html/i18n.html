@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Internationalization &mdash; Read The Docs 1.0 Dokumentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Read The Docs 1.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Read the Docs Public API" href="api.html"/>
+        <link rel="prev" title="Interesting Settings" href="settings.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="fa fa-home"> Read The Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#write-your-docs">Write Your Docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#import-your-docs">Import Your Docs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Versions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="versions.html#how-we-envision-versions-working">How we envision versions working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="versions.html#redirects-on-root-urls">Redirects on root URLs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="builds.html">Build Process</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#how-we-build-documentation">How we build documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#understanding-what-s-going-on">Understanding what&#8217;s going on</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#builder-responsibility">Builder Responsibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#packages-installed-in-the-build-environment">Packages installed in the build environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#writing-your-own-builder">Writing your own builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html#deleting-a-stale-or-broken-build-environment">Deleting a stale or broken build environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Read the Docs features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="features.html#github-and-bitbucket-integration">Github and Bitbucket Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#auto-updating">Auto-updating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#internationalization">Internationalization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#canonical-urls">Canonical URLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#versions">Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#version-control-support-matrix">Version Control Support Matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#pdf-generation">PDF Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#search">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#alternate-domains">Alternate Domains</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="support.html#getting-help">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#backwards-incompatible-changes">Backwards Incompatible Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support.html#commercial-support">Commercial Support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#my-project-isn-t-building-with-autodoc">My project isn&#8217;t building with autodoc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-do-i-change-behavior-for-read-the-docs">How do I change behavior for Read the Docs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#i-get-import-errors-on-libraries-that-depend-on-c-modules">I get import errors on libraries that depend on C modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#client-error-401-when-building-documentation"><tt class="docutils literal"><span class="pre">Client</span> <span class="pre">Error</span> <span class="pre">401</span></tt> when building documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#can-i-make-search-engines-only-see-one-version-of-my-docs">Can I make search engines only see one version of my docs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#deleting-a-stale-or-broken-build-environment">Deleting a stale or broken build environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-do-i-host-multiple-projects-on-one-cname">How do I host multiple projects on one CNAME?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#where-do-i-need-to-put-my-docs-for-rtd-to-find-it">Where do I need to put my docs for RTD to find it?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#i-want-to-use-the-blue-default-sphinx-theme">I want to use the Blue/Default Sphinx theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#i-want-to-use-the-read-the-docs-theme-locally">I want to use the Read the Docs theme locally</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#image-scaling-doesn-t-work-in-my-documentation">Image scaling doesn&#8217;t work in my documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#i-want-comments-in-my-docs">I want comments in my docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-do-i-support-multiple-languages-of-documentation">How do I support multiple languages of documentation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#do-i-need-to-be-whitelisted">Do I need to be whitelisted?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#does-read-the-docs-work-well-with-legible-docstrings">Does Read The Docs work well with &#8220;legible&#8221; docstrings?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="behat.html">Behat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="behat.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="behat.html#help-command">Help Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="behat.html#how-to-initialize-behat">How to Initialize Behat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="behat.html#how-to-execute-the-behat">How to Execute the Behat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="behat.html#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webhooks.html">Webhooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="webhooks.html#github">Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webhooks.html#bitbucket">Bitbucket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webhooks.html#others">Others</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="badges.html">Badges</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="badges.html#status-badges">Status Badges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="badges.html#project-pages">Project Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="badges.html#style">Style</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="alternate_domains.html">Alternate Domains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="alternate_domains.html#subdomain-support">Subdomain Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alternate_domains.html#cname-support">CNAME Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alternate_domains.html#cname-ssl">CNAME SSL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alternate_domains.html#rtfd-org">rtfd.org</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="localization.html">Localization of Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="localization.html#single-project-in-another-language">Single project in another language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="localization.html#project-with-multiple-translations">Project with multiple translations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vcs.html">VCS Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html#github">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs.html#bitbucket">Bitbucket</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="canonical.html">Canonical URLs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="canonical.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="canonical.html#enabling">Enabling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="canonical.html#implementation">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="canonical.html#links">Links</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="single_version.html">Single Version Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="single_version.html#enabling">Enabling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="single_version.html#effects">Effects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Levels</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#understanding-the-privacy-levels">Understanding the Privacy Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#project-objects">Project Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="privacy.html#version-objects">Version Objects</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="business/index.html">Read the Docs Business Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="business/organizations.html">Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="business/sharing.html">Sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="business/analytics.html">Analytics</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#what-s-available">What&#8217;s available</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing to Read the Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#tickets">Tickets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Running tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tests.html#continuous-integration">Continuous Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#diagram">Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="symlinks.html">How we use symlinks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="symlinks.html#nginx">Nginx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symlinks.html#subdomains">Subdomains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="symlinks.html#cnames">CNAMEs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Interesting Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#slumber-username">SLUMBER_USERNAME</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#slumber-password">SLUMBER_PASSWORD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#use-subdomain">USE_SUBDOMAIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#production-domain">PRODUCTION_DOMAIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#multiple-app-servers">MULTIPLE_APP_SERVERS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#default-privacy-level">DEFAULT_PRIVACY_LEVEL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#index-only-latest">INDEX_ONLY_LATEST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#document-pyquery-path">DOCUMENT_PYQUERY_PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="settings.html#use-pip-install">USE_PIP_INSTALL</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Internationalization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#making-strings-localizable">Making Strings Localizable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings-in-templates">Strings in Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings-in-python">Strings in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#administrative-tasks">Administrative Tasks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#updating-localization-files">Updating Localization Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compiling-to-mo">Compiling to MO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transifex-integration">Transifex Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Read the Docs Public API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#a-basic-api-client-using-slumber">A basic API client using slumber</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#example-of-adding-a-user-to-a-project">Example of adding a user to a project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#api-endpoints">API Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#root">Root</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#builds">Builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#files">Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#file">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#projects">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#project">Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#users">Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#user">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#versions">Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#version">Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#filtering-examples">Filtering Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/bookmarks.html"><tt class="docutils literal"><span class="pre">bookmarks</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/builds.html"><tt class="docutils literal"><span class="pre">builds</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/doc_builder.html"><tt class="docutils literal"><span class="pre">doc_builder</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/core.html"><tt class="docutils literal"><span class="pre">core</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/projects.html"><tt class="docutils literal"><span class="pre">projects</span></tt></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/vcs_support.html"><tt class="docutils literal"><span class="pre">vcs_support</span></tt></a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Designing Read the Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="design.html#style-catalog">Style Catalog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="design.html#typekit-fonts">Typekit Fonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="design.html#readthedocs-org-changes">Readthedocs.org Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="design.html#sphinx-template-changes">Sphinx Template Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="design.html#contributing">Contributing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Read the Docs Theme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#contributing-to-the-theme">Contributing to the theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#how-the-table-of-contents-builds">How the Table of Contents builds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#other-style-notes">Other style notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#how-do-i-use-this-locally-and-on-read-the-docs">How do I use this locally, <em>and</em> on Read the Docs?</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="open-source-philosophy.html">Read the Docs Open Source Philosophy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="open-source-philosophy.html#official-support">Official Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open-source-philosophy.html#unsupported">Unsupported</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open-source-philosophy.html#rationale">Rationale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sponsors.html">Sponsors of Read the Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sponsors.html#current-sponsors">Current sponsors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sponsors.html#past-sponsors">Past sponsors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="talks.html">Talks about Read the Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="talks.html#random">Random</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rtfd.html">Configuration of the production servers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rtfd.html#deploying-code">Deploying Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtfd.html#deploying-nginx">Deploying Nginx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtfd.html#elastic-search-setup">Elastic Search Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtfd.html#servers">Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rtfd.html#site-checkout">Site Checkout</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Read The Docs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Internationalization</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/i18n.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="internationalization">
+<span id="i18n"></span><h1>Internationalization<a class="headerlink" href="#internationalization" title="Permalink zu dieser Überschrift">¶</a></h1>
+<p>This document covers the details regarding internationalization and
+localization that are applied in Read the Docs. The guidelines described are
+mostly based on <a class="reference external" href="http://kitsune.readthedocs.org/en/latest/localization.html">Kitsune&#8217;s localization documentation</a>.</p>
+<p>As with most of the Django applications out there, Read the Docs&#8217; i18n/l10n
+framework is based on <a class="reference external" href="http://www.gnu.org/software/gettext/">GNU gettext</a>.
+Crowd-sourced localization is optionally available at <a class="reference external" href="https://www.transifex.com/projects/p/readthedocs/">Transifex</a>.</p>
+<p>For more information about the general ideas,
+look at this document: <a class="reference external" href="http://www.gnu.org/software/gettext/manual/html_node/Concepts.html">http://www.gnu.org/software/gettext/manual/html_node/Concepts.html</a></p>
+<div class="section" id="making-strings-localizable">
+<h2>Making Strings Localizable<a class="headerlink" href="#making-strings-localizable" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Making strings in templates localizable is exceptionally easy. Making strings
+in Python localizable is a little more complicated. The short answer, though,
+is to just wrap the string in <tt class="docutils literal"><span class="pre">_()</span></tt>.</p>
+<div class="section" id="interpolation">
+<h3>Interpolation<a class="headerlink" href="#interpolation" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>A string is often a combination of a fixed string and something changing, for
+example, <tt class="docutils literal"><span class="pre">Welcome,</span> <span class="pre">James</span></tt> is a combination of the fixed part <tt class="docutils literal"><span class="pre">Welcome,</span></tt>,
+and the changing part <tt class="docutils literal"><span class="pre">James</span></tt>. The naive solution is to localize the first
+part and then follow it with the name:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">_</span><span class="p">(</span><span class="s">&#39;Welcome, &#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">username</span>
+</pre></div>
+</div>
+<p>This is <strong>wrong!</strong></p>
+<p>In some locales, the word order may be different. Use Python string formatting
+to interpolate the changing part into the string:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">_</span><span class="p">(</span><span class="s">&#39;Welcome, {name}&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">username</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Python gives you a lot of ways to interpolate strings. The best way is to use
+Py3k formatting and kwargs. That&#8217;s the clearest for localizers.</p>
+</div>
+<div class="section" id="localization-comments">
+<h3>Localization Comments<a class="headerlink" href="#localization-comments" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Sometimes, it can help localizers to describe where a string comes from,
+particularly if it can be difficult to find in the interface, or is not very
+self-descriptive (e.g. very short strings). If you immediately precede the
+string with a comment that starts with <tt class="docutils literal"><span class="pre">Translators:</span></tt>, the comment will be
+added to the PO file, and visible to localizers.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">DEFAULT_THEME_CHOICES</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="c"># Translators: This is a name of a Sphinx theme.</span>
+    <span class="p">(</span><span class="n">THEME_DEFAULT</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&#39;Default&#39;</span><span class="p">)),</span>
+    <span class="c"># Translators: This is a name of a Sphinx theme.</span>
+    <span class="p">(</span><span class="n">THEME_SPHINX</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&#39;Sphinx Docs&#39;</span><span class="p">)),</span>
+    <span class="c"># Translators: This is a name of a Sphinx theme.</span>
+    <span class="p">(</span><span class="n">THEME_TRADITIONAL</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&#39;Traditional&#39;</span><span class="p">)),</span>
+    <span class="c"># Translators: This is a name of a Sphinx theme.</span>
+    <span class="p">(</span><span class="n">THEME_NATURE</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&#39;Nature&#39;</span><span class="p">)),</span>
+    <span class="c"># Translators: This is a name of a Sphinx theme.</span>
+    <span class="p">(</span><span class="n">THEME_HAIKU</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&#39;Haiku&#39;</span><span class="p">)),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-context-with-msgctxt">
+<h3>Adding Context with msgctxt<a class="headerlink" href="#adding-context-with-msgctxt" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>Strings may be the same in English, but different in other languages. English,
+for example, has no grammatical gender, and sometimes the noun and verb forms
+of a word are identical.</p>
+<p>To make it possible to localize these correctly, we can add &#8220;context&#8221; (known in
+gettext as <em>msgctxt</em>) to differentiate two otherwise identical strings. Django
+provides a <a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.pgettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">pgettext()</span></tt></a> function for this.</p>
+<p>For example, the string <em>Search</em> may be a noun or a verb in English. In a
+heading, it may be considered a noun, but on a button, it may be a verb. It&#8217;s
+appropriate to add a context (like <em>button</em>) to one of them.</p>
+<p>Generally, we should only add context if we are sure the strings aren&#8217;t used in
+the same way, or if localizers ask us to.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">pgettext</span>
+
+<span class="n">month</span> <span class="o">=</span> <span class="n">pgettext</span><span class="p">(</span><span class="s">&quot;text for the search button on the form&quot;</span><span class="p">,</span> <span class="s">&quot;Search&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plurals">
+<h3>Plurals<a class="headerlink" href="#plurals" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p><em>You have 1 new messages</em> grates on discerning ears. Fortunately, gettext gives
+us a way to fix that in English <em>and</em> other locales, the
+<a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ngettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ngettext()</span></tt></a> function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">ngettext</span><span class="p">(</span><span class="s">&#39;singular sentence&#39;</span><span class="p">,</span> <span class="s">&#39;plural sentence&#39;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A more realistic example might be:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">ngettext</span><span class="p">(</span><span class="s">&#39;Found {count} result.&#39;</span><span class="p">,</span>
+         <span class="s">&#39;Found {count} results&#39;</span><span class="p">,</span>
+         <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">))</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>This method takes three arguments because English only needs three, i.e., zero
+is considered &#8220;plural&#8221; for English. Other languages may have <a class="reference external" href="http://translate.sourceforge.net/wiki/l10n/pluralforms">different plural
+rules</a>, and require
+different phrases for, say 0, 1, 2-3, 4-10, &gt;10. That&#8217;s absolutely fine, and
+gettext makes it possible.</p>
+</div>
+</div>
+<div class="section" id="strings-in-templates">
+<h2>Strings in Templates<a class="headerlink" href="#strings-in-templates" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>When putting new text into a template, all you need to do is wrap it in a
+<tt class="docutils literal"><span class="pre">{%</span> <span class="pre">trans</span> <span class="pre">%}</span></tt> template tag:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;h1&gt;{% trans &quot;Heading&quot; %}&lt;/h1&gt;
+</pre></div>
+</div>
+<p>Context can be added, too:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;h1&gt;{% trans &quot;Heading&quot; context &quot;section name&quot; %}&lt;/h1&gt;
+</pre></div>
+</div>
+<p>Comments for translators need to precede the internationalized text and must
+start with the <tt class="docutils literal"><span class="pre">Translators:</span></tt> keyword.:</p>
+<div class="highlight-python"><div class="highlight"><pre>{# Translators: This heading is displayed in the user&#39;s profile page #}
+&lt;h1&gt;{% trans &quot;Heading&quot; %}&lt;/h1&gt;
+</pre></div>
+</div>
+<p>To interpolate, you need to use the alternative and more verbose <tt class="docutils literal"><span class="pre">{%</span>
+<span class="pre">blocktrans</span> <span class="pre">%}</span></tt> template tag — it&#8217;s actually a block:</p>
+<div class="highlight-python"><div class="highlight"><pre>{% blocktrans %}Welcome, {{ name }}!{% endblocktrans %}
+</pre></div>
+</div>
+<p>Note that the <tt class="docutils literal"><span class="pre">{{</span> <span class="pre">name</span> <span class="pre">}}</span></tt> variable needs to exist in the template context.</p>
+<p>In some situations, it&#8217;s desirable to evaluate template expressions such as
+filters or accessing object attributes. You can&#8217;t do that within the <tt class="docutils literal"><span class="pre">{%</span>
+<span class="pre">blocktrans</span> <span class="pre">%}</span></tt> block, so you need to bind the expression to a local variable
+first:</p>
+<div class="highlight-python"><div class="highlight"><pre>{% blocktrans with revision.created_date|timesince as timesince %}
+{{ revision }} {{ timesince }} ago
+{% endblocktrans %}
+
+{% blocktrans with project.name as name %}Delete {{ name }}?{% endblocktrans %}
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">{%</span> <span class="pre">blocktrans</span> <span class="pre">%}</span></tt> also provides pluralization. For that you need to bind a
+counter with the name <tt class="docutils literal"><span class="pre">count</span></tt> and provide a plural translation after the <tt class="docutils literal"><span class="pre">{%</span>
+<span class="pre">plural</span> <span class="pre">%}</span></tt> tag:</p>
+<div class="highlight-python"><div class="highlight"><pre>{% blocktrans with amount=article.price count years=i.length %}
+That will cost $ {{ amount }} per year.
+{% plural %}
+That will cost $ {{ amount }} per {{ years }} years.
+{% endblocktrans %}
+</pre></div>
+</div>
+</div>
+<div class="section" id="strings-in-python">
+<h2>Strings in Python<a class="headerlink" href="#strings-in-python" title="Permalink zu dieser Überschrift">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Whenever you are adding a string in Python, ask yourself if it
+really needs to be there, or if it should be in the template. Keep
+logic and presentation separate!</p>
+</div>
+<p>Strings in Python are more complex for two reasons:</p>
+<ol class="arabic simple">
+<li>We need to make sure we&#8217;re always using Unicode strings and the
+Unicode-friendly versions of the functions.</li>
+<li>If you use the <a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ugettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ugettext()</span></tt></a> function in the
+wrong place, the string may end up in the wrong locale!</li>
+</ol>
+<p>Here&#8217;s how you might localize a string in a view:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">ugettext</span> <span class="k">as</span> <span class="n">_</span>
+
+<span class="k">def</span> <span class="nf">my_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_superuser</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;Oh hi, staff!&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;You are not staff!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Interpolation is done through normal Python string formatting:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;Oh, hi, {user}&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">username</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Context information can be supplied by using the
+<a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.pgettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">pgettext()</span></tt></a> function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">msg</span> <span class="o">=</span> <span class="n">pgettext</span><span class="p">(</span><span class="s">&#39;the context&#39;</span><span class="p">,</span> <span class="s">&#39;Search&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Translator comments are normal one-line Python comments:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Translators: A message to users.</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s">u&#39;Oh, hi there!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you need to use plurals, import the
+<a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ungettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ungettext()</span></tt></a> function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">ungettext</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="n">ungettext</span><span class="p">(</span><span class="s">&#39;Found {0} result&#39;</span><span class="p">,</span> <span class="s">&#39;Found {0} results&#39;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="lazily-translated-strings">
+<h3>Lazily Translated Strings<a class="headerlink" href="#lazily-translated-strings" title="Permalink zu dieser Überschrift">¶</a></h3>
+<p>You can use <a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ugettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ugettext()</span></tt></a> or
+<a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ungettext" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ungettext()</span></tt></a> only in views or functions called
+from views. If the function will be evaluated when the module is loaded, then
+the string may end up in English or the locale of the last request!</p>
+<p>Examples include strings in module-level code, arguments to functions in class
+definitions, strings in functions called from outside the context of a view. To
+internationalize these strings, you need to use the <tt class="docutils literal"><span class="pre">_lazy</span></tt> versions of the
+above methods, <a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ugettext_lazy" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ugettext_lazy()</span></tt></a> and
+<a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.ungettext_lazy" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">ungettext_lazy()</span></tt></a>. The result doesn&#8217;t get
+translated until it is evaluated as a string, for example by being output or
+passed to <tt class="docutils literal"><span class="pre">unicode()</span></tt>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.utils.translation</span> <span class="kn">import</span> <span class="n">ugettext_lazy</span> <span class="k">as</span> <span class="n">_</span>
+
+<span class="k">class</span> <span class="nc">UserProfileForm</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">ModelForm</span><span class="p">):</span>
+    <span class="n">first_name</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s">&#39;First name&#39;</span><span class="p">),</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">last_name</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s">&#39;Last name&#39;</span><span class="p">),</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In case you want to provide context to a lazily-evaluated gettext string, you
+will need to use <a class="reference external" href="http://django.readthedocs.org/en/latest/ref/utils.html#django.utils.translation.pgettext_lazy" title="(in Django v1.9)"><tt class="xref py py-func docutils literal"><span class="pre">pgettext_lazy()</span></tt></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="administrative-tasks">
+<h1>Administrative Tasks<a class="headerlink" href="#administrative-tasks" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="updating-localization-files">
+<h2>Updating Localization Files<a class="headerlink" href="#updating-localization-files" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>To update the translation source files (eg if you changed or added translatable
+strings in the templates or Python code) you should run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">manage.py</span>
+<span class="pre">makemessages</span> <span class="pre">-l</span> <span class="pre">&lt;language&gt;</span></tt> in the <tt class="docutils literal"><span class="pre">readthedocs/</span></tt> directory (substitute
+<tt class="docutils literal"><span class="pre">&lt;language&gt;</span></tt> with a valid language code).</p>
+<p>The updated files can now be localized in a <a class="reference external" href="https://en.wikipedia.org/wiki/Category:Software-localization_tools">PO editor</a> or
+crowd-sourced online translation tool.</p>
+</div>
+<div class="section" id="compiling-to-mo">
+<span id="i18n-compiling"></span><h2>Compiling to MO<a class="headerlink" href="#compiling-to-mo" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Gettext doesn&#8217;t parse any text files, it reads a binary format for faster
+performance. To compile the latest PO files in the repository, Django provides
+the <tt class="docutils literal"><span class="pre">compilemessages</span></tt> management command. For example, to compile all the
+available localizations, just run:</p>
+<div class="highlight-python"><div class="highlight"><pre>$ python manage.py compilemessages -a
+</pre></div>
+</div>
+<p>You will need to do this every time you want to push updated translations to
+the live site.</p>
+<p>Also, note that it&#8217;s not a good idea to track MO files in version control,
+since they would need to be updated at the same pace PO files are updated, so
+it&#8217;s silly and not worth it. They are ignored by <tt class="docutils literal"><span class="pre">.gitignore</span></tt>, but please
+make sure you don&#8217;t forcibly add them to the repository.</p>
+</div>
+<div class="section" id="transifex-integration">
+<h2>Transifex Integration<a class="headerlink" href="#transifex-integration" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>To push updated translation source files to Transifex, run <tt class="docutils literal"><span class="pre">tx</span>
+<span class="pre">push</span> <span class="pre">-s</span></tt> (for English) or <tt class="docutils literal"><span class="pre">tx</span> <span class="pre">push</span> <span class="pre">-t</span> <span class="pre">&lt;language&gt;</span></tt> (for non-English).</p>
+<p>To pull changes from Transifex, run <tt class="docutils literal"><span class="pre">tx</span> <span class="pre">pull</span> <span class="pre">-a</span></tt>. Note that Transifex does
+not compile the translation files, so you have to do this after the pull (see
+the <a class="reference internal" href="#i18n-compiling"><em>Compiling to MO</em></a> section).</p>
+<p>For more information about the <tt class="docutils literal"><span class="pre">tx</span></tt> command, read the <a class="reference external" href="http://help.transifex.com/features/client/">Transifex client&#8217;s
+help pages</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="Read the Docs Public API"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="settings.html" class="btn btn-neutral" title="Interesting Settings"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010, Eric Holscher, Charlie Leifer, Bobby Grace.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

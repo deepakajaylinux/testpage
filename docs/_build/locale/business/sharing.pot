@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../business/sharing.rst:2
+# be38063004014514b8fc1f20a0f8d55f
+msgid "Sharing"
+msgstr ""
+
+#: ../../business/sharing.rst:4
+# e53b4186a1ab4942a80cf7157b888a8e
+msgid "This feature only exists on our Business offering at `readthedocs.com <https://readthedocs.com/>`_."
+msgstr ""
+
+#: ../../business/sharing.rst:6
+# 61736bbe0ac542399061c53ecbec71e9
+msgid "You can share your project with users outside of your company. This works by sending them a link, which will allow them to view a specific project inside your company."
+msgstr ""
+
+#: ../../business/sharing.rst:11
+# 99d4850d83ee4786ae0e2a28c8172a82
+msgid "Enabling"
+msgstr ""
+
+#: ../../business/sharing.rst:13
+# f42c0a95ba5c44d7a18c2dfdccc5035c
+msgid "Go into your *Project Admin* page and to the *Sharing* link."
+msgstr ""
+
+#: ../../business/sharing.rst:14
+# e172d37187a84b5b9867ffdf16605ab1
+msgid "Under the *Add Token* heading, add a *Description* so you remember who you're sharing it with."
+msgstr ""
+
+#: ../../business/sharing.rst:15
+# bd6cb007d48d419bba4002e17aeb2127
+msgid "Click *Share* to create."
+msgstr ""
+
+#: ../../business/sharing.rst:16
+# 34b8408e7e034cdbaba18a9edc30119f
+msgid "Copy the link that is generated, and give that to the person who you want to give access."
+msgstr ""
+
+#: ../../business/sharing.rst:18
+# 8e79a0f5fca44118bc220b8e939cb4c5
+msgid "You can always revoke access in the same panel."
+msgstr ""
+
+#: ../../business/sharing.rst:21
+# d2cc661059b74cfd892e3f2cfa004d54
+msgid "Effects"
+msgstr ""
+
+#: ../../business/sharing.rst:23
+# 780a7ec162674547b1c96fffeb8b76af
+msgid "Once the person you send the link to clicks the link, they will have access to view your project. It will only work for the specific browser that they click the link from."
+msgstr ""
+
+#: ../../business/sharing.rst:27
+# 72ff270a7fb74699ba47fede324c0811
+msgid "They will be able to share this token with other people, so only share with people you trust. We only let sharing links be activated **five** times to prevent abuse."
+msgstr ""
+

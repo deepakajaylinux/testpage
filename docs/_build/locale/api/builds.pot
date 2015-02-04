@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../api/builds.rst:2
+# 5f7e3d609b074c159fe90c85922b7fed
+msgid ":mod:`builds`"
+msgstr ""
+
+#: ../../api/builds.rst:5
+# 6b39722c01864adf80947b6b1e2a39f0
+msgid ":mod:`builds.admin`"
+msgstr ""
+
+#: ../../api/builds.rst:10
+# f3c7d394981f4024982096fe5be56f9a
+msgid ":mod:`builds.models`"
+msgstr ""
+
+#: ../../api/builds.rst:15
+# f21e4ba3e8234afd81efee9fa1817799
+msgid ":mod:`builds.urls`"
+msgstr ""
+
+#: ../../api/builds.rst:20
+# e34562db64c4495290bf4a6286e72b0a
+msgid ":mod:`builds.views`"
+msgstr ""
+

@@ -1,0 +1,65 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../custom_installs/customization.rst:2
+msgid "Customizing your install"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:4
+msgid ""
+"Read the Docs has a lot of :doc:`/settings` that help customize your "
+"install. This document will outline some of the more useful ways that these "
+"can be combined."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:8
+msgid "Have a local settings file"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:10
+msgid ""
+"If you put a file named ``local_settings.py`` in the "
+"``readthedocs/settings`` directory, it will override settings available in "
+"the base install."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:13
+msgid "Adding your own title to pages"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:15
+msgid ""
+"This requires 2 parts of setup. First, you need to add a custom "
+":setting:`TEMPLATE_DIRS` setting that points at your template overrides. "
+"Then, in those template overrides you have to insert your logo where the "
+"normal RTD logo goes."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:17
+msgid "This works for any setting you wish to change."
+msgstr ""
+
+#: ../../custom_installs/customization.rst:19
+msgid "Example ``local_settings.py``::"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:31
+msgid "Example ``base.html`` in your template overrides::"
+msgstr ""
+
+#: ../../custom_installs/customization.rst:38
+msgid ""
+"You can of course override any block in the template. If there is something "
+"that you would like to be able to customize, but isn't currently in a block,"
+" please `submit an issue`_."
+msgstr ""

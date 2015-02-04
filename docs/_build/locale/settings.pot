@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../settings.rst:2
+# f0d16d0b57344479abceb8a2cda652af
+msgid "Interesting Settings"
+msgstr ""
+
+#: ../../settings.rst:5
+# 489b7daa255b48459b534af6f3afbb38
+msgid "SLUMBER_USERNAME"
+msgstr ""
+
+#: ../../settings.rst:7
+#: ../../settings.rst:14
+# 5eb13b4e1a9140b1ab4ef0dd711885c8
+# 627b5a424cda49e6838b4b22c2a7df20
+msgid "Default: `test`"
+msgstr ""
+
+#: ../../settings.rst:9
+# 528e8c4395744aeb8bd11be02acfa8d7
+msgid "The username to use when connecting to the Read the Docs API. Used for hitting the API while building the docs."
+msgstr ""
+
+#: ../../settings.rst:12
+# 8de16c6c9bd642b4aa26c9eb5fc1a87b
+msgid "SLUMBER_PASSWORD"
+msgstr ""
+
+#: ../../settings.rst:16
+# cf5bd4ac03e34d60811329693b2cc4d4
+msgid "The password to use when connecting to the Read the Docs API. Used for hitting the API while building the docs."
+msgstr ""
+
+#: ../../settings.rst:19
+# eafeec0a047e4ab59a249ab5a6eecc08
+msgid "USE_SUBDOMAIN"
+msgstr ""
+
+#: ../../settings.rst:21
+#: ../../settings.rst:52
+#: ../../settings.rst:67
+# 2f8a826adcf44afe8976ebf4acb0a20f
+# 0021a32ee0d746128e96afa30bcedde1
+# a0d3f7afc4464baf8ef3a8b4e10f903c
+msgid "Default: `False`"
+msgstr ""
+
+#: ../../settings.rst:23
+# 2c68a739c52b4ea998f4b6d9a66c6b7e
+msgid "Whether to use subdomains in URLs on the site, or the Django-served content. When used in production, this should be ``True``, as Nginx will serve this content. During development and other possible deployments, this might be ``False``."
+msgstr ""
+
+#: ../../settings.rst:28
+# a31c3c9f98804f03bdd1d8d14166ace4
+msgid "PRODUCTION_DOMAIN"
+msgstr ""
+
+#: ../../settings.rst:30
+# b654247942104d4baa1591f5b25dc879
+msgid "Default: `readthedocs.org`"
+msgstr ""
+
+#: ../../settings.rst:32
+# dfbe61981b0c42158bf6654f55338a03
+msgid "This is the domain that gets linked to throughout the site when used in production. It depends on `USE_SUBDOMAIN`, otherwise it isn't used."
+msgstr ""
+
+#: ../../settings.rst:36
+# b18362b7a5284a7ba743332475124f06
+msgid "MULTIPLE_APP_SERVERS"
+msgstr ""
+
+#: ../../settings.rst:38
+# e18b9a333b6044cf855fa6a88a0fdcb6
+msgid "Default: `undefined`"
+msgstr ""
+
+#: ../../settings.rst:40
+# d3e2bd584c864510b9eb5658dcfac1af
+msgid "This is a list of application servers that built documentation is copied to. This allows you to run an independent build server, and then have it rsync your built documentation across multiple front end documentation/app servers."
+msgstr ""
+
+#: ../../settings.rst:43
+# 894cc5e478e84de0bba2f2f1ba7b2224
+msgid "DEFAULT_PRIVACY_LEVEL"
+msgstr ""
+
+#: ../../settings.rst:45
+# 746d82ebc7204d3b82a908115ade9c1c
+msgid "Default: `public`"
+msgstr ""
+
+#: ../../settings.rst:47
+# bddf7c353975488a9d382c3bd7544e9a
+msgid "What privacy projects default to having. Generally set to `public`. Also acts as a proxy setting for blocking certain historically insecure options, like serving generated artifacts directly from the media server."
+msgstr ""
+
+#: ../../settings.rst:50
+# 4499536fe82e4381bb6780a4fa7be043
+msgid "INDEX_ONLY_LATEST"
+msgstr ""
+
+#: ../../settings.rst:54
+# fae2aa7427f94358b36c28c1ffb38973
+msgid "In search, only index the `latest` version of a Project."
+msgstr ""
+
+#: ../../settings.rst:57
+# 49d192acf946461e8c3f3507dde03b0d
+msgid "DOCUMENT_PYQUERY_PATH"
+msgstr ""
+
+#: ../../settings.rst:59
+# de3ef31bd86a4236b0cf67652e680fbc
+msgid "Default: `div.document`"
+msgstr ""
+
+#: ../../settings.rst:61
+# 6b50ce9926744434800394604bbf0ac4
+msgid "The Pyquery path to an HTML element that is the root of your document. This is used for making sure we are only searching the main content of a document."
+msgstr ""
+
+#: ../../settings.rst:65
+# 0e278d871234418d904da9fc9584988d
+msgid "USE_PIP_INSTALL"
+msgstr ""
+
+#: ../../settings.rst:69
+# 538ef09a34764a9c8eeb378f148de032
+msgid "Whether to use `pip install .` or `python setup.py install` when installing packages into the Virtualenv. Default is to use `python setup.py install`."
+msgstr ""
+

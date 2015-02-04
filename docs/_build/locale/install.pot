@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install.rst:4
+# 07cba046549d4bed9490733e64f29278
+msgid "Installation"
+msgstr ""
+
+#: ../../install.rst:6
+# 4c1d9f4d9bf6477a92accf290bcd6f6d
+msgid "Here is a step by step plan on how to install Read the Docs. It will get you to a point of having a local running instance."
+msgstr ""
+
+#: ../../install.rst:9
+# c9f0082cdb8340fbaf71cdd8a9925633
+msgid "First, obtain Python_ and virtualenv_ if you do not already have them. Using a virtual environment will make the installation easier, and will help to avoid clutter in your system-wide libraries. You will also need Git_ in order to clone the repository."
+msgstr ""
+
+#: ../../install.rst:19
+# 18ab4673c7e6425f94cc3009e9360180
+msgid "Once you have these, create a virtual environment somewhere on your disk, then activate it::"
+msgstr ""
+
+#: ../../install.rst:27
+# 26fff77ed4244e35b5e920de0d8a37ce
+msgid "You will need to verify that your pip version is higher than 1.5 you can do this as such::"
+msgstr ""
+
+#: ../../install.rst:31
+# 8b3243f28b564daa8aa21cf1390b088c
+msgid "If this is not the case please update your pip version before continuing::"
+msgstr ""
+
+#: ../../install.rst:35
+# 28b44adb5e09445a824509963254faed
+msgid "Create a folder in here, and clone the repository::"
+msgstr ""
+
+#: ../../install.rst:41
+# e49374d89bb84687b8b5ac7eee5e81c7
+msgid "Next, install the dependencies using ``pip`` (included with virtualenv_)::"
+msgstr ""
+
+#: ../../install.rst:48
+# 905b11eeaed048bba51a5d38ab5549a1
+msgid "If you are having trouble on OS X Mavericks (or possibly other versions of OS X) with building ``lxml``, you probably might need to use Homebrew_ to ``brew install libxml2``, and invoke the install with::"
+msgstr ""
+
+#: ../../install.rst:58
+# d75b4fb132e14a66a25eaf52e2688449
+msgid "Linux users may find they need to install a few additional packages in order to successfully execute ``pip-install -r pip_requirements.txt``. For example, a clean install of Ubuntu 14.04 LTS will require the following packages::"
+msgstr ""
+
+#: ../../install.rst:67
+# 8216e47f1e20469590cac9cf6ae8ecd6
+msgid "Users of other Linux distributions may need to install the equivalent packages, depending on their system configuration."
+msgstr ""
+
+#: ../../install.rst:72
+# b3e408fe8b0d403f8e904b4d8a126fbf
+msgid "This may take a while, so go grab a beverage. When it's done, build your database::"
+msgstr ""
+
+#: ../../install.rst:78
+# f32a6c031b4741bd95ba80f0acfe339f
+msgid "This will prompt you to create a superuser account for Django. Do that. Then::"
+msgstr ""
+
+#: ../../install.rst:82
+# ceebd319016345299cad50e2f2e6ae2c
+msgid "Go ahead and load in a couple users and a test projects::"
+msgstr ""
+
+#: ../../install.rst:88
+# f9844e41cb77443eb8963e9b3f014f5f
+msgid "If you do not opt to install test data, you'll need to create an account for API use and set ``SLUMBER_USERNAME`` and ``SLUMBER_PASSWORD`` in order for everything to work properly."
+msgstr ""
+
+#: ../../install.rst:92
+# 9b9458e55de549439d074b243e2bdfee
+msgid "Finally, you're ready to start the webserver::"
+msgstr ""
+
+#: ../../install.rst:96
+# 50412afddcc243fdacf2bfc4ea735f28
+msgid "Visit http://127.0.0.1:8000/ in your browser to see how it looks; you can use the admin interface via http://127.0.0.1:8000/admin (logging in with the superuser account you just created)."
+msgstr ""
+
+#: ../../install.rst:100
+# 449e6ef3fba740c9950549d5fb9fb5f0
+msgid "While the webserver is running, you can build documentation for the latest version of a project called 'pip' with the ``update_repos`` command.  You can replace 'pip' with the name of any added project::"
+msgstr ""
+
+#: ../../install.rst:107
+# 382d9e4c7d31419ab423849d6eccf011
+msgid "What's available"
+msgstr ""
+
+#: ../../install.rst:109
+# ee891ca10672484c870047bbeebab0d6
+msgid "After registering with the site (or creating yourself a superuser account), you will be able to log in and view the `dashboard <http://readthedocs.org/dashboard/>`_."
+msgstr ""
+
+#: ../../install.rst:112
+# ff02cc5c7c654703878e02023a8e7a71
+msgid "From the dashboard you can import your existing docs provided that they are in a git or mercurial repo."
+msgstr ""
+
+#: ../../install.rst:117
+# 92bdbf91a75a4901bebf0774b7ef9548
+msgid "Creating new Docs"
+msgstr ""
+
+#: ../../install.rst:119
+# 0e8d402e8af44a1d9fcded68bdefd67d
+msgid "One of the goals of `readthedocs.org <http://readthedocs.org>`_ is to make it easy for any open source developer to get high quality hosted docs with great visibility!  We provide a simple editor and two sample pages whenever a new project is created.  From there its up to you to fill in the gaps - we'll build the docs, give you access to history on every revision of your files, and we plan on adding more features in the weeks and months to come."
+msgstr ""
+
+#: ../../install.rst:128
+# fa467cf6effd48dcbc7e423b4070f38c
+msgid "Importing existing docs"
+msgstr ""
+
+#: ../../install.rst:130
+# 38d5849b748d4dc6aad5a125670cf7d6
+msgid "The other side of `readthedocs.org <http://readthedocs.org>`_ is hosting the docs you've already built.  Simply provide us with the clone url to your repo, we'll pull your code, extract your docs, and build them!  We make available a post-commit webhook that can be configured to update the docs on our site whenever you commit to your repo, effectively letting you 'set it and forget it'."
+msgstr ""
+

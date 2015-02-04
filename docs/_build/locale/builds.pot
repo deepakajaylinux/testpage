@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../builds.rst:2
+# eb6ac28d81bd464e9a09d632ffb0c15f
+msgid "Build Process"
+msgstr ""
+
+#: ../../builds.rst:4
+# e0212cee8fe74cf5b7d49b54854cf024
+msgid "Files: `tasks.py`_ - `doc_builder/`_"
+msgstr ""
+
+#: ../../builds.rst:10
+# f249de54cc1c4f458d6f1a8190ea73c4
+msgid "How we build documentation"
+msgstr ""
+
+#: ../../builds.rst:12
+# 098fdf218c944f69bb88c7fe5a7368a6
+msgid "When we import your documentation, we look at two things first: your *Repository URL* and the *Documentation Type*. We will clone your repository, and then build your documentation using the *Documentation Type* specified."
+msgstr ""
+
+#: ../../builds.rst:17
+# 85c4f9dcb5764eaca6347546c874c53a
+msgid "Sphinx"
+msgstr ""
+
+#: ../../builds.rst:19
+# c55623462fd348fc8c3ed39c27925710
+msgid "When you choose *Sphinx* as your *Documentation Type*, we will first look for a ``conf.py`` file in your repository. If we don't find one, we will generate one for you. We will look inside a ``doc`` or ``docs`` directory first, and then default to the top-level of your documentation."
+msgstr ""
+
+#: ../../builds.rst:26
+# 5002c72f88a0421f9518daaa868c42e7
+msgid "Then Sphinx will build any files with an ``.rst`` extension. If you have a ``README.rst``, it will be transformed into an ``index.rst`` automatically."
+msgstr ""
+
+#: ../../builds.rst:31
+# 17decff759d54addbe2e3fa4bef97ed4
+msgid "Mkdocs"
+msgstr ""
+
+#: ../../builds.rst:33
+# 63abb0918b8342f69cef9f98767a360b
+msgid "When you choose *Mkdocs* as your *Documentation Type*, we will first look for a ``mkdocs.yml`` file in your repository. If we don't find one, we will generate one for you. We will look inside a ``doc`` or ``docs`` directory first, and then default to the top-level of your documentation."
+msgstr ""
+
+#: ../../builds.rst:40
+# a44bfb3c068146f2b9cf36a85dd39455
+msgid "Then Sphinx will build any files with an ``.md`` extension. If you have a ``README.md``, it will be transformed into an ``index.md`` automatically."
+msgstr ""
+
+#: ../../builds.rst:45
+# eb1d219d1c324666bf040ec81016078c
+msgid "Understanding what's going on"
+msgstr ""
+
+#: ../../builds.rst:47
+# 55c4633788d84f708382ba7a48bb1358
+msgid "Understanding how Read the Docs builds your project will help you with debugging the problems you have with the site. It should also allow you to take advantage of certain things that happen during the build process."
+msgstr ""
+
+#: ../../builds.rst:49
+# 758423aba30c4f9ca78a5527b950b804
+msgid "The first step of the process is that we check out your code from the repository you have given us. If the code is already checked out, we update the copy to the branch that you have specified in your projects configuration."
+msgstr ""
+
+#: ../../builds.rst:51
+# 604ddc5c7983412f9cbb623d612af7f3
+msgid "Then we build the proper backend code for the type of documentation you've selected."
+msgstr ""
+
+#: ../../builds.rst:53
+# 59caa63d70c34249983164f49831bdda
+msgid "If you have the *Use Virtualenv* option enabled, we will run ``setup.py install`` on your package, installing it into a virtual environment. You can also define additional packages to install with the *Requirements File* option."
+msgstr ""
+
+#: ../../builds.rst:55
+# 95edcc7eb5f7480b9387917e7e23fabf
+msgid "When we build your documentation, we run `sphinx-build -b html . _build/html`, where `html` would be replaced with the correct backend. We also create man pages and pdf's automatically based on your project."
+msgstr ""
+
+#: ../../builds.rst:57
+# d2106a2775a448ab8b999f69b3452681
+msgid "Then these files are copied across to our application servers from the build server. Once on the application servers, they are served from nginx."
+msgstr ""
+
+#: ../../builds.rst:59
+# 6776a67f1a744aadb5de578f47401244
+msgid "An example in code:"
+msgstr ""
+
+#: ../../builds.rst:73
+# 51ff2b4de25f4e939a1b21e8bbd178a4
+msgid "Builder Responsibility"
+msgstr ""
+
+#: ../../builds.rst:75
+# dfd355bcd51e4080b4126507883b0cd1
+msgid "Builders have a very specific job. They take the updated source code and generate the correct artifacts. The code lives in ``self.version.project.checkout_path(self.version.slug)``. The artifacts should end up in ``self.version.project.artifact_path(version=self.version.slug, type=self.type)`` Where ``type`` is the name of your builder. All files that end up in the artifact directory should be in their final form."
+msgstr ""
+
+#: ../../builds.rst:83
+# 1ecb10e5438b4b9aabe239467f0a4cbe
+msgid "Packages installed in the build environment"
+msgstr ""
+
+#: ../../builds.rst:85
+# f98e058f5dd7436cb69d899843b58f83
+msgid "The build server does have a select number of C libraries installed, because they are used across a wide array of python projects. We can't install every C library out there, but we try and support the major ones. We currently have the following libraries installed:"
+msgstr ""
+
+#: ../../builds.rst:87
+# dfa6c692d6834839b249a84221058aed
+msgid "Latex (texlive-full)"
+msgstr ""
+
+#: ../../builds.rst:88
+# c762ab08b37346c083233ff55ffcb733
+msgid "libevent (libevent-dev)"
+msgstr ""
+
+#: ../../builds.rst:89
+# 37e1adff1d0d47ab83860341cd96a488
+msgid "dvipng"
+msgstr ""
+
+#: ../../builds.rst:90
+# 31153bf34cca485d89ea651454ba412f
+msgid "graphviz"
+msgstr ""
+
+#: ../../builds.rst:91
+# f0094c225ced4687873959bd2b8d6359
+msgid "libxslt1.1"
+msgstr ""
+
+#: ../../builds.rst:92
+# 0f269f4ce4e94a73bb96381c872c0341
+msgid "libxml2-dev"
+msgstr ""
+
+#: ../../builds.rst:95
+# ecaaf3f39c03432f898544df66322b90
+msgid "Writing your own builder"
+msgstr ""
+
+#: ../../builds.rst:97
+# 6ddd986c1a5e44f68076bbd9599e657e
+msgid "Builds happen on a server using only the RTD Public API. There is no reason that you couldn't build your own independent builder that wrote into the RTD namespace. The only thing that is currently unsupported there is a saner way than uploading the processed files as a zip."
+msgstr ""
+
+#: ../../builds.rst:99
+# bc108b3e9f074c388d2dd7b8b1fc77de
+msgid "The documentation build system in RTD is made pluggable, so that you can build out your own backend. If you have a documentation format that isn't currently supported, you can add support by contributing a backend."
+msgstr ""
+
+#: ../../builds.rst:101
+# ce0031c93c4e41e8aebaa2dbe5682a40
+msgid "The :doc:`api/doc_builder` API explains the higher level parts of the API that you need to implement. A basic run goes something like this::"
+msgstr ""
+
+#: ../../builds.rst:112
+# 21d34ab7f46140928ead88cf5b451704
+msgid "Deleting a stale or broken build environment"
+msgstr ""
+
+#: ../../builds.rst:114
+# 210186f55a494cf9a0525bbf0c0936ea
+msgid "RTD doesn't expose this in the UI, but it is possible to remove the build directory of your project. If you want to remove a build environment for your project, hit http://readthedocs.org/wipe/<project_slug>/<version_slug>/. You must be logged in to do this."
+msgstr ""
+

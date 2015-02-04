@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../faq.rst:2
+# 67970e539070409080d7354ba7bd06a5
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: ../../faq.rst:5
+# 8adb81dac3c94f9db1ceb5648a12e11b
+msgid "My project isn't building with autodoc"
+msgstr ""
+
+#: ../../faq.rst:7
+# af1c7f61061440cf8b4e9d8cf0817163
+msgid "First, you should check out the Builds tab of your project. That records all of the build attempts that RTD has made to build your project. If you see ``ImportError`` messages for custom Python modules, you should enable the virtualenv feature in the Admin page of your project, which will install your project into a virtualenv, and allow you to specify a ``requirements.txt`` file for your project."
+msgstr ""
+
+#: ../../faq.rst:9
+# 2d7ee42f4b6c4393b53e673df9b31497
+msgid "If you are still seeing errors because of C library dependencies, please see the below section about that."
+msgstr ""
+
+#: ../../faq.rst:12
+# 3939cea41e7a4ab79a251692d24dbb79
+msgid "How do I change behavior for Read the Docs?"
+msgstr ""
+
+#: ../../faq.rst:14
+# a66c7e010d9341c49b35117298417487
+msgid "When RTD builds your project, it sets the `READTHEDOCS` environment variable to the string `True`. So within your Sphinx's ``conf.py`` file, you can vary the behavior based on this. For example::"
+msgstr ""
+
+#: ../../faq.rst:23
+# c456b8ba68064e79a56b222c2460f39e
+msgid "The ``READTHEDOCS`` variable is also available in the Sphinx build environment, and will be set to ``True`` when building on RTD::"
+msgstr ""
+
+#: ../../faq.rst:30
+# 95ce49a8896f4efa8743c123922771c6
+msgid "I get import errors on libraries that depend on C modules"
+msgstr ""
+
+#: ../../faq.rst:33
+# 9eb7eee2cd804f0599207bbb330dc89f
+msgid "Another use case for this is when you have a module with a C extension."
+msgstr ""
+
+#: ../../faq.rst:35
+# 5ec6d9a767cf431fb6808b3270d39d04
+msgid "This happens because our build system doesn't have the dependencies for building your project. This happens with things like libevent and mysql, and other python things that depend on C libraries. We can't support installing random C binaries on our system, so there is another way to fix these imports."
+msgstr ""
+
+#: ../../faq.rst:37
+# 73a83f655b5a418fb38b1ce4bf853789
+msgid "You can mock out the imports for these modules in your ``conf.py`` with the following snippet::"
+msgstr ""
+
+#: ../../faq.rst:50
+# 297ea1ef072d4ca4ba875ee95461ac02
+msgid "Of course, replacing `MOCK_MODULES` with the modules that you want to mock out."
+msgstr ""
+
+#: ../../faq.rst:52
+# 92e99e7be224426aad3115728758a975
+msgid "The library ``unittest.mock`` was introduced on python 3.3. On earlier versions install the ``mock`` library from PyPI with (ie ``pip install mock``) and replace the above import::"
+msgstr ""
+
+#: ../../faq.rst:58
+# 4519627d5d24417fb0d365727b235230
+msgid "`Client Error 401` when building documentation"
+msgstr ""
+
+#: ../../faq.rst:60
+# bc8d1e850a364ab4909193b325b5b984
+msgid "If you did not install the `test_data` fixture during the installation instructions, you will get the following error::"
+msgstr ""
+
+#: ../../faq.rst:65
+# 5edfc7e1ed884fc985c1195ca808b847
+msgid "This is because the API admin user does not exist, and so cannot authenticate. You can fix this by loading the test_data::"
+msgstr ""
+
+#: ../../faq.rst:70
+# 72e07c866fab46a98895d38df0ce96eb
+msgid "If you'd prefer not to install the test data, you'll need to provide a database account for the builder to use. You can provide these credentials by editing the following settings::"
+msgstr ""
+
+#: ../../faq.rst:78
+# 7ddc5a26346641d8b1d8484282610312
+msgid "Can I make search engines only see one version of my docs?"
+msgstr ""
+
+#: ../../faq.rst:80
+# f1bdff6ea97c4bf1848194755ccf2af7
+msgid "You can do this for Google at least with a canonical link tag. It should look like:"
+msgstr ""
+
+#: ../../faq.rst:98
+# 0cfa1791e9c6488b89216e97c17db3a3
+msgid "Deleting a stale or broken build environment"
+msgstr ""
+
+#: ../../faq.rst:100
+# 2e37f2db9b09446cbad6b3364e276f7a
+msgid "RTD doesn't expose this in the UI, but it is possible to remove the build directory of your project. If you want to remove a build environment for your project, hit http://readthedocs.org/wipe/<project_slug>/<version_slug>/. You must be logged in to do this."
+msgstr ""
+
+#: ../../faq.rst:104
+# a8881d7d8a204b0c82e4a2a1d4fe9721
+msgid "How do I host multiple projects on one CNAME?"
+msgstr ""
+
+#: ../../faq.rst:106
+# 5d5f2e10d7784e67b3b25dccf74415af
+msgid "We support the concept of Subprojects. If you add a subproject to a project, that documentation will also be served under the parent project's subdomain."
+msgstr ""
+
+#: ../../faq.rst:110
+# ba6447a6370b43a185edb226dbe98da2
+msgid "For example, Kombu is a subproject of celery, so you can access it on the `celery.readthedocs.org` domain:"
+msgstr ""
+
+#: ../../faq.rst:114
+# f8f38033c332471b8d356dd22d686ee0
+msgid "http://celery.readthedocs.org/projects/kombu/en/latest/"
+msgstr ""
+
+#: ../../faq.rst:116
+# 43f5094b42924ddf8cf776f9abc7a6c8
+msgid "This also works the same for CNAME's:"
+msgstr ""
+
+#: ../../faq.rst:118
+# 0b7673f5079a4a9b839dad6d0263a0c4
+msgid "http://docs.celeryproject.org/projects/kombu/en/latest/"
+msgstr ""
+
+#: ../../faq.rst:120
+# c3e6812a12d44dc1bb7f1a43756425f5
+msgid "You can add subprojects in the Admin section for your project."
+msgstr ""
+
+#: ../../faq.rst:123
+# c3b24f2cd1fc49e69fa2e83b115e4488
+msgid "Where do I need to put my docs for RTD to find it?"
+msgstr ""
+
+#: ../../faq.rst:125
+# 9efa4702885f4dffa2dd703b592dff5e
+msgid "Read the Docs will crawl your project looking for a ``conf.py``. Where it finds the ``conf.py``, it will run ``sphinx-build`` in that directory. So as long as you only have one set of sphinx documentation in your project, it should Just Work."
+msgstr ""
+
+#: ../../faq.rst:128
+# 1c59d9a4fa2e4cd5aeece53907d229c5
+msgid "I want to use the Blue/Default Sphinx theme"
+msgstr ""
+
+#: ../../faq.rst:130
+# e64b97baf17e4063862270de9db79a88
+msgid "We think that our theme is badass, and better than the default for many reasons. Some people don't like change though :), so there is a hack that will let you keep using the default theme. If you set the ``html_style`` variable in your ``conf.py``, it should default to using the default theme. The value of this doesn't matter, and can be set to ``/default.css`` for default behavior."
+msgstr ""
+
+#: ../../faq.rst:133
+# 4e1e91dc39ff40e0bb16b3dfa6d55aea
+msgid "I want to use the Read the Docs theme locally"
+msgstr ""
+
+#: ../../faq.rst:135
+# de385d3f381e4bc68c021902d6c2f111
+msgid "There is a repository for that: https://github.com/snide/sphinx_rtd_theme. Simply follow the instructions in the README."
+msgstr ""
+
+#: ../../faq.rst:139
+# 6eaae59dea8046f6be014d96d2c076c7
+msgid "Image scaling doesn't work in my documentation"
+msgstr ""
+
+#: ../../faq.rst:141
+# 9d2a923ef2764e41ae0b7c502e2d8b2b
+msgid "Image scaling in docutils depends on PIL. PIL is installed in the system that RTD runs on. However, if you are using the virtualenv building option, you will likely need to include PIL in your requirements for your project."
+msgstr ""
+
+#: ../../faq.rst:144
+# 8aa351916873404ea2a3594afce574ac
+msgid "I want comments in my docs"
+msgstr ""
+
+#: ../../faq.rst:146
+# 303620c2845644dd9c6c94cfab7332e7
+msgid "RTD doesn't have explicit support for this. That said, a tool like `Disqus`_ can be used for this purpose on RTD."
+msgstr ""
+
+#: ../../faq.rst:151
+# 1c378adc32014eada02228a9321f2569
+msgid "How do I support multiple languages of documentation?"
+msgstr ""
+
+#: ../../faq.rst:153
+# 4769cdea4b1f400ea3cd896ca7a94595
+msgid "See the section on :ref:`Localization of Documentation`."
+msgstr ""
+
+#: ../../faq.rst:156
+# fbe6567835b74e6886e86f24d2aaa062
+msgid "Do I need to be whitelisted?"
+msgstr ""
+
+#: ../../faq.rst:158
+# ca72adcbc88f4682a2b5a0ea6aad247c
+msgid "No. Whitelisting has been removed as a concept in Read the Docs. You should have access to all of the features already."
+msgstr ""
+
+#: ../../faq.rst:161
+# 903a505c928c408a85b9eb5595bdda5f
+msgid "Does Read The Docs work well with \"legible\" docstrings?"
+msgstr ""
+
+#: ../../faq.rst:163
+# 4e2bd43ee6cf4d9c99d4390206742e41
+msgid "Yes. One criticism of Sphinx is that its annotated docstrings are too dense and difficult for humans to read. In response, many projects have adopted customized docstring styles that are simultaneously informative and legible. The `NumPy <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`_ and `Google <http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone=Comments#Comments>`_ styles are two popular docstring formats.  Fortunately, the default Read The Docs theme handles both formats just fine, provided your ``conf.py`` specifies an appropriate Sphinx extension that knows how to convert your customized docstrings.  Two such extensions are `numpydoc <https://github.com/numpy/numpydoc>`_ and `napoleon <http://sphinxcontrib-napoleon.readthedocs.org>`_. Only ``napoleon`` is able to handle both docstring formats. Its default output more closely matches the format of standard Sphinx annotations, and as a result, it tends to look a bit better with the default theme."
+msgstr ""
+

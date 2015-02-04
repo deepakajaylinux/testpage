@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010, Eric Holscher, Charlie Leifer, Bobby Grace
+# This file is distributed under the same license as the Read The Docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Read The Docs 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 11:40+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../webhooks.rst:2
+# 5b7e02475f7c4a79b33ac95be444543d
+msgid "Webhooks"
+msgstr ""
+
+#: ../../webhooks.rst:4
+# 0c984f0c1248448d800a376b0ad4ba7a
+msgid "Webhooks are pretty amazing, and help to turn the web into a push instead of pull platform. We have support for hitting a URL whenever you commit to your project and we will try and rebuild your docs. This only rebuilds them if something has changed, so it is cheap on the server side. As anyone who has worked with push knows, pushing a doc update to your repo and watching it get updated within seconds is an awesome feeling."
+msgstr ""
+
+#: ../../webhooks.rst:12
+# 139d4afa5dad485d99716638deb8e537
+msgid "Github"
+msgstr ""
+
+#: ../../webhooks.rst:14
+# a0329dade4db4d469a33cda34ff1d41d
+msgid "If your project is hosted on Github, you can easily add a hook that will rebuild your docs whenever you push updates:"
+msgstr ""
+
+#: ../../webhooks.rst:17
+# da8ca0ac48154ef890f72e954d37d4a9
+msgid "Go to the \"Settings\" page for your project"
+msgstr ""
+
+#: ../../webhooks.rst:18
+# 2cd4cfdfcbd446e9937e51cd16635a20
+msgid "Click \"Webhooks & Services\""
+msgstr ""
+
+#: ../../webhooks.rst:19
+# 2a5e5c5ee7664aaaa2a9c1ff9a6f969d
+msgid "In the \"Services\" section, click \"Add service\""
+msgstr ""
+
+#: ../../webhooks.rst:20
+# 48cb06560f394933a12e731ddf0c6eb1
+msgid "In the list of available services, click \"ReadTheDocs\""
+msgstr ""
+
+#: ../../webhooks.rst:21
+# e38b643a41924e2b886b55f1011db0bd
+msgid "Check \"Active\""
+msgstr ""
+
+#: ../../webhooks.rst:22
+# d9a3c0add85f4a3b8f63613985854d44
+msgid "Click \"Add service\""
+msgstr ""
+
+#: ../../webhooks.rst:25
+# 56b47c5f52ea4dd9a392eacfaaf5de18
+msgid "Bitbucket"
+msgstr ""
+
+#: ../../webhooks.rst:27
+# 06b76ab551b44e80815d0e9d40eb11f7
+msgid "If your project is hosted on Bitbucket, you can easily add a hook that will rebuild your docs whenever you push updates:"
+msgstr ""
+
+#: ../../webhooks.rst:30
+# b54e1a17f5834182adfca9c4fc35bed7
+msgid "Go to the \"admin\" page for your project"
+msgstr ""
+
+#: ../../webhooks.rst:31
+# 8ffab624955f4ef6a476cd5173eb1565
+msgid "Click \"Hooks\""
+msgstr ""
+
+#: ../../webhooks.rst:32
+# 856a600430db4fc3abd89a0f334551dd
+msgid "In the available service hooks, select \"Read the Docs\""
+msgstr ""
+
+#: ../../webhooks.rst:33
+# db4e2748857540b183b13b99cb8bc5b1
+msgid "Click \"Add hook\""
+msgstr ""
+
+#: ../../webhooks.rst:36
+# 852200330c964748bf8334f67884b5c8
+msgid "Others"
+msgstr ""
+
+#: ../../webhooks.rst:38
+# 35d41aabeb8f4b00b97f613525a51052
+msgid "Your ReadTheDocs project detail page has your post-commit hook on it; it will look something along the lines of ``http://readthedocs.org/build/<project_name>``. Regardless of which revision control system you use, you can just hit this URL to kick off a rebuild."
+msgstr ""
+
+#: ../../webhooks.rst:43
+# ee63dbb3fd2c408b98cc22dc3e4beca0
+msgid "You could make this part of a hook using Git_, Subversion_, Mercurial_, or Bazaar_, perhaps through a simple script that accesses the build URL using ``wget`` or ``curl``."
+msgstr ""
+
