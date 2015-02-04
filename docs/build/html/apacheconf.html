@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ApacheConf &mdash; testpage 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="testpage 1.1 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">testpage 1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="apacheconf">
+<h1>ApacheConf<a class="headerlink" href="#apacheconf" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>This module assists in managing and installing the Apache configuration. It specifies the configuration of your environment. It is well-to-do in ubuntu and as well as in Cent OS.</p>
+</div>
+<div class="section" id="help-command">
+<h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
+<p>The help command describes about the purpose and the commands available under this modules. It also explains the command to install the particular module.
+It lists out the alternative parameters that can be used for declaration. The command used for declaring help is shown as below:</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra apacheconf <span class="nb">help</span>
+</pre></div>
+</div>
+<p>The screen shot as shown below, visually represent the usage of the help command under this module.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra apacheconf <span class="nb">help</span>
+******************************
+
+
+ This module lets you install a configuration <span class="k">for</span> Apache HTTP Server. The only commands available are this <span class="nb">help</span>
+<span class="nb"> </span>and install.
+
+ ApacheConf, apache-configure, apache-configuration, apache-conf, apacheconf
+
+       - install
+       Installs a configuration <span class="k">for</span> Apache
+       example: cleopatra apacheconf install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>It is easier to install this particular tool under Cleopatra by simply using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra apacheconf install
+</pre></div>
+</div>
+<p>After giving the command above, the tool will ask as</p>
+<div class="highlight-bash"><div class="highlight"><pre>Install Apache conf? <span class="o">(</span>Y/N<span class="o">)</span>
+</pre></div>
+</div>
+<p>if you give an input as Y, the module will get installed successfully.</p>
+<p>It will also throw some commands to specify the non-default values for LockFile, PidFile, Timeout, KeepAlive, MaxKeepAliveRequest, KeepAliveTimeout. If the user gives input as Y(Yes) it will automatically fix the default value. If the user gives input as N(No) then it will enquire about the values from the user.</p>
+<p>The screen shot given below explains visually about the steps and commands involves in installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra apacheconf install
+Install Apache Conf? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         Apache Conf!        *
+*******************************
+Set non-default value <span class="k">for</span> LockFile? Default is <span class="si">${</span><span class="nv">APACHE_LOCK_DIR</span><span class="si">}</span>/accept.lock <span class="o">(</span>Y/N<span class="o">)</span>
+
+Set non-default value <span class="k">for</span> PidFile? Default is <span class="si">${</span><span class="nv">APACHE_PID_FILE</span><span class="si">}</span> <span class="o">(</span>Y/N<span class="o">)</span>
+
+Set non-default value <span class="k">for</span> Timeout? Default is <span class="m">300</span> <span class="o">(</span>Y/N<span class="o">)</span>
+
+Set non-default value <span class="k">for</span> KeepAlive? Default is On <span class="o">(</span>Y/N<span class="o">)</span>
+
+Set non-default value <span class="k">for</span> MaxKeepAliveRequests? Default is <span class="m">100</span> <span class="o">(</span>Y/N<span class="o">)</span>
+
+Set non-default value <span class="k">for</span> KeepAliveTimeout? Default is <span class="m">5</span> <span class="o">(</span>Y/N<span class="o">)</span>
+
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+ApacheConf: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="55%" />
+<col width="14%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Required</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install</td>
+<td>Y(YES)</td>
+<td>It will install the
+apacheconf under
+Cleopatra</td>
+</tr>
+<tr class="row-odd"><td>Install Apache conf? (Y/N)</td>
+<td>Y(YES)</td>
+<td>If the user gives input as
+yes, it will install
+the module.</td>
+</tr>
+<tr class="row-even"><td>Install Apache conf? (Y/N)</td>
+<td>N(NO)</td>
+<td>If the user gives input
+as no, it will get
+exit.|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>The module assists the end user in installing and managing the configuration of Apache.</li>
+<li>While installing the Apache tool, the end user can design and manage the configuration as per their requirement using this module.</li>
+<li>If it founds the configuration already exists it will overwrite the existing one.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ApacheConf</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#help-command">Help command</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/apacheconf.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="index.html">testpage 1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, guhan.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# 
+# Translators:
+# vetriguhan <guhanyuvan282@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: kevellsdocumentations\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-04 18:15+0530\n"
+"PO-Revision-Date: 2015-02-04 15:51+0000\n"
+"Last-Translator: vetriguhan <guhanyuvan282@gmail.com>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/kevellsdocumentations/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 59ed748e9b52484a974924a686c6ee3a
+#: ../../source/apacheconf.rst:2
+msgid "ApacheConf"
+msgstr "ApacheConf"
+
+# 6e693732395549ae9b3d94b6109d7652
+#: ../../source/apacheconf.rst:5
+msgid "Synopsis"
+msgstr "Zusammenfassung"
+
+# 17f7aab0ae824c1a9ab1bf6f78710759
+#: ../../source/apacheconf.rst:7
+msgid ""
+"This module assists in managing and installing the Apache configuration. It "
+"specifies the configuration of your environment. It is well-to-do in ubuntu "
+"and as well as in Cent OS."
+msgstr "Dieses Modul hilft bei der Verwaltung und Installation des Apache-Konfiguration. Es gibt die Konfiguration Ihrer Umgebung. Es ist wohlhabend in Ubuntu und als auch in Cent OS."
+
+# 4452d875ecfb425eb33cb9f67aaef4dd
+#: ../../source/apacheconf.rst:11
+msgid "Help command"
+msgstr "Hilfe Befehl"
+
+# 6502e20970ae41c49414474335528eff
+#: ../../source/apacheconf.rst:13
+msgid ""
+"The help command describes about the purpose and the commands available "
+"under this modules. It also explains the command to install the particular "
+"module. It lists out the alternative parameters that can be used for "
+"declaration. The command used for declaring help is shown as below:"
+msgstr "Der Befehl help beschreibt über den Zweck und den im Rahmen dieser Module Befehle. Es erklärt auch den Befehl, um die bestimmte Module installiert. Es listet einige der Parameter, die für alternative Erklärung verwendet werden kann. Der Befehl zur Hilfe Erklärung verwendet wird, wie unten dargestellt:"
+
+# e0496207a4ae44babc8aae8425e7f802
+#: ../../source/apacheconf.rst:20
+msgid ""
+"The screen shot as shown below, visually represent the usage of the help "
+"command under this module."
+msgstr "Der Screenshot, wie unten dargestellt, visuell repräsentieren die Verwendung des Befehls-Hilfe unter diesem Modul."
+
+# 7299485b37ea4893a8d13855537b869d
+#: ../../source/apacheconf.rst:44
+msgid "Installation"
+msgstr "Installation"
+
+# 15500ed458c74b8ab6afebd3c89520b5
+#: ../../source/apacheconf.rst:46
+msgid ""
+"It is easier to install this particular tool under Cleopatra by simply using"
+" the command given below,"
+msgstr "Es ist einfacher, diese besondere Werkzeug unter Kleopatra, indem Sie einfach mit dem Befehl unten angegeben zu installieren,"
+
+# 4ed6d2f8a3a34dc08ad2833abe69a808
+#: ../../source/apacheconf.rst:52
+msgid "After giving the command above, the tool will ask as"
+msgstr "Nachdem er den Befehl oben, wird das Tool fragen, wie"
+
+# 72ab0be1837a4a3c8400b92d04c935a9
+#: ../../source/apacheconf.rst:58
+msgid "if you give an input as Y, the module will get installed successfully."
+msgstr "wenn Sie einen Eingang als Y geben, wird das Modul erfolgreich installiert."
+
+# 734225ea009f489fb232b60aef52da59
+#: ../../source/apacheconf.rst:60
+msgid ""
+"It will also throw some commands to specify the non-default values for "
+"LockFile, PidFile, Timeout, KeepAlive, MaxKeepAliveRequest, "
+"KeepAliveTimeout. If the user gives input as Y(Yes) it will automatically "
+"fix the default value. If the user gives input as N(No) then it will enquire"
+" about the values from the user."
+msgstr "Es wird auch werfen einige Befehle, um die Nicht-Standardwerte für LockFile, PidFile, Timeout, Keepalive, MaxKeepAliveRequest, Keepalivetimeout angeben. Wenn der Benutzer gibt Eingang als Y (Ja), wird es automatisch zu beheben Sie den Standardwert. Wenn der Benutzer gibt Eingabe N (Nein), dann wird es über die Werte von dem Benutzer zu fragen."
+
+# 9c8bc84b6f6946dc86bd93c194fac612
+#: ../../source/apacheconf.rst:62
+msgid ""
+"The screen shot given below explains visually about the steps and commands "
+"involves in installation."
+msgstr "Der Screenshot unten angegeben erklärt visuell über die Schritte und Befehle beinhaltet in der Installation."
+
+# 9f3650bf4da74cd380d94aab74ac9619
+#: ../../source/apacheconf.rst:105
+msgid "Parameters"
+msgstr "Parameter"
+
+# 61cbc37b728745c092eda58ae97e1126
+#: ../../source/apacheconf.rst:105
+msgid "Required"
+msgstr "erforderlich"
+
+# 61630e4a03f34da59426a0cb32a721a0
+#: ../../source/apacheconf.rst:105
+msgid "Comment"
+msgstr "Kommentar"
+
+# bc2066fbd59e4797bfb1cadd70759273
+#: ../../source/apacheconf.rst:107
+msgid "Install"
+msgstr "installieren"
+
+# 4a2cca59e910410d9c25414599cf47ef
+# 864b5abf69ff422faf01aef52c6bc73e
+#: ../../source/apacheconf.rst:107 ../../source/apacheconf.rst:111
+msgid "Y(YES)"
+msgstr "Y(YES)"
+
+# 6d365676b0b24eb8bcf01ea5db921196
+#: ../../source/apacheconf.rst:107
+msgid "It will install the apacheconf under Cleopatra"
+msgstr "Es wird die apacheconf unter Cleopatra installieren"
+
+# 1899d3258b3941f194e1dec65020914b
+# 8eca0611304f4bb881b439b530a85e0a
+#: ../../source/apacheconf.rst:111 ../../source/apacheconf.rst:116
+msgid "Install Apache conf? (Y/N)"
+msgstr "Installieren Sie Apache conf? (Y / N)"
+
+# 77c16b37342c4038a63ec7886877e195
+#: ../../source/apacheconf.rst:111
+msgid "If the user gives input as yes, it will install the module."
+msgstr "Wenn der Benutzer gibt Eingabe als Ja, wird das Modul zu installieren."
+
+# df415016c7cf4cac810b7cb221e00820
+#: ../../source/apacheconf.rst:116
+msgid "N(NO)"
+msgstr "N(NO)"
+
+# a067b5a9f4f04e4786f33c0b0b3caf13
+#: ../../source/apacheconf.rst:116
+msgid "If the user gives input as no, it will get exit.|"
+msgstr "Wenn der Benutzer gibt Eingang als nicht, wird es bekommen Ausfahrt. |"
+
+# 3a437c0e75e848d2ab33dc68f9629a7e
+#: ../../source/apacheconf.rst:123
+msgid "Benefits"
+msgstr "Vorteile"
+
+# 2aee09502e2144c787cfbb1e1ecef603
+#: ../../source/apacheconf.rst:125
+msgid ""
+"The module assists the end user in installing and managing the configuration"
+" of Apache."
+msgstr "Das Modul unterstützt den Anwender bei der Installation und Verwaltung der Konfiguration von Apache."
+
+# 8a4838d458464ed793505221b9b0ae08
+#: ../../source/apacheconf.rst:126
+msgid ""
+"While installing the Apache tool, the end user can design and manage the "
+"configuration as per their requirement using this module."
+msgstr "Bei der Installation des Apache-Tool kann der Anwender Design und die Konfiguration zu verwalten, wie pro ihre Anforderungen mit diesem Modul."
+
+# 1ad775179ecc40e09f3bc9c4f975e9a4
+#: ../../source/apacheconf.rst:127
+msgid ""
+"If it founds the configuration already exists it will overwrite the existing"
+" one."
+msgstr "Wenn es die Konfiguration gründet bereits existiert wird es die bestehende überschrieben."
