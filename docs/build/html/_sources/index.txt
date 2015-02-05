@@ -6,8 +6,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
     
-    behat
-    apacheconf
+   apacheconf    
+   behat
 
 Indices and tables
 ==================
