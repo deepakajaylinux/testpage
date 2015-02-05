@@ -1,9 +1,14 @@
-# 
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, guhan
+# This file is distributed under the same license as the testpage package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: testpage 1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-04 17:07+0530\n"
+"POT-Creation-Date: 2015-02-05 11:05+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,25 +17,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/index.rst:2
+# f10221618dc3406fad0f456c8205299b
 msgid "Welcome to testpage's documentation!"
 msgstr ""
 
 #: ../../source/index.rst:4
+# 48649b858dd6451b9f4f6798593ea01b
 msgid "Contents:"
 msgstr ""
 
 #: ../../source/index.rst:13
+# 6c84a15c18b9412b92285af0f6964b97
 msgid "Indices and tables"
 msgstr ""
 
 #: ../../source/index.rst:15
+# 451d29caea254fd4800afedfafd1479f
 msgid ":ref:`genindex`"
 msgstr ""
 
 #: ../../source/index.rst:16
+# 69e3543416f6454f88f3f720dd02da9b
 msgid ":ref:`modindex`"
 msgstr ""
 
 #: ../../source/index.rst:17
+# 669b03ce33af4dcf9ffc8920bb7d6863
 msgid ":ref:`search`"
 msgstr ""
+
