@@ -1,0 +1,632 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/awstats.rst:3
+msgid "Awstats"
+msgstr ""
+
+#: ../../source/awstats.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/awstats.rst:8
+msgid ""
+"This module promotes the installation of awstats, with the latest Version. "
+"AWStats is an open source Web analytics reporting tool, suitable for "
+"analyzing data from Internet services such as web, streaming media, mail, "
+"and FTP servers. AWStats parses and analyzes server log files, producing "
+"HTML reports."
+msgstr ""
+
+#: ../../source/awstats.rst:10
+msgid ""
+"AWStats (Advanced Web Statistics) is a powerful, full-featured web server "
+"logfile analyzer which shows you all your Web statistics including: "
+"visitors, pages, hits, hours, search engines, keywords used to find your "
+"site, broken links, robots and many more."
+msgstr ""
+
+#: ../../source/awstats.rst:12
+msgid ""
+"Let us see, the details of how to install this awstats, the features and "
+"requirements of awstats in upcoming topics."
+msgstr ""
+
+#: ../../source/awstats.rst:15
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/awstats.rst:17
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the AWStats module. It lists out the "
+"alternative parameters of AWStats module. It also describes the syntax for "
+"installing the AWStats module. The help command for AWStats module is shown "
+"as below."
+msgstr ""
+
+#: ../../source/awstats.rst:24
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under AWStats."
+msgstr ""
+
+#: ../../source/awstats.rst:28
+msgid "Installation"
+msgstr ""
+
+#: ../../source/awstats.rst:30
+msgid ""
+"The command used for installing the AWStats to the users machine is shown "
+"below."
+msgstr ""
+
+#: ../../source/awstats.rst:36
+msgid ""
+"After inputting the command above, the following process occurs as shown in "
+"the tabular format."
+msgstr ""
+
+#: ../../source/awstats.rst:43
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/awstats.rst:43
+msgid "Alternative parameters"
+msgstr ""
+
+#: ../../source/awstats.rst:43
+msgid "Options"
+msgstr ""
+
+#: ../../source/awstats.rst:43
+msgid "Comments"
+msgstr ""
+
+#: ../../source/awstats.rst:45 ../../source/awstats.rst:48
+msgid "Install AWStats? (Y/N)"
+msgstr ""
+
+#: ../../source/awstats.rst:45 ../../source/awstats.rst:48
+msgid "Instead of AWStats, we can use Awstats, awstats also."
+msgstr ""
+
+#: ../../source/awstats.rst:45
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/awstats.rst:45
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/awstats.rst:48
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/awstats.rst:48
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/awstats.rst:54
+msgid ""
+"If the user proceeds the installation, the following process are involved "
+"while installing:"
+msgstr ""
+
+#: ../../source/awstats.rst:56
+msgid "Reads the package lists."
+msgstr ""
+
+#: ../../source/awstats.rst:57
+msgid "Builds the dependency tree."
+msgstr ""
+
+#: ../../source/awstats.rst:58
+msgid "Installs the required extra packages"
+msgstr ""
+
+#: ../../source/awstats.rst:59
+msgid "Installs the suggested packages."
+msgstr ""
+
+#: ../../source/awstats.rst:60
+msgid "Installs the new packages."
+msgstr ""
+
+#: ../../source/awstats.rst:62
+msgid ""
+"Finally, the installation of Awstats gets completed successfully as depicted"
+" in the following screenshots:"
+msgstr ""
+
+#: ../../source/awstats.rst:65
+msgid "Features of Awstats"
+msgstr ""
+
+#: ../../source/awstats.rst:67
+msgid ""
+"A full log analysis enables AWStats to show you the following information:"
+msgstr ""
+
+#: ../../source/awstats.rst:70
+msgid "Number of VISITS and UNIQUE VISITORS"
+msgstr ""
+
+#: ../../source/awstats.rst:71
+msgid "Visits duration and last visits"
+msgstr ""
+
+#: ../../source/awstats.rst:72
+msgid "Authenticated users, and last authenticated visits"
+msgstr ""
+
+#: ../../source/awstats.rst:73
+msgid "Days of week and rush hours (pages, hits, KB for each day and hour)"
+msgstr ""
+
+#: ../../source/awstats.rst:74
+msgid "Domains/countries of hosts visitors (pages, hits, KB)"
+msgstr ""
+
+#: ../../source/awstats.rst:75
+msgid "Hosts list, last visits and unresolved IP addresses list"
+msgstr ""
+
+#: ../../source/awstats.rst:76
+msgid "Most viewed, entry and exit pages"
+msgstr ""
+
+#: ../../source/awstats.rst:77
+msgid "File types"
+msgstr ""
+
+#: ../../source/awstats.rst:78
+msgid "Web compression statistics (for mod_gzip or mod_deflate)"
+msgstr ""
+
+#: ../../source/awstats.rst:79
+msgid "Browsers used (pages, hits, kb for each browser)"
+msgstr ""
+
+#: ../../source/awstats.rst:80
+msgid "OS used (pages, hits, KB for each OS)"
+msgstr ""
+
+#: ../../source/awstats.rst:81
+msgid "Robot visits"
+msgstr ""
+
+#: ../../source/awstats.rst:82
+msgid "Worm attacks"
+msgstr ""
+
+#: ../../source/awstats.rst:83
+msgid "Download and continuation detection"
+msgstr ""
+
+#: ../../source/awstats.rst:84
+msgid "Search engines, keyphrases and keywords used to find your site"
+msgstr ""
+
+#: ../../source/awstats.rst:85
+msgid "HTTP errors (Page not found with last referer, etc,)"
+msgstr ""
+
+#: ../../source/awstats.rst:86
+msgid "Screen size report"
+msgstr ""
+
+#: ../../source/awstats.rst:87
+msgid "Number of times your site is \"added to favourites bookmarks\""
+msgstr ""
+
+#: ../../source/awstats.rst:88
+msgid ""
+"Ratio of Browsers that support: Java, Flash, RealG2 reader, Quicktime "
+"reader, WMA reader, PDF reader"
+msgstr ""
+
+#: ../../source/awstats.rst:90
+msgid "Cluster report for load balanced servers ratio"
+msgstr ""
+
+#: ../../source/awstats.rst:91
+msgid "Other personalized reports..."
+msgstr ""
+
+#: ../../source/awstats.rst:93
+msgid "It supports the following features as well:"
+msgstr ""
+
+#: ../../source/awstats.rst:95
+msgid "Can analyze all log formats"
+msgstr ""
+
+#: ../../source/awstats.rst:96
+msgid ""
+"Works from command line and from a browser as a CGI (with dynamic filters "
+"capabilities for some charts)"
+msgstr ""
+
+#: ../../source/awstats.rst:98
+msgid ""
+"Update of statistics can be made on demand from the web interface and not "
+"only from your scheduler"
+msgstr ""
+
+#: ../../source/awstats.rst:100
+msgid ""
+"Unlimited log file size, support split log files (load balancing system)"
+msgstr ""
+
+#: ../../source/awstats.rst:101
+msgid "Support 'nearly sorted' log files even for entry and exit pages"
+msgstr ""
+
+#: ../../source/awstats.rst:102
+msgid "Reverse DNS lookup before or during analysis, supports DNS cache files"
+msgstr ""
+
+#: ../../source/awstats.rst:103
+msgid "Country detection from IP location or domain name"
+msgstr ""
+
+#: ../../source/awstats.rst:104
+msgid "WhoIS links"
+msgstr ""
+
+#: ../../source/awstats.rst:105
+msgid "A lot of options/filters and plugins can be used"
+msgstr ""
+
+#: ../../source/awstats.rst:106
+msgid "Multi-named web sites supported (virtual servers)"
+msgstr ""
+
+#: ../../source/awstats.rst:107
+msgid "Cross Site Scripting Attacks protection"
+msgstr ""
+
+#: ../../source/awstats.rst:108
+msgid "Several languages"
+msgstr ""
+
+#: ../../source/awstats.rst:109
+msgid "No need of rare perl libraries"
+msgstr ""
+
+#: ../../source/awstats.rst:110
+msgid "Dynamic reports as CGI output"
+msgstr ""
+
+#: ../../source/awstats.rst:111
+msgid "Static reports in one or framed HTML or XHTML pages"
+msgstr ""
+
+#: ../../source/awstats.rst:112
+msgid "Experimental PDF export"
+msgstr ""
+
+#: ../../source/awstats.rst:113
+msgid "Look and colors can match your site design (CSS)"
+msgstr ""
+
+#: ../../source/awstats.rst:114
+msgid "Help and tooltips on HTML reported pages"
+msgstr ""
+
+#: ../../source/awstats.rst:115
+msgid "Easy to use (Just one configuration file to edit)"
+msgstr ""
+
+#: ../../source/awstats.rst:116
+msgid ""
+"Analysis database can be stored in XML format (for XSLT processing, ...)"
+msgstr ""
+
+#: ../../source/awstats.rst:117
+msgid "A Webmin module"
+msgstr ""
+
+#: ../../source/awstats.rst:118
+msgid "Free (GNU GPL) with sources (perl scripts)"
+msgstr ""
+
+#: ../../source/awstats.rst:119
+msgid "Available on all platforms"
+msgstr ""
+
+#: ../../source/awstats.rst:122
+msgid "Requirements of Awstats"
+msgstr ""
+
+#: ../../source/awstats.rst:124
+msgid "To use AWStats CGI script, you need the following requirements:"
+msgstr ""
+
+#: ../../source/awstats.rst:126
+msgid "Your server must log web access in a log file you can read."
+msgstr ""
+
+#: ../../source/awstats.rst:127
+msgid ""
+"To run awstats, from command line, your operating system must be able to run"
+" perl scripts (.pl files)."
+msgstr ""
+
+#: ../../source/awstats.rst:129
+msgid "Perl module \"Encode\" must be available."
+msgstr ""
+
+#: ../../source/awstats.rst:131
+msgid ""
+"To run awstats as a CGI (for real-time statistics), your web server must "
+"also be able to run such scripts."
+msgstr ""
+
+#: ../../source/awstats.rst:133
+msgid "If not, you can solve this by downloading last Perl version at:"
+msgstr ""
+
+#: ../../source/awstats.rst:135
+msgid "http://www.activestate.com/ActivePerl/ (Windows)"
+msgstr ""
+
+#: ../../source/awstats.rst:137
+msgid "http://www.perl.com/pub/language/info/software.html (All OS)"
+msgstr ""
+
+#: ../../source/awstats.rst:140 ../../source/awstats.rst:150
+msgid "Files"
+msgstr ""
+
+#: ../../source/awstats.rst:142
+msgid "The distribution of AWStats package includes the following files:"
+msgstr ""
+
+#: ../../source/awstats.rst:150
+msgid "Packages"
+msgstr ""
+
+#: ../../source/awstats.rst:152
+msgid "README.TXT"
+msgstr ""
+
+#: ../../source/awstats.rst:152
+msgid "This file"
+msgstr ""
+
+#: ../../source/awstats.rst:154
+msgid "docs/LICENSE"
+msgstr ""
+
+#: ../../source/awstats.rst:154
+msgid "GNU General Public Licence"
+msgstr ""
+
+#: ../../source/awstats.rst:156
+msgid "docs/*"
+msgstr ""
+
+#: ../../source/awstats.rst:156
+msgid "AWStats documentation (setup/usage...)"
+msgstr ""
+
+#: ../../source/awstats.rst:158
+msgid "wwwroot/cgi-bin/awstats.pl"
+msgstr ""
+
+#: ../../source/awstats.rst:158
+msgid "THE MAIN AWSTATS PROGRAM (CLI/CGI)"
+msgstr ""
+
+#: ../../source/awstats.rst:160
+msgid "wwwroot/cgi-bin/awredir.pl"
+msgstr ""
+
+#: ../../source/awstats.rst:160
+msgid "A tool to track exit clicks"
+msgstr ""
+
+#: ../../source/awstats.rst:162
+msgid "wwwroot/cgi-bin/awstats.model.conf"
+msgstr ""
+
+#: ../../source/awstats.rst:162
+msgid "An model configuration file"
+msgstr ""
+
+#: ../../source/awstats.rst:164
+msgid "wwwroot/cgi-bin/lang"
+msgstr ""
+
+#: ../../source/awstats.rst:164
+msgid "Directory with languages files"
+msgstr ""
+
+#: ../../source/awstats.rst:166
+msgid "wwwroot/cgi-bin/lib"
+msgstr ""
+
+#: ../../source/awstats.rst:166
+msgid "Directory with awstats reference info"
+msgstr ""
+
+#: ../../source/awstats.rst:168
+msgid "wwwroot/cgi-bin/plugins"
+msgstr ""
+
+#: ../../source/awstats.rst:168
+msgid "Directory with optional plugins"
+msgstr ""
+
+#: ../../source/awstats.rst:170
+msgid "wwwroot/icon/browser"
+msgstr ""
+
+#: ../../source/awstats.rst:170
+msgid "Directory with browsers icons"
+msgstr ""
+
+#: ../../source/awstats.rst:172
+msgid "wwwroot/icon/clock"
+msgstr ""
+
+#: ../../source/awstats.rst:172
+msgid "Directory with clock icons"
+msgstr ""
+
+#: ../../source/awstats.rst:174
+msgid "wwwroot/icon/cpu"
+msgstr ""
+
+#: ../../source/awstats.rst:174
+msgid "Directory with cpu icons"
+msgstr ""
+
+#: ../../source/awstats.rst:176
+msgid "wwwroot/icon/flags"
+msgstr ""
+
+#: ../../source/awstats.rst:176
+msgid "Directory with country flag icons"
+msgstr ""
+
+#: ../../source/awstats.rst:178
+msgid "wwwroot/icon/os"
+msgstr ""
+
+#: ../../source/awstats.rst:178
+msgid "Directory with OS icons"
+msgstr ""
+
+#: ../../source/awstats.rst:180
+msgid "wwwroot/icon/other"
+msgstr ""
+
+#: ../../source/awstats.rst:180
+msgid "Directory with all others icons"
+msgstr ""
+
+#: ../../source/awstats.rst:182
+msgid "wwwroot/classes"
+msgstr ""
+
+#: ../../source/awstats.rst:182
+msgid "Java applet for graphapplet plugin"
+msgstr ""
+
+#: ../../source/awstats.rst:184
+msgid "wwwroot/css"
+msgstr ""
+
+#: ../../source/awstats.rst:184
+msgid "Samples of CSS files"
+msgstr ""
+
+#: ../../source/awstats.rst:186
+msgid "wwwroot/js"
+msgstr ""
+
+#: ../../source/awstats.rst:186
+msgid "Javascript sources for \"Misc\" feature"
+msgstr ""
+
+#: ../../source/awstats.rst:188
+msgid "tools/*"
+msgstr ""
+
+#: ../../source/awstats.rst:188
+msgid "Other provided tools"
+msgstr ""
+
+#: ../../source/awstats.rst:190
+msgid "tools/webmin/awstats-x.x.wbm"
+msgstr ""
+
+#: ../../source/awstats.rst:190
+msgid "A Webmin module for AWStats"
+msgstr ""
+
+#: ../../source/awstats.rst:192
+msgid "tools/xslt/awstats61.xsd"
+msgstr ""
+
+#: ../../source/awstats.rst:192
+msgid "AWStats XML database schema descriptor"
+msgstr ""
+
+#: ../../source/awstats.rst:194
+msgid "tools/xslt/*"
+msgstr ""
+
+#: ../../source/awstats.rst:194
+msgid "Demo to manipulate AWStats XML database|"
+msgstr ""
+
+#: ../../source/awstats.rst:201
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/awstats.rst:204
+msgid ""
+"The parameters used in help and installation and un installation operations "
+"are not case sensitive which is an added advantage while compared  to "
+"others."
+msgstr ""
+
+#: ../../source/awstats.rst:205
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/awstats.rst:206
+msgid "This will module installs the Awstats in updated version."
+msgstr ""
+
+#: ../../source/awstats.rst:207
+msgid ""
+"If the module is already existing in the user machine it will display a "
+"message as it is already existing."
+msgstr ""
+
+#: ../../source/awstats.rst:208
+msgid ""
+"AWStats supports most major web server log file formats including Apache "
+"(NCSA combined/XLF/ELF log format or Common Log Format (CLF)), WebStar, IIS "
+"(W3C log format), and many other common web server log formats."
+msgstr ""
+
+#: ../../source/awstats.rst:210
+msgid ""
+"Developers can contribute to the AWStats project through SourceForge.net."
+msgstr ""
+
+#: ../../source/awstats.rst:211
+msgid ""
+"Written in Perl, AWStats can be deployed on almost any operating system"
+msgstr ""
+
+#: ../../source/awstats.rst:212
+msgid ""
+"It is a server administration tool, with packages available for most Linux "
+"distributions."
+msgstr ""
+
+#: ../../source/awstats.rst:213
+msgid ""
+"AWStats can be installed on a workstation, such as MS Windows, for local use"
+" in situations where log files can be downloaded from a remote server."
+msgstr ""

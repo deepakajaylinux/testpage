@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mysqlserver.rst:3
+# aa6e10e44f344479ad0d1aba6e69c467
+msgid "Mysqlserver"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:7
+# d1e16867749e4d1a934031caf2bbf159
+msgid "synopsis"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:9
+# 68b0b79234804dde9985753b87d61c91
+msgid "This module acts as a facilitator to install mysql-server with the updated version via apt-get. If the mysql-server already exists in your machine, it will checks for the availability of newly updated module."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:12
+# 073a805d13bb409cb42ccf948fe6ef2a
+msgid "The Help Command"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:14
+# 69cb5a7d93a14be78c4f374a76a3b940
+msgid "The help command guides the users regarding the methodology in usage and also about the actions that can be performed under this modules. It also describes the alternative names for mysql-server. The command for using help option is given below"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:20
+# a8893e8a42a54131aabf4ea3f8958c0e
+msgid "This command makes the users to be aware of its purpose and also about the command used for installing the mysql-server. The screenshot given below shows a pictorial presentation about the help command."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:51
+# b625a16152b44d969016a3935419f842
+msgid "Installation"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:53
+# 735457a4b7914c03a71ea3c98a4f9293
+msgid "The command used for installing the mysql server is given below."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:60
+# 2b98eeadda0b4938b0fbb60cba132df7
+msgid "During the installation, the following process occurs"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:62
+# 4deaedb0cb4045a692365a2a6d77f31c
+msgid "This module assists to install some tools for mysql server via apt-get."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:63
+# a762c08c5bf64ff8a7e32894a66921de
+msgid "Initially a root password will be set."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:64
+# 21927e956fc3499abf1988d0d299c21c
+msgid "While installing, it will look for a parameter of --mysql-root-pass."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:65
+# b6cca376be314df7aff333873b074edd
+msgid "If the --mysql-root-pass is not available, it will search the cleopatra config for the settings of mysql-default-root-pass."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:66
+# 6eab5629ae5b43feb382b0f4df3b7cf0
+msgid "In case of both steps mentioned above gets failed, it will proceed by setting root password to cleopatra."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:69
+# 8e86ee4fb5a84b46aa9cec19ccaa684c
+msgid "Additional Options:"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:70
+# a6852662e9d24ad396f8e4f92ec3f157
+msgid "Let us see about, the additional options involved in installing the mysql-server."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:76
+# ac112fbe9dcb4c3b87d1ffe0aba2f9b8
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:76
+# 3344670b51344148b2ad92279f061f84
+msgid "Directory(default)"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:76
+# 8ed8857f0997419fa5e14f54bcef1339
+msgid "option"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:76
+# a9560e07bcca4049a1a95b98fb162aa0
+msgid "Comments"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:78
+#: ../../source/mysqlserver.rst:83
+# 0a905323f33b431992ed05fc9fe3a566
+# 1691050fe7e84df58ce53df0704303ae
+msgid "Install MySQL Server? (Y/N)"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:78
+#: ../../source/mysqlserver.rst:83
+# aa6e74d18a7749ab8da40bbdf14d8ec4
+# 4594c3cb51924b2e9c52537da9547a92
+msgid "In the place of MySQL Server these alternative names can be used:MysqlServer,mysql-server, mysqlserver."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:78
+# 38f487d8835f48f5a27b8579e4a047c0
+msgid "Y(YES)"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:78
+# c558aaf1b8004c898cf0179f7c827573
+msgid "If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:83
+# e1f55589057b427ebdf7c756ca2486e2
+msgid "N(NO)"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:83
+# 50eb32a8a63b4dcf9330cc0d409d58e0
+msgid "If the user wish to quit the installation process they can input as N| |"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:89
+# 40aafea0fff4406ca4cad2d75611a149
+msgid "The following screen shot gives you an graphical presentation regarding the installation process."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:93
+# 23c9a10f316a4c2499bc45c9243cf739
+msgid "If the mysql server is already exists in your machine, then it will throw an message to the user as it is already installed. The following screen shot represents the process of ensuring:"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:98
+# 076908769c1a4ef690413b177588dd02
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/mysqlserver.rst:99
+# 97fcaea90689449b96f66fcd89362e12
+msgid "While installing the mysql server, it installs with the updated version."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:100
+# 02b45cdfd86745ce9f06aec01c41bd25
+msgid "It ensures before installing, and check for the availability of modules."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:101
+# e215f4c90ec04c6c85a3425b62ff26ba
+msgid "In case of any new modules included in the updated version, the missing module will be installed individually."
+msgstr ""
+
+#: ../../source/mysqlserver.rst:102
+# 0f9c5d7c06ba4db69df9796bc38a3a25
+msgid "It checks the availability of library functions in the mysql server."
+msgstr ""
+

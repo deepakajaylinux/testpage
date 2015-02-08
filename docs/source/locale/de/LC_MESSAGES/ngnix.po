@@ -1,0 +1,217 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/ngnix.rst:3
+msgid "NginxServer"
+msgstr ""
+
+#: ../../source/ngnix.rst:8
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/ngnix.rst:10
+msgid ""
+"Nginx, pronounced “Engine X”, is a high-performance Web server. The Nginx "
+"Web Server is a light weight and versatile server that can be configured for"
+" all the different tasks that many modern websites demand. Ngnix server acts"
+" as a facilitator to the users in configuring applications settings. Few "
+"examples for applications settings includes mysql admin user, host, pass. "
+"Nginx is making headlines as the new Web server of choice for many "
+"webmasters. The top reason for its popularity is its speed. Nginx is faster "
+"than Apache in non-testing environments because its architecture is event "
+"driven while Apache’s is process driven. The Cleopatra modules acts as a way"
+" through for installing this Nginx Server."
+msgstr ""
+
+#: ../../source/ngnix.rst:13
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/ngnix.rst:15
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the Ngnix server module. The help command "
+"lists out the alternative parameters of Ngnix server. It also describes the "
+"syntax for installing Ngnix server. The help command for Ngnix server is "
+"given below."
+msgstr ""
+
+#: ../../source/ngnix.rst:21
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Nginx Server."
+msgstr ""
+
+#: ../../source/ngnix.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/ngnix.rst:47
+msgid ""
+"Installing the Nginx server is simpler by using the following command as "
+"shown:"
+msgstr ""
+
+#: ../../source/ngnix.rst:53
+msgid ""
+"After inputting the command above the following operations as shown in the "
+"tabular format occurs."
+msgstr ""
+
+#: ../../source/ngnix.rst:58
+msgid "Paramaters"
+msgstr ""
+
+#: ../../source/ngnix.rst:58
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/ngnix.rst:58
+msgid "Options"
+msgstr ""
+
+#: ../../source/ngnix.rst:58
+msgid "comments"
+msgstr ""
+
+#: ../../source/ngnix.rst:60 ../../source/ngnix.rst:65
+msgid "Install PHP Code Sniffer ? (Y/N)"
+msgstr ""
+
+#: ../../source/ngnix.rst:60 ../../source/ngnix.rst:65
+msgid ""
+"In Spite of Nginx Server, the following alternatives can also be used: "
+"NginxServer, nginx-server, nginxserver."
+msgstr ""
+
+#: ../../source/ngnix.rst:61 ../../source/ngnix.rst:66
+msgid "Y(yes)"
+msgstr ""
+
+#: ../../source/ngnix.rst:60
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/ngnix.rst:65
+msgid ""
+"If the user wish to Quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/ngnix.rst:71
+msgid ""
+"If the user proceeds the installation process, the Nginx HTTP Server will be"
+" installed. If the package of Nginx is already exists in the users machine, "
+"then a message will appear to instruct the user as Nginx is already exists "
+"in that machine. Finally reports are generated with clear results and "
+"status. The following screen shot explains the above mentioned process "
+"pictorially."
+msgstr ""
+
+#: ../../source/ngnix.rst:134
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/ngnix.rst:136
+msgid ""
+"By using this Nginx Server the user can configure their application "
+"settings."
+msgstr ""
+
+#: ../../source/ngnix.rst:137
+msgid ""
+"The parameters used in help and installation operations are not case "
+"sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/ngnix.rst:138
+msgid ""
+"Nginx is fast because it does not need to create a new process for each new "
+"request."
+msgstr ""
+
+#: ../../source/ngnix.rst:139
+msgid "Nginx uses very little memory, especially for static Web pages."
+msgstr ""
+
+#: ../../source/ngnix.rst:140
+msgid "Nginx can be used with a range of systems."
+msgstr ""
+
+#: ../../source/ngnix.rst:141
+msgid ""
+"Nginx is highly scalable, and performance is not dependent on hardware."
+msgstr ""
+
+#: ../../source/ngnix.rst:142
+msgid "Nginx is easy to install and configure."
+msgstr ""
+
+#: ../../source/ngnix.rst:143
+msgid ""
+"Like Apache, Nginx has all the features you would expect from a leading Web "
+"server:"
+msgstr ""
+
+#: ../../source/ngnix.rst:144
+msgid "Static file serving."
+msgstr ""
+
+#: ../../source/ngnix.rst:145
+msgid "SSL/TLS support."
+msgstr ""
+
+#: ../../source/ngnix.rst:146
+msgid "Virtual hosts."
+msgstr ""
+
+#: ../../source/ngnix.rst:147
+msgid "Reverse proxying."
+msgstr ""
+
+#: ../../source/ngnix.rst:148
+msgid "Load balancing."
+msgstr ""
+
+#: ../../source/ngnix.rst:149
+msgid "Compression."
+msgstr ""
+
+#: ../../source/ngnix.rst:150
+msgid "Access controls."
+msgstr ""
+
+#: ../../source/ngnix.rst:151
+msgid "URL rewriting."
+msgstr ""
+
+#: ../../source/ngnix.rst:152
+msgid "Custom logging."
+msgstr ""
+
+#: ../../source/ngnix.rst:153
+msgid "Server-side includes."
+msgstr ""
+
+#: ../../source/ngnix.rst:154
+msgid "WebDAV."
+msgstr ""
+
+#: ../../source/ngnix.rst:155
+msgid "FLV streaming."
+msgstr ""
+
+#: ../../source/ngnix.rst:156
+msgid "FastCGI."
+msgstr ""

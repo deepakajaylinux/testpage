@@ -1,9 +1,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: testpage 1.1\n"
+"Project-Id-Version: KEVELL 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-05 11:05+0530\n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,11 +13,11 @@ msgstr ""
 
 #: ../../source/apacheconf.rst:2
 msgid "ApacheConf"
-msgstr ""
+msgstr "ApacheConf"
 
 #: ../../source/apacheconf.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: ../../source/apacheconf.rst:7
 msgid ""
@@ -25,10 +25,12 @@ msgid ""
 "specifies the configuration of your environment. It is well-to-do in ubuntu "
 "and as well as in Cent OS."
 msgstr ""
-
+"Dieses Modul hilft bei der Verwaltung und Installation des Apache-Konfiguration. es "
+"legt die Konfiguration Ihrer Umgebung. Es ist gut-to-do in ubuntu"
+"und als auch in Cent OS."
 #: ../../source/apacheconf.rst:11
 msgid "Help command"
-msgstr ""
+msgstr "Hilfe Befehl"
 
 #: ../../source/apacheconf.rst:13
 msgid ""
@@ -37,30 +39,36 @@ msgid ""
 "module. It lists out the alternative parameters that can be used for "
 "declaration. The command used for declaring help is shown as below:"
 msgstr ""
-
+"Der Befehl help beschreibt über den Zweck und die Befehle zur Verfügung "
+"unter diesen Modulen. Es erklärt auch den Befehl zum Installieren des besonderen"
+"Modul. Es führt aus, die alternative Parameter, die für verwendet werden können"
+. "Erklärung Der Befehl Hilfe erklärt verwendet wird, wie unten dargestellt:"
 #: ../../source/apacheconf.rst:20
 msgid ""
 "The screen shot as shown below, visually represent the usage of the help "
 "command under this module."
 msgstr ""
-
+"Der Screenshot, wie unten dargestellt, visuell darstellen die Verwendung der Hilfe"
+"Kommando unter diesem Modul."
 #: ../../source/apacheconf.rst:44
 msgid "Installation"
-msgstr ""
+msgstr "
+Installation"
 
 #: ../../source/apacheconf.rst:46
 msgid ""
 "It is easier to install this particular tool under Cleopatra by simply using"
 " the command given below,"
 msgstr ""
-
+"Es ist einfacher, diese besondere Werkzeug unter Kleopatra, indem Sie einfach zu installieren"
+"Den Befehl unten angegebenen"
 #: ../../source/apacheconf.rst:52
 msgid "After giving the command above, the tool will ask as"
-msgstr ""
+msgstr "Nachdem er den Befehl oben, wird das Tool fragen, wie"
 
 #: ../../source/apacheconf.rst:58
 msgid "if you give an input as Y, the module will get installed successfully."
-msgstr ""
+msgstr "wenn Sie einen Eingang als Y geben, wird das Modul erfolgreich installiert."
 
 #: ../../source/apacheconf.rst:60
 msgid ""
@@ -70,71 +78,80 @@ msgid ""
 "fix the default value. If the user gives input as N(No) then it will enquire"
 " about the values from the user."
 msgstr ""
-
+"Es wird auch werfen einige Befehle, um die Nicht-Standardwerte festlegen"
+"LockFile, PidFile, Timeout, Keepalive, MaxKeepAliveRequest"
+"Keepalive. Wenn der Benutzer gibt Eingang als Y (Ja), es wird automatisch"
+"reparieren Sie den Standardwert. Wenn der Benutzer gibt Eingang als N (Nein), dann wird es fragen"
+"Über die Werte durch den Benutzer."
 #: ../../source/apacheconf.rst:62
 msgid ""
 "The screen shot given below explains visually about the steps and commands "
 "involves in installation."
 msgstr ""
-
+"Der Screenshot unten angegeben erklärt visuell über die Schritte und Befehle"
+"beinhaltet in der Installation."
 #: ../../source/apacheconf.rst:105
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../source/apacheconf.rst:105
 msgid "Required"
-msgstr ""
+msgstr "erforderlich"
 
 #: ../../source/apacheconf.rst:105
 msgid "Comment"
-msgstr ""
+msgstr "Kommentar"
 
 #: ../../source/apacheconf.rst:107
 msgid "Install"
-msgstr ""
+msgstr "installieren"
 
 #: ../../source/apacheconf.rst:107 ../../source/apacheconf.rst:111
 msgid "Y(YES)"
-msgstr ""
+msgstr "Y(YES)"
 
 #: ../../source/apacheconf.rst:107
 msgid "It will install the apacheconf under Cleopatra"
-msgstr ""
+msgstr "Es wird die apacheconf unter Cleopatra installieren"
 
 #: ../../source/apacheconf.rst:111 ../../source/apacheconf.rst:116
 msgid "Install Apache conf? (Y/N)"
-msgstr ""
+msgstr "Installieren Sie Apache conf? (Y / N)"
 
 #: ../../source/apacheconf.rst:111
 msgid "If the user gives input as yes, it will install the module."
-msgstr ""
+msgstr "Wenn der Benutzer gibt Eingabe als Ja, wird das Modul zu installieren."
 
 #: ../../source/apacheconf.rst:116
 msgid "N(NO)"
-msgstr ""
+msgstr "N(NO)"
 
 #: ../../source/apacheconf.rst:116
 msgid "If the user gives input as no, it will get exit.|"
-msgstr ""
+msgstr "Wenn der Benutzer gibt Eingang als nicht, wird es bekommen Ausfahrt. |"
 
 #: ../../source/apacheconf.rst:123
 msgid "Benefits"
-msgstr ""
+msgstr "Vorteile"
 
 #: ../../source/apacheconf.rst:125
 msgid ""
 "The module assists the end user in installing and managing the configuration"
 " of Apache."
 msgstr ""
-
+"Das Modul unterstützt den Anwender bei der Installation und Verwaltung der Konfiguration"
+"Apache".
 #: ../../source/apacheconf.rst:126
 msgid ""
 "While installing the Apache tool, the end user can design and manage the "
 "configuration as per their requirement using this module."
 msgstr ""
-
+"Bei der Installation des Apache-Tool kann der Anwender Design und Verwaltung der"
+"Konfiguration wie pro ihre Anforderungen mit diesem Modul."
 #: ../../source/apacheconf.rst:127
 msgid ""
 "If it founds the configuration already exists it will overwrite the existing"
 " one."
 msgstr ""
+"Wenn es die Konfiguration bereits gründet existiert, wird die bestehende überschreiben"
+"Eins"																																																																																																																																																																																																																																																																																																																																																																

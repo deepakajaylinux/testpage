@@ -1,0 +1,171 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/file.rst:3
+msgid "File"
+msgstr ""
+
+#: ../../source/file.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/file.rst:8
+msgid ""
+"File is a standard program for recognizing the type of data contained in a "
+"computer file. The file command attempts to classify each file system object"
+" (i.e., file, directory or link) that is provided to it as an argument "
+"(i.e., input). File tests each argument in an attempt to classify it. There "
+"are three sets of tests, performed in this order: file system tests, magic "
+"number tests, and language tests."
+msgstr ""
+
+#: ../../source/file.rst:10
+msgid ""
+"The first is a file system test, which uses the stat system call to obtain "
+"information from the object's inode (which contains information about a "
+"file)."
+msgstr ""
+
+#: ../../source/file.rst:12
+msgid ""
+"The second test checks to see if there is a magic number, which is a number "
+"embedded at or near the beginning of many types of files that indicates the "
+"file format (i.e., the type of file)."
+msgstr ""
+
+#: ../../source/file.rst:15
+msgid ""
+"In the event that the first two tests fail to determine the type of a file, "
+"language tests are employed to determine if it is plain text (i.e., composed"
+" entirely of human-readable characters), and, if so, what type of plain "
+"text, such as HTML (hypertext markup language) or source code"
+msgstr ""
+
+#: ../../source/file.rst:18
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/file.rst:20
+msgid ""
+"This command helps to determine the usage of file module. The user will come"
+" to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/file.rst:27
+msgid "Create"
+msgstr ""
+
+#: ../../source/file.rst:29
+msgid ""
+"When the user needs to Create a new system file, the below given command "
+"will execute the process."
+msgstr ""
+
+#: ../../source/file.rst:35
+msgid "The below given commands overwrite files that exist"
+msgstr ""
+
+#: ../../source/file.rst:41
+msgid "The below given command for write the data in the file"
+msgstr ""
+
+#: ../../source/file.rst:48
+msgid "Delete"
+msgstr ""
+
+#: ../../source/file.rst:50
+msgid ""
+"When the user needs to delete a system file, the below given command will "
+"execute the process."
+msgstr ""
+
+#: ../../source/file.rst:57
+msgid "Exists"
+msgstr ""
+
+#: ../../source/file.rst:59
+msgid ""
+"When the user needs to check the existence of a file, the below given "
+"command will execute the process."
+msgstr ""
+
+#: ../../source/file.rst:66
+msgid "Append"
+msgstr ""
+
+#: ../../source/file.rst:68
+msgid ""
+"When the user needs to append a line to a file, the below given command will"
+" execute the process."
+msgstr ""
+
+#: ../../source/file.rst:74
+msgid "Line option – you can insert a line to be appended"
+msgstr ""
+
+#: ../../source/file.rst:77
+msgid "Should-have-line"
+msgstr ""
+
+#: ../../source/file.rst:79
+msgid ""
+"When the user needs to ensure that a file contains a particular line, the "
+"below given command will execute the process."
+msgstr ""
+
+#: ../../source/file.rst:85
+msgid "Line option – Statement that needs to be checked"
+msgstr ""
+
+#: ../../source/file.rst:89
+msgid "Options"
+msgstr ""
+
+#: ../../source/file.rst:94
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/file.rst:94
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/file.rst:94
+msgid "Comments"
+msgstr ""
+
+#: ../../source/file.rst:96
+msgid "Cleopatra file help"
+msgstr ""
+
+#: ../../source/file.rst:96
+msgid ""
+"Either of the two alternative parameter can be used in command- File, file "
+"eg: Cleopatra File Install/ Cleopatra file Install|"
+msgstr ""
+
+#: ../../source/file.rst:96
+msgid "Once the user provides the option, System starts processing"
+msgstr ""
+
+#: ../../source/file.rst:103
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/file.rst:105
+msgid ""
+"Specify a file specially formatted containing position-sensitive tests; "
+"default position-sensitive tests and context-sensitive tests will not be "
+"performed."
+msgstr ""

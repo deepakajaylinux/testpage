@@ -1,0 +1,174 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mysqltool.rst:3
+msgid "MysqlTools"
+msgstr ""
+
+#: ../../source/mysqltool.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/mysqltool.rst:8
+msgid ""
+"This module aims at installing some tools that assists the MySQL server. It "
+"also facilitates in installing the MySQL Workbench GUI and as well as mytop "
+"Command Line Tool."
+msgstr ""
+
+#: ../../source/mysqltool.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/mysqltool.rst:13
+msgid ""
+"The help command instructs the users in handling this module. In addition to"
+" this, it will also specifies the alternative parameters. The command used "
+"for help option is given below:"
+msgstr ""
+
+#: ../../source/mysqltool.rst:19
+msgid ""
+"The help command also specifies the command used for installing this "
+"mysqltools module. Look at the screen shot given below."
+msgstr ""
+
+#: ../../source/mysqltool.rst:22
+msgid "Installation"
+msgstr ""
+
+#: ../../source/mysqltool.rst:24
+msgid ""
+"This module installs the mysql tools that supports the mysql server with the"
+" aid of apt-get. The command used for installing mysqltools to your machine "
+"is shown below:"
+msgstr ""
+
+#: ../../source/mysqltool.rst:36
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/mysqltool.rst:36
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/mysqltool.rst:36
+msgid "option"
+msgstr ""
+
+#: ../../source/mysqltool.rst:36
+msgid "Comments"
+msgstr ""
+
+#: ../../source/mysqltool.rst:38 ../../source/mysqltool.rst:43
+msgid "Install MySQL Tools? (Y/N)"
+msgstr ""
+
+#: ../../source/mysqltool.rst:38
+msgid ""
+"In the place of Mysql Tools these alternative names can be used:MysqlTools"
+",mysql-tools, mysqltools."
+msgstr ""
+
+#: ../../source/mysqltool.rst:38
+msgid "Y(YES)"
+msgstr ""
+
+#: ../../source/mysqltool.rst:38
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/mysqltool.rst:43
+msgid ""
+"In the place of Mysql Tools these alternative names can be used:MysqlTools"
+",mysql-tools,"
+msgstr ""
+
+#: ../../source/mysqltool.rst:43
+msgid "N(YES)"
+msgstr ""
+
+#: ../../source/mysqltool.rst:43
+msgid ""
+"If the user wish to proceed the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/mysqltool.rst:58
+msgid ""
+"If the user proceed installing the mysql tools the following operations are "
+"performed while installing"
+msgstr ""
+
+#: ../../source/mysqltool.rst:59
+msgid "It reads the package lists."
+msgstr ""
+
+#: ../../source/mysqltool.rst:60
+msgid "Builds the dependency tree."
+msgstr ""
+
+#: ../../source/mysqltool.rst:61
+msgid "Reads the state information."
+msgstr ""
+
+#: ../../source/mysqltool.rst:62
+msgid "Installs the extra packages that are required."
+msgstr ""
+
+#: ../../source/mysqltool.rst:63
+msgid "Installs the suggested packages."
+msgstr ""
+
+#: ../../source/mysqltool.rst:64
+msgid "Installs the new packages."
+msgstr ""
+
+#: ../../source/mysqltool.rst:65
+msgid ""
+"Displays the number of files that are upgraded, newly installed, removed, "
+"and not upgraded."
+msgstr ""
+
+#: ../../source/mysqltool.rst:67
+msgid ""
+"The Screen shot as shown below gives you an graphical presentation regarding"
+" the steps as explained above."
+msgstr ""
+
+#: ../../source/mysqltool.rst:69
+msgid ""
+"It will also specifies the name of tools that are installed, for example .. "
+"rubric:: mysql-server-core-5.5:amd64, mysql-server-5.5: amd64, "
+"libaio1:amd64, mysql-server:amd64."
+msgstr ""
+
+#: ../../source/mysqltool.rst:73
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/mysqltool.rst:75
+msgid "The user can install their required tools that supports mysql server."
+msgstr ""
+
+#: ../../source/mysqltool.rst:76
+msgid ""
+"It also facilitates in installing the MySQL Workbench GUI and as well as "
+"mytop Command Line Tool."
+msgstr ""
+
+#: ../../source/mysqltool.rst:77
+msgid ""
+"After completion of installation, it will displays the tools lists that are "
+"newly installed."
+msgstr ""

@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/chgrp1.rst:3
+# a82afb5b7ee1435a9e80ed7ea92914b1
+msgid "Change Group"
+msgstr ""
+
+#: ../../source/chgrp1.rst:7
+# 46f8ac4934904048b890b2e99edd0a21
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/chgrp1.rst:9
+# 699212dd2b014ace8a8bae5e56b86271
+msgid "Files and directories belong to both an owner and a group. A group usually consists of a collection of users, all belonging to the same group. The first set of three is the read, write, and execute permissions for the owner of the file."
+msgstr ""
+
+#: ../../source/chgrp1.rst:11
+# 5078b67631df4826afc8ebe9bb797882
+msgid "A group can also consist of one user, normally the user who creates the file. Each user on the system, including the root user, is assigned his or her own group of which he or she is the only member, ensuring access only by that user. The second set of three is the read, write, and execute permissions for anyone who belongs to the user group for the file."
+msgstr ""
+
+#: ../../source/chgrp1.rst:13
+# 849edc4ffef14192b86ddb3dad72488a
+msgid "The root user, the system administrator, owns most of the system files that also belong to the root group, of which only the root user is a member. Most administration files, like configuration files in the /etc directory, are owned by the root user and belong to the root group. Only the root user has permission to modify them, whereas normal users can read and, in the case of programs, also execute them"
+msgstr ""
+
+#: ../../source/chgrp1.rst:16
+# 9c36511994f64f87b9c4492842026a33
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/chgrp1.rst:18
+# 794c382d5df440238e6a78cd3bb3c1c0
+msgid "This command helps to determine the usage of Change group module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/chgrp1.rst:24
+# 54ee783bd1104a318be0e9b76d2dfd02
+msgid "The pictorial representation of the screenshot is given below,"
+msgstr ""
+
+#: ../../source/chgrp1.rst:47
+# 79fa27c2631c4187922e383a3604c00f
+msgid "Path"
+msgstr ""
+
+#: ../../source/chgrp1.rst:49
+# 36b4025e68554fa0975b8921f5b23ada
+msgid "When the user needs to change the file group ownership of a path, the below given command will execute the process."
+msgstr ""
+
+#: ../../source/chgrp1.rst:57
+# bcad3d4ce84d46d081c636f03e7451ab
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/chgrp1.rst:59
+# 3e2b4476134c402abe803d793c3a013e
+msgid "There are two alternative parameters which can be used in command line."
+msgstr ""
+
+#: ../../source/chgrp1.rst:61
+# 3b033f03a7f54cacbc16c9b67936875e
+msgid "chgrp, Chgrp"
+msgstr ""
+
+#: ../../source/chgrp1.rst:63
+# 5f6a86ce74a14507b2fe35254473fa80
+msgid "Eg: cleopatra Chgrp path/ cleopatra chgrp path"
+msgstr ""
+
+#: ../../source/chgrp1.rst:66
+# 53c4f01b55394eb896e5e10078f4b02a
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/chgrp1.rst:68
+# 240888ccddc44853a3a6d8895ca5f5e1
+msgid "Although other users may be able to access a file, only the owner can change its permissions. If you want to give other user to control over   one of your file's permissions, you can change the owner of the file from yourself to the other user."
+msgstr ""
+
+#: ../../source/chgrp1.rst:69
+# f5c2e8aee44949b0a7dbaffe92957120
+msgid "You can also change the group for a file and directories, using the chgrp command. chgrp takes as its first argument the name of the new group for a files or directories."
+msgstr ""
+

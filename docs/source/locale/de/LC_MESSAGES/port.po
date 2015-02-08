@@ -1,0 +1,99 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/port.rst:3
+msgid "Port"
+msgstr ""
+
+#: ../../source/port.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/port.rst:8
+msgid ""
+"Port certify to check the status of ports and services. This module helps to"
+" check the port service under Cleopatra. This module is most comfortable "
+"with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/port.rst:11
+msgid "Help"
+msgstr ""
+
+#: ../../source/port.rst:13
+msgid ""
+"This help command guide the user about Port module. This is suitable for all"
+" type of IT people."
+msgstr ""
+
+#: ../../source/port.rst:19
+msgid ""
+"The help command shows a short list of the commands built into the port "
+"module."
+msgstr ""
+
+#: ../../source/port.rst:46
+msgid "Local Host"
+msgstr ""
+
+#: ../../source/port.rst:48
+msgid ""
+"When the user want to check the status of the port in local host then it can"
+" ask the user IP address. The following screenshot will explain it."
+msgstr ""
+
+#: ../../source/port.rst:72
+msgid "Options"
+msgstr ""
+
+#: ../../source/port.rst:77
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/port.rst:77
+msgid "Fuctions"
+msgstr ""
+
+#: ../../source/port.rst:77
+msgid "Output"
+msgstr ""
+
+#: ../../source/port.rst:79
+msgid "is-responding"
+msgstr ""
+
+#: ../../source/port.rst:79
+msgid "Test of port is responding  Or not"
+msgstr ""
+
+#: ../../source/port.rst:81
+msgid "Process"
+msgstr ""
+
+#: ../../source/port.rst:81
+msgid "Test the process  status  Of port"
+msgstr ""
+
+#: ../../source/port.rst:81
+msgid "It will display the process of port|"
+msgstr ""
+
+#: ../../source/port.rst:86
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/port.rst:87
+msgid ""
+"The user can check the current working status of the port. It is a user "
+"friendly module. Less time consuming."
+msgstr ""

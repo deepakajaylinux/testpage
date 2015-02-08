@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/project.rst:3
+# 8c9419f7f30c4b248d86055d110100dc
+msgid "Project"
+msgstr ""
+
+#: ../../source/project.rst:6
+# 8d85ea78ef9c4a348bafbe0fb8bf9f82
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/project.rst:8
+# 6f6f7adcb7ac444682b3a893420bd747
+msgid "In contemporary business and science a project is defined as a collaborative enterprise, involving research or design, which is carefully planned to achieve a particular aim. Projects can be further defined as temporary rather than permanent social systems or work systems that are constituted by teams within or across organizations to accomplish particular tasks under time constraints. An ongoing project is usually called (or evolves into) a program."
+msgstr ""
+
+#: ../../source/project.rst:10
+# 8911508650e848c7b7b63bcda92c0dbc
+msgid "This command is part of default modules and handles project initialization functions, like configuring a project, or a project container and also installing Jenkins build files into a running Jenkins instance."
+msgstr ""
+
+#: ../../source/project.rst:13
+# b5979f10bacd4ebd9f2448b4befd588d
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/project.rst:15
+# 2c1e59dbfb7e4532b31c8af4e4589084
+msgid "This command helps to determine the usage of project module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screen shot of the same."
+msgstr ""
+
+#: ../../source/project.rst:57
+# ddbc07b6644b4fa3a50dbb464467f24d
+msgid "Container"
+msgstr ""
+
+#: ../../source/project.rst:59
+# 9cf0c89999304eb6928a415e8daaa1a6
+msgid "This command helps make a container folder for revisions (like /var/www/applications/*APP NAME*). When the user needs to install, the user can issue the following commands for DBIstall. The system will execute the process of installation."
+msgstr ""
+
+#: ../../source/project.rst:87
+# 9223bbcc681a435187277f47bf1cf4ec
+msgid "init"
+msgstr ""
+
+#: ../../source/project.rst:88
+# 86a9e2789f174cc699e000b53bfa0669
+msgid "When the user needs to initialize dapper project, the user can issue the following commands. The system will execute the process."
+msgstr ""
+
+#: ../../source/project.rst:111
+# 17a119b6ed15489ea38dbb3172e8bb56
+msgid "Build-Install"
+msgstr ""
+
+#: ../../source/project.rst:113
+# a4b1f4685ea74b9faabc7a3c4b54591a
+msgid "When the user needs copy Jenkins project stored in repo to running Jenkins, the user can issue the following commands. The system will execute the process."
+msgstr ""
+
+#: ../../source/project.rst:120
+# c6ae72646c5b45d88fcdd872a63c1be0
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/project.rst:122
+# 99dadd324a614124ba39fd101ff5e6e8
+msgid "There are two alternative parameters which can be used in command."
+msgstr ""
+
+#: ../../source/project.rst:124
+# 9dad37caa12a42fbb8f911f6006e6978
+msgid "Project, project and proj"
+msgstr ""
+
+#: ../../source/project.rst:126
+# bdac36756f9847bc87407518f16dd063
+msgid "eg: dapperstrano Project help/  dapperstrano proj help"
+msgstr ""
+
+#: ../../source/project.rst:129
+# 20808c1eb1d746b884cf62a783611306
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/project.rst:131
+# 69ebe03f8a81434ca5752b30fd0056ed
+msgid "Helps make a container folder for revisions"
+msgstr ""
+
+#: ../../source/project.rst:132
+# f7da31e7d9f04af4904f8202860340c0
+msgid "Helps to initialize dapper project"
+msgstr ""
+

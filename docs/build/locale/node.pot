@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/node.rst:3
+# 519d8868b8a94e74a5bd830a4818414e
+msgid "Node-JS"
+msgstr ""
+
+#: ../../source/node.rst:6
+# e9907108c38e49119e1a66cc0678ee60
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/node.rst:8
+# 69404a3eca0a4b1a91b6923acb9583d4
+msgid "This module assists the users to install Node JS which is a Server Side JS Language. Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux and FreeBSD. Here, let us see how does this module facilitates in installing and using the Node-JS."
+msgstr ""
+
+#: ../../source/node.rst:11
+# 1fff3833bba6408f98460e2721a48e7d
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/node.rst:13
+# 85e84de8c951455480db4a3570169742
+msgid "The help command leads the users regarding the purpose and as well as about the options that are included in the Node-JS module. The help command lists out the alternative parameters of Node-JS module. It also describes the syntax for installing Node-JS module. The help command for Node-JS module is shown as below."
+msgstr ""
+
+#: ../../source/node.rst:19
+# eca9c4204364499cad4693db351b602e
+msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Node JS."
+msgstr ""
+
+#: ../../source/node.rst:43
+# 461745f2fe3a4fd2a9b49c29bd157d2d
+msgid "Installation"
+msgstr ""
+
+#: ../../source/node.rst:45
+# 2e3eed40937642eeb55691b16e2812b9
+msgid "Installing the Node-JS to your machine, can be done simply by using the following command as shown:"
+msgstr ""
+
+#: ../../source/node.rst:51
+# ba84d7485ed14886a669f725d32d9845
+msgid "After inputting the command above, the following operations occurs as shown in the tabular format."
+msgstr ""
+
+#: ../../source/node.rst:56
+# 2f8875064d8d42f89777f3ebc153f331
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/node.rst:56
+# fcd55bb14f734602b492626d3703b99f
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/node.rst:56
+# 7a78faeedb244bcfb99c6597626c4831
+msgid "Option"
+msgstr ""
+
+#: ../../source/node.rst:56
+# 953fbd8443a3429485d436369be8e85e
+msgid "Comments"
+msgstr ""
+
+#: ../../source/node.rst:58
+#: ../../source/node.rst:61
+# 8bd4cfba0c514a5fa62fb0b19b50f62d
+# 1a15fdbbfe9b4e719b5b32918cdaf514
+msgid "Install Node JS? (Y/N)"
+msgstr ""
+
+#: ../../source/node.rst:58
+#: ../../source/node.rst:61
+# 520bb621d50f40c8b5c823e8a1fd481a
+# ea0b3beebe9c478cbda9a68d9e91764f
+msgid "In Spite of Node JS, NodeJS, node-js, nodejs can also be used."
+msgstr ""
+
+#: ../../source/node.rst:58
+# cd629c0c76cf4da597440cb202514019
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/node.rst:58
+# a70a1b57e23c49bcbc5f1e3e54cf3670
+msgid "If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/node.rst:61
+# c989efa6770c47958d75725c945b3b71
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/node.rst:61
+# 06f171597d7e452780d090cf755135ac
+msgid "If the user wish to proceed the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/node.rst:66
+# 2b0d9482d1334bc5874dce507b17de20
+msgid "If the user proceeds the installation process, during execution of installation the following process occurs:"
+msgstr ""
+
+#: ../../source/node.rst:68
+# 67eb1c60ee074430b159b0710d461f04
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/node.rst:69
+# b0ddb1d4f58144ce852228d92205a46d
+msgid "builds dependency tree."
+msgstr ""
+
+#: ../../source/node.rst:70
+# b53c5c43245a430daece117101d48874
+msgid "reads state information."
+msgstr ""
+
+#: ../../source/node.rst:71
+# 99839e082a7d4b419324a3041b59e99a
+msgid "list of packages that are automatically installed."
+msgstr ""
+
+#: ../../source/node.rst:72
+# e408802e89b644dda3c837fdacb4caaa
+msgid "list of new packages installed."
+msgstr ""
+
+#: ../../source/node.rst:73
+# c406d281f3304bf78b7118cbd7be7c55
+msgid "lists out the number of files that are upgraded, newly installed, removed, not upgraded."
+msgstr ""
+
+#: ../../source/node.rst:75
+# 017cb7e220364ceebf48fa166e0669fc
+msgid "Finally, the reports and status are clearly reported. And also, adding package nodejs from the Packager Apt executed correctly. The following screenshot depicts the entire process of installation as described."
+msgstr ""
+
+#: ../../source/node.rst:77
+# dfe3f3fcb6cb4b7898a26dd85a10bafb
+msgid "If the node-js module is already existing in the users machine, it will show an message as the Package node-js from the packager Apt is already installed. The screen shot as follows is an good example for those type of messages."
+msgstr ""
+
+#: ../../source/node.rst:172
+# a513ead07c7e4db888ab7c2324f6481c
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/node.rst:174
+# ed68d08820f24bad838876e3aaaca444
+msgid "The parameters used for declaring help command, installation are not case sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/node.rst:175
+# c9c487fc28384dee96d9f948aa1577ca
+msgid "It is well-to-do in both Cent OS and as well as in Ubuntu."
+msgstr ""
+
+#: ../../source/node.rst:176
+# ee3bf1713f0349bc8fa4f163baaf83e6
+msgid "If the node-js package is already existing in the user machine, it won't overwrites, instead of that it will show a message as already exist."
+msgstr ""
+
+#: ../../source/node.rst:177
+# 120dfa5e69f84e2bbddcdf28c77e5ca9
+msgid "Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS."
+msgstr ""
+

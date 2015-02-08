@@ -1,0 +1,168 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/templating.rst:3
+msgid "Templating"
+msgstr ""
+
+#: ../../source/templating.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/templating.rst:8
+msgid ""
+"A standardized non-executable file type used by system software as a pre-"
+"formatted example on which to base other files, especially documents. "
+"Templating is a fancy way of having template file with in the file system. "
+"Dynamically replace a shortcut phrase with data filled in from the user on "
+"your forms. The easiest way to explain the concept is with an example. It is"
+" suitable to work with Ubuntu and cent os."
+msgstr ""
+
+#: ../../source/templating.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/templating.rst:13
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the template modules. The help command "
+"lists out the alternative parameters of templating testingkamen module. It "
+"also describes the syntax for detecting the user’s machine. The help command"
+" for templating shown below."
+msgstr ""
+
+#: ../../source/templating.rst:19
+msgid "The following screenshot explains about templating."
+msgstr ""
+
+#: ../../source/templating.rst:42
+msgid ""
+"The help command also lists the alternative parameters that can be used in "
+"declaration."
+msgstr ""
+
+#: ../../source/templating.rst:47
+msgid "Installation"
+msgstr ""
+
+#: ../../source/templating.rst:49
+msgid ""
+"Installation including device drivers and plugins, is the act of making the "
+"program ready for execution. Because the process varies for each program and"
+" each system, programs often come with an installer, a specialized program "
+"responsible for doing whatever is needed for their installation. "
+"Installation may be part of a larger software deployment process."
+msgstr ""
+
+#: ../../source/templating.rst:51
+msgid ""
+"Installation typically involves code being copied/generated from the "
+"installation files to new files on the local system for easier access by the"
+" operating system. Because code is generally copied/generated in multiple "
+"locations. In templating is used to install template files. The following "
+"command is used to install templating."
+msgstr ""
+
+#: ../../source/templating.rst:57
+msgid ""
+"after input as the above said command it starts installation. The following "
+"snap shots guides the user about installation."
+msgstr ""
+
+#: ../../source/templating.rst:87
+msgid "Options"
+msgstr ""
+
+#: ../../source/templating.rst:92
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/templating.rst:92
+msgid "Alternative Parametrs"
+msgstr ""
+
+#: ../../source/templating.rst:92
+msgid "Syntax"
+msgstr ""
+
+#: ../../source/templating.rst:92
+msgid "Comments"
+msgstr ""
+
+#: ../../source/templating.rst:94 ../../source/templating.rst:98
+msgid "Install templating functionality (Y/N)"
+msgstr ""
+
+#: ../../source/templating.rst:94
+msgid ""
+"Instead of using templating the user can use Templating, templating, "
+"template"
+msgstr ""
+
+#: ../../source/templating.rst:94
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/templating.rst:94
+msgid "Templating can be installed under Testingkamen."
+msgstr ""
+
+#: ../../source/templating.rst:98
+msgid ""
+"Instead of using templating the user can use Templating, templating, "
+"template|"
+msgstr ""
+
+#: ../../source/templating.rst:98
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/templating.rst:98
+msgid "It can exit the screen."
+msgstr ""
+
+#: ../../source/templating.rst:106
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/templating.rst:108
+msgid "We also have simple templating for the Redirect URL."
+msgstr ""
+
+#: ../../source/templating.rst:109
+msgid "A simple command line script is used to install the base system."
+msgstr ""
+
+#: ../../source/templating.rst:110
+msgid ""
+"This method is useful when installing Linux onto system, or onto a "
+"temporarily mounted device which belongs to another system."
+msgstr ""
+
+#: ../../source/templating.rst:111
+msgid ""
+"Template processing is used in various contexts for different purposes."
+msgstr ""
+
+#: ../../source/templating.rst:112
+msgid "Non sensitive"
+msgstr ""
+
+#: ../../source/templating.rst:113
+msgid "Suits to work with Ubuntu and centos."
+msgstr ""
+
+#: ../../source/templating.rst:114
+msgid "Updated version with new values is possible."
+msgstr ""

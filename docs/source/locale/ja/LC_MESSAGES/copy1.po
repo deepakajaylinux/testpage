@@ -1,0 +1,124 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/copy1.rst:3
+msgid "Copy"
+msgstr ""
+
+#: ../../source/copy1.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/copy1.rst:8
+msgid ""
+"Copy is the command entered in a Linux shell to copy a file from one place "
+"to another, possibly on a different file system. The original file remains "
+"unchanged, and the new file may have the same or a different name. Copy is "
+"the command which makes a copy of your files or directories. The ways files "
+"are copied in Linux depend on your distribution and file system. All "
+"versions of Linux could copy files from the command line. There are also a "
+"number of file managers both text based and GUI that could be used."
+msgstr ""
+
+#: ../../source/copy1.rst:11
+msgid ""
+"For instance, let's say you have a file named picture.jpg in your working "
+"directory, and you want to make a copy of it called picture-02.jpg. You "
+"would run the command and the file will be copied. Here, picture.jpg is the "
+"source of the copy operation and picture-02.jpg is the destination. Both "
+"files now exist in your working directory."
+msgstr ""
+
+#: ../../source/copy1.rst:13
+msgid ""
+"The source and destination files may also reside in different directories. "
+"For instance, make a copy of the file /home/chuck/pictures/picture.jpg in "
+"the directory/home/chuck/backup. The destination file will also be named "
+"picture.jpg."
+msgstr ""
+
+#: ../../source/copy1.rst:16
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/copy1.rst:18
+msgid ""
+"This command helps to determine the usage of copy module. The user will come"
+" to know about the different way/format to execute this module. This command"
+" guides the end user to know the purpose of this command. Below given are "
+"the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/copy1.rst:24
+msgid ""
+"The pictorial representation of the copy command screenshot is listed below,"
+msgstr ""
+
+#: ../../source/copy1.rst:48
+msgid "Put"
+msgstr ""
+
+#: ../../source/copy1.rst:50
+msgid ""
+"When the user needs to copy a file in our source to other destination, the "
+"below given command will execute the process."
+msgstr ""
+
+#: ../../source/copy1.rst:57
+msgid "The system asks for source file path and target file path."
+msgstr ""
+
+#: ../../source/copy1.rst:79
+msgid ""
+"There is another option, wherein you can give the source and destination "
+"path in command line."
+msgstr ""
+
+#: ../../source/copy1.rst:97
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/copy1.rst:99
+msgid ""
+"There are two alternative parameter which can be used in command line Copy ,"
+" copy."
+msgstr ""
+
+#: ../../source/copy1.rst:101
+msgid "Eg: cleopatra copy put/ cleopatra Copy help"
+msgstr ""
+
+#: ../../source/copy1.rst:105
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/copy1.rst:107
+msgid "This command helps to make a copy of your files or directories."
+msgstr ""
+
+#: ../../source/copy1.rst:108
+msgid ""
+"Copy a file or directory from source to destination using single command"
+msgstr ""
+
+#: ../../source/copy1.rst:109
+msgid ""
+"If you want to copy a file from one folder to another with the same name, "
+"just the destination directory name is good enough"
+msgstr ""
+
+#: ../../source/copy1.rst:110
+msgid ""
+"A directory (and all its content) can be copied from source to destination "
+"with the recursive option -r"
+msgstr ""

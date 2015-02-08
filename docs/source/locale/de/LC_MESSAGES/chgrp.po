@@ -1,0 +1,131 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/chgrp.rst:2 ../../source/chgrp.rst:41
+msgid "Chgrp"
+msgstr ""
+
+#: ../../source/chgrp.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/chgrp.rst:7
+msgid "This module confess many owners. Linux can accept many groups."
+msgstr ""
+
+#: ../../source/chgrp.rst:10
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/chgrp.rst:11
+msgid ""
+"The help command interprets about the scope and the commands available under"
+" this modules. It also explains the command to change the group. It lists "
+"out the alaterntive parameters that can be used for declaration. The command"
+" used for defining the help option is shown below:"
+msgstr ""
+
+#: ../../source/chgrp.rst:18
+msgid "The following screen shot visualize it translucently."
+msgstr ""
+
+#: ../../source/chgrp.rst:21
+msgid "How to use"
+msgstr ""
+
+#: ../../source/chgrp.rst:23
+msgid ""
+"It is an obvious process to use this change group module under Cleopatra by "
+"just using the command given below,"
+msgstr ""
+
+#: ../../source/chgrp.rst:29
+msgid "After inputting the command it will change the group."
+msgstr ""
+
+#: ../../source/chgrp.rst:35
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/chgrp.rst:35
+msgid "Requirement"
+msgstr ""
+
+#: ../../source/chgrp.rst:35
+msgid "Option"
+msgstr ""
+
+#: ../../source/chgrp.rst:35
+msgid "Comments"
+msgstr ""
+
+#: ../../source/chgrp.rst:37 ../../source/chgrp.rst:43
+msgid "chgrp"
+msgstr ""
+
+#: ../../source/chgrp.rst:37 ../../source/chgrp.rst:39
+#: ../../source/chgrp.rst:43
+msgid "Yes"
+msgstr ""
+
+#: ../../source/chgrp.rst:37
+msgid "It will  the change group module under Cleopatra"
+msgstr ""
+
+#: ../../source/chgrp.rst:39
+msgid "Path"
+msgstr ""
+
+#: ../../source/chgrp.rst:39
+msgid "Specify the path"
+msgstr ""
+
+#: ../../source/chgrp.rst:41 ../../source/chgrp.rst:43
+msgid "group"
+msgstr ""
+
+#: ../../source/chgrp.rst:41
+msgid "No"
+msgstr ""
+
+#: ../../source/chgrp.rst:41
+msgid "While changing user can specify the path."
+msgstr ""
+
+#: ../../source/chgrp.rst:43
+msgid "Facilitate to change the new group name|"
+msgstr ""
+
+#: ../../source/chgrp.rst:47
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/chgrp.rst:49
+msgid "Change group can be used to change the group permission."
+msgstr ""
+
+#: ../../source/chgrp.rst:50
+msgid "It simplifies the process."
+msgstr ""
+
+#: ../../source/chgrp.rst:51
+msgid "It is suitable for all types of user."
+msgstr ""
+
+#: ../../source/chgrp.rst:52
+msgid "We can give the command anywhere any time."
+msgstr ""
+
+#: ../../source/chgrp.rst:53
+msgid "Easy to operate."
+msgstr ""

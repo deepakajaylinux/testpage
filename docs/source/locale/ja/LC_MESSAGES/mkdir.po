@@ -1,0 +1,103 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mkdir.rst:3
+msgid "Mkdir"
+msgstr ""
+
+#: ../../source/mkdir.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/mkdir.rst:9
+msgid ""
+"This module assists in creating a directory. The user can specify the path "
+"while declaring creation of directory or at run-time of creating a "
+"directory. It can be performed either in remote or local machine. Let us see"
+" about how this module helps in creating a directory."
+msgstr ""
+
+#: ../../source/mkdir.rst:12
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/mkdir.rst:14
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the Mk Dir. The help command lists out the "
+"alternative parameters of MK Dir. . It also describes the syntax for "
+"creating a directory in two different ways either at time of declaration or "
+"at run-time. . The help command for MK dir is shown below."
+msgstr ""
+
+#: ../../source/mkdir.rst:20
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under MK dir."
+msgstr ""
+
+#: ../../source/mkdir.rst:43
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/mkdir.rst:45
+msgid ""
+"While using commands for help and creating a directory, instead of mkdir "
+"Mkdir can also be used."
+msgstr ""
+
+#: ../../source/mkdir.rst:48
+msgid "Creating a Mk Dir"
+msgstr ""
+
+#: ../../source/mkdir.rst:50
+msgid "Creating an Mk Dir can be done in two different ways:"
+msgstr ""
+
+#: ../../source/mkdir.rst:53
+msgid "Either at run-time"
+msgstr ""
+
+#: ../../source/mkdir.rst:59
+msgid "Or, at the time of declaration"
+msgstr ""
+
+#: ../../source/mkdir.rst:64
+msgid ""
+"The following screen shot depicts the second way of creating a directory."
+msgstr ""
+
+#: ../../source/mkdir.rst:80
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/mkdir.rst:81
+msgid ""
+"The parameters used in help and creating a directory operations are not case"
+" sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/mkdir.rst:82
+msgid ""
+"Creating a directory can be defined in two different ways as declaration "
+"time or at run-time."
+msgstr ""
+
+#: ../../source/mkdir.rst:83
+msgid "It can be performed both in local or remote machine."
+msgstr ""
+
+#: ../../source/mkdir.rst:84
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""

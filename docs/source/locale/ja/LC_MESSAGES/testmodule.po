@@ -1,0 +1,125 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/testmodule.rst:3
+msgid "Test module"
+msgstr ""
+
+#: ../../source/testmodule.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/testmodule.rst:8
+msgid ""
+"Testmodule is the most popular jrush testing module, as of this checking "
+"about extension of file and make use of it. Testmodule is a framework but "
+"can be used in concert with other testing article. As a result, TestModule "
+"provides only the baseline testing functions leaving other libraries to "
+"implement more specific and sophisticated functionality. It shows the "
+"current actions. This is comfortable with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/testmodule.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/testmodule.rst:13
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the testmodule. It lists out the "
+"alternative parameters of testmodule. It also describes the syntax for "
+"functioning of Jrush module. The help command for testmodule is shown as "
+"below."
+msgstr ""
+
+#: ../../source/testmodule.rst:19
+msgid ""
+"After typing the command it lists the options as action. The following image"
+" visualize it obviously."
+msgstr ""
+
+#: ../../source/testmodule.rst:48
+msgid "Alternative parameter"
+msgstr ""
+
+#: ../../source/testmodule.rst:50
+msgid ""
+"Alternatively using Testmodule the user can utilize the following options."
+msgstr ""
+
+#: ../../source/testmodule.rst:52
+msgid "Test Module, testmodule, test-module."
+msgstr ""
+
+#: ../../source/testmodule.rst:55
+msgid "Options"
+msgstr ""
+
+#: ../../source/testmodule.rst:57
+msgid ""
+"There are two options are available. They are as follows. * Action-one * "
+"Action-two"
+msgstr ""
+
+#: ../../source/testmodule.rst:62
+msgid "Action-one"
+msgstr ""
+
+#: ../../source/testmodule.rst:64 ../../source/testmodule.rst:106
+msgid ""
+"It shows the current titles of articles. The command used to do action-one "
+"is as follows,"
+msgstr ""
+
+#: ../../source/testmodule.rst:70
+msgid ""
+"After gives the command it shows the current details and titles of articles."
+" The screenshot represents the same."
+msgstr ""
+
+#: ../../source/testmodule.rst:104
+msgid "Action-two"
+msgstr ""
+
+#: ../../source/testmodule.rst:112
+msgid ""
+"After gives the command it shows the current details and titles of articles."
+msgstr ""
+
+#: ../../source/testmodule.rst:115
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/testmodule.rst:117
+msgid "Check the modules in a correct way."
+msgstr ""
+
+#: ../../source/testmodule.rst:118
+msgid "Non case sensitive."
+msgstr ""
+
+#: ../../source/testmodule.rst:119
+msgid "Less time consuming."
+msgstr ""
+
+#: ../../source/testmodule.rst:120
+msgid "Cheaper to upgrade in simple site."
+msgstr ""
+
+#: ../../source/testmodule.rst:121
+msgid "Latest update is available"
+msgstr ""
+
+#: ../../source/testmodule.rst:122
+msgid "Suitable to work with Ubuntu and centOS."
+msgstr ""

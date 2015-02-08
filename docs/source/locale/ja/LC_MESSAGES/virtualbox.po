@@ -1,0 +1,120 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/virtualbox.rst:3
+msgid "Virtual box"
+msgstr ""
+
+#: ../../source/virtualbox.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/virtualbox.rst:8
+msgid ""
+"This module encourage installation of voice. In case of phlagrant module "
+"fully managed by virtual box.  It is user friendly with Ubuntu and cent OS."
+"  The Virtual Box package installs on an existing host operating system as "
+"an application. Users of Virtual Box can load multiple guest OSs under a "
+"single host operating-system. Virtual Box has supported Open Virtualization "
+"Format (OVF).This is comfortable with Ubuntu and Cent OS."
+msgstr ""
+
+#: ../../source/virtualbox.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/virtualbox.rst:13
+msgid ""
+"The help command guide the user to install virtual box. The following screen"
+" shot shows about installation of virtual box."
+msgstr ""
+
+#: ../../source/virtualbox.rst:34
+msgid "Installation"
+msgstr ""
+
+#: ../../source/virtualbox.rst:36
+msgid ""
+"This module instruct the user to install. To activate virtual box follow the"
+" command as,"
+msgstr ""
+
+#: ../../source/virtualbox.rst:42
+msgid ""
+"Then the system can enquire cleopatra virtual box install? (Y/N) If the user"
+" enters Y then it will be installed, else it will exit the screen."
+msgstr ""
+
+#: ../../source/virtualbox.rst:212
+msgid "Options"
+msgstr ""
+
+#: ../../source/virtualbox.rst:217
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/virtualbox.rst:217
+msgid "Syntax"
+msgstr ""
+
+#: ../../source/virtualbox.rst:217
+msgid "Option"
+msgstr ""
+
+#: ../../source/virtualbox.rst:217
+msgid "Comments"
+msgstr ""
+
+#: ../../source/virtualbox.rst:219
+msgid "Install Virtual box"
+msgstr ""
+
+#: ../../source/virtualbox.rst:219
+msgid "Yes"
+msgstr ""
+
+#: ../../source/virtualbox.rst:219 ../../source/virtualbox.rst:221
+msgid "Virtualbox"
+msgstr ""
+
+#: ../../source/virtualbox.rst:219 ../../source/virtualbox.rst:221
+msgid "Installed successfully"
+msgstr ""
+
+#: ../../source/virtualbox.rst:223
+msgid "No"
+msgstr ""
+
+#: ../../source/virtualbox.rst:223
+msgid "Exit the screen|"
+msgstr ""
+
+#: ../../source/virtualbox.rst:230
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/virtualbox.rst:232
+msgid "Voice can be installed via this module."
+msgstr ""
+
+#: ../../source/virtualbox.rst:233
+msgid ""
+"Both ISO images and host-connected physical devices can be mounted as CD/DVD"
+" drives."
+msgstr ""
+
+#: ../../source/virtualbox.rst:234
+msgid ""
+"The DVD image of a Linux distribution can be downloaded and used directly by"
+" VirtualBox."
+msgstr ""

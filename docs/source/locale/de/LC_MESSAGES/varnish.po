@@ -1,0 +1,170 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/varnish.rst:3
+msgid "Varnish"
+msgstr ""
+
+#: ../../source/varnish.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/varnish.rst:8
+msgid ""
+"This module assists in installing the Varnish to the users machine. Varnish "
+"is a program that can greatly speed up a Web site while reducing the load on"
+" the Web server. According to Varnish's official site, Varnish is a \"Web "
+"application accelerator also known as a caching HTTP reverse proxy\". Let us"
+" see here, about how does this module performs installation of varnish of "
+"apt-get."
+msgstr ""
+
+#: ../../source/varnish.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/varnish.rst:13
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the varnish module. The help command lists"
+" out the alternative parameters of varnish. It also describes the syntax for"
+" installing varnish. The help command under the varnish module is given "
+"below:"
+msgstr ""
+
+#: ../../source/varnish.rst:19
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot depicts you about the help command"
+" under varnish module."
+msgstr ""
+
+#: ../../source/varnish.rst:41
+msgid "Installation"
+msgstr ""
+
+#: ../../source/varnish.rst:43
+msgid ""
+"The command used for installing the varnish to the users machine is shown "
+"below."
+msgstr ""
+
+#: ../../source/varnish.rst:49
+msgid ""
+"After inputting the command above, the following operations occurs as shown "
+"in the tabular format."
+msgstr ""
+
+#: ../../source/varnish.rst:56
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/varnish.rst:56
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/varnish.rst:56
+msgid "Options"
+msgstr ""
+
+#: ../../source/varnish.rst:56
+msgid "Comment"
+msgstr ""
+
+#: ../../source/varnish.rst:58 ../../source/varnish.rst:61
+msgid "Install Varnish? (Y/N)"
+msgstr ""
+
+#: ../../source/varnish.rst:58 ../../source/varnish.rst:61
+msgid "In Spite of Varnish, varnish can also be used."
+msgstr ""
+
+#: ../../source/varnish.rst:58
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/varnish.rst:58
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/varnish.rst:61
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/varnish.rst:61
+msgid ""
+"If the user wish to Quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/varnish.rst:66
+msgid ""
+"If the user proceeds the installation process, during execution of "
+"installation the following process occurs:"
+msgstr ""
+
+#: ../../source/varnish.rst:68
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/varnish.rst:69
+msgid "builds dependency tree."
+msgstr ""
+
+#: ../../source/varnish.rst:70
+msgid "reads state information."
+msgstr ""
+
+#: ../../source/varnish.rst:71
+msgid "list of installed packages."
+msgstr ""
+
+#: ../../source/varnish.rst:72
+msgid "list of extra packages installed."
+msgstr ""
+
+#: ../../source/varnish.rst:73
+msgid "list of new packages installed."
+msgstr ""
+
+#: ../../source/varnish.rst:74
+msgid "number of files upgraded, newly installed, removed, not upgraded."
+msgstr ""
+
+#: ../../source/varnish.rst:75
+msgid "Finally, starting HTTP accelerator varnished."
+msgstr ""
+
+#: ../../source/varnish.rst:76
+msgid "The following screen shot depicts the above mentioned process:"
+msgstr ""
+
+#: ../../source/varnish.rst:145
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/varnish.rst:147
+msgid ""
+"Varnish is a modern, high-performance, open source caching reverse HTTP "
+"proxy implementation."
+msgstr ""
+
+#: ../../source/varnish.rst:148
+msgid ""
+"The parameters used for declaring help command, installation are not case "
+"sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/varnish.rst:149
+msgid "It is well-to-do in both Cent OS and as well as in Ubuntu."
+msgstr ""

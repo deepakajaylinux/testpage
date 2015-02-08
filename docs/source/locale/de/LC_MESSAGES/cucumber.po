@@ -1,0 +1,165 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/cucumber.rst:3
+msgid "Cucumber"
+msgstr ""
+
+#: ../../source/cucumber.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/cucumber.rst:9
+msgid ""
+"This module assists the user to initialize and execute the cucumber test "
+"suite. Let us see how initialize and to execute the cucumber test suite in "
+"the upcoming topics."
+msgstr ""
+
+#: ../../source/cucumber.rst:12
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/cucumber.rst:14
+msgid ""
+"The help command guides the user regarding the purpose and options available"
+" under a module. It lists out the alternative parameters that are used in "
+"declaration. It describes the syntax for initialize and to execute the "
+"cucumber under the testingkamen. The command used for declaring help is "
+"shown below:"
+msgstr ""
+
+#: ../../source/cucumber.rst:20
+msgid ""
+"The following screen shot depicts pictorially about the working of help "
+"command."
+msgstr ""
+
+#: ../../source/cucumber.rst:47
+msgid "How to initialize cucumber"
+msgstr ""
+
+#: ../../source/cucumber.rst:49
+msgid ""
+"The command used for initialize the cucumber under testingkamen is shown:"
+msgstr ""
+
+#: ../../source/cucumber.rst:55
+msgid "or"
+msgstr ""
+
+#: ../../source/cucumber.rst:61
+msgid ""
+"After inputting the command above, the process of initialize occurs as "
+"depicted in the below table."
+msgstr ""
+
+#: ../../source/cucumber.rst:67 ../../source/cucumber.rst:136
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cucumber.rst:67 ../../source/cucumber.rst:136
+msgid "Alternative parameters"
+msgstr ""
+
+#: ../../source/cucumber.rst:67 ../../source/cucumber.rst:136
+msgid "Options"
+msgstr ""
+
+#: ../../source/cucumber.rst:67 ../../source/cucumber.rst:136
+msgid "Comments"
+msgstr ""
+
+#: ../../source/cucumber.rst:69 ../../source/cucumber.rst:72
+msgid "Initialize Cucumber? (Y/N)"
+msgstr ""
+
+#: ../../source/cucumber.rst:69 ../../source/cucumber.rst:72
+#: ../../source/cucumber.rst:138 ../../source/cucumber.rst:141
+msgid "Instead of Cucumber, we can use cucumber also."
+msgstr ""
+
+#: ../../source/cucumber.rst:69 ../../source/cucumber.rst:138
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/cucumber.rst:69
+msgid "If the user wish to proceed the init they can input as Y."
+msgstr ""
+
+#: ../../source/cucumber.rst:72 ../../source/cucumber.rst:141
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/cucumber.rst:72
+msgid "If the user wish to quit the init process they can input as N.|"
+msgstr ""
+
+#: ../../source/cucumber.rst:79
+msgid ""
+"Finally the testingkamen cucumber gets initialized as shown in the following"
+" screenshot."
+msgstr ""
+
+#: ../../source/cucumber.rst:120
+msgid "How to Execute the Cucumber"
+msgstr ""
+
+#: ../../source/cucumber.rst:122
+msgid ""
+"The command used for executing the cucumber under testingkamen is shown:"
+msgstr ""
+
+#: ../../source/cucumber.rst:128
+msgid ""
+"After inputting the command above, the process of execution occurs as "
+"depicted in the below table."
+msgstr ""
+
+#: ../../source/cucumber.rst:138 ../../source/cucumber.rst:141
+msgid "Execute Cucumber? (Y/N)"
+msgstr ""
+
+#: ../../source/cucumber.rst:138
+msgid "If the user wish to proceed the execution they can input as Y."
+msgstr ""
+
+#: ../../source/cucumber.rst:141
+msgid "If the user wish to quit the execution process they can input as N.|"
+msgstr ""
+
+#: ../../source/cucumber.rst:148
+msgid ""
+"If the user proceed the execution, the process of execution will occur as "
+"depicted in the following screen shot."
+msgstr ""
+
+#: ../../source/cucumber.rst:153
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/cucumber.rst:156
+msgid "It is well-to-do in both cent OS and as well as in ubuntu."
+msgstr ""
+
+#: ../../source/cucumber.rst:157
+msgid ""
+"The parameters used in declaration are not case sensitive which is an added "
+"advantage while compared to others."
+msgstr ""
+
+#: ../../source/cucumber.rst:158
+msgid ""
+"This cucumber allows the users to initialize and to execute the cucumber "
+"test suite."
+msgstr ""

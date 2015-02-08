@@ -1,0 +1,236 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/memcached.rst:3
+msgid "Memcached"
+msgstr ""
+
+#: ../../source/memcached.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/memcached.rst:8
+msgid ""
+"The major aspect of this module is to install and update the memcache with "
+"the latest version. Memcached is a general-purpose distributed memory "
+"caching system. It is often used to speed up dynamic database-driven "
+"websites by caching data and objects in RAM to reduce the number of times an"
+" external data source (such as a database or API) must be read."
+msgstr ""
+
+#: ../../source/memcached.rst:11
+msgid ""
+"Memcached is free and open-source software, subject to the terms of the "
+"Revised BSD license.[2] Memcached runs on Unix-like (at least Linux and OS "
+"X) operating systems and on Microsoft Windows. There is a strict dependency "
+"on libevent."
+msgstr ""
+
+#: ../../source/memcached.rst:13
+msgid ""
+"Let us see about the process of installing and using this module in upcoming"
+" topics."
+msgstr ""
+
+#: ../../source/memcached.rst:18
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/memcached.rst:20
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the Memcached module. It lists out the "
+"alternative parameters of Memcached module. It also describes the syntax for"
+" installing the Memcached module. The help command for Memcached module is "
+"shown as below."
+msgstr ""
+
+#: ../../source/memcached.rst:27
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Memcached."
+msgstr ""
+
+#: ../../source/memcached.rst:50
+msgid "Installation"
+msgstr ""
+
+#: ../../source/memcached.rst:52
+msgid ""
+"The command used for installing the Memcached in the users machine is shown "
+"below:"
+msgstr ""
+
+#: ../../source/memcached.rst:59
+msgid ""
+"After inputting the command above, the following process occurs as shown in "
+"the tabular format."
+msgstr ""
+
+#: ../../source/memcached.rst:65
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/memcached.rst:65
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/memcached.rst:65
+msgid "Options"
+msgstr ""
+
+#: ../../source/memcached.rst:65
+msgid "Comments"
+msgstr ""
+
+#: ../../source/memcached.rst:67 ../../source/memcached.rst:70
+msgid "Install Memcached? (Y/N)"
+msgstr ""
+
+#: ../../source/memcached.rst:67 ../../source/memcached.rst:70
+msgid "Instead of memcached, we can use Memcached also."
+msgstr ""
+
+#: ../../source/memcached.rst:67
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/memcached.rst:67
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/memcached.rst:70
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/memcached.rst:70
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/memcached.rst:77
+msgid ""
+"The following screenshot can give you an pictorial representation regarding "
+"the process of installation."
+msgstr ""
+
+#: ../../source/memcached.rst:84
+msgid "Functions of memcached"
+msgstr ""
+
+#: ../../source/memcached.rst:86
+msgid ""
+"While using the memcached, the process can read and implement the following "
+"functions that are included in memcached,"
+msgstr ""
+
+#: ../../source/memcached.rst:88
+msgid "Memcache::add — Add an item to the server"
+msgstr ""
+
+#: ../../source/memcached.rst:89
+msgid "Memcache::addServer — Add a memcached server to connection pool"
+msgstr ""
+
+#: ../../source/memcached.rst:90
+msgid "Memcache::close — Close memcached server connection"
+msgstr ""
+
+#: ../../source/memcached.rst:91
+msgid "Memcache::connect — Open memcached server connection"
+msgstr ""
+
+#: ../../source/memcached.rst:92
+msgid "Memcache::decrement — Decrement item's value"
+msgstr ""
+
+#: ../../source/memcached.rst:93
+msgid "Memcache::delete — Delete item from the server"
+msgstr ""
+
+#: ../../source/memcached.rst:94
+msgid "Memcache::flush — Flush all existing items at the server"
+msgstr ""
+
+#: ../../source/memcached.rst:95
+msgid "Memcache::get — Retrieve item from the server"
+msgstr ""
+
+#: ../../source/memcached.rst:96
+msgid "Memcache::getExtendedStats — Get statistics from all servers in pool"
+msgstr ""
+
+#: ../../source/memcached.rst:97
+msgid "Memcache::getServerStatus — Returns server status"
+msgstr ""
+
+#: ../../source/memcached.rst:98
+msgid "Memcache::getStats — Get statistics of the server"
+msgstr ""
+
+#: ../../source/memcached.rst:99
+msgid "Memcache::getVersion — Return version of the server"
+msgstr ""
+
+#: ../../source/memcached.rst:100
+msgid "Memcache::increment — Increment item's value"
+msgstr ""
+
+#: ../../source/memcached.rst:101
+msgid "Memcache::pconnect — Open memcached server persistent connection"
+msgstr ""
+
+#: ../../source/memcached.rst:102
+msgid "Memcache::replace — Replace value of the existing item"
+msgstr ""
+
+#: ../../source/memcached.rst:103
+msgid "Memcache::set — Store data at the server"
+msgstr ""
+
+#: ../../source/memcached.rst:104
+msgid ""
+"Memcache::setCompressThreshold — Enable automatic compression of large "
+"values"
+msgstr ""
+
+#: ../../source/memcached.rst:105
+msgid ""
+"Memcache::setServerParams — Changes server parameters and status at runtime"
+msgstr ""
+
+#: ../../source/memcached.rst:109
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/memcached.rst:111
+msgid ""
+"The parameters used in help and installation are not case sensitive which is"
+" an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/memcached.rst:112
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/memcached.rst:113
+msgid "This will module installs the memcached in updated version."
+msgstr ""
+
+#: ../../source/memcached.rst:114
+msgid ""
+"If the module is already existing in the user machine it will display a "
+"message as it is already existing."
+msgstr ""

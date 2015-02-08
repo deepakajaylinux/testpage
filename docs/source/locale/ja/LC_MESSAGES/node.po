@@ -1,0 +1,183 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/node.rst:3
+msgid "Node-JS"
+msgstr ""
+
+#: ../../source/node.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/node.rst:8
+msgid ""
+"This module assists the users to install Node JS which is a Server Side JS "
+"Language. Node.js is an open source, cross-platform runtime environment for "
+"server-side and networking applications. Node.js applications are written in"
+" JavaScript, and can be run within the Node.js runtime on OS X, Microsoft "
+"Windows, Linux and FreeBSD. Here, let us see how does this module "
+"facilitates in installing and using the Node-JS."
+msgstr ""
+
+#: ../../source/node.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/node.rst:13
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the Node-JS module. The help command lists "
+"out the alternative parameters of Node-JS module. It also describes the "
+"syntax for installing Node-JS module. The help command for Node-JS module is"
+" shown as below."
+msgstr ""
+
+#: ../../source/node.rst:19
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Node JS."
+msgstr ""
+
+#: ../../source/node.rst:43
+msgid "Installation"
+msgstr ""
+
+#: ../../source/node.rst:45
+msgid ""
+"Installing the Node-JS to your machine, can be done simply by using the "
+"following command as shown:"
+msgstr ""
+
+#: ../../source/node.rst:51
+msgid ""
+"After inputting the command above, the following operations occurs as shown "
+"in the tabular format."
+msgstr ""
+
+#: ../../source/node.rst:56
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/node.rst:56
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/node.rst:56
+msgid "Option"
+msgstr ""
+
+#: ../../source/node.rst:56
+msgid "Comments"
+msgstr ""
+
+#: ../../source/node.rst:58 ../../source/node.rst:61
+msgid "Install Node JS? (Y/N)"
+msgstr ""
+
+#: ../../source/node.rst:58 ../../source/node.rst:61
+msgid "In Spite of Node JS, NodeJS, node-js, nodejs can also be used."
+msgstr ""
+
+#: ../../source/node.rst:58
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/node.rst:58
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/node.rst:61
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/node.rst:61
+msgid ""
+"If the user wish to proceed the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/node.rst:66
+msgid ""
+"If the user proceeds the installation process, during execution of "
+"installation the following process occurs:"
+msgstr ""
+
+#: ../../source/node.rst:68
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/node.rst:69
+msgid "builds dependency tree."
+msgstr ""
+
+#: ../../source/node.rst:70
+msgid "reads state information."
+msgstr ""
+
+#: ../../source/node.rst:71
+msgid "list of packages that are automatically installed."
+msgstr ""
+
+#: ../../source/node.rst:72
+msgid "list of new packages installed."
+msgstr ""
+
+#: ../../source/node.rst:73
+msgid ""
+"lists out the number of files that are upgraded, newly installed, removed, "
+"not upgraded."
+msgstr ""
+
+#: ../../source/node.rst:75
+msgid ""
+"Finally, the reports and status are clearly reported. And also, adding "
+"package nodejs from the Packager Apt executed correctly. The following "
+"screenshot depicts the entire process of installation as described."
+msgstr ""
+
+#: ../../source/node.rst:77
+msgid ""
+"If the node-js module is already existing in the users machine, it will show"
+" an message as the Package node-js from the packager Apt is already "
+"installed. The screen shot as follows is an good example for those type of "
+"messages."
+msgstr ""
+
+#: ../../source/node.rst:172
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/node.rst:174
+msgid ""
+"The parameters used for declaring help command, installation are not case "
+"sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/node.rst:175
+msgid "It is well-to-do in both Cent OS and as well as in Ubuntu."
+msgstr ""
+
+#: ../../source/node.rst:176
+msgid ""
+"If the node-js package is already existing in the user machine, it won't "
+"overwrites, instead of that it will show a message as already exist."
+msgstr ""
+
+#: ../../source/node.rst:177
+msgid ""
+"Node.js uses the Google V8 JavaScript engine to execute code, and a large "
+"percentage of the basic modules are written in JavaScript. Node.js contains "
+"a built-in library to allow applications to act as a Web server without "
+"software such as Apache HTTP Server or IIS."
+msgstr ""

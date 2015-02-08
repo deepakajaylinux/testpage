@@ -1,0 +1,111 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/project.rst:3
+msgid "Project"
+msgstr ""
+
+#: ../../source/project.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/project.rst:8
+msgid ""
+"In contemporary business and science a project is defined as a collaborative"
+" enterprise, involving research or design, which is carefully planned to "
+"achieve a particular aim. Projects can be further defined as temporary "
+"rather than permanent social systems or work systems that are constituted by"
+" teams within or across organizations to accomplish particular tasks under "
+"time constraints. An ongoing project is usually called (or evolves into) a "
+"program."
+msgstr ""
+
+#: ../../source/project.rst:10
+msgid ""
+"This command is part of default modules and handles project initialization "
+"functions, like configuring a project, or a project container and also "
+"installing Jenkins build files into a running Jenkins instance."
+msgstr ""
+
+#: ../../source/project.rst:13
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/project.rst:15
+msgid ""
+"This command helps to determine the usage of project module. The user will "
+"come to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screen shot of the same."
+msgstr ""
+
+#: ../../source/project.rst:57
+msgid "Container"
+msgstr ""
+
+#: ../../source/project.rst:59
+msgid ""
+"This command helps make a container folder for revisions (like "
+"/var/www/applications/*APP NAME*). When the user needs to install, the user "
+"can issue the following commands for DBIstall. The system will execute the "
+"process of installation."
+msgstr ""
+
+#: ../../source/project.rst:87
+msgid "init"
+msgstr ""
+
+#: ../../source/project.rst:88
+msgid ""
+"When the user needs to initialize dapper project, the user can issue the "
+"following commands. The system will execute the process."
+msgstr ""
+
+#: ../../source/project.rst:111
+msgid "Build-Install"
+msgstr ""
+
+#: ../../source/project.rst:113
+msgid ""
+"When the user needs copy Jenkins project stored in repo to running Jenkins, "
+"the user can issue the following commands. The system will execute the "
+"process."
+msgstr ""
+
+#: ../../source/project.rst:120
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/project.rst:122
+msgid "There are two alternative parameters which can be used in command."
+msgstr ""
+
+#: ../../source/project.rst:124
+msgid "Project, project and proj"
+msgstr ""
+
+#: ../../source/project.rst:126
+msgid "eg: dapperstrano Project help/  dapperstrano proj help"
+msgstr ""
+
+#: ../../source/project.rst:129
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/project.rst:131
+msgid "Helps make a container folder for revisions"
+msgstr ""
+
+#: ../../source/project.rst:132
+msgid "Helps to initialize dapper project"
+msgstr ""

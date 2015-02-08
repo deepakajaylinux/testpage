@@ -1,0 +1,287 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpapc.rst:3
+msgid "PHPAPC"
+msgstr ""
+
+#: ../../source/phpapc.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpapc.rst:8
+msgid ""
+"This module aims at installing the PHP APC to the users machine in all "
+"possible ways."
+msgstr ""
+
+#: ../../source/phpapc.rst:10
+msgid ""
+"APC is one of the most popular caching mechanism for PHP’s op-code caching. "
+"Once activated, it starts caching PHP codes automatically. It also works "
+"nicely with W3 Total Cache plugin for storing Object & MySQL caches."
+msgstr ""
+
+#: ../../source/phpapc.rst:12
+msgid ""
+"The upcoming topics will guides your entirely in all aspects involved in "
+"installing the PHP APC."
+msgstr ""
+
+#: ../../source/phpapc.rst:17
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/phpapc.rst:19
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the Php APC module. It lists out the "
+"alternative parameters of Php APC module. It also describes the syntax for "
+"installing the Php APC module. The help command for Php APC module is shown "
+"as below."
+msgstr ""
+
+#: ../../source/phpapc.rst:26
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Php APC."
+msgstr ""
+
+#: ../../source/phpapc.rst:51
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpapc.rst:53
+msgid ""
+"The command used for installing the Php APC in the users machine is shown "
+"below:"
+msgstr ""
+
+#: ../../source/phpapc.rst:60
+msgid ""
+"After inputting the command above, the following process occurs as shown in "
+"the tabular format."
+msgstr ""
+
+#: ../../source/phpapc.rst:65
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpapc.rst:65
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/phpapc.rst:65
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpapc.rst:65
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpapc.rst:67 ../../source/phpapc.rst:70
+msgid "Install PHP APC? (Y/N)"
+msgstr ""
+
+#: ../../source/phpapc.rst:67 ../../source/phpapc.rst:70
+msgid "Instead of phpapc, we can use PHPAPC, php-apc."
+msgstr ""
+
+#: ../../source/phpapc.rst:67
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/phpapc.rst:67
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/phpapc.rst:70
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/phpapc.rst:70
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/phpapc.rst:76
+msgid ""
+"If the user proceeds the installation, during the process of installation is"
+" described in the below lists:"
+msgstr ""
+
+#: ../../source/phpapc.rst:79
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/phpapc.rst:80
+msgid "Builds the dependency tree."
+msgstr ""
+
+#: ../../source/phpapc.rst:81
+msgid "Reads state information."
+msgstr ""
+
+#: ../../source/phpapc.rst:82
+msgid "List outs the packages that are automatically installed."
+msgstr ""
+
+#: ../../source/phpapc.rst:83
+msgid "List outs the extra package that are installing."
+msgstr ""
+
+#: ../../source/phpapc.rst:84
+msgid "List outs the suggested packages."
+msgstr ""
+
+#: ../../source/phpapc.rst:85
+msgid "List outs the new packages that are installing."
+msgstr ""
+
+#: ../../source/phpapc.rst:86
+msgid ""
+"Details regarding the number of files upgraded, newly installed, removed and"
+" not upgraded."
+msgstr ""
+
+#: ../../source/phpapc.rst:89
+msgid ""
+"Finally, the process of installation gets completed. The following "
+"screenshot visually represent the process of installing the PHP APC."
+msgstr ""
+
+#: ../../source/phpapc.rst:146
+msgid "APC Functions"
+msgstr ""
+
+#: ../../source/phpapc.rst:149
+msgid ""
+"This sub topics deals with the most frequently used functions under APC. "
+"While working with Php APC the user can refer with these functions of APC."
+msgstr ""
+
+#: ../../source/phpapc.rst:151
+msgid "apc_add — Cache a new variable in the data store"
+msgstr ""
+
+#: ../../source/phpapc.rst:152
+msgid "apc_bin_dump — Get a binary dump of the given files and user variables"
+msgstr ""
+
+#: ../../source/phpapc.rst:153
+msgid ""
+"apc_bin_dumpfile — Output a binary dump of cached files and user variables "
+"to a file"
+msgstr ""
+
+#: ../../source/phpapc.rst:154
+msgid "apc_bin_load — Load a binary dump into the APC file/user cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:155
+msgid ""
+"apc_bin_loadfile — Load a binary dump from a file into the APC file/user "
+"cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:156
+msgid "apc_cache_info — Retrieves cached information from APC's data store"
+msgstr ""
+
+#: ../../source/phpapc.rst:157
+msgid "apc_cas — Updates an old value with a new value"
+msgstr ""
+
+#: ../../source/phpapc.rst:158
+msgid "apc_clear_cache — Clears the APC cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:159
+msgid ""
+"apc_compile_file — Stores a file in the bytecode cache, bypassing all "
+"filters."
+msgstr ""
+
+#: ../../source/phpapc.rst:160
+msgid "apc_dec — Decrease a stored number"
+msgstr ""
+
+#: ../../source/phpapc.rst:161
+msgid ""
+"apc_define_constants — Defines a set of constants for retrieval and mass-"
+"definition"
+msgstr ""
+
+#: ../../source/phpapc.rst:162
+msgid "apc_delete_file — Deletes files from the opcode cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:163
+msgid "apc_delete — Removes a stored variable from the cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:164
+msgid "apc_exists — Checks if APC key exists"
+msgstr ""
+
+#: ../../source/phpapc.rst:165
+msgid "apc_fetch — Fetch a stored variable from the cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:166
+msgid "apc_inc — Increase a stored number"
+msgstr ""
+
+#: ../../source/phpapc.rst:167
+msgid "apc_load_constants — Loads a set of constants from the cache"
+msgstr ""
+
+#: ../../source/phpapc.rst:168
+msgid "apc_sma_info — Retrieves APC's Shared Memory Allocation information"
+msgstr ""
+
+#: ../../source/phpapc.rst:169
+msgid "apc_store — Cache a variable in the data store"
+msgstr ""
+
+#: ../../source/phpapc.rst:174
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpapc.rst:176
+msgid ""
+"The parameters used in help and installation are not case sensitive which is"
+" an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/phpapc.rst:177
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/phpapc.rst:178
+msgid "This will module installs the php apc in updated version."
+msgstr ""
+
+#: ../../source/phpapc.rst:179
+msgid ""
+"If the module is already existing in the user machine it will display a "
+"message as it is already existing."
+msgstr ""
+
+#: ../../source/phpapc.rst:180
+msgid ""
+"APC comes with file named apc.php, which provides a simple web-based "
+"interface."
+msgstr ""

@@ -1,0 +1,122 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/ubuntucompiler.rst:3
+msgid "Ubuntu Compiler"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:7
+msgid ""
+"This module revitalize c program. Ubuntu and other Linux distributions have "
+"extensive package repositories to save the user from the trouble of "
+"compiling. With just a single command, you can build from source like a pro."
+" It is comfort with Ubuntu and centOS."
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:10
+msgid "Help command"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:12
+msgid ""
+"This help command guide the user about Ubuntu compiler. It is less time "
+"consuming because it can installed automatically. Suitable for C program."
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:18
+msgid "The following help command will assist the user for installation."
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:39
+msgid "Installation"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:41
+msgid ""
+"This is a noticeable process to install Ubuntu compiler module under "
+"Cleopatra by just using the command given below,"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:47
+msgid ""
+"After giving the command, the Ubuntu compiler will be installed with new "
+"updates."
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:49
+msgid "If the user input as N the following screen will come."
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:69
+msgid "option"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:74
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:74
+msgid "syntax"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:74
+msgid "Comment"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:76
+msgid "Install Ubuntu compiler? Y/N"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:76
+msgid "Yes"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:76
+msgid "Installed successfully"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:78
+msgid "stop"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:78
+msgid "No"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:78
+msgid "Exit the screen|"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:82
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:84
+msgid "Faster boot"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:85
+msgid "Better security"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:86
+msgid "Changing the kernel to pre-empt while compilation"
+msgstr ""
+
+#: ../../source/ubuntucompiler.rst:87
+msgid "Suitable for C program"
+msgstr ""

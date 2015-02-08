@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/autossh.rst:3
+#: ../../source/autossh.rst:111
+# 4943be9081014c8b8392ba3388702a59
+# 7d4c6dbb82c84969995f2f58c4051b7b
+msgid "AutoSSH"
+msgstr ""
+
+#: ../../source/autossh.rst:7
+# 3f8501c940bc4c75a8490476a51778b7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/autossh.rst:9
+# 8166f2bf74d743e8ad3ce821fb6ab2a8
+msgid "This module facilitates the users to autoSSH a phlagrant box. Autossh is a small front-end for SSH that can monitor the connection, and restart the tunnel if it drops or stops responding."
+msgstr ""
+
+#: ../../source/autossh.rst:11
+# f20aeb5d55cf45bebdfc565baa0eddae
+msgid "autossh uses ssh to construct a loop of ssh forwardings (one from local to remote, one from remote to local), and then sends test data that it expects to get back."
+msgstr ""
+
+#: ../../source/autossh.rst:13
+# e72ef5899fdf4c5e96c91f77ba1a2540
+msgid "Let us see the functions of auto ssh in upcoming topics."
+msgstr ""
+
+#: ../../source/autossh.rst:17
+# 0f37ddf9ab974139a3589754e414c163
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/autossh.rst:19
+# 43237906a5ab40019da1d174e0d0e8c4
+msgid "The help command guides the users regarding the purpose and as well as about the options that are included in the Auto SSH module. It lists out the alternative parameters of Auto SSH module. It also describes the syntax for using the cli, sftp_put, sftp_get commands. The help command for Auto SSH module is shown as below."
+msgstr ""
+
+#: ../../source/autossh.rst:27
+# efc0cd30c8f44b0cb94b99abdfabdd96
+msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Auto SSH."
+msgstr ""
+
+#: ../../source/autossh.rst:62
+# 2c556142fbcd4ce48f730b527a6bfcef
+msgid "Functions of AutoSSH"
+msgstr ""
+
+#: ../../source/autossh.rst:64
+# ab55c387a80d42bd9604de3e240ab715
+msgid "As depicted in the above help command, the major functions of this auto ssh module includes"
+msgstr ""
+
+#: ../../source/autossh.rst:66
+# 6312d008d3e941b8bf613a78d2577da4
+msgid "cli"
+msgstr ""
+
+#: ../../source/autossh.rst:67
+# d191c75b296a4b978b84ccfac0ea4825
+msgid "sftp_put"
+msgstr ""
+
+#: ../../source/autossh.rst:68
+# 3e8103664e404fff90578b99418aa6a2
+msgid "sftp_get"
+msgstr ""
+
+#: ../../source/autossh.rst:72
+# 44c16374c98643f18d7f4aa146ef83b2
+msgid "Cli"
+msgstr ""
+
+#: ../../source/autossh.rst:74
+# 43b10854aaef421eb3dde51d33f4648f
+msgid "After activating or building an auto ssh in the users environment, the cli can be created which is used to open an SSH Cli to the users phlagrant box by using the following command:"
+msgstr ""
+
+#: ../../source/autossh.rst:81
+# 7396105b05ae426392cd58abf07548b2
+msgid "The cli is used for listing the available clients in a particular environments where the auto ssh is generated."
+msgstr ""
+
+#: ../../source/autossh.rst:85
+# aebef8fdd8984ad5824d8d06fc88eceb
+msgid "Sftp_put"
+msgstr ""
+
+#: ../../source/autossh.rst:87
+# 145137ffb1794d408823225b9b79fd45
+msgid "This function is used for placing or moving the required files or data from the source to destination of an particular environment where the auto ssh is generated. This can be done by using the command given below:"
+msgstr ""
+
+#: ../../source/autossh.rst:93
+# e8c5abb84f214dc5ad566fe3e495d43e
+msgid "The command shown above will put a file on to the users phlagrant box. The following screenshot visually depicts the process."
+msgstr ""
+
+#: ../../source/autossh.rst:97
+# d01e4cb13c6047f983f86cfe15ddd177
+msgid "Sftp_get"
+msgstr ""
+
+#: ../../source/autossh.rst:99
+# b3d9d4850f0b4a539b230e7f37467841
+msgid "This function is used for getting or fetching the required files or data from the source to destination of an particular environment where the auto ssh is generated. This can be done by using the command given below:"
+msgstr ""
+
+#: ../../source/autossh.rst:105
+# cc5344218aa949e28dcbbea423e713af
+msgid "The command shown above will gets or receives a file from the users phlagrant box. The following screenshot visually depicts the process."
+msgstr ""
+
+#: ../../source/autossh.rst:109
+# 274d8bebfb234ca88a45c02c60cd7a2f
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/autossh.rst:112
+# dada1c5a5c3d4b06ab9ef59fa40b3634
+msgid "auto-ssh"
+msgstr ""
+
+#: ../../source/autossh.rst:113
+# a0e5d88b4f5c439a85a19c4c0ff5857b
+msgid "autossh"
+msgstr ""
+
+#: ../../source/autossh.rst:114
+# 8ddec8f69fe84173bc8a8dd49aa452d6
+msgid "ssh"
+msgstr ""
+
+#: ../../source/autossh.rst:115
+# ad0e91fc93454416b1bb9ed9fc63e824
+msgid "SSH"
+msgstr ""
+
+#: ../../source/autossh.rst:117
+# 58521be8732644138cc1580b602958eb
+msgid "In the above mentioned list any of the alternative parameters can be used in declaration."
+msgstr ""
+
+#: ../../source/autossh.rst:121
+# ebaa6c0742ea42d587b59407bd54d8e4
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/autossh.rst:123
+# 8af5157eb2c2485fb51e93d4e65aabe6
+msgid "The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while compared  to others."
+msgstr ""
+
+#: ../../source/autossh.rst:124
+# b3d57b4b0b5a434292f549fa65991285
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/autossh.rst:125
+# ed80fd001484460ab8d9d884224ceb7a
+msgid "The cli functions list outs the available clients in a particular environment by the aid of auto SSH."
+msgstr ""
+
+#: ../../source/autossh.rst:126
+# 794e1d192cad46edad5a2a9a411ac338
+msgid "Sftp_put, Sftp_get can place and fetch the files respectively between source and destination of a particular environment by using auto SSH."
+msgstr ""
+
+#: ../../source/autossh.rst:127
+# 98efc65c4ec649618d535439ab6150d6
+msgid "The syntax for declaring the cli, put, get are clearly depicted in the help command."
+msgstr ""
+

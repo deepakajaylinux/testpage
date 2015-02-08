@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/gitbucket.rst:3
+# 97260a6e7ec84718941b614dd82953f3
+msgid "Gitbucket"
+msgstr ""
+
+#: ../../source/gitbucket.rst:6
+# 23457f9c9daa40fabcc6a9f14289db93
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/gitbucket.rst:8
+# b0921c7291e94be7baf78a3143d062d5
+msgid "Git is a distributed revision control system with an emphasis on speed, data integrity and support for distributed, non-linear workflows. Git is the widely adopted version control system for software development."
+msgstr ""
+
+#: ../../source/gitbucket.rst:10
+# 4c197c61a20b4335bc7a07767d13ba60
+msgid "Git working directory is a full-fledged repository with complete history and full version-tracking capabilities, independent of network access or a central server."
+msgstr ""
+
+#: ../../source/gitbucket.rst:13
+# 5f5587fd5c484ec48337a325cd4a6f84
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/gitbucket.rst:15
+# ee89c65039484ab68840ca39be7f9343
+msgid "This command helps to determine the usage of gitbucket module. The user comes to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/gitbucket.rst:22
+# 555f52d9c0f24d57bce6326903f007bd
+msgid "Installation"
+msgstr ""
+
+#: ../../source/gitbucket.rst:24
+# 6de6169d76af48ba9e860826fba75840
+msgid "When the user needs to install gitbucket module in machine. The below given command will execute the process of installation. While installing, the system ask for repository root directory. User has to define the path. There is no default directory."
+msgstr ""
+
+#: ../../source/gitbucket.rst:32
+# 48e4d26c94014a659558a4e31ad77617
+msgid "Options"
+msgstr ""
+
+#: ../../source/gitbucket.rst:37
+# f28a6c5b540c47f8aabeb6a57c1f134f
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/gitbucket.rst:37
+# 8afba4648f3c4eaf90225953678cc8b0
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/gitbucket.rst:37
+# c67a16c3b0cd4dde97eec05ed01d6487
+msgid "Option"
+msgstr ""
+
+#: ../../source/gitbucket.rst:37
+# 021125f55528452e9e0bc399b3c0a353
+msgid "Comments"
+msgstr ""
+
+#: ../../source/gitbucket.rst:39
+#: ../../source/gitbucket.rst:42
+# e364b67182f548b6af1990ca50fcd54a
+# b7f4d61c6a8a4b8eb941ff061a450bc5
+msgid "cleopatra  gitbucket Install"
+msgstr ""
+
+#: ../../source/gitbucket.rst:39
+#: ../../source/gitbucket.rst:42
+# 9f700a455b1444d887fa7a9b1d9c1c9b
+# 8c56194ec4054f60b8fddc7d45bf6082
+msgid "GitBucket, gitbucket , git-bucket"
+msgstr ""
+
+#: ../../source/gitbucket.rst:39
+# 0af0e4d23dbe49ffa1dd1977842080bb
+msgid "Y"
+msgstr ""
+
+#: ../../source/gitbucket.rst:39
+# f592ce3e015f464f90bebc5abab2603e
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/gitbucket.rst:42
+# 74b05c90f9784ea98fd114c4a9e9fda5
+msgid "N"
+msgstr ""
+
+#: ../../source/gitbucket.rst:43
+# 7524acc198a643569ae10b52d3e9a9a7
+msgid "System stops installation|"
+msgstr ""
+
+#: ../../source/gitbucket.rst:49
+# b317a0655de9473791de469a53166f26
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/gitbucket.rst:51
+# 56c54a53004a4d80bc25310e4b5a4cc4
+msgid "Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history."
+msgstr ""
+
+#: ../../source/gitbucket.rst:52
+# a396a03b31844c2e85ce497077b7ddf2
+msgid "Repositories can be published via HTTP, FTP, rsync, or a Git protocol over either a plain socket, or ssh."
+msgstr ""
+
+#: ../../source/gitbucket.rst:53
+# ac0c0d72217b4958af23899b7c9de0e2
+msgid "Git described as being very fast, scalable and showed it was an order of magnitude faster than some version-control systems, and fetching version history from a locally stored repository can be one hundred times faster than fetching it from the remote server."
+msgstr ""
+

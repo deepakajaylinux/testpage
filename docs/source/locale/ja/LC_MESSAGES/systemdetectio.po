@@ -1,0 +1,139 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/systemdetectio.rst:3
+msgid "System Detection"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:8
+msgid ""
+"This module aims at detecting the users machine and in hand provides them "
+"the necessary information to them regarding the users system. It also "
+"provides a facility to the users to configure their applications settings. "
+"The few examples for applications settings includes mysql admin user, host, "
+"pass."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:13
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the System detection modules. The help "
+"command lists out the alternative parameters of System detection. It also "
+"describes the syntax for detecting the users machine. The help command for "
+"System detection is shown below."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:19
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under system detection."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:41
+msgid "Detection"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:43
+msgid "The command used for system detection is given below."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:49
+msgid ""
+"After inputting the command above, the process of system detection starts. "
+"During system detection the following information's regarding the "
+"corresponding machine are reported:"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:51
+msgid "Operating System"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:52
+msgid "Linux Type"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:53
+msgid "Distro"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:54
+msgid "Version"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:55
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:56
+msgid "Host Name"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:57
+msgid "IP Address 0."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:58
+msgid "IP Address 1."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:60
+msgid ""
+"Finally, After detection the information regarding the above mentioned "
+"features are clearly reported. The following screen shot depicts you about "
+"the process of system detection."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:87
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:89
+msgid "Instead of systemdetection, the following parameters can be used:"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:91
+msgid "SystemDetection"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:92
+msgid "system-detection"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:95
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/systemdetectio.rst:97
+msgid ""
+"The users can configure the application settings using this system "
+"detections."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:98
+msgid ""
+"The parameters used for declaring help command, system detection are not "
+"case sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/systemdetectio.rst:99
+msgid "It is well-to-do in both Cent OS and as well as in Ubuntu."
+msgstr ""

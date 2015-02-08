@@ -1,0 +1,133 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/jenkinsplugins.rst:3
+msgid "JenkinsPlugins"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:8
+msgid ""
+"Jenkins is popular to build server. Jenkins is an open source continuous "
+"integration tool written in Java. Jenkins provides continuous integration "
+"services for software development."
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:10
+msgid ""
+"Plugins have been released for Jenkins that extend its use to projects "
+"written in languages other than Java. Plugins are available for integrating "
+"Jenkins with most version control systems and big databases. Many build "
+"tools are supported via their respective plugins. Plugins can also change "
+"the way Jenkins looks or add new functionality. Builds can generate test "
+"reports in various formats supported by plugins (JUnit support is currently "
+"bundled) and Jenkins can display the reports and generate trends and render "
+"them in the GUI."
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:13
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:15
+msgid ""
+"This command helps to determine the usage of JenkinsPlugins module. The user"
+" will come to know about the different ways/format to execute this module. "
+"This command guides the end user to know the purpose of this command. Below "
+"given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:44
+msgid "Installation"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:45
+msgid ""
+"This command allows you to install a bunch of plugins that we recommend for "
+"PHP builds in Jenkins. If the user needs to install Jenkins module in "
+"machine, the below given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:88
+msgid "Options"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:93
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:93
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:93
+msgid "Option"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:93
+msgid "Comments"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:95 ../../source/jenkinsplugins.rst:104
+msgid "cleopatra  JenkinsPlugins Install"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:95
+msgid ""
+"Either of the four alternative parameter can be used in command- "
+"JenkinsPlugins, jenkinsplugins, jenkins-plugins, jenkins-plugs eg: Cleopatra"
+" jenkins-plugins Install"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:95
+msgid "Y"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:95
+msgid "Once the user provides the option, System starts installation process"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:104
+msgid ""
+"Either of the four alternative parameter can be used in command- "
+"JenkinsPlugins, jenkinsplugins, jenkins-plugins, jenkins-plugs eg: Cleopatra"
+" jenkins-plugins Install|"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:104
+msgid "N"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:104
+msgid "Once the user provides the option, System Stops installation process"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:116
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:118
+msgid ""
+"The plugin will give you a report on how much every plugin will be used in "
+"all of your jobs . Therefore it will analyze the used extension points of "
+"each job."
+msgstr ""
+
+#: ../../source/jenkinsplugins.rst:119
+msgid ""
+"This plugin gives you the possibility to analyze the usage of your installed"
+" plugins."
+msgstr ""

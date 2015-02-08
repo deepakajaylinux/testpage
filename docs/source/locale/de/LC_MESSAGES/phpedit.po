@@ -1,0 +1,153 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpedit.rst:3
+msgid "PHPEdit"
+msgstr ""
+
+#: ../../source/phpedit.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpedit.rst:7
+msgid ""
+"PHPEdit module is a complete Integrated Development Environment for PHP. "
+"Much more than a simple PHP edit, it helps the user to carry out their "
+"projects in a friendly and efficient way, with a single tool integrating all"
+" the features the user will need from the design of their projects, their "
+"documentation, to their deployment. It appropriate with Ubuntu and centOS."
+msgstr ""
+
+#: ../../source/phpedit.rst:10
+msgid "Help command"
+msgstr ""
+
+#: ../../source/phpedit.rst:12
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the Phpedit module. It lists out the "
+"alternative parameters of Phpedit module. It also describes the syntax for "
+"installing the Phpedit module. The help command for Phpedit module is shown "
+"as below."
+msgstr ""
+
+#: ../../source/phpedit.rst:18
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Phpedit."
+msgstr ""
+
+#: ../../source/phpedit.rst:42
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpedit.rst:44
+msgid ""
+"PHPEdit comes with a lot of extensions, frameworks, help files and tools, so"
+" it is shipped in an installer which can be customized to suits the user "
+"needs.However, because PHPEdit is constantly evolving, with new features and"
+" maintenance fixes, an auto update system is also available, to help keep up"
+" with PHPEdit's latest releases effortlessly. the command used for "
+"installation of this module as follows,"
+msgstr ""
+
+#: ../../source/phpedit.rst:50
+msgid "The screen shot makes clear about this module."
+msgstr ""
+
+#: ../../source/phpedit.rst:58
+msgid "Option"
+msgstr ""
+
+#: ../../source/phpedit.rst:63
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpedit.rst:63
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/phpedit.rst:63
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpedit.rst:63
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpedit.rst:65 ../../source/phpedit.rst:69
+msgid "Install phpedit? (Y/N)"
+msgstr ""
+
+#: ../../source/phpedit.rst:65
+msgid ""
+"In Spite of PHP-Edit, the following alternatives can also be used: "
+"phpedit,PHPEdit"
+msgstr ""
+
+#: ../../source/phpedit.rst:65 ../../source/phpedit.rst:69
+msgid "Y"
+msgstr ""
+
+#: ../../source/phpedit.rst:65
+msgid "The user wish to proceed the installation process."
+msgstr ""
+
+#: ../../source/phpedit.rst:69
+msgid ""
+"In Spite of PHP-Edit, the following alternatives can also be used: "
+"phpedit,PHPEdit        |"
+msgstr ""
+
+#: ../../source/phpedit.rst:69
+msgid "The user wish to quit the installation process."
+msgstr ""
+
+#: ../../source/phpedit.rst:75
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpedit.rst:77
+msgid ""
+"Write the user code faster with all the available code assistants and code "
+"generators."
+msgstr ""
+
+#: ../../source/phpedit.rst:78
+msgid ""
+"Improve the quality of your projects with the integrated debugger, and the "
+"unit tests module"
+msgstr ""
+
+#: ../../source/phpedit.rst:79
+msgid ""
+"Deploy easily with a single click the user projects, and work transparently "
+"on remote files"
+msgstr ""
+
+#: ../../source/phpedit.rst:80
+msgid "Increase the user productivity with their favorite frameworks"
+msgstr ""
+
+#: ../../source/phpedit.rst:81
+msgid "Code intelligence is possible."
+msgstr ""
+
+#: ../../source/phpedit.rst:82
+msgid "Debugger and Profiler also available."
+msgstr ""
+
+#: ../../source/phpedit.rst:83
+msgid "Non case sensitivity acts a vital role in this module"
+msgstr ""

@@ -1,0 +1,199 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/xvfb.rst:3
+msgid "Xvfb"
+msgstr ""
+
+#: ../../source/xvfb.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/xvfb.rst:8
+msgid ""
+"This module facilitates in installing the xvfb, which is known as popular "
+"virtual machine solution. The module provides a solution for working in an "
+"virtual machine.  xvfb known as X virtual frame buffer is a display server "
+"implementing the X11 display server protocol. In contrast to other display "
+"servers Xvfb performs all graphical operations in memory without showing any"
+" screen output.  Let us see, how this module assists in installing the xvfb "
+"via apt-get."
+msgstr ""
+
+#: ../../source/xvfb.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/xvfb.rst:13
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the xvfb module. The help command lists "
+"out the alternative parameters of xvfb module. It also describes the syntax "
+"for installing xvfb module The help command for xvfb module is shown as "
+"below."
+msgstr ""
+
+#: ../../source/xvfb.rst:19
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under xvfb module."
+msgstr ""
+
+#: ../../source/xvfb.rst:42
+msgid "Installation"
+msgstr ""
+
+#: ../../source/xvfb.rst:44
+msgid ""
+"The command used for installing the xvfb to the users machine is shown "
+"below."
+msgstr ""
+
+#: ../../source/xvfb.rst:50
+msgid ""
+"After inputting the command above, the following operations occurs as shown "
+"in the tabular format."
+msgstr ""
+
+#: ../../source/xvfb.rst:55
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/xvfb.rst:55
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/xvfb.rst:55
+msgid "Option"
+msgstr ""
+
+#: ../../source/xvfb.rst:55
+msgid "Comments"
+msgstr ""
+
+#: ../../source/xvfb.rst:57 ../../source/xvfb.rst:60
+msgid "Install Xvfb? (Y/N)"
+msgstr ""
+
+#: ../../source/xvfb.rst:57 ../../source/xvfb.rst:60
+msgid "In Spite of Xvfb, xvfb can also be used."
+msgstr ""
+
+#: ../../source/xvfb.rst:57
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/xvfb.rst:57
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/xvfb.rst:60
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/xvfb.rst:60
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/xvfb.rst:64
+msgid ""
+"If the user proceeds the installation process, during execution of "
+"installation the following process occurs:"
+msgstr ""
+
+#: ../../source/xvfb.rst:66
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/xvfb.rst:67
+msgid "builds dependency tree."
+msgstr ""
+
+#: ../../source/xvfb.rst:68
+msgid "reads state information."
+msgstr ""
+
+#: ../../source/xvfb.rst:69
+msgid "list of new packages installed."
+msgstr ""
+
+#: ../../source/xvfb.rst:70
+msgid "number of files upgraded, newly installed, removed, not upgraded."
+msgstr ""
+
+#: ../../source/xvfb.rst:72
+msgid ""
+"Finally, the status are clearly reported and adding package xvfb from the "
+"packager Apt are executed correctly. The following screenshot depicts you "
+"about the process of installing xvfb."
+msgstr ""
+
+#: ../../source/xvfb.rst:74
+msgid ""
+"If the xvfb module is already existing in the users machine, it will show an"
+" message as the Package xvfb from the packager Apt is already installed. The"
+" screen shot as follows is an good example for those type of messages."
+msgstr ""
+
+#: ../../source/xvfb.rst:121
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/xvfb.rst:123
+msgid ""
+"The parameters used for declaring help command, installation are not case "
+"sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/xvfb.rst:124
+msgid "It is well-to-do in both Cent OS and as well as in Ubuntu."
+msgstr ""
+
+#: ../../source/xvfb.rst:125
+msgid ""
+"If the xvfb package is already existing in the user machine, it won't "
+"overwrites, instead of that it will show a message as already exist."
+msgstr ""
+
+#: ../../source/xvfb.rst:127
+msgid "Xvfb is primarily used for testing:"
+msgstr ""
+
+#: ../../source/xvfb.rst:129
+msgid ""
+"Since it shares code with the real X server, it can be used to test the "
+"parts of the code that are not related to the specific hardware."
+msgstr ""
+
+#: ../../source/xvfb.rst:130
+msgid ""
+"It can be used to test clients in various conditions that would otherwise "
+"require a range of different hardware; for example, it can be used to test "
+"whether clients work correctly at depths or screen sizes that are rarely "
+"supported by hardware."
+msgstr ""
+
+#: ../../source/xvfb.rst:131
+msgid ""
+"Background running of clients. (the xwd program or a similar program for "
+"capturing a screenshot can be used to actually see the result)"
+msgstr ""
+
+#: ../../source/xvfb.rst:132
+msgid ""
+"Running programs that require an X server to be active even when they do not"
+" use it. (e.g. Clover html reports)"
+msgstr ""

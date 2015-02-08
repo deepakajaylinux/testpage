@@ -1,0 +1,148 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/netbeans.rst:3
+msgid "NetBeans"
+msgstr ""
+
+#: ../../source/netbeans.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/netbeans.rst:9
+msgid ""
+"NetBeans is an integrated development environment (IDE) for developing "
+"primarily with Java, but also with other languages, in particular PHP, "
+"C/C++, and HTML. It is also an application platform framework for Java "
+"desktop applications and others."
+msgstr ""
+
+#: ../../source/netbeans.rst:11
+msgid ""
+"The NetBeans IDE is written in Java and can run on Windows, OS X, Linux, "
+"Solaris and other platforms supporting a compatible JVM. NetBeans IDE is a "
+"free, open-source, cross-platform IDE with built-in-support for Java "
+"Programming Language."
+msgstr ""
+
+#: ../../source/netbeans.rst:13
+msgid ""
+"The NetBeans Platform allows applications to be developed from a set of "
+"modular software components called modules. Applications based on the "
+"NetBeans Platform (including the NetBeans IDE itself) can be extended by "
+"third party developers."
+msgstr ""
+
+#: ../../source/netbeans.rst:16
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/netbeans.rst:18
+msgid ""
+"This command helps to determine the usage of Netbeans module. The user will "
+"come to know about the different way/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/netbeans.rst:26
+msgid "Installation"
+msgstr ""
+
+#: ../../source/netbeans.rst:28
+msgid ""
+"This command helps in installing Netbeans in system. The below given command"
+" will execute the process of installation."
+msgstr ""
+
+#: ../../source/netbeans.rst:36 ../../source/netbeans.rst:42
+msgid "Options"
+msgstr ""
+
+#: ../../source/netbeans.rst:42
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/netbeans.rst:42
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/netbeans.rst:42
+msgid "Comments"
+msgstr ""
+
+#: ../../source/netbeans.rst:44 ../../source/netbeans.rst:50
+msgid "cleopatra Netbeans  Install"
+msgstr ""
+
+#: ../../source/netbeans.rst:44
+msgid ""
+"There are Three alternative parameters which can be used in command line. "
+"Netbeans , NetBeans , netbeans Eg: cleopatra NetBeans install cleopatra "
+"netbeans install"
+msgstr ""
+
+#: ../../source/netbeans.rst:44
+msgid "Y"
+msgstr ""
+
+#: ../../source/netbeans.rst:44
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/netbeans.rst:50
+msgid ""
+"There are Three alternative parameters which can be used in command line. "
+"Netbeans , NetBeans , netbeans Eg: cleopatra NetBeans install cleopatra "
+"netbeans install|"
+msgstr ""
+
+#: ../../source/netbeans.rst:50
+msgid "N"
+msgstr ""
+
+#: ../../source/netbeans.rst:50
+msgid "System stops installation process"
+msgstr ""
+
+#: ../../source/netbeans.rst:60
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/netbeans.rst:62
+msgid "User interface management (e.g. menus and toolbars)"
+msgstr ""
+
+#: ../../source/netbeans.rst:63
+msgid "User settings management"
+msgstr ""
+
+#: ../../source/netbeans.rst:64
+msgid "Storage management (saving and loading any kind of data)"
+msgstr ""
+
+#: ../../source/netbeans.rst:65
+msgid "Window management"
+msgstr ""
+
+#: ../../source/netbeans.rst:66
+msgid "Wizard framework (supports step-by-step dialogs)"
+msgstr ""
+
+#: ../../source/netbeans.rst:67
+msgid "NetBeans Visual Library"
+msgstr ""
+
+#: ../../source/netbeans.rst:68
+msgid "Integrated development tools"
+msgstr ""

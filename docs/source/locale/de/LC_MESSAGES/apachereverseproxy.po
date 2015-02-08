@@ -1,0 +1,134 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/apachereverseproxy.rst:3
+msgid "Apache Reverse proxy modules"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:8
+msgid ""
+"This module aims at installing the library functions. While installing the "
+"library functions, it will check the availability of already existing "
+"library functions. It helps in managing and configuring the application "
+"settings. The user can specify the default values for application settings."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:13
+msgid ""
+"The help command guides the user get aware of the uses, and also the options"
+" and actions that can be performed. The coding to make use of help command "
+"under Apache Reverse proxy module, is given as follows"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:20
+msgid ""
+"The screen shot shown below gives you an pictorial representation of help "
+"command usage."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:50
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:50
+msgid "Required"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:50
+msgid "Comment"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:52
+msgid ""
+"Install Reverse Proxy Apache Modules (In the place of Reverse Proxy Apache "
+"Modules the user can also specify the following parameters: "
+"ApacheReverseProxyModules,apache-lb-mods a pacheproxymodules ,apache-proxy-"
+"mods apache-lb-mods,apache-load-balancer-modules apache-reverse-proxy-"
+"modules,apache-proxy-mods"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:53
+msgid "Yes"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:53
+msgid "This command will install the apache rev proxy module"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:61
+#: ../../source/apachereverseproxy.rst:65
+msgid "Install ApacheReverseProxyModules (Y/N)"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:61
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:61
+msgid ""
+"If the user input as Y,the apache reverse proxy module will be installed."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:65
+msgid "N(NO)"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:65
+msgid "If the user inputs as N,the process will gets quit from installation.|"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:70
+msgid ""
+"While installing the Reverse Proxy Modules, it will reads the package lists,"
+" state information, builds the dependency tree. If any packages are missing,"
+" the new packages will be installed. The screenshot shown below will "
+"explains the process of installation graphically."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:231
+msgid "Benefits to the users"
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:233
+msgid ""
+"It displays the available package lists, and in turn installs the missing "
+"and required packages."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:234
+msgid ""
+"The reverse proxy forwards to a fixed destination on behalf of arbitrary "
+"clients."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:235
+msgid ""
+"It will incorporates the content that is hosted from one server into a "
+"larger website."
+msgstr ""
+
+#: ../../source/apachereverseproxy.rst:236
+msgid "It helps in configuring the applications settings."
+msgstr ""

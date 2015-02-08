@@ -1,0 +1,219 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/jconfiguration.rst:3
+msgid "JConfiguration"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:8
+msgid ""
+"This module is a part of a default module that handles data basing "
+"functions. Let us see how to configure and to reset in upcoming topics."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:13
+msgid ""
+"The help command guides the user about the purpose of the module. It lists "
+"out the alternative parameters that can be used in declaration. It specifies"
+" two different syntax for configuring and resetting. The command used for "
+"help option is shown below:"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:19
+msgid ""
+"The following screen shot depicts pictorially about the working of help "
+"command."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:48
+msgid "How to Configure"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:50
+msgid "The command used for configure joomla is shown below:"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:56
+msgid "After inputting the command above, it will ask"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:61
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:61
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:61
+msgid "Comments"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:63 ../../source/jconfiguration.rst:66
+msgid "Do you want to configure Joomla? (Y/N)"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:63 ../../source/jconfiguration.rst:66
+msgid "Instead of conf we can also use configure."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:63
+msgid "Y"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:63
+msgid "If the user wish to configure they can input as Y."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:66
+msgid "N"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:66
+msgid "If the user doesn't wish to configure they can input as N.|"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:70
+msgid ""
+"If the user proceeds configuring, it will asks the user whether they wish to"
+" set non-default values for the following. It will also specifies the "
+"default value:"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:72
+msgid "Set non-default values for log_path?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:73
+msgid "Set non-default values for temp_path?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:74
+msgid "Set non-default values for MetaAuthor?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:75
+msgid "Set non-default values for MetaDesc?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:76
+msgid "Set non-default values for MetaKeys?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:77
+msgid "Set non-default values for MetaRights?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:78
+msgid "Set non-default values for MetaTitle?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:79
+msgid "Set non-default values for MetaVersion?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:80
+msgid "Set non-default values for access?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:81
+msgid "Set non-default values for cache_handler?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:82
+msgid "Set non-default values for cachetime?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:83
+msgid "Set non-default values for frontediting?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:84
+msgid "Set non-default values for assest_id?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:85
+msgid "Set non-default values for user?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:86
+msgid "Set non-default values for db?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:87
+msgid "Set non-default values for host?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:88
+msgid "Set non-default values for password?"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:91
+msgid ""
+"Finally, the process of configuration gets completed as depicted in the "
+"screenshot."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:296
+msgid "while configuring, it will asks the user as"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:303
+msgid "Is this Okay? (Y/N)"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:305
+msgid "The user have to specify Y or N."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:308
+msgid "How to Reset"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:310
+msgid "The command used for reset is shown below:"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:316
+msgid "The screenshot shown below depicts visually about the process of reset"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:319
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/jconfiguration.rst:320
+msgid "It is well-to-do in both cent OS and as well as in ubuntu."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:321
+msgid ""
+"The parameters used in declaration are not case sensitive which is an added "
+"advantage while compared to others."
+msgstr ""
+
+#: ../../source/jconfiguration.rst:322
+msgid "The user can specify the non default values while configuring."
+msgstr ""

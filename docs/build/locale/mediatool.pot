@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mediatool.rst:3
+# 30d285fc5c1a401c95b22de1844eddbf
+msgid "Media Tools"
+msgstr ""
+
+#: ../../source/mediatool.rst:7
+# 6e9f6d92556b47909b119065a9cca6a1
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/mediatool.rst:9
+# ea692f95625246c984e5e4402b464b3b
+msgid "This module aims at installing GC recommended Media Tool as VLC Media player that enhances the productivity of the users system. VLC media player supports many audio and video compression methods and file formats, including DVD-Video, video CD and streaming protocols. VLC media player (commonly known as VLC) is a portable, free and open-source, cross-platform media player and streaming media server written by the VideoLAN project. Let us see about how this module assists installing VLC."
+msgstr ""
+
+#: ../../source/mediatool.rst:12
+# 25a13b39132c400f8fc2bb4fc145bb7a
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/mediatool.rst:14
+# 8ad93c997cc14a3491494e0442cdd3a3
+msgid "The help command leads the users regarding the purpose and as well as about the options that are included in the media tools module. The help command lists out the alternative parameters of media tools. It also describes the syntax for installing VLC. The help command for media tools module is shown as below."
+msgstr ""
+
+#: ../../source/mediatool.rst:20
+# ce3cb3c73ce14828a6eafe8005407329
+msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under media tools."
+msgstr ""
+
+#: ../../source/mediatool.rst:44
+# d7508543471f4c6886df392acfaeb45b
+msgid "Installation"
+msgstr ""
+
+#: ../../source/mediatool.rst:51
+# 50ce855d5ab14c1ab21beef99c63ae04
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/mediatool.rst:51
+# 27eb239e7611419f8ef3ec90c19a5505
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/mediatool.rst:51
+# 5fa2b25073cd4c269535efe877d6d087
+msgid "Options"
+msgstr ""
+
+#: ../../source/mediatool.rst:51
+# 678eeb94fa674d758c682c358fc63d1c
+msgid "Comment"
+msgstr ""
+
+#: ../../source/mediatool.rst:53
+#: ../../source/mediatool.rst:58
+# 7eb6da6e20da4c25ad515613ab8b2d93
+# 0581bb57d8c0448e926081a6deb9c75b
+msgid "Install Media Tools? (Y/N)"
+msgstr ""
+
+#: ../../source/mediatool.rst:53
+# 2e59b21ab025460a8f9a88f345458a44
+msgid "In Spite of Media Tools,the following alternatives can also be used MediaTools, media-tools, mediatools."
+msgstr ""
+
+#: ../../source/mediatool.rst:53
+# cdb2bdbd482c40b5bb5e3d0293683dba
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/mediatool.rst:53
+# 780de1d2717b41b9aa7ec9a5fa28f33d
+msgid "If the user wish to proceed the installation process they can input as Y"
+msgstr ""
+
+#: ../../source/mediatool.rst:58
+# 14d761bda7754981921c581930578180
+msgid "In Spite of Media Tools,the following alternatives can also be used MediaTools, media-tools, mediatools.|"
+msgstr ""
+
+#: ../../source/mediatool.rst:58
+# 28e0af2e5dd9455086c6e00a24d851bc
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/mediatool.rst:58
+# 12203905c2054cce96b02a7b80735c1e
+msgid "If the user wish to Quit the installation process they can input as N"
+msgstr ""
+
+#: ../../source/mediatool.rst:64
+# 78cf4178f4b6436eb992cd55fd59f1f8
+msgid "If the user proceeds the installation process, the following process occurs during installation."
+msgstr ""
+
+#: ../../source/mediatool.rst:66
+# 2eb3c170c1584e4c81d93e070a77e1d2
+msgid "Extracts templates from packages"
+msgstr ""
+
+#: ../../source/mediatool.rst:67
+# 2374c2e9060549beb36616bc19159a14
+msgid "Reads package lists."
+msgstr ""
+
+#: ../../source/mediatool.rst:68
+# 42d3e82a909d4799867444b97fac090b
+msgid "Builds dependency tree."
+msgstr ""
+
+#: ../../source/mediatool.rst:69
+# 7d74cad4cd54487ea73db6cfdf06f49a
+msgid "Reads the state information."
+msgstr ""
+
+#: ../../source/mediatool.rst:70
+# 2c0abf74fee1476ab25278d8ffbd8949
+msgid "lists out the packages that are automatically installed."
+msgstr ""
+
+#: ../../source/mediatool.rst:71
+# abdb7dc06de5449fa3570b31904ce36f
+msgid "lists out the extra packages that are installed."
+msgstr ""
+
+#: ../../source/mediatool.rst:72
+# 1e5af1f083f54e94bde06ee067b4ab01
+msgid "lists out the suggested packages."
+msgstr ""
+
+#: ../../source/mediatool.rst:73
+# 0ce8c970fffc44ecbfcff7f8150c491d
+msgid "lists out the new packages that are installed."
+msgstr ""
+
+#: ../../source/mediatool.rst:74
+# bab53bd00d7344599fb89e6ff9adb857
+msgid "Finally, reports are clearly displayed with the status and results."
+msgstr ""
+
+#: ../../source/mediatool.rst:75
+# 23d54507113e4ec99393720b31b49865
+msgid "The following screen shot explains the above mentioned process pictorially."
+msgstr ""
+
+#: ../../source/mediatool.rst:347
+# 5730ab6e8028400db519baefb25d1a44
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/mediatool.rst:348
+# 5985eb513f7149128b088f1f191845e8
+msgid "The parameters used in help and installation operations are not case sensitive which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/mediatool.rst:349
+# 76d5a21abdf9439c9083a71e1f5d9c1f
+msgid "Using this module the productivity of the system can be enhanced."
+msgstr ""
+
+#: ../../source/mediatool.rst:350
+# 31627c22cee448c5a557194a4393995d
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/mediatool.rst:351
+# 0a7dfcc1afd2455eb07ae918f040f178
+msgid "This module facilitates installing GC recommended media tools."
+msgstr ""
+

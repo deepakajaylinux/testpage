@@ -1,0 +1,109 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/chgrp1.rst:3
+msgid "Change Group"
+msgstr ""
+
+#: ../../source/chgrp1.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/chgrp1.rst:9
+msgid ""
+"Files and directories belong to both an owner and a group. A group usually "
+"consists of a collection of users, all belonging to the same group. The "
+"first set of three is the read, write, and execute permissions for the owner"
+" of the file."
+msgstr ""
+
+#: ../../source/chgrp1.rst:11
+msgid ""
+"A group can also consist of one user, normally the user who creates the "
+"file. Each user on the system, including the root user, is assigned his or "
+"her own group of which he or she is the only member, ensuring access only by"
+" that user. The second set of three is the read, write, and execute "
+"permissions for anyone who belongs to the user group for the file."
+msgstr ""
+
+#: ../../source/chgrp1.rst:13
+msgid ""
+"The root user, the system administrator, owns most of the system files that "
+"also belong to the root group, of which only the root user is a member. Most"
+" administration files, like configuration files in the /etc directory, are "
+"owned by the root user and belong to the root group. Only the root user has "
+"permission to modify them, whereas normal users can read and, in the case of"
+" programs, also execute them"
+msgstr ""
+
+#: ../../source/chgrp1.rst:16
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/chgrp1.rst:18
+msgid ""
+"This command helps to determine the usage of Change group module. The user "
+"will come to know about the different way/format to execute this module. "
+"This command guides the end user to know the purpose of this command. Below "
+"given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/chgrp1.rst:24
+msgid "The pictorial representation of the screenshot is given below,"
+msgstr ""
+
+#: ../../source/chgrp1.rst:47
+msgid "Path"
+msgstr ""
+
+#: ../../source/chgrp1.rst:49
+msgid ""
+"When the user needs to change the file group ownership of a path, the below "
+"given command will execute the process."
+msgstr ""
+
+#: ../../source/chgrp1.rst:57
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/chgrp1.rst:59
+msgid ""
+"There are two alternative parameters which can be used in command line."
+msgstr ""
+
+#: ../../source/chgrp1.rst:61
+msgid "chgrp, Chgrp"
+msgstr ""
+
+#: ../../source/chgrp1.rst:63
+msgid "Eg: cleopatra Chgrp path/ cleopatra chgrp path"
+msgstr ""
+
+#: ../../source/chgrp1.rst:66
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/chgrp1.rst:68
+msgid ""
+"Although other users may be able to access a file, only the owner can change"
+" its permissions. If you want to give other user to control over   one of "
+"your file's permissions, you can change the owner of the file from yourself "
+"to the other user."
+msgstr ""
+
+#: ../../source/chgrp1.rst:69
+msgid ""
+"You can also change the group for a file and directories, using the chgrp "
+"command. chgrp takes as its first argument the name of the new group for a "
+"files or directories."
+msgstr ""

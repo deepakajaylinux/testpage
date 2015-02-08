@@ -1,0 +1,159 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phake.rst:3
+msgid "Phake"
+msgstr ""
+
+#: ../../source/phake.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phake.rst:8
+msgid ""
+"Phake is a mocking framework for PHP. It allows for the creation of objects "
+"that mimic a real object in a predictable and controlled manner. This allows"
+" you to treat external method calls made by your system under test (SUT) as "
+"just another form of input to your SUT and output from your SUT. This is "
+"done by stubbing methods that supply indirect input into your test and by "
+"verifying parameters to methods that receive indirect output from your test."
+msgstr ""
+
+#: ../../source/phake.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/phake.rst:13
+msgid ""
+"This command helps to determine the usage of Phake module. The user will "
+"come to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/phake.rst:42
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phake.rst:44
+msgid ""
+"When the user needs to install Phake in machine, the below given command "
+"will execute the process of installation."
+msgstr ""
+
+#: ../../source/phake.rst:52
+msgid ""
+"The system ask for the directory name, if you wants to set up your PATH you "
+"can define your path. Define your path followed by '/' symbol. Press Enter "
+"if there is no changes to be done."
+msgstr ""
+
+#: ../../source/phake.rst:54 ../../source/phake.rst:134
+msgid "\"What is the program data directory? Found \"/opt/phake\" - use this?"
+msgstr ""
+
+#: ../../source/phake.rst:56
+msgid ""
+"Then the system ask for executing directory name, if you wants to set up "
+"your PATH you can define your path. Define your path followed by '/' symbol."
+" Press Enter if there is no changes to be done"
+msgstr ""
+
+#: ../../source/phake.rst:58 ../../source/phake.rst:138
+msgid "\"What is the program executer directory? Found \"/usr/bin\" - Use this? \""
+msgstr ""
+
+#: ../../source/phake.rst:60
+msgid "The below screenshot shows the same."
+msgstr ""
+
+#: ../../source/phake.rst:98 ../../source/phake.rst:103
+msgid "Options"
+msgstr ""
+
+#: ../../source/phake.rst:103
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phake.rst:103
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/phake.rst:103
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phake.rst:105 ../../source/phake.rst:110
+msgid "Cleopatra Phake Install"
+msgstr ""
+
+#: ../../source/phake.rst:105
+msgid ""
+"Either of the two alternative parameter can be used in command- Phake, phake"
+" eg: Cleopatra  phake Install"
+msgstr ""
+
+#: ../../source/phake.rst:105
+msgid "Y"
+msgstr ""
+
+#: ../../source/phake.rst:105
+msgid "Once the user provides the option, System starts installation process"
+msgstr ""
+
+#: ../../source/phake.rst:110
+msgid ""
+"Either of the two alternative parameter can be used in command- Phake, phake"
+" eg: Cleopatra phake Install|"
+msgstr ""
+
+#: ../../source/phake.rst:110
+msgid "N"
+msgstr ""
+
+#: ../../source/phake.rst:110
+msgid "Once the user provides the option, System stops installation process"
+msgstr ""
+
+#: ../../source/phake.rst:118
+msgid "Ensure"
+msgstr ""
+
+#: ../../source/phake.rst:120
+msgid ""
+"Installs the latest version of Phake, only if a version is not available. "
+"The below given command will execute the process."
+msgstr ""
+
+#: ../../source/phake.rst:132
+msgid ""
+"The system ask for the directory name, define your path followed by '/' "
+"symbol. Press Enter if there is no changes to be done."
+msgstr ""
+
+#: ../../source/phake.rst:136
+msgid ""
+"Then the system ask for executing directory name, define your path followed "
+"by '/' symbol. Press Enter if there is no changes to be done"
+msgstr ""
+
+#: ../../source/phake.rst:141
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phake.rst:143
+msgid ""
+"Phake is a great mocking library and can be easily integrated into PHPUnit. "
+"Its new approach to prototype mocks and stubs and the separation between "
+"stubbing and verification phases is very refreshing and easy to use."
+msgstr ""

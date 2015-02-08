@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/firefox24.rst:3
+# 356b9224c103495a97302f98075796f8
+msgid "FireFox 24"
+msgstr ""
+
+#: ../../source/firefox24.rst:6
+# a97a9a12d3f148c4aa97707b999629d7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/firefox24.rst:8
+# 152df63073754363a14cacba3f7f238d
+msgid "This module is open source web browser. It used to install firefox24. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the 'Ubuntu stack' (cloud computing infrastructure). It is comfortable with Ubuntu and Cent OS."
+msgstr ""
+
+#: ../../source/firefox24.rst:11
+# f8ac557f5f8a4625933199c9810ff2f0
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/firefox24.rst:13
+# 40f9705f3ac44480bcf2e6fd632331d7
+msgid "This command can function about the objectives and commands available under Firefox24 module. It also explains the command to install firefox24. Before installation, the user can read this help command explains its function."
+msgstr ""
+
+#: ../../source/firefox24.rst:19
+# 48d044bd560a46fbb43cdcaf46af1da8
+msgid "The following image also helps you to understand this module clearly."
+msgstr ""
+
+#: ../../source/firefox24.rst:42
+# f69c266aa8ab4e6181a1a4bc3ee6d8be
+msgid "Installation"
+msgstr ""
+
+#: ../../source/firefox24.rst:44
+# 587e5b69414a4f6da645701efa411414
+msgid "It is a glaring process to install firefox24 module under Cleopatra by just using the command given below,"
+msgstr ""
+
+#: ../../source/firefox24.rst:50
+# ade7d68d07a14315b857a1d371a81851
+msgid "After key in the command, it can asks"
+msgstr ""
+
+#: ../../source/firefox24.rst:52
+# 63a5f6a064714774ac4ae4c6a1b03ded
+msgid "Install firefox24?(Y/N)"
+msgstr ""
+
+#: ../../source/firefox24.rst:54
+# 82cdfe352635440c814f4e3633416965
+msgid "In case the user input as Y, it can install firefox24 from the package. Else, it can exit the screen. The following screen shots can explain it."
+msgstr ""
+
+#: ../../source/firefox24.rst:91
+#: ../../source/firefox24.rst:96
+# 31ab0b2b7a554dcfabe8c1f66a5f47d3
+# 070eb1f148464bc68616851a766f4d36
+msgid "Options"
+msgstr ""
+
+#: ../../source/firefox24.rst:96
+# 45156686b3b44ca99bd296ec7b75308e
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/firefox24.rst:96
+# b93175bbe9ac4edcbddd66e290e5c3af
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/firefox24.rst:96
+# fda99d539bfd4557a29b5873b424e108
+msgid "Comments"
+msgstr ""
+
+#: ../../source/firefox24.rst:98
+#: ../../source/firefox24.rst:101
+#: ../../source/firefox24.rst:104
+# 77f5e5852f274b4fbd7a633cf30d4470
+# 0d2f6c9a22e4479db086bced7e08fdbd
+# a9ed3291b5ea452faa1f1948b8cbbd79
+msgid "cleopatra firefox24 Install"
+msgstr ""
+
+#: ../../source/firefox24.rst:98
+#: ../../source/firefox24.rst:104
+# 10cc91d6ca8c41d4bafb64c58ccf3d55
+# 636e6f5a8e8d4b1dab63a85572b43173
+msgid "Firefox24"
+msgstr ""
+
+#: ../../source/firefox24.rst:98
+#: ../../source/firefox24.rst:101
+# 3a96e2baf96b473b840dd1f17b511148
+# c58c1c99a6fc4f06afc545bda07d5739
+msgid "Y"
+msgstr ""
+
+#: ../../source/firefox24.rst:98
+#: ../../source/firefox24.rst:101
+# 6987d80f46b840b3a05273bea23ee03a
+# f4c3f3a4125242bf8c9b88643c96562a
+msgid "System starts installation process under cleopatra"
+msgstr ""
+
+#: ../../source/firefox24.rst:101
+# 9408485ff7f14001951bcb802cbb9f08
+msgid "Ff24"
+msgstr ""
+
+#: ../../source/firefox24.rst:104
+# 52387906444248d2b79de88776d2b24a
+msgid "N"
+msgstr ""
+
+#: ../../source/firefox24.rst:104
+# 6b5dc555713d435390f2dd90bdfaeaa3
+msgid "System stops installation process under cleopatra|"
+msgstr ""
+
+#: ../../source/firefox24.rst:109
+# fe4e9b034f5846bd98defef3984646f3
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/firefox24.rst:111
+# 9a3e4a37b9db4006b5b3f45d35230dba
+msgid "Firefox24 uses support for new hardware and integration of all the updates published in that series to date."
+msgstr ""
+
+#: ../../source/firefox24.rst:112
+# 9e0bd041ea3646b1b8773233e6843f9d
+msgid "Firefox24 is an open source Web browser for Linux."
+msgstr ""
+
+#: ../../source/firefox24.rst:113
+# 921a1c562b764493ab45aa7ed9d24d2e
+msgid "Firefox24 is non-case sensitive."
+msgstr ""
+
+#: ../../source/firefox24.rst:114
+# eda31ecf1d1648c59836200d44c71c98
+msgid "Privacy and security measures, smart searching is possible."
+msgstr ""
+

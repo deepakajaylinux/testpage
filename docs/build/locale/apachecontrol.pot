@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/apachecontrol.rst:3
+# f4d3e0c0c4604ca3ad8f81f4a3a5f420
+msgid "Apache Control"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:6
+# 1ad470fb773944f898aab8b4a6b417e4
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:8
+# 15b24d00b88546fbbff4bfe4762410b3
+msgid "This module is one of the default modules that aims at handling the control functions of apache server. It enables and facilitates the required control functions that are to be performed in the Apache server. Let us see, the working and purpose of control functions and how this modules involved in handling those control functions of apache server."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:11
+# 94a0b5fe3c914d0992a55e6e376c62f6
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:13
+# 1feece4be986448aaa318b4adfda98ad
+msgid "The help command acts as a brief user guide that leads the users how to handle and use this particular module."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:15
+# 94e7c1976d2a448fb73ad55e995481f4
+msgid "The syntax for help command under the Apache control is shown below:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:21
+# 756599df9b1647119295573984bef753
+msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The help command also lists out the alternative parameters that can be used in declaration. The following screenshot visualize you about the help command under Apache Control."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:62
+# fed6d5dae459414faca74404fb18c198
+msgid "The four basic control functions included in the Apache server are : * Start * Stop * Restart * Reload"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:68
+# f980a9997f704e069f126e0c5144910c
+msgid "There is three possible ways in defining a control functions. For example, if we take start function, it can be defined in three different ways as required by the user as shown below."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:74
+#: ../../source/apachecontrol.rst:80
+#: ../../source/apachecontrol.rst:205
+#: ../../source/apachecontrol.rst:210
+# 7eb367c06fe7405db6d6e367fa810f01
+# 19dc58f0763b4905afbe2ac7511dc361
+# 38426f0c37eb40a48e3464f47b2ea452
+# b1af6076916a49f7ab05b062d9fe3a44
+msgid "or"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:86
+# b893954ef6544f89a213afb6d7eb9426
+msgid "Let us see the usage of three different syntax in declaring in upcoming topics."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:89
+# 68f5237f0137471aa09f0635317d5849
+msgid "Alternative parameters"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:91
+# db8ff522a2fe42dea3e2a747998322e6
+msgid "The following are the alternative parameters that can be defined in declarations: ApacheControl, apachecontrol, apachectl"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:95
+# 3d3d45c942714268a9650a476dac7865
+msgid "Start function"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:97
+# 34195f795fa045cbbcbfc81623fea3f4
+msgid "If the user wish to start the apache control function, the can use the following syntaxes as shown:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:105
+# 367c5f0ff6e94c4b96e998f15eaa2d50
+msgid "After inputting the command as above, the following steps are performed:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:107
+# 9326edf1caed4e8b80f2d6529e95c6d9
+msgid "Step 1: Do you want to start Apache? (Y/N). The user have to specify Y or N."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:110
+# 94e868310133404eb511af8225ffb6b7
+msgid "Step 2: What is the apache service name? (0) apache2 (1) httpd"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:114
+# 84a76aff24df4fe48a7ca400b2d128a3
+msgid "The user should specify whether 0 or 1 as per the requirement."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:116
+# f5754a2e5dc74f80bf171eb74f66eece
+msgid "After getting the input of the apache service name, it will starts the process."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:118
+# 2bfb054d962b42fc825d3950b9ceab5f
+msgid "The following screenshot depicts the start process pictorially."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:139
+# 0f2a2d0acdd54cf6a7c7a0f976a623e4
+msgid "Stop Function"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:141
+# 24601552b55b49b292f1db2126bfd4e1
+msgid "If the user wish to stop the apache control function, the can use the following syntaxes as shown:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:149
+# 11f1d455fc944034967ad0a1899d0602
+msgid "The guess option can be used to perform a default values of the particular defined functions."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:151
+# a814c1f00f7b46d9bc097c9194994b0d
+msgid "For ubuntu the apche2 is the default value."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:153
+# f320b0d9daa44b2b9d5eacd799f98a7a
+msgid "For Cent OS httpd is the default value."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:155
+# 143b1c11ef7e4fa398f3d1cd91212102
+msgid "The following screenshot depicts you about the stop function and purpose of guess options pictorially."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:170
+# 63a3f30a02e44e2fb89377cf9d2998ae
+msgid "Restart a function"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:172
+# a95db9a55c6942739c86822ca9906984
+msgid "If the user wish to restart the apache control function, the can use the following syntaxes as shown:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:180
+# f76608f6bfeb42ffb783ec42487d9082
+msgid "The user can use this third type of syntax to specify the value of the required apache command. The screen shot as shown below depicts this third type of syntax and process of restarting a function pictorially."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:197
+# 28e0064756f6407ab3dbce8080c7874b
+msgid "Reloading a function"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:199
+# 81d45a4a28d34c3880f5683368bb317e
+msgid "If the user wish to reload the apache control function, the can use the following syntaxes as shown:"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:216
+# 91f3cee9b6114d4ebeb062121cd8172e
+msgid "The reload function performs reloading the apache server without restarting."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:219
+# 5bf0835aca9447cdba3e7e3f3f822d4f
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/apachecontrol.rst:221
+# fcd64774409d4d5e854d2235d95ddbdb
+msgid "It is well to do in both cent-OS and ubuntu."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:222
+# 6a830201da2c4ab4ba02d22997072f8e
+msgid "The parameters used for declarations are not case sensitive, which is an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:223
+# 83d06056d8a9457c9941cdccdc7dc949
+msgid "There is three different syntax used for declaration, the user can choose one among them as per the requirements."
+msgstr ""
+
+#: ../../source/apachecontrol.rst:224
+# 1427fd8f741745a4a4f1a3055c64a407
+msgid "The three different syntax are applicable for all four control functions of start, stop, restart, reload."
+msgstr ""
+

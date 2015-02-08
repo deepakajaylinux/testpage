@@ -1,0 +1,158 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/mysqladmin.rst:3
+msgid "MysqlAdmins"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:8
+msgid ""
+"This module assists in installing and as well as managing the admin users "
+"for mysql without using root user. By using this, the users can manage their"
+" administrative functions."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:13
+msgid ""
+"The Help command guides the users regarding the command used for installing "
+"the mysql admins, and also its advantages. The command used for help option "
+"under this mysql admins is shown below."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:19
+msgid ""
+"The screen shot as given below can lead the user in handling the help "
+"command for mysql admins."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:43
+msgid "Installation"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:45
+msgid ""
+"Installing mysql admins to your machine facilitates the users to specify and"
+" manage their administrative actions. The command used for installing mysql "
+"admins is marked below."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:51
+msgid ""
+"In addition, the following operations shown in a tabular format occurs."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:58
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:58
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:58
+msgid "option"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:58
+msgid "Comments"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:60
+msgid "Install Admin User for MySQL? (Y/N)"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:60
+msgid ""
+"In the place of MysqlAdmins these alternative names can be used:mysql-"
+"admins,mysqladmins."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:60
+msgid "Y(YES)"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:60
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:64
+msgid "Install MySQL Server? (Y/N)"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:64
+msgid "mysql-admins,mysqladmins."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:64
+msgid "N(NO)"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:64
+msgid "If the user wish to quit the installation process they can input as N|"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:70
+msgid ""
+"If the user proceed the installation process, they can frame their "
+"administrative functions by specifying the following constraints. * MySQL "
+"Root User * MySQL Root Pass * MySQL New Admin User * MySQL New Admin Pass"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:76
+msgid ""
+"If the user wish to process installation of mysql admins in a remote system "
+"they can specify:"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:78
+msgid "MySQL Host."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:80
+msgid ""
+"The following screenshot gives you an pictorial representation about the "
+"process of installation as described above."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:123
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/mysqladmin.rst:125
+msgid ""
+"In case of mysql admins is already installed in the users machine, then an "
+"message will be appearing to inform the users as it is already installed."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:126
+msgid ""
+"By using this module the administrators can manage their administrative "
+"actions as per the requirements."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:127
+msgid "They can perform the installation process even in a remote system."
+msgstr ""
+
+#: ../../source/mysqladmin.rst:128
+msgid "Without using the root users, the users can install the mysql admins."
+msgstr ""

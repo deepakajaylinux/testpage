@@ -1,0 +1,124 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/firefox.rst:3
+msgid "FireFox"
+msgstr ""
+
+#: ../../source/firefox.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/firefox.rst:8
+msgid ""
+"This module is open source web browser. It used to install firefox. Ubuntu "
+"releases updated versions periodically. It implements current and "
+"anticipated web standards. Long-term support includes updates for new "
+"hardware, security patches and updates to the 'Ubuntu stack' (cloud "
+"computing infrastructure). It is comfortable with Ubuntu and Cent OS."
+msgstr ""
+
+#: ../../source/firefox.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/firefox.rst:13
+msgid ""
+"This command can function about the objectives and commands available under "
+"Firefox module. It also explains the command to install firefox. Before "
+"installation, the user can read this help command explains its function."
+msgstr ""
+
+#: ../../source/firefox.rst:19
+msgid "The following image also helps you to understand this module clearly."
+msgstr ""
+
+#: ../../source/firefox.rst:43
+msgid "Installation"
+msgstr ""
+
+#: ../../source/firefox.rst:45
+msgid ""
+"It is a glaring process to install firefox module under Cleopatra by just "
+"using the command given below,"
+msgstr ""
+
+#: ../../source/firefox.rst:51
+msgid ""
+"After key in the command, it can asks Install firefox?(Y/N) In case the user"
+" input as Y, it can install firefox from the package. Else, it can exit the "
+"screen. The following screen shots can explain it."
+msgstr ""
+
+#: ../../source/firefox.rst:93 ../../source/firefox.rst:98
+msgid "Options"
+msgstr ""
+
+#: ../../source/firefox.rst:98
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/firefox.rst:98
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/firefox.rst:98
+msgid "Comment"
+msgstr ""
+
+#: ../../source/firefox.rst:100 ../../source/firefox.rst:103
+msgid "cleopatra firefox Install"
+msgstr ""
+
+#: ../../source/firefox.rst:100 ../../source/firefox.rst:103
+msgid "Firefox"
+msgstr ""
+
+#: ../../source/firefox.rst:100
+msgid "Y(YES)"
+msgstr ""
+
+#: ../../source/firefox.rst:100
+msgid "System starts installation process they can input as Y"
+msgstr ""
+
+#: ../../source/firefox.rst:103
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/firefox.rst:103
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/firefox.rst:110
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/firefox.rst:112
+msgid ""
+"Firefox uses support for new hardware and integration of all the updates "
+"published in that series to date."
+msgstr ""
+
+#: ../../source/firefox.rst:113
+msgid "Firefox is an open source Web browser for Linux."
+msgstr ""
+
+#: ../../source/firefox.rst:114
+msgid "Firefox is non-case sensitive."
+msgstr ""
+
+#: ../../source/firefox.rst:115
+msgid "Privacy and security measures, smart searching"
+msgstr ""

@@ -1,0 +1,310 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/environmentconfig.rst:3 ../../source/environmentconfig.rst:289
+msgid "EnvironmentConfig"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:9
+msgid ""
+"This module facilitates the users in configuring their environment required "
+"for their project. Let us see how to configure the environment, how to "
+"delete the unwanted environment, how to use the list option for listing the "
+"available environments in upcoming topics."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:12
+msgid "Help command"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:14
+msgid ""
+"The help command guides the users regarding the purpose of the module, its "
+"alternative parameters that are used in declaration. It highlights the three"
+" functions of environment configuration which are list, configure, delete. "
+"It also specifies the syntax for using three major functions. The syntax "
+"used for declaring the help is shown below:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:21
+msgid ""
+"The following screen shot depicts pictorially about the working of help "
+"command."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:76
+msgid "How to Configure the environment"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:78
+msgid ""
+"For the purpose of configuring the environments the user can use the "
+"following command:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:85
+msgid ""
+"After inputting the command above the following operations takes place as "
+"shown:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:87
+msgid "Step 1: Configure Environments Here? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:89 ../../source/environmentconfig.rst:93
+#: ../../source/environmentconfig.rst:113
+msgid "The user have to input Y or N."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:91
+msgid "Step 2: Use existing environment Settings? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:95
+msgid "If the user input as Y it will proceed with already existing."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:97
+msgid ""
+"If they input as N, it will asks information regarding the environment as"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:99
+msgid "Value for: Name of the environment"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:101
+msgid "Value for: Default temp dir(Location)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:103
+msgid "After the above steps, the user have to input the following details:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:105
+msgid "Enter target?"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:107
+msgid "Enter user?"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:109
+msgid "Enter password?"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:111
+msgid "Add Another Server? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:115
+msgid ""
+"Finally, the environment configuration gets success as depicted in the below"
+" screenshot."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:148
+msgid ""
+"While configuring an environment, if the user wish to configure with current"
+" environment , they can use the following command:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:157
+msgid ""
+"After inputting the command above, it will asks the following details as "
+"shown in the tabular format:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:163
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:163
+msgid "Options"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:163
+msgid "Comments"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:165
+#: ../../source/environmentconfig.rst:168
+msgid "Configure Environments Here? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:165
+#: ../../source/environmentconfig.rst:171
+#: ../../source/environmentconfig.rst:177
+msgid "Y"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:165
+msgid ""
+"If the user wish to configure the environments at the current environment "
+"they can input as Y"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:168
+#: ../../source/environmentconfig.rst:174
+#: ../../source/environmentconfig.rst:180
+msgid "N"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:168
+msgid ""
+"If the user doesn't wish to configure the environments at the current "
+"environment they can input as N"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:171
+#: ../../source/environmentconfig.rst:174
+msgid "Use existing environment settings? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:171
+msgid ""
+"If the user wish to use the existing environment settings they can input as "
+"Y."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:174
+msgid ""
+"If the user doesn't wish to use the existing environment settings they can "
+"input as N."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:177
+#: ../../source/environmentconfig.rst:180
+msgid "Do you want to add another environment? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:177
+msgid "If the user wish to add another environment,they can input as Y."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:180
+msgid ""
+"If the user doesn't wish to add another environment, they can input as N.|"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:185
+msgid ""
+"The following screenshot pictorially represents the above mentioned process:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:207
+msgid "How to Delete environment configuration"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:209
+msgid ""
+"If the user needs to delete the environment configuration, they can input "
+"the following command:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:215
+msgid ""
+"The user can specify the name of the environment they wish to delete as "
+"shown above."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:217
+msgid "After inputting the command above, it will ask"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:219
+msgid "Step 1: Delete Environments Here?"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:221
+msgid "and shows a warning message as"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:230
+#: ../../source/environmentconfig.rst:234
+msgid "The user has to specify Y or N"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:232
+msgid ""
+"Step 2: Environment Kevells(Name of the specified environment that is "
+"supposed to delete) found. Are you sure want to delete it? (Y/N)"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:236
+msgid ""
+"Finally, the specified environment gets deleted as shown in the screenshot."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:259
+msgid "How to list environment configuration"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:261
+msgid ""
+"If the user wish to view the list of details regarding the environment "
+"configuration, they can input as shown:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:268
+msgid ""
+"After inputting the command above, it will display the output as shown in "
+"the screenshot:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:285
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:287
+msgid ""
+"Instead of envconfig the following parameters can be used in declaration:"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:290
+msgid "environmentconfig"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:291
+msgid "environment-config"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:292
+msgid "env-config"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:295
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/environmentconfig.rst:297
+msgid "It is well-to-do in both cent OS and as well as in ubuntu."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:298
+msgid ""
+"The parameters used in declaration are not case sensitive which is an added "
+"advantage while compared to others."
+msgstr ""
+
+#: ../../source/environmentconfig.rst:299
+msgid ""
+"This module leads the users how to configure the environment, how to delete "
+"the unwanted environment, how to use the list option for listing   the "
+"available environments."
+msgstr ""

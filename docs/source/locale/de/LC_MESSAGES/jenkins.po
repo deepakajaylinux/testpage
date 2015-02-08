@@ -1,0 +1,116 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/jenkins.rst:3
+msgid "Jenkins"
+msgstr ""
+
+#: ../../source/jenkins.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/jenkins.rst:8
+msgid ""
+"Jenkins is popular to build server. Jenkins is an open source continuous "
+"integration tool written in Java. Jenkins provides continuous integration "
+"services for software development. It is a server-based system running in a "
+"servlet container such as Apache Tomcat. Jenkins’ core functionality and "
+"flexibility allow it to fit in a variety of environments and can help "
+"streamline the development process for all stakeholders involved"
+msgstr ""
+
+#: ../../source/jenkins.rst:12
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/jenkins.rst:14
+msgid ""
+"This command helps to determine the usage of Jenkins module. The user will "
+"come to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/jenkins.rst:39
+msgid "Installation"
+msgstr ""
+
+#: ../../source/jenkins.rst:41
+msgid ""
+"If the user needs to install Jenkins module in machine, the below given "
+"command will execute the process of installation."
+msgstr ""
+
+#: ../../source/jenkins.rst:98
+msgid "Options"
+msgstr ""
+
+#: ../../source/jenkins.rst:104
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/jenkins.rst:104
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/jenkins.rst:104
+msgid "Option"
+msgstr ""
+
+#: ../../source/jenkins.rst:104
+msgid "Comments"
+msgstr ""
+
+#: ../../source/jenkins.rst:106 ../../source/jenkins.rst:109
+msgid "cleopatra  Jenkins Install"
+msgstr ""
+
+#: ../../source/jenkins.rst:106 ../../source/jenkins.rst:109
+msgid "Jenkins , jenkins"
+msgstr ""
+
+#: ../../source/jenkins.rst:106
+msgid "Y"
+msgstr ""
+
+#: ../../source/jenkins.rst:106
+msgid "Once the user provides the option, System starts installation process"
+msgstr ""
+
+#: ../../source/jenkins.rst:109
+msgid "N"
+msgstr ""
+
+#: ../../source/jenkins.rst:109
+msgid "Once the user provides the option, System stops installation process|"
+msgstr ""
+
+#: ../../source/jenkins.rst:115
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/jenkins.rst:117
+msgid "Immediate bug detection"
+msgstr ""
+
+#: ../../source/jenkins.rst:118
+msgid "No integration step in the lifecycle"
+msgstr ""
+
+#: ../../source/jenkins.rst:119
+msgid "A deployable system at any given point"
+msgstr ""
+
+#: ../../source/jenkins.rst:120
+msgid "Record of evolution of the project"
+msgstr ""

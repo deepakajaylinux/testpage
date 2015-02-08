@@ -1,0 +1,170 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/cleophlagrant.rst:3
+msgid "Phlagrant"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:8
+msgid ""
+"Phlagrant achieve to manage the Virtualbox. This module helps to install "
+"under Cleopatra. Data directory and executor directory can specify while "
+"installing in this module. This module is most comfortable with Ubuntu and "
+"cent OS."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:13
+msgid ""
+"This help command guide the user about phlagrant module. This is suitable "
+"for all type of business people. The help command shows a short list of the "
+"commands built into the phlagrant module."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:34
+msgid "Installation"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:36
+msgid ""
+"Installation of a phlagrant module is including device drivers and plugins, "
+"act of making the program ready for execution. While installing this module "
+"the following command will be passed."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:42
+msgid "After inputs the command the system can ask"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:44
+msgid "Install Phlagrant?(Y/N)"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:46
+msgid ""
+"If the user gives Y then Phlagrant will be installed. The following Screen "
+"shot demonstrate it ."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:82
+msgid ""
+"If the user gives N then it will Exit the screen. The following Screen shot "
+"demonstrate it ."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:106
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:106
+msgid "Directory"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:106
+msgid "Option"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:106
+msgid "Comment"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:108
+msgid "Data directory(DEFAULT)"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:108
+msgid "YES"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:108
+msgid "“/opt/Phlagrant”"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:108
+msgid "It will install Phlagrant under Cleopatra"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:110
+msgid "Data directory"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:110 ../../source/cleophlagrant.rst:115
+msgid "No"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:110
+msgid "End slash"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:110
+msgid "The user has to a specify the path."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:112
+msgid "Executor directory (Default)"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:112
+msgid "Yes"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:112
+msgid "“/usr/bin”"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:112
+msgid "It will install executor directory"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:115
+msgid "Executor directory"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:115
+msgid "No trailing slash"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:115
+msgid "The user gives input as directory name|"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:120
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:122
+msgid "Ubuntu users can simply install phlagrant from the repository."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:123
+msgid "The real advantage of phlagrant lies in its performance."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:124
+msgid "Integration with Host OS."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:125
+msgid "Speed accessability."
+msgstr ""
+
+#: ../../source/cleophlagrant.rst:126
+msgid "Manage virtual box."
+msgstr ""

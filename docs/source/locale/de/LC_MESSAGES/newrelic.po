@@ -1,0 +1,198 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/newrelic.rst:3
+msgid "Newrelic"
+msgstr ""
+
+#: ../../source/newrelic.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/newrelic.rst:8
+msgid ""
+"Newrelic used to monitoring the server. Collaboration across the different "
+"roles delivers many benefits. The combination of a shared code base, "
+"continuous integration, test-driven techniques and automated deploys, among "
+"other things, expose problems, in application code, infrastructure or "
+"configuration, earlier because the software isn’t “thrown over the wall” to "
+"Operations at the end of coding. Automated deployments and standardized "
+"production environments, key aspects of DevOps, make deployments predictable"
+" and free people from routine repetitive tasks to go do more creative "
+"things. The newrelic is comfortable with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/newrelic.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/newrelic.rst:13
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the newrelic modules. The help command "
+"lists out the alternative parameters of newrelic under cleopatra module. It "
+"also describes the syntax for detecting the user’s machine. The help command"
+" for newrelic is shown below."
+msgstr ""
+
+#: ../../source/newrelic.rst:19
+msgid ""
+"The syntax for the help command non case sensitive which adds an advantage "
+"for this module. The following screenshot visualize the user about the help "
+"command under newrelic."
+msgstr ""
+
+#: ../../source/newrelic.rst:40
+msgid "Installation"
+msgstr ""
+
+#: ../../source/newrelic.rst:42
+msgid ""
+"These installation procedures are for system administrators. This section "
+"provides information about compatibility and requirements, basic "
+"instructions on how to install and configure cleopatra to more detailed "
+"information."
+msgstr ""
+
+#: ../../source/newrelic.rst:44
+msgid "Before installation the user has to follow:"
+msgstr ""
+
+#: ../../source/newrelic.rst:46
+msgid ""
+"Make sure your system meets New Relic's PHP compatibility and requirements."
+msgstr ""
+
+#: ../../source/newrelic.rst:48
+msgid "If you do not already have a New Relic account, create one."
+msgstr ""
+
+#: ../../source/newrelic.rst:50
+msgid ""
+"From your New Relic Account settings, copy your license key information."
+msgstr ""
+
+#: ../../source/newrelic.rst:52
+msgid ""
+"Follow the agent installation procedures for both the PHP extension and the "
+"local proxy daemon."
+msgstr ""
+
+#: ../../source/newrelic.rst:54
+msgid ""
+"Complete the configuration settings for the agent and optionally the proxy "
+"daemon."
+msgstr ""
+
+#: ../../source/newrelic.rst:56
+msgid "Change the default application name to a meaningful name."
+msgstr ""
+
+#: ../../source/newrelic.rst:58
+msgid ""
+"Restart Apache or your PHP host program (such as php-fpm) as applicable."
+msgstr ""
+
+#: ../../source/newrelic.rst:60
+msgid ""
+"If no data appears after a few minutes, see Troubleshooting your "
+"installation."
+msgstr ""
+
+#: ../../source/newrelic.rst:409 ../../source/newrelic.rst:414
+msgid "Options"
+msgstr ""
+
+#: ../../source/newrelic.rst:414
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/newrelic.rst:414
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/newrelic.rst:414
+msgid "Comments"
+msgstr ""
+
+#: ../../source/newrelic.rst:416 ../../source/newrelic.rst:419
+msgid "Install newrelic?(Y/N)"
+msgstr ""
+
+#: ../../source/newrelic.rst:416
+msgid "Y"
+msgstr ""
+
+#: ../../source/newrelic.rst:416
+msgid "Instead of using newrelic the user can use NewRellic, Newrelic"
+msgstr ""
+
+#: ../../source/newrelic.rst:416
+msgid "It starts installing newrelic under cleopatra"
+msgstr ""
+
+#: ../../source/newrelic.rst:419
+msgid "N"
+msgstr ""
+
+#: ../../source/newrelic.rst:419
+msgid "Instead of using newrelic the user can use NewRellic, Newrelic.|"
+msgstr ""
+
+#: ../../source/newrelic.rst:419
+msgid "It terminates the installation"
+msgstr ""
+
+#: ../../source/newrelic.rst:425
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/newrelic.rst:428
+msgid "Technical benefits"
+msgstr ""
+
+#: ../../source/newrelic.rst:430
+msgid "Continuous software delivery"
+msgstr ""
+
+#: ../../source/newrelic.rst:431
+msgid "Less complex problems to fix"
+msgstr ""
+
+#: ../../source/newrelic.rst:432
+msgid "Faster resolution of problems"
+msgstr ""
+
+#: ../../source/newrelic.rst:433
+msgid "Comforts with Ubuntu and centOS"
+msgstr ""
+
+#: ../../source/newrelic.rst:434
+msgid "Non case sensitivity"
+msgstr ""
+
+#: ../../source/newrelic.rst:438
+msgid "Business benefits"
+msgstr ""
+
+#: ../../source/newrelic.rst:440
+msgid "Faster delivery of features"
+msgstr ""
+
+#: ../../source/newrelic.rst:441
+msgid "More stable operating environments"
+msgstr ""
+
+#: ../../source/newrelic.rst:442
+msgid "More time available to add value (rather than fix/maintain)"
+msgstr ""

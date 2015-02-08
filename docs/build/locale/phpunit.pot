@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpunit.rst:3
+# 60d3a4a4149a46d3a061ec17f4f54fd8
+msgid "PHP Unit"
+msgstr ""
+
+#: ../../source/phpunit.rst:6
+# e79508b12ac74db29121c05ac3bdbfc1
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpunit.rst:8
+# 04d88a31187d4e2882448a6d1e5b117a
+msgid "This module facilitates the users to install PHPUnit from a GC Repo. PHP Unit Testing Framework is a unit testing framework that enables developers to discover bugs and in turn drive down the costs associated with developing PHP software. The PHP Unit Testing Framework generates reports in either XML, XHTML or ASCII. Let us see, how does this module helps in installing an PHP unit."
+msgstr ""
+
+#: ../../source/phpunit.rst:11
+# 8249f500ca9046efb801f284ef79cfb6
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/phpunit.rst:13
+# 07342edc25a7498fa3daed0d9264b05d
+msgid "The help command leads the users regarding the purpose and as well as about the options that are included in the PHP unit module. It also describes the syntax for installing PHP unit. The help command for PHP unit module is shown as below."
+msgstr ""
+
+#: ../../source/phpunit.rst:19
+# 2704066cc11a475b9e81248428607420
+msgid "The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHP unit."
+msgstr ""
+
+#: ../../source/phpunit.rst:22
+# afb6cdc34b594051a4693426666b6638
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpunit.rst:24
+# 2f95d12a9d0b4fbdb277ef9124acc14b
+msgid "The command used for installing the PHP unit to the users machine is shown below."
+msgstr ""
+
+#: ../../source/phpunit.rst:30
+# 0e25605f9a9c4c4fbe1fbf7e90a0789b
+msgid "After inputting the command above, the following operations occurs as shown in the tabular format."
+msgstr ""
+
+#: ../../source/phpunit.rst:35
+#: ../../source/phpunit.rst:52
+# 4269cd36c74d400aa757737bf62845e2
+# e6641f86bc524f11ac27d3e99a274175
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpunit.rst:35
+# bc8a6848dc1644e3960daf5d2dd2354f
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpunit.rst:35
+#: ../../source/phpunit.rst:52
+# 5616ad347c69435c85d3b113862d1244
+# 065090c3bb7040cdbeb39752185117b5
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpunit.rst:37
+#: ../../source/phpunit.rst:40
+# 9b3a05f5b9ed4a1182667aae6d11f04a
+# d73fff75ccbc4a85b6cc1d7155ccc904
+msgid "Install PHP Unit? (Y/N)"
+msgstr ""
+
+#: ../../source/phpunit.rst:37
+# bdf4ad031b3444ce8831b330c5860d03
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/phpunit.rst:37
+# 97d32a19ca6f47a194a903b884e005d9
+msgid "If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/phpunit.rst:40
+# 6d93dbf58f1444c985609fb3891d00c3
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/phpunit.rst:40
+# c75f3cdcae2f4088aad5ddb5378d9844
+msgid "If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/phpunit.rst:47
+# 8a3852ceeda64f648301294e0ab7d3cd
+msgid "If the user proceeds the installation process the following operations occurs as shown in the tabular format."
+msgstr ""
+
+#: ../../source/phpunit.rst:52
+# f44ae5b5fca34632b9e979fa9d1695b2
+msgid "Path"
+msgstr ""
+
+#: ../../source/phpunit.rst:52
+# 06c065c30da544479b7a97c4c6bd3013
+msgid "Option"
+msgstr ""
+
+#: ../../source/phpunit.rst:54
+#: ../../source/phpunit.rst:57
+# 1363c5d6d7de4eda8d575cfd5eb8c77d
+# 086b72b67d814443bd8248d092a7194a
+msgid "Program data directory"
+msgstr ""
+
+#: ../../source/phpunit.rst:54
+# 49685985716249779e35d9e98a2bdffe
+msgid "\"/opt/phpunit (corresponding module)\""
+msgstr ""
+
+#: ../../source/phpunit.rst:54
+#: ../../source/phpunit.rst:61
+# 580eb4141c324db49b6115ef3cd416e2
+# da3c7259943f4652928017ad8fc0ab76
+msgid "Yes"
+msgstr ""
+
+#: ../../source/phpunit.rst:54
+# ccb9ccf20bd54fafa67d27542918b20e
+msgid "If the user to proceed installation with the default program data directory they can input as Yes"
+msgstr ""
+
+#: ../../source/phpunit.rst:57
+#: ../../source/phpunit.rst:64
+# 69f88ec4fe114ac2ab0231df730b68e6
+# d404b80a9e65478aaaf23fc910393236
+msgid "User specific"
+msgstr ""
+
+#: ../../source/phpunit.rst:57
+#: ../../source/phpunit.rst:64
+# eb86ebcc33414a6ea63312a9c8dfcd00
+# bacd83cc97d64898ae2cabd13472207c
+msgid "No(End slash)"
+msgstr ""
+
+#: ../../source/phpunit.rst:57
+# 10d757a9e7a148b4a84aee2333cf9e7a
+msgid "If the user wish to proceed with their own program data directory, they can input as N, and in hand specify their own location"
+msgstr ""
+
+#: ../../source/phpunit.rst:61
+# a49c75bd8d154c36b8f92f62a94c4820
+msgid "Program executor directory (default)"
+msgstr ""
+
+#: ../../source/phpunit.rst:61
+# 97efe240f74e42788701bbcb60145ff1
+msgid "\"/usr/bin\""
+msgstr ""
+
+#: ../../source/phpunit.rst:61
+# e39546f3a31e49e58ff675259ad68071
+msgid "If the user to proceed installation with the default program executor directory they can input as Yes"
+msgstr ""
+
+#: ../../source/phpunit.rst:64
+# 7a4821044e5f4715868ae7f6f5898697
+msgid "Program executor directory"
+msgstr ""
+
+#: ../../source/phpunit.rst:64
+# 37d29c988d7748048814413f12bd1a25
+msgid "If the user wish to proceed with their own program executor directory, they can input as N, and in hand specify they own location.|"
+msgstr ""
+
+#: ../../source/phpunit.rst:70
+# c63c6b2656bd4b0599909f8d03249246
+msgid "Finally, the installation of PHP unit is completed. The following screenshot depicts visually about the process of installation."
+msgstr ""
+
+#: ../../source/phpunit.rst:73
+# 253500852d9048278d09d3cec6409a75
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpunit.rst:75
+# 00864cb48f1941ffa395402a9b70cbce
+msgid "This module facilitates the user in installing PHP Unit from the GC Repo version."
+msgstr ""
+
+#: ../../source/phpunit.rst:76
+# 60f5b41c6b954e15bb1c9d0183690af8
+msgid "The user can select their own path for program data directory and executor"
+msgstr ""
+
+#: ../../source/phpunit.rst:77
+# 7315690db86a4782b45dafe8df4b6852
+msgid "The parameters used in declaring the help and installations are not case sensitive, which is added advantage while compared to others."
+msgstr ""
+
+#: ../../source/phpunit.rst:78
+# 8bb7411fb536460c80ec520e15b999b8
+msgid "It is well-to-do in both cent OS and as well as in ubuntu."
+msgstr ""
+

@@ -1,0 +1,232 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/nginxcontrol.rst:3
+msgid "Nginx Control"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:8
+msgid ""
+"Nginx (pronounced \"engine-x\") is an open source reverse proxy server for "
+"HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer, "
+"HTTP cache, and a web server (origin server). The nginx project started with"
+" a strong focus on high concurrency, high performance and low memory usage. "
+"It is licensed under the 2-clause BSD-like license and it runs on Linux, BSD"
+" variants, Mac OS X, Solaris, AIX, HP-UX, as well as on other nix flavours."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:10
+msgid ""
+"Nginx uses an asynchronous event-driven approach to handling requests, "
+"instead of the Apache HTTP Server model that defaults to a threaded or "
+"process-oriented approach, where the Event MPM is required for asynchronous "
+"processing. Nginx's modular event-driven architecture can provide more "
+"predictable performance under high loads."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:13
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:15
+msgid ""
+"This command helps to determine the usage of Nginx  module. The user will "
+"come to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:51
+msgid "Start"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:53
+msgid ""
+"When the user needs to start the Nginx server, the below given command will "
+"execute the process."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:59 ../../source/nginxcontrol.rst:70
+#: ../../source/nginxcontrol.rst:81 ../../source/nginxcontrol.rst:92
+msgid ""
+"Before execution, the system ask for the confirmation to proceed, if you "
+"want to proceed enter 'Y', if no enter 'N'."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:62
+msgid "Stop"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:64
+msgid ""
+"When the user needs to stop the Nginx server, the below given command will "
+"execute the process."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:73
+msgid "Restart"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:75
+msgid ""
+"When the user needs to Restart the Nginx server(when there are any changes "
+"happened in configuration file this option will be used), the below given "
+"command will execute the process."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:84
+msgid "Reload"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:86
+msgid ""
+"When the user needs to Reload the Nginx server without restarting, the below"
+" given command will execute the process."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:95
+msgid "Options"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:100
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:100
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:100
+msgid "Comments"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:102
+msgid "dapperstrano ngnixcontrolhelp"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:102
+msgid ""
+"Either of the three alternative parameter can be used in command- "
+"ngnixcontrol , NgnixControl and nginxcil eg: dapperstrano ngnixcontrol help/"
+" dapperstrano ngnixControl help|"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:102
+msgid "Once the user provides the option, System starts processing"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:110
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:112
+msgid ""
+"Ability to handle more than 10,000 simultaneous connections with a low"
+"          memory footprint"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:113
+msgid "Handling of static files, index files, and auto-indexing"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:114
+msgid "Reverse proxy with caching"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:115
+msgid "Load balancing with in-band health checks"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:116
+msgid "Fault tolerance"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:117
+msgid "TLS/SSL with SNI and OCSP stapling support, via OpenSSL."
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:118
+msgid "FastCGI, SCGI, uWSGI support with caching"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:119
+msgid "Name- and IP address-based virtual servers"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:120
+msgid "IPv6-compatible"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:121
+msgid "SPDY protocol support"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:122
+msgid "WebSockets and HTTP/1.1 Upgrade (101 Switching Protocols)"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:123
+msgid "FLV and MP4 streaming"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:124
+msgid "Web page access authentication"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:125
+msgid "gzip compression and decompression"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:126
+msgid "URL rewriting"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:127
+msgid "Custom logging with on-the-fly gzip compression"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:128
+msgid "Response rate and concurrent requests limiting"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:129
+msgid "Bandwidth throttling"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:130
+msgid "Server Side Includes"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:131
+msgid "IP address-based geolocation"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:132
+msgid "User tracking"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:133
+msgid "WebDAV"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:134
+msgid "XSLT data processing"
+msgstr ""
+
+#: ../../source/nginxcontrol.rst:135
+msgid "Embedded Perl scripting"
+msgstr ""

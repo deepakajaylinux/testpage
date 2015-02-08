@@ -1,0 +1,150 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/redis.rst:3
+msgid "Redis"
+msgstr ""
+
+#: ../../source/redis.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/redis.rst:8
+msgid ""
+"Redis is a data structure server. In redis, networked, in-memory, and stores"
+" keys with optional durability. Redis is the most popular key-value store. "
+"The name Redis means REmote DIctionary Server. Redis supports master-slave "
+"replication. Data from any Redis server can replicate to any number of "
+"slaves. This allows Redis to implement a single-rooted replication tree. "
+"These services handle installation, configuration and maintenance of Redis "
+"on behalf of the application owner. This service comforts with Ubuntu and "
+"centOS."
+msgstr ""
+
+#: ../../source/redis.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/redis.rst:13
+msgid ""
+"The help command leads the users regarding the purpose and as well as about "
+"the options that are included in the redis module. The help command lists "
+"out the alternative parameters of redis under cleopatra module. It also "
+"describes the syntax for initializing the user’s machine. The help command "
+"for redis shown below."
+msgstr ""
+
+#: ../../source/redis.rst:19
+msgid "The pictorial representation of the above command is listed below,"
+msgstr ""
+
+#: ../../source/redis.rst:41
+msgid "Installation"
+msgstr ""
+
+#: ../../source/redis.rst:43
+msgid ""
+"Installation of a phlagrant module is including device drivers and plugins, "
+"act of making the program ready for execution. While installing this module "
+"the following command will be passed."
+msgstr ""
+
+#: ../../source/redis.rst:49
+msgid "After inputs the command the system can ask"
+msgstr ""
+
+#: ../../source/redis.rst:51
+msgid "Install Phlagrant? (Y/N)"
+msgstr ""
+
+#: ../../source/redis.rst:53
+msgid ""
+"If the user gives Y then Phlagrant will be installed. The following Screen "
+"shot demonstrate it."
+msgstr ""
+
+#: ../../source/redis.rst:287
+msgid "Option"
+msgstr ""
+
+#: ../../source/redis.rst:292
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/redis.rst:292
+msgid "Directory(default)"
+msgstr ""
+
+#: ../../source/redis.rst:292
+msgid "Alternative Options"
+msgstr ""
+
+#: ../../source/redis.rst:292
+msgid "Comments"
+msgstr ""
+
+#: ../../source/redis.rst:294 ../../source/redis.rst:297
+msgid "Install Redis ?"
+msgstr ""
+
+#: ../../source/redis.rst:294
+msgid "Yes"
+msgstr ""
+
+#: ../../source/redis.rst:294
+msgid "Instead of using redis, the user can use Redis"
+msgstr ""
+
+#: ../../source/redis.rst:294
+msgid "It installs redis under cleopatra"
+msgstr ""
+
+#: ../../source/redis.rst:297
+msgid "No"
+msgstr ""
+
+#: ../../source/redis.rst:297
+msgid "Instead of using redis, the user can use Redis.|"
+msgstr ""
+
+#: ../../source/redis.rst:297
+msgid "It stops the installation process."
+msgstr ""
+
+#: ../../source/redis.rst:303
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/redis.rst:305
+msgid "Automatic scaling, unlimited Redis nodes."
+msgstr ""
+
+#: ../../source/redis.rst:306
+msgid "High availability in Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/redis.rst:307
+msgid "Data persistence and durability."
+msgstr ""
+
+#: ../../source/redis.rst:308
+msgid "Daily and on-demand backups."
+msgstr ""
+
+#: ../../source/redis.rst:309
+msgid "Built-in clustering."
+msgstr ""
+
+#: ../../source/redis.rst:310
+msgid "Non case sensitivity."
+msgstr ""

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpeclipse.rst:3
+# 5d67f034bfd349afb51bfcf9ea902b9b
+msgid "PHPEclipse"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:6
+# d03f87afdcf44bc8accfce2b6664e7bc
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:8
+# 0aa00a1e53aa4beaba80d94dfa334a55
+msgid "PHPEclipse is a set of plug-ins for the Eclipse Framework which provides integrated IDE for PHP developers. Eclipse and PHPEclipse are written in Java, and will run on all graphical desktop environments. PHPEclipse is Open Source software, freely available under the Common Public Licence."
+msgstr ""
+
+#: ../../source/phpeclipse.rst:10
+# f19ae30e07b44e4180ada96ba0df5562
+msgid "The Eclipse Platform provides users with a consistent user interface paradigm. A software development IDE is one of the more complex desktop applications most of us are likely to use, and so the time required for a developer to become efficient with a particular IDE can be significant. Eclipse doesn't reduce this time, but it does provide a consistent interface approach which need only be learnt once in order to develop efficiently with a wide range of programming languages and tools. As part of this approach, Eclipse provides detailed documentation and tutorials on all its generic functionality, allowing plugin projects, such as PHPEclipse, to focus only on their areas specific to their domain. By learning to use Eclipse as a development platform, or learning to develop your own plug-in tools for eclipse, you are acquiring a useful and flexible skill."
+msgstr ""
+
+#: ../../source/phpeclipse.rst:13
+# 39312fd30c264b9fbd6922462b6f569a
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:15
+# 69e05d706e2a49e496c9b459ddaf65a9
+msgid "This command helps to determine the usage of PhpEclipse module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/phpeclipse.rst:21
+# 84d59fdc09eb4332a65ee2af4f3d2d16
+msgid "The pictorial representation of the above command is shown below,"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:45
+# 3a3cadef71bf499888ea4a11096b1b5a
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:47
+# 90f7dfe265b24bafab0fc3188e2ca6e8
+msgid "This command helps in installing the latest version of PHPeclipse in system. The below given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/phpeclipse.rst:55
+#: ../../source/phpeclipse.rst:62
+# 83fd95c47c634a95ae8760d30865f7c0
+# c55c70be1e544ea68062f873a82ee4c0
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:62
+# 7ccf98ddf84a4ca6823bb50efc271fb6
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:62
+# d977770a789a466ca804b14e5ea20871
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:62
+# 0dce4b7b43c9475d847c3d4054aa60d3
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:64
+#: ../../source/phpeclipse.rst:70
+# 0ba0e9f5183449489fda4c89f20096e5
+# 54279ac5a12c409caca4482e880d4c91
+msgid "cleopatra PHPEclipse Install"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:64
+# 98997742fc9541e99cf0b3209d541d35
+msgid "There are three alternative parameters which can be used in command line. PHP-Eclipse, PHPEclipse, phpeclipse Eg: cleopatra PHPEclipse install cleopatra PHP-Eclipse install"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:64
+# f86fe22696bc4a8c9ceb8ad1b651ba9a
+msgid "Y"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:64
+# 75a5ee0bcf544ac4801c9844779024f7
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:70
+# 379b86d6ff004f4b893080edd7a11e47
+msgid "There are three alternative parameters which can be used in command line. PHP-Eclipse, PHPEclipse, phpeclipse Eg: cleopatra PHPEclipse install cleopatra PHP-Eclipse install|"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:70
+# 0fa8c01f43254da1b042425c91df2dbf
+msgid "N"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:70
+# 2c9557d3b45948eab9f2e1f42dd6e61c
+msgid "System stops installation process"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:81
+# f9b9664181d14659a87d2d0aa635796d
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:83
+# 43bb07dc360146029706cf5f03a73bc2
+msgid "PHP, HTML, XML and CSS Syntax Highlighting"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:84
+# bafe6ca4d3744825bd91d971d9db54f5
+msgid "Code completion"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:85
+# 9d6c111a65264b02a24eb02ecc71ae48
+msgid "Integrated web browser preview"
+msgstr ""
+
+#: ../../source/phpeclipse.rst:86
+# f9f837e97ab244029783ba23b6421dc3
+msgid "Integrated control of Apache & MySQL servers"
+msgstr ""
+

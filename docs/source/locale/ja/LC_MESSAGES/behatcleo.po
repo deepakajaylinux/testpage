@@ -1,0 +1,160 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/behatcleo.rst:3
+msgid "Behat"
+msgstr ""
+
+#: ../../source/behatcleo.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/behatcleo.rst:8
+msgid ""
+"This module aims at installing behat with the most-recent version. This "
+"helps in testing an php script. It facilitates the users to identify the "
+"errors in php script. It highlights the enabled and disabled templates. The "
+"git acts as a supporting software for behat."
+msgstr ""
+
+#: ../../source/behatcleo.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/behatcleo.rst:14
+msgid ""
+"The help command guides the user get aware of the uses, and also the options"
+" and actions that can be performed."
+msgstr ""
+
+#: ../../source/behatcleo.rst:16
+msgid ""
+"The coding to make use of help command under behat, is given as follows:"
+msgstr ""
+
+#: ../../source/behatcleo.rst:22
+msgid ""
+"The screen shot as given below explains you graphically about the usage of "
+"the help command."
+msgstr ""
+
+#: ../../source/behatcleo.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/behatcleo.rst:51
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/behatcleo.rst:51
+msgid "Required"
+msgstr ""
+
+#: ../../source/behatcleo.rst:51
+msgid "Comments"
+msgstr ""
+
+#: ../../source/behatcleo.rst:53
+msgid "cleopatra behat Install"
+msgstr ""
+
+#: ../../source/behatcleo.rst:53
+msgid "Yes"
+msgstr ""
+
+#: ../../source/behatcleo.rst:53
+msgid "This command is used for installing the behat to your machine."
+msgstr ""
+
+#: ../../source/behatcleo.rst:56 ../../source/behatcleo.rst:59
+msgid "Install behat (Y/N)"
+msgstr ""
+
+#: ../../source/behatcleo.rst:56
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/behatcleo.rst:56
+msgid "If the user gives input as Y, then behat will gets installed."
+msgstr ""
+
+#: ../../source/behatcleo.rst:59
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/behatcleo.rst:59
+msgid ""
+"If the user gives input as N, then the process gets quits from "
+"installation.|"
+msgstr ""
+
+#: ../../source/behatcleo.rst:65
+msgid ""
+"The screenshot shown below will gives you an pictorial representation about "
+"the steps involved in the installation."
+msgstr ""
+
+#: ../../source/behatcleo.rst:102
+msgid ""
+"While installing the behat, the user can specify the program data directory "
+"and program executor directory."
+msgstr ""
+
+#: ../../source/behatcleo.rst:104
+msgid ""
+"The screenshot above explains the syntax regarding the specification of "
+"program data directory and executor directory."
+msgstr ""
+
+#: ../../source/behatcleo.rst:108
+msgid "Version"
+msgstr ""
+
+#: ../../source/behatcleo.rst:110
+msgid ""
+"While installing the behat, the most-recent version will be installed in "
+"your machine."
+msgstr ""
+
+#: ../../source/behatcleo.rst:112
+msgid ""
+"This is an added advantage of behat module under Cleopatra when compared to "
+"other."
+msgstr ""
+
+#: ../../source/behatcleo.rst:115
+msgid "Benefits to the users"
+msgstr ""
+
+#: ../../source/behatcleo.rst:117
+msgid "It guides the users to identify the errors in php script."
+msgstr ""
+
+#: ../../source/behatcleo.rst:118
+msgid ""
+"No need to search the most-recent version, as the updated version is "
+"automatically available to the users while executing the installation pr  "
+"ocess."
+msgstr ""
+
+#: ../../source/behatcleo.rst:119
+msgid ""
+"Using the features of behat the users can frame and specify the behavior of "
+"driven development."
+msgstr ""
+
+#: ../../source/behatcleo.rst:120
+msgid ""
+"By the aid of behavior driven development, the users can ensure the "
+"qualities of their own script."
+msgstr ""

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/jarticle.rst:3
+# d415343f74124ec29a33ce7a52299ff9
+msgid "JArticle"
+msgstr ""
+
+#: ../../source/jarticle.rst:6
+# ad29606e7d974d2494fbc15d7e115592
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/jarticle.rst:8
+# dc64b1cfe06d4139a991b4fa79291dbe
+msgid "It manages jarticle's details. This allows you to use an Article as a Module. Joomla provides an extremely wide range of options for creating different types of content and for structuring it on your website."
+msgstr ""
+
+#: ../../source/jarticle.rst:10
+# 2d96e777e05941f9ba14d7da22d4188f
+msgid "In Joomla, an Article is a piece of content consisting of text, possibly with links to other resources (for example, images). Articles are the basic units of information in the content system and the bottom level in the content hierarchy. Each Article is in exactly one Category. A Category can be in another Category making it a sub Category. It is also possible to have Uncategorized Articles. These articles exist without being associated with any Category."
+msgstr ""
+
+#: ../../source/jarticle.rst:14
+# 10cb45a3a24b438abfaf4ccd76c4fe4d
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/jarticle.rst:16
+# a481905e2a224eb0807397acfd6961af
+msgid "This command helps to determine the usage of jarticle module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screen shot of the same."
+msgstr ""
+
+#: ../../source/jarticle.rst:54
+# e18e4995265743d6a789373b1908dde9
+msgid "Enable"
+msgstr ""
+
+#: ../../source/jarticle.rst:56
+# 63e4256eb482408f8665c8e9f1914303
+msgid "When the user needs to enable a particular article, the below given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/jarticle.rst:63
+# 90ef09c205d746dea57834df2c2c6a64
+msgid "Info"
+msgstr ""
+
+#: ../../source/jarticle.rst:65
+# c7181fc5cbe34889b989f9edc4dc6e2f
+msgid "If the user needs to know about the information of an article. The below given command will help you"
+msgstr ""
+
+#: ../../source/jarticle.rst:72
+# 5ae8b2c8c4fb4d3abbf3dfd8c96d4f88
+msgid "The pictorial representation of the above command is listed below,"
+msgstr ""
+
+#: ../../source/jarticle.rst:99
+# 3679cdb6a0574ca686e34b86649405c1
+msgid "Disable"
+msgstr ""
+
+#: ../../source/jarticle.rst:101
+# 3acdad4d69614db79a7c0861096ab448
+msgid "When the user needs to disable a particular article, the below given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/jarticle.rst:108
+# 295734bdb30a47d2870ca2ff27a0e6f5
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/jarticle.rst:110
+# b98d1fe4a8144cd6ba057288bc5021e1
+msgid "Either of the two alternative parameter can be used in command-  jarticle, JArticle"
+msgstr ""
+
+#: ../../source/jarticle.rst:112
+# 7adcc1942f7c451aaf13b333592c77e7
+msgid "eg:  jrush jarticle disable/ jrush JArticle disable"
+msgstr ""
+
+#: ../../source/jarticle.rst:118
+# 742f8512a3f74a729f60bd42d3fe4f8c
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/jarticle.rst:119
+# 202825fa34e84eda94c9898bf66a6e3e
+msgid "Provide an optional method for organizing your articles"
+msgstr ""
+
+#: ../../source/jarticle.rst:120
+# efa4c0f366df48a9ac26675f5ac5a625
+msgid "It contains some text and can contain pictures and other types of content"
+msgstr ""
+
+#: ../../source/jarticle.rst:121
+# 1cf95d52a37844e8acde44778e557c57
+msgid "Helps to get the information about an article in easy way"
+msgstr ""
+
+#: ../../source/jarticle.rst:122
+# e2746179d03349c1939c8c5ed608e6a8
+msgid "Can enable and disable an article in one step"
+msgstr ""
+

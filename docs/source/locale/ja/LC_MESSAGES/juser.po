@@ -1,0 +1,123 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/juser.rst:3
+msgid "JUser"
+msgstr ""
+
+#: ../../source/juser.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/juser.rst:8
+msgid ""
+"A user is a person who uses a computer or network service. Users generally "
+"use a system or a software product without the technical expertise required "
+"to fully understand it."
+msgstr ""
+
+#: ../../source/juser.rst:10
+msgid ""
+"A user often has a user account and is identified to the system by a "
+"username (or user name). Other terms for username include login name, screen"
+" name."
+msgstr ""
+
+#: ../../source/juser.rst:12
+msgid ""
+"A user's account allows a user to authenticate to a system and to be granted"
+" authorization to access resources provided by or connected to that system; "
+"however, authentication does not imply authorization. To log into an "
+"account, a user is typically required to authenticate oneself with a "
+"password or other credentials for the purposes of accounting, security, "
+"logging, and resource management."
+msgstr ""
+
+#: ../../source/juser.rst:15
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/juser.rst:17
+msgid ""
+"This command helps to determine the usage of Juser module. The user will "
+"come to know about the different ways/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screen shot of the same."
+msgstr ""
+
+#: ../../source/juser.rst:54
+msgid "Delete"
+msgstr ""
+
+#: ../../source/juser.rst:56
+msgid ""
+"When the user needs to delete an user in machine, the below given command "
+"will execute the process of installation."
+msgstr ""
+
+#: ../../source/juser.rst:62 ../../source/juser.rst:96
+msgid "The pictorial representation of the above command is listed below,"
+msgstr ""
+
+#: ../../source/juser.rst:88
+msgid "Info"
+msgstr ""
+
+#: ../../source/juser.rst:90
+msgid ""
+"When the user needs to display the details of a user in machine, the below "
+"given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/juser.rst:121
+msgid "Password"
+msgstr ""
+
+#: ../../source/juser.rst:123
+msgid ""
+"When the user needs to change the password of a user in machine, the below "
+"given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/juser.rst:131
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/juser.rst:133
+msgid ""
+"Either of the two alternative parameter can be used in command- juser and "
+"JUser"
+msgstr ""
+
+#: ../../source/juser.rst:135
+msgid ""
+"eg: jrush juser info ..config file=”bootstrap file path” / jrush JUser info "
+"..config file=”bootstrap file path”"
+msgstr ""
+
+#: ../../source/juser.rst:163
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/juser.rst:165
+msgid "Easy to get the information about a user using a single command"
+msgstr ""
+
+#: ../../source/juser.rst:166
+msgid ""
+"Easy to change the password of a user from back end using single command"
+msgstr ""
+
+#: ../../source/juser.rst:167
+msgid "Easy to handle to user accounts"
+msgstr ""

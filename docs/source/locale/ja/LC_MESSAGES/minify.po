@@ -1,0 +1,152 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/minify.rst:3
+msgid "Minify"
+msgstr ""
+
+#: ../../source/minify.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/minify.rst:8
+msgid ""
+"Minify is the removal of unnecessary characters from source code. Mini, when"
+" used as a prefix, means small.  The goal of minify is to make source code "
+"\"smaller\" and improve performance."
+msgstr ""
+
+#: ../../source/minify.rst:10
+msgid ""
+"The term minify is often associated with interpreted scripted languages, "
+"such as php, that are deployed and transmitted over the Internet. Code that "
+"has been minified by replacing runs of spaces by a single space, for "
+"example, is more lightweight and takes less time for a browser to load. "
+"Popular minify tools for Web development include Compressor, and ubuntu "
+"Compiler. Minify suits to work with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/minify.rst:13
+msgid "Help command"
+msgstr ""
+
+#: ../../source/minify.rst:15
+msgid ""
+"Minify makes package development a breeze: Conceptually, minify is similar "
+"to compression.  Unlike code that has been compressed, however, code that "
+"has minified can still be worked with without requiring the extra step of "
+"decompression. Minified source code may also be used as a kind of "
+"obfuscation, though the term obfuscation may be distinguished as a form of "
+"false cryptography while a minified code instance may be reversed using a "
+"pretty-printer."
+msgstr ""
+
+#: ../../source/minify.rst:17
+msgid "The following help command guides the user to handle minify."
+msgstr ""
+
+#: ../../source/minify.rst:23
+msgid "This screen shot shows the help command usage"
+msgstr ""
+
+#: ../../source/minify.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/minify.rst:47
+msgid ""
+"It works with existing conventions for code structure, adding efficient "
+"tools to support the cycle of coding development. With minify, developing a "
+"coding becomes so easy that it will be the user default layout whenever the "
+"user is writing a significant amount of code. This command used to install "
+"minify is as follows,"
+msgstr ""
+
+#: ../../source/minify.rst:53
+msgid "The following screenshot explains it."
+msgstr ""
+
+#: ../../source/minify.rst:58
+msgid "Option"
+msgstr ""
+
+#: ../../source/minify.rst:60
+msgid ""
+"Minify source code is especially useful for interpreted languages deployed "
+"and transmitted on the Internet, because it reduces the amount of data that "
+"needs to be transferred."
+msgstr ""
+
+#: ../../source/minify.rst:65
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/minify.rst:65
+msgid "Alternate Parameters"
+msgstr ""
+
+#: ../../source/minify.rst:65
+msgid "Oprion"
+msgstr ""
+
+#: ../../source/minify.rst:65
+msgid "Comments"
+msgstr ""
+
+#: ../../source/minify.rst:67 ../../source/minify.rst:70
+msgid "Install minify?(Y/N)"
+msgstr ""
+
+#: ../../source/minify.rst:67
+msgid "Instead of using minify we can use Minify"
+msgstr ""
+
+#: ../../source/minify.rst:67
+msgid "Y"
+msgstr ""
+
+#: ../../source/minify.rst:67
+msgid "It installs  minify under cleopatra"
+msgstr ""
+
+#: ../../source/minify.rst:70
+msgid "Instead of using minify we can use Minify|"
+msgstr ""
+
+#: ../../source/minify.rst:70
+msgid "N"
+msgstr ""
+
+#: ../../source/minify.rst:70
+msgid "The system exit the installation"
+msgstr ""
+
+#: ../../source/minify.rst:77
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/minify.rst:79
+msgid "Minify communicates via Php coding."
+msgstr ""
+
+#: ../../source/minify.rst:80
+msgid "Minify comforts with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/minify.rst:81
+msgid "Minify supports non case sensitivity."
+msgstr ""
+
+#: ../../source/minify.rst:82
+msgid "Minify deducts unnecessary characters from the source code."
+msgstr ""

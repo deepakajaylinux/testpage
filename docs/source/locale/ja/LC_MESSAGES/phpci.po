@@ -1,0 +1,173 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpci.rst:3
+msgid "Phpci"
+msgstr ""
+
+#: ../../source/phpci.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpci.rst:8
+msgid ""
+"PHPCI is an open source continuous integration tool specifically designed "
+"for Cleopatra. The user have built it with simplicity in mind, so whilst it "
+"does not do everything Jenkins can do, it is a breeze to set up and use. "
+"This is ease with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/phpci.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/phpci.rst:13
+msgid ""
+"This help command guide the user to perform certain operation about Phpci   "
+"module. This is suitable for all type of corporate users."
+msgstr ""
+
+#: ../../source/phpci.rst:19
+msgid ""
+"The help command shows a short list of the commands built into the Phpci "
+"module. The following screen shot visualize it."
+msgstr ""
+
+#: ../../source/phpci.rst:22
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpci.rst:24
+msgid ""
+"This module helps to install phpci. First step this module have to check   "
+"composer is available in the system or not. If it is not available in the "
+"system automatically, it will install it."
+msgstr ""
+
+#: ../../source/phpci.rst:30
+msgid ""
+"After typing this command, the system asks like this. Install PHPCI? (Y/N) "
+"The user inputs as y, automatically it can check the composer and install "
+"the updated version in default directory “/apt/”the following screen appears"
+msgstr ""
+
+#: ../../source/phpci.rst:35
+msgid "The inputs as N, it exit the screen."
+msgstr ""
+
+#: ../../source/phpci.rst:38
+msgid "Option"
+msgstr ""
+
+#: ../../source/phpci.rst:44
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpci.rst:44
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpci.rst:44
+msgid "Output"
+msgstr ""
+
+#: ../../source/phpci.rst:46
+msgid "Install PHPCI"
+msgstr ""
+
+#: ../../source/phpci.rst:46
+msgid "yes"
+msgstr ""
+
+#: ../../source/phpci.rst:46
+msgid "It will install composer as well as PHPCI under cleopatra"
+msgstr ""
+
+#: ../../source/phpci.rst:49
+msgid "Install config-"
+msgstr ""
+
+#: ../../source/phpci.rst:50
+msgid "default"
+msgstr ""
+
+#: ../../source/phpci.rst:49 ../../source/phpci.rst:52
+msgid "Yes"
+msgstr ""
+
+#: ../../source/phpci.rst:49
+msgid "It will install configuration files .yml file"
+msgstr ""
+
+#: ../../source/phpci.rst:50
+msgid "for editing under Cleopatra"
+msgstr ""
+
+#: ../../source/phpci.rst:52
+msgid "Install default Database"
+msgstr ""
+
+#: ../../source/phpci.rst:52
+msgid "the user has to enter the root user id"
+msgstr ""
+
+#: ../../source/phpci.rst:53
+msgid "and passward under Cleopatra"
+msgstr ""
+
+#: ../../source/phpci.rst:55
+msgid "Install default database"
+msgstr ""
+
+#: ../../source/phpci.rst:55
+msgid "No"
+msgstr ""
+
+#: ../../source/phpci.rst:55
+msgid "the user has to exit the screen |"
+msgstr ""
+
+#: ../../source/phpci.rst:60
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpci.rst:62
+msgid ""
+"PHPCI used to install configuration and database file. While installing if "
+"there is any file is existing, overwrite the content."
+msgstr ""
+
+#: ../../source/phpci.rst:63
+msgid "New version can update automatically."
+msgstr ""
+
+#: ../../source/phpci.rst:64
+msgid "It can accept user wish in case of install database."
+msgstr ""
+
+#: ../../source/phpci.rst:65
+msgid "Continuous integration is possible."
+msgstr ""
+
+#: ../../source/phpci.rst:66
+msgid "Multiple environment"
+msgstr ""
+
+#: ../../source/phpci.rst:67
+msgid ""
+"Build php with different variants like PDO, mysql, sqlite, debug ...etc."
+msgstr ""
+
+#: ../../source/phpci.rst:68
+msgid "Automatic feature detection."
+msgstr ""

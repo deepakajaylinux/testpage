@@ -1,0 +1,154 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/jetty.rst:3
+msgid "Jetty"
+msgstr ""
+
+#: ../../source/jetty.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/jetty.rst:8
+msgid ""
+"Jetty provides a Web server and javax.servlet container, plus support for "
+"SPDY, WebSocket, OSGi, JMX, JNDI, JAAS and much other integration. These "
+"components are open source and available for commercial use and "
+"distribution.Jetty is used in a wide variety of projects and products, both "
+"in development and production. Jetty can be easily embedded in devices, "
+"tools, frameworks, application servers, and clusters."
+msgstr ""
+
+#: ../../source/jetty.rst:10
+msgid ""
+"Jetty is a pure Java-based HTTP (Web) server and Java Servlet container. "
+"While Web Servers are usually associated with serving documents to people, "
+"Jetty is now often used for machine to machine communications, usually "
+"within larger software frameworks. Jetty is developed as a free and open "
+"source project as part of the Eclipse Foundation. The web server is used in "
+"products such as Apache ActiveMQ, Alfresco, Apache Geronimo, Apache Maven, "
+"Apache Spark, Google App Engine, Eclipse, FUSE, Twitter's Streaming API and "
+"Zimbra. Jetty is also the server in open source projects such as Lift, "
+"Eucalyptus, Red5, Hadoop and I2P. Jetty supports the latest Java Servlet API"
+" (with JSP support) as well as protocols SPDY and WebSocket."
+msgstr ""
+
+#: ../../source/jetty.rst:14
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/jetty.rst:16
+msgid ""
+"This command helps to determine the usage of jetty module. The user will "
+"come to know about the different way/format to execute this module. This "
+"command guides the end user to know the purpose of this command. Below given"
+" are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/jetty.rst:22
+msgid "The pictorial representation of the above command is shown below,"
+msgstr ""
+
+#: ../../source/jetty.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/jetty.rst:48
+msgid ""
+"This command helps in installing jetty in system. The below given command "
+"will execute the process of installation."
+msgstr ""
+
+#: ../../source/jetty.rst:56 ../../source/jetty.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../source/jetty.rst:61
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/jetty.rst:61
+msgid "Alternative Parameters"
+msgstr ""
+
+#: ../../source/jetty.rst:61
+msgid "Comments"
+msgstr ""
+
+#: ../../source/jetty.rst:63 ../../source/jetty.rst:68
+msgid "Cleopatra jetty  Install"
+msgstr ""
+
+#: ../../source/jetty.rst:63
+msgid ""
+"There are two alternative parameters which can be used in command line. "
+"Jetty , jetty Eg: cleopatra jetty install cleopatra Jetty install"
+msgstr ""
+
+#: ../../source/jetty.rst:63
+msgid "Y"
+msgstr ""
+
+#: ../../source/jetty.rst:63
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/jetty.rst:68
+msgid ""
+"There are two alternative parameters which can be used in command line. "
+"Jetty , jetty Eg: cleopatra jetty install cleopatra Jetty install|"
+msgstr ""
+
+#: ../../source/jetty.rst:68
+msgid "N"
+msgstr ""
+
+#: ../../source/jetty.rst:68
+msgid "System stops installation process"
+msgstr ""
+
+#: ../../source/jetty.rst:78
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/jetty.rst:80
+msgid "Full-featured and standards-based"
+msgstr ""
+
+#: ../../source/jetty.rst:81
+msgid "Open source and commercially usable"
+msgstr ""
+
+#: ../../source/jetty.rst:82
+msgid "Flexible and extensible"
+msgstr ""
+
+#: ../../source/jetty.rst:83
+msgid "Small footprint"
+msgstr ""
+
+#: ../../source/jetty.rst:84
+msgid "Embeddable"
+msgstr ""
+
+#: ../../source/jetty.rst:85
+msgid "Asynchronous"
+msgstr ""
+
+#: ../../source/jetty.rst:86
+msgid "Enterprise scalable"
+msgstr ""
+
+#: ../../source/jetty.rst:87
+msgid "Dual licensed under Apache and Eclipse"
+msgstr ""

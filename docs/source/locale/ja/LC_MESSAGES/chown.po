@@ -1,0 +1,126 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/chown.rst:3 ../../source/chown.rst:79
+#: ../../source/chown.rst:84 ../../source/chown.rst:86
+msgid "Chown"
+msgstr ""
+
+#: ../../source/chown.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/chown.rst:8
+msgid ""
+"This module enables to change owner’s permission. It can change the "
+"permission on individual file Or directory. Before that you must be aware of"
+" the default permission assigned to your files and directories at the time "
+"you create it."
+msgstr ""
+
+#: ../../source/chown.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/chown.rst:13
+msgid ""
+"This help command explains about the installation of a particular module. "
+"The help command is easy to operate by the end user. It also lists out the "
+"alternative parameters that are used in declaration. The following command "
+"guides the user about the handling this module."
+msgstr ""
+
+#: ../../source/chown.rst:19
+msgid ""
+"After giving the command, the command will list the help options. The "
+"following screen shots will give visual effect for the usage of this module."
+msgstr ""
+
+#: ../../source/chown.rst:40
+msgid "Installation"
+msgstr ""
+
+#: ../../source/chown.rst:42
+msgid ""
+"It is an excellent process for this module under Cleopatra by slightly using"
+" the command given below,"
+msgstr ""
+
+#: ../../source/chown.rst:48
+msgid ""
+"Then we can enter the input. Enter Ownership User After typing the owner "
+"name It will display Chown result success."
+msgstr ""
+
+#: ../../source/chown.rst:54
+msgid "This is Visually shown by the following screen shot."
+msgstr ""
+
+#: ../../source/chown.rst:77
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/chown.rst:77
+msgid "Required"
+msgstr ""
+
+#: ../../source/chown.rst:77
+msgid "option"
+msgstr ""
+
+#: ../../source/chown.rst:77
+msgid "Comments"
+msgstr ""
+
+#: ../../source/chown.rst:79 ../../source/chown.rst:81
+#: ../../source/chown.rst:84
+msgid "Yes"
+msgstr ""
+
+#: ../../source/chown.rst:81
+msgid "Path"
+msgstr ""
+
+#: ../../source/chown.rst:81
+msgid "The user has to give the path"
+msgstr ""
+
+#: ../../source/chown.rst:84 ../../source/chown.rst:86
+msgid "Owner"
+msgstr ""
+
+#: ../../source/chown.rst:86
+msgid "No"
+msgstr ""
+
+#: ../../source/chown.rst:86
+msgid "The user gives input as no, it will ask the owner name|"
+msgstr ""
+
+#: ../../source/chown.rst:93
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/chown.rst:95
+msgid "The module can change the owner at any time with Cleopatra."
+msgstr ""
+
+#: ../../source/chown.rst:96
+msgid ""
+"While doing recursive process if you change single file the entire folder "
+"can also be changed."
+msgstr ""
+
+#: ../../source/chown.rst:97
+msgid "We can verify the current status of the owner."
+msgstr ""

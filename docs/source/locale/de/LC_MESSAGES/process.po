@@ -1,0 +1,171 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/process.rst:3
+msgid "Process"
+msgstr ""
+
+#: ../../source/process.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/process.rst:8
+msgid ""
+"This module assists the users in handling a required process functions, and "
+"also to kill a process. The user can specify the particular process based on"
+" their requirements. The user can specify the name of the process, the file "
+"or directory either from local or in a remote machine. Let us see, the usage"
+" and methodologies involved in it."
+msgstr ""
+
+#: ../../source/process.rst:11
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/process.rst:13
+msgid ""
+"The help command serves the users regarding how to handle and to work with "
+"process as per their needs. It also lists out the alternative parameters of "
+"process. It describes the syntax for killing a process, and also about how "
+"to specify killing a process on the basis of their needs. The help command "
+"for process module is shown as below."
+msgstr ""
+
+#: ../../source/process.rst:19
+msgid ""
+"The following screenshot as shown below, depicts how to kill a process, and "
+"how to define killing a process."
+msgstr ""
+
+#: ../../source/process.rst:22
+msgid "How to define and to use the process"
+msgstr ""
+
+#: ../../source/process.rst:24
+msgid "To kill a process the following syntax can be used."
+msgstr ""
+
+#: ../../source/process.rst:30
+msgid "or"
+msgstr ""
+
+#: ../../source/process.rst:36
+msgid "The syntax as shown above will looks for string in result of."
+msgstr ""
+
+#: ../../source/process.rst:42
+msgid ""
+"The syntax as shown above is used to specify or find a string which is to be"
+" killed."
+msgstr ""
+
+#: ../../source/process.rst:50
+msgid "The command as shown above will kills a process as per the given id."
+msgstr ""
+
+#: ../../source/process.rst:57
+msgid ""
+"The command as above is used to kill a process as per the specified level."
+msgstr ""
+
+#: ../../source/process.rst:63
+msgid ""
+"The command as above is used to kill a process by specifying its name. The "
+"following screenshot depicts the working of killing a process."
+msgstr ""
+
+#: ../../source/process.rst:66
+msgid "Killing a process using a PID"
+msgstr ""
+
+#: ../../source/process.rst:68
+msgid ""
+"If the PID # 3486 is assigned to the lighttpd process. To kill the lighttpd "
+"server, you need to pass a PID as follows:"
+msgstr ""
+
+#: ../../source/process.rst:74
+msgid "OR"
+msgstr ""
+
+#: ../../source/process.rst:80
+msgid "This will terminate a process with a PID of 3486."
+msgstr ""
+
+#: ../../source/process.rst:83
+msgid "How do I verify that the process is gone / killed?"
+msgstr ""
+
+#: ../../source/process.rst:85
+msgid "Use the ps or pidof command:"
+msgstr ""
+
+#: ../../source/process.rst:93
+msgid "How can I kill two or more PIDs?"
+msgstr ""
+
+#: ../../source/process.rst:95
+msgid ""
+"The syntax is as follows to kill two or more PIDs as required can be used in"
+" a single command:"
+msgstr ""
+
+#: ../../source/process.rst:105
+msgid "Say hello to kill all command"
+msgstr ""
+
+#: ../../source/process.rst:107
+msgid ""
+"This is a Linux only command. to kill processes by name. So no need to find "
+"the PIDs using the 'pidof process' or 'ps aux | grep process' command. Do "
+"not use killall command on Unix operating systems. This is a Linux specific "
+"command."
+msgstr ""
+
+#: ../../source/process.rst:109
+msgid "The syntax is"
+msgstr ""
+
+#: ../../source/process.rst:115
+msgid "To kill the lighttpd server, enter:"
+msgstr ""
+
+#: ../../source/process.rst:121
+msgid "OR .. code-block:: bash"
+msgstr ""
+
+#: ../../source/process.rst:124
+msgid "# killall -9 lighttpd"
+msgstr ""
+
+#: ../../source/process.rst:126
+msgid "To kill the Firefox web-browser process, enter:"
+msgstr ""
+
+#: ../../source/process.rst:132
+msgid ""
+"As I said earlier, the kill all command on UNIX-like system does something "
+"else. It kills all process and not just specific process. Do not use kill "
+"all on UNIX system."
+msgstr ""
+
+#: ../../source/process.rst:135
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/process.rst:137
+msgid ""
+"The user can kill a process using different parameters as per their "
+"requirements. For example: by using the id, level of the process it can be "
+"specified to kill."
+msgstr ""

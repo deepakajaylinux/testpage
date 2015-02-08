@@ -1,0 +1,211 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phlagrant.rst:2
+msgid "Phlagrant"
+msgstr ""
+
+#: ../../source/phlagrant.rst:6
+msgid ""
+"While comparing with Cleopatra, the Phlagrant is a virtual machine "
+"management tool that provides the features for Virtual machine and "
+"development environment management."
+msgstr ""
+
+#: ../../source/phlagrant.rst:8
+msgid ""
+"By using Devops it manages the virtual machine configuration, facilitates "
+"the different types of contributors even in a highly complex development "
+"environment."
+msgstr ""
+
+#: ../../source/phlagrant.rst:10
+msgid ""
+"It facilitates the automating, standardizing and managing the setup to "
+"virtualized environment. Its functionalities includes Configuration "
+"Management, Test Automation Management, Automated Deployment, Build and "
+"Release Management, Development Environment Management and those "
+"functionalities are performed."
+msgstr ""
+
+#: ../../source/phlagrant.rst:12
+msgid ""
+"In Phlagrant the Configuration Management, Systems Automation and "
+"Infrastructure is framed in php. Editing a php script is really easy, as "
+"there is no compilation step to perform."
+msgstr ""
+
+#: ../../source/phlagrant.rst:14
+msgid ""
+"The Phlagrant is object-oriented that enrich not only the data type but also"
+" the types of operations that can be applied to the data. Hence, while "
+"comparing object-oriented programming techniques over procedural programming"
+" techniques , the object-oriented programming enables the end users to "
+"create modules that do not need to be changed when a new type of object is "
+"added."
+msgstr ""
+
+#: ../../source/phlagrant.rst:16
+msgid ""
+"The Phlagrant is extensible, as if any extra module is required the user can"
+" frame and design the module as per their requirements and they can include."
+msgstr ""
+
+#: ../../source/phlagrant.rst:18
+msgid ""
+"By using the functionality of templating option extra-templates can be "
+"added, if required. The SSH option enables to set a SSH key value. The SFTP "
+"facilitates readability and write ability between the two different OS using"
+" virtual box."
+msgstr ""
+
+#: ../../source/phlagrant.rst:22
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/phlagrant.rst:24
+msgid ""
+"If you wish to use the Phlagrant, ensure whether the Virual box is installed"
+" in your machine, along with the Virtual box guest additions functionality"
+msgstr ""
+
+#: ../../source/phlagrant.rst:27
+msgid "Code for installing virtual box"
+msgstr ""
+
+#: ../../source/phlagrant.rst:34
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phlagrant.rst:36
+msgid ""
+"There is two possible ways to install the Phlagrant tool to your machine:"
+msgstr ""
+
+#: ../../source/phlagrant.rst:38
+msgid "1)Installation via Cleopatra 2)Installing Phlagrant alone"
+msgstr ""
+
+#: ../../source/phlagrant.rst:42
+msgid "Installation via Cleopatra"
+msgstr ""
+
+#: ../../source/phlagrant.rst:44
+msgid ""
+"if you have Cleopatra tool in your machine, then it's simple to install the "
+"phlagrant by using the code as given below,"
+msgstr ""
+
+#: ../../source/phlagrant.rst:52
+msgid ""
+"here the word guess can be ignored while selecting your own directory during"
+" installation."
+msgstr ""
+
+#: ../../source/phlagrant.rst:55
+msgid "Installing Phlagrant alone"
+msgstr ""
+
+#: ../../source/phlagrant.rst:57
+msgid ""
+"If you want to install the phlagrant tool to your machine without depending "
+"on the Cleopatra tool, it is easier by using the command,"
+msgstr ""
+
+#: ../../source/phlagrant.rst:63
+msgid ""
+"this command will install php5 and git on your machine. After that use the "
+"following command,::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:67
+msgid ""
+"the command on the above mentioned can be used if you don't want to select "
+"the location during the installation. If you wish to do so, use the "
+"following command::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:72
+msgid "Methodologies in usage"
+msgstr ""
+
+#: ../../source/phlagrant.rst:74
+msgid "Here, let us see how to use the commands under the tool and its usage."
+msgstr ""
+
+#: ../../source/phlagrant.rst:76
+msgid "if you simply type the following command,::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:80
+msgid ""
+"As shown in the below screenshot, you will get the display of all the "
+"modules available under this tool.::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:120
+msgid "Help command:"
+msgstr ""
+
+#: ../../source/phlagrant.rst:122
+msgid "It's simple to use the help command,"
+msgstr ""
+
+#: ../../source/phlagrant.rst:124
+msgid "phlagrant ModuleName help"
+msgstr ""
+
+#: ../../source/phlagrant.rst:126
+msgid ""
+"This command helps you how the particular modules works, and also about what"
+" are the actions it can perform. The below screenshot explains you how the "
+"help command is used to explain the module AutoSSH.::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:157
+msgid "Brief Example"
+msgstr ""
+
+#: ../../source/phlagrant.rst:159
+msgid "let's see about a short example regarding the phlagrant here."
+msgstr ""
+
+#: ../../source/phlagrant.rst:161
+msgid ""
+"create a directory, or simply use a current web project as your new Pharaoh "
+"project mkdir /var/www/my-test-project && cd /var/www/my-test-project"
+msgstr ""
+
+#: ../../source/phlagrant.rst:163
+msgid ""
+"install virtualbox to your machine if you don't have it already, it's simple"
+" by using the command as follows,::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:167
+msgid ""
+"add a default Cleopatra Configuration Management Autopilot file using the "
+"following command::"
+msgstr ""
+
+#: ../../source/phlagrant.rst:171
+msgid "flirtify phlagrant flirt now --template-group=default-php"
+msgstr ""
+
+#: ../../source/phlagrant.rst:173
+msgid "install, configure and start the virtual machine Phlagrant up now"
+msgstr ""
+
+#: ../../source/phlagrant.rst:179
+msgid "Playing with Phlagrant Modules"
+msgstr ""

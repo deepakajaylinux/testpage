@@ -1,0 +1,180 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpmodules.rst:3
+msgid "Php Modules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpmodules.rst:8
+msgid ""
+"This module lift installation in common and helpful php modules. Automation "
+"is possible. The common modules include php libs and php image, php curl, "
+"mysql.   It is user friendly with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/phpmodules.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/phpmodules.rst:13
+msgid ""
+"Help command used to find information about a specified command. For more "
+"information about changes to functionality of php modules. We can use this "
+"help command."
+msgstr ""
+
+#: ../../source/phpmodules.rst:15
+msgid "The following screen shot will guide you."
+msgstr ""
+
+#: ../../source/phpmodules.rst:22
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpmodules.rst:24
+msgid ""
+"Use this module to install PHP Modules on Ubuntu Linux systems packages. It "
+"allows you to install some common modules and helpful php modules. Also "
+"install my sql connections. The following command used to install php "
+"modules."
+msgstr ""
+
+#: ../../source/phpmodules.rst:30
+msgid ""
+"When the user keys as Y, Automatically it can install common modules. User "
+"keys as N it exit the screen. The following Screen shot visualize it."
+msgstr ""
+
+#: ../../source/phpmodules.rst:35
+msgid "Alternative parameters"
+msgstr ""
+
+#: ../../source/phpmodules.rst:40
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpmodules.rst:40
+msgid "Directory(default)"
+msgstr ""
+
+#: ../../source/phpmodules.rst:40
+msgid "Option"
+msgstr ""
+
+#: ../../source/phpmodules.rst:40
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpmodules.rst:42
+msgid "Install PHPModules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:42
+msgid "Yes"
+msgstr ""
+
+#: ../../source/phpmodules.rst:42
+msgid "PHPModules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:42
+msgid "It will install PHPModules under cleopatra"
+msgstr ""
+
+#: ../../source/phpmodules.rst:44
+msgid "Install Php-mods"
+msgstr ""
+
+#: ../../source/phpmodules.rst:44 ../../source/phpmodules.rst:46
+#: ../../source/phpmodules.rst:48 ../../source/phpmodules.rst:50
+msgid "yes"
+msgstr ""
+
+#: ../../source/phpmodules.rst:44
+msgid "Php-mods"
+msgstr ""
+
+#: ../../source/phpmodules.rst:44
+msgid "It will install Php-mods under Cleopatra"
+msgstr ""
+
+#: ../../source/phpmodules.rst:46
+msgid "Install phpmods"
+msgstr ""
+
+#: ../../source/phpmodules.rst:46
+msgid "phpmods"
+msgstr ""
+
+#: ../../source/phpmodules.rst:46
+msgid "It will install phpmods under Cleopatra"
+msgstr ""
+
+#: ../../source/phpmodules.rst:48
+msgid "Install php-modules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:48
+msgid "Php-modules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:48
+msgid "It will install php-modules under Cleopatra"
+msgstr ""
+
+#: ../../source/phpmodules.rst:50 ../../source/phpmodules.rst:52
+msgid "Install phpmodules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:50 ../../source/phpmodules.rst:52
+msgid "phpmodules"
+msgstr ""
+
+#: ../../source/phpmodules.rst:50
+msgid "It will install phpmodules under Cleopatra"
+msgstr ""
+
+#: ../../source/phpmodules.rst:52
+msgid "No"
+msgstr ""
+
+#: ../../source/phpmodules.rst:52
+msgid "It will exit|"
+msgstr ""
+
+#: ../../source/phpmodules.rst:57
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpmodules.rst:59
+msgid "This module can install common modules."
+msgstr ""
+
+#: ../../source/phpmodules.rst:60
+msgid ""
+"This module can check all the modules are available with the updated "
+"version."
+msgstr ""
+
+#: ../../source/phpmodules.rst:61
+msgid "Non case sensitive."
+msgstr ""
+
+#: ../../source/phpmodules.rst:62
+msgid ""
+"Automatically install supporting files like curl, mysql, mem catche,mongo."
+msgstr ""

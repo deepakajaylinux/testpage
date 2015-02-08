@@ -1,0 +1,124 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/postgresserver.rst:3
+msgid "PostgresServer"
+msgstr ""
+
+#: ../../source/postgresserver.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/postgresserver.rst:8
+msgid ""
+"PostgresServer is a general purpose and object-relational database "
+"management system. Use to install database. PostgresServer designed to run "
+"on LINUX-like platforms. However, PostgresServer is portable so that it "
+"could run on various platforms such as Mac OS X, Solaris and Windows. It "
+"allows you to add custom functions developed using different programming "
+"languages such as C/C++, Java, etc."
+msgstr ""
+
+#: ../../source/postgresserver.rst:12
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/postgresserver.rst:14
+msgid ""
+"This command helps to determine the usage of PostgresServer module. User "
+"will come to know about the different ways/format to execute this module. "
+"This command will guide the end user to know when and how the command to be "
+"used. Below given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/postgresserver.rst:47
+msgid "Installation"
+msgstr ""
+
+#: ../../source/postgresserver.rst:49
+msgid ""
+"When the user needs to install the module in machine. The below given "
+"command will execute the process of installation."
+msgstr ""
+
+#: ../../source/postgresserver.rst:57 ../../source/postgresserver.rst:63
+msgid "Options"
+msgstr ""
+
+#: ../../source/postgresserver.rst:63
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/postgresserver.rst:63
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/postgresserver.rst:63
+msgid "Comment"
+msgstr ""
+
+#: ../../source/postgresserver.rst:65 ../../source/postgresserver.rst:69
+msgid "Cleopatra postgres-server Install"
+msgstr ""
+
+#: ../../source/postgresserver.rst:65
+msgid "PostgresServer, postgresserver, postgres-server"
+msgstr ""
+
+#: ../../source/postgresserver.rst:65
+msgid "Y"
+msgstr ""
+
+#: ../../source/postgresserver.rst:65
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/postgresserver.rst:69
+msgid "PostgresServer,postgres server,postgres-server|"
+msgstr ""
+
+#: ../../source/postgresserver.rst:69
+msgid "N"
+msgstr ""
+
+#: ../../source/postgresserver.rst:69
+msgid "System stops  installation process"
+msgstr ""
+
+#: ../../source/postgresserver.rst:74
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/postgresserver.rst:76
+msgid "User-defined types"
+msgstr ""
+
+#: ../../source/postgresserver.rst:77
+msgid "Table inheritance"
+msgstr ""
+
+#: ../../source/postgresserver.rst:78
+msgid "Sophisticated locking mechanism"
+msgstr ""
+
+#: ../../source/postgresserver.rst:79
+msgid "Views, rules, sub-select"
+msgstr ""
+
+#: ../../source/postgresserver.rst:80
+msgid "Nested transactions (save points)"
+msgstr ""
+
+#: ../../source/postgresserver.rst:81
+msgid "Point-in-time recovery"
+msgstr ""

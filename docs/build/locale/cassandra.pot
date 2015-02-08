@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015, kevell
+# This file is distributed under the same license as the KEVELL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/cassandra.rst:3
+# 6db87cda37554950ba6049d87432445e
+msgid "Cassandra"
+msgstr ""
+
+#: ../../source/cassandra.rst:7
+# 5839fe348a9b4a449346084761d1cbcd
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/cassandra.rst:9
+# 26e9b83ce33e4c8cb24a9a73df24fad9
+msgid "Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters, with asynchronous master less replication allowing low latency operations for all clients."
+msgstr ""
+
+#: ../../source/cassandra.rst:11
+# 07509da139b142bcb3182592c47bfc6f
+msgid "Cassandra's data model is a partitioned row store with tunable consistency. Rows are organized into tables; the first component of a table's primary key is the partition key; within a partition, rows are clustered by the remaining columns of the key. Other columns may be indexed separately from the primary key."
+msgstr ""
+
+#: ../../source/cassandra.rst:14
+# 7aeb9d2d05d64cdda895384cb28d2c94
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/cassandra.rst:16
+# a89287b451834e26b186550ec7603a43
+msgid "This command helps to determine the usage of Cassandra module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same."
+msgstr ""
+
+#: ../../source/cassandra.rst:22
+#: ../../source/cassandra.rst:54
+# 2252f977d6474494845c141833341fb6
+# bf9a31b5618e4fcd86675c61554a58b9
+msgid "The pictorial representation of the above command is shown below,"
+msgstr ""
+
+#: ../../source/cassandra.rst:47
+# f3988b872a144b6a85cf76a04f84407e
+msgid "Installation"
+msgstr ""
+
+#: ../../source/cassandra.rst:48
+# 5135219e54ca4c9aafdafb24f80964be
+msgid "This command helps in installing Cassandra in system. The below given command will execute the process of installation."
+msgstr ""
+
+#: ../../source/cassandra.rst:324
+#: ../../source/cassandra.rst:330
+# 854723cce52543708970d80c53ff4fd7
+# ef9e7738b19f430a8f329e6dd044db54
+msgid "Options"
+msgstr ""
+
+#: ../../source/cassandra.rst:330
+# 7e185c5feaa441f6923c42346cad12aa
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cassandra.rst:330
+# dc5940d7e89d472387570eaeaeb19c5e
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/cassandra.rst:330
+# 7b516e2c9fce4daba6ce47860fa500b2
+msgid "Comments"
+msgstr ""
+
+#: ../../source/cassandra.rst:332
+#: ../../source/cassandra.rst:338
+# d1dad890d8874e0e826a8568e597912a
+# abf870d81c6f438390aa6b460f52c242
+msgid "cleopatra cassandra Install"
+msgstr ""
+
+#: ../../source/cassandra.rst:332
+# f5fc341dc7cb4af6914b674c3dc8cd63
+msgid "There are two alternative parameters which can be used in command line. Cassandra , cassandra Eg: Cleapatra cassandra install Cleapatra Cassandra install"
+msgstr ""
+
+#: ../../source/cassandra.rst:332
+# b7cc2353128c45a9befe4ec51664373f
+msgid "Y"
+msgstr ""
+
+#: ../../source/cassandra.rst:332
+# 4416a06772d54569af98dc4254e1aac5
+msgid "System starts installation process"
+msgstr ""
+
+#: ../../source/cassandra.rst:338
+# 172ceb3144094ff390cb2e14487759e2
+msgid "There are two alternative parameters which can be used in command line. Cassandra , cassandra Eg: Cleapatra cassandra install Cleapatra Cassandra install|"
+msgstr ""
+
+#: ../../source/cassandra.rst:338
+# 3bc465218e4b48a18d0eae7bdd9b7ded
+msgid "N"
+msgstr ""
+
+#: ../../source/cassandra.rst:338
+# a7d6be2128814362b8c8cee488bade94
+msgid "System stops installation process"
+msgstr ""
+
+#: ../../source/cassandra.rst:347
+# f258078ff609452ba0a27c11d86df02d
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/cassandra.rst:349
+# c7aee3edf71c427c89de562f5c0a4a90
+msgid "Decentralized - Every node in the cluster has the same role. There is no single point of failure. Data is distributed across the cluster (so   each node contains different data), but there is no master as every node can service any request."
+msgstr ""
+
+#: ../../source/cassandra.rst:351
+# 0e96d950e24e4599a8cf62816f50d8e9
+msgid "Supports replication and multi data center replication - Replication strategies are configurable. Cassandra is designed as a distributed system, for deployment of large numbers of nodes across multiple data centers. Key features of Cassandra’s distributed architecture are specifically tailored for multiple-data center deployment, for redundancy, for failover and disaster recovery."
+msgstr ""
+
+#: ../../source/cassandra.rst:355
+# 9ad3dd64408849d9840c6777c95de8c0
+msgid "Scalability - Read and write throughput both increase linearly as new machines are added, with no downtime or interruption to applications."
+msgstr ""
+
+#: ../../source/cassandra.rst:357
+# 2f81ddb28409436d9d29aa60c727f214
+msgid "Fault-tolerant - Data is automatically replicated to multiple nodes for fault-tolerance. Replication across multiple data centers is supported. Failed nodes can be replaced with no downtime."
+msgstr ""
+
+#: ../../source/cassandra.rst:360
+# b85adabd33ef49bab055225a2f76ef09
+msgid "Tunable consistency - Writes and reads offer a tunable level of consistency, all the way from \"writes never fail\" to \"block for all replicas   to be readable\", with the quorum level in the middle."
+msgstr ""
+

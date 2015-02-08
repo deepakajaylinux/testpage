@@ -1,0 +1,124 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/cache.rst:3
+msgid "Cache"
+msgstr ""
+
+#: ../../source/cache.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/cache.rst:9
+msgid ""
+"Jrush auxiliary to clear cache in temporary memory. It has two types of "
+"cache. But both are having different functions as specified in their name. "
+"They are site clear and admin clear. It is gratified with Ubuntu and cent "
+"OS. Deleting files, folders and applications -- and clearing the data from "
+"the temporary memory -- won't do the trick if you're going to recycle the "
+"content wont be available in your computer."
+msgstr ""
+
+#: ../../source/cache.rst:12
+msgid "Help command"
+msgstr ""
+
+#: ../../source/cache.rst:14
+msgid ""
+"The help command handles the users regarding the determination and as well "
+"as about the options that are included in the cache. It lists out the "
+"alternative parameters of cache. It also describes the syntax for "
+"functioning of Jrush module. The help command for cache is shown as below."
+msgstr ""
+
+#: ../../source/cache.rst:20
+msgid ""
+"After typing the command it lists the options as action. The following image"
+" envisage it observably."
+msgstr ""
+
+#: ../../source/cache.rst:47
+msgid "Alternative parameter"
+msgstr ""
+
+#: ../../source/cache.rst:49
+msgid ""
+"On the other hand using cache the user can bestow the following options."
+msgstr ""
+
+#: ../../source/cache.rst:51
+msgid "Cache, cache."
+msgstr ""
+
+#: ../../source/cache.rst:54
+msgid "Options"
+msgstr ""
+
+#: ../../source/cache.rst:56
+msgid "There are two options are available. They are as follows."
+msgstr ""
+
+#: ../../source/cache.rst:58 ../../source/cache.rst:64
+msgid "Site-clear"
+msgstr ""
+
+#: ../../source/cache.rst:59 ../../source/cache.rst:98
+msgid "Admin-clear"
+msgstr ""
+
+#: ../../source/cache.rst:61
+msgid "Now let us know about both the options."
+msgstr ""
+
+#: ../../source/cache.rst:66
+msgid ""
+"Site-clear is costoff to delete the user. The following command is used to "
+"clear the site."
+msgstr ""
+
+#: ../../source/cache.rst:72
+msgid ""
+"After inputs as above command,the output comes like a coding. At the end  "
+"cache clearing finished can be shown. The screen shots presents the same."
+msgstr ""
+
+#: ../../source/cache.rst:100
+msgid ""
+"This worn clear the administrator’s cache. The command services the user to "
+"clear the admin as follows."
+msgstr ""
+
+#: ../../source/cache.rst:106
+msgid ""
+"The following display shots instruct the user about admin-clear function."
+msgstr ""
+
+#: ../../source/cache.rst:133
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/cache.rst:135
+msgid "It complacent to exertion with Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/cache.rst:136
+msgid "Non case sensitivity."
+msgstr ""
+
+#: ../../source/cache.rst:137
+msgid "It pre-owned to delete the user."
+msgstr ""
+
+#: ../../source/cache.rst:138
+msgid "It helps clear admin."
+msgstr ""

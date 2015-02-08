@@ -1,0 +1,138 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/vncpasswd.rst:3
+msgid "VNCPasswd"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:8
+msgid ""
+"The vncpasswd utility should be used to create and change passwords for the "
+"VNC server authentication. It uses such passwords when started with the "
+"local desktop manager when started from the vncserver script. vncpasswd "
+"allows to enter either one or two passwords. The vncpasswd utility asks "
+"interactively if it should set the second password. This is most comfortable"
+" with ubunt and centos."
+msgstr ""
+
+#: ../../source/vncpasswd.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:13
+msgid ""
+"Help command includes an extensive, console-based help system, reminiscent "
+"of man pages in Ubuntu. The help topics include help for installing the "
+"passward for remote or local area. Simple to write the commands without "
+"arguments."
+msgstr ""
+
+#: ../../source/vncpasswd.rst:19
+msgid "The following screen shot can visualize it."
+msgstr ""
+
+#: ../../source/vncpasswd.rst:42
+msgid "Installation"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:44
+msgid ""
+"Installation allows the user to install vncpassward . It is very popular in "
+"Remote or local Desktop. It install the vnc passwd through package "
+"manager.The first password is the primary one, the second password can be "
+"used for view-only authentication.It is comfortable with Ubuntu and centos."
+msgstr ""
+
+#: ../../source/vncpasswd.rst:50
+msgid ""
+"After key in the command the system can ask the user for input. If the user "
+"input as Y it may install the VNCpassward else it can exit. following screen"
+" shot can visualize it."
+msgstr ""
+
+#: ../../source/vncpasswd.rst:138
+msgid "Options"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:143
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:143
+msgid "Alternate Parameters"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:143
+msgid "Option"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:143
+msgid "Comments"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:145 ../../source/vncpasswd.rst:148
+msgid "Install VNCpasswd?(Y/N)"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:145
+msgid "Instead of using VNCpasswd we can use VNCPasswd,vncpasswd,vnc-passward"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:145
+msgid "Y"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:145
+msgid "It will install VNCPassward  under cleopatra"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:148
+msgid ""
+"Instead of using VNCpasswd we can use VNCPasswd,vncpasswd,vnc-passward|"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:148
+msgid "N"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:148
+msgid "The system exit the installation"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:154
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:156
+msgid "Multi-language support"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:157
+msgid "VNC authentication"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:158
+msgid "Optimized Performance"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:159
+msgid "File transfer is possible"
+msgstr ""
+
+#: ../../source/vncpasswd.rst:160
+msgid "Powerful deployment strategies"
+msgstr ""

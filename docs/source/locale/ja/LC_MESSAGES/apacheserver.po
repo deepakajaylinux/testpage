@@ -1,0 +1,129 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/apacheserver.rst:3
+msgid "ApacheServer"
+msgstr ""
+
+#: ../../source/apacheserver.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/apacheserver.rst:8
+msgid ""
+"This modules aims at installing the Apache server. Without any request it "
+"will automatically install the current version of the apache server while "
+"installation."
+msgstr ""
+
+#: ../../source/apacheserver.rst:11
+msgid "Help command"
+msgstr ""
+
+#: ../../source/apacheserver.rst:13
+msgid ""
+"The help command describes about the purpose and the commands available "
+"under this modules. It also explains the command to install the particular "
+"module."
+msgstr ""
+
+#: ../../source/apacheserver.rst:15
+msgid ""
+"The screen shot as shown below, visually represent the usage of the help "
+"command under this module."
+msgstr ""
+
+#: ../../source/apacheserver.rst:39
+msgid "Installation"
+msgstr ""
+
+#: ../../source/apacheserver.rst:41
+msgid ""
+"It is easier to install this particular tool under Cleopatra by simply using"
+" the command given below,"
+msgstr ""
+
+#: ../../source/apacheserver.rst:47
+msgid "After giving the command above, the tool will ask as"
+msgstr ""
+
+#: ../../source/apacheserver.rst:49
+msgid "Install Apache Server? (Y/N)"
+msgstr ""
+
+#: ../../source/apacheserver.rst:51
+msgid "if you give an input as Y, the module will get installed successfully."
+msgstr ""
+
+#: ../../source/apacheserver.rst:53
+msgid ""
+"The screen shot given below explains visually about the steps and commands "
+"involves in installation."
+msgstr ""
+
+#: ../../source/apacheserver.rst:88
+msgid "Options"
+msgstr ""
+
+#: ../../source/apacheserver.rst:93
+msgid "Parameter"
+msgstr ""
+
+#: ../../source/apacheserver.rst:93
+msgid "Required"
+msgstr ""
+
+#: ../../source/apacheserver.rst:93
+msgid "Comments"
+msgstr ""
+
+#: ../../source/apacheserver.rst:95 ../../source/apacheserver.rst:98
+msgid "Install"
+msgstr ""
+
+#: ../../source/apacheserver.rst:95
+msgid "Yes"
+msgstr ""
+
+#: ../../source/apacheserver.rst:95
+msgid "If the user gives the input as Y it will install the apache server"
+msgstr ""
+
+#: ../../source/apacheserver.rst:98
+msgid "No"
+msgstr ""
+
+#: ../../source/apacheserver.rst:98
+msgid "If the user gives input as N, it will get exit.|"
+msgstr ""
+
+#: ../../source/apacheserver.rst:104
+msgid "Version"
+msgstr ""
+
+#: ../../source/apacheserver.rst:106
+msgid ""
+"While the tool is processing it will automatically grabs the most-recent "
+"updated version and makes it to get ready for installation."
+msgstr ""
+
+#: ../../source/apacheserver.rst:110
+msgid "Benefits to the end users"
+msgstr ""
+
+#: ../../source/apacheserver.rst:112
+msgid ""
+"This modules helps the users in installing the apache server. It simplifies "
+"the work of the users while installing the server as its automatically check"
+" the current version of apache server."
+msgstr ""

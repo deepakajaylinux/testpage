@@ -1,0 +1,170 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/gitlab.rst:3
+msgid "Git lab"
+msgstr ""
+
+#: ../../source/gitlab.rst:6
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/gitlab.rst:8
+msgid ""
+"GitLab is an incredibly powerful open source code collaboration platform, "
+"git repository manager, issue tracker and code reviewer. It integrates with "
+"issue trackers, continuous integration services and  has phenomenal Active "
+"Directory support. It installs redis server and library functions also. This"
+" is manageable in Ubuntu and centos."
+msgstr ""
+
+#: ../../source/gitlab.rst:11
+msgid "Helpcommand"
+msgstr ""
+
+#: ../../source/gitlab.rst:13
+msgid ""
+"Help command includes an extensive, console-based help system, reminiscent "
+"of man pages in Ubuntu. The help topics include help for installing the "
+"dependencies, and libraries redis server. Simple to write the commands "
+"without arguments."
+msgstr ""
+
+#: ../../source/gitlab.rst:19
+msgid "The following screenshots explains its functions clearly."
+msgstr ""
+
+#: ../../source/gitlab.rst:43
+msgid "Installation"
+msgstr ""
+
+#: ../../source/gitlab.rst:44
+msgid ""
+"Installation includes provision of or connection to services required to "
+"make the installed equipment ready for operation. It is a revealed process "
+"to install git lab module under Cleopatra by just using the command given "
+"below,"
+msgstr ""
+
+#: ../../source/gitlab.rst:50
+msgid "After vitalize the command it will catechize input."
+msgstr ""
+
+#: ../../source/gitlab.rst:52
+msgid ""
+"The user input as yes automatically it will install gitlab with checking "
+"from the system.  The following screen shot demonstrates it."
+msgstr ""
+
+#: ../../source/gitlab.rst:56 ../../source/gitlab.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../source/gitlab.rst:61
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/gitlab.rst:61
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/gitlab.rst:61
+msgid "Comments"
+msgstr ""
+
+#: ../../source/gitlab.rst:63 ../../source/gitlab.rst:66
+msgid "Install gitlab?(Y/N)"
+msgstr ""
+
+#: ../../source/gitlab.rst:63
+msgid "Instead of using gitlab we can use Gitlab,gitlab,git-lab"
+msgstr ""
+
+#: ../../source/gitlab.rst:63
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/gitlab.rst:63
+msgid "It will install git and set of common gitlab under Cleopatra."
+msgstr ""
+
+#: ../../source/gitlab.rst:66
+msgid "Instead of using gitlab we can use Gitlab,gitlab,git-lab|"
+msgstr ""
+
+#: ../../source/gitlab.rst:66
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/gitlab.rst:66
+msgid "The system exit the installation"
+msgstr ""
+
+#: ../../source/gitlab.rst:73
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/gitlab.rst:75
+msgid "Gitlab tracks the content rather than the files"
+msgstr ""
+
+#: ../../source/gitlab.rst:76
+msgid "Branches are lightweight, and merging is a simple process"
+msgstr ""
+
+#: ../../source/gitlab.rst:77
+msgid "Allows for a more streamlined offline development process"
+msgstr ""
+
+#: ../../source/gitlab.rst:78
+msgid ""
+"Repositories are smaller in size and are stored in a single .git directory"
+msgstr ""
+
+#: ../../source/gitlab.rst:79
+msgid ""
+"Allows for advanced staging operations, and the use of stashing when working"
+" through troublesome sections."
+msgstr ""
+
+#: ../../source/gitlab.rst:80
+msgid ""
+"Developed for  Ubuntu systems, however community support exists for other "
+"distributions such as Arch, CentOS, Fedora, or Gentoo"
+msgstr ""
+
+#: ../../source/gitlab.rst:81
+msgid "Requires a specified version and components to operate"
+msgstr ""
+
+#: ../../source/gitlab.rst:82
+msgid ""
+"Based to run on top of Git, and utilizes a special Git user account to "
+"separate the repository"
+msgstr ""
+
+#: ../../source/gitlab.rst:83
+msgid "Allows for self-maintained version control for a closed source project"
+msgstr ""
+
+#: ../../source/gitlab.rst:84
+msgid "Integrates seamlessly with Git"
+msgstr ""
+
+#: ../../source/gitlab.rst:85
+msgid "Allows for a detailed viewing and documentation of the project"
+msgstr ""
+
+#: ../../source/gitlab.rst:86
+msgid "Allows redis server to install."
+msgstr ""

@@ -1,0 +1,169 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/phpvm.rst:3
+msgid "PHPVM"
+msgstr ""
+
+#: ../../source/phpvm.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/phpvm.rst:9
+msgid ""
+"This module acts as a facilitator for installing and as well as updating the"
+" php vm with the latest version. Let us see about the usage of this module "
+"and the possible ways to use this module in the upcoming topics."
+msgstr ""
+
+#: ../../source/phpvm.rst:12
+msgid "Help Command"
+msgstr ""
+
+#: ../../source/phpvm.rst:14
+msgid ""
+"The help command guides the users regarding the purpose and as well as about"
+" the options that are included in the Phpvm module. It lists out the "
+"alternative parameters of Phpvm module. It also describes the syntax for "
+"installing the Phpvm module. The help command for Phpvm module is shown as "
+"below."
+msgstr ""
+
+#: ../../source/phpvm.rst:21
+msgid ""
+"The syntax for declaring the help command is not case sensitive which is an "
+"added advantage. The following screenshot visualize you about the help "
+"command under Phpvm."
+msgstr ""
+
+#: ../../source/phpvm.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/phpvm.rst:47
+msgid ""
+"The command used for installing the phpvm in the users machine is shown "
+"below:"
+msgstr ""
+
+#: ../../source/phpvm.rst:55
+msgid ""
+"After inputting the command above, the following process occurs as shown in "
+"the tabular format."
+msgstr ""
+
+#: ../../source/phpvm.rst:62
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/phpvm.rst:62
+msgid "Alternative Parameter"
+msgstr ""
+
+#: ../../source/phpvm.rst:62
+msgid "Options"
+msgstr ""
+
+#: ../../source/phpvm.rst:62
+msgid "Comments"
+msgstr ""
+
+#: ../../source/phpvm.rst:64 ../../source/phpvm.rst:67
+msgid "Install PHPVM? (Y/N)"
+msgstr ""
+
+#: ../../source/phpvm.rst:64 ../../source/phpvm.rst:67
+msgid "Instead of phpvm, we can use PHPVM, Phpvm also."
+msgstr ""
+
+#: ../../source/phpvm.rst:64
+msgid "Y(Yes)"
+msgstr ""
+
+#: ../../source/phpvm.rst:64
+msgid ""
+"If the user wish to proceed the installation process they can input as Y."
+msgstr ""
+
+#: ../../source/phpvm.rst:67
+msgid "N(No)"
+msgstr ""
+
+#: ../../source/phpvm.rst:67
+msgid ""
+"If the user wish to quit the installation process they can input as N.|"
+msgstr ""
+
+#: ../../source/phpvm.rst:73
+msgid ""
+"If the user proceeds the installation, during the process of installation is"
+" described in the below lists:"
+msgstr ""
+
+#: ../../source/phpvm.rst:75
+msgid "builds the dependency tree."
+msgstr ""
+
+#: ../../source/phpvm.rst:76
+msgid "Reads the state information."
+msgstr ""
+
+#: ../../source/phpvm.rst:77
+msgid "list outs the packages that are automatically installed."
+msgstr ""
+
+#: ../../source/phpvm.rst:78
+msgid "list outs the new packages that are installing."
+msgstr ""
+
+#: ../../source/phpvm.rst:79
+msgid ""
+"details regarding the number of files upgraded, newly installed, removed and"
+" not upgraded."
+msgstr ""
+
+#: ../../source/phpvm.rst:80
+msgid ""
+"Reads the package lists and displays the list of package that are already "
+"installed."
+msgstr ""
+
+#: ../../source/phpvm.rst:84
+msgid ""
+"The following screenshot pictorially depicts the above described process of "
+"installation."
+msgstr ""
+
+#: ../../source/phpvm.rst:355
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/phpvm.rst:357
+msgid ""
+"The parameters used in help and installation are not case sensitive which is"
+" an added advantage while compared to others."
+msgstr ""
+
+#: ../../source/phpvm.rst:358
+msgid "It is well-to-do in both Ubuntu and as well as Cent OS."
+msgstr ""
+
+#: ../../source/phpvm.rst:359
+msgid "This will module installs the phpvm in updated version."
+msgstr ""
+
+#: ../../source/phpvm.rst:360
+msgid ""
+"If the module is already existing in the user machine it will display a "
+"message as it is already existing."
+msgstr ""

@@ -1,0 +1,159 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: KEVELL 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-03 15:08+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/service.rst:3
+msgid "Service"
+msgstr ""
+
+#: ../../source/service.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/service.rst:7
+msgid ""
+"This module facilitates the current status of file in the system. It can "
+"mention the status as running or not. Automation is possible. This module "
+"specify the configuration of your environment. It is user friendly with "
+"Ubuntu and cent OS."
+msgstr ""
+
+#: ../../source/service.rst:10
+msgid "Help command"
+msgstr ""
+
+#: ../../source/service.rst:12
+msgid ""
+"Help command used to find information about a specified command. For more "
+"information about changes to functionality of service we can use this help "
+"command. The following screen shot will guide you."
+msgstr ""
+
+#: ../../source/service.rst:61
+msgid "Options"
+msgstr ""
+
+#: ../../source/service.rst:67
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/service.rst:67
+msgid "Functions"
+msgstr ""
+
+#: ../../source/service.rst:67
+msgid "Comment"
+msgstr ""
+
+#: ../../source/service.rst:69
+msgid "start"
+msgstr ""
+
+#: ../../source/service.rst:69
+msgid "Start a system  service"
+msgstr ""
+
+#: ../../source/service.rst:69
+msgid "Cleopatra service start –service-name=”apache2”"
+msgstr ""
+
+#: ../../source/service.rst:71
+msgid "stop"
+msgstr ""
+
+#: ../../source/service.rst:71
+msgid "Stop asystem service"
+msgstr ""
+
+#: ../../source/service.rst:71
+msgid "Cleopatra service stop –service-name=”apache2”"
+msgstr ""
+
+#: ../../source/service.rst:73
+msgid "Restart"
+msgstr ""
+
+#: ../../source/service.rst:73
+msgid "Restart a system  service"
+msgstr ""
+
+#: ../../source/service.rst:73
+msgid "Cleopatra service restart –service-name=”apache2”"
+msgstr ""
+
+#: ../../source/service.rst:75
+msgid "Ensure-running"
+msgstr ""
+
+#: ../../source/service.rst:75
+msgid ""
+"Ensure a system service is running.In case of not running start it else "
+"don’t attempt"
+msgstr ""
+
+#: ../../source/service.rst:75
+msgid "Cleopatra service ensure-running –service-name=”apache2”"
+msgstr ""
+
+#: ../../source/service.rst:78
+msgid "Is-running"
+msgstr ""
+
+#: ../../source/service.rst:78
+msgid ""
+"Check whether a system service is running or not running start it else don’t"
+" attempt"
+msgstr ""
+
+#: ../../source/service.rst:78
+msgid "Cleopatra service is-running –service-name=”apache2”"
+msgstr ""
+
+#: ../../source/service.rst:81
+msgid "Run-at-reboots"
+msgstr ""
+
+#: ../../source/service.rst:81
+msgid "Ensure a system service auto start on reboots"
+msgstr ""
+
+#: ../../source/service.rst:81
+msgid "Cleopatra service run-at-reboots –service-name=”apache2|"
+msgstr ""
+
+#: ../../source/service.rst:86
+msgid "Benefits"
+msgstr ""
+
+#: ../../source/service.rst:88
+msgid "The user can check the system working status at any time."
+msgstr ""
+
+#: ../../source/service.rst:89
+msgid "Service provides to exchange data among the system."
+msgstr ""
+
+#: ../../source/service.rst:90
+msgid "It permits the sharing of the resources of the machine"
+msgstr ""
+
+#: ../../source/service.rst:91
+msgid "Service also provides the function of back-up."
+msgstr ""
+
+#: ../../source/service.rst:92
+msgid "Service provides a flexible networking environment."
+msgstr ""
+
+#: ../../source/service.rst:93
+msgid "This involves coordination of distributed data."
+msgstr ""
