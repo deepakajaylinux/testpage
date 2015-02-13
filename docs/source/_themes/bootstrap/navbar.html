@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="{{ pathto(master_doc) }}">{% if theme_navbar_title -%}{{ theme_navbar_title|e }}{%- else -%}{{ project|e }}{%- endif -%}</a>
-        <span class="navbar-text navbar-version pull-left"><b>{{ version|e }}</b></span>
+<!--        <span class="navbar-text navbar-version pull-left"><b>{{ version|e }}</b></span>-->
       </div>
 
         <div class="collapse navbar-collapse nav-collapse">
@@ -33,8 +33,13 @@
             {% block navbarextra %}
             {% endblock %}
             {% if theme_source_link_position == "nav" %}
-              <li>{% include "sourcelink.html" %}</li>
+<!--              <li>{% include "sourcelink.html" %}</li>-->
             {% endif %}
+    <li><a href="http://kevellgerman.readthedocs.org">German</a></li>
+    <li><a href="#">Japanese</a></li>
+    <li><a href="#">spanish</a></li>
+
+
           </ul>
 
           {% block navbarsearch %}
