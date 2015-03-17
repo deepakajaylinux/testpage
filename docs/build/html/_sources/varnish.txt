@@ -14,14 +14,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra varnish help
+		ptconfigure varnish help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot depicts you about the help command under varnish module.
 
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra Varnish help
+	kevell@corp:/# ptconfigure Varnish help
 	******************************
 
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs Varnish through apt-get
-        example: cleopatra varnish install
+        example: ptconfigure varnish install
 
 	------------------------------
 	End Help
@@ -44,7 +44,7 @@ The command used for installing the varnish to the users machine is shown below.
 
 .. code-block:: bash
 
-		cleopatra varnish install
+		ptconfigure varnish install
 
 After inputting the command above, the following operations occurs as shown in the tabular format.
 
@@ -52,15 +52,15 @@ After inputting the command above, the following operations occurs as shown in t
 
 .. cssclass:: table-bordered
 
-	+-----------------------------+--------------------------------+----------------+--------------------------------------------------+
-        |    Parameters               |    Alternative Parameters      |  Options       |     Comment                                      |
-        +=============================+================================+================+==================================================+
-	|Install Varnish? (Y/N)       |In Spite of Varnish, varnish can|Y(Yes)		|If the user wish to proceed the installation      |
-    	|			      |also be used.                   |                |process they can input as Y.                      |
-	+-----------------------------+--------------------------------+----------------+--------------------------------------------------+
-	|Install Varnish? (Y/N)       |In Spite of Varnish, varnish can|N(No)		|If the user wish to Quit the installation         |
-    	|			      |also be used.                   |                |process they can input as N.|                     |
-	+-----------------------------+--------------------------------+----------------+--------------------------------------------------+
+	+-----------------------------+---------------------------------+----------------+--------------------------------------------------+
+        | Parameters                  | Alternative Parameters          | Options        | Comment                                          |
+        +=============================+=================================+================+==================================================+
+	|Install Varnish? (Y/N)       | Instead of Varnish, varnish can | Y(Yes)	 | If the user wish to proceed the installation     |
+    	|			      | also be used.                   |                | process they can input as Y.                     |
+	+-----------------------------+---------------------------------+----------------+--------------------------------------------------+
+	|Install Varnish? (Y/N)       | Instead of Varnish, varnish can | N(No)		 | If the user wish to Quit the installation        |
+    	|			      | also be used.                   |                | process they can input as N.|                    |
+	+-----------------------------+---------------------------------+----------------+--------------------------------------------------+
 
 
 If the user proceeds the installation process, during execution of installation the following process occurs:
@@ -77,17 +77,17 @@ If the user proceeds the installation process, during execution of installation 
 
 .. code-block:: bash
    
-	Kevells@corp:/# cleopatra varnish install
+	Kevell@corp:/# ptconfigure varnish install
 	Install Varnish? (Y/N) 
 	y
 	*******************************
 	*        Pharaoh Tools        *
 	*          ! Varnish !        *
 	*******************************
-	Creating /tmp/cleopatra-temp-script-95745650915.sh
-	chmod 755 /tmp/cleopatra-temp-script-95745650915.sh 2>/dev/null
-	Changing /tmp/cleopatra-temp-script-95745650915.sh Permissions
-	Executing /tmp/cleopatra-temp-script-95745650915.sh
+	Creating /tmp/ptconfigure-temp-script-95745650915.sh
+	chmod 755 /tmp/ptconfigure-temp-script-95745650915.sh 2>/dev/null
+	Changing /tmp/ptconfigure-temp-script-95745650915.sh Permissions
+	Executing /tmp/ptconfigure-temp-script-95745650915.sh
 	Reading package lists...
 	Building dependency tree...
 	Reading state information...
@@ -123,7 +123,7 @@ If the user proceeds the installation process, during execution of installation 
 	   ...done.
 	Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
 	Processing triggers for ureadahead (0.100.0-16) ...
-	Temp File /tmp/cleopatra-temp-script-95745650915.sh Removed
+	Temp File /tmp/ptconfigure-temp-script-95745650915.sh Removed
 	... All done!
 	*******************************
 	Thanks for installing , visit www.pharaohtools.com for more

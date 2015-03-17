@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Wireframe sketcher" href="wireframesketcher.html" />
     <link rel="prev" title="VNC" href="vnc.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="vncpasswd">
@@ -169,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>Help command includes an extensive, console-based help system, reminiscent of man pages in Ubuntu. The help topics include help for installing the passward for remote or local area. Simple to write the commands without arguments.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra  VNC-passwd <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  VNC-passwd <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot can visualize it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra VNCPasswd <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure VNCPasswd <span class="nb">help</span>
 
 ******************************
 
@@ -184,7 +172,7 @@
 
        - install
        Installs VNCPasswd through a package manager
-       example: cleopatra vnc install
+       example: ptconfigure vnc install
 
 ------------------------------
 End Help
@@ -195,11 +183,11 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Installation allows the user to install vncpassward . It is very popular in Remote or local Desktop. It install the vnc passwd through package manager.The first password is the primary one, the second password can be used for view-only authentication.It is comfortable with Ubuntu and centos.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra  VNC-passwd install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  VNC-passwd install
 </pre></div>
 </div>
 <p>After key in the command the system can ask the user for input. If the user input as Y it may install the VNCpassward else it can exit. following screen shot can visualize it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra VNC-passwd install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure VNC-passwd install
 
 Install VNCPasswd? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
@@ -229,20 +217,20 @@ The following packages were automatically installed and are no longer required:
 Use <span class="s1">&#39;apt-get autoremove&#39;</span> to remove them.
 The following NEW packages will be installed:
  expect
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">79</span> not upgraded.
-<span class="m">9</span> not fully installed or removed.
+0 upgraded, 1 newly installed, 0 to remove and 79 not upgraded.
+9 not fully installed or removed.
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package expect from the Packager Apt did not execute correctly
 Enter VNC User:
 
 Enter VNC Pass:
 
-Creating /tmp/cleopatra-temp-script-40114506906.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-40114506906.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-40114506906.sh Permissions
-Executing /tmp/cleopatra-temp-script-40114506906.sh
+Creating /tmp/ptconfigure-temp-script-40114506906.sh
+chmod 755 /tmp/ptconfigure-temp-script-40114506906.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-40114506906.sh Permissions
+Executing /tmp/ptconfigure-temp-script-40114506906.sh
 sudo: unknown user: /usr/bin/expect
 sudo: unable to initialize policy plugin
-Temp File /tmp/cleopatra-temp-script-40114506906.sh Removed
+Temp File /tmp/ptconfigure-temp-script-40114506906.sh Removed
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Removing Package expect
 E: Could not get lock /var/cache/apt/archives/lock - open <span class="o">(</span>11: Resource temporarily unavailable<span class="o">)</span>
 E: Unable to lock directory /var/cache/apt/archives/
@@ -265,12 +253,12 @@ The following packages were automatically installed and are no longer required:
  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
  node-which nodejs nodejs-dev ttf-dejavu-core
 Use <span class="s1">&#39;apt-get autoremove&#39;</span> to remove them.
-<span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">0</span> to remove and <span class="m">79</span> not upgraded.
-<span class="m">9</span> not fully installed or removed.
+0 upgraded, 0 newly installed, 0 to remove and 79 not upgraded.
+9 not fully installed or removed.
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package expect from the Packager Apt is not installed, so not removed.
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -302,14 +290,14 @@ Installer Finished
 <tbody valign="top">
 <tr class="row-even"><td>Install VNCpasswd?(Y/N)</td>
 <td>Instead of using VNCpasswd we can use
-VNCPasswd,vncpasswd,vnc-passward</td>
+VNCPasswd,vncpasswd,vnc-passwd</td>
 <td>Y</td>
 <td>It will install VNCPassward  under
-cleopatra</td>
+ptconfigure</td>
 </tr>
 <tr class="row-odd"><td>Install VNCpasswd?(Y/N)</td>
 <td>Instead of using VNCpasswd we can use
-VNCPasswd,vncpasswd,vnc-passward|</td>
+VNCPasswd,vncpasswd,vnc-passwd|</td>
 <td>N</td>
 <td>The system exit the installation</td>
 </tr>
@@ -363,7 +351,7 @@ VNCPasswd,vncpasswd,vnc-passward|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

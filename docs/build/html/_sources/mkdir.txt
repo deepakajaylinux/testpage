@@ -15,13 +15,13 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
 
-	cleopatra mkdir help
+	ptconfigure mkdir help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under MK dir.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra Mkdir help
+	kevell@corp:/# ptconfigure Mkdir help
 	******************************
 
 
@@ -31,8 +31,8 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - path
         Will ask you for details for servers, then copy a file or directory from local to remote
-        example: cleopatra mkdir path
-        example: cleopatra mkdir path --yes --path="/path/to/new/directory"
+        example: ptconfigure mkdir path
+        example: ptconfigure mkdir path --yes --path="/path/to/new/directory"
 
 	------------------------------
 	End Help
@@ -53,19 +53,19 @@ Creating an Mk Dir can be done in two different ways:
 
 .. code-block:: bash
 
-	Example: cleopatra mkdir path
+	Example: ptconfigure mkdir path
 
 .. rubric:: Or, at the time of declaration
 
 .. code-block:: bash
 
-	Example: cleopatra mkdir path --yes --path="/path/to/new/directory"
+	Example: ptconfigure mkdir path --yes --path="/path/to/new/directory"
 
 The following screen shot depicts the second way of creating a directory.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra mkdir path --yes --path="/kevellsdoc"
+	kevell@corp:/# ptconfigure mkdir path --yes --path="/kevellsdoc"
 	
 	[Pharaoh Logging] [Mkdir] Executing mkdir /kevellsdoc
 	******************************

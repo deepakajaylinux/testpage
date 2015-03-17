@@ -16,7 +16,7 @@ The help command of this module manager is a brief user manual that guides the u
 
 .. code-block:: bash
 
-		cleopatra ModuleManager help
+		ptconfigure ModuleManager help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under module manager.
 
@@ -24,7 +24,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra ModuleManager help
+ kevell@corp:/# ptconfigure ModuleManager help
 
  ******************************
 
@@ -36,23 +36,23 @@ The syntax for declaring the help command is not case sensitive which is an adde
         - install
         Installs the latest version of a module. If a module of the same name already exists in your Extensions directory,
         an error will be thrown.
-        example: cleopatra module-manager install --module-name="MyModule" --module-source="http://git.cleo-modules.com/MyModule.git"
+        example: ptconfigure module-manager install --module-name="MyModule" --module-source="http://git.cleo-modules.com/MyModule.git"
 
         - ensure
         Ensures the existence of a module. The module will only be installed if it currently doesn't exist.
-        example: cleopatra module-manager ensure --module-name="MyModule" --module-source="http://git.cleo-modules.com/MyModule.git"
+        example: ptconfigure module-manager ensure --module-name="MyModule" --module-source="http://git.cleo-modules.com/MyModule.git"
 
         - uninstall
         Uninstalls a Module. This will delete all of the files for this Module
-        example: cleopatra module-manager enable --module-name="MyModule"
+        example: ptconfigure module-manager enable --module-name="MyModule"
 
         - enable
         Enables a Module. All installed Modules are enabled by default.
-        example: cleopatra module-manager enable --module-name="MyModule"
+        example: ptconfigure module-manager enable --module-name="MyModule"
 
         - disable
         Disables a Module. The files for this module will still exist, but none will be automatically loaded during execution.
-        example: cleopatra module-manager disable --module-name="MyModule"
+        example: ptconfigure module-manager disable --module-name="MyModule"
 
  ------------------------------
  End Help
@@ -67,7 +67,7 @@ The command used for installing the module manager in the users machine is shown
 
 .. code-block:: bash
 
-		cleopatra module-manager install
+		ptconfigure module-manager install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
@@ -114,7 +114,7 @@ The enable process aims at enabling the module. All the installed modules are en
 
 .. code-block:: bash
 
-	cleopatra module-manager enable --module-name="MyModule"
+	ptconfigure module-manager enable --module-name="MyModule"
 
 After inputting this command, the module which is specified gets enabled.
 
@@ -126,7 +126,7 @@ The disable process aims at disabling the module. The files of the disabled modu
 
 .. code-block:: bash
 
-	cleopatra module-manager disable --module-name="MyModule"
+	ptconfigure module-manager disable --module-name="MyModule"
 
 
 After inputting this command, the module which is specified gets disabled.
@@ -138,14 +138,14 @@ The role of ensure process is to check the availability of modules. After the pr
 
 .. code-block:: bash
 
-		cleopatra module-manager ensure
+		ptconfigure module-manager ensure
 
 During the process of ensuring, the versions of the modules are not checked. The following screenshot pictorially represent the process of ensure.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra module-manager ensure
+ kevell@corp:/# ptconfigure module-manager ensure
 
  [Pharaoh Logging] Ensure module install is not checking versions
  [Pharaoh Logging] Module ModuleManager reports itself as Installed
@@ -169,7 +169,7 @@ The uninstall process is used to delete all the files for the modules. The comma
 
 .. code-block:: bash
 
-		cleopatra module-manager uninstall
+		ptconfigure module-manager uninstall
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
@@ -195,10 +195,10 @@ If the user proceeds the un installation, during the process of un installation,
  +------------------------------+---------------------------+---------------+----------------------------------------------------------+
  | Parameters                   | Path                      | Options       | Comments                                                 |
  +==============================+===========================+===============+==========================================================+
- |Program executor directory    | "/usr/bin"                | Yes           | If the user to proceed installation with the default     |    
+ |Program executor directory    | "/usr/bin"                | Yes           | If the user to proceed un installation with the default  |    
  | (Default)                    |                           |               | program executor directory they can input as Yes         |
  +------------------------------+---------------------------+---------------+----------------------------------------------------------+
- |Program executor directory    | user specific             | No(End slash) | If the user to proceed installation with their own       |    
+ |Program executor directory    | user specific             | No(End slash) | If the user to proceed un installation with their own    |    
  | (Default)                    |                           |               | program executor directory they can input as N, and in   |
  |                              |                           |               | hand specify they own location|                          |
  +------------------------------+---------------------------+---------------+----------------------------------------------------------+

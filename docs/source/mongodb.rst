@@ -9,12 +9,21 @@ Mongo DB is a document oriented database. Mongo DB eschews the traditional table
 
 Help command
 -------------
-             This command can function about the objectives and commands available under Mongo DB module. It also explains the command to install server. Before installation you read this help command explains its function
+             This command can function about the objectives and commands available under Mongo DB module. It also explains the command to install server. 
+
+
+.. code-block:: bash
+
+ 		ptconfigure MongoDB help
+
+
+
+Before installation you read this help command explains its function
 
 .. code-block:: bash
 
 
-   kevells@corp:/# cleopatra MongoDB help
+   kevell@corp:/# ptconfigure MongoDB help
    ******************************
 
 
@@ -26,12 +35,12 @@ Help command
 
         - install
         Install MongoDB Server
-        example: cleopatra mongodb install
+        example: ptconfigure mongodb install
 
   Notes, during mongodb install a root password will be set. First, it'll look
   for the parameter --mongodb-root-pass, if this is not set, it'll look in the
-  cleopatra config for a mongodb-default-root-pass setting, and failing both of
-  those it will just set the password for root to cleopatra.
+  ptconfigure config for a mongodb-default-root-pass setting, and failing both of
+  those it will just set the password for root to ptconfigure.
 
  ------------------------------
  End Help
@@ -46,15 +55,17 @@ Use this module to install Mongo DB on Ubuntu Linux systems from .deb packages. 
 
 .. code-block:: bash
 
-	cleopatra mongoDB  server install
+	ptconfigure mongodb-server install
 
 Install mongo DB server?(Y/N)
+
+If the user gives No it will exit.
 
 When the user gives input as Yes automatically it will install all depencies in root pass ass default and also install updated version. The following screen shot will explain it.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra mongodb-server install
+	kevell@corp:/# ptconfigure mongodb-server install
 
 	Install MongoDB Server? (Y/N) 
 	y
@@ -163,29 +174,29 @@ When the user gives input as Yes automatically it will install all depencies in 
 	******************************
 
 
-
-If the user gives No it will exit.
-
 Options
 ----------
 
 .. cssclass:: table-bordred
 
-	+-----------------------+-----------------------+----------------------------+------------------------------------------+
-        |Parameters             |Directory              |Option                      |Comment                                   |
-        +=======================+=======================+============================+==========================================+
-	|Install mongoDB server |YES                    |In Spite of mongoDB, the    |It will install mongoDB under Cleopatra   |
-        |		       	|    	                |following alternatives can  |               				|
-    	|		       	|    	                |also be used: MongoDB,      |               				|
-    	|		       	|    	                |mongo-db-server,mongo-db,   |               				|
-    	|		       	|    	                |mongodb-server, mongodb,    |               				|
-	+-----------------------+-----------------------+----------------------------+------------------------------------------+
-	|Install mongoDB server |NO                     |In Spite of mongoDB, the    |It will exit                              |
-        |		       	|    	                |following alternatives can  |               				|
-    	|		       	|    	                |also be used: MongoDB,      |               				|
-    	|		       	|    	                |mongo-db-server,mongo-db,   |               				|
-    	|		       	|    	                |mongodb-server, mongodb|    | 	               				|
-	+-----------------------+-----------------------+----------------------------+------------------------------------------+
+	+-----------------------+----------------------------+---------+------------------------------------------+
+        | Parameters            | Alternative Parameter      | Options | Comment                                  |
+        +=======================+============================+=========+==========================================+
+	|Install mongoDB        |Instead of mongoDB, the     |Yes      |It installs mongoDB under ptconfigure     |
+        |Server? (Y/N)   	|following alternatives can  |         |                                          |
+	|		       	|also be used: MongoDB,      |         |      				          |
+    	|		       	|mongo-db-server,mongo-db,   |         |      				          |
+    	|		       	|mongodb-server, mongodb,    |         |      				          |
+	+-----------------------+----------------------------+---------+------------------------------------------+
+	|Install mongoDB        |Instead of mongoDB, the     |No       |It exits                                  |
+        |Server? (Y/N)	       	|following alternatives can  |         |      				          |
+    	|		       	|also be used: MongoDB,      |         |      				          |
+    	|		       	|mongo-db-server,mongo-db,   |         |      				          |
+    	|		       	|mongodb-server, mongodb|    | 	       |        				  |
+	+-----------------------+----------------------------+---------+------------------------------------------+
+
+
+
 
 Benefits
 ----------
@@ -193,7 +204,7 @@ Benefits
 * Mongo DB is document oriented database.
 * Mongo DB can updated the latest version.
 * While installing mongo DB all depencies, libraries can also installed automatically without searching from the web.
-* MongoDB can store the business subject in the minimal number of                    documents.
+* MongoDB can store the business subject in the minimal number of documents.
 * Speed enhancements.
 * Great advantage of load balancing and data replication features over multiple machines for storing files.
 

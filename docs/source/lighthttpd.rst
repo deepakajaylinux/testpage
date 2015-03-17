@@ -6,8 +6,10 @@ LigHTTPDServer  module
 Synopsis
 ----------
 
-xLighttpd  is an open-source web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible. It is an alternative web server for apache. 
+ Lighttpd  is a  web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible. It is an alternative web server for apache. 
+
 Lighttpd  supports the FastCGI, SCGI and CGI interfaces to external programs, Auth, Output-Compression, URL-Rewriting, permitting web applications written in any programming language to be used with the server. Lighttpd are the best known asynchronous servers. The main advantage of the asynchronous approach is scalability. 
+
 This module aims to install the latest version of Lighttpd server and its dependencies. 
 
 
@@ -18,13 +20,13 @@ The help command guides the user to provide what is necessary to accomplish the 
 
 .. code-block:: bash
 
-	cleopatra lighttpdserver help
+	ptconfigure lighttpdserver help
 
 The snapshot below gives you a pictorial representation of help command and it listed three parameters as LigHTTPDServer, lighttpd-server, lighttpdserver. (Parameters are case insensitive)
 
 .. code-block:: bash
 
-	 Kevells@corp:/kevellphara/docs/source# cleopatra LigHTTPDServer help
+	 Kevell@corp:/# ptconfigure LigHTTPDServer help
 
 	 ******************************
 
@@ -36,7 +38,7 @@ The snapshot below gives you a pictorial representation of help command and it l
 
         - install
         Installs LigHTTPD HTTP Server
-        example: cleopatra lighttpd-server install
+        example: ptconfigure lighttpd-server install
 
 	------------------------------
 	End Help
@@ -50,12 +52,12 @@ The command used for installing Lighttpd module is given below,
 
 .. code-block:: bash
 
-	cleopatra lighttpd-server  install
+	ptconfigure lighttpd-server  install
 
 
 .. code-block:: bash
 
-	Kevells@corp:/# cleopatra lighttpd-server install
+	Kevell@corp:/# ptconfigure lighttpd-server install
 
 	Install LigHTTPD Server? (Y/N) 
 	y
@@ -140,21 +142,23 @@ options
 
 .. cssclass:: table-bordered
 
-	+---------------------------------------+---------------------------+--------------------------------------------------+
-	|Paramaeters		                |	Required            |		Comments	                       |
-	+=======================================+===========================+==================================================+
-	|    cleopatra lighttpd-server install	|	Yes	            |  This command will install the 	               |
-	|					|		            |  LigHTTPD module	                               |
-	+---------------------------------------+---------------------------+--------------------------------------------------+
-	|    install lighttpd-server(Y/N)	|			    |  If the user inputs Y, this module               |
-	|					|	 Y		    |  checks for previously installed                 |
-	|					|			    |  version, if exits it was updated to             |
-	|					|		            |  latest version or else it installs the          |
-	|					|			    |  fresh package.                                  |
-	+---------------------------------------+---------------------------+--------------------------------------------------+
-	|    install lighttpd-server(Y/N)	|	 N		    |  If the user inputs N, the 	               |
-	|					|			    |  installation was aborted.|	               |  
-	+---------------------------------------+---------------------------+--------------------------------------------------+
+	+-------------------------------------+-----------------------+-----------+------------------------------------------+
+	| Paramaeters		              | Alternative Parameter | Required  |		Comments	             |
+	+=====================================+=======================+===========+==========================================+
+	|ptconfigure lighttpd-server install  | LigHTTPDServer,       | Yes	  | This command will install the 	     |
+	|				      |	lighttpd-server,      |           | LigHTTPD module	                     |
+        |                                     | lighttpdserver        |           |                                          |
+	+-------------------------------------+-----------------------+-----------+------------------------------------------+
+	|Install lighttpd-server(Y/N)	      | LigHTTPDServer,       | Y	  | If the user inputs Y, this module        |
+	|				      |	lighttpd-server,      |           | checks for previously installed          |
+	|				      |	lighttpdserver        |           | version, if exits it was updated to      |
+	|				      |	                      |           | latest version or else it installs the   |
+	|				      |	                      |           | fresh package.                           |
+	+-------------------------------------+-----------------------+-----------+------------------------------------------+
+	|Install lighttpd-server(Y/N)	      | LigHTTPDServer,       | N	  | If the user inputs N, the                |
+	|				      |	lighttpd-server,      |           | installation was aborted.                |  
+        |                                     | lighttpdserver|       |           |                                          |
+	+-------------------------------------+-----------------------+-----------+------------------------------------------+
 
 Benefits to the users
 -----------------------
@@ -162,4 +166,5 @@ Benefits to the users
 * Install LigHTTPDServer in a single environment without any browser.
 * Ease use of access and installation
 * Coding is case insensitive. 
-
+* Non case sensitivity
+* Well-to-do in Ubuntu and CentOS.

@@ -13,13 +13,13 @@ This help command guide the user about Ubuntu compiler. It is less time consumin
 
 .. code-block:: bash
 
-		cleopatra Ubuntucompiler help
+		ptconfigure Ubuntucompiler help
 
 The following help command will assist the user for installation.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra UbuntuCompiler help
+	kevell@corp:/# ptconfigure UbuntuCompiler help
 	******************************
 
 
@@ -29,7 +29,7 @@ The following help command will assist the user for installation.
 
         - install
         Installs Ubuntu Compiling tools through apt-get.
-        example: cleopatra ubuntu-compiler install
+        example: ptconfigure ubuntu-compiler install
 
 	------------------------------
 	End Help
@@ -38,11 +38,11 @@ The following help command will assist the user for installation.
 Installation
 --------------
 
-This is a noticeable process to install Ubuntu compiler module under Cleopatra by just using the command given below,
+This is a noticeable process to install Ubuntu compiler module under ptconfigure by just using the command given below,
 
 .. code-block:: bash
 
-  		cleopatra Ubuntu-compiler install
+  		ptconfigure Ubuntu-compiler install
 
 After giving the command, the Ubuntu compiler will be installed with new updates.
 
@@ -50,7 +50,7 @@ If the user input as N the following screen will come.
 
 .. code-block:: bash
 
-	Kevells@corp:/# cleopatra UbuntuCompiler install
+	Kevell@corp:/# ptconfigure UbuntuCompiler install
 	Install Ubuntu Compiler? (Y/N) 
 	n
 	******************************
@@ -70,13 +70,18 @@ option
 
 .. cssclass:: table-bordered
 
-	+------------------------------+-------------------+-----------------------+
-        |    Parameters                |  syntax           |     Comment           |
-        +==============================+===================+=======================+
-	|Install Ubuntu compiler? Y/N  |Yes	           |Installed successfully |
-	+------------------------------+-------------------+-----------------------+
-        |stop  		       	       |No                 |Exit the screen|       |
-	+------------------------------+-------------------+-----------------------+
+
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------+
+ | Parameter                     | Alternative Parameter             | Options   | Comments                            |
+ +===============================+===================================+===========+=====================================+
+ |Install Ubuntu compiler? (Y/N) | UbuntuCompiler, ubuntu-compiler,  | Yes       | The system starts installation      |
+ |                               | ubuntucompiler                    |           | process                             |
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------+
+ |Install Ubuntu compiler? (Y/N) | UbuntuCompiler, ubuntu-compiler,  | No        | It stops the installation process   |
+ |                               | ubuntucompiler|                   |           |                                     |
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------+
+
+
 
 Benefits
 -----------

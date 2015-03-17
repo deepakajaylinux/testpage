@@ -1,5 +1,6 @@
+============
 ApacheConf
-==========
+============
 
 Synopsis
 --------
@@ -15,13 +16,13 @@ It lists out the alternative parameters that can be used for declaration. The co
 
 .. code-block:: bash
 
-	cleopatra apacheconf help
+	ptconfigure apacheconf help
 
 The screen shot as shown below, visually represent the usage of the help command under this module.
 
 .. code-block:: bash
 	
- kevells@corp:/# cleopatra apacheconf help
+ kevell@corp:/# ptconfigure apacheconf help
  ******************************
 
 
@@ -32,7 +33,7 @@ The screen shot as shown below, visually represent the usage of the help command
 
         - install
         Installs a configuration for Apache
-        example: cleopatra apacheconf install
+        example: ptconfigure apacheconf install
 
  ------------------------------
  End Help
@@ -43,11 +44,11 @@ The screen shot as shown below, visually represent the usage of the help command
 Installation
 ------------
 
-It is easier to install this particular tool under Cleopatra by simply using the command given below,
+It is easier to install this particular tool under ptconfigure by simply using the command given below,
 
 .. code-block:: bash
  
-  cleopatra apacheconf install
+  ptconfigure apacheconf install
 
 After giving the command above, the tool will ask as
 
@@ -57,7 +58,7 @@ After giving the command above, the tool will ask as
 
 if you give an input as Y, the module will get installed successfully.
 
-It will also throw some commands to specify the non-default values for LockFile, PidFile, Timeout, KeepAlive, MaxKeepAliveRequest, KeepAliveTimeout. If the user gives input as Y(Yes) it will automatically fix the default value. If the user gives input as N(No) then it will enquire about the values from the user.
+I wird auch werfen einige Befehle, um die Nicht- Standardwerte für LockFile , PidFile , Timeout , Keepalive , MaxKeepAliveRequest , Keepalivetimeout angeben. Wenn der Benutzer gibt Eingang als Y ( Yes ), wird es automatisch zu beheben Sie den Standardwert . Wenn der Benutzer gibt Eingabe N (No), dann wird es über die Werte von dem Benutzer zu fragen.                                                                                                                                                                                                                                                                                                                         
 
 The screen shot given below explains visually about the steps and commands involves in installation.
 
@@ -65,7 +66,7 @@ The screen shot given below explains visually about the steps and commands invol
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra apacheconf install
+ kevell@corp:/# ptconfigure apacheconf install
  Install Apache Conf? (Y/N) 
  y
  *******************************
@@ -98,26 +99,23 @@ The screen shot given below explains visually about the steps and commands invol
  ******************************
 
 
+Options
+------------
 
 .. cssclass:: table-bordered
 
-	+------------------------------------------------+------------+----------------------------+
-	| Parameters	                                 | Required   |Comment  		   |
-	+================================================+============+============================+
-	|Install                               		 | Y(YES)     |It will install the         |
-	|              					 | 	      |apacheconf under            | 
-	|	                                         |            |Cleopatra		   |
-	+------------------------------------------------+------------+----------------------------+ 
-	| Install Apache conf? (Y/N)		         | Y(YES)     |If the user gives input as  |
-	|	                               		 |            |yes, it will install        | 
-	|                                  	         |	      |the module.                 |
-	|	                              		 |            |		              	   | 
-	+------------------------------------------------+------------+----------------------------+
-	| Install Apache conf? (Y/N) 	                 | N(NO)      |If the user gives input 	   |
-	|	                                 	 |            |as no, it will get	   |
-	|                                         	 |            |exit.|                      |
-	+------------------------------------------------+------------+----------------------------+
-
+	+-----------------------------+-----------------------------------+----------+----------------------------------+
+	| Parameters	              | Alternative Parameters  	  | Required | Comment  		        |
+	+=============================+===================================+==========+==================================+
+	|Install Apache conf? (Y/N)   | Instead of apachemodules, we can  | Yes      | If the user gives input as yes,  |
+	|	                      | use ApacheModules, apachemods,    |          | it will install the module.      | 
+ 	|                             | apache-modules also    	          |	     |                                  |
+        +-----------------------------+-----------------------------------+----------+----------------------------------+
+        |Install Apache conf? (Y/N)   | Instead of apachemodules, we can  | No       | If the user gives input as No,   |
+        |                             | use ApacheModules, apachemods,    |          | it will get exit.                |
+        |                             | apache-modules also|              |          |                                  |
+        +-----------------------------+-----------------------------------+----------+----------------------------------+
+ 
 
 Benefits
 --------
@@ -125,4 +123,5 @@ Benefits
  * The module assists the end user in installing and managing the configuration of Apache.
  * While installing the Apache tool, the end user can design and manage the configuration as per their requirement using this module.
  * If it founds the configuration already exists it will overwrite the existing one.
-
+ * It is well-to-do in Cent OS and as well as in Ubuntu.
+ * The parameters used in declaration is not case sensitive, which is an added advantage.

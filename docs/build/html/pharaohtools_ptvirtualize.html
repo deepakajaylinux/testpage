@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PharaohTools &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTVirtualize" href="ptvirtualize_main.html" />
+    <link rel="next" title="Resume" href="resume.html" />
+    <link rel="prev" title="Invoke" href="invoke.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PharaohTools</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#help-command">Help Command</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#ensure">Ensure</a></li>
+<li><a class="reference internal" href="#ptdeploy">ptdeploy</a></li>
+<li><a class="reference internal" href="#pttest">pttest</a></li>
+<li><a class="reference internal" href="#jrush">Jrush</a></li>
+<li><a class="reference internal" href="#additional-options">Additional Options</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="invoke.html"
+         title="Previous Chapter: Invoke">&laquo; Invoke</a></li>
+  <li><a href="resume.html"
+         title="Next Chapter: Resume">Resume &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/pharaohtools_ptvirtualize.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+    <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  
+  <div class="section" id="pharaohtools">
+<h1>PharaohTools<a class="headerlink" href="#pharaohtools" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>The Pharaoh tool module assists in installing ptdeploy, pttest, Jrush, generating ptvirtualize reports. It facilitates the users to ensure the availability before installations. Only missing modules can be installed specifically.</p>
+</div>
+<div class="section" id="help-command">
+<h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
+<p>The help command guides the users about how to make use of this particular module under ptvirtualize.</p>
+<p>It also make them aware of the options that can be performed on this specific module.</p>
+<p>It lists outs the alternative parameters along with the syntax for installing the pharaoh tools.</p>
+<p>The command for using the help option is shown below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize pharaoh-tools <span class="nb">help</span>
+</pre></div>
+</div>
+<p>The screen shot as shown below gives you a pictorial representation regarding the usage of help command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The pharaoh tool module acts as a shorter route that envelops installation of ptdeploy, pttest, Jrush. If any one particular module is missing among the three, the specific module alone will be installed which is an added advantage. The ensure process plays an important role in grabbing data&#8217;s regarding the availability of modules.</p>
+<p>The command used for installation process under Pharaoh tool is given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize pharaoh-tools install
+</pre></div>
+</div>
+<p>After entering the command above, the installation process starts executing and proceeds in the following ways as depicted from in the table,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="30%" />
+<col width="23%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Available Input options</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Pharaoh Tools? (Y/N)</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed with installation
+process, they can input as Y</td>
+</tr>
+<tr class="row-odd"><td>Install Pharaoh Tools? (Y/N)</td>
+<td>N(No)</td>
+<td>If the user wish to quit the installation process,
+they can quit simply by using N|</td>
+</tr>
+</tbody>
+</table>
+<p>While installing the Pharaoh tool the following steps takes place:</p>
+</div>
+<div class="section" id="ensure">
+<h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The pharaoh tool ensures the available modules.</li>
+<li>While ensuring, It won&#8217;t check about the versions.</li>
+</ul>
+</div>
+<div class="section" id="ptdeploy">
+<h2>ptdeploy<a class="headerlink" href="#ptdeploy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The module ptdeploy reports itself as installed, in case of existence.</li>
+<li>It also checks the version for ptdeploy module.</li>
+<li>If the ptdeploy module is not available in the machine, then automatically ptdeploy will progress to install.</li>
+</ul>
+</div>
+<div class="section" id="pttest">
+<h2>pttest<a class="headerlink" href="#pttest" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>After completion of installing ptdeploy, it will ensure the pttest module.</li>
+<li>The module pttest reports itself as installed, in case of existence.</li>
+<li>If the pttest module is not available in the machine, then automatically pttest will progress to install.</li>
+</ul>
+</div>
+<div class="section" id="jrush">
+<h2>Jrush<a class="headerlink" href="#jrush" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>After completion of installing pttest, it will ensure the Jrush module.</li>
+<li>The module Jrush reports itself as installed, in case of existence.</li>
+<li>If the Jrush module is not available in the machine, then automatically Jrush will progress to install.</li>
+<li>If all the three modules are already existing, then it will show exceptional message as given in the screenshot below,</li>
+</ul>
+</div>
+<div class="section" id="additional-options">
+<h2>Additional Options<a class="headerlink" href="#additional-options" title="Permalink to this headline">¶</a></h2>
+<p>While installing ptdeploy, pttest, Jrush the following options are required as input from the user. Let us see about, the additional options that can be specified by the users if they wish, is represented in a tabular format as shown below.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="32%" />
+<col width="15%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Path</th>
+<th class="head">Option</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Program data directory
+(Default)</td>
+<td>&#8220;/opt/pttest(corresponding module)&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with
+the default program data directory they
+can input as Yes</td>
+</tr>
+<tr class="row-odd"><td>Program data directory</td>
+<td>User specific</td>
+<td>No(End slash)</td>
+<td>If the user wish to proceed with their own
+program data directory, they can input as
+N, and in hand specify they own location.</td>
+</tr>
+<tr class="row-even"><td>Program executor directory
+(Default)</td>
+<td>&#8220;/usr/bin&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with
+the default program executor directory
+they can input as Yes</td>
+</tr>
+<tr class="row-odd"><td>Program executor directory</td>
+<td>User specific</td>
+<td>No(End slash)</td>
+<td>If the user wish to proceed with their own
+program executor directory, they can
+input as N, and in hand specify they
+own location.|</td>
+</tr>
+</tbody>
+</table>
+<p>While installing it will specify the location of git clone, displays the number of objects , receiving objects, resolving deltas, connectivity.</p>
+<p>The following screen shot explains you graphically about the process involved in installation of Pharaoh tool.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>It facilitates the users to ensure before installation.</li>
+<li>In case of any particular module is missing, the user can proceed to install that particular module alone.</li>
+<li>The user can specify their own path or location for program data directory and executor directory.</li>
+<li>If any particular module already exists in the machine, then the installation tool will throw an exception message as it is already
+installed.</li>
+<li>It avoids unwanted overwriting of modules, hence it is time saving.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/pharaohtools_ptvirtualize.rst">
+          PharaohTools
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

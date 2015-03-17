@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Php Modules" href="phpmodules.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="PHPMD" href="phpmd.html" />
     <link rel="prev" title="PHPEclipse" href="phpeclipse.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="phpeclipse.html"
          title="Previous Chapter: PHPEclipse">&laquo; PHPEclipse</a></li>
-  <li><a href="phpmodules.html"
-         title="Next Chapter: Php Modules">Php Modules &raquo;</a></li>
+  <li><a href="phpmd.html"
+         title="Next Chapter: PHPMD">PHPMD &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpedit">
@@ -169,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Phpedit module. It lists out the alternative parameters of Phpedit module. It also describes the syntax for installing the Phpedit module. The help command for Phpedit module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Phpedit <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Phpedit <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Phpedit.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra PHPEdit <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPEdit <span class="nb">help</span>
 
 ******************************
 
@@ -184,7 +172,7 @@
 
        - install
        Installs the latest version of PHPEdit
-       example: cleopatra phpedit install
+       example: ptconfigure phpedit install
 
 ------------------------------
 End Help
@@ -195,7 +183,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>PHPEdit comes with a lot of extensions, frameworks, help files and tools, so it is shipped in an installer which can be customized to suits the user needs.However, because PHPEdit is constantly evolving, with new features and maintenance fixes, an auto update system is also available, to help keep up with PHPEdit&#8217;s latest releases effortlessly. the command used for installation of this module as follows,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Phpedit install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Phpedit install
 </pre></div>
 </div>
 <p>The screen shot makes clear about this module.</p>
@@ -221,7 +209,7 @@ End Help
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install phpedit? (Y/N)</td>
-<td>In Spite of PHP-Edit, the
+<td>Instead of PHP-Edit, the
 following alternatives can also
 be used: phpedit,PHPEdit</td>
 <td>Y</td>
@@ -229,10 +217,10 @@ be used: phpedit,PHPEdit</td>
 process.</td>
 </tr>
 <tr class="row-odd"><td>Install phpedit? (Y/N)</td>
-<td>In Spite of PHP-Edit, the
+<td>Instead of PHP-Edit, the
 following alternatives can also
 be used: phpedit,PHPEdit        |</td>
-<td>Y</td>
+<td>N</td>
 <td>The user wish to quit the installation
 process.</td>
 </tr>
@@ -288,7 +276,7 @@ process.</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

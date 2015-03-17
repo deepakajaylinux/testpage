@@ -14,7 +14,7 @@ The help command guide the user to install virtual box. The following screen sho
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra Virtualbox help
+	kevell@corp:/# ptconfigure Virtualbox help
 	******************************
 
 
@@ -24,7 +24,7 @@ The help command guide the user to install virtual box. The following screen sho
 
         - install
         Installs Virtualbox through apt-get
-        example: cleopatra virtualbox install
+        example: ptconfigure virtualbox install
 
 	------------------------------
 	End Help
@@ -37,26 +37,26 @@ This module instruct the user to install. To activate virtual box follow the com
 
 .. code-block:: bash
 
-	cleopatra virtual box install
+	ptconfigure virtual box install
 
 Then the system can enquire
-cleopatra virtual box install? (Y/N) 
+ptconfigure virtual box install? (Y/N) 
 If the user enters Y then it will be installed, else it will exit the screen.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Virtualbox install
+ kevell@corp:/# ptconfigure Virtualbox install
  Install Virtualbox? (Y/N) 
  y
  *******************************
  *        Pharaoh Tools        *
  *          ! Virtualbox !        *
  *******************************
- Creating /tmp/cleopatra-temp-script-27415379023.sh
- chmod 755 /tmp/cleopatra-temp-script-27415379023.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-27415379023.sh Permissions
- Executing /tmp/cleopatra-temp-script-27415379023.sh
+ Creating /tmp/ptconfigure-temp-script-27415379023.sh
+ chmod 755 /tmp/ptconfigure-temp-script-27415379023.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-27415379023.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-27415379023.sh
  invoke-rc.d: initscript virtualbox, action "restart" failed.
  Reading package lists...
  Building dependency tree...
@@ -188,7 +188,7 @@ If the user enters Y then it will be installed, else it will exit the screen.
    ...done.
  Setting up virtualbox-qt (4.3.10-dfsg-1) ...
  Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
- Temp File /tmp/cleopatra-temp-script-27415379023.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-27415379023.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -213,15 +213,13 @@ Options
  
 .. cssclass:: table-bordered
 
- +-----------------------------+-----------------+------------------------+-----------------------------+
- |Parameters		       |Syntax	         |Option                  |Comments			|
- +=============================+=================+========================+=============================+
- |Install Virtual box	       |Yes		 |Virtualbox		  |Installed successfully	|
- +-----------------------------+-----------------+------------------------+-----------------------------+
- |			       |		 |Virtualbox		  |Installed successfully	|
- +-----------------------------+-----------------+------------------------+-----------------------------+
- |			       |No		 |-			  |Exit the screen|		|
- +-----------------------------+-----------------+------------------------+-----------------------------+
+ +-----------------------------+-----------------+------------------------+-------------------------------------+
+ | Parameters		       | Option	         | Alternative Parameter  | Comments			        |
+ +=============================+=================+========================+=====================================+
+ |Install Virtualbox? (Y/N)    |Yes		 | Virtualbox, virtualbox | System starts installation process  |
+ +-----------------------------+-----------------+------------------------+-------------------------------------+
+ |Install Virtualbox? (Y/N)    |No               | Virtualbox, virtualbox | Exit the installation process|      |
+ +-----------------------------+-----------------+------------------------+-------------------------------------+
 		
 
 

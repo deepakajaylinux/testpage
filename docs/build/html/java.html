@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Jenkins" href="jenkins.html" />
-    <link rel="prev" title="IntelliJ" href="intellij.html" />
+    <link rel="prev" title="Invoke" href="invoke_cleo.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,8 +107,8 @@
             
               
                 
-  <li><a href="intellij.html"
-         title="Previous Chapter: IntelliJ">&laquo; IntelliJ</a></li>
+  <li><a href="invoke_cleo.html"
+         title="Previous Chapter: Invoke">&laquo; Invoke</a></li>
   <li><a href="jenkins.html"
          title="Next Chapter: Jenkins">Jenkins &raquo;</a></li>
               
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="java">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in java module. The help command lists out the alternative parameters of java module. It also describes the syntax for installing Java JDK 1.7. The help command for Java module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Java <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Java <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under java module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra java <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure java <span class="nb">help</span>
 ******************************
 
 
@@ -183,7 +171,7 @@ Java, java, java17
        - install
        Installs a version of Oracle Java JDK 1.7. It will also configure java,
        javac and javaws to be provided by the new Oracle version.
-       example: cleopatra java17 install
+       example: ptconfigure java17 install
 
 ------------------------------
 End Help
@@ -194,15 +182,15 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Installing the oracle version of java JDK 1.7 to the users machine can be done by simply using the command as shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Java install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Java install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="23%" />
-<col width="26%" />
-<col width="13%" />
+<col width="27%" />
+<col width="11%" />
 <col width="38%" />
 </colgroup>
 <thead valign="bottom">
@@ -215,7 +203,7 @@ End Help
 <tbody valign="top">
 <tr class="row-even"><td>Install The Oracle
 Java JDK 1.7? (Y/N)</td>
-<td>Inspite of Oracle Java JDK 1.7,
+<td>Instead of Oracle Java JDK 1.7,
 the following alternatives can
 also be used: Java, java, java17</td>
 <td>Y(Yes)</td>
@@ -224,15 +212,81 @@ process they can input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Install The Oracle
 Java JDK 1.7? (Y/N)</td>
-<td>Inspite of Oracle Java JDK 1.7,
+<td>Instead of Oracle Java JDK 1.7,
 the following alternatives can
-also be used: Java, java, java17</td>
+also be used: Java, java, java17|</td>
 <td>N(No)</td>
 <td>If the user wish to quit the installation
-process they can input as N.|</td>
+process they can input as N.</td>
 </tr>
 </tbody>
 </table>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure java17 install
+Install The Oracle Java JDK 1.7? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         !!Java JDK!!        *
+*******************************
+Enter Java Install Directory <span class="o">(</span>no trailing slash<span class="o">)</span>:
+
+Creating /tmp/ptconfigure-temp-script-37090112192.sh
+chmod 755 /tmp/ptconfigure-temp-script-37090112192.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-37090112192.sh Permissions
+Executing /tmp/ptconfigure-temp-script-37090112192.sh
+--2015-03-16 15:52:21--  https://bitbucket.org/phpengine/cleo-jdk-64/get/6c383e2868bd.zip
+Resolving bitbucket.org <span class="o">(</span>bitbucket.org<span class="o">)</span>... 131.103.20.167, 131.103.20.168
+Connecting to bitbucket.org <span class="o">(</span>bitbucket.org<span class="o">)</span>|131.103.20.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified <span class="o">[</span>application/zip<span class="o">]</span>
+Saving to: ‘6c383e2868bd.zip’
+
+   <span class="o">[</span>          &lt;<span class="o">=</span>&gt;                                                                                          <span class="o">]</span> 2,06,54,011 2.98KB/s   in 12m 14s
+
+2015-03-16 16:04:59 <span class="o">(</span>27.5 KB/s<span class="o">)</span> - ‘6c383e2868bd.zip’ saved <span class="o">[</span>20654011<span class="o">]</span>
+
+/tmp/oraclejdk: Scheme missing.
+FINISHED --2015-03-16 16:04:59--
+Total wall clock <span class="nb">time</span>: 12m 39s
+Downloaded: 1 files, 20M in 12m 14s <span class="o">(</span>27.5 KB/s<span class="o">)</span>
+ End-of-central-directory signature not found.  Either this file is not
+ a zipfile, or it constitutes one disk of a multi-part archive.  In the
+ latter <span class="k">case </span>the central directory and zipfile comment will be found on
+ the last disk<span class="o">(</span>s<span class="o">)</span> of this archive.
+unzip:  cannot find zipfile directory in one of /tmp/oraclejdk.zip or
+       /tmp/oraclejdk.zip.zip, and cannot find /tmp/oraclejdk.zip.ZIP, period.
+/tmp/ptconfigure-temp-script-37090112192.sh: 6: <span class="nb">cd</span>: can<span class="s1">&#39;t cd to /tmp/oraclejdk</span>
+<span class="s1">mv: cannot stat ‘/tmp/oraclejdk/phpengine-cleo-jdk-64-6c383e2868bd/jdk-7u60-linux-x64.tar.gz’: No such file or directory</span>
+<span class="s1">tar: jdk-7u60-linux-x64.tar.gz: Cannot open: No such file or directory</span>
+<span class="s1">tar: Error is not recoverable: exiting now</span>
+<span class="s1">mkdir: missing operand</span>
+<span class="s1">Try &#39;</span>mkdir --help<span class="s1">&#39; for more information.</span>
+<span class="s1">cp: missing destination file operand after ‘/tmp/oraclejdk/jdk1.7.0_60/*’</span>
+<span class="s1">Try &#39;</span>cp --help<span class="s1">&#39; for more information.</span>
+<span class="s1">chmod: missing operand after ‘a+x’</span>
+<span class="s1">Try &#39;</span>chmod --help<span class="s1">&#39; for more information.</span>
+<span class="s1">update-alternatives: error: alternative path /bin/java doesn&#39;</span>t exist
+update-alternatives: error: alternative path /bin/javac doesn<span class="s1">&#39;t exist</span>
+<span class="s1">update-alternatives: error: alternative path /bin/javaws doesn&#39;</span>t exist
+update-alternatives: error: alternative /bin/java <span class="k">for </span>java not registered; not setting
+update-alternatives: error: alternative /bin/javac <span class="k">for </span>javac not registered; not setting
+update-alternatives: error: alternative /bin/javaws <span class="k">for </span>javaws not registered; not setting
+Archive:  /tmp/oraclejdk.zip
+Temp File /tmp/ptconfigure-temp-script-37090112192.sh Removed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+Java: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -279,7 +333,7 @@ process they can input as N.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

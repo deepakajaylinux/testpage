@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="Jrush" href="jrush_main.html" />
-    <link rel="prev" title="SFTP" href="sftp_dapper.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="Templating" href="templatingdapper.html" />
+    <link rel="prev" title="SVN" href="svn_dapper.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="sftp_dapper.html"
-         title="Previous Chapter: SFTP">&laquo; SFTP</a></li>
-  <li><a href="jrush_main.html"
-         title="Next Chapter: Jrush">Jrush &raquo;</a></li>
+  <li><a href="svn_dapper.html"
+         title="Previous Chapter: SVN">&laquo; SVN</a></li>
+  <li><a href="templatingdapper.html"
+         title="Next Chapter: Templating">Templating &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="system-detection">
@@ -168,12 +156,12 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command leads the users regarding the purpose and as well as about the options that are included in the System detection modules. The help command lists out the alternative parameters of System detection under Dapperstrano module. It also describes the syntax for detecting the user’s machine. The help command for System detection is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano systemdetection <span class="nb">help</span>
+<p>The help command leads the users regarding the purpose and as well as about the options that are included in the System detection modules. The help command lists out the alternative parameters of System detection under ptdeploy module. It also describes the syntax for detecting the user’s machine. The help command for System detection is shown below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy systemdetection <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under system detection.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano systemdetection <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy systemdetection <span class="nb">help</span>
 ******************************
 
 
@@ -184,7 +172,7 @@
 
        - detect
        Detects the Operating System
-       example: cleopatra system-detection detect
+       example: ptconfigure system-detection detect
 
 ------------------------------
 End Help
@@ -196,7 +184,7 @@ End Help
 <h2>Detect<a class="headerlink" href="#detect" title="Permalink to this headline">¶</a></h2>
 <p>Detect used to detect the system settings. By using a single command the user can get all the information about the system application.
 The command used for system detection is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra systemdetection detect
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure systemdetection detect
 </pre></div>
 </div>
 <p>After keying the above command, the process of system detection starts. During system detection the following information&#8217;s regarding the corresponding machine are reported:</p>
@@ -211,7 +199,7 @@ The command used for system detection is given below.</p>
 <li>IP Address 1.</li>
 </ul>
 <p>Finally, after detection the information regarding the above mentioned features are clearly reported. The following screen shot depicts you about the process of system detection.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra system-detection detect
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure system-detection detect
 ******************************
 
 
@@ -246,7 +234,8 @@ Detection Finished
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>The users can configure the application settings using this system detections.</li>
-<li>The parameters used for declaring help command, system detection are not case sensitive which an added advantage while compared to others is.</li>
+<li>The parameters used for declaring help command, system detection are not case sensitive which an added advantage while compared to
+others is.</li>
 <li>It is well-to-do in both Cent OS and as well as in Ubuntu.</li>
 <li>Non case sensitive.</li>
 <li>Protection and security is possible. Preventing harm to the system and to resources, through internal processes or malicious outsiders.
@@ -254,11 +243,13 @@ Authentication, ownership, and restricted access are obvious parts of this syste
 <li>System administrators generally determine which interface a user starts with when they first log in.</li>
 <li>Generally written in PHP, although some are written in assembly for optimal performance.</li>
 </ul>
-<p>The system detection module provides the support:
-* Identify a remote process and/or host with which to communicate.
-* Establish a connection between the two processes.
-* Open and close the connection as needed.
-* Transmit messages along the connection.</p>
+<p>The system detection module provides the support:</p>
+<ul class="simple">
+<li>Identify a remote process and/or host with which to communicate.</li>
+<li>Establish a connection between the two processes.</li>
+<li>Open and close the connection as needed.</li>
+<li>Transmit messages along the connection.</li>
+</ul>
 </div>
 </div>
 
@@ -297,7 +288,7 @@ Authentication, ownership, and restricted access are obvious parts of this syste
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

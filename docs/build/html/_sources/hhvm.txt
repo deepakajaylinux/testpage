@@ -14,14 +14,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra HHVM help
+		ptconfigure HHVM help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under HHVM.
 
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra HHVM help
+ kevell@corp:/# ptconfigure HHVM help
  ******************************
 
 
@@ -31,11 +31,11 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs HHVM through package manager
-        example: cleopatra hhvm install
+        example: ptconfigure hhvm install
 
         - uninstall
         Uninstalls HHVM through package manager
-        example: cleopatra hhvm uninstall
+        example: ptconfigure hhvm uninstall
 
  ------------------------------
  End Help
@@ -50,7 +50,7 @@ The command used for installing the HHVM to the users machine is shown below.
 
 .. code-block:: bash
 
-                cleopatra HHVM install
+                ptconfigure HHVM install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
@@ -59,11 +59,11 @@ After inputting the command above, the following process occurs as shown in the 
  +-----------------------------+----------------------------------+----------------+---------------------------------------------+
  |      Parameters             | Alternative Parameter            |     Options    |            Comments                         |
  +=============================+==================================+================+=============================================+
- |Install The Oracle Java      |Inspite of HHVM we can use hhvm   |Y(Yes)          |If the user wish to proceed the installation |
- |JDK 1.7? (Y/N)               |also.                             |                |process they can input as Y.                 |
+ |Install HHVM? (Y/N)          |Instead of HHVM we can use hhvm   |Y(Yes)          |If the user wish to proceed the installation |
+ |                             |also.                             |                |process they can input as Y.                 |
  +-----------------------------+----------------------------------+----------------+---------------------------------------------+
- |Install The Oracle Java      |Inspite of HHVM we can use hhvm   |N(No)           |If the user wish to quit the installation    |
- |JDK 1.7? (Y/N)               |also.                             |                |process they can input as N.|                |
+ |Install HHVM? (Y/N)          |Instead of HHVM we can use hhvm   |N(No)           |If the user wish to quit the installation    |
+ |                             |also.                             |                |process they can input as N.|                |
  +-----------------------------+----------------------------------+----------------+---------------------------------------------+
 
 
@@ -72,17 +72,17 @@ Finally, installation process gets completed. The following screenshot pictorial
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra HHVM install
+ kevell@corp:/# ptconfigure HHVM install
  Install HHVM? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          ! HHVM !        *
  *******************************
- Creating /tmp/cleopatra-temp-script-41870275104.sh
- chmod 755 /tmp/cleopatra-temp-script-41870275104.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-41870275104.sh Permissions
- Executing /tmp/cleopatra-temp-script-41870275104.sh
+ Creating /tmp/ptconfigure-temp-script-41870275104.sh
+ chmod 755 /tmp/ptconfigure-temp-script-41870275104.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-41870275104.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-41870275104.sh
  --2015-01-16 14:19:14--  http://dl.hhvm.com/conf/hhvm.gpg.key
  Resolving dl.hhvm.com (dl.hhvm.com)... 140.211.166.134
  Connecting to dl.hhvm.com (dl.hhvm.com)|140.211.166.134|:80... connected.
@@ -196,7 +196,7 @@ Finally, installation process gets completed. The following screenshot pictorial
  Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
  Fetched 2,347 kB in 42s (55.6 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-41870275104.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-41870275104.sh Removed
  Reading package lists...
  Building dependency tree...
  Reading state information...
@@ -320,11 +320,46 @@ The command used for un installing the hhvm is shown below.
 
 .. code-block:: bash
 
-		cleopatra HHVM uninstall
+		ptconfigure HHVM uninstall
+
+
+The screenshot for the above command is listed below,
+
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptconfigure hhvm uninstall
+
+ Uninstall HHVM? (Y/N)
+ y
+ *******************************
+ *        Pharaoh Tools        *
+ *          ! HHVM !        *
+ *******************************
+ PHP Warning:  Illegal string offset 'object' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  Illegal string offset 'method' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  Illegal string offset 'params' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'p' not found in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Uninstaller:
+ ------------------------------
+ HHVM: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
 
 Benefits
 ------------
 
-* The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while compared to others.
+* The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while
+  compared to others.
 * It is well-to-do in both Ubuntu and as well as Cent OS.
-* HHVM has the ability to use live type information to produce more efficient native code, leading to higher web server throughput and lower latency.
+* HHVM has the ability to use live type information to produce more efficient native code, leading to higher web server throughput and
+  lower latency.

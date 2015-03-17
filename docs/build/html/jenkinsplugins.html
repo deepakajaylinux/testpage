@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Jmeter" href="jmeter.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="JenkinsSudoNoPass" href="jenkinssudonoPass.html" />
     <link rel="prev" title="Jenkins" href="jenkins.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="jenkins.html"
          title="Previous Chapter: Jenkins">&laquo; Jenkins</a></li>
-  <li><a href="jmeter.html"
-         title="Next Chapter: Jmeter">Jmeter &raquo;</a></li>
+  <li><a href="jenkinssudonoPass.html"
+         title="Next Chapter: JenkinsSudoNoPass">JenkinsSudoNoPas... &raquo;</a></li>
               
             
             
@@ -145,46 +145,34 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="jenkinsplugins">
 <h1>JenkinsPlugins<a class="headerlink" href="#jenkinsplugins" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>Jenkins is popular to build server. Jenkins is an open source continuous integration tool written in Java. Jenkins provides continuous integration services for software development.</p>
+<p>Jenkins is popular to build server. Jenins is a source continuous integration tool written in Java. Jenkins provides continuous integration services for software development.</p>
 <p>Plugins have been released for Jenkins that extend its use to projects written in languages other than Java. Plugins are available for integrating Jenkins with most version control systems and big databases. Many build tools are supported via their respective plugins. Plugins can also change the way Jenkins looks or add new functionality. Builds can generate test reports in various formats supported by plugins (JUnit support is currently bundled) and Jenkins can display the reports and generate trends and render them in the GUI.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of JenkinsPlugins module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra JenkinsPlugins <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>               ptconfigure JenkinsPlugins <span class="nb">help</span>
 
 
-kevells@corp:/# cleopatra JenkinsPlugins <span class="nb">help</span>
+kevell@corp:/# ptconfigure JenkinsPlugins <span class="nb">help</span>
 ******************************
 
 
  This <span class="nb">command </span>allows you to install a bunch of plugins that we recommend <span class="k">for</span>
- PHP builds in Jenkins.
+<span class="k"> </span>PHP builds in Jenkins.
 
  JenkinsPlugins, jenkinsplugins, jenkins-plugins, jenkins-plugs
 
        - install
-       Installs the latest version of Jenkins Plugins <span class="k">for</span> PHP recommended by Golden Contact
-       example: cleopatra jenkins-plugins install
+       Installs the latest version of Jenkins Plugins <span class="k">for </span>PHP recommended by Golden Contact
+       example: ptconfigure jenkins-plugins install
 
 ------------------------------
 End Help
@@ -195,33 +183,33 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>This command allows you to install a bunch of plugins that we recommend for
-PHP builds in Jenkins. If the user needs to install Jenkins module in machine, the below given command will execute the process of installation.</div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra JenkinsPlugins install
-
-
-kevells@corp:/# cleopatra JenkinsPlugins install
+<div>This command allows you to install a bunch of plugins that we recommend for PHP builds in Jenkins. If the user needs to install Jenkins module in machine, the below given command will execute the process of installation.</div></blockquote>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure JenkinsPlugins install
+</pre></div>
+</div>
+<p>The screenshot of the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure JenkinsPlugins install
 Install Jenkins Plugins? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *         Jenkns Plgs!        *
 *******************************
-Creating /tmp/cleopatra-temp-script-80223312434.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-80223312434.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-80223312434.sh Permissions
-Executing /tmp/cleopatra-temp-script-80223312434.sh
+Creating /tmp/ptconfigure-temp-script-80223312434.sh
+chmod 755 /tmp/ptconfigure-temp-script-80223312434.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-80223312434.sh Permissions
+Executing /tmp/ptconfigure-temp-script-80223312434.sh
 Cloning into <span class="s1">&#39;jplugins&#39;</span>...
 remote: Counting objects: 39, <span class="k">done</span>.
-remote: Total <span class="m">39</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
+remote: Total 39 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
 Unpacking objects: 100% <span class="o">(</span>39/39<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
 chown: invalid user: ‘jenkins’
 jenkins: unrecognized service
-Temp File /tmp/cleopatra-temp-script-80223312434.sh Removed
+Temp File /tmp/ptconfigure-temp-script-80223312434.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -251,7 +239,7 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra  JenkinsPlugins
+<tr class="row-even"><td>ptconfigure  JenkinsPlugins
 Install</td>
 <td>Either of the four alternative
 parameter can be used in command-
@@ -259,13 +247,13 @@ JenkinsPlugins,
 jenkinsplugins,
 jenkins-plugins,
 jenkins-plugs
-eg: Cleopatra jenkins-plugins
+eg: ptconfigure jenkins-plugins
 Install</td>
 <td>Y</td>
-<td>Once the user provides the option, System starts
-installation process</td>
+<td>Once the user provides the option, System
+starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra  JenkinsPlugins
+<tr class="row-odd"><td>ptconfigure  JenkinsPlugins
 Install</td>
 <td>Either of the four alternative
 parameter can be used in command-
@@ -273,7 +261,7 @@ JenkinsPlugins,
 jenkinsplugins,
 jenkins-plugins,
 jenkins-plugs
-eg: Cleopatra jenkins-plugins
+eg: ptconfigure jenkins-plugins
 Install|</td>
 <td>N</td>
 <td>Once the user provides the option, System Stops
@@ -285,8 +273,11 @@ installation process</td>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The plugin will give you a report on how much every plugin will be used in all of your jobs . Therefore it will analyze the used extension points of each job.</li>
+<li>The plugin will give you a report on how much every plugin will be used in all of your jobs . Therefore it will analyze the used extension
+points of each job.</li>
 <li>This plugin gives you the possibility to analyze the usage of your installed plugins.</li>
+<li>Non case sensitivity</li>
+<li>Well-to-do in Ubuntu and CentOS.</li>
 </ul>
 </div>
 </div>
@@ -326,7 +317,7 @@ installation process</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="MongoDB" href="mongodb.html" />
     <link rel="prev" title="Mkdir" href="mkdir.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -148,19 +148,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="modulemanager">
@@ -172,11 +160,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command of this module manager is a brief user manual that guides the user regarding the purpose, of module manager, describes the user about the major functions such as install, enable, disable, ensure, uninstall along with the syntax for declaring them. It also lists outs the alternative parameters of module manager. The command for declaring the help option under module manager is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra ModuleManager <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ModuleManager <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under module manager.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra ModuleManager help
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ModuleManager help
 
 ******************************
 
@@ -188,23 +176,23 @@
        - install
        Installs the latest version of a module. If a module of the same name already exists in your Extensions directory,
        an error will be thrown.
-       example: cleopatra module-manager install --module-name=&quot;MyModule&quot; --module-source=&quot;http://git.cleo-modules.com/MyModule.git&quot;
+       example: ptconfigure module-manager install --module-name=&quot;MyModule&quot; --module-source=&quot;http://git.cleo-modules.com/MyModule.git&quot;
 
        - ensure
        Ensures the existence of a module. The module will only be installed if it currently doesn&#39;t exist.
-       example: cleopatra module-manager ensure --module-name=&quot;MyModule&quot; --module-source=&quot;http://git.cleo-modules.com/MyModule.git&quot;
+       example: ptconfigure module-manager ensure --module-name=&quot;MyModule&quot; --module-source=&quot;http://git.cleo-modules.com/MyModule.git&quot;
 
        - uninstall
        Uninstalls a Module. This will delete all of the files for this Module
-       example: cleopatra module-manager enable --module-name=&quot;MyModule&quot;
+       example: ptconfigure module-manager enable --module-name=&quot;MyModule&quot;
 
        - enable
        Enables a Module. All installed Modules are enabled by default.
-       example: cleopatra module-manager enable --module-name=&quot;MyModule&quot;
+       example: ptconfigure module-manager enable --module-name=&quot;MyModule&quot;
 
        - disable
        Disables a Module. The files for this module will still exist, but none will be automatically loaded during execution.
-       example: cleopatra module-manager disable --module-name=&quot;MyModule&quot;
+       example: ptconfigure module-manager disable --module-name=&quot;MyModule&quot;
 
 ------------------------------
 End Help
@@ -215,7 +203,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the module manager in the users machine is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra module-manager install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure module-manager install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
@@ -294,7 +282,7 @@ hand specify they own location|</td>
 <div class="section" id="enable">
 <h2>Enable<a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h2>
 <p>The enable process aims at enabling the module. All the installed modules are enabled by default using the command given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra module-manager <span class="nb">enable</span> --module-name<span class="o">=</span><span class="s2">&quot;MyModule&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure module-manager <span class="nb">enable</span> --module-name<span class="o">=</span><span class="s2">&quot;MyModule&quot;</span>
 </pre></div>
 </div>
 <p>After inputting this command, the module which is specified gets enabled.</p>
@@ -302,7 +290,7 @@ hand specify they own location|</td>
 <div class="section" id="disable">
 <h2>Disable<a class="headerlink" href="#disable" title="Permalink to this headline">¶</a></h2>
 <p>The disable process aims at disabling the module. The files of the disabled modules remains exists but they will not be loaded at the time of execution. This can be achieved by the following command</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra module-manager disable --module-name<span class="o">=</span><span class="s2">&quot;MyModule&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure module-manager disable --module-name<span class="o">=</span><span class="s2">&quot;MyModule&quot;</span>
 </pre></div>
 </div>
 <p>After inputting this command, the module which is specified gets disabled.</p>
@@ -310,11 +298,11 @@ hand specify they own location|</td>
 <div class="section" id="ensure">
 <h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
 <p>The role of ensure process is to check the availability of modules. After the process of ensuring gets completed the modules will be installed only if the modules report itself as not installed. The process of ensure can be done by using the command given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra module-manager ensure
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure module-manager ensure
 </pre></div>
 </div>
 <p>During the process of ensuring, the versions of the modules are not checked. The following screenshot pictorially represent the process of ensure.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra module-manager ensure
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure module-manager ensure
 
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module ModuleManager reports itself as Installed
@@ -334,7 +322,7 @@ Installer Finished
 <div class="section" id="uninstall">
 <h2>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h2>
 <p>The uninstall process is used to delete all the files for the modules. The command used for uninstalling the module manager is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra module-manager uninstall
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure module-manager uninstall
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
@@ -392,7 +380,7 @@ un installation process they can input as N.|</td>
 </td>
 <td>&#8220;/usr/bin&#8221;</td>
 <td>Yes</td>
-<td>If the user to proceed installation with the default
+<td>If the user to proceed un installation with the default
 program executor directory they can input as Yes</td>
 </tr>
 <tr class="row-odd"><td><dl class="first last docutils">
@@ -402,7 +390,7 @@ program executor directory they can input as Yes</td>
 </td>
 <td>user specific</td>
 <td>No(End slash)</td>
-<td>If the user to proceed installation with their own
+<td>If the user to proceed un installation with their own
 program executor directory they can input as N, and in
 hand specify they own location|</td>
 </tr>
@@ -461,7 +449,7 @@ compared to others.</li>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -12,13 +12,13 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
 
-	cleopatra PHPCS help
+	ptconfigure PHPCS help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHPCS.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPCS help
+ kevell@corp:/# ptconfigure PHPCS help
  ******************************
 
 
@@ -27,7 +27,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
  PHPCS
  - install
  Installs the latest version of PHPCS
- example: cleopatra phpcs install
+ example: ptconfigure phpcs install
 
  ------------------------------
  End Help
@@ -40,7 +40,7 @@ Installing the PHP CS is simpler by using the following command as shown:
 
 .. code-block:: bash
 	
-	Cleopatra PHPCS install
+	ptconfigure PHPCS install
 
 After inputting the command above the following operations as shown in the tabular format occurs.
 
@@ -65,27 +65,27 @@ If the user proceeds the installation process the following operations occurs as
 .. cssclass:: table-bordered
 
 
-  +-------------------------------+------------------+------------------+-----------------------------------+
-  |Paramaters 		          |Path              | Option    	| Comment		            |
-  +===============================+==================+==================+===================================+
-  |Program data directory(Default)|opt/phpcs         |Yes               |If the user to proceed installation|
-  |				  |(corresponding    |			| with the default program data     |
-  |				  |module)"          |			| directory they can input as Yes   |
-  +-------------------------------+------------------+------------------+-----------------------------------+
-  |Program data directory         |User specific     |No(End slash)     |If the user wish to proceed with   |
-  |				  |		     |                  |their own program data directory,  |
-  |				  |	             |			|they can input as N, and in hand   |
-  |				  |		     |                  |specify they own location.         |
-  +-------------------------------+------------------+------------------+-----------------------------------+
-  |Program executor directory     |"/usr/bin"        |Yes               |If the user to proceed installation|
-  |(Default)    		  |		     |     		|with the default program executor  |
-  |				  |		     |			|directory they can input as Yes    |
-  +-------------------------------+------------------+------------------+-----------------------------------+
-  |Program executor directory     |User specific     |No(End slash)     |If the user wish to proceed with   |
-  |				  |	             |			|their own program executor         |
-  |				  |		     |			|directory, they can input as N, and|
-  |				  |		     |		        |in hand specify they own location.||
-  +-------------------------------+------------------+------------------+-----------------------------------+
+  +---------------------------------+------------------+------------------+------------------------------------+
+  |Paramaters 		            |Path              | Option    	  | Comment		               |
+  +=================================+==================+==================+====================================+
+  |Program data directory(Default)  |opt/phpcs         |Yes               |If the user to proceed installation |
+  |				    |(corresponding    |		  | with the default program data      |
+  |				    |module)"          |		  | directory they can input as Yes    |
+  +---------------------------------+------------------+------------------+------------------------------------+
+  |Program data directory           |User specific     |No(End slash)     |If the user wish to proceed with    |
+  |				    |		       |                  |their own program data directory,   |
+  |				    |	               |		  |they can input as N, and in hand    |
+  |				    |		       |                  |specify they own location.          |
+  +---------------------------------+------------------+------------------+------------------------------------+
+  |Program executor directory       |"/usr/bin"        |Yes               |If the user to proceed installation |
+  |(Default)    		    |		       |     		  |with the default program executor   |
+  |				    |		       |		  |directory they can input as Yes     |
+  +---------------------------------+------------------+------------------+------------------------------------+
+  |Program executor directory       |User specific     |No(End slash)     |If the user wish to proceed with    |
+  |				    |	               |		  |their own program executor          |
+  |				    |		       |		  |directory, they can input as N, and |
+  |				    |		       |		  |in hand specify they own location.| |
+  +---------------------------------+------------------+------------------+------------------------------------+
   
 
 
@@ -93,7 +93,7 @@ After these process as shown in the tabular format, the results are clearly repo
 
 .. code-block:: bash
 
- Kevells@corp:/# cleopatra PHPCS install
+ Kevell@corp:/# ptconfigure PHPCS install
  Install PHP Code Sniffer ? (Y/N) 
  y
  *******************************
@@ -104,7 +104,7 @@ After these process as shown in the tabular format, the results are clearly repo
  
  What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
 
- git clone 'https://github.com/phpengine/cleopatra-phpcs.git'  /tmp/phpcs/phpcsCloning into '/tmp/phpcs/phpcs'...
+ git clone 'https://github.com/phpengine/ptconfigure-phpcs.git'  /tmp/phpcs/phpcsCloning into '/tmp/phpcs/phpcs'...
  remote: Counting objects: 862, done.
  remote: Total 862 (delta 0), reused 0 (delta 0)
  Receiving objects: 100% (862/862), 491.23 KiB | 64.00 KiB/s, done.

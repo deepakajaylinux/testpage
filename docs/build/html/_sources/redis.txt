@@ -10,17 +10,17 @@ Redis is a data structure server. In redis, networked, in-memory, and stores key
 Help command
 ------------------------
 
-The help command leads the users regarding the purpose and as well as about the options that are included in the redis module. The help command lists out the alternative parameters of redis under cleopatra module. It also describes the syntax for initializing the user’s machine. The help command for redis shown below.
+The help command leads the users regarding the purpose and as well as about the options that are included in the redis module. The help command lists out the alternative parameters of redis under ptconfigure module. It also describes the syntax for initializing the user’s machine. The help command for redis shown below.
 
 .. code-block:: bash
 
-		cleopatra redis help
+		ptconfigure redis help
 
 The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Redis help
+ kevell@corp:/# ptconfigure Redis help
  
  ******************************
 
@@ -30,7 +30,7 @@ The pictorial representation of the above command is listed below,
 
    - install
    Installs the latest version of redis
-   example: cleopatra redis install
+   example: ptconfigure redis install
 
  ------------------------------
  End Help
@@ -40,21 +40,21 @@ The pictorial representation of the above command is listed below,
 Installation
 -----------------
 
-Installation of a phlagrant module is including device drivers and plugins, act of making the program ready for execution. While installing this module the following command will be passed.
+Installation of a redis module is including device drivers and plugins, act of making the program ready for execution. While installing this module the following command will be passed.
 
 .. code-block:: bash
 
- cleopatra Phlagrant install
+ ptconfigure redis install
 
 After inputs the command the system can ask
 
-Install Phlagrant? (Y/N)
+Install Redis? (Y/N)
 
-If the user gives Y then Phlagrant will be installed. The following Screen shot demonstrate it.
+If the user gives Y then redis will be installed. The following Screen shot demonstrate it.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra redis install
+ kevell@corp:/# ptconfigure redis install
 
  Install Redis? (Y/N) 
  y
@@ -62,10 +62,10 @@ If the user gives Y then Phlagrant will be installed. The following Screen shot 
  *        Pharaoh Tools        *
  *         Redis!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-78539017469.sh
- chmod 755 /tmp/cleopatra-temp-script-78539017469.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-78539017469.sh Permissions
- Executing /tmp/cleopatra-temp-script-78539017469.sh
+ Creating /tmp/ptconfigure-temp-script-78539017469.sh
+ chmod 755 /tmp/ptconfigure-temp-script-78539017469.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-78539017469.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-78539017469.sh
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
@@ -265,7 +265,7 @@ If the user gives Y then Phlagrant will be installed. The following Screen shot 
  Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
  Fetched 2,441 kB in 1min 15s (32.5 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-78539017469.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-78539017469.sh Removed
  [Pharaoh Logging] Package redis-server from the Packager Apt is already installed, so not installing
  ... All done!
  *******************************
@@ -288,15 +288,13 @@ Option
 
 .. cssclass:: table-bordered
 
- +--------------------------+------------------------+----------------------------------------+-------------------------------------+
- | Parameters		    | Directory(default)     | Alternative Options		      |	Comments			    |
- +==========================+========================+========================================+=====================================+
- |Install Redis ?	    | Yes		     | Instead of using redis, the user       | It installs redis under cleopatra   |
- |			    |			     | can use Redis			      |					    |
- +--------------------------+------------------------+----------------------------------------+-------------------------------------+
- |Install Redis ?           | No                     | Instead of using redis, the user can   | It stops the installation process.  |
- |			    |			     | use Redis.|			      | 				    |
- +--------------------------+------------------------+----------------------------------------+-------------------------------------+
+ +--------------------------+------------------------+---------+--------------------------------------------------------------------+
+ | Parameters		    | Alternative Parameters | Options | Comments			                                    |
+ +==========================+========================+=========+====================================================================+
+ |Install Redis? (Y/N)	    | Redis, redis           | Y(Yes)  | If the user wish to proceed installation, they can input as Y      |          
+ +--------------------------+------------------------+---------+--------------------------------------------------------------------+
+ |Install Redis? (Y/N)      | Redis, redis           | N(No)   |If the user wish to quit installation, they can input as N.|        |
+ +--------------------------+------------------------+---------+--------------------------------------------------------------------+
 
 
 Benefits

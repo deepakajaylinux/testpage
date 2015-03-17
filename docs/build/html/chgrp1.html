@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Chmode" href="chmod.html" />
-    <link rel="prev" title="Chgrp" href="chgrp.html" />
+    <link rel="prev" title="Cassandra" href="cassandra.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,8 +108,8 @@
             
               
                 
-  <li><a href="chgrp.html"
-         title="Previous Chapter: Chgrp">&laquo; Chgrp</a></li>
+  <li><a href="cassandra.html"
+         title="Previous Chapter: Cassandra">&laquo; Cassandra</a></li>
   <li><a href="chmod.html"
          title="Next Chapter: Chmode">Chmode &raquo;</a></li>
               
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="change-group">
@@ -171,11 +159,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Change group module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Chgrp <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Chgrp <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the screenshot is given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/#  cleopatra Chgrp <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/#  ptconfigure Chgrp <span class="nb">help</span>
 ******************************
 
 
@@ -185,7 +173,7 @@
 
        - path
        Will change the file group ownership of a path
-       example: cleopatra chgrp path --yes --guess --recursive --path<span class="o">=</span>/a/file/path --group<span class="o">=</span>golden
+       example: ptconfigure chgrp path --yes --guess --recursive --path<span class="o">=</span>/a/file/path --group<span class="o">=</span>golden
 
 
 ------------------------------
@@ -197,7 +185,7 @@ End Help
 <div class="section" id="path">
 <h2>Path<a class="headerlink" href="#path" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to change the file group ownership of a path, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra chgrp path –yes –guess –recursive –path<span class="o">=</span>/”File path” –group<span class="o">=</span>”group name”
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure chgrp path –yes –guess –recursive –path<span class="o">=</span>/”File path” –group<span class="o">=</span>”group name”
 </pre></div>
 </div>
 </div>
@@ -205,7 +193,7 @@ End Help
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
 <p>There are two alternative parameters which can be used in command line.</p>
 <p>chgrp, Chgrp</p>
-<p>Eg: cleopatra Chgrp path/ cleopatra chgrp path</p>
+<p>Eg: ptconfigure Chgrp path/ ptconfigure chgrp path</p>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -252,7 +240,7 @@ group for a files or directories.</li>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -22,7 +22,7 @@ This command helps to determine the usage of Juser module. The user will come to
 
 .. code-block:: bash
 
- kevells@corp:/# jrush juser help
+ kevell@corp:/# jrush juser help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -63,7 +63,7 @@ The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# jrush juser delete --config-file="/var/www/html/joomla/configuration.php"
+ kevell@corp:/# jrush juser delete --config-file="/var/www/html/joomla/configuration.php"
  Enter a JUser ID. To enter email/username use --user-email or --username parameters
  2
  ****************************************
@@ -98,7 +98,7 @@ The pictorial representation of the above command is listed below,
 .. code-block:: bash
 
 
- kevells@corp:/# jrush juser info --config-file="/var/www/html/joomla/configuration.php"
+ kevell@corp:/# jrush juser info --config-file="/var/www/html/joomla/configuration.php"
  Enter a JUser ID. To enter email/username use --user-email or --username parameters
  1
  ****************************************
@@ -136,7 +136,7 @@ eg: jrush juser info ..config file=”bootstrap file path” / jrush JUser info 
 
 .. code-block:: bash
 
- kevells@corp:/# jrush juser password --config-file="/var/www/html/joomla/configuration.php"
+ kevell@corp:/# jrush juser password --config-file="/var/www/html/joomla/configuration.php"
  Enter a JUser ID. To enter email/username use --user-email or --username parameters
  5
  Enter a new Password. To enter as parameter use --password 

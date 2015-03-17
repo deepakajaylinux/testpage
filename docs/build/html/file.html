@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="FireFox" href="firefox.html" />
-    <link rel="prev" title="EnvironmentConfig" href="environmentconfig.html" />
+    <link rel="prev" title="EnvironmentConfig" href="environmentconfig1.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -112,7 +112,7 @@
             
               
                 
-  <li><a href="environmentconfig.html"
+  <li><a href="environmentconfig1.html"
          title="Previous Chapter: EnvironmentConfig">&laquo; EnvironmentConfi...</a></li>
   <li><a href="firefox.html"
          title="Next Chapter: FireFox">FireFox &raquo;</a></li>
@@ -149,19 +149,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="file">
@@ -176,43 +164,43 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of file module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file <span class="nb">help</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="create">
 <h2>Create<a class="headerlink" href="#create" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to Create a new system file, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 <p>The below given commands overwrite files that exist</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename” --overwrite-existing</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create --file=&quot;somename” --overwrite-existing
 </pre></div>
 </div>
 <p>The below given command for write the data in the file</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create –file<span class="o">=</span><span class="s2">&quot;somename” --data=&quot;</span>things to put in the file<span class="s2">&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create –file=&quot;somename” --data=&quot;things to put in the file&quot;
 </pre></div>
 </div>
 </div>
 <div class="section" id="delete">
 <h2>Delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to delete a system file, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file delete --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file delete --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="exists">
 <h2>Exists<a class="headerlink" href="#exists" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to check the existence of a file, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file exists --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file exists --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="append">
 <h2>Append<a class="headerlink" href="#append" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to append a line to a file, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file append --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file append --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -222,7 +210,7 @@
 <div class="section" id="should-have-line">
 <h2>Should-have-line<a class="headerlink" href="#should-have-line" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to ensure that a file contains a particular line, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file should-have-line --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file should-have-line --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -233,21 +221,17 @@
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="20%" />
-<col width="44%" />
-<col width="36%" />
+<col width="29%" />
+<col width="71%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>Parameters</td>
 <td>Alternative Parameter</td>
-<td>Comments</td>
 </tr>
-<tr class="row-even"><td>Cleopatra file help</td>
+<tr class="row-even"><td>ptconfigure file help</td>
 <td>Either of the two alternative parameter can be used
 in command- File, file
-eg: Cleopatra File Install/ Cleopatra file Install|</td>
-<td>Once the user provides the option, System
-starts processing</td>
+eg: ptconfigure File Install/ ptconfigure file Install|</td>
 </tr>
 </tbody>
 </table>
@@ -255,7 +239,8 @@ starts processing</td>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Specify a file specially formatted containing position-sensitive tests; default position-sensitive tests and context-sensitive tests will not be performed.</li>
+<li>Specify a file specially formatted containing position-sensitive tests; default position-sensitive tests and context-sensitive tests will
+not be performed.</li>
 </ul>
 </div>
 </div>
@@ -295,7 +280,7 @@ starts processing</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

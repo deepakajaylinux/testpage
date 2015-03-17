@@ -19,13 +19,13 @@ This command helps to determine the usage of copy module. The user will come to 
 
 .. code-block:: bash
         
-	        cleopatra copy help
+	        ptconfigure copy help
 
 The pictorial representation of the copy command screenshot is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra copy help
+ kevell@corp:/# ptconfigure copy help
  ******************************
 
 
@@ -35,8 +35,8 @@ The pictorial representation of the copy command screenshot is listed below,
 
         - put
         Will ask you for details for servers, then copy a file or directory from local to remote
-        example: cleopatra copy put
-        example: cleopatra copy put --yes --source="/tmp/file" --target="/home/user/file"
+        example: ptconfigure copy put
+        example: ptconfigure copy put --yes --source="/tmp/file" --target="/home/user/file"
 
  ------------------------------
  End Help
@@ -51,7 +51,7 @@ When the user needs to copy a file in our source to other destination, the below
 
 .. code-block:: bash
         
-	        cleopatra copy put
+	        ptconfigure copy put
 
 
 The system asks for source file path and target file path.
@@ -59,7 +59,7 @@ The system asks for source file path and target file path.
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra copy put
+ kevell@corp:/# ptconfigure copy put
  Copy files? (Y/N) 
  Y
  Enter source file path
@@ -81,7 +81,7 @@ There is another option, wherein you can give the source and destination path in
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra copy put --yes --source="/kevell.html" --target="/opt"
+ kevell@corp:/# ptconfigure copy put --yes --source="/kevell.html" --target="/opt"
  [Pharaoh Logging] [Copy] Executing cp -r /kevell.html /opt
  ******************************
 
@@ -98,7 +98,7 @@ Alternative Parameter
 
 There are two alternative parameter which can be used in command line Copy , copy.
 
-Eg: cleopatra copy put/ cleopatra Copy help
+Eg: ptconfigure copy put/ ptconfigure Copy help
 
 
 Benefits

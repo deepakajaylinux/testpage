@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Git tools" href="gittools.html" />
     <link rel="prev" title="GitKeySafe" href="gitkeysafe.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="git-lab">
@@ -169,22 +157,22 @@
 <div class="section" id="helpcommand">
 <h2>Helpcommand<a class="headerlink" href="#helpcommand" title="Permalink to this headline">¶</a></h2>
 <p>Help command includes an extensive, console-based help system, reminiscent of man pages in Ubuntu. The help topics include help for installing the dependencies, and libraries redis server. Simple to write the commands without arguments.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra gitlab <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gitlab <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screenshots explains its functions clearly.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra gitlab <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gitlab <span class="nb">help</span>
 ******************************
 
 
  This <span class="nb">command </span>allows you to install a full Git Lab installation on to a server
- The dependencies <span class="k">for</span> GitLab are also installed.
+ The dependencies <span class="k">for </span>GitLab are also installed.
 
  GitLab, gitlab, git-lab
 
        - install
        Installs the latest version of GitLab on a system
-       example: cleopatra gitlab install
+       example: ptconfigure gitlab install
 
 ------------------------------
 End Help
@@ -194,8 +182,8 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp;&nbsp; Installation includes provision of or connection to services required to make the installed equipment ready for operation. It is a revealed process to install git lab module under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra gitlab install
+<p>&nbsp;&nbsp; Installation includes provision of or connection to services required to make the installed equipment ready for operation. It is a revealed process to install git lab module under ptconfigure by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gitlab install
 </pre></div>
 </div>
 <p>After vitalize the command it will catechize input.</p>
@@ -219,15 +207,15 @@ End Help
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install gitlab?(Y/N)</td>
-<td>Instead of using gitlab we can
-use Gitlab,gitlab,git-lab</td>
+<td>We can use Gitlab,
+gitlab, git-lab</td>
 <td>Y(Yes)</td>
 <td>It will install git and set of common
-gitlab under Cleopatra.</td>
+gitlab under ptconfigure.</td>
 </tr>
 <tr class="row-odd"><td>Install gitlab?(Y/N)</td>
-<td>Instead of using gitlab we can
-use Gitlab,gitlab,git-lab|</td>
+<td>We can use Gitlab,
+gitlab, git-lab|</td>
 <td>N(No)</td>
 <td>The system exit the installation</td>
 </tr>
@@ -288,7 +276,7 @@ use Gitlab,gitlab,git-lab|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

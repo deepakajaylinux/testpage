@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="Host Editor" href="hosteditor.html" />
-    <link rel="prev" title="DBInstall" href="dbinstall.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="GitClone" href="gitclone.html" />
+    <link rel="prev" title="Drupal" href="drupal.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,10 +110,10 @@
             
               
                 
-  <li><a href="dbinstall.html"
-         title="Previous Chapter: DBInstall">&laquo; DBInstall</a></li>
-  <li><a href="hosteditor.html"
-         title="Next Chapter: Host Editor">Host Editor &raquo;</a></li>
+  <li><a href="drupal.html"
+         title="Previous Chapter: Drupal">&laquo; Drupal</a></li>
+  <li><a href="gitclone.html"
+         title="Next Chapter: GitClone">GitClone &raquo;</a></li>
               
             
             
@@ -147,19 +147,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="environmentconfig">
@@ -171,34 +159,34 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose of the module, its alternative parameters that are used in declaration. It highlights the three functions of environment configuration which are list, configure, delete. It also specifies the syntax for using three major functions. The syntax used for declaring the help is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot depicts pictorially about the working of help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano EnvironmentConfig <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy EnvironmentConfig <span class="nb">help</span>
 ******************************
 
 
  This <span class="nb">command </span>is part of a default Module and provides you with a method by which you can
- configure environments <span class="k">for</span> your project from the <span class="nb">command </span>line. Currently compliant with
- both Dapperstrano and Cleopatra.
+ configure environments <span class="k">for </span>your project from the <span class="nb">command </span>line. Currently compliant with
+ both ptdeploy and ptconfigure.
 
 
  EnvironmentConfig, environmentconfig, environment-config, envconfig, env-config
 
        - list
        List current environments
-       example: cleopatra envconfig list --yes
+       example: ptconfigure envconfig list --yes
 
        - configure, config
-       Configure the environments <span class="k">for</span> your project to use
-       example: cleopatra envconfig config
-       example: cleopatra envconfig config --keep-current-environments
+       Configure the environments <span class="k">for </span>your project to use
+       example: ptconfigure envconfig config
+       example: ptconfigure envconfig config --keep-current-environments
 
        - delete, del
-       Configure the environments <span class="k">for</span> your project to use
-       example: cleopatra envconfig delete
-       example: cleopatra envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+       Configure the environments <span class="k">for </span>your project to use
+       example: ptconfigure envconfig delete
+       example: ptconfigure envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
 
 
 ------------------------------
@@ -210,7 +198,7 @@ End Help
 <div class="section" id="how-to-configure-the-environment">
 <h2>How to Configure the environment<a class="headerlink" href="#how-to-configure-the-environment" title="Permalink to this headline">¶</a></h2>
 <p>For the purpose of configuring the environments the user can use the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig config
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig config
 </pre></div>
 </div>
 <p>After inputting the command above the following operations takes place as shown:</p>
@@ -229,11 +217,11 @@ End Help
 <p>Add Another Server? (Y/N)</p>
 <p>The user have to input Y or N.</p>
 <p>Finally, the environment configuration gets success as depicted in the below screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra envconfig config
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig config
 Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
-Environment <span class="m">1</span>  :
-Default Settings <span class="k">for</span> Any App not setup <span class="k">for</span> environment  enter them now.
+Environment 1  :
+Default Settings <span class="k">for </span>Any App not setup <span class="k">for </span>environment  enter them now.
 Value <span class="k">for</span>: Name of this Environment
 kevells
 Value <span class="k">for</span>: Default Temp Dir <span class="o">(</span>should usually be /tmp/<span class="o">)</span>
@@ -256,7 +244,7 @@ In Environment Configuration
 </pre></div>
 </div>
 <p>While configuring an environment, if the user wish to configure with current environment , they can use the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig config --keep-current-environments
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig config --keep-current-environments
 </pre></div>
 </div>
 <p>After inputting the command above, it will asks the following details as shown in the tabular format:</p>
@@ -310,7 +298,7 @@ input as N.|</td>
 </tbody>
 </table>
 <p>The following screenshot pictorially represents the above mentioned process:</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano envconfig config --keep-current-environments
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy envconfig config --keep-current-environments
 Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
@@ -329,23 +317,23 @@ In Environment Configuration
 <div class="section" id="how-to-delete-environment-configuration">
 <h2>How to Delete environment configuration<a class="headerlink" href="#how-to-delete-environment-configuration" title="Permalink to this headline">¶</a></h2>
 <p>If the user needs to delete the environment configuration, they can input the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
 </pre></div>
 </div>
 <p>The user can specify the name of the environment they wish to delete as shown above.</p>
 <p>After inputting the command above, it will ask</p>
 <p>Step 1: Delete Environments Here?</p>
 <p>and shows a warning message as</p>
-<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
 </pre></div>
 </div>
 <p>The user has to specify Y or N</p>
 <p>Step 2: Environment Kevells(Name of the specified environment that is supposed to delete) found. Are you sure want to delete it? (Y/N)</p>
 <p>The user has to specify Y or N</p>
 <p>Finally, the specified environment gets deleted as shown in the screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
 Delete Environments Here?
-WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 Environment kevells found. Are you sure you want to delete it? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
@@ -359,23 +347,23 @@ In Environment Configuration
 </pre></div>
 </div>
 <p>Another way of deleting an environment by without specifying the name of the environment is as shown by using the command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig delete
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig delete
 </pre></div>
 </div>
 <p>After inputting the command above, it will ask</p>
 <p>Step 1: Delete Environments Here?</p>
 <p>and shows a warning message as</p>
-<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
 </pre></div>
 </div>
 <p>The user has to specify Y or N</p>
 <p>Finally, the environment gets deleted as shown in the screenshot:</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano envconfig delete
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy envconfig delete
 Delete Environments Here?
-WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for </span>boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
 Y
-PHP Notice:  Undefined index: environment-name in /opt/dapperstrano/dapperstrano/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
-PHP Notice:  Undefined index: environment-name in /opt/dapperstrano/dapperstrano/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
+PHP Notice:  Undefined index: environment-name in /opt/ptdeploy/ptdeploy/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
+PHP Notice:  Undefined index: environment-name in /opt/ptdeploy/ptdeploy/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
 ******************************
 
 
@@ -388,13 +376,13 @@ In Environment Configuration
 <div class="section" id="how-to-list-environment-configuration">
 <h2>How to list environment configuration<a class="headerlink" href="#how-to-list-environment-configuration" title="Permalink to this headline">¶</a></h2>
 <p>If the user wish to view the list of details regarding the environment configuration, they can input as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano envconfig list
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy envconfig list
 </pre></div>
 </div>
 <p>After inputting the command above, it will asks</p>
 <p>List Environment Here? (Y/N)</p>
 <p>if the user specifies as Y, it will generate the display of output as shown in the screenshot:</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano envconfig list
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy envconfig list
 List Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 ******************************
@@ -467,7 +455,8 @@ In Environment Configuration
 <ul class="simple">
 <li>It is well-to-do in both cent OS and as well as in ubuntu.</li>
 <li>The parameters used in declaration are not case sensitive which is an added advantage while compared to others.</li>
-<li>This module leads the users how to configure the environment, how to delete the unwanted environment, how to use the list option for listing   the available environments.</li>
+<li>This module leads the users how to configure the environment, how to delete the unwanted environment, how to use the list option for
+listing   the available environments.</li>
 </ul>
 </div>
 </div>
@@ -507,7 +496,7 @@ In Environment Configuration
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

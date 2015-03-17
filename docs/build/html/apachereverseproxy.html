@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Apache Reverse proxy modules &mdash; KEVELL 0.1 documentation</title>
+    <title>ApacheReverseProxyModules &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="ApacheServer" href="apacheserver.html" />
-    <link rel="prev" title="Apache Module" href="ApacheModules.html" />
+    <link rel="prev" title="ApacheModules" href="ApacheModules.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -92,10 +92,11 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Apache Reverse proxy modules</a><ul>
+<li><a class="reference internal" href="#">ApacheReverseProxyModules</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#benefits-to-the-users">Benefits to the users</a></li>
 </ul>
 </li>
@@ -108,7 +109,7 @@
               
                 
   <li><a href="ApacheModules.html"
-         title="Previous Chapter: Apache Module">&laquo; Apache Module</a></li>
+         title="Previous Chapter: ApacheModules">&laquo; ApacheModules</a></li>
   <li><a href="apacheserver.html"
          title="Next Chapter: ApacheServer">ApacheServer &raquo;</a></li>
               
@@ -144,36 +145,24 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
-  <div class="section" id="apache-reverse-proxy-modules">
-<h1>Apache Reverse proxy modules<a class="headerlink" href="#apache-reverse-proxy-modules" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="apachereverseproxymodules">
+<h1>ApacheReverseProxyModules<a class="headerlink" href="#apachereverseproxymodules" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <p>This module aims at installing the library functions. While installing the library functions, it will check the availability of already existing library functions. It helps in managing and configuring the application settings. The user can specify the default values for application settings.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command guides the user get aware of the uses, and also the options and actions that can be performed.
+<p>The help command guides the user get aware of the uses, and also the options and actions that can be performed. It lists outs the alternative
 The coding to make use of help command under Apache Reverse proxy module, is given as follows</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra ApacheReverseProxyModules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ApacheReverseProxyModules <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The screen shot shown below gives you an pictorial representation of help command usage.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp/# cleopatra ApacheReverseProxyModules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp/# ptconfigure ApacheReverseProxyModules <span class="nb">help</span>
 ******************************
 
 
@@ -185,7 +174,7 @@ apache-load-balancer-modules
 
 - install
       Installs Load Balancer/Reverse Proxy Apache Modules
-      example: cleopatra apache-lb-mods install
+      example: ptconfigure apache-lb-mods install
 
 ------------------------------
 End Help
@@ -195,48 +184,62 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>If the user wish to install the apache reverse proxy module to their system they can input the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ApacheReverseProxyModules install
+</pre></div>
+</div>
+</div>
+<div class="section" id="option">
+<h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="55%" />
-<col width="14%" />
-<col width="31%" />
+<col width="22%" />
+<col width="39%" />
+<col width="10%" />
+<col width="29%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Required</th>
 <th class="head">Comment</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install Reverse Proxy
-Apache Modules (In the place of Reverse
-Proxy Apache Modules the user can also
-specify the following parameters:
-ApacheReverseProxyModules,apache-lb-mods
-a pacheproxymodules ,apache-proxy-mods
-apache-lb-mods,apache-load-balancer-modules
-apache-reverse-proxy-modules,apache-proxy-mods</td>
-<td>Yes</td>
-<td>This command will install
-the apache rev proxy
-module</td>
-</tr>
-<tr class="row-odd"><td>Install ApacheReverseProxyModules (Y/N)</td>
+<tr class="row-even"><td>Install ReverseProxy
+ApacheModules (Y/N)</td>
+<td>Instead of ReverseProxy Apache Modules
+the user can also specify the
+following parameters:
+ApacheReverseProxyModules,
+apache-reverse-proxy-modules, apache-
+proxy-mods, apacheproxymodules,
+apache-lb-mods, apache-load-balancer,
+modules</td>
 <td>Y(Yes)</td>
-<td>If the user input as Y,the
-apache reverse proxy
-module will be installed.</td>
+<td>If the user inputs as Y, the
+apache reverse proxy module
+will be installed</td>
 </tr>
-<tr class="row-even"><td>Install ApacheReverseProxyModules (Y/N)</td>
-<td>N(NO)</td>
-<td>If the user inputs as N,the
-process will gets quit from
-installation.|</td>
+<tr class="row-odd"><td>Install ReverseProxy
+ApacheModules (Y/N)</td>
+<td>Instead of ReverseProxy Apache Modules
+the user can also specify the
+following parameters:
+ApacheReverseProxyModules,
+apache-reverse-proxy-modules, apache-
+proxy-mods, apacheproxymodules,
+apache-lb-mods, apache-load-balancer,
+modules|</td>
+<td>N(No)</td>
+<td>If the user inputs as N, the
+process will gets quits
+from installation.</td>
 </tr>
 </tbody>
 </table>
 <p>While installing the Reverse Proxy Modules, it will reads the package lists, state information, builds the dependency tree. If any packages are missing, the new packages will be installed. The screenshot shown below will explains the process of installation graphically.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/#: cleopatra ApacheReverseProxyModules install
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/#: ptconfigure ApacheReverseProxyModules install
 Install Apache Rev. Proxy Modules? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -248,127 +251,127 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
  libapache2-mod-proxy-html
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">229</span> not upgraded.
+0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
 Need to get 1,464 B of archives.
 After this operation, 22.5 kB of additional disk space will be used.
 Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/universe libapache2-mod-proxy-html amd64 1:2.4.7-1ubuntu4.1 <span class="o">[</span>1,464 B<span class="o">]</span>
 Fetched 1,464 B in 1s <span class="o">(</span>1,323 B/s<span class="o">)</span>
 Selecting previously unselected package libapache2-mod-proxy-html.
-<span class="o">(</span>Reading database ... <span class="m">181545</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 181545 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../libapache2-mod-proxy-html_1%3a2.4.7-1ubuntu4.1_amd64.deb ...
 Unpacking libapache2-mod-proxy-html <span class="o">(</span>1:2.4.7-1ubuntu4.1<span class="o">)</span> ...
 Setting up libapache2-mod-proxy-html <span class="o">(</span>1:2.4.7-1ubuntu4.1<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package libapache2-mod-proxy-html from the Packager Apt executed correctly
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package libxml2-dev from the Packager Apt is already installed, so not installing
-Creating /tmp/cleopatra-temp-script-49127207421.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-49127207421.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-49127207421.sh Permissions
-Executing /tmp/cleopatra-temp-script-49127207421.sh
-Considering dependency proxy_balancer <span class="k">for</span> lbmethod_byrequests:
-Considering dependency proxy <span class="k">for</span> proxy_balancer:
+Creating /tmp/ptconfigure-temp-script-49127207421.sh
+chmod 755 /tmp/ptconfigure-temp-script-49127207421.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-49127207421.sh Permissions
+Executing /tmp/ptconfigure-temp-script-49127207421.sh
+Considering dependency proxy_balancer <span class="k">for </span>lbmethod_byrequests:
+Considering dependency proxy <span class="k">for </span>proxy_balancer:
 Enabling module proxy.
-Considering dependency <span class="nb">alias </span><span class="k">for</span> proxy_balancer:
+Considering dependency <span class="nb">alias </span><span class="k">for </span>proxy_balancer:
 Module <span class="nb">alias </span>already enabled
-Considering dependency slotmem_shm <span class="k">for</span> proxy_balancer:
+Considering dependency slotmem_shm <span class="k">for </span>proxy_balancer:
 Enabling module slotmem_shm.
 Enabling module proxy_balancer.
 Enabling module lbmethod_byrequests.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-49127207421.sh Removed
-Creating /tmp/cleopatra-temp-script-12740464083.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-12740464083.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-12740464083.sh Permissions
-Executing /tmp/cleopatra-temp-script-12740464083.sh
+Temp File /tmp/ptconfigure-temp-script-49127207421.sh Removed
+Creating /tmp/ptconfigure-temp-script-12740464083.sh
+chmod 755 /tmp/ptconfigure-temp-script-12740464083.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-12740464083.sh Permissions
+Executing /tmp/ptconfigure-temp-script-12740464083.sh
 Module proxy already enabled
-Temp File /tmp/cleopatra-temp-script-12740464083.sh Removed
-Creating /tmp/cleopatra-temp-script-61839737362.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-61839737362.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-61839737362.sh Permissions
-Executing /tmp/cleopatra-temp-script-61839737362.sh
-Considering dependency proxy <span class="k">for</span> proxy_http:
+Temp File /tmp/ptconfigure-temp-script-12740464083.sh Removed
+Creating /tmp/ptconfigure-temp-script-61839737362.sh
+chmod 755 /tmp/ptconfigure-temp-script-61839737362.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-61839737362.sh Permissions
+Executing /tmp/ptconfigure-temp-script-61839737362.sh
+Considering dependency proxy <span class="k">for </span>proxy_http:
 Module proxy already enabled
 Enabling module proxy_http.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-61839737362.sh Removed
-Creating /tmp/cleopatra-temp-script-22752304452.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-22752304452.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-22752304452.sh Permissions
-Executing /tmp/cleopatra-temp-script-22752304452.sh
+Temp File /tmp/ptconfigure-temp-script-61839737362.sh Removed
+Creating /tmp/ptconfigure-temp-script-22752304452.sh
+chmod 755 /tmp/ptconfigure-temp-script-22752304452.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-22752304452.sh Permissions
+Executing /tmp/ptconfigure-temp-script-22752304452.sh
 ERROR: Module mod_proxy_http does not exist!
-Temp File /tmp/cleopatra-temp-script-22752304452.sh Removed
-Creating /tmp/cleopatra-temp-script-19250932602.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-19250932602.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-19250932602.sh Permissions
-Executing /tmp/cleopatra-temp-script-19250932602.sh
-Considering dependency proxy <span class="k">for</span> proxy_ftp:
+Temp File /tmp/ptconfigure-temp-script-22752304452.sh Removed
+Creating /tmp/ptconfigure-temp-script-19250932602.sh
+chmod 755 /tmp/ptconfigure-temp-script-19250932602.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-19250932602.sh Permissions
+Executing /tmp/ptconfigure-temp-script-19250932602.sh
+Considering dependency proxy <span class="k">for </span>proxy_ftp:
 Module proxy already enabled
 Enabling module proxy_ftp.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-19250932602.sh Removed
-Creating /tmp/cleopatra-temp-script-38556602379.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-38556602379.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-38556602379.sh Permissions
-Executing /tmp/cleopatra-temp-script-38556602379.sh
-Considering dependency proxy <span class="k">for</span> proxy_connect:
+Temp File /tmp/ptconfigure-temp-script-19250932602.sh Removed
+Creating /tmp/ptconfigure-temp-script-38556602379.sh
+chmod 755 /tmp/ptconfigure-temp-script-38556602379.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-38556602379.sh Permissions
+Executing /tmp/ptconfigure-temp-script-38556602379.sh
+Considering dependency proxy <span class="k">for </span>proxy_connect:
 Module proxy already enabled
 Enabling module proxy_connect.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-38556602379.sh Removed
-Creating /tmp/cleopatra-temp-script-85272088847.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-85272088847.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-85272088847.sh Permissions
-Executing /tmp/cleopatra-temp-script-85272088847.sh
-Considering dependency proxy <span class="k">for</span> proxy_ajp:
+Temp File /tmp/ptconfigure-temp-script-38556602379.sh Removed
+Creating /tmp/ptconfigure-temp-script-85272088847.sh
+chmod 755 /tmp/ptconfigure-temp-script-85272088847.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-85272088847.sh Permissions
+Executing /tmp/ptconfigure-temp-script-85272088847.sh
+Considering dependency proxy <span class="k">for </span>proxy_ajp:
 Module proxy already enabled
 Enabling module proxy_ajp.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-85272088847.sh Removed
-Creating /tmp/cleopatra-temp-script-31029043648.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-31029043648.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-31029043648.sh Permissions
-Executing /tmp/cleopatra-temp-script-31029043648.sh
-Considering dependency proxy <span class="k">for</span> proxy_wstunnel:
+Temp File /tmp/ptconfigure-temp-script-85272088847.sh Removed
+Creating /tmp/ptconfigure-temp-script-31029043648.sh
+chmod 755 /tmp/ptconfigure-temp-script-31029043648.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-31029043648.sh Permissions
+Executing /tmp/ptconfigure-temp-script-31029043648.sh
+Considering dependency proxy <span class="k">for </span>proxy_wstunnel:
 Module proxy already enabled
 Enabling module proxy_wstunnel.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-31029043648.sh Removed
-Creating /tmp/cleopatra-temp-script-2400353229.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-2400353229.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-2400353229.sh Permissions
-Executing /tmp/cleopatra-temp-script-2400353229.sh
-Considering dependency proxy <span class="k">for</span> proxy_balancer:
+Temp File /tmp/ptconfigure-temp-script-31029043648.sh Removed
+Creating /tmp/ptconfigure-temp-script-2400353229.sh
+chmod 755 /tmp/ptconfigure-temp-script-2400353229.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-2400353229.sh Permissions
+Executing /tmp/ptconfigure-temp-script-2400353229.sh
+Considering dependency proxy <span class="k">for </span>proxy_balancer:
 Module proxy already enabled
-Considering dependency <span class="nb">alias </span><span class="k">for</span> proxy_balancer:
+Considering dependency <span class="nb">alias </span><span class="k">for </span>proxy_balancer:
 Module <span class="nb">alias </span>already enabled
-Considering dependency slotmem_shm <span class="k">for</span> proxy_balancer:
+Considering dependency slotmem_shm <span class="k">for </span>proxy_balancer:
 Module slotmem_shm already enabled
 Module proxy_balancer already enabled
-Temp File /tmp/cleopatra-temp-script-2400353229.sh Removed
-Creating /tmp/cleopatra-temp-script-88564779807.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-88564779807.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-88564779807.sh Permissions
-Executing /tmp/cleopatra-temp-script-88564779807.sh
+Temp File /tmp/ptconfigure-temp-script-2400353229.sh Removed
+Creating /tmp/ptconfigure-temp-script-88564779807.sh
+chmod 755 /tmp/ptconfigure-temp-script-88564779807.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-88564779807.sh Permissions
+Executing /tmp/ptconfigure-temp-script-88564779807.sh
 Enabling module cache.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-88564779807.sh Removed
-Creating /tmp/cleopatra-temp-script-68936090528.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-68936090528.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-68936090528.sh Permissions
-Executing /tmp/cleopatra-temp-script-68936090528.sh
+Temp File /tmp/ptconfigure-temp-script-88564779807.sh Removed
+Creating /tmp/ptconfigure-temp-script-68936090528.sh
+chmod 755 /tmp/ptconfigure-temp-script-68936090528.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-68936090528.sh Permissions
+Executing /tmp/ptconfigure-temp-script-68936090528.sh
 Enabling module headers.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-68936090528.sh Removed
+Temp File /tmp/ptconfigure-temp-script-68936090528.sh Removed
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Restarting apache2 service
 Output of config <span class="nb">test </span>was:
-apache2: Syntax error on line <span class="m">214</span> of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or dir ectory.
+apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or dir ectory.
 Action <span class="s1">&#39;configtest&#39;</span> failed.
 The Apache error log may have more information.
 * Restarting web server apache2
@@ -376,7 +379,7 @@ The Apache error log may have more information.
 * The apache2 configtest failed.
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -396,6 +399,8 @@ Installer Finished
 <li>The reverse proxy forwards to a fixed destination on behalf of arbitrary clients.</li>
 <li>It will incorporates the content that is hosted from one server into a larger website.</li>
 <li>It helps in configuring the applications settings.</li>
+<li>It is well-to-do in Cent OS and as well as in ubuntu.</li>
+<li>The parameters used in declaration is not case sensitive, which is an added advantage.</li>
 </ul>
 </div>
 </div>
@@ -435,7 +440,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>
@@ -457,7 +462,7 @@ Installer Finished
         <li>
           Go to
         <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/apachereverseproxy.rst">
-          Apache Reverse proxy modules
+          ApacheReverseProxyModules
         </a> on GitHub.
       </li>
 

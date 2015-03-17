@@ -13,14 +13,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra Phpedit help
+		ptconfigure Phpedit help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Phpedit.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPEdit help
+ kevell@corp:/# ptconfigure PHPEdit help
 
  ******************************
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest version of PHPEdit
-        example: cleopatra phpedit install
+        example: ptconfigure phpedit install
 
  ------------------------------
  End Help
@@ -45,7 +45,7 @@ PHPEdit comes with a lot of extensions, frameworks, help files and tools, so it 
 
 .. code-block:: bash
 
-		cleopatra Phpedit install
+		ptconfigure Phpedit install
 
 The screen shot makes clear about this module.
 
@@ -62,11 +62,11 @@ Option
  +------------------------------+----------------------------------+------------------+------------------------------------------------+
  | Parameters			| Alternative Parameters	   | Options	      | Comments				       |
  +==============================+==================================+==================+================================================+
- |Install phpedit? (Y/N)        | In Spite of PHP-Edit, the        | Y		      | The user wish to proceed the installation      |
+ |Install phpedit? (Y/N)        | Instead of PHP-Edit, the         | Y		      | The user wish to proceed the installation      |
  | 			        | following alternatives can also  |                  | process.				       |
  |				| be used: phpedit,PHPEdit         | 		      |						       |
  +------------------------------+----------------------------------+------------------+------------------------------------------------+
- |Install phpedit? (Y/N)        | In Spite of PHP-Edit, the        | Y                | The user wish to quit the installation         |
+ |Install phpedit? (Y/N)        | Instead of PHP-Edit, the         | N                | The user wish to quit the installation         |
  |                              | following alternatives can also  |                  | process.                                       |
  |                              | be used: phpedit,PHPEdit        ||                  |                                                |
  +------------------------------+----------------------------------+------------------+------------------------------------------------+

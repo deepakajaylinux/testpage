@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHPVM" href="phpvm.html" />
     <link rel="prev" title="PHPStorm" href="phpstorm.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="php-unit">
@@ -168,15 +156,31 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the PHP unit module. It also describes the syntax for installing PHP unit. The help command for PHP unit module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPUnit <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPUnit <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHP unit.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPUnit <span class="nb">help</span>
+******************************
+
+ This <span class="nb">command </span>allows you to install PHPUnit from a GC Repo.
+
+ PHPUnit
+
+       - install
+       Installs the latest GC Repo version of PHPUnit
+       example: ptconfigure phpunit install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the PHP unit to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPUnit install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPUnit install
 </pre></div>
 </div>
 <p>After inputting the command above, the following operations occurs as shown in the tabular format.</p>
@@ -207,8 +211,8 @@ as N.|</td>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="18%" />
-<col width="18%" />
-<col width="18%" />
+<col width="19%" />
+<col width="17%" />
 <col width="46%" />
 </colgroup>
 <thead valign="bottom">
@@ -251,6 +255,95 @@ specify they own location.|</td>
 </tbody>
 </table>
 <p>Finally, the installation of PHP unit is completed. The following screenshot depicts visually about the process of installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure phpunit install
+Install PHP Unit ? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*          PHP Unit !         *
+*******************************
+What is the program data directory? Found <span class="s2">&quot;/opt/phpunit&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
+
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
+
+git clone -b 3.5 <span class="s1">&#39;https://github.com/sebastianbergmann/phpunit.git&#39;</span>  /tmp/phpunit/phpunitCloning into <span class="s1">&#39;/tmp/phpunit/phpunit&#39;</span>...
+
+remote: Counting objects: 50529, <span class="k">done</span>.
+Receiving objects:  71% <span class="o">(</span>35876/50529<span class="o">)</span>, 12.02 MiB | 41.00 KiB/s
+Receiving objects:  95% <span class="o">(</span>48003/50529<span class="o">)</span>, 16.82 MiB | 38.00 KiB/s
+Receiving objects:  95% <span class="o">(</span>48254/50529<span class="o">)</span>, 16.86 MiB | 40.00 KiB/s
+Receiving objects:  96% <span class="o">(</span>48508/50529<span class="o">)</span>, 16.95 MiB | 43.00 KiB/s
+
+
+
+remote: Total 50529 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>50529/50529<span class="o">)</span>, 17.91 MiB | 36.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>26834/26834<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.0 <span class="s1">&#39;https://github.com/sebastianbergmann/dbunit.git&#39;</span>  /tmp/phpunit/dbunitCloning into <span class="s1">&#39;/tmp/phpunit/dbunit&#39;</span>...
+remote: Counting objects: 4596, <span class="k">done</span>.
+remote: Total 4596 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>4596/4596<span class="o">)</span>, 1.04 MiB | 31.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>3183/3183<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.2 <span class="s1">&#39;https://github.com/sebastianbergmann/php-file-iterator.git&#39;</span>  /tmp/phpunit/php-file-iteratorCloning into <span class="s1">&#39;/tmp/phpunit/php-file-iterator&#39;</span>...
+remote: Counting objects: 453, <span class="k">done</span>.
+remote: Total 453 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>453/453<span class="o">)</span>, 60.66 KiB | 16.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>188/188<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.0 <span class="s1">&#39;https://github.com/sebastianbergmann/php-code-coverage.git&#39;</span>  /tmp/phpunit/php-code-coverageCloning into <span class="s1">&#39;/tmp/phpunit/php-code-coverage&#39;</span>...
+remote: Counting objects: 7650, <span class="k">done</span>.
+remote: Total 7650 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>7650/7650<span class="o">)</span>, 2.77 MiB | 17.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>3671/3671<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.0 <span class="s1">&#39;https://github.com/sebastianbergmann/php-token-stream.git&#39;</span>  /tmp/phpunit/php-token-streamCloning into <span class="s1">&#39;/tmp/phpunit/php-token-stream&#39;</span>...
+remote: Counting objects: 1234, <span class="k">done</span>.
+remote: Total 1234 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>1234/1234<span class="o">)</span>, 201.76 KiB | 41.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>565/565<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.0 <span class="s1">&#39;https://github.com/sebastianbergmann/phpunit-mock-objects.git&#39;</span>  /tmp/phpunit/phpunit-mock-objectsCloning into <span class="s1">&#39;/tmp/phpunit/phpunit-mock-objects&#39;</span>...
+remote: Counting objects: 4703, <span class="k">done</span>.
+remote: Total 4703 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>4703/4703<span class="o">)</span>, 837.24 KiB | 104.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>2910/2910<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone -b 1.0 <span class="s1">&#39;https://github.com/sebastianbergmann/phpunit-selenium.git&#39;</span>  /tmp/phpunit/phpunit-seleniumCloning into <span class="s1">&#39;/tmp/phpunit/phpunit-selenium&#39;</span>...
+remote: Counting objects: 8115, <span class="k">done</span>.
+remote: Total 8115 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>8115/8115<span class="o">)</span>, 2.07 MiB | 28.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>4762/4762<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone <span class="s1">&#39;https://github.com/phpengine/ptconfigure-phpunit-php-timer&#39;</span>  /tmp/phpunit/php-timerCloning into <span class="s1">&#39;/tmp/phpunit/php-timer&#39;</span>...
+remote: Counting objects: 253, <span class="k">done</span>.
+remote: Total 253 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>253/253<span class="o">)</span>, 31.55 KiB | 12.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>126/126<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+git clone <span class="s1">&#39;https://github.com/sebastianbergmann/php-text-template.git&#39;</span>  /tmp/phpunit/php-text-templateCloning into <span class="s1">&#39;/tmp/phpunit/php-text-template&#39;</span>...
+remote: Counting objects: 209, <span class="k">done</span>.
+remote: Total 209 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>209/209<span class="o">)</span>, 33.69 KiB | 16.00 KiB/s, <span class="k">done</span>.
+Resolving deltas: 100% <span class="o">(</span>92/92<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+Program Data folder populated
+Program Executor Deleted <span class="k">if </span>existed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+PHPUnit35: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -298,7 +391,7 @@ specify they own location.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

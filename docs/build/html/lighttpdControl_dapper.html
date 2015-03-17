@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
     <link rel="next" title="Logging" href="logging_dapper.html" />
-    <link rel="prev" title="Host Editor" href="hosteditor.html" />
+    <link rel="prev" title="Joomla" href="joomla.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -111,8 +111,8 @@
             
               
                 
-  <li><a href="hosteditor.html"
-         title="Previous Chapter: Host Editor">&laquo; Host Editor</a></li>
+  <li><a href="joomla.html"
+         title="Previous Chapter: Joomla">&laquo; Joomla</a></li>
   <li><a href="logging_dapper.html"
          title="Next Chapter: Logging">Logging &raquo;</a></li>
               
@@ -148,35 +148,23 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="lighttpdcontrol">
 <h1>LighttpdControl<a class="headerlink" href="#lighttpdcontrol" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>Lighttpd is a secure, fast, compliant, and very flexible web-server that has been optimized for high-performance environments. Lighttpd which is rapidly redefining efficiency of a dapperstrano; as it is designed and optimized for high performance environments. With a small memory footprint compared to other web-servers, effective management of the cpu-load, and advanced feature set lighttpd is the perfect solution for every server that is suffering load problems. This is suitable to work with Ubuntu and cent OS.</p>
+<p>Lighttpd is a secure, fast, compliant, and very flexible web-server that has been optimized for high-performance environments. Lighttpd which is rapidly redefining efficiency of a ptdeploy; as it is designed and optimized for high performance environments. With a small memory footprint compared to other web-servers, effective management of the cpu-load, and advanced feature set lighttpd is the perfect solution for every server that is suffering load problems. This is suitable to work with Ubuntu and cent OS.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>Help is used to access the information about lighttpd. For quick reference with the help commands in any of the versions of dapperstrano you can also use the help command. The help command is an internal command and is available in the dapperstrano module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano lighttpdcontrol <span class="nb">help</span>
+<p>Help is used to access the information about lighttpd. For quick reference with the help commands in any of the versions of ptdeploy you can also use the help command. The help command is an internal command and is available in the ptdeploy module.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol <span class="nb">help</span>
 </pre></div>
 </div>
-<p>The following screenshot assists the user to servitude with dapperstrano.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano LighttpdControl <span class="nb">help</span>
+<p>The following screenshot assists the user to servitude with ptdeploy.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy LighttpdControl <span class="nb">help</span>
 ******************************
 
 
@@ -186,23 +174,23 @@
 
          - start
          Start the Lighttpd server
-         example: dapperstrano lighttpdcontrol start
-         example: dapperstrano lighttpdcontrol start --yes
+         example: ptdeploy lighttpdcontrol start
+         example: ptdeploy lighttpdcontrol start --yes
 
          - stop
          Stop the Lighttpd server
-         example: dapperstrano lighttpdcontrol stop
-         example: dapperstrano lighttpdcontrol stop --yes
+         example: ptdeploy lighttpdcontrol stop
+         example: ptdeploy lighttpdcontrol stop --yes
 
          - restart
          Restart the Lighttpd server
-         example: dapperstrano lighttpdcontrol restart
-         example: dapperstrano lighttpdcontrol restart --yes
+         example: ptdeploy lighttpdcontrol restart
+         example: ptdeploy lighttpdcontrol restart --yes
 
          - reload
          Reloads the Lighttpd server configuration without restarting
-         example: dapperstrano lighttpdcontrol reload
-         example: dapperstrano lighttpdcontrol reload --yes
+         example: ptdeploy lighttpdcontrol reload
+         example: ptdeploy lighttpdcontrol reload --yes
 
 ------------------------------
 End Help
@@ -217,9 +205,9 @@ End Help
 </div>
 <div class="section" id="start">
 <h2>Start<a class="headerlink" href="#start" title="Permalink to this headline">¶</a></h2>
-<p>Start option used to start the lighttpd server. Lighttpdcontrol is an interactive session that is run with the dapperstrano module option. Depending on how the server is run, the start command might be stored in a script, in the Linux registry.</p>
+<p>Start option used to start the lighttpd server. Lighttpdcontrol is an interactive session that is run with the ptdeploy module option. Depending on how the server is run, the start command might be stored in a script, in the Linux registry.</p>
 <p>The server can be started using a simple command with an option to connect back to control server to obtain additional options.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano lighttpdcontrol start
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol start
 </pre></div>
 </div>
 <p>after typing the command, it allows the user to start the lighttpd server functioning.</p>
@@ -227,7 +215,7 @@ End Help
 <div class="section" id="stop">
 <h2>Stop<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
 <p>This stop option used to stop the lighttpd service. Specifically Ubuntu Linux, the stop command calls the lighttpd to stop a job that is running on the system. It is equivalent to the command service stop. Below is a complete description of stop command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano lighttpdcontrol stop
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol stop
 </pre></div>
 </div>
 <p>After input as the above command, the service stops the function.</p>
@@ -235,7 +223,7 @@ End Help
 <div class="section" id="restart">
 <h2>Restart<a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h2>
 <p>The term restart refers to an operating system closing all programs before a warm restart the lighttpd server. Restart is sometimes necessary to recover from an error, or to re-initialize drivers or hardware devices. A computer storage program would normally perform a restart with the following simple command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano lighttpdcontrol restart
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol restart
 </pre></div>
 </div>
 <p>After input as the above command, the service restart the lighttpd service.</p>
@@ -243,7 +231,7 @@ End Help
 <div class="section" id="reload">
 <h2>Reload<a class="headerlink" href="#reload" title="Permalink to this headline">¶</a></h2>
 <p>Reload means things are changing. The lighttpd is undergoing an overhaul and a clean-up. It facilitates the reuse of lighttpd and services. Without kill the process it can reload lighttpd. The following command assis the user to reload. Along with the command if the user use yes.. options without asking any questions automatically it can function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano lighttpdcontrol reload
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol reload
 </pre></div>
 </div>
 </div>
@@ -296,7 +284,7 @@ End Help
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -16,9 +16,9 @@ Help Command
 
 The help command guides the users regarding the purpose and as well as about the options that are included in the AWStats module. It lists out the alternative parameters of AWStats module. It also describes the syntax for installing the AWStats module. The help command for AWStats module is shown as below.
 
-.. code-block:: bash
+.. code-block:: bash	
 	
-		cleopatra AWStats help
+		ptconfigure AWStats help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under AWStats.
@@ -31,7 +31,7 @@ The command used for installing the AWStats to the users machine is shown below.
 
 .. code-block:: bash
 
-		cleopatra AWStats install
+		ptconfigure AWStats install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
@@ -60,6 +60,11 @@ If the user proceeds the installation, the following process are involved while 
 * Installs the new packages.
 
 Finally, the installation of Awstats gets completed successfully as depicted in the following screenshots:
+
+.. code-block:: bash
+
+
+
 
 Features of Awstats
 -------------------------
@@ -201,7 +206,8 @@ Benefits
 -----------
 
 
-* The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while compared  to others.
+* The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while
+  compared to others.
 * It is well-to-do in both Ubuntu and as well as Cent OS.
 * This will module installs the Awstats in updated version.
 * If the module is already existing in the user machine it will display a message as it is already existing.

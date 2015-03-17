@@ -11,18 +11,18 @@ PhpCodeBeautifier is a module which avoid the user of spending hours on reformat
 Help command
 ------------------------
 
-The help command leads the users regarding the purpose and as well as about the options that are included in the PhpCodeBeautifier modules. The help command lists out the alternative parameters of System detection under Cleopatra module. It also describes the syntax for installing the user’s code beautifier. The help command for PhpCodeBeautifier is shown below.
+The help command leads the users regarding the purpose and as well as about the options that are included in the PhpCodeBeautifier modules. The help command lists out the alternative parameters of php code under ptconfigure module. It also describes the syntax for installing the user’s code beautifier. The help command for PhpCodeBeautifier is shown below.
 
 .. code-block:: bash
 
-		cleopatra PHPCodeBeautifier help
+		ptconfigure PHPCodeBeautifier help
 
-The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under the syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under system detection.
+The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under the syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under php code.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPCodeBeautifier help
+ kevell@corp:/# ptconfigure PHPCodeBeautifier help
 
 
  ******************************
@@ -33,7 +33,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
         - install
         Installs the latest version of PHPCodeBeautifier
-        example: cleopatra PHPCodeBeautifier install
+        example: ptconfigure PHPCodeBeautifier install
 
  ------------------------------
  End Help
@@ -48,7 +48,7 @@ Installation typically involves code being copied/generated from the installatio
 
 .. code-block:: bash
 
-	cleopatra PhpCodeBeautifier install
+	ptconfigure PhpCodeBeautifier install
 
 While installing this module the following screen shot will be appeared.
 
@@ -56,7 +56,7 @@ While installing this module the following screen shot will be appeared.
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra PHPCodeBeautifier install
+ kevell@corp:/# ptconfigure PHPCodeBeautifier install
 
  Install PHPCodeBeautifier? (Y/N) 
  y
@@ -65,10 +65,10 @@ While installing this module the following screen shot will be appeared.
  *         PHPCodeBeautifier!        *
  *******************************
  [Pharaoh Logging] Package php-pear from the Packager Apt is already installed, so not installing
- Creating /tmp/cleopatra-temp-script-47226840682.sh
- chmod 755 /tmp/cleopatra-temp-script-47226840682.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-47226840682.sh Permissions
- Executing /tmp/cleopatra-temp-script-47226840682.sh
+ Creating /tmp/ptconfigure-temp-script-47226840682.sh
+ chmod 755 /tmp/ptconfigure-temp-script-47226840682.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-47226840682.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-47226840682.sh
  PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open shared object file: No such file or directory in Unknown on line 0
  WARNING: "pear/Console_Getopt" is deprecated in favor of "pear/Console_GetoptPlus"
  Did not download optional dependencies: pear/PHP_DocBlockGenerator, use --alldeps to download automatically
@@ -87,7 +87,7 @@ While installing this module the following screen shot will be appeared.
  ...done: 46,725 bytes
  install ok: channel://pear.php.net/Log-1.12.8
  install ok: channel://pear.php.net/PHP_Beautifier-0.1.15
- Temp File /tmp/cleopatra-temp-script-47226840682.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-47226840682.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -112,7 +112,7 @@ Options
  | Parameters		           | Options	   | Alternative Parameters	        | Comments				 |
  +=================================+===============+====================================+========================================+
  |Install PhpCodeBeautifier? (Y/N) | Y		   | Instead of using PhpcodeBeautifier | It starts installing phpCodeBeautifier |
- |				   |		   | the user can use phpcodebeautifier | under cleopatra		         |
+ |				   |		   | the user can use phpcodebeautifier | under ptconfigure		         |
  +---------------------------------+---------------+------------------------------------+----------------------------------------+
  |Install PhpCodeBeautifier? (Y/N) | N             | Instead of using PhpcodeBeautifier | It terminates the  installation        |
  |                                 |               | the user can use phpcodebeautifier|| 		                         |

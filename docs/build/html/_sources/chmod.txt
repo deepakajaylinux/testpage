@@ -50,7 +50,7 @@ This command helps to determine the usage of Change mode module. The user will c
 
 .. code-block:: bash
         
-	        cleopatra Chmod help
+	        ptconfigure Chmod help
 
 
 The pictorial representation of the above command is listed below,
@@ -58,7 +58,7 @@ The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Chmod help
+ kevell@corp:/# ptconfigure Chmod help
  ******************************
 
 
@@ -68,7 +68,7 @@ The pictorial representation of the above command is listed below,
 
         - path
         Will change the file permission mode of a path
-        example: cleopatra chmod path --yes --guess --recursive --path=/a/file/path --mode=0777
+        example: ptconfigure chmod path --yes --guess --recursive --path=/a/file/path --mode=0777
 
 
  ------------------------------
@@ -88,7 +88,7 @@ When the user needs to change the mode of file, the below given command will exe
 
 .. code-block:: bash
         
-	        cleopatra chmod path –yes –guess –recursive –path=/”File path” –mode=0777
+	        ptconfigure chmod path –yes –guess –recursive –path=/”File path” –mode=0777
 
 
 
@@ -99,7 +99,7 @@ There are two alternative parameters which can be used in command line.
 
 chmod, Chmod
 
-Eg: cleopatra Chmode path/ cleopatra chmod path
+Eg: ptconfigure Chmode path/ ptconfigure chmod path
 
 
 Benefits

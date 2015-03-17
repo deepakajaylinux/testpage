@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Node-JS" href="node.html" />
     <link rel="prev" title="Newrelic" href="newrelic.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -144,35 +144,23 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="nginxserver">
 <h1>NginxServer<a class="headerlink" href="#nginxserver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>Nginx, pronounced “Engine X”, is a high-performance Web server. The Nginx Web Server is a light weight and versatile server that can be configured for all the different tasks that many modern websites demand. Ngnix server acts as a facilitator to the users in configuring applications settings. Few examples for applications settings includes mysql admin user, host, pass. Nginx is making headlines as the new Web server of choice for many webmasters. The top reason for its popularity is its speed. Nginx is faster than Apache in non-testing environments because its architecture is event driven while Apache’s is process driven. The Cleopatra modules acts as a way through for installing this Nginx Server.</p>
+<p>Nginx, pronounced “Engine X”, is a high-performance Web server. The Nginx Web Server is a light weight and versatile server that can be configured for all the different tasks that many modern websites demand. Ngnix server acts as a facilitator to the users in configuring applications settings. Few examples for applications settings includes mysql admin user, host, pass. Nginx is making headlines as the new Web server of choice for many webmasters. The top reason for its popularity is its speed. Nginx is faster than Apache in non-testing environments because its architecture is event driven while Apache’s is process driven. The ptconfigure modules acts as a way through for installing this Nginx Server.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the Ngnix server module. The help command lists out the alternative parameters of Ngnix server. It also describes the syntax for installing Ngnix server. The help command for Ngnix server is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra nginx-server <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure nginx-server <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Nginx Server.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra NginxServer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NginxServer <span class="nb">help</span>
 ******************************
 
 
@@ -183,7 +171,7 @@ NginxServer, nginx-server, nginxserver
 
 - install
 Installs Nginx HTTP Server
-example: cleopatra nginx-server install
+example: ptconfigure nginx-server install
 
 ------------------------------
 End Help
@@ -194,51 +182,46 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Installing the Nginx server is simpler by using the following command as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra nginx-server install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure nginx-server install
 </pre></div>
 </div>
 <p>After inputting the command above the following operations as shown in the tabular format occurs.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="25%" />
 <col width="24%" />
-<col width="11%" />
-<col width="40%" />
+<col width="25%" />
+<col width="1%" />
+<col width="9%" />
+<col width="41%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Paramaters</th>
-<th class="head">Alternative Parameter</th>
-<th class="head">Options</th>
-<th class="head">comments</th>
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head" colspan="3">Alternative Parameter           | Options</th>
+<th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install PHP Code Sniffer ? (Y/N)</td>
-<td>In Spite of Nginx Server, the
-following alternatives can also
-be used: NginxServer,
-nginx-server, nginxserver.</td>
-<td>Y(yes)</td>
-<td>If the user wish to proceed the installation process
-they can input as Y.</td>
+<tr class="row-even"><td>Install Nginx Server? (Y/N)</td>
+<td colspan="3">Instead of Nginx Server, the    | Y(Yes)
+following alternatives can also |
+be used: NginxServer,           |
+nginx-server, nginxserver.      |</td>
+<td>If the user wish to proceed the installation
+process they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td>Install PHP Code Sniffer ? (Y/N)</td>
-<td>In Spite of Nginx Server, the
+<tr class="row-odd"><td>Install Nginx Server? (Y/N)</td>
+<td>Instead of Nginx Server, the
 following alternatives can also
 be used: NginxServer,
-nginx-server, nginxserver.</td>
-<td>Y(yes)</td>
-<td><p class="first">If the user wish to Quit the installation process
-they can input as N.|</p>
-<div class="last line-block">
-<div class="line"><br /></div>
-</div>
-</td>
+nginx-server, nginxserver.|</td>
+<td colspan="2">N(No)</td>
+<td>If the user wish to Quit the installation process
+they can input as N.</td>
 </tr>
 </tbody>
 </table>
 <p>If the user proceeds the installation process, the Nginx HTTP Server will be installed. If the package of Nginx is already exists in the users machine, then a message will appear to instruct the user as Nginx is already exists in that machine. Finally reports are generated with clear results and status. The following screen shot explains the above mentioned process pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra nginx-server install
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure nginx-server install
 
 Install Nginx Server? <span class="o">(</span>Y/N<span class="o">)</span>
 y
@@ -255,15 +238,15 @@ Suggested packages:
 fcgiwrap nginx-doc
 The following NEW packages will be installed:
 nginx nginx-common nginx-core
-<span class="m">0</span> upgraded, <span class="m">3</span> newly installed, <span class="m">0</span> to remove and <span class="m">278</span> not upgraded.
-Need to get <span class="m">347</span> kB of archives.
+0 upgraded, 3 newly installed, 0 to remove and 278 not upgraded.
+Need to get 347 kB of archives.
 After this operation, 1,295 kB of additional disk space will be used.
 Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx-common all 1.4.6-1ubuntu3.1 <span class="o">[</span>17.9 kB<span class="o">]</span>
-Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx-core amd64 1.4.6-1ubuntu3.1 <span class="o">[</span><span class="m">324</span> kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx-core amd64 1.4.6-1ubuntu3.1 <span class="o">[</span>324 kB<span class="o">]</span>
 Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx all 1.4.6-1ubuntu3.1 <span class="o">[</span>5,218 B<span class="o">]</span>
-Fetched <span class="m">347</span> kB in 3s <span class="o">(</span><span class="m">104</span> kB/s<span class="o">)</span>
+Fetched 347 kB in 3s <span class="o">(</span>104 kB/s<span class="o">)</span>
 Selecting previously unselected package nginx-common.
-<span class="o">(</span>Reading database ... <span class="m">168194</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 168194 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../nginx-common_1.4.6-1ubuntu3.1_all.deb ...
 Unpacking nginx-common <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
 Selecting previously unselected package nginx-core.
@@ -272,19 +255,19 @@ Unpacking nginx-core <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</
 Selecting previously unselected package nginx.
 Preparing to unpack .../nginx_1.4.6-1ubuntu3.1_all.deb ...
 Unpacking nginx <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
 ureadahead will be reprofiled on next reboot
-Processing triggers <span class="k">for</span> ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
 Setting up nginx-common <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
 Setting up nginx-core <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
 Setting up nginx <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package nginx from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -360,7 +343,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

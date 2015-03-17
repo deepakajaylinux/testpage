@@ -14,7 +14,7 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra Jmeter help
+		ptconfigure Jmeter help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Jmeter.
@@ -22,9 +22,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Jmeter help
- PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open 
- shared object file: No such file or directory in Unknown on line 0
+ kevell@corp:/# ptconfigure Jmeter help
 
  ******************************
 
@@ -35,7 +33,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest version of Jmeter
-        example: cleopatra jmeter install
+        example: ptconfigure jmeter install
 
  ------------------------------
  End Help
@@ -49,7 +47,7 @@ The command used for installing the jmeter in the users machine is shown below:
 
 .. code-block:: bash
 
-		cleopatra jmeter install
+		ptconfigure jmeter install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 

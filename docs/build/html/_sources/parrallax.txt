@@ -14,7 +14,7 @@ The help command leads the user in working with this parallax. It also specifies
 
 .. code-block:: bash
 
-	cleopatra parallax help
+	ptconfigure parallax help
 
 The display of results after the input of help command is represented in the screenshot below.
 
@@ -22,7 +22,7 @@ The display of results after the input of help command is represented in the scr
 .. code-block:: bash
 
 
-	root@deepak:~# cleopatra Parallax help
+	kevell@corp:/# ptconfigure Parallax help
 	******************************
 
 
@@ -33,8 +33,8 @@ The display of results after the input of help command is represented in the scr
 
         - cli
         Go through all questions to execute parallel programs
-        example: cleopatra parallax cli
-        example: cleopatra parallax cli --yes --command-1="pwd" --command-2="ls"
+        example: ptconfigure parallax cli
+        example: ptconfigure parallax cli --yes --command-1="pwd" --command-2="ls"
 
         - child
         Unlikely you'll use this, its used by cli to spawn child processes
@@ -56,14 +56,14 @@ The command used for specifying the multi-tasks at the time of declaring install
 
 .. code-block:: bash
 
-	cleopatra parallax cli --yes --command-1="pwd" --command-2="who"
+	ptconfigure parallax cli --yes --command-1="pwd" --command-2="who"
 
 After mentioning this command, the parallax executes both of the tasks as specified above in command-1 and command-2. The two tasks are performed parallel and result are displayed. The screen shot attached below is an very good example for type of declaration defined above.
 
 
 .. code-block:: bash
 
-	kevells@corp:~# cleopatra parallax cli --yes --command-1="pwd" --command-2="who"
+	kevell@corp:/# ptconfigure parallax cli --yes --command-1="pwd" --command-2="who"
 	Completed task: pwd
 	Completed task: who
 	******************************
@@ -99,7 +99,7 @@ The command used for declaring the multi tasks at run-time is shown below:
 
 .. code-block:: bash
 
-	cleopatra parallax cli
+	ptconfigure parallax cli
 
 After inputting the command above the following process occurs:
 
@@ -109,15 +109,15 @@ After inputting the command above the following process occurs:
   +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
   |   Paramaters 		    | Alternative Parameter         | Options	    |	comments			                 |
   +=================================+===============================+===============+====================================================+
-  |Run Commands in Parallel? (Y/N)  |In Spite of parallax, the      |		    |If the user wish to proceed the installation process|
-  |				    |following alternatives can also|  Y(yes)       |they can input as Y.			    	 |
-  |				    |be used: 	                    |		    |							 |
+  |Run Commands in Parallel? (Y/N)  |In Spite of parallax, the      |		    |If the user wish to proceed the installation        |
+  |				    |following alternatives can     |  Y(yes)       |process they can input as Y.			 |
+  |				    |also be used:                  |		    |							 |
   |				    |parallax, Parallax             |		    | 							 |
   +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
   |Run Commands in Parallel? (Y/N)  |In Spite of parallax, the      |		    |If the user wish to Quit the installation process   |
-  |				    |following alternatives can also|  N(No)        |they can input as N.			    	 |
-  |				    |be used: 	                    |		    |							 |
-  |				    |parallax, Parallax             |		    || 							 |
+  |				    |following alternatives can     |  N(No)        |they can input as N.			    	 |
+  |				    |also be used: 	            |		    |							 |
+  |				    |parallax, Parallax|            |		    | 							 |
   +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
 
 If the user wish to proceed installation, the user can specify the multiple tasks as per their requirements. After completion of specifying the multiple tasks, if the users wish to stop they can stop by simply entering none.
@@ -127,7 +127,7 @@ Finally, the results of completed tasks along with its status are defined at the
 .. code-block:: bash
 
    
-	kevells@corp:~# cleopatra parallax cli 
+	kevell@corp:/# ptconfigure parallax cli 
 	
 	Run Commands in Parallel? (Y/N) 
 	y

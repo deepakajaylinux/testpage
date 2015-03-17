@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="System Detection" href="systemdetection.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="SVN" href="svn_dapper.html" />
     <link rel="prev" title="Run Command" href="run_command.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="run_command.html"
          title="Previous Chapter: Run Command">&laquo; Run Command</a></li>
-  <li><a href="systemdetection.html"
-         title="Next Chapter: System Detection">System Detection &raquo;</a></li>
+  <li><a href="svn_dapper.html"
+         title="Next Chapter: SVN">SVN &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="sftp">
@@ -170,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>Help command used to find information about a specified command. For more information about changes to functionality of SFTP we can use this help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano SFTP <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy SFTP <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot guides you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano sftp <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy sftp <span class="nb">help</span>
 ******************************
 
 
@@ -183,16 +171,16 @@
  SFTP, sftp
 
        - put
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-       example: cleopatra sftp put
-       example: cleopatra sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: cleopatra sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from <span class="nb">local </span>to remote
+       example: ptconfigure sftp put
+       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
+       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
 
        - get
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: cleopatra sftp get
-       example: cleopatra sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: cleopatra sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from remote to <span class="nb">local</span>
+<span class="nb">       </span>example: ptconfigure sftp get
+       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
+       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
 
 ------------------------------
 End Help
@@ -202,8 +190,8 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>As a company, and as individuals, SFTP has been dedicated to meeting each partner’s technology challenges, fulfilling their engineering requirements, and satisfying their business goals. It is an obvious process to install SFTP module under Dapperstrano by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano SFTP  install
+<p>As a company, and as individuals, SFTP has been dedicated to meeting each partner’s technology challenges, fulfilling their engineering requirements, and satisfying their business goals. It is an obvious process to install SFTP module under ptdeploy by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy SFTP  install
 </pre></div>
 </div>
 <p>After giving the command then the system will raise the question as,</p>
@@ -219,7 +207,7 @@ End Help
 <p>If the user input as Y he has to enter new server name</p>
 <p>Then everything will be connected.</p>
 <p>If the user input as N previous server name can be accessed.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra sftp put
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
 SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 Please Enter SSH Timeout in seconds
@@ -251,22 +239,26 @@ Installer Finished
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="20%" />
-<col width="33%" />
-<col width="47%" />
+<col width="12%" />
+<col width="23%" />
+<col width="21%" />
+<col width="44%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Syntax</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>put</td>
+<td>SFTP, sftp</td>
 <td>Source to target</td>
 <td>The file can transferred</td>
 </tr>
 <tr class="row-odd"><td>get</td>
+<td>SFTP, sftp</td>
 <td>Path to source</td>
 <td>The file can downloaded from remote system|</td>
 </tr>
@@ -323,7 +315,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

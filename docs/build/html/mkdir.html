@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="ModuleManager" href="modulemanager.html" />
     <link rel="prev" title="Minify" href="minify.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="mkdir">
@@ -169,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the Mk Dir. The help command lists out the alternative parameters of MK Dir. . It also describes the syntax for creating a directory in two different ways either at time of declaration or at run-time. . The help command for MK dir is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra mkdir <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure mkdir <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under MK dir.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Mkdir <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Mkdir <span class="nb">help</span>
 ******************************
 
 
@@ -182,9 +170,9 @@ This <span class="nb">command </span>handles file copying functions.
  Mkdir, mkdir
 
 - path
-Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-example: cleopatra mkdir path
-example: cleopatra mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/path/to/new/directory&quot;</span>
+Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from <span class="nb">local </span>to remote
+example: ptconfigure mkdir path
+example: ptconfigure mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/path/to/new/directory&quot;</span>
 
 ------------------------------
 End Help
@@ -200,15 +188,15 @@ End Help
 <h2>Creating a Mk Dir<a class="headerlink" href="#creating-a-mk-dir" title="Permalink to this headline">¶</a></h2>
 <p>Creating an Mk Dir can be done in two different ways:</p>
 <p class="rubric">Either at run-time</p>
-<div class="highlight-bash"><div class="highlight"><pre>Example: cleopatra mkdir path
+<div class="highlight-bash"><div class="highlight"><pre>Example: ptconfigure mkdir path
 </pre></div>
 </div>
 <p class="rubric">Or, at the time of declaration</p>
-<div class="highlight-bash"><div class="highlight"><pre>Example: cleopatra mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/path/to/new/directory&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>Example: ptconfigure mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/path/to/new/directory&quot;</span>
 </pre></div>
 </div>
 <p>The following screen shot depicts the second way of creating a directory.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/kevellsdoc&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mkdir path --yes --path<span class="o">=</span><span class="s2">&quot;/kevellsdoc&quot;</span>
 
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>Mkdir<span class="o">]</span> Executing mkdir /kevellsdoc
 ******************************
@@ -267,7 +255,7 @@ Mkdir Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

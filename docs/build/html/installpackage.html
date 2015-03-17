@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>InstallPackage &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="IntelliJ" href="intellij.html" />
+    <link rel="prev" title="Host name" href="hostname.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">InstallPackage</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#help-command">Help command</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#alternative-parameters">Alternative parameters</a></li>
+<li><a class="reference internal" href="#dev-client">Dev-client</a></li>
+<li><a class="reference internal" href="#dev-server">Dev-server</a></li>
+<li><a class="reference internal" href="#test-server">Test-server</a></li>
+<li><a class="reference internal" href="#build-server">Build server</a></li>
+<li><a class="reference internal" href="#production">Production</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="hostname.html"
+         title="Previous Chapter: Host name">&laquo; Host name</a></li>
+  <li><a href="intellij.html"
+         title="Next Chapter: IntelliJ">IntelliJ &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/installpackage.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+    <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  
+  <div class="section" id="installpackage">
+<h1>InstallPackage<a class="headerlink" href="#installpackage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>Install package are differential logic outputs commonly used in high-speed clock distribution circuits. This command provides the user to install package, build server, dev client, test server,dev server, production. This command main function is to preconfigured list of software. It is suitable with Ubuntu and CentOS.</p>
+</div>
+<div class="section" id="help-command">
+<h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
+<p>The help command leads the users regarding the purpose and as well as about the options that are included in the installpackage modules. The help command lists out the alternative parameters of installpackage  under ptconfigure module. It also describes the syntax for installing. The help command for installpackage module is shown below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure installpackage <span class="nb">help</span>
+</pre></div>
+</div>
+<p>The following screen shot shows the full effort of installpackage module.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure InstallPackage <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>is part of Core and provides you  with a method by which you can perform some default CLI Installs of
+ different types of box.
+
+ InstallPackage, installpackage, installpack, install-pack, install, inpack, install-package
+
+   - dev-client
+     install a dev client machine <span class="k">for </span>you to work on, a bunch of IDE<span class="s1">&#39;s, DB&#39;</span>s and a <span class="nb">complete set </span>of the
+     tools you need to start work immediately.
+     example: ptconfigure install autopilot dev-client
+
+   - dev-server
+     Install the preconfigured list of software <span class="k">for </span>a developers server.
+     example: ptconfigure install autopilot dev-server
+
+   - <span class="nb">test</span>-server
+     Install the preconfigured list of software <span class="k">for </span>a testing server.
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
+
+   - build-server
+     Install the preconfigured list of software <span class="k">for </span>a build server.
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
+
+   - production
+     Install the preconfigured list of software <span class="k">for </span>a production server.
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Installation includes installation of installpackage required to make the installation in an updated version. It is a manifest process to install Installpackage module under ptconfigure. Installpackage by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure installpackage Install
+</pre></div>
+</div>
+<p>After vitalize the command it will catechize input.</p>
+<p>When the user input as yes automatically it will install Installpackage with checking from the system. If not exit the installation. The following screen shot demonstrate Installpackage and its functions.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameters">
+<h2>Alternative parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The following are the alternative parameters that can be defined in declarations:</p>
+<p>InstallPackage, installpackage, installpack, install, inpack, installpackage.</p>
+</div>
+<div class="section" id="dev-client">
+<h2>Dev-client<a class="headerlink" href="#dev-client" title="Permalink to this headline">¶</a></h2>
+<p>This command is used to work on a bunch of Integrated Development Environment’s, DataBase’s and a complete set of the tools that the user need to start work immediately. The following command used for dev client machine.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot dev-client
+</pre></div>
+</div>
+<p>After input as the above said command it starts installing process.</p>
+<p>The following snapshot shows its functions.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dev-server">
+<h2>Dev-server<a class="headerlink" href="#dev-server" title="Permalink to this headline">¶</a></h2>
+<p>This command used to install preconfigures list of software for a developer’s server. Autopilot acts as a vital role in this process. To work out these functions properly ptconfigure recommends dev-server by using this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot dev-server
+</pre></div>
+</div>
+<p>The screenshot guides the user about its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-server">
+<h2>Test-server<a class="headerlink" href="#test-server" title="Permalink to this headline">¶</a></h2>
+<p>Here Auto pilot acts a major role in test server. It uses to install the preconfigured list of software for testing server. Testing software also available. The following command used to install test server.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot <span class="nb">test</span>-server
+</pre></div>
+</div>
+<p>The screenshot guides the user about its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="build-server">
+<h2>Build server<a class="headerlink" href="#build-server" title="Permalink to this headline">¶</a></h2>
+<p>This command used to install preconfigures list of software for a build server. Autopilot acts as a vital role in this process. To work out these functions properly ptconfigure recommends build-server by using this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot build-server
+</pre></div>
+</div>
+<p>The screenshot guides the user about its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="production">
+<h2>Production<a class="headerlink" href="#production" title="Permalink to this headline">¶</a></h2>
+<p>This command used to install preconfigures list of software for a production server. Autopilot acts as a vital role in this process. To work out these functions properly ptconfigure recommends production server by using this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot build-server
+</pre></div>
+</div>
+<p>The screenshot guides the user about its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+</div>
+<div class="section" id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Non case sensitivity.</li>
+<li>Well-to-do in Ubuntu and CentOS.</li>
+<li>Installing  dev-server, dev-client, production, build-server, test-server is an added advantage for this module.</li>
+<li>Autopilot acts as a vital role.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/installpackage.rst">
+          InstallPackage
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

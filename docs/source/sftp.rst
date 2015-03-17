@@ -11,21 +11,21 @@ This module assist in transferring files from one system to another. It can uplo
 Help command
 -------------------------
 
-Help command used to find information about a specified command. For more information about changes to functionality of Secure File Transfer Protocol(SFTP) under phlagrant the user can use this help command.
+Help command used to find information about a specified command. For more information about changes to functionality of Secure File Transfer Protocol(SFTP) under ptvirtualize the user can use this help command.
 
 .. code-block:: bash
 
-		phlagrant  sftp help
+		ptvirtualize  sftp help
 
 
 The following screen shot guides you.
 
 .. code-block:: bash
 
- kevells@corp:/# phlagrant sftp help
+ kevell@corp:/# ptvirtualize sftp help
 
  ******************************
- Pharaoh Tools - Phlagrant
+ Pharaoh Tools - ptvirtualize
  ******************************
 
 
@@ -35,15 +35,15 @@ The following screen shot guides you.
 
         - put
         Will ask you for details for servers, then copy a file or directory from local to remote
-        example: cleopatra sftp put
-        example: cleopatra sftp put --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
-        example: cleopatra sftp put --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
+        example: ptconfigure sftp put
+        example: ptconfigure sftp put --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
+        example: ptconfigure sftp put --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
 
         - get
         Will ask you for details for servers, then copy a file or directory from remote to local
-        example: cleopatra sftp get
-        example: cleopatra sftp get --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
-        example: cleopatra sftp get --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
+        example: ptconfigure sftp get
+        example: ptconfigure sftp get --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
+        example: ptconfigure sftp get --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
 
  ------------------------------
  End Help
@@ -64,36 +64,31 @@ The file transfer can be done from local to remote server. This put option asks 
 
 .. code-block:: bash
 
-		phlagrant  sftp put – yes –source=”/tmp/file” – target=”/home/user/file”
+		ptvirtualize  sftp put – yes –source=”/tmp/file” – target=”/home/user/file”
 
 The following screen shot denotes the usage of this command.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra sftp put
+ kevell@corp:ptconfigure sftp put
+ 
  SFTP on Server group? (Y/N) 
  Y
  Please Enter SSH Timeout in seconds
- 
+ 90
  Please Enter remote SSH Port
-
+ 22
  Use Environments Configured in Project? (Y/N) 
-
+ N
  [Pharaoh Logging] Attempting to load SFTP connections...
  Enter local source file path
-
- [Pharaoh Logging] SFTP Put will cancel, no source file
+ /root/vv
+ Enter remote target file path
+ /root/gg/vv
+ [Pharaoh Logging] Opening SFTP Connections...
+ [Pharaoh Logging] All SFTP Puts Completed
  ******************************
-
-
-
- SFTP Put: Failure
-
- ------------------------------
- Installer Finished
- ******************************
-
 
 
 SFTP on server group? Y/N
@@ -129,14 +124,14 @@ File transfer can be done from remote to local server. It asks the user to enter
 
 .. code-block:: bash
 
-		phlagrant  sftp get – yes –source=”/tmp/file” – target=”/home/user/file”
+		ptvirtualize  sftp get – yes –source=”/tmp/file” – target=”/home/user/file”
 
 The following screen shot explains it.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra sftp get
+ kevell@corp:/# ptconfigure sftp get
  SFTP on Server group? (Y/N) 
  Y
  Please Enter SSH Timeout in seconds
@@ -190,7 +185,7 @@ If the user input as N, it can be terminated. The following screenshots shows it
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra sftp get
+ kevell@corp:/# ptconfigure sftp get
  SFTP on Server group? (Y/N) 
  N
  ******************************
@@ -210,13 +205,13 @@ Options
 
 .. cssclass:: table-bordered
 
- +------------------------+---------------------------------+--------------------------------------------------------------+
- | Parameters		  | Syntax			    | Comments						           |
- +========================+=================================+==============================================================+
- |put			  | Source to target 		    | The file can transferred from source to target.		   |
- +------------------------+---------------------------------+--------------------------------------------------------------+
- |get			  | Path to source		    | The file can be downloaded from remote system.|		   |
- +------------------------+---------------------------------+--------------------------------------------------------------+
+ +------------------------+---------------------------+--------------------------------------------------------------+
+ | Parameters		  | Alternative Parameters    | Comments						     |
+ +========================+===========================+==============================================================+
+ |put			  | SFTP, sftp        	      | Source to target -The file can transferred     		     |
+ +------------------------+---------------------------+--------------------------------------------------------------+
+ |get			  | SFTP, sftp                | Path to source -The file can downloaded from remote system|  |
+ +------------------------+---------------------------+--------------------------------------------------------------+
 
 
 

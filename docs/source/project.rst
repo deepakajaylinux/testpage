@@ -16,10 +16,10 @@ This command helps to determine the usage of project module. The user will come 
 
 .. code-block:: bash
 	
-		dapperstrano project help
+		ptdeploy project help
        
 
- kevells@corp:/# dapperstrano Project help
+ kevell@corp:/# ptdeploy Project help
  ******************************
 
 
@@ -31,20 +31,20 @@ This command helps to determine the usage of project module. The user will come 
 
           - container
           make a container folder for revisions (like /var/www/applications/*APP NAME*)
-          example: dapperstrano proj container
-          example: dapperstrano proj container --yes --proj-container="/var/www/applications/the-app"
+          example: ptdeploy proj container
+          example: ptdeploy proj container --yes --proj-container="/var/www/applications/the-app"
 
           - init
           initialize Dapper project
-          example: dapperstrano proj init
-          example: dapperstrano proj init --yes
+          example: ptdeploy proj init
+          example: ptdeploy proj init --yes
 
           - build-install
           copy jenkins project stored in repo to running jenkins so you can run builds
-          example: dapperstrano proj build-install
-          example: dapperstrano proj build-install
+          example: ptdeploy proj build-install
+          example: ptdeploy proj build-install
                         --jenkins-fs-dir=/var/lib/jenkins # --guess will set this to /var/lib/jenkins
-                        --original-build-dir="/var/www/applications/the-app/build/config/cleopatra/Project/jenkins-builds"
+                        --original-build-dir="/var/www/applications/the-app/build/config/ptconfigure/Project/jenkins-builds"
                         --target-job-name="Project_Build"
                         --new-job-dir="Project_Build_Alternate_Name"  # If target one is not available
 
@@ -61,12 +61,12 @@ When the user needs to install, the user can issue the following commands for DB
 
 .. code-block:: bash
 	
-		 dapperstrano proj container
+		 ptdeploy proj container
 
- kevells@corp:/# dapperstrano proj container
+ kevell@corp:/# ptdeploy proj container
  Do you want to Modify Project Container Settings? (Y/N) 
  Y
- Do you want to initialize this as a dapperstrano project Container? (Y/N) 
+ Do you want to initialize this as a ptdeploy project Container? (Y/N) 
  Y
  What is your Project Container directory?
  /root/gg
@@ -89,15 +89,15 @@ When the user needs to initialize dapper project, the user can issue the followi
 
 .. code-block:: bash
 	
-		 dapperstrano proj init
+		 ptdeploy proj init
 
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano proj init
+ kevell@corp:/# ptdeploy proj init
  Do you want to Modify Project Settings To initialise Project? (Y/N) 
  Y
- Do you want to initialize this as a dapperstrano project? (Y/N) 
+ Do you want to initialize this as a ptdeploy project? (Y/N) 
  Y
  ******************************
 
@@ -114,7 +114,7 @@ When the user needs copy Jenkins project stored in repo to running Jenkins, the 
 
 .. code-block:: bash
 	
-		 dapperstrano proj build-install
+		 ptdeploy proj build-install
 
 Alternative Parameter 
 --------------------------------        
@@ -123,7 +123,7 @@ There are two alternative parameters which can be used in command.
 
 Project, project and proj
 
-eg: dapperstrano Project help/  dapperstrano proj help
+eg: ptdeploy Project help/  ptdeploy proj help
                        
 Benefits
 --------------

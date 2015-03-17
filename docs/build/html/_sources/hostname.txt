@@ -14,9 +14,35 @@ This command can function about the objectives and commands available under host
 
 .. code-block:: bash
          
-                cleopatra hostname help
+                ptconfigure hostname help
 
 The following screen shot can bring to mind it.
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure hostname help
+
+ ******************************
+
+
+  This command allows you to view or modify hostname
+
+  Hostname, hostname
+
+        - change
+        Change the system hostname
+        example: ptconfigure hostname change --hostname="my-laptop"
+
+        - show
+        Show the system hostname
+        example: ptconfigure hostname show
+
+ ------------------------------
+ End Help
+ ******************************
+
+
 
 Change
 ----------------
@@ -25,18 +51,38 @@ Hostnames are typically used in an administrative capacity and may appear in com
 
 .. code-block:: bash
            
-                cleopatra hostname change –hostname=”kevellcorp”
+                ptconfigure hostname change –hostname=”kevellcorp”
 
 From the above command the new host name can enter.
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure hostname change –hostname=”kevellcorp”
+ Enter Hostname:
+ kevellcorp
+ ******************************
+
+
+ Hostname Modifications:
+ --------------------------------------------
+
+ Hostname: Success
+
+ ------------------------------
+ Hostname Mods Finished
+ ******************************
+
+
+
 
 Show
 -------------------
 
-This module is a perceptible process to view host name under Cleopatra by just using the command given below,
+This module is a perceptible process to view host name under ptconfigure by just using the command given below,
 
 .. code-block:: bash
          
-                cleopatra hostname show
+                ptconfigure hostname show
 
 After key in the command, it shows the host name.
 
@@ -48,11 +94,11 @@ Option
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
  |	Parameters  	       | Alternative Parameter                    | Options  | 		Comments	            |
  +=============================+==========================================+==========+======================================+
- |cleopatra host name	       |Instead of Hostname we can use		  |Show      |System starts showing the host name   |
- |		 	       |Hostname,hostname			  | 	     |process under cleopatra		    |
+ |ptconfigure hostname	       |Instead of Hostname we can use		  |Show      |System starts showing the host name   |
+ |		 	       |hostname			          | 	     |process under ptconfigure		    |
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
- |cleopatra hostname change    |Instead of Hostname we can use		  |Change    |System starts changing the host name  |
- |--hostname="Name" 	       |Hostname,hostname    			  | 	     |process under cleopatra|		    |
+ |ptconfigure hostname change  |Instead of Hostname we can use		  |Change    |System starts changing the host name  |
+ |--hostname="Name" 	       |hostname    			          | 	     |process under ptconfigure|	    |
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
 
 

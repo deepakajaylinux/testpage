@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Phlagrant" href="phlagrant.html" />
-    <link rel="next" title="SFTP" href="sftp.html" />
+    <link rel="up" title="PTVirtualize" href="ptvirtualize_main.html" />
+    <link rel="next" title="Destroy" href="destroy.html" />
     <link rel="prev" title="AutoSSH" href="autossh.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -95,7 +95,7 @@
 <li><a class="reference internal" href="#">Box</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
-<li><a class="reference internal" href="#functions-of-phlagrant-box">Functions of phlagrant Box</a></li>
+<li><a class="reference internal" href="#functions-of-ptvirtualize-box">Functions of ptvirtualize Box</a></li>
 <li><a class="reference internal" href="#add">Add</a></li>
 <li><a class="reference internal" href="#remove">Remove</a></li>
 <li><a class="reference internal" href="#package">Package</a></li>
@@ -114,8 +114,8 @@
                 
   <li><a href="autossh.html"
          title="Previous Chapter: AutoSSH">&laquo; AutoSSH</a></li>
-  <li><a href="sftp.html"
-         title="Next Chapter: SFTP">SFTP &raquo;</a></li>
+  <li><a href="destroy.html"
+         title="Next Chapter: Destroy">Destroy &raquo;</a></li>
               
             
             
@@ -149,73 +149,61 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="box">
 <h1>Box<a class="headerlink" href="#box" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>This module assists the users in handling and managing the boxes that are available in the phlagrant. Let us see how this module works in handling the functions of box.</p>
+<p>This module assists the users in handling and managing the boxes that are available in the ptvirtualize. Let us see how this module works in handling the functions of box.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Box module. It lists out the alternative parameters of Box module. It also describes the syntax for using the add, remove, package ,list commands. The help command for Box module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant Box <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize Box <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Box.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# phlagrant Box <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptvirtualize Box <span class="nb">help</span>
 
 ******************************
-Pharaoh Tools - Phlagrant
+Pharaoh Tools - Virtualize
 ******************************
 
 
- This <span class="nb">command </span>allows you to manage the Base boxes available to you in Phlagrant
+ This <span class="nb">command </span>allows you to manage the Base boxes available to you in ptvirtualize
 
  Box, box
 
        - add
-       Initialises the Box as usable by Phlagrant
-       example: phlagrant box add
-       example: phlagrant box add --yes --guess
+       Initialises the Box as usable by ptvirtualize
+       example: ptvirtualize box add
+       example: ptvirtualize box add --yes --guess
            --source<span class="o">=</span><span class="s2">&quot;/home/dave/file.box&quot;</span> <span class="c"># where the box file is</span>
-           --target<span class="o">=</span><span class="s2">&quot;opt/phlagrant/boxes&quot;</span> <span class="c"># will guess the dir next to phlagrant install dir</span>
+           --target<span class="o">=</span><span class="s2">&quot;opt/ptvirtualize/boxes&quot;</span> <span class="c"># will guess the dir next to ptvirtualize install dir</span>
            --name<span class="o">=</span><span class="s2">&quot;vanillaubuntu&quot;</span>
 
        - remove
-       Removes the box as usable by Phlagrant
-       example: phlagrant box remove
+       Removes the box as usable by ptvirtualize
+       example: ptvirtualize box remove
 
        - package
-       Packages a box as usable by Phlagrant
-       example: phlagrant box package
-       example phlagrant box package --yes --guess
+       Packages a box as usable by ptvirtualize
+       example: ptvirtualize box package
+       example ptvirtualize box package --yes --guess
            --name<span class="o">=</span><span class="s2">&quot;Vanilla Ubuntu 12.04 amd 64&quot;</span>
            --vmname<span class="o">=</span><span class="s2">&quot;a4dc638f-2721-40c4-a943-2f2565c83fee&quot;</span> <span class="c"># use name or id of virtual machine</span>
            --provider<span class="o">=</span><span class="s2">&quot;virtualbox&quot;</span> <span class="c"># guess will use virtualbox</span>
-           --group<span class="o">=</span><span class="s2">&quot;phlagrant&quot;</span>
+           --group<span class="o">=</span><span class="s2">&quot;ptvirtualize&quot;</span>
            --slug<span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c"># guess can generate this based on name field</span>
            --description<span class="o">=</span><span class="s2">&quot;A Vanilla install of Ubuntu...&quot;</span>
-           --home_location<span class="o">=</span><span class="s2">&quot;http://www.someplace.net/&quot;</span> <span class="c"># guess will set this to http://www.phlagrantboxes.co.uk/</span>
-           --target<span class="o">=</span><span class="s2">&quot;/opt/phlagrant/boxes&quot;</span> <span class="c"># save location, will guess /opt/phlagrant/boxes</span>
+           --home_location<span class="o">=</span><span class="s2">&quot;http://www.someplace.net/&quot;</span> <span class="c"># guess will set this to http://www.ptvirtualizeboxes.co.uk/</span>
+           --target<span class="o">=</span><span class="s2">&quot;/opt/ptvirtualize/boxes&quot;</span> <span class="c"># save location, will guess /opt/ptvirtualize/boxes</span>
 
        - list
-       List boxes installed in Phlagrant
-       example: phlagrant box list
+       List boxes installed in ptvirtualize
+       example: ptvirtualize box list
 
 ------------------------------
 End Help
@@ -223,9 +211,9 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="functions-of-phlagrant-box">
-<h2>Functions of phlagrant Box<a class="headerlink" href="#functions-of-phlagrant-box" title="Permalink to this headline">¶</a></h2>
-<p>As depicted in the above help command the functions of the phlagrant box includes the following:</p>
+<div class="section" id="functions-of-ptvirtualize-box">
+<h2>Functions of ptvirtualize Box<a class="headerlink" href="#functions-of-ptvirtualize-box" title="Permalink to this headline">¶</a></h2>
+<p>As depicted in the above help command the functions of the ptvirtualize box includes the following:</p>
 <ul class="simple">
 <li>Add</li>
 <li>Remove</li>
@@ -235,54 +223,54 @@ End Help
 </div>
 <div class="section" id="add">
 <h2>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
-<p>The add is used for initializing the box as usable by phlagrant. The following syntax can be used for adding a phlagrant box.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box add
+<p>The add is used for initializing the box as usable by ptvirtualize. The following syntax can be used for adding a ptvirtualize box.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box add
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box add --yes --guess
---source<span class="o">=</span><span class="s2">&quot;/home/dave/file.box   (This line describes where the box is)</span>
-<span class="s2">--target=&quot;</span>opt/phlagrant/boxes<span class="s2">&quot;  (This line guess the dir next to phlagrant install dir)</span>
-<span class="s2">--name=&quot;</span>vanillaubuntu<span class="s2">&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box add --yes --guess
+--source=&quot;/home/dave/file.box   (This line describes where the box is)
+--target=&quot;opt/ptvirtualize/boxes&quot;       (This line guess the dir next to ptvirtualize install dir)
+--name=&quot;vanillaubuntu&quot;
 </pre></div>
 </div>
-<p>In the above mentioned ways the box can be added to a phlagrant.</p>
+<p>In the above mentioned ways the box can be added to a ptvirtualize.</p>
 </div>
 <div class="section" id="remove">
 <h2>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
-<p>This function is used for removing the box as usable by phlagrant. This can be done using the command shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box remove
+<p>This function is used for removing the box as usable by ptvirtualize. This can be done using the command shown below:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box remove
 </pre></div>
 </div>
-<p>In the above mentioned ways the box can be removed from a phlagrant.</p>
+<p>In the above mentioned ways the box can be removed from a ptvirtualize.</p>
 </div>
 <div class="section" id="package">
 <h2>Package<a class="headerlink" href="#package" title="Permalink to this headline">¶</a></h2>
-<p>This functions is used to package the box as usable by phlagrant. This can be implemented by using the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box package
+<p>This functions is used to package the box as usable by ptvirtualize. This can be implemented by using the following command:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box package
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box package --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box package --yes --guess
 <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;Vanilla Ubuntu 12.04 amd 64&quot;</span>
 <span class="nv">vmname</span><span class="o">=</span><span class="s2">&quot;a4..............&quot;</span> <span class="o">(</span>This two lines represents the name and id of virtual machine<span class="o">)</span>
 --provider<span class="o">=</span><span class="s2">&quot;virtualbox&quot;</span> <span class="o">(</span>guess will use virtual box<span class="o">)</span>
---group<span class="o">=</span><span class="s2">&quot;phlagrant&quot;</span>
+--group<span class="o">=</span><span class="s2">&quot;ptvirtualize&quot;</span>
 --slug<span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="o">(</span>The guess can generate this based on the name field<span class="o">)</span>
 --description<span class="o">=</span><span class="s2">&quot;A vanilla install of Ubuntu...&quot;</span>
---home_location<span class="o">=</span><span class="s2">&quot;http://www.someplace.net/&quot;</span> <span class="o">(</span>guess will <span class="nb">set </span>this to http://www.phlagrantboxes.co.uk/
---target<span class="o">=</span><span class="s2">&quot;/opt/phlagrant/boxes&quot;</span> <span class="o">(</span>The location <span class="k">for</span> saving<span class="o">)</span>
+--home_location<span class="o">=</span><span class="s2">&quot;http://www.someplace.net/&quot;</span> <span class="o">(</span>guess will <span class="nb">set </span>this to http://www.ptvirtualizeboxes.co.uk/
+--target<span class="o">=</span><span class="s2">&quot;/opt/ptvirtualize/boxes&quot;</span> <span class="o">(</span>The location <span class="k">for </span>saving<span class="o">)</span>
 </pre></div>
 </div>
-<p>Finally, a box is packaged as usable by the phlagrant.</p>
+<p>Finally, a box is packaged as usable by the ptvirtualize.</p>
 </div>
 <div class="section" id="list">
 <h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
-<p>This function is used for listing the boxes that are installed in phlagrant. This can be done by using the following command,</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant box list
+<p>This function is used for listing the boxes that are installed in ptvirtualize. This can be done by using the following command,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize box list
 </pre></div>
 </div>
-<p>By using the command above, the list of phlagrant boxes that are newly installed will be displayed.</p>
+<p>By using the command above, the list of ptvirtualize boxes that are newly installed will be displayed.</p>
 </div>
 <div class="section" id="alternative-parameters">
 <h2>Alternative Parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
@@ -337,7 +325,7 @@ End Help
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -14,10 +14,10 @@ This command helps to determine the usage of Phake module. The user will come to
 
 .. code-block:: bash
         
-	        cleopatra Phake help
+	        ptconfigure Phake help
 
 
- kevells@corp:/# cleopatra Phake help
+ kevell@corp:/# ptconfigure Phake help
  ******************************
 
 
@@ -27,11 +27,11 @@ This command helps to determine the usage of Phake module. The user will come to
 
         - install
         Installs the latest version of phake
-        example: cleopatra phake install
+        example: ptconfigure phake install
 
         - ensure
         Installs the latest version of phake, only if a version is not installed
-        example: cleopatra phake ensure
+        example: ptconfigure phake ensure
 
  ------------------------------
  End Help
@@ -45,7 +45,7 @@ When the user needs to install Phake in machine, the below given command will ex
 
 .. code-block:: bash
          
-   	        cleopatra Phake install
+   	        ptconfigure Phake install
  
 
 
@@ -61,7 +61,7 @@ The below screenshot shows the same.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Phake install
+ kevell@corp:/# ptconfigure Phake install
  Install Phake ? (Y/N) 
  Y
  *******************************
@@ -102,42 +102,21 @@ Options
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
  |	Parameters  	       | Alternative Parameter                    | Options  | 		Comments	            |
  +=============================+==========================================+==========+======================================+
- |Cleopatra Phake Install      |Either of the two alternative		  |Y         |Once the user provides the option,    |
+ |ptconfigure Phake Install    |Either of the two alternative		  |Y         |Once the user provides the option,    |
  |		 	       |parameter can be used in command- Phake,  | 	     |System starts installation process    |
  |                             |phake				 	  |          |				            |
- |                             |eg: Cleopatra  phake Install		  |          |				            |
+ |                             |eg: ptconfigure  phake Install		  |          |				            |
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
- |Cleopatra Phake Install      |Either of the two alternative		  |N         |Once the user provides the option,    |
+ |ptconfigure Phake Install    |Either of the two alternative		  |N         |Once the user provides the option,    |
  |		 	       |parameter can be used in command- Phake,  | 	     |System stops installation process     |
  |                             |phake					  |          |				            |
- |                             |eg: Cleopatra phake Install|	  	  |    	     |				            |
+ |                             |eg: ptconfigure phake Install|	  	  |    	     |				            |
  +-----------------------------+------------------------------------------+----------+--------------------------------------+
 
-
-Ensure
---------------------
-
-Installs the latest version of Phake, only if a version is not available. The below given command will execute the process.
-
-.. code-block:: bash
-         
-	        Cleapatra Phake ensure
-
-
-
-
-
-
-
-The system ask for the directory name, define your path followed by '/' symbol. Press Enter if there is no changes to be done.
-
-"What is the program data directory? Found "/opt/phake" - use this?
-
-Then the system ask for executing directory name, define your path followed by '/' symbol. Press Enter if there is no changes to be done
-
-"What is the program executer directory? Found "/usr/bin" - Use this? "
 
 Benefits
 --------------
 
-Phake is a great mocking library and can be easily integrated into PHPUnit. Its new approach to prototype mocks and stubs and the separation between stubbing and verification phases is very refreshing and easy to use.
+* Phake is a great mocking library and can be easily integrated into PHPUnit. 
+* Its new approach to prototype mocks and stubs and the separation between stubbing and verification phases is very refreshing and easy to
+  use.

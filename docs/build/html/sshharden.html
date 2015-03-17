@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Sudonopass" href="sudonopass.html" />
-    <link rel="prev" title="Skipfish" href="skipfish.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="SshKeygen" href="sshKeygen.html" />
+    <link rel="prev" title="SshEncrypt" href="sshencrypt.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,10 +107,10 @@
             
               
                 
-  <li><a href="skipfish.html"
-         title="Previous Chapter: Skipfish">&laquo; Skipfish</a></li>
-  <li><a href="sudonopass.html"
-         title="Next Chapter: Sudonopass">Sudonopass &raquo;</a></li>
+  <li><a href="sshencrypt.html"
+         title="Previous Chapter: SshEncrypt">&laquo; SshEncrypt</a></li>
+  <li><a href="sshKeygen.html"
+         title="Next Chapter: SshKeygen">SshKeygen &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="ssh-harden">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the SSH harden module. The help command lists out the alternative parameters of SSH harden. It also describes the syntax for using SSH harden to securify. The help command for SSH harden is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra SshHarden <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SshHarden <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under SSH Harden.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra SshHarden <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure SshHarden <span class="nb">help</span>
 
 ******************************
 
@@ -183,7 +171,7 @@ SshHarden, sshharden, ssh-harden
 
 - securify
 Add some security to your SSH accounts
-example: cleopatra ssh-harden securify
+example: ptconfigure ssh-harden securify
 
 ------------------------------
 End Help
@@ -194,7 +182,7 @@ End Help
 <div class="section" id="securify">
 <h2>Securify<a class="headerlink" href="#securify" title="Permalink to this headline">¶</a></h2>
 <p>The command used for securifying the users SSH account via SSH harden is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra ssh-harden securify
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ssh-harden securify
 </pre></div>
 </div>
 <p>After inputting the command as given above the installation of Ssh Hardening begins as shown in the tabular format.</p>
@@ -203,7 +191,7 @@ End Help
 <col width="25%" />
 <col width="24%" />
 <col width="11%" />
-<col width="40%" />
+<col width="41%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Paramaters</th>
@@ -214,7 +202,7 @@ End Help
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install Ssh Hardening? (Y/N)</td>
-<td>In Spite of Ssh Hardening, the
+<td>Instead of Ssh Hardening, the
 following alternatives can also
 be used: SshHarden,
 sshharden, ssh-harden.</td>
@@ -223,37 +211,33 @@ sshharden, ssh-harden.</td>
 they can input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Install Ssh Hardening? (Y/N)</td>
-<td>In Spite of Ssh Hardening, the
+<td>Instead of Ssh Hardening, the
 following alternatives can also
 be used: SshHarden,
-sshharden, ssh-harden.</td>
+sshharden, ssh-harden.|</td>
 <td>N(No)</td>
-<td><p class="first">If the user wish to Quit the installation process
-they can input as Y.</p>
-<div class="last line-block">
-<div class="line"><br /></div>
-</div>
-</td>
+<td>If the user wish to Quit the installation process
+they can input as N.</td>
 </tr>
 </tbody>
 </table>
 <p>If the user proceeds the installation of Ssh harden that enables securifying the ssh account of users gets initiated. While the process of execution occurs, the sshd config gets modified that disallows root ssh login and as well as sshd config is modified that disallows password based ssh login. finally it will restarts the ssh service and display the results of completed Ssh Harden modifications. The following screen shot explains the above mentioned process pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:~# cleopatra ssh-harden securify
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure ssh-harden securify
 
 Install Ssh Hardening? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
-PHP Notice:  Undefined index: searchline in /opt/cleopatra/cleopatra/src/Modules/File/Model/FileAllOS.php on line 175
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 175
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
-PHP Notice:  Undefined index: searchline in /opt/cleopatra/cleopatra/src/Modules/File/Model/FileAllOS.php on line 149
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 149
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Writing File /etc/ssh/sshd_config
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> /etc/ssh/sshd_config modified to disallow root ssh login
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
-PHP Notice:  Undefined index: searchline in /opt/cleopatra/cleopatra/src/Modules/File/Model/FileAllOS.php on line 175
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 175
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
-PHP Notice:  Undefined index: searchline in /opt/cleopatra/cleopatra/src/Modules/File/Model/FileAllOS.php on line 149
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 149
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Writing File /etc/ssh/sshd_config
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> /etc/ssh/sshd_config modified to disallow password based ssh login
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Restarting ssh service
@@ -277,7 +261,8 @@ SshHarden Mods Finished
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>This Ssh harden acts as a enhancer that enables the security functions of the users SSH accounts.</li>
-<li>The parameters used in help and securifying, installation operations are not case sensitive which is an added advantage while compared to others.</li>
+<li>The parameters used in help and securifying, installation operations are not case sensitive which is an added advantage while compared to
+others.</li>
 <li>This module enables modification of ssh harden config that prohibits root ssh login, password based ssh login.</li>
 </ul>
 </div>
@@ -318,7 +303,7 @@ SshHarden Mods Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

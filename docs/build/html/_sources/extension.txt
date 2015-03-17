@@ -21,7 +21,7 @@ After typing the command it lists the options as action. The following image vis
 
 .. code-block:: bash
 
- kevells@corp:/# jrush Extension help
+ kevell@corp:/# jrush Extension help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -77,7 +77,7 @@ The following mantle shot can visualize its function.
 
 .. code-block:: bash
 
- kevells@corp:/# jrush Extension disable --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush Extension disable --config-file="/var/www/html/joomla/configuration.php" 
  Enter a Extension ID. To enter element/extension name use --extension-element or --extension-name parameters
  1
  ****************************************
@@ -112,7 +112,7 @@ The following screen shots guides the user to enable its function.
 
 .. code-block:: bash
 
- kevells@corp:/# jrush Extension enable --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush Extension enable --config-file="/var/www/html/joomla/configuration.php" 
  Enter a Extension ID. To enter element/extension name use --extension-element or --extension-name parameters
  1
  ****************************************
@@ -148,7 +148,7 @@ It can be visualizes by the screenshot.
 
 .. code-block:: bash
 
- kevells@corp:/# jrush Extension info --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush Extension info --config-file="/var/www/html/joomla/configuration.php" 
  Enter a Extension ID. To enter element/extension name use --extension-element or --extension-name parameters
  1
  ****************************************

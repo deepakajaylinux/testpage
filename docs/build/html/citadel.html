@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Cleopatra" href="cleo.html" />
-    <link rel="prev" title="Chown" href="chown.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Cleofy" href="cleofy.html" />
+    <link rel="prev" title="ChromeDriver" href="chromedriver.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="chown.html"
-         title="Previous Chapter: Chown">&laquo; Chown</a></li>
-  <li><a href="cleo.html"
-         title="Next Chapter: Cleopatra">Cleopatra &raquo;</a></li>
+  <li><a href="chromedriver.html"
+         title="Previous Chapter: ChromeDriver">&laquo; ChromeDriver</a></li>
+  <li><a href="cleofy.html"
+         title="Next Chapter: Cleofy">Cleofy &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="citadel">
@@ -170,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Citadel module. The user will come to know about the different ways/format to execute this module. The alternative parameter that are used in declaration is clearly defined under help option.  This command guides the end user to know the command used for installation. Below given are the command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra  Citadel <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  Citadel <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the screenshot is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Citadel <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Citadel <span class="nb">help</span>
 ******************************
 
 
@@ -184,11 +172,11 @@
 
        - install
        Installs Citadel Server
-       example: cleopatra citadel install
+       example: ptconfigure citadel install
 
        - configure
        Configure E-Mail with Citadel Server
-       example: cleopatra citadel configure
+       example: ptconfigure citadel configure
 
 ------------------------------
 End Help
@@ -199,22 +187,22 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to install Citadel server in machine, you can input the following commands to install the citadel-suite. The system will execute the process of installation. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra Citadel  install
+<div class="highlight-bash"><div class="highlight"><pre>               ptconfigure Citadel  install
 
 
 
-kevells@corp:/# cleopatra Citadel install
+kevell@corp:/# ptconfigure Citadel install
 Install Citadel Server? (Y/N)
 Y
 *******************************
 *        Pharaoh Tools        *
 *         Citadel Server!     *
 *******************************
-Creating /tmp/cleopatra-temp-script-11993825383.sh
-chmod 755 /tmp/cleopatra-temp-script-11993825383.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-11993825383.sh Permissions
-Executing /tmp/cleopatra-temp-script-11993825383.sh
-Temp File /tmp/cleopatra-temp-script-11993825383.sh Removed
+Creating /tmp/ptconfigure-temp-script-11993825383.sh
+chmod 755 /tmp/ptconfigure-temp-script-11993825383.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-11993825383.sh Permissions
+Executing /tmp/ptconfigure-temp-script-11993825383.sh
+Temp File /tmp/ptconfigure-temp-script-11993825383.sh Removed
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -235,11 +223,11 @@ Setting up debconf-utils (1.5.51ubuntu2) ...
 [Pharaoh Logging] Stopping apache2 service
 * Stopping web server apache2
 *
-Creating /tmp/cleopatra-temp-script-74031405363.sh
-chmod 755 /tmp/cleopatra-temp-script-74031405363.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-74031405363.sh Permissions
-Executing /tmp/cleopatra-temp-script-74031405363.sh
-Temp File /tmp/cleopatra-temp-script-74031405363.sh Removed
+Creating /tmp/ptconfigure-temp-script-74031405363.sh
+chmod 755 /tmp/ptconfigure-temp-script-74031405363.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-74031405363.sh Permissions
+Executing /tmp/ptconfigure-temp-script-74031405363.sh
+Temp File /tmp/ptconfigure-temp-script-74031405363.sh Removed
 apache2_invoke: Enable configuration javascript-common
 invoke-rc.d: initscript apache2, action &quot;reload&quot; failed.
 Reading package lists...
@@ -377,22 +365,22 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra Citadel Install?
+<tr class="row-even"><td>ptconfigure Citadel Install?
 (Y/N)</td>
 <td>Either of the three alternative
 parameter can be used in command- Citadel,
 citadel-server,  citadel
-eg: Cleopatra  citadel-server Install</td>
+eg: ptconfigure  citadel-server Install</td>
 <td>Y</td>
 <td>Once the user provides this option,
 System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra Citadel Install?
+<tr class="row-odd"><td>ptconfigure Citadel Install?
 (Y/N)</td>
 <td>Either of the three alternative
 parameter can be used in command- Citadel,
 citadel-server,  citadel
-eg: Cleopatra  citadel-server Install.|</td>
+eg: ptconfigure  citadel-server Install.|</td>
 <td>N</td>
 <td>Once the user provides this option,
 System stops installation process</td>
@@ -403,7 +391,7 @@ System stops installation process</td>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
 <p>This command helps in configuring the Citadel server. Once the below given command is executed the system provides you with the default value for each section, if there are any changes to be done, the user can provide the data. The command used for configuration is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Citadel configure
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Citadel configure
 </pre></div>
 </div>
 </div>
@@ -453,7 +441,7 @@ System stops installation process</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

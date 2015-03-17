@@ -15,14 +15,14 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
   
- cleopatra mediatools help
+ ptconfigure mediatools help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under media tools.
 
 .. code-block:: bash
 
 
-	Kevells@corp:/# cleopatra MediaTools help
+	Kevell@corp:/# ptconfigure MediaTools help
 	******************************
 
 
@@ -34,7 +34,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs some media tools
-        example: cleopatra mediatools install
+        example: ptconfigure mediatools install
 
 	------------------------------
 	End Help
@@ -44,22 +44,25 @@ Installation
 ---------------
 
 
-.. cssclass:: table-bordered
+The following command used to install media tools.
+
+.. code-block:: bash
+
+	ptconfigure mediatools install
 
 
-	+---------------------------+---------------------------------------+-----------+---------------------------------------------+
-        |    Parameters             |    Alternative Parameter              |  Options  |     Comment                                 |
-        +===========================+=======================================+===========+=============================================+
-	|Install Media Tools? (Y/N) |In Spite of Media Tools,the following  | Y(Yes)	|If the user wish to proceed the installation |
-    	|			    |alternatives can also be used          |           |process they can input as Y                  |
-        |    			    |MediaTools, media-tools,	            |	        |					      |
-        |			    |mediatools.		            |		|					      |
-	+---------------------------+---------------------------------------+-----------+---------------------------------------------+
-	|Install Media Tools? (Y/N) |In Spite of Media Tools,the following  | N(No)	|If the user wish to Quit the installation    |
-    	|			    |alternatives can also be used          |           |process they can input as N                  |
-        |    			    |MediaTools, media-tools,	            |	        |					      |
-        |			    |mediatools.|		            |		|					      |
-	+---------------------------+---------------------------------------+-----------+---------------------------------------------+
+The screenshot visualize its function.
+
+
+.. code-block:: bash
+
+
+        - install
+        Installs some media tools
+        example: ptconfigure mediatools install
+
+        ------------------------------
+        End Help
 
 If the user proceeds the installation process, the following process occurs during installation.
 
@@ -75,10 +78,9 @@ If the user proceeds the installation process, the following process occurs duri
 * The following screen shot explains the above mentioned process pictorially.
 
 
-
 .. code-block:: bash
 
-	Kevells@corp:/# cleopatra mediatools install
+	Kevell@corp:/# ptconfigure mediatools install
 	Install Media Tools? (Y/N) 
 	y
 	*******************************
@@ -295,10 +297,10 @@ If the user proceeds the installation process, the following process occurs duri
 	libdvdread4 set to manually installed.
 	0 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
 	[Pharaoh Logging] Package libdvdread4 from the Packager Apt is already installed, so not installing.
-	Creating /tmp/cleopatra-temp-script-86836778897.sh
-	chmod 755 /tmp/cleopatra-temp-script-86836778897.sh 2>/dev/null
-	Changing /tmp/cleopatra-temp-script-86836778897.sh Permissions
-	Executing /tmp/cleopatra-temp-script-86836778897.sh
+	Creating /tmp/ptconfigure-temp-script-86836778897.sh
+	chmod 755 /tmp/ptconfigure-temp-script-86836778897.sh 2>/dev/null
+	Changing /tmp/ptconfigure-temp-script-86836778897.sh Permissions
+	Executing /tmp/ptconfigure-temp-script-86836778897.sh
 	--2015-01-10 01:11:57--  http://download.videolan.org/pub/debian/stable//Packages
 	Resolving download.videolan.org (download.videolan.org)... 195.154.216.18
 	Connecting to download.videolan.org (download.videolan.org)|195.154.216.18|:80... connected.
@@ -327,7 +329,7 @@ If the user proceeds the installation process, the following process occurs duri
 	Unpacking libdvdcss2 (1.2.13-0) ...
 	Setting up libdvdcss2 (1.2.13-0) ...
 	Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
-	Temp File /tmp/cleopatra-temp-script-86836778897.sh Removed
+	Temp File /tmp/ptconfigure-temp-script-86836778897.sh Removed
 	... All done!
 	*******************************
 	Thanks for installing , visit www.pharaohtools.com for more
@@ -342,9 +344,30 @@ If the user proceeds the installation process, the following process occurs duri
 	******************************
 
 
+Options
+----------
+
+
+.. cssclass:: table-bordered
+
+ +---------------------------+---------------------------------------------------+-------------+---------------------------------------+
+ | Parameters		     | Alternative Parameter				 | Options     | Comment			       |
+ +===========================+===================================================+=============+=======================================+
+ |Install Media Tools? (Y/N) | Instead of Media Tools,the following alternatives | Y(Yes)      | If the user wish to proceed the       |
+ |			     | can also be used MediaTools, media-tools,         |	       | installation process they can input   |
+ |			     | mediatools.					 | 	       | as Y				       |
+ +---------------------------+---------------------------------------------------+-------------+---------------------------------------+
+ |Install Media Tools? (Y/N) | Instead of Media Tools,the following alternatives | N(No)       | If the user wish to quit the          |
+ |                           | can also be used MediaTools, media-tools,         |             | installation process they can input   |
+ |                           | mediatools.                                       |             | as N.|                                |
+ +---------------------------+---------------------------------------------------+-------------+---------------------------------------+
+
+
    
 Benefits
 ------------
+
+
 * The parameters used in help and installation operations are not case sensitive which is an added advantage while compared to others.
 * Using this module the productivity of the system can be enhanced.
 * It is well-to-do in both Ubuntu and as well as Cent OS.

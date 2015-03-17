@@ -14,14 +14,14 @@ The help command describes the uses of run command, its major functionality, its
 
 .. code-block:: bash
 
-		cleopatra RunCommand help
+		ptconfigure RunCommand help
 
 The following screen shot depicts pictorially about the working of help command.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra RunCommand help
+ kevell@corp:/# ptconfigure RunCommand help
  ******************************
 
 
@@ -31,7 +31,7 @@ The following screen shot depicts pictorially about the working of help command.
 
         - execute
         Execute a Command
-        example: cleopatra run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
+        example: ptconfigure run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
 
  ------------------------------
  End Help
@@ -45,24 +45,26 @@ The syntax used for specifying the run command in shown below.
 
 .. code-block:: bash
 
-		cleopatra run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
+		ptconfigure run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
 
 
 .. cssclass:: table-bordered
 
- +----------------------------------+-----------------------------------------------+-----------------------------------------------+
- |      Parameter                   |           Function                            |           Usage                               |
- +==================================+===============================================+===============================================+
- |command="ls -lah /tmp"            |It allows the user to specify the command      |By using this, the user can specify their own  |
- |                                  |and its purpose.                               |command as per their requirements.             |
- +----------------------------------+-----------------------------------------------+-----------------------------------------------+
- |run-as-user="ubuntu"              |By using this the user can specify the name    |By using this, the user can specify their      |
- |                                  |of the user.                                   |required user login as per their requirements. |
- +----------------------------------+-----------------------------------------------+-----------------------------------------------+
- |" --background                    |It allows the user to specify where to run the |By using this, the user can specify their      |
- |                                  |particular command either in background or in  |platform of usage as per their requirements.   |
- |                                  |the front-end.|                                |                                               |
- +----------------------------------+-----------------------------------------------+-----------------------------------------------+
+ +------------------------+------------------------------------------------+-------------------------+--------------------------------------+
+ | Parameter              | Function                                       | Alternative parameters  | Usage                                |
+ +========================+================================================+=========================+======================================+
+ |command="ls -lah /tmp"  | It allows the user to specify the command      | Runcommand, runcommand, | By using this, the user can specify  |
+ |                        | and its purpose.                               | run-command             | their own command as per their       |
+ |                        |                                                |                         | requirements.                        |
+ +------------------------+------------------------------------------------+-------------------------+--------------------------------------+
+ |run-as-user="ubuntu"    | By using this the user can specify the name    | Runcommand, runcommand, | By using this, the user can specify  |
+ |                        | of the user.                                   | run-command             | their required user login as per     |
+ |                        |                                                |                         | their requirements.                  | 
+ +------------------------+------------------------------------------------+-------------------------+--------------------------------------+
+ |" --background          | It allows the user to specify where to run the | Runcommand, runcommand, | By using this, the user can specify  |
+ |                        | particular command either in background or in  | run-command             | their platform of usage as per their |
+ |                        | the front-end.                                 |                         | requirements.|                       |
+ +------------------------+------------------------------------------------+-------------------------+--------------------------------------+
 
 
 

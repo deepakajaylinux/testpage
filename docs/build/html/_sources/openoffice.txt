@@ -14,7 +14,7 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra OpenOffice help
+		ptconfigure OpenOffice help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Open Office.
@@ -22,7 +22,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra openoffice help
+ kevell@corp:/# ptconfigure openoffice help
 
  ******************************
 
@@ -33,7 +33,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs OpenOffice.
-        example: cleopatra openoffice install
+        example: ptconfigure openoffice install
 
  ------------------------------
  End Help
@@ -47,7 +47,7 @@ The command used for installing the Open Office in the users machine is shown be
 
 .. code-block:: bash
 
-		cleopatra openoffice install
+		ptconfigure openoffice install
 
 
 After inputting the command above, the following process occurs as shown in the tabular format.
@@ -95,4 +95,5 @@ Benefits
 * This will module installs the php apc in updated version.
 * The primary advantage of using Apache OpenOffice as a productivity suite comes from the cost. It includes word processing, spreadsheet, 
   presentation, vector graphic editing and database management components. 
-* It's easy for beginners to learn to use, but it is powerful enough to do the advanced tasks experienced users want. It's designed so that the  commands and functions you perform in one component of the software work throughout the entire suite.
+* It's easy for beginners to learn to use, but it is powerful enough to do the advanced tasks experienced users want. It's designed so that
+  the  commands and functions you perform in one component of the software work throughout the entire suite.

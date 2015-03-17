@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="HHVM" href="hhvm.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="HAProxy" href="haproxy.html" />
     <link rel="prev" title="Git lab" href="gitlab.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="gitlab.html"
          title="Previous Chapter: Git lab">&laquo; Git lab</a></li>
-  <li><a href="hhvm.html"
-         title="Next Chapter: HHVM">HHVM &raquo;</a></li>
+  <li><a href="haproxy.html"
+         title="Next Chapter: HAProxy">HAProxy &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="git-tools">
@@ -165,24 +153,129 @@
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <p>Gittools is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows.
-This module lift installation in updated version. While installing it can also install gitfrom,git core,gitcole,gitfrom under  Cleopatra. Automation is possible. It is user friendly with Ubuntu and cent OS.</p>
+This module lift installation in updated version. While installing it can also install gitfrom,git core,gitcole,gitfrom under  ptconfigure. Automation is possible. It is user friendly with Ubuntu and cent OS.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>This help command guide the user about Cleopatra. It is less time consuming because it can installed automatically. Suitable for all type of user. The following help command will assist the user for gittools installation. This command-line argument specifies the name of the command about which information is to be displayed.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra gittools <span class="nb">help</span>
+<p>This help command guide the user about ptconfigure. It is less time consuming because it can installed automatically. Suitable for all type of user. The following help command will assist the user for gittools installation. This command-line argument specifies the name of the command about which information is to be displayed.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gittools <span class="nb">help</span>
 </pre></div>
 </div>
 <p>After typing the command it shows the usage. The screen shot can express the function of this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure GitTools <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install Git and a <span class="nb">set </span>of common Git Tools. These include
+ Git - the distributed <span class="nb">source </span>control manager, git Core a supplement to Git, Gitk
+ which is a GUI <span class="k">for </span>git, and git-cola, which is also a Git GUI.
+
+ GitTools, gittools, git-tools
+
+       - install
+       Installs the latest version of Git Tools
+       example: ptconfigure gittools install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp;&nbsp; Installation includes provision of or connection to services required to make the installed equipment ready for operation. It is a manifest process to install gittools module under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra gittools install
+<p>&nbsp;&nbsp; Installation includes provision of or connection to services required to make the installed equipment ready for operation. It is a manifest process to install gittools module under ptconfigure by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gittools install
 </pre></div>
 </div>
 <p>After vitalize the command it will catechize input.</p>
 <p>The user input as yes automatically it will install gittools with checking from the system.  The following screen shot demonstrates it.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gittools install
+Install Git Tools? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         !Git Tools!!        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package git from the Packager Apt is already installed, so not installing
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package git-core from the Packager Apt is already installed, so not installing
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+ linux-headers-generic linux-image-generic
+Use <span class="s1">&#39;apt-get autoremove&#39;</span> to remove them.
+Suggested packages:
+ git-doc
+The following NEW packages will be installed:
+ gitk
+0 upgraded, 1 newly installed, 0 to remove and 299 not upgraded.
+Need to get 121 kB of archives.
+After this operation, 1,250 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main gitk all 1:1.9.1-1ubuntu0.1 <span class="o">[</span>121 kB<span class="o">]</span>
+Fetched 121 kB in 19s <span class="o">(</span>6,077 B/s<span class="o">)</span>
+Selecting previously unselected package gitk.
+<span class="o">(</span>Reading database ... 176395 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../gitk_1%3a1.9.1-1ubuntu0.1_all.deb ...
+Unpacking gitk <span class="o">(</span>1:1.9.1-1ubuntu0.1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
+Setting up gitk <span class="o">(</span>1:1.9.1-1ubuntu0.1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package gitk from the Packager Apt executed correctly
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+ linux-headers-generic linux-image-generic
+Use <span class="s1">&#39;apt-get autoremove&#39;</span> to remove them.
+The following extra packages will be installed:
+ libjs-jquery libjs-underscore
+Suggested packages:
+ python-pyinotify python-simplejson javascript-common
+Recommended packages:
+ xxdiff
+The following NEW packages will be installed:
+ git-cola libjs-jquery libjs-underscore
+0 upgraded, 3 newly installed, 0 to remove and 299 not upgraded.
+Need to get 363 kB of archives.
+After this operation, 1,886 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main libjs-jquery all 1.7.2+dfsg-2ubuntu1 <span class="o">[</span>78.8 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/main libjs-underscore all 1.4.4-2ubuntu1 <span class="o">[</span>45.6 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe git-cola all 1.9.3-1 <span class="o">[</span>239 kB<span class="o">]</span>
+Fetched 363 kB in 1min 3s <span class="o">(</span>5,679 B/s<span class="o">)</span>
+Selecting previously unselected package libjs-jquery.
+<span class="o">(</span>Reading database ... 176413 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libjs-jquery_1.7.2+dfsg-2ubuntu1_all.deb ...
+Unpacking libjs-jquery <span class="o">(</span>1.7.2+dfsg-2ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../libjs-underscore_1.4.4-2ubuntu1_all.deb ...
+Unpacking libjs-underscore <span class="o">(</span>1.4.4-2ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package git-cola.
+Preparing to unpack .../git-cola_1.9.3-1_all.deb ...
+Unpacking git-cola <span class="o">(</span>1.9.3-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>gnome-menus <span class="o">(</span>3.10.1-0ubuntu2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>desktop-file-utils <span class="o">(</span>0.22-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>bamfdaemon <span class="o">(</span>0.5.1+14.04.20140409-0ubuntu1<span class="o">)</span> ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers <span class="k">for </span>mime-support <span class="o">(</span>3.54ubuntu1<span class="o">)</span> ...
+Setting up libjs-jquery <span class="o">(</span>1.7.2+dfsg-2ubuntu1<span class="o">)</span> ...
+Setting up libjs-underscore <span class="o">(</span>1.4.4-2ubuntu1<span class="o">)</span> ...
+Setting up git-cola <span class="o">(</span>1.9.3-1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package git-cola from the Packager Apt executed correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+GitTools: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 <p>The installation processing quickly by the following steps,</p>
 <p>Step 1  Install gittools ?(Y/N)
 Step 2  If the user gives Y,the system can check the version and install it
@@ -210,7 +303,7 @@ Step 3  If the user gives N, exit the installation.</p>
 use GitTools,gittools,git-tools</td>
 <td>Y(Yes)</td>
 <td>It will install git and set of common
-gittools under Cleopatra.</td>
+gittools under ptconfigure.</td>
 </tr>
 <tr class="row-odd"><td>Install gittools?(Y/N)</td>
 <td>Instead of using gittools we can
@@ -225,7 +318,8 @@ use GitTools,gittools,git-tools|</td>
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Gittools are associated with complex workflows.</li>
-<li>Gittools makes granular commits easier than any other version control system (VCS) because the user can determine which changes exactly shall be in the next commit.</li>
+<li>Gittools makes granular commits easier than any other version control system (VCS) because the user can determine which changes exactly
+shall be in the next commit.</li>
 <li>Gittools to improve the user coding workflow.</li>
 <li>git-cola  is an advanced Git commit tool, similar to git-gui.</li>
 <li>git-cola features a graphical  viewer, easy, interactive staging, inotify support.</li>
@@ -268,7 +362,7 @@ use GitTools,gittools,git-tools|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

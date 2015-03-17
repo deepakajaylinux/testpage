@@ -19,13 +19,13 @@ This command helps to determine the usage of Zend server module. The user will c
 
 .. code-block:: bash
        
-         	cleopatra zendserver help
+         	ptconfigure zendserver help
 
 The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra ZendServer help
+ kevell@corp:/# ptconfigure ZendServer help
 
  ******************************
   This command allows you to update ZendServer.
@@ -34,7 +34,7 @@ The pictorial representation of the above command is listed below,
 	
 	- install
 	Installs the latest version of ZendServer
-	example: cleopatra zendserver install
+	example: ptconfigure zendserver install
 
  ------------------------------
  End Help
@@ -48,24 +48,24 @@ This command helps in installing zendserver in system. If in case zendserver alr
 
 .. code-block:: bash
         
-	        cleopatra zendserver install
+	        ptconfigure zendserver install
 
 The pictorial representation of the above command is listed below,
 
 
 .. code-block:: bash
 
- root@kevells:~# cleopatra ZendServer install
+ kevell@corp:/# ptconfigure ZendServer install
  Install ZendServer? (Y/N) 
  y
  *******************************
  *        Pharaoh Tools        *
  *         ZendServer!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-65684868988.sh
- chmod 755 /tmp/cleopatra-temp-script-65684868988.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-65684868988.sh Permissions
- Executing /tmp/cleopatra-temp-script-65684868988.sh
+ Creating /tmp/ptconfigure-temp-script-65684868988.sh
+ chmod 755 /tmp/ptconfigure-temp-script-65684868988.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-65684868988.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-65684868988.sh
  --2015-01-28 12:32:03--  http://repos.zend.com/zend.key
  Resolving repos.zend.com (repos.zend.com)... 175.41.7.3, 175.41.7.4
  Connecting to repos.zend.com (repos.zend.com)|175.41.7.3|:80... connected.
@@ -276,7 +276,7 @@ The pictorial representation of the above command is listed below,
  Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
  Fetched 2,431 kB in 3min 8s (12.9 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-65684868988.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-65684868988.sh Removed
  [Pharaoh Logging] Package libmemcached6 from the Packager Apt is already installed, so not installing
  [Pharaoh Logging] Package php-5.3-memcached-zend-server from the Packager Apt is already installed, so not installing
  [Pharaoh Logging] Package php-5.3-extra-extensions-zend-server from the Packager Apt is already installed, so not installing
@@ -410,17 +410,17 @@ Options
  +--------------------------------+---------------------------------------------+----------------+--------------------------------+
  | Parameters			  | Alternative parameters			| Options	 | Comments			  |
  +================================+=============================================+================+================================+
- |cleopatra zendserver Install	  | There are three alternative parameters      | Y		 | System starts installation	  |
+ |ptconfigure zendserver Install  | There are three alternative parameters      | Y		 | System starts installation	  |
  |				  | which can be used in command line.		|		 | process			  |
  |				  | zendserver , Zendserver, ZendServer         |		 |				  |
- |				  | Eg: cleopatra zendserver install 		|		 |				  |
- |				  | cleopatra Zendserver install		|		 |				  |
+ |				  | Eg: ptconfigure zendserver install 		|		 |				  |
+ |				  | ptconfigure Zendserver install		|		 |				  |
  +--------------------------------+---------------------------------------------+----------------+--------------------------------+
- |cleopatra zendserver Install	  | There are three alternative parameters      | N		 | System stops installation	  |
+ |ptconfigure zendserver Install  | There are three alternative parameters      | N		 | System stops installation	  |
  |				  | which can be used in command line.		|		 | process			  |
  |				  | zendserver , Zendserver, ZendServer         |		 |				  |
- |				  | Eg: cleopatra zendserver install 		|		 |				  |
- |				  | cleopatra Zendserver install.|		|		 |				  |
+ |				  | Eg: ptconfigure zendserver install 		|		 |				  |
+ |				  | ptconfigure Zendserver install.|		|		 |				  |
  +--------------------------------+---------------------------------------------+----------------+--------------------------------+
 
 

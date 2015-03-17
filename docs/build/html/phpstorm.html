@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHP Unit" href="phpunit.html" />
     <link rel="prev" title="Php SSH" href="phpssh.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,7 +96,6 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -145,80 +144,102 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpstorm">
 <h1>PHPStorm<a class="headerlink" href="#phpstorm" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>PhpStorm keeps up with latest PHP &amp; Cleopatra trends, integrates a variety of modern tools, and brings even more extensibility with support for major PHP frameworks. Development environment auto-configuration (coding standard, file associations, etc.)Is possible. It is comfortable with Ubuntu and cent OS.</p>
+<p>PhpStorm keeps up with latest PHP &amp; ptconfigure trends, integrates a variety of modern tools, and brings even more extensibility with support for major PHP frameworks. Development environment auto-configuration (coding standard, file associations, etc.)Is possible. It is comfortable with Ubuntu and cent OS.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>This command can function about the objectives and commands available under Cleopatra Php storm module. It also explains the command to install Php storm module. Before installation, the user can read this help command explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra Php storm module <span class="nb">help</span>
+<p>This command can function about the objectives and commands available under ptconfigure Php storm module. It also explains the command to install Php storm module. Before installation, the user can read this help command explains its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPStorm <span class="nb">help</span>
 </pre></div>
 </div>
-<p>The following screenshots can visualize the help command.</p>
+<p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHP Storm.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPStorm <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install Intellij, the JetBrains IDE
+
+ PHPStorm, phpstorm
+
+       - install
+       Installs the latest version of Developer Tools
+       example: ptconfigure gittools install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>It is a noticable process to install Phpstorm module under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra phpstorm install
+<p>If the user wish to install git tools to their machine, they can use the command as given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gittools install
 </pre></div>
 </div>
-<p>After key in the command, it can asks</p>
-<p>Install phpstorm? (Y/N)</p>
-<p>In case the user input as Y, it can install phpstorm from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>After inputting the command above, the following steps are involved during the process of installation as described in the table,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="24%" />
-<col width="20%" />
 <col width="19%" />
-<col width="38%" />
+<col width="36%" />
+<col width="13%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Alternative Parameter</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Options</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Cleopatra phpstorm Install</td>
-<td>We can use PHPStorm &amp;
-phpstorm</td>
-<td>Y</td>
-<td>System starts installation process under
-cleopatra</td>
+<tr class="row-even"><td>Install Git Tools? (Y/N)</td>
+<td>Instead of using PHPStorm We can use phpstorm</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed the
+installation process they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td>Cleopatra phpstorm Install</td>
-<td><ul class="first last simple">
-<li></li>
-</ul>
-</td>
-<td>N</td>
-<td>System stops installation process under
-cleopatra|</td>
+<tr class="row-odd"><td>Install Git Tools? (Y/N)</td>
+<td>Instead of using PHPStorm We can use phpstorm</td>
+<td>N(No)</td>
+<td>If the user wish to quit the
+installation process they can input as N|</td>
 </tr>
 </tbody>
 </table>
+<p>The following screenshot pictorially depicts the above described process of installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gittools install
+Install Git Tools? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         !Git Tools!!        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package git from the Packager Apt is already installed, so not installing
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package git-core from the Packager Apt is already installed, so not installing
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package gitk from the Packager Apt is already installed, so not installing
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package git-cola from the Packager Apt is already installed, so not installing
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+GitTools: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -269,7 +290,7 @@ cleopatra|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

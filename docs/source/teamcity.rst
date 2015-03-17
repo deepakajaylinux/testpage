@@ -14,13 +14,13 @@ The help command guides the user to provide what is necessary to accomplish the 
 
 .. code-block:: bash
 
-	cleopatra Teamcity help
+	ptconfigure Teamcity help
 
 The snapshot below gives you a pictorial representation of help command and it listed two parameters as Teamcity and teamcity. (Parameters are case insensitive)
 
 .. code-block:: bash
 
-	kevells@copy:/# cleopatra teamcity help
+	kevell@copy:/# ptconfigure teamcity help
 	******************************
 
 
@@ -30,7 +30,7 @@ The snapshot below gives you a pictorial representation of help command and it l
 
         - install
         Installs Teamcity from the Jetbrains distributed native package
-        example: cleopatra teamcity install
+        example: ptconfigure teamcity install
 
 	------------------------------
 	End Help
@@ -44,7 +44,7 @@ The command used for installing Teamcity module is given below,
 
 .. code-block:: bash
 
-	cleopatra Teamcity install
+	ptconfigure Teamcity install
 
 
 The screenshot below explains how to install teamcity module.
@@ -52,21 +52,21 @@ The screenshot below explains how to install teamcity module.
 .. code-block:: bash
 
 
-	kevells@corp:/# cleopatra Teamcity install
+	kevell@corp:/# ptconfigure Teamcity install
 	Install Teamcity? (Y/N) 
 	y
 	*******************************
 	*        Pharaoh Tools        *
 	*          ! Teamcity !        *
 	*******************************
-	PHP Notice:  Undefined index: version in /opt/cleopatra/cleopatra/src/Modules/Teamcity/Model/TeamcityUbuntu.php on line 42
+	PHP Notice:  Undefined index: version in /opt/ptconfigure/ptconfigure/src/Modules/Teamcity/Model/TeamcityUbuntu.php on line 42
 	[Pharaoh Logging] Ensure module install is not checking versions
 	[Pharaoh Logging] Module Java reports itself as Installed
 	[Pharaoh Logging] Not installing as already installed
-	Creating /tmp/cleopatra-temp-script-82478215982.sh
-	chmod 755 /tmp/cleopatra-temp-script-82478215982.sh 2>/dev/null
-	Changing /tmp/cleopatra-temp-script-82478215982.sh Permissions
-	Executing /tmp/cleopatra-temp-script-82478215982.sh
+	Creating /tmp/ptconfigure-temp-script-82478215982.sh
+	chmod 755 /tmp/ptconfigure-temp-script-82478215982.sh 2>/dev/null
+	Changing /tmp/ptconfigure-temp-script-82478215982.sh Permissions
+	Executing /tmp/ptconfigure-temp-script-82478215982.sh
 	--2015-01-08 14:42:15--  http://download.jetbrains.com/teamcity/TeamCity-8.1.3.tar.gz
 	Resolving download.jetbrains.com (download.jetbrains.com)... 54.217.236.18
 	Connecting to download.jetbrains.com (download.jetbrains.com)|54.217.236.18|:80... connected.
@@ -90,26 +90,26 @@ Options
 
 
    
-	+-----------------------------------+-----------------------+----------------------------+
-        |       Parameters                  |    Required           | Comments                   |
-        +===================================+=======================+============================+
-        |cleopatra Teamcity  install        |  Y(YES)               |This command will install	 |
-        |                                   |			    |Teamcity module             |
-        |                                   |			    |                            |
-        |                                   |			    |                            |
-        +-----------------------------------+-----------------------+----------------------------+
-        |Install Teamcity ( Y/N)            |			    |If the user inputs Y, this  |
-        |                                   |	Y		    |module checks for supporting|
-        |                                   |                       |requirements for Teamcity   |
-	|                                   |			    |if exits it was updated     |
-        |                                   |			    |to the new version or       |
-        |                                   |			    |else it installs the fresh  |
-        |                                   |			    |package with supporting     |
-        |                                   |			    |requirements.               |
-        +-----------------------------------+-----------------------+----------------------------+
-	|Install Teamcity ( Y/N)            |	N		    |If the user inputs N, the   |
-        |                                   |			    |installation was aborted.|  |
-        +-----------------------------------+-----------------------+----------------------------+
+	+-----------------------------------+-----------------------+-----------------------------+
+        |       Parameters                  |    Required           | Comments                    |
+        +===================================+=======================+=============================+
+        |ptconfigure Teamcity  install      |  Y(YES)               |This command will install	  |
+        |                                   |			    |Teamcity module              |
+        |                                   |			    |                             |
+        |                                   |			    |                             |
+        +-----------------------------------+-----------------------+-----------------------------+
+        |Install Teamcity ( Y/N)            |			    |If the user inputs Y, this   |
+        |                                   |	Y		    |module checks for supporting |
+        |                                   |                       |requirements for Teamcity    |
+	|                                   |			    |if exits it was updated      |
+        |                                   |			    |to the new version or        |
+        |                                   |			    |else it installs the fresh   |
+        |                                   |			    |package with supporting      |
+        |                                   |			    |requirements.                |
+        +-----------------------------------+-----------------------+-----------------------------+
+	|Install Teamcity ( Y/N)            |	N		    |If the user inputs N, the    |
+        |                                   |			    |installation was aborted.|   |
+        +-----------------------------------+-----------------------+-----------------------------+
 
 Benefits to the users
 -----------------------

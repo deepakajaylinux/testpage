@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Phlagrant" href="phlagrant.html" />
-    <link rel="next" title="SystemDetection" href="systemdetection_phlagrant.html" />
-    <link rel="prev" title="Box" href="box.html" />
+    <link rel="up" title="PTVirtualize" href="ptvirtualize_main.html" />
+    <link rel="next" title="Shell" href="shell.html" />
+    <link rel="prev" title="Resume" href="resume.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,10 +110,10 @@
             
               
                 
-  <li><a href="box.html"
-         title="Previous Chapter: Box">&laquo; Box</a></li>
-  <li><a href="systemdetection_phlagrant.html"
-         title="Next Chapter: SystemDetection">SystemDetection &raquo;</a></li>
+  <li><a href="resume.html"
+         title="Previous Chapter: Resume">&laquo; Resume</a></li>
+  <li><a href="shell.html"
+         title="Next Chapter: Shell">Shell &raquo;</a></li>
               
             
             
@@ -147,19 +147,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="sftp">
@@ -170,15 +158,15 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>Help command used to find information about a specified command. For more information about changes to functionality of Secure File Transfer Protocol(SFTP) under phlagrant the user can use this help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant  sftp <span class="nb">help</span>
+<p>Help command used to find information about a specified command. For more information about changes to functionality of Secure File Transfer Protocol(SFTP) under ptvirtualize the user can use this help command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize  sftp <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot guides you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# phlagrant sftp <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptvirtualize sftp <span class="nb">help</span>
 
 ******************************
-Pharaoh Tools - Phlagrant
+Pharaoh Tools - ptvirtualize
 ******************************
 
 
@@ -187,16 +175,16 @@ Pharaoh Tools - Phlagrant
  SFTP, sftp
 
        - put
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-       example: cleopatra sftp put
-       example: cleopatra sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: cleopatra sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from <span class="nb">local </span>to remote
+       example: ptconfigure sftp put
+       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
+       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
 
        - get
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: cleopatra sftp get
-       example: cleopatra sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: cleopatra sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from remote to <span class="nb">local</span>
+<span class="nb">       </span>example: ptconfigure sftp get
+       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
+       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
 
 ------------------------------
 End Help
@@ -211,31 +199,27 @@ End Help
 <div class="section" id="put">
 <h2>Put<a class="headerlink" href="#put" title="Permalink to this headline">¶</a></h2>
 <p>The file transfer can be done from local to remote server. This put option asks the user datails for servers. The following command used for put option.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant  sftp put – yes –source<span class="o">=</span>”/tmp/file” – <span class="nv">target</span><span class="o">=</span>”/home/user/file”
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize  sftp put – yes –source<span class="o">=</span>”/tmp/file” – <span class="nv">target</span><span class="o">=</span>”/home/user/file”
 </pre></div>
 </div>
 <p>The following screen shot denotes the usage of this command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra sftp put
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:ptconfigure sftp put
+
 SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 Please Enter SSH Timeout in seconds
-
+90
 Please Enter remote SSH Port
-
+22
 Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-
+N
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
 Enter <span class="nb">local source </span>file path
-
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> SFTP Put will cancel, no <span class="nb">source </span>file
-******************************
-
-
-
-SFTP Put: Failure
-
-------------------------------
-Installer Finished
+/root/vv
+Enter remote target file path
+/root/gg/vv
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Puts Completed
 ******************************
 </pre></div>
 </div>
@@ -255,11 +239,11 @@ Installer Finished
 <div class="section" id="get">
 <h2>Get<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h2>
 <p>File transfer can be done from remote to local server. It asks the user to enter server group. The following command used for get option.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant  sftp get – yes –source<span class="o">=</span>”/tmp/file” – <span class="nv">target</span><span class="o">=</span>”/home/user/file”
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize  sftp get – yes –source<span class="o">=</span>”/tmp/file” – <span class="nv">target</span><span class="o">=</span>”/home/user/file”
 </pre></div>
 </div>
 <p>The following screen shot explains it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra sftp get
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp get
 SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 Please Enter SSH Timeout in seconds
@@ -298,7 +282,7 @@ Installer Finished
 <p>The user has to enter the local target file path</p>
 <p>Then everything will be connected.</p>
 <p>If the user input as N, it can be terminated. The following screenshots shows its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra sftp get
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp get
 SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
 N
 ******************************
@@ -317,24 +301,24 @@ Installer Finished
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="20%" />
-<col width="28%" />
-<col width="52%" />
+<col width="21%" />
+<col width="24%" />
+<col width="55%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Syntax</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>put</td>
-<td>Source to target</td>
-<td>The file can transferred from source to target.</td>
+<td>SFTP, sftp</td>
+<td>Source to target -The file can transferred</td>
 </tr>
 <tr class="row-odd"><td>get</td>
-<td>Path to source</td>
-<td>The file can be downloaded from remote system.|</td>
+<td>SFTP, sftp</td>
+<td>Path to source -The file can downloaded from remote system|</td>
 </tr>
 </tbody>
 </table>
@@ -387,7 +371,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Phlagrant" href="cleophlagrant.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Ping" href="ping.html" />
     <link rel="prev" title="PHP Unit" href="phpunit.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -109,8 +109,8 @@
                 
   <li><a href="phpunit.html"
          title="Previous Chapter: PHP Unit">&laquo; PHP Unit</a></li>
-  <li><a href="cleophlagrant.html"
-         title="Next Chapter: Phlagrant">Phlagrant &raquo;</a></li>
+  <li><a href="ping.html"
+         title="Next Chapter: Ping">Ping &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpvm">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Phpvm module. It lists out the alternative parameters of Phpvm module. It also describes the syntax for installing the Phpvm module. The help command for Phpvm module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Phpvm <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Phpvm <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Phpvm.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra phpvm <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure phpvm <span class="nb">help</span>
 
 ******************************
 
@@ -183,7 +171,7 @@
 
        - install
        Installs the latest version of PHPVM
-       example: cleopatra phpvm install
+       example: ptconfigure phpvm install
 
 ------------------------------
 End Help
@@ -194,7 +182,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the phpvm in the users machine is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra phpvm install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure phpvm install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
@@ -239,7 +227,7 @@ process they can input as N.|</td>
 <li>Reads the package lists and displays the list of package that are already installed.</li>
 </ul>
 <p>The following screenshot pictorially depicts the above described process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra phpvm install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure phpvm install
 
 Install PHPVM? (Y/N)
 Y
@@ -247,10 +235,10 @@ Y
 *        Pharaoh Tools        *
 *         PHPVM!        *
 *******************************
-Creating /tmp/cleopatra-temp-script-45523327550.sh
-chmod 755 /tmp/cleopatra-temp-script-45523327550.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-45523327550.sh Permissions
-Executing /tmp/cleopatra-temp-script-45523327550.sh
+Creating /tmp/ptconfigure-temp-script-45523327550.sh
+chmod 755 /tmp/ptconfigure-temp-script-45523327550.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-45523327550.sh Permissions
+Executing /tmp/ptconfigure-temp-script-45523327550.sh
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
@@ -444,7 +432,7 @@ Hit http://in.archive.ubuntu.com trusty-backports/restricted Translation-en
 Hit http://in.archive.ubuntu.com trusty-backports/universe Translation-en
 Fetched 1364 kB in 51s (26.6 kB/s)
 Reading package lists...
-Temp File /tmp/cleopatra-temp-script-45523327550.sh Removed
+Temp File /tmp/ptconfigure-temp-script-45523327550.sh Removed
 [Pharaoh Logging] Package apache2 from the Packager Apt is already installed, so not installing
 [Pharaoh Logging] Package mysql-server from the Packager Apt is already installed, so not installing
 [Pharaoh Logging] Package php5 from the Packager Apt is already installed, so not installing
@@ -551,7 +539,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

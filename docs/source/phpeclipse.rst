@@ -16,14 +16,14 @@ This command helps to determine the usage of PhpEclipse module. The user will co
 
 .. code-block:: bash
         
-	        cleopatra PHPeclipse help
+	        ptconfigure PHPeclipse help
 
 The pictorial representation of the above command is shown below,
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPEclipse help
+ kevell@corp:/# ptconfigure PHPEclipse help
 
  ******************************
 
@@ -34,7 +34,7 @@ The pictorial representation of the above command is shown below,
 
         - install
         Installs the latest version of PHPEclipse
-        example: cleopatra phpeclipse install
+        example: ptconfigure phpeclipse install
 
  ------------------------------
  End Help
@@ -48,7 +48,7 @@ This command helps in installing the latest version of PHPeclipse in system. The
 
 .. code-block:: bash
         
-	        cleopatra PHPEclipse install
+	        ptconfigure PHPEclipse install
 
 
 Options
@@ -61,17 +61,17 @@ Options
  +---------------------------+-----------------------------------------------+--------------+-----------------------------------------+
  | Parameters		     | Alternative Parameters			     | Options	    | Comments				      |
  +===========================+===============================================+==============+=========================================+
- |cleopatra PHPEclipse       | There are three alternative parameters which  | Y	    | System starts installation process      |
- |Install 		     | can be used in command line.		     | 		    |					      |
+ |ptconfigure PHPEclipse     | There are three alternative parameters which  | Y	    | System starts installation process      |
+ |Install? (Y/N)             | can be used in command line.		     | 		    |					      |
  |			     | PHP-Eclipse, PHPEclipse, phpeclipse	     |              |					      |
- |			     | Eg: cleopatra PHPEclipse install	             | 		    |					      |
- |			     | cleopatra PHP-Eclipse install 	             |		    | 					      |
+ |			     | Eg: ptconfigure PHPEclipse install	     | 		    |					      |
+ |			     | ptconfigure PHP-Eclipse install 	             |		    | 					      |
  +---------------------------+-----------------------------------------------+--------------+-----------------------------------------+
- |cleopatra PHPEclipse       | There are three alternative parameters which  | N            | System stops installation process       |
- |Install                    | can be used in command line.                  |              |                                         |
+ |ptconfigure PHPEclipse     | There are three alternative parameters which  | N            | System stops installation process       |
+ |Install? (Y/N)             | can be used in command line.                  |              |                                         |
  |                           | PHP-Eclipse, PHPEclipse, phpeclipse           |              |                                         |
- |                           | Eg: cleopatra PHPEclipse install              |              |                                         |
- |                           | cleopatra PHP-Eclipse install|                |              |                                         |
+ |                           | Eg: ptconfigure PHPEclipse install            |              |                                         |
+ |                           | ptconfigure PHP-Eclipse install|              |              |                                         |
  +---------------------------+-----------------------------------------------+--------------+-----------------------------------------+
 
 

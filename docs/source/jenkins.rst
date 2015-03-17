@@ -11,13 +11,21 @@ Jenkins’ core functionality and flexibility allow it to fit in a variety of en
 Help Command
 ----------------------
 
-This command helps to determine the usage of Jenkins module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same. 
+This command helps to determine the usage of Jenkins module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. 
+
 
 .. code-block:: bash
              
-		cleopatra jenkins help
+		ptconfigure jenkins help
+
+The screenshot for the above command is listed below,
+
+.. code-block:: bash
+
+
+
  
- kevell@corp:/# cleopatra jenkins help
+ kevell@corp:/# ptconfigure jenkins help
  ******************************
 
 
@@ -27,7 +35,7 @@ This command helps to determine the usage of Jenkins module. The user will come 
 
  - install
  Installs Jenkins through apt-get
- example: cleopatra jenkins install
+ example: ptconfigure jenkins install
 
  ------------------------------
  End Help
@@ -42,23 +50,29 @@ If the user needs to install Jenkins module in machine, the below given command 
 
 .. code-block:: bash
               
-	        cleopatra jenkins install
+	        ptconfigure jenkins install
 
- kevell@corp:/# cleopatra jenkins install
+
+The screenshot of the above command is listed below,
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptconfigure jenkins install
  Install Jenkins? (Y/N) 
  y
  *******************************
  *        Pharaoh Tools        *
  *          ! Jenkins !        *
  *******************************
- Creating /tmp/cleopatra-temp-script-14615194352.sh
- chmod 755 /tmp/cleopatra-temp-script-14615194352.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-14615194352.sh Permissions
- Executing /tmp/cleopatra-temp-script-14615194352.sh
+ Creating /tmp/ptconfigure-temp-script-14615194352.sh
+ chmod 755 /tmp/ptconfigure-temp-script-14615194352.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-14615194352.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-14615194352.sh
  E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
  E: Unable to lock directory /var/lib/apt/lists/
  OK
- Temp File /tmp/cleopatra-temp-script-14615194352.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-14615194352.sh Removed
  W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main amd64 Packages (/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-amd64_Packages)
  W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main i386 Packages (/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-i386_Packages)
  W: You may want to run apt-get update to correct these problems
@@ -100,15 +114,15 @@ Options
 .. cssclass:: table-bordered
 
 
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|	Parameters  	      | Alternative Parameter  |	Option	       | 		Comments		       |
-	+=============================+========================+=======================+===============================================+
-	|cleopatra  Jenkins Install   |Jenkins , jenkins       |Y		       |Once the user provides the option, System      |
-	|			      |			       |		       |starts installation process		       |
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|cleopatra  Jenkins Install   |Jenkins , jenkins       |N		       |Once the user provides the option, System      |
-	|			      |			       |		       |stops installation process|  		       |
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
+	+-----------------------------+--------------------------+-----------------------+-----------------------------------------------+
+	|	Parameters  	      | Alternative Parameter    |	Option	         | 		Comments		         |
+	+=============================+==========================+=======================+===============================================+
+	|ptconfigure  Jenkins Install |Instead of using Jenkins, |Y		         |Once the user provides the option, System      |
+	|			      |the user can add jenkins  |		         |starts installation process		         |
+	+-----------------------------+--------------------------+-----------------------+-----------------------------------------------+
+	|ptconfigure  Jenkins Install |Instead of using Jenkins, |N		         |Once the user provides the option, System      |
+	|			      |the user can add jenkins	 |		         |stops installation process|  		         |
+	+-----------------------------+--------------------------+-----------------------+-----------------------------------------------+
 
 
 Benefits

@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Phlagrant" href="phlagrant.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="PTDeploy" href="ptdeploy_main.html" />
     <link rel="prev" title="Xvfb" href="xvfb.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="xvfb.html"
          title="Previous Chapter: Xvfb">&laquo; Xvfb</a></li>
-  <li><a href="phlagrant.html"
-         title="Next Chapter: Phlagrant">Phlagrant &raquo;</a></li>
+  <li><a href="ptdeploy_main.html"
+         title="Next Chapter: PTDeploy">PTDeploy &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="zend-server">
@@ -171,11 +159,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Zend server module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra zendserver <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure zendserver <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra ZendServer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ZendServer <span class="nb">help</span>
 
 ******************************
  This <span class="nb">command </span>allows you to update ZendServer.
@@ -184,7 +172,7 @@
 
        - install
        Installs the latest version of ZendServer
-       example: cleopatra zendserver install
+       example: ptconfigure zendserver install
 
 ------------------------------
 End Help
@@ -195,21 +183,21 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This command helps in installing zendserver in system. If in case zendserver already available in the system this command will update the version. The below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra zendserver install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure zendserver install
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>root@kevells:~# cleopatra ZendServer install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ZendServer install
 Install ZendServer? (Y/N)
 y
 *******************************
 *        Pharaoh Tools        *
 *         ZendServer!        *
 *******************************
-Creating /tmp/cleopatra-temp-script-65684868988.sh
-chmod 755 /tmp/cleopatra-temp-script-65684868988.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-65684868988.sh Permissions
-Executing /tmp/cleopatra-temp-script-65684868988.sh
+Creating /tmp/ptconfigure-temp-script-65684868988.sh
+chmod 755 /tmp/ptconfigure-temp-script-65684868988.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-65684868988.sh Permissions
+Executing /tmp/ptconfigure-temp-script-65684868988.sh
 --2015-01-28 12:32:03--  http://repos.zend.com/zend.key
 Resolving repos.zend.com (repos.zend.com)... 175.41.7.3, 175.41.7.4
 Connecting to repos.zend.com (repos.zend.com)|175.41.7.3|:80... connected.
@@ -420,7 +408,7 @@ Ign http://in.archive.ubuntu.com trusty/restricted Translation-en_IN
 Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
 Fetched 2,431 kB in 3min 8s (12.9 kB/s)
 Reading package lists...
-Temp File /tmp/cleopatra-temp-script-65684868988.sh Removed
+Temp File /tmp/ptconfigure-temp-script-65684868988.sh Removed
 [Pharaoh Logging] Package libmemcached6 from the Packager Apt is already installed, so not installing
 [Pharaoh Logging] Package php-5.3-memcached-zend-server from the Packager Apt is already installed, so not installing
 [Pharaoh Logging] Package php-5.3-extra-extensions-zend-server from the Packager Apt is already installed, so not installing
@@ -563,22 +551,22 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra zendserver Install</td>
+<tr class="row-even"><td>ptconfigure zendserver Install</td>
 <td>There are three alternative parameters
 which can be used in command line.
 zendserver , Zendserver, ZendServer
-Eg: cleopatra zendserver install
-cleopatra Zendserver install</td>
+Eg: ptconfigure zendserver install
+ptconfigure Zendserver install</td>
 <td>Y</td>
 <td>System starts installation
 process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra zendserver Install</td>
+<tr class="row-odd"><td>ptconfigure zendserver Install</td>
 <td>There are three alternative parameters
 which can be used in command line.
 zendserver , Zendserver, ZendServer
-Eg: cleopatra zendserver install
-cleopatra Zendserver install.|</td>
+Eg: ptconfigure zendserver install
+ptconfigure Zendserver install.|</td>
 <td>N</td>
 <td>System stops installation
 process</td>
@@ -635,7 +623,7 @@ process</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

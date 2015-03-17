@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Phlagrant" href="phlagrant.html" />
+    <link rel="up" title="PTVirtualize" href="ptvirtualize_main.html" />
     <link rel="next" title="Box" href="box.html" />
-    <link rel="prev" title="Phlagrant" href="phlagrant.html" />
+    <link rel="prev" title="PTVirtualize" href="ptvirtualize_main.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -111,8 +111,8 @@
             
               
                 
-  <li><a href="phlagrant.html"
-         title="Previous Chapter: Phlagrant">&laquo; Phlagrant</a></li>
+  <li><a href="ptvirtualize_main.html"
+         title="Previous Chapter: PTVirtualize">&laquo; PTVirtualize</a></li>
   <li><a href="box.html"
          title="Next Chapter: Box">Box &raquo;</a></li>
               
@@ -148,58 +148,46 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="autossh">
 <h1>AutoSSH<a class="headerlink" href="#autossh" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>This module facilitates the users to autoSSH a phlagrant box. Autossh is a small front-end for SSH that can&nbsp;monitor&nbsp;the connection, and&nbsp;restart&nbsp;the tunnel if it drops or stops responding.</p>
+<p>This module facilitates the users to autoSSH a ptvirtualize box. Autossh is a small front-end for SSH that can&nbsp;monitor&nbsp;the connection, and&nbsp;restart&nbsp;the tunnel if it drops or stops responding.</p>
 <p>autossh&nbsp;uses ssh to construct a loop of ssh forwardings (one from local to remote, one from remote to local), and then sends test data that it expects to get back.</p>
 <p>Let us see the functions of auto ssh in upcoming topics.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Auto SSH module. It lists out the alternative parameters of Auto SSH module. It also describes the syntax for using the cli, sftp_put, sftp_get commands. The help command for Auto SSH module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant AutoSSH <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize AutoSSH <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Auto SSH.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# phlagrant AutoSSH <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptvirtualize AutoSSH <span class="nb">help</span>
 
 ******************************
-Pharaoh Tools - Phlagrant
+Pharaoh Tools - Virtualize
 ******************************
 
 
- This <span class="nb">command </span>allows you to autoSSH a phlagrant box
+ This <span class="nb">command </span>allows you to autoSSH a ptvirtualize box
 
  AutoSSH, auto-ssh, autossh, ssh, SSH
 
        - cli
-       Open an SSH Cli to your Phlagrant Box
-       example: phlagrant auto-ssh cli --yes --guess
+       Open an SSH Cli to your ptvirtualize Box
+       example: ptvirtualize auto-ssh cli --yes --guess
 
        - sftp-put
-       SFTP Put a file on to your Phlagrant Box
-       example: phlagrant auto-ssh sftp-put --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
+       SFTP Put a file on to your ptvirtualize Box
+       example: ptvirtualize auto-ssh sftp-put --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
 
        - sftp-get
-       SFTP Get a file from your Phlagrant Box
-       example: phlagrant auto-ssh sftp-get --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
+       SFTP Get a file from your ptvirtualize Box
+       example: ptvirtualize auto-ssh sftp-get --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
 
 ------------------------------
 End Help
@@ -218,8 +206,8 @@ End Help
 </div>
 <div class="section" id="cli">
 <h2>Cli<a class="headerlink" href="#cli" title="Permalink to this headline">¶</a></h2>
-<p>After activating or building an auto ssh in the users environment, the cli can be created which is used to open an SSH Cli to the users phlagrant box by using the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh cli --yes --guess
+<p>After activating or building an auto ssh in the users environment, the cli can be created which is used to open an SSH Cli to the users ptvirtualize box by using the following command:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize auto-ssh cli --yes --guess
 </pre></div>
 </div>
 <p>The cli is used for listing the available clients in a particular environments where the auto ssh is generated.</p>
@@ -227,18 +215,18 @@ End Help
 <div class="section" id="sftp-put">
 <h2>Sftp_put<a class="headerlink" href="#sftp-put" title="Permalink to this headline">¶</a></h2>
 <p>This function is used for placing or moving the required files or data from the source to destination of an particular environment where the auto ssh is generated. This can be done by using the command given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh sftp-put --yes --guess --source<span class="o">=</span><span class="s2">&quot;path/to/source --target=/path/to/target</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize auto-ssh sftp-put --yes --guess --source=&quot;path/to/source --target=/path/to/target
 </pre></div>
 </div>
-<p>The command shown above will put a file on to the users phlagrant box. The following screenshot visually depicts the process.</p>
+<p>The command shown above will put a file on to the users ptvirtualize box. The following screenshot visually depicts the process.</p>
 </div>
 <div class="section" id="sftp-get">
 <h2>Sftp_get<a class="headerlink" href="#sftp-get" title="Permalink to this headline">¶</a></h2>
 <p>This function is used for getting or fetching the required files or data from the source to destination of an particular environment where the auto ssh is generated. This can be done by using the command given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh sftp-get --yes --guess --source<span class="o">=</span><span class="s2">&quot;path/to/source --target=/path/to/target</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize auto-ssh sftp-get --yes --guess --source=&quot;path/to/source --target=/path/to/target
 </pre></div>
 </div>
-<p>The command shown above will gets or receives a file from the users phlagrant box. The following screenshot visually depicts the process.</p>
+<p>The command shown above will gets or receives a file from the users ptvirtualize box. The following screenshot visually depicts the process.</p>
 </div>
 <div class="section" id="alternative-parameters">
 <h2>Alternative Parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
@@ -254,7 +242,8 @@ End Help
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while compared  to others.</li>
+<li>The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while
+compared  to others.</li>
 <li>It is well-to-do in both Ubuntu and as well as Cent OS.</li>
 <li>The cli functions list outs the available clients in a particular environment by the aid of auto SSH.</li>
 <li>Sftp_put, Sftp_get can place and fetch the files respectively between source and destination of a particular environment by using auto SSH.</li>
@@ -298,7 +287,7 @@ End Help
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

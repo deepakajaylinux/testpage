@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Testingkamen" href="Testingkamen_main.html" />
-    <link rel="next" title="PhpUnit" href="phpunit_testingkamen.html" />
+    <link rel="up" title="PTTest" href="pttest_main.html" />
+    <link rel="next" title="EnvironmentConfig" href="environmentconfig_pttest.html" />
     <link rel="prev" title="Behat" href="behat.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="behat.html"
          title="Previous Chapter: Behat">&laquo; Behat</a></li>
-  <li><a href="phpunit_testingkamen.html"
-         title="Next Chapter: PhpUnit">PhpUnit &raquo;</a></li>
+  <li><a href="environmentconfig_pttest.html"
+         title="Next Chapter: EnvironmentConfig">EnvironmentConfi... &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="cucumber">
@@ -168,12 +156,12 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute the cucumber under the testingkamen. The command used for declaring help is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen cucumber <span class="nb">help</span>
+<p>The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute the cucumber under the pttest. The command used for declaring help is shown below:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest cucumber <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot depicts pictorially about the working of help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# testingkamen cucumber <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest cucumber <span class="nb">help</span>
 ******************************
 
 
@@ -183,12 +171,12 @@
 
        - init, initialize
        Initialises the Cucumber <span class="nb">test </span>suite of this project
-       example: testingkamen cucumber init
-       example: testingkamen cucumber initialize
+       example: pttest cucumber init
+       example: pttest cucumber initialize
 
        - execute
        Executes the Cucumber <span class="nb">test </span>suite of this project
-       example: testingkamen cucumber execute
+       example: pttest cucumber execute
 
 ------------------------------
 End Help
@@ -198,12 +186,12 @@ End Help
 </div>
 <div class="section" id="how-to-initialize-cucumber">
 <h2>How to initialize cucumber<a class="headerlink" href="#how-to-initialize-cucumber" title="Permalink to this headline">¶</a></h2>
-<p>The command used for initialize the cucumber under testingkamen is shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen cucumber init
+<p>The command used for initialize the cucumber under pttest is shown:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest cucumber init
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen cucumber initialize
+<div class="highlight-bash"><div class="highlight"><pre>pttest cucumber initialize
 </pre></div>
 </div>
 <p>After inputting the command above, the process of initialize occurs as depicted in the below table.</p>
@@ -238,27 +226,27 @@ process they can input as N.|</td>
 </tr>
 </tbody>
 </table>
-<p>Finally the testingkamen cucumber gets initialized as shown in the following screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# testingkamen cucumber init
+<p>Finally the pttest cucumber gets initialized as shown in the following screenshot.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest cucumber init
 Initialize Cucumber? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *   Golden Contact Computing  *
 *          Cucumber         *
 *******************************
-Creating /tmp/cleopatra-temp-script-81470621814.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-81470621814.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-81470621814.sh Permissions
-Executing /tmp/cleopatra-temp-script-81470621814.sh
-Temp File /tmp/cleopatra-temp-script-81470621814.sh Removed
-Creating /tmp/cleopatra-temp-script-65310697385.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-65310697385.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-65310697385.sh Permissions
-Executing /tmp/cleopatra-temp-script-65310697385.sh
-Temp File /tmp/cleopatra-temp-script-65310697385.sh Removed
+Creating /tmp/ptconfigure-temp-script-81470621814.sh
+chmod 755 /tmp/ptconfigure-temp-script-81470621814.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-81470621814.sh Permissions
+Executing /tmp/ptconfigure-temp-script-81470621814.sh
+Temp File /tmp/ptconfigure-temp-script-81470621814.sh Removed
+Creating /tmp/ptconfigure-temp-script-65310697385.sh
+chmod 755 /tmp/ptconfigure-temp-script-65310697385.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-65310697385.sh Permissions
+Executing /tmp/ptconfigure-temp-script-65310697385.sh
+Temp File /tmp/ptconfigure-temp-script-65310697385.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.gcsoftshop.co.uk <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.gcsoftshop.co.uk <span class="k">for </span>more
 ******************************
 
 
@@ -276,8 +264,8 @@ Installer Finished
 </div>
 <div class="section" id="how-to-execute-the-cucumber">
 <h2>How to Execute the Cucumber<a class="headerlink" href="#how-to-execute-the-cucumber" title="Permalink to this headline">¶</a></h2>
-<p>The command used for executing the cucumber under testingkamen is shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen cucumber execute
+<p>The command used for executing the cucumber under pttest is shown:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest cucumber execute
 </pre></div>
 </div>
 <p>After inputting the command above, the process of execution occurs as depicted in the below table.</p>
@@ -359,7 +347,7 @@ process they can input as N.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

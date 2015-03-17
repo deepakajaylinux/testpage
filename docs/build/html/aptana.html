@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Awstats" href="awstats.html" />
-    <link rel="prev" title="ApacheServer" href="apacheserver.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Autopilot" href="autopilot_cleo.html" />
+    <link rel="prev" title="Apt" href="apt.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -109,10 +109,10 @@
             
               
                 
-  <li><a href="apacheserver.html"
-         title="Previous Chapter: ApacheServer">&laquo; ApacheServer</a></li>
-  <li><a href="awstats.html"
-         title="Next Chapter: Awstats">Awstats &raquo;</a></li>
+  <li><a href="apt.html"
+         title="Previous Chapter: Apt">&laquo; Apt</a></li>
+  <li><a href="autopilot_cleo.html"
+         title="Next Chapter: Autopilot">Autopilot &raquo;</a></li>
               
             
             
@@ -146,19 +146,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="aptana">
@@ -170,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the Aptana module. It also describes the syntax for installing Aptana. The help command for Aptana module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Aptana <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Aptana <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Aptana.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Aptana <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Aptana <span class="nb">help</span>
 
 ******************************
 
@@ -185,11 +173,11 @@
 
        - install
        Installs Aptana.
-       example: cleopatra aptana install
+       example: ptconfigure aptana install
 
        - uninstall
        Uninstalls Aptana.
-       example: cleopatra aptana uninstall
+       example: ptconfigure aptana uninstall
 
 ------------------------------
 End Help
@@ -200,7 +188,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the Aptana to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Aptana install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Aptana install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the screenshot  format.</p>
@@ -224,13 +212,14 @@ End Help
 <td>Instead of using Aptana the
 user can use aptana</td>
 <td>It will install Aptana module
-under cleopatra</td>
+under ptconfigure</td>
 </tr>
 <tr class="row-odd"><td>Install Aptana?(Y/N)</td>
 <td>No</td>
 <td>Instead of using Aptana the
-user can use aptana|</td>
-<td>The user has to exit the installation</td>
+user can use aptana</td>
+<td>If the user wish to quit installation
+they can input as N|</td>
 </tr>
 </tbody>
 </table>
@@ -238,7 +227,7 @@ user can use aptana|</td>
 <div class="section" id="uninstallation">
 <h2>Uninstallation<a class="headerlink" href="#uninstallation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for uninstalling the Aptana to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Aptana uninstall
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Aptana uninstall
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the screenshot  format.</p>
@@ -261,15 +250,15 @@ user can use aptana|</td>
 <td>Yes</td>
 <td>Instead of using Aptana the
 user can use aptana</td>
-<td>It will uninstall Aptana module
-under cleopatra</td>
+<td>It will uninstall Aptana module under
+ptconfigure</td>
 </tr>
 <tr class="row-odd"><td>UnInstall Aptana?(Y/N)</td>
 <td>No</td>
 <td>Instead of using Aptana the
 user can use aptana</td>
-<td>The user has to exit the
-uninstallation|</td>
+<td>If the user wish to quit
+uninstallation they can input as N|</td>
 </tr>
 </tbody>
 </table>
@@ -344,7 +333,7 @@ uninstallation|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

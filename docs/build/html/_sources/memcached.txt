@@ -8,7 +8,6 @@ Synopsis
 The major aspect of this module is to install and update the memcache with the latest version.
 Memcached is a general-purpose distributed memory caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read.
 
-Memcached is free and open-source software, subject to the terms of the Revised BSD license.[2] Memcached runs on Unix-like (at least Linux and OS X) operating systems and on Microsoft Windows. There is a strict dependency on libevent.
 
 Let us see about the process of installing and using this module in upcoming topics.
 
@@ -21,14 +20,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra Memcached help
+		ptconfigure Memcached help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Memcached.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Memcached help
+ kevell@corp:/# ptconfigure Memcached help
 
  ******************************
 
@@ -39,7 +38,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest version of memcache
-        example: cleopatra memcached install
+        example: ptconfigure memcached install
 
  ------------------------------
  End Help
@@ -53,7 +52,7 @@ The command used for installing the Memcached in the users machine is shown belo
 
 .. code-block:: bash
 
-	cleopatra memcached install
+	ptconfigure memcached install
 
 
 After inputting the command above, the following process occurs as shown in the tabular format.

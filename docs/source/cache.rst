@@ -21,7 +21,7 @@ After typing the command it lists the options as action. The following image env
 
 .. code-block:: bash
 
- kevells@corp:/# jrush cache help
+ kevell@corp:/# jrush cache help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -73,7 +73,7 @@ After inputs as above command,the output comes like a coding. At the end  cache 
 
 .. code-block:: bash
 
- kevells@corp:/# jrush cache site-clear --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush cache site-clear --config-file="/var/www/html/joomla/configuration.php" 
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -107,7 +107,7 @@ The following display shots instruct the user about admin-clear function.
 
 .. code-block:: bash
 
- kevells@corp:/# jrush cache admin-clear --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush cache admin-clear --config-file="/var/www/html/joomla/configuration.php" 
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************

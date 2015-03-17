@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="JenkinsPlugins" href="jenkinsplugins.html" />
     <link rel="prev" title="JAVA" href="java.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="jenkins">
@@ -169,10 +157,12 @@ Jenkins’ core functionality and flexibility allow it to fit in a variety of en
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>This command helps to determine the usage of Jenkins module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra jenkins <span class="nb">help</span>
-
-kevell@corp:/# cleopatra jenkins <span class="nb">help</span>
+<p>This command helps to determine the usage of Jenkins module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure jenkins <span class="nb">help</span>
+</pre></div>
+</div>
+<p>The screenshot for the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure jenkins <span class="nb">help</span>
 ******************************
 
 
@@ -182,7 +172,7 @@ Jenkins, jenkins
 
 - install
 Installs Jenkins through apt-get
-example: cleopatra jenkins install
+example: ptconfigure jenkins install
 
 ------------------------------
 End Help
@@ -193,23 +183,25 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>If the user needs to install Jenkins module in machine, the below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra jenkins install
-
-kevell@corp:/# cleopatra jenkins install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure jenkins install
+</pre></div>
+</div>
+<p>The screenshot of the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure jenkins install
 Install Jenkins? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *        Pharaoh Tools        *
 *          ! Jenkins !        *
 *******************************
-Creating /tmp/cleopatra-temp-script-14615194352.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-14615194352.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-14615194352.sh Permissions
-Executing /tmp/cleopatra-temp-script-14615194352.sh
+Creating /tmp/ptconfigure-temp-script-14615194352.sh
+chmod 755 /tmp/ptconfigure-temp-script-14615194352.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-14615194352.sh Permissions
+Executing /tmp/ptconfigure-temp-script-14615194352.sh
 E: Could not get lock /var/lib/apt/lists/lock - open <span class="o">(</span>11: Resource temporarily unavailable<span class="o">)</span>
 E: Unable to lock directory /var/lib/apt/lists/
 OK
-Temp File /tmp/cleopatra-temp-script-14615194352.sh Removed
+Temp File /tmp/ptconfigure-temp-script-14615194352.sh Removed
 W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main amd64 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-amd64_Packages<span class="o">)</span>
 W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main i386 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-i386_Packages<span class="o">)</span>
 W: You may want to run apt-get update to correct these problems
@@ -221,7 +213,7 @@ Reading package lists...
 Building dependency tree...
 Reading state information...
 Some packages could not be installed. This may mean that you have
-requested an impossible situation or <span class="k">if</span> you are using the unstable
+requested an impossible situation or <span class="k">if </span>you are using the unstable
 distribution that some required packages have not yet been created
 or been moved out of Incoming.
 The following information may <span class="nb">help </span>to resolve the situation:
@@ -233,7 +225,7 @@ jenkins : Depends: daemon but it is not installable
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package jenkins from the Packager Apt did not execute correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -250,9 +242,9 @@ Installer Finished
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="24%" />
-<col width="20%" />
-<col width="19%" />
+<col width="23%" />
+<col width="21%" />
+<col width="18%" />
 <col width="38%" />
 </colgroup>
 <thead valign="bottom">
@@ -263,14 +255,16 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra  Jenkins Install</td>
-<td>Jenkins , jenkins</td>
+<tr class="row-even"><td>ptconfigure  Jenkins Install</td>
+<td>Instead of using Jenkins,
+the user can add jenkins</td>
 <td>Y</td>
 <td>Once the user provides the option, System
 starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra  Jenkins Install</td>
-<td>Jenkins , jenkins</td>
+<tr class="row-odd"><td>ptconfigure  Jenkins Install</td>
+<td>Instead of using Jenkins,
+the user can add jenkins</td>
 <td>N</td>
 <td>Once the user provides the option, System
 stops installation process|</td>
@@ -324,7 +318,7 @@ stops installation process|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

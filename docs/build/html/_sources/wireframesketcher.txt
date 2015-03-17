@@ -15,10 +15,10 @@ This command allows you to install Wireframe Sketcher, for Wireframing. The user
 
 .. code-block:: bash
         
-		cleopatra wireframe-sketcher help
+		ptconfigure wireframe-sketcher help
 
 
- Kevells@Corp:/# cleopatra WireframeSketcher help
+ Kevell@Corp:/# ptconfigure WireframeSketcher help
 
  ******************************
 
@@ -28,7 +28,7 @@ This command allows you to install Wireframe Sketcher, for Wireframing. The user
 
         - install
         Installs the latest version of Developer Tools
-        example: cleopatra wireframe-sketcher install
+        example: ptconfigure wireframe-sketcher install
 
  ------------------------------
  End Help
@@ -46,10 +46,10 @@ When the user needs to install Wireframe Sketcher in machine. Below given are th
 
 .. code-block:: bash
         
-	        cleopatra wireframe-sketcher install
+	        ptconfigure wireframe-sketcher install
 
 
- kevells@corp:/: cleopatra wireframe-sketcher install
+ kevell@corp:/: ptconfigure wireframe-sketcher install
  PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open 
  shared object file: No such file or directory in Unknown on line 0
  Install Wireframe Sketcher? (Y/N) 
@@ -61,10 +61,10 @@ When the user needs to install Wireframe Sketcher in machine. Below given are th
  [Pharaoh Logging] Ensure module install is not checking versions
  [Pharaoh Logging] Module Java reports itself as Installed
  [Pharaoh Logging] Not installing as already installed
- Creating /tmp/cleopatra-temp-script-6527022738.sh
- chmod 755 /tmp/cleopatra-temp-script-6527022738.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-6527022738.sh Permissions
- Executing /tmp/cleopatra-temp-script-6527022738.sh
+ Creating /tmp/ptconfigure-temp-script-6527022738.sh
+ chmod 755 /tmp/ptconfigure-temp-script-6527022738.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-6527022738.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-6527022738.sh
  Cloning into 'wireframe-sketcher'...
  remote: Counting objects: 6, done.
  remote: Total 6 (delta 0), reused 0 (delta 0)
@@ -252,7 +252,7 @@ When the user needs to install Wireframe Sketcher in machine. Below given are th
  Setting up libgnome2-bin (2.32.1-4ubuntu1) ...
  Setting up libgnome2-0:amd64 (2.32.1-4ubuntu1) ...
  Processing triggers for libc-bin (2.19-0ubuntu6.4) ...
- Temp File /tmp/cleopatra-temp-script-6527022738.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-6527022738.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -274,25 +274,25 @@ Options
 
 .. cssclass:: table-bordered
 
- +-----------------------------+----------------------------------+----------------+------------------------------------------------+
- |	Parameters  	       | Alternative Parameter            |	Option	   | 		Comments		            |
- +=============================+==================================+================+================================================+
- |Cleopatra  WireframeSketcher |Either of the two alternative 	  |Y		   |Once the user provides the option, System starts|	
- |Install		       |parameter can be used in command- |		   |installation process			    |
- |			       |WireframeSketcher,  		  |		   |						    |	
- |			       |wireframe-sketcher,		  |		   |						    |
- | 			       |wireframesketcher 		  |		   |						    |
- |			       |eg: Cleopatra wireframe-sketcher  |		   |						    |
- |			       |Install				  |		   |						    |
- +-----------------------------+----------------------------------+----------------+------------------------------------------------+
- |Cleopatra  WireframeSketcher |Either of the two alternative 	  |N		   |Once the user provides the option, System Stops |	
- |Install		       |parameter can be used in command- |		   |installation process			    |
- |			       |WireframeSketcher,  		  |		   |						    |	
- |			       |wireframe-sketcher,		  |		   |						    |
- |			       |wireframesketcher 		  |		   |						    |
- |			       |eg: Cleopatra wireframe-sketcher  |		   |						    |
- |			       |Install|			  |		   |						    |
- +-----------------------------+----------------------------------+----------------+------------------------------------------------+
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------------------+
+ |	Parameters  	         | Alternative Parameter             |	Option	 | 		Comments		           |
+ +===============================+===================================+===========+=================================================+
+ |ptconfigure  WireframeSketcher |Either of the two alternative      |Y		 |Once the user provides the option, System starts |
+ |Install		         |parameter can be used in command-  |		 |installation process			           |
+ |			         |WireframeSketcher,  		     |		 |					           | 	
+ |			         |wireframe-sketcher,		     |		 |						   |
+ | 			         |wireframesketcher 		     |		 |						   |
+ |			         |eg: ptconfigure wireframe-sketcher |		 |						   |
+ |			         |Install			     |		 |						   |
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------------------+
+ |ptconfigure  WireframeSketcher |Either of the two alternative      |N		 |Once the user provides the option, System Stops  |	
+ |Install		         |parameter can be used in command-  |		 |installation process			           |
+ |			         |WireframeSketcher,  		     |		 |						   |	
+ |			         |wireframe-sketcher,		     |		 |						   |
+ |			         |wireframesketcher 		     |		 |						   |
+ |			         |eg: ptconfigure wireframe-sketcher |		 |						   |
+ |			         |Install|			     |		 |						   |
+ +-------------------------------+-----------------------------------+-----------+-------------------------------------------------+
 
 
 

@@ -1,12 +1,12 @@
 ===================
-FireFox 17
+FireFox17
 ===================
 
 
 Synopsis 
 --------------------
 
- This module is open source web browser. It used to install firefox17. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the 'Ubuntu stack' (cloud computing infrastructure). It is comfortable with Ubuntu and Cent OS.
+This module used to install firefox17. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the cloud computing infrastructure. It is comfortable with Ubuntu and Cent OS.
 
 Help Command 
 -----------------------
@@ -15,13 +15,13 @@ This command can function about the objectives and commands available under Fire
 
 .. code-block:: bash
                     
-	cleopatra firefox17 help
+	ptconfigure firefox17 help
 
 The following image also helps you to understand this module clearly.
 
 .. code-block:: bash
 
-	Kevells@corp:/# cleopatra firefox17 help
+	Kevell@corp:/# ptconfigure firefox17 help
 	******************************
 
 
@@ -31,7 +31,7 @@ The following image also helps you to understand this module clearly.
 
         - install
         Installs the latest version of Firefox 17
-        example: cleopatra firefox17 install
+        example: ptconfigure firefox17 install
 
 	------------------------------
 	End Help
@@ -42,11 +42,11 @@ The following image also helps you to understand this module clearly.
 Installation
 -------------------
 
-It is a glaring process to install firefox17 module under Cleopatra by just using the command given below,
+It is a glaring process to install firefox17 module under ptconfigure by just using the command given below,
 
 .. code-block:: bash
          
-         cleopatra firefox17 install
+         ptconfigure firefox17 install
 
 After key in the command, it can asks
 
@@ -59,23 +59,23 @@ In case the user input as Y, it can install firefox17 from the package. Else, it
 
 
 
- kevells@corp:/# cleopatra Firefox17 install
+ kevell@corp:/# ptconfigure Firefox17 install
  Install Firefox 17? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          Firefox 17         *
  *******************************
- Creating /tmp/cleopatra-temp-script-34898518137.sh
- chmod 755 /tmp/cleopatra-temp-script-34898518137.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-34898518137.sh Permissions
- Executing /tmp/cleopatra-temp-script-34898518137.sh
+ Creating /tmp/ptconfigure-temp-script-34898518137.sh
+ chmod 755 /tmp/ptconfigure-temp-script-34898518137.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-34898518137.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-34898518137.sh
  Cloning into 'firefox17'...
  remote: Counting objects: 78, done.
  remote: Total 78 (delta 0), reused 0 (delta 0)
  Unpacking objects: 100% (78/78), done.
  Checking connectivity... done.
- Temp File /tmp/cleopatra-temp-script-34898518137.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-34898518137.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -95,62 +95,21 @@ Options
 
 .. cssclass:: table-bordered
 
-        +------------------------------+--------------------------+------------+----------------------------+
-        | Parameters                   | Alternative Parameter    | Required   | Comment                    |
-        +==============================+==========================+============+============================+
-        |Cleopatra firefox17 Install   |Firefox,ff17,firefox      | Y(YES)     |System starts installation  |
-        |                              |                          |            |process Under cleopatra     | 
-        +------------------------------+--------------------------+------------+----------------------------+ 
-        |Cleopatra firefox17 Install   |Firefox,ff17,firefox      | N(NO)      |System stops installation   |
-        |                              |                          |            |process|                    | 
-        +------------------------------+--------------------------+------------+----------------------------+
+        +------------------------------+-----------------------------+------------+----------------------------+
+        | Parameters                   | Alternative Parameter       | Required   | Comment                    |
+        +==============================+=============================+============+============================+
+        |ptconfigure firefox17 Install | Instead of using firefox17  | Y          | System starts installation |
+        |                              | we can use ff17, Firefox17  |            | process Under ptconfigure  | 
+        +------------------------------+-----------------------------+------------+----------------------------+ 
+        |ptconfigure firefox17 Install | Instead of using firefox17  | N	  | System stops installation  |
+        |                              | we can use ff17, Firefox17  |            | process under ptconfigure| | 
+        +------------------------------+-----------------------------+------------+----------------------------+
 
 
 Benefits
 ------------------
 
 * Firefox17 uses support for new hardware and integration of all the updates published in that series to date.
-* Firefox17 is an open source Web browser for Linux.
+* Firefox used to install firefox17
 * Firefox17 is non-case sensitive.
 * Privacy and security measures, smart searching is possible.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	+------------------------------+--------------------------+------------+----------------------------+
-        | Parameters                   | Alternative Parameter    | Required   |Comment                     |
-        +==============================+==========================+============+============================+
-        |Cleopatra firefox14 Install   |Firefox,ff14,firefox      | Y(YES)     |System starts installation  |
-        |                              |                  	  |            |process Under cleopatra	    | 
-        +------------------------------+--------------------------+------------+----------------------------+ 
-        |Cleopatra firefox14 Install   |Firefox,ff14,firefox   	  | N(NO)      |System stops installation   |
-        |                              |                   	  |            |process			    | 
-        +------------------------------+--------------------------+------------+----------------------------+
-

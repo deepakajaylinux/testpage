@@ -14,7 +14,7 @@ This help command guide the user about sudonopass module. This is suitable for a
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra SudoNoPass help
+	kevell@corp:/# ptconfigure SudoNoPass help
 	******************************
 
 
@@ -27,7 +27,7 @@ This help command guide the user about sudonopass module. This is suitable for a
 
         - install
         Installs the sudo without password entry
-        example: cleopatra sudo-nopass install
+        example: ptconfigure sudo-nopass install
 
 	------------------------------
 	End Help
@@ -40,7 +40,7 @@ Use this module to install sudonopass on Ubuntu Linux system packages.
 
 .. code-block:: bash
 
-          cleopatra sudonopass install
+          ptconfigure sudonopass install
 
 Install sudonopass ?(Y/N)
 
@@ -48,7 +48,7 @@ When the user gives input, as yes automatically it will install configure the ro
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra sudo-nopass install
+	kevell@corp:/# ptconfigure sudo-nopass install
 	Install Sudo w/o Pass for User? (Y/N) 
 	y
 	*******************************
@@ -81,19 +81,23 @@ Option
 
 .. cssclass:: table-bordered
 
-	+---------------------+------------------------+-------------------------------------------+
-	|Parameters           |   Dirctory(default)    |Output                                     |               
-	+=====================+========================+===========================================+
-  	|Install sudonopass   |   yes	               |It will install sudonopass under Cleopatra |  
-        +---------------------+------------------------+-------------------------------------------+                  
-        |Install sudonopass   |   No                   |It will exit|                              |
-	+---------------------+------------------------+-------------------------------------------+
+	+---------------------+------------------------+---------------------------------------------+
+	| Parameters          | Option                 | Output                                      |                
+	+=====================+========================+=============================================+
+  	|Install sudonopass   | yes	               |It will install sudonopass under ptconfigure |  
+        +---------------------+------------------------+---------------------------------------------+                  
+        |Install sudonopass   | No                     |It will exit|                                |
+	+---------------------+------------------------+---------------------------------------------+
 
 Benefits
 ------------
 
-* Sudonopass makes sure that root privileges are there for a specific command (or for a specific time) and not for the complete session as that may result in accidental misuse of root privileges.
-* The user can use sudonopass even grant limited privileges to a user. This is helpful when the user do not want a user to have control of all the root powers while doing a sudonopass.
-* The best advantage is that sudonopass requires user’s own login password rather than root password. This helps in keeping root password private and there is no need to change it even when a user (sudoer) leaves.
-* This file provides information on the commands that were execute using sudo and their time of execution. This helps administrator to keep track of even trusted users
+* Sudonopass makes sure that root privileges are there for a specific command (or for a specific time) and not for the complete session as
+  that may result in accidental misuse of root privileges.
+* The user can use sudonopass even grant limited privileges to a user. This is helpful when the user do not want a user to have control of
+  all the root powers while doing a sudonopass.
+* The best advantage is that sudonopass requires user’s own login password rather than root password. This helps in keeping root password
+  private and there is no need to change it even when a user (sudoer) leaves.
+* This file provides information on the commands that were execute using sudo and their time of execution. This helps administrator to keep
+  track of even trusted users
 

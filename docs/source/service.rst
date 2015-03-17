@@ -1,6 +1,8 @@
 ==========
 Service
 ==========
+
+
 Synopsis 
 ----------
           
@@ -13,12 +15,12 @@ Help command used to find information about a specified command. For more inform
 
 .. code-block:: bash
 
-    cleopatra Service help
+    ptconfigure Service help
 
 
 .. code-block:: bash
 
-	Kevells@corp:/# cleopatra Service help
+	Kevell@corp:/# ptconfigure Service help
 
 	******************************
 
@@ -29,28 +31,28 @@ Help command used to find information about a specified command. For more inform
 
         - start
         Start a system service
-        example: cleopatra service start --service-name="apache2"
+        example: ptconfigure service start --service-name="apache2"
 
         - stop
         Stop a system service
-        example: cleopatra service restart --service-name="apache2"
+        example: ptconfigure service restart --service-name="apache2"
 
         - restart
         Restart a system service
-        example: cleopatra service restart --service-name="apache2"
+        example: ptconfigure service restart --service-name="apache2"
 
         - ensure-running
         Ensure a system service is running. If it is already running, dont attempt to start it
         If it is not running, start it
-        example: cleopatra service ensure-running --service-name="apache2"
+        example: ptconfigure service ensure-running --service-name="apache2"
 
         - is-running
         Checks whether a system service is running.
-        example: cleopatra service is-running --service-name="apache2"
+        example: ptconfigure service is-running --service-name="apache2"
 
         - run-at-reboots
         Ensure a system service will auto start on reboots.
-        example: cleopatra service run-at-reboots --service-name="apache2"
+        example: ptconfigure service run-at-reboots --service-name="apache2"
 
 	------------------------------
 	End Help
@@ -62,24 +64,26 @@ Options
 
 .. cssclass:: table-bordered
 
-
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-        |    Parameters        |        Functions                                  |     Comment                                            |
-        +======================+===================================================+========================================================+
-	|start		       |Start a system  service				   |Cleopatra service start –service-name=”apache2”         |
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-        |stop  		       |Stop asystem service	           		   |Cleopatra service stop –service-name=”apache2”          |
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-        |Restart	       |Restart a system  service	            	   |Cleopatra service restart –service-name=”apache2”       |
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-	|Ensure-running        |Ensure a system service is running.In case of not  |Cleopatra service ensure-running –service-name=”apache2”|
-    	|		       |running start it else don’t attempt       	   |               					    |
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-	|Is-running            |Check whether a system service is running or not   |Cleopatra service is-running –service-name=”apache2”    |
-    	|		       |running start it else don’t attempt       	   |        					            |
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
-       	|Run-at-reboots        |Ensure a system service auto start on reboots      |Cleopatra service run-at-reboots –service-name=”apache2||
-	+----------------------+---------------------------------------------------+--------------------------------------------------------+
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ | Parameters     | Alternative Parameter | Functions                             | Comment                                                |
+ +================+=======================+=======================================+========================================================+
+ |start		  | Service, service      | Start a system  service	          | ptconfigure service start –service-name=”apache2”      |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ |stop  	  | Service, service      | Stop asystem service	          | ptconfigure service stop –service-name=”apache2”       |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ |Restart	  | Service, service      | Restart a system service	          | ptconfigure service restart –service-name=”apache2”    |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ |Ensure-running  | Service, service      | Ensure a system service is running.   | ptconfigure service ensure-running –service-           |
+ |		  |                       | In case of not running start it else  | name=”apache2”                                         |
+ |                |                       | don’t attempt       	          |                       				   |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ |Is-running      | Service, service      | Check whether a system service is     | ptconfigure service is-running –service-name=”apache2” |
+ |                |                       | running or not running start it else  |                                                        |
+ |                |                       | don’t attempt     	                  |                                                        |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
+ |Run-at-reboots  | Service, service      | Ensure a system service auto start    | ptconfigure service run-at-reboots –service-           |
+ |                |                       | on reboots                            | name=”apache2|                                         |
+ +----------------+-----------------------+---------------------------------------+--------------------------------------------------------+
 
 
 Benefits

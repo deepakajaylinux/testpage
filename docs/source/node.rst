@@ -14,7 +14,7 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
 
-		cleopatra NodeJS help
+		ptconfigure NodeJS help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Node JS.
 
@@ -22,7 +22,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 		
 
 
- kevells@corp:/# cleopatra NodeJS help
+ kevell@corp:/# ptconfigure NodeJS help
  ******************************
 
 
@@ -32,7 +32,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs NodeJS through apt-get.
-        example: cleopatra node-js install
+        example: ptconfigure node-js install
 
  ------------------------------
  End Help
@@ -46,7 +46,7 @@ Installing the Node-JS to your machine, can be done simply by using the followin
 
 .. code-block:: bash
 
-		cleopatra node-js install
+		ptconfigure node-js install
 
 After inputting the command above, the following operations occurs as shown in the tabular format.
 
@@ -55,10 +55,10 @@ After inputting the command above, the following operations occurs as shown in t
 	+-----------------------------+----------------------------------+----------------+---------------------------------------------+
 	|	Parameters  	      | Alternative Parameter            |	Option	  | 		Comments		        |
 	+=============================+==================================+================+=============================================+
-	|Install Node JS? (Y/N)       |In Spite of Node JS, NodeJS,      |Y(Yes)	  |If the user wish to proceed the installation |
+	|Install Node JS? (Y/N)       |Instead of Node JS, NodeJS,       |Y(Yes)	  |If the user wish to proceed the installation |
 	|		 	      |node-js, nodejs can also be used. |		  |process they can input as Y.			|
 	+-----------------------------+----------------------------------+----------------+---------------------------------------------+
-	|Install Node JS? (Y/N)       |In Spite of Node JS, NodeJS,      |N(No)		  |If the user wish to proceed the installation |
+	|Install Node JS? (Y/N)       |Instead of Node JS, NodeJS,       |N(No)		  |If the user wish to proceed the installation |
 	|		 	      |node-js, nodejs can also be used. |		  |process they can input as N.|		|
 	+-----------------------------+----------------------------------+----------------+---------------------------------------------+
 
@@ -78,7 +78,7 @@ If the node-js module is already existing in the users machine, it will show an 
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra node-js install
+ kevell@corp:/# ptconfigure node-js install
  Install Node JS? (Y/N) 
  y
  *******************************
@@ -173,5 +173,7 @@ Benefits
 
 * The parameters used for declaring help command, installation are not case sensitive which is an added advantage while compared to others.
 * It is well-to-do in both Cent OS and as well as in Ubuntu.
-* If the node-js package is already existing in the user machine, it won't overwrites, instead of that it will show a message as already exist.
-* Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS.
+* If the node-js package is already existing in the user machine, it won't overwrites, instead of that it will show a message as already
+  exist.
+* Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript.
+  Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS.

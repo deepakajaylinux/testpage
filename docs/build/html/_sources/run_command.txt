@@ -14,14 +14,14 @@ The help command describes the uses of run command, its major functionality, its
 
 .. code-block:: bash
 
-		dapperstrano RunCommand help
+		ptdeploy RunCommand help
 
 The following screen shot depicts pictorially about the working of help command.
 
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano RunCommand help
+ kevell@corp:/# ptdeploy RunCommand help
  ******************************
 
 
@@ -31,7 +31,7 @@ The following screen shot depicts pictorially about the working of help command.
 
         - execute
         Execute a Command
-        example: cleopatra run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
+        example: ptconfigure run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
 
  ------------------------------
  End Help
@@ -46,7 +46,7 @@ The syntax used for specifying the run command in shown below.
 
 .. code-block:: bash
 
-		cleopatra run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
+		ptconfigure run-command --yes --command="ls -lah /tmp" --run-as-user="ubuntu" --background
 
 
 .. cssclass:: table-bordered

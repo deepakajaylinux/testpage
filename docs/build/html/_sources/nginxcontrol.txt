@@ -16,9 +16,9 @@ This command helps to determine the usage of Nginx  module. The user will come t
 
 .. code-block:: bash
 	
-	dapperstrano nginxcontrol help
+	ptdeploy nginxcontrol help
        
- kevells@corp:/# dapperstrano NginxControl help
+ kevell@corp:/# ptdeploy NginxControl help
  ******************************
 
 
@@ -28,19 +28,19 @@ This command helps to determine the usage of Nginx  module. The user will come t
 
           - start
           Start the Nginx server
-          example: dapperstrano nginxcontrol start
+          example: ptdeploy nginxcontrol start
 
           - stop
           Stop the Nginx server
-          example: dapperstrano nginxcontrol stop
+          example: ptdeploy nginxcontrol stop
 
           - restart
           Restart the Nginx server
-          example: dapperstrano nginxcontrol restart
+          example: ptdeploy nginxcontrol restart
 
           - reload
           Reloads the Nginx server configuration without restarting
-          example: dapperstrano nginxcontrol reload
+          example: ptdeploy nginxcontrol reload
 
  ------------------------------
  End Help
@@ -54,7 +54,7 @@ When the user needs to start the Nginx server, the below given command will exec
 
 .. code-block:: bash
 	
-		dapperstrano nginxcontrol start                           
+		ptdeploy nginxcontrol start                           
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
@@ -65,7 +65,7 @@ When the user needs to stop the Nginx server, the below given command will execu
 
 .. code-block:: bash
 	
-		dapperstrano nginxcontrol stop	
+		ptdeploy nginxcontrol stop	
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
@@ -76,7 +76,7 @@ When the user needs to Restart the Nginx server(when there are any changes happe
 
 .. code-block:: bash
  	
-		dapperstrano nginxcontrol restart                          
+		ptdeploy nginxcontrol restart                          
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
@@ -87,7 +87,7 @@ When the user needs to Reload the Nginx server without restarting, the below giv
 
 .. code-block:: bash
 	
-		dapperstrano nginxcontrol reload
+		ptdeploy nginxcontrol reload
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
@@ -99,17 +99,17 @@ Options
  +--------------------------------+------------------------------------------------+--------------------------------------------------+
  | Parameters			  | Alternative Parameter			   | Comments					      |
  +--------------------------------+------------------------------------------------+--------------------------------------------------+
- |dapperstrano ngnixcontrolhelp   | Either of the three alternative parameter can  | Once the user provides the option, System starts |
+ |ptdeploy ngnixcontrolhelp       | Either of the three alternative parameter can  | Once the user provides the option, System starts |
  |				  | be used in command- ngnixcontrol ,  	   | processing					      |	
  |				  | NgnixControl and nginxcil			   |						      |
- |				  | eg: dapperstrano ngnixcontrol help/ 	   |						      |
- |				  | dapperstrano ngnixControl help|		   |						      |
+ |				  | eg: ptdeploy ngnixcontrol help/ 	           |						      |
+ |				  | ptdeploy ngnixControl help|		           |						      |
  +--------------------------------+------------------------------------------------+--------------------------------------------------+
 
 Benefits
 --------------
    
-* Ability to handle more than 10,000 simultaneous connections with a low          memory footprint 
+* Ability to handle more than 10,000 simultaneous connections with a low memory footprint 
 * Handling of static files, index files, and auto-indexing 
 * Reverse proxy with caching 
 * Load balancing with in-band health checks 

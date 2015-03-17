@@ -14,13 +14,13 @@ Help command includes an extensive, console-based help system, reminiscent of ma
 
 .. code-block:: bash
 
-                cleopatra  VNC-passwd help
+                ptconfigure  VNC-passwd help
 
 The following screen shot can visualize it.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra VNCPasswd help
+ kevell@corp:/# ptconfigure VNCPasswd help
 
  ******************************
 
@@ -31,7 +31,7 @@ The following screen shot can visualize it.
 
         - install
         Installs VNCPasswd through a package manager
-        example: cleopatra vnc install
+        example: ptconfigure vnc install
 
  ------------------------------
  End Help
@@ -45,14 +45,14 @@ Installation allows the user to install vncpassward . It is very popular in Remo
  
 .. code-block:: bash
 
-                cleopatra  VNC-passwd install
+                ptconfigure  VNC-passwd install
 
 After key in the command the system can ask the user for input. If the user input as Y it may install the VNCpassward else it can exit. following screen shot can visualize it.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra VNC-passwd install
+ kevell@corp:/# ptconfigure VNC-passwd install
 
  Install VNCPasswd? (Y/N) 
  Y
@@ -89,13 +89,13 @@ After key in the command the system can ask the user for input. If the user inpu
 
  Enter VNC Pass:
 
- Creating /tmp/cleopatra-temp-script-40114506906.sh
- chmod 755 /tmp/cleopatra-temp-script-40114506906.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-40114506906.sh Permissions
- Executing /tmp/cleopatra-temp-script-40114506906.sh
+ Creating /tmp/ptconfigure-temp-script-40114506906.sh
+ chmod 755 /tmp/ptconfigure-temp-script-40114506906.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-40114506906.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-40114506906.sh
  sudo: unknown user: /usr/bin/expect
  sudo: unable to initialize policy plugin
- Temp File /tmp/cleopatra-temp-script-40114506906.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-40114506906.sh Removed
  [Pharaoh Logging] Removing Package expect
  E: Could not get lock /var/cache/apt/archives/lock - open (11: Resource temporarily unavailable)
  E: Unable to lock directory /var/cache/apt/archives/
@@ -143,10 +143,10 @@ Options
  | Parameters			 | Alternate Parameters			  | Option	   | Comments				  |
  +===============================+========================================+================+======================================+
  |Install VNCpasswd?(Y/N)        | Instead of using VNCpasswd we can use  | Y		   | It will install VNCPassward  under   |
- |				 | VNCPasswd,vncpasswd,vnc-passward       | 		   | cleopatra				  |
+ |				 | VNCPasswd,vncpasswd,vnc-passwd         | 		   | ptconfigure			  |
  +-------------------------------+----------------------------------------+----------------+--------------------------------------+
  |Install VNCpasswd?(Y/N)        | Instead of using VNCpasswd we can use  | N              | The system exit the installation     |
- |                               | VNCPasswd,vncpasswd,vnc-passward|      |                | 		                          |
+ |                               | VNCPasswd,vncpasswd,vnc-passwd|        |                | 		                          |
  +-------------------------------+----------------------------------------+----------------+--------------------------------------+
 
 

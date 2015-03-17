@@ -15,13 +15,13 @@ The help command for this VNC module is given below,
 
 .. code-block:: bash
 
-	cleopatra vnc help
+	ptconfigure vnc help
 
 The screen shot given below shows you an pictorial representation regarding the usage of help command under VNC module.
 
 .. code-block:: bash
 
- Kevells@corp:/# cleopatra vnc help
+ Kevell@corp:/# ptconfigure vnc help
  ******************************
 
 
@@ -31,7 +31,7 @@ The screen shot given below shows you an pictorial representation regarding the 
 
         - install
         Installs VNC through apt-get
-        example: cleopatra vnc install
+        example: ptconfigure vnc install
 
 	------------------------------
 	End Help
@@ -44,27 +44,22 @@ Installation
 
 .. code-block:: bash
 	
-		cleopatra vnc install
+		ptconfigure vnc install
 
 After inputting the command as given above, the following operations takes places.
 
 .. cssclass:: table-bordered
 
- +------------------------------------------------+-------------+-------------------------------+
- |  Parameters                                    |  Required   |  Comment                      |
- +================================================+=============+===============================+
- |Install VNC? (Y/N)                              |  Y(YES)     |  If the user wish to proceed  |
- |                                                |             |  with installation process,   | 
- |                                                |             |  they can input as Y.         |
- +------------------------------------------------+-------------+-------------------------------+ 
- |Install VNC? (Y/N)                              |  N(NO)      |  If the user wish to quit the |
- |                                                |             |  installation process, they   | 
- |                                                |             |  can quit simply by using N.  |
- +------------------------------------------------+-------------+-------------------------------+
- |Install ApacheReverseProxyModules (Y/N)         |  N(NO)      |  If the user inputs as N,the  |
- |                                                |             |  process will gets quit from  |
- |                                                |             |  installation|                |
- +------------------------------------------------+-------------+-------------------------------+
+ +--------------------+------------------------+---------+--------------------------------------------------+
+ | Parameters         | Alternative Parameters | Options | Comment                                          |
+ +====================+========================+=========+==================================================+
+ |Install VNC? (Y/N)  | VNC, vnc               | Y(Yes)  | If the user wish to proceed with installation    |
+ |                    |                        |         | process, they can input as Y.                    |
+ +--------------------+------------------------+---------+--------------------------------------------------+ 
+ |Install VNC? (Y/N)  | VNC, vnc               | N(No)   | If the user wish to quit the installation        |
+ |                    |                        |         | process, they can quit simply by using N.|       |
+ +--------------------+------------------------+---------+--------------------------------------------------+
+
 
 While installing the VNC server it performs the following operations as given below:
 
@@ -78,7 +73,7 @@ The screen shot as given below, explains the users graphically regarding the pro
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra vnc install
+ kevell@corp:/# ptconfigure vnc install
  Install VNC? (Y/N) 
  Y
  *******************************
@@ -136,7 +131,7 @@ If the vnc server already exists in the users machine, it will throws an excepti
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra vnc install
+ kevell@corp:/# ptconfigure vnc install
  Install VNC? (Y/N) 
  Y
  *******************************

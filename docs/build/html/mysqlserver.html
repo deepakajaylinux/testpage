@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="MysqlAdmins" href="mysqladmin.html" />
     <link rel="prev" title="MongoDB" href="mongodb.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -146,19 +146,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="mysqlserver">
@@ -170,29 +158,29 @@
 <div class="section" id="the-help-command">
 <h2>The Help Command<a class="headerlink" href="#the-help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the methodology in usage and also about the actions that can be performed under this modules. It also describes the alternative names for mysql-server. The command for using help option is given below</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra mysql-server <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure mysql-server <span class="nb">help</span>
 </pre></div>
 </div>
 <p>This command makes the users to be aware of its purpose and also about the command used for installing the mysql-server.
 The screenshot given below shows a pictorial presentation about the help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra MysqlServer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure MysqlServer <span class="nb">help</span>
 ******************************
 
 
  This <span class="nb">command </span>allows you to install the MySQL Server. Currently only
  Mysql Workbench, the Database management GUI provided by Oracle <span class="k">for</span>
- Mysql.
+<span class="k"> </span>Mysql.
 
  MysqlServer, mysql-server, mysqlserver
 
        - install
        Install some Mysql Server Tools through apt-get.
-       example: cleopatra mysql-server install
+       example: ptconfigure mysql-server install
 
  Notes, during mysql install a root password will be set. First, it<span class="s1">&#39;ll look</span>
 <span class="s1"> for the parameter --mysql-root-pass, if this is not set, it&#39;</span>ll look in the
- cleopatra config <span class="k">for</span> a mysql-default-root-pass setting, and failing both of
- those it will just <span class="nb">set </span>the password <span class="k">for</span> root to cleopatra.
+ ptconfigure config <span class="k">for </span>a mysql-default-root-pass setting, and failing both of
+ those it will just <span class="nb">set </span>the password <span class="k">for </span>root to ptconfigure.
 
 ------------------------------
 End Help
@@ -203,7 +191,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the mysql server is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra mysql-server install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure mysql-server install
 </pre></div>
 </div>
 </div>
@@ -213,8 +201,8 @@ End Help
 <li>This module assists to install some tools for mysql server via apt-get.</li>
 <li>Initially a root password will be set.</li>
 <li>While installing, it will look for a parameter of &#8211;mysql-root-pass.</li>
-<li>If the &#8211;mysql-root-pass is not available, it will search the cleopatra config for the settings of mysql-default-root-pass.</li>
-<li>In case of both steps mentioned above gets failed, it will proceed by setting root password to cleopatra.</li>
+<li>If the &#8211;mysql-root-pass is not available, it will search the ptconfigure config for the settings of mysql-default-root-pass.</li>
+<li>In case of both steps mentioned above gets failed, it will proceed by setting root password to ptconfigure.</li>
 </ul>
 </div>
 <div class="section" id="additional-options">
@@ -222,10 +210,10 @@ End Help
 <p>Let us see about, the additional options involved in installing the mysql-server.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="26%" />
-<col width="26%" />
-<col width="22%" />
-<col width="26%" />
+<col width="30%" />
+<col width="30%" />
+<col width="11%" />
+<col width="29%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
@@ -249,17 +237,161 @@ can input as Y.</td>
 <td>In the place of MySQL Server
 these alternative names can be
 used:MysqlServer,mysql-server,
-mysqlserver.</td>
+mysqlserver.|</td>
 <td>N(NO)</td>
 <td>If the user wish to quit the
 installation process they
-can input as N|
-|</td>
+can input as N</td>
 </tr>
 </tbody>
 </table>
 <p>The following screen shot gives you an graphical presentation regarding the installation process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mysql-server install
+Install MySQL Server? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         MySQL Server!        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package debconf-utils from the Packager Apt is already installed, so not installing
+Creating /tmp/ptconfigure-temp-script-46222435876.sh
+chmod 755 /tmp/ptconfigure-temp-script-46222435876.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-46222435876.sh Permissions
+Executing /tmp/ptconfigure-temp-script-46222435876.sh
+Temp File /tmp/ptconfigure-temp-script-46222435876.sh Removed
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libdbd-mysql-perl libdbi-perl libterm-readkey-perl mysql-client-5.5
+ mysql-client-core-5.5
+Suggested packages:
+ libclone-perl libmldbm-perl libnet-daemon-perl libplrpc-perl
+ libsql-statement-perl
+The following NEW packages will be installed:
+ libdbd-mysql-perl libdbi-perl libterm-readkey-perl mysql-client
+ mysql-client-5.5 mysql-client-core-5.5
+0 upgraded, 6 newly installed, 0 to remove and 172 not upgraded.
+Need to get 2,315 kB/3,321 kB of archives.
+After this operation, 40.1 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client-core-5.5 amd64 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>710 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client-5.5 amd64 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>1,592 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-client all 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>12.3 kB<span class="o">]</span>
+Fetched 2,315 kB in 44s <span class="o">(</span>51.7 kB/s<span class="o">)</span>
+Selecting previously unselected package libdbi-perl.
+<span class="o">(</span>Reading database ... 232987 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libdbi-perl_1.630-1_amd64.deb ...
+Unpacking libdbi-perl <span class="o">(</span>1.630-1<span class="o">)</span> ...
+Selecting previously unselected package libdbd-mysql-perl.
+Preparing to unpack .../libdbd-mysql-perl_4.025-1_amd64.deb ...
+Unpacking libdbd-mysql-perl <span class="o">(</span>4.025-1<span class="o">)</span> ...
+Selecting previously unselected package libterm-readkey-perl.
+Preparing to unpack .../libterm-readkey-perl_2.31-1_amd64.deb ...
+Unpacking libterm-readkey-perl <span class="o">(</span>2.31-1<span class="o">)</span> ...
+Selecting previously unselected package mysql-client-core-5.5.
+Preparing to unpack .../mysql-client-core-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking mysql-client-core-5.5 <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package mysql-client-5.5.
+Preparing to unpack .../mysql-client-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking mysql-client-5.5 <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package mysql-client.
+Preparing to unpack .../mysql-client_5.5.41-0ubuntu0.14.04.1_all.deb ...
+Unpacking mysql-client <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Setting up libdbi-perl <span class="o">(</span>1.630-1<span class="o">)</span> ...
+Setting up libdbd-mysql-perl <span class="o">(</span>4.025-1<span class="o">)</span> ...
+Setting up libterm-readkey-perl <span class="o">(</span>2.31-1<span class="o">)</span> ...
+Setting up mysql-client-core-5.5 <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Setting up mysql-client-5.5 <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Setting up mysql-client <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package mysql-client from the Packager Apt executed correctly
+Aborting downgrade from <span class="o">(</span>at least<span class="o">)</span> 5.6 to 5.5.
+If are sure you want to downgrade to 5.5, remove the file
+/var/lib/mysql/debian-*.flag and try installing again.
+dpkg: error processing archive /var/cache/apt/archives/mysql-server-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb <span class="o">(</span>--unpack<span class="o">)</span>:
+ subprocess new pre-installation script returned error <span class="nb">exit </span>status 1
+Errors were encountered <span class="k">while </span>processing:
+ /var/cache/apt/archives/mysql-server-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb
+E: Sub-process /usr/bin/dpkg returned an error code <span class="o">(</span>1<span class="o">)</span>
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libaio1 libhtml-template-perl mysql-server-5.5 mysql-server-core-5.5
+Suggested packages:
+  libipc-sharedcache-perl tinyca mailx
+The following NEW packages will be installed:
+ libaio1 libhtml-template-perl mysql-server mysql-server-5.5
+ mysql-server-core-5.5
+0 upgraded, 5 newly installed, 0 to remove and 172 not upgraded.
+Need to get 4,964 kB/5,036 kB of archives.
+After this operation, 53.0 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server-core-5.5 amd64 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>3,207 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server-5.5 amd64 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>1,744 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main mysql-server all 5.5.41-0ubuntu0.14.04.1 <span class="o">[</span>12.4 kB<span class="o">]</span>
+Preconfiguring packages ...
+Fetched 4,964 kB in 1min 5s <span class="o">(</span>75.8 kB/s<span class="o">)</span>
+Selecting previously unselected package libaio1:amd64.
+<span class="o">(</span>Reading database ... 233242 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libaio1_0.3.109-4_amd64.deb ...
+Unpacking libaio1:amd64 <span class="o">(</span>0.3.109-4<span class="o">)</span> ...
+Selecting previously unselected package mysql-server-core-5.5.
+Preparing to unpack .../mysql-server-core-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking mysql-server-core-5.5 <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package mysql-server-5.5.
+Preparing to unpack .../mysql-server-5.5_5.5.41-0ubuntu0.14.04.1_amd64.deb ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../libhtml-template-perl_2.95-1_all.deb ...
+Unpacking libhtml-template-perl <span class="o">(</span>2.95-1<span class="o">)</span> ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_5.5.41-0ubuntu0.14.04.1_all.deb ...
+Unpacking mysql-server <span class="o">(</span>5.5.41-0ubuntu0.14.04.1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package mysql-server from the Packager Apt did not execute correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+MysqlServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 <p>If the mysql server is already exists in your machine, then it will throw an message to the user as it is already installed. The following screen shot represents the process of ensuring:</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mysql-server install
+Install MySQL Server? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         MySQL Server!        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package debconf-utils from the Packager Apt is already installed, so not installing
+Creating /tmp/ptconfigure-temp-script-23889189196.sh
+chmod 755 /tmp/ptconfigure-temp-script-23889189196.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-23889189196.sh Permissions
+Executing /tmp/ptconfigure-temp-script-23889189196.sh
+Temp File /tmp/ptconfigure-temp-script-23889189196.sh Removed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package mysql-client from the Packager Apt is already installed, so not installing
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package mysql-server from the Packager Apt is already installed, so not installing
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+MysqlServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -307,7 +439,7 @@ can input as N|
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

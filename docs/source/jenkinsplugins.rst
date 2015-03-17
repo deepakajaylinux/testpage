@@ -5,7 +5,7 @@ JenkinsPlugins
 Synopsis
 -------------
 
-Jenkins is popular to build server. Jenkins is an open source continuous integration tool written in Java. Jenkins provides continuous integration services for software development. 
+Jenkins is popular to build server. Jenins is a source continuous integration tool written in Java. Jenkins provides continuous integration services for software development. 
 
 Plugins have been released for Jenkins that extend its use to projects written in languages other than Java. Plugins are available for integrating Jenkins with most version control systems and big databases. Many build tools are supported via their respective plugins. Plugins can also change the way Jenkins looks or add new functionality. Builds can generate test reports in various formats supported by plugins (JUnit support is currently bundled) and Jenkins can display the reports and generate trends and render them in the GUI.
 
@@ -16,10 +16,10 @@ This command helps to determine the usage of JenkinsPlugins module. The user wil
 
 .. code-block:: bash
              
-   		cleopatra JenkinsPlugins help
+   		ptconfigure JenkinsPlugins help
 
 
- kevells@corp:/# cleopatra JenkinsPlugins help
+ kevell@corp:/# ptconfigure JenkinsPlugins help
  ******************************
 
 
@@ -30,7 +30,7 @@ This command helps to determine the usage of JenkinsPlugins module. The user wil
 
         - install
         Installs the latest version of Jenkins Plugins for PHP recommended by Golden Contact
-        example: cleopatra jenkins-plugins install
+        example: ptconfigure jenkins-plugins install
 
  ------------------------------
  End Help
@@ -42,25 +42,31 @@ This command helps to determine the usage of JenkinsPlugins module. The user wil
 
 Installation
 ----------------
- This command allows you to install a bunch of plugins that we recommend for
- PHP builds in Jenkins. If the user needs to install Jenkins module in machine, the below given command will execute the process of installation. 
+
+ This command allows you to install a bunch of plugins that we recommend for PHP builds in Jenkins. If the user needs to install Jenkins module in machine, the below given command will execute the process of installation. 
 
 .. code-block:: bash
         
-		cleopatra JenkinsPlugins install
+		ptconfigure JenkinsPlugins install
 
 
- kevells@corp:/# cleopatra JenkinsPlugins install
+The screenshot of the above command is listed below,
+
+.. code-block:: bash
+
+ 
+
+ kevell@corp:/# ptconfigure JenkinsPlugins install
  Install Jenkins Plugins? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *         Jenkns Plgs!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-80223312434.sh
- chmod 755 /tmp/cleopatra-temp-script-80223312434.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-80223312434.sh Permissions
- Executing /tmp/cleopatra-temp-script-80223312434.sh
+ Creating /tmp/ptconfigure-temp-script-80223312434.sh
+ chmod 755 /tmp/ptconfigure-temp-script-80223312434.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-80223312434.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-80223312434.sh
  Cloning into 'jplugins'...
  remote: Counting objects: 39, done.
  remote: Total 39 (delta 0), reused 0 (delta 0)
@@ -68,7 +74,7 @@ Installation
  Checking connectivity... done.
  chown: invalid user: ‘jenkins’
  jenkins: unrecognized service
- Temp File /tmp/cleopatra-temp-script-80223312434.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-80223312434.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -92,22 +98,22 @@ Options
  +-----------------------------+----------------------------------+----------------+------------------------------------------------+
  |	Parameters  	       | Alternative Parameter            |	Option	   | 		Comments		            |
  +=============================+==================================+================+================================================+
- |cleopatra  JenkinsPlugins    |Either of the four alternative 	  |Y		   |Once the user provides the option, System starts|	
- |Install		       |parameter can be used in command- |		   |installation process			    |
+ |ptconfigure  JenkinsPlugins  |Either of the four alternative 	  |Y		   |Once the user provides the option, System       |	
+ |Install		       |parameter can be used in command- |		   |starts installation process			    |
  |			       |JenkinsPlugins,  		  |		   |						    |	
  |			       |jenkinsplugins,			  |		   |						    |
  |			       |jenkins-plugins, 		  |                |						    |
  |			       |jenkins-plugs			  |		   |						    |
- |			       |eg: Cleopatra jenkins-plugins	  |		   |						    |
+ |			       |eg: ptconfigure jenkins-plugins	  |		   |						    |
  |			       |Install				  |		   |						    |
  +-----------------------------+----------------------------------+----------------+------------------------------------------------+
- |cleopatra  JenkinsPlugins    |Either of the four alternative 	  |N		   |Once the user provides the option, System Stops |	
+ |ptconfigure  JenkinsPlugins  |Either of the four alternative 	  |N		   |Once the user provides the option, System Stops |	
  |Install		       |parameter can be used in command- |		   |installation process			    |
  |			       |JenkinsPlugins,  		  |		   |						    |	
  |			       |jenkinsplugins,			  |		   |						    |
  |			       |jenkins-plugins, 		  |                |						    |
  |			       |jenkins-plugs			  |		   |						    |
- |			       |eg: Cleopatra jenkins-plugins	  |		   |						    |
+ |			       |eg: ptconfigure jenkins-plugins	  |		   |						    |
  |			       |Install|			  |		   |						    |
  +-----------------------------+----------------------------------+----------------+------------------------------------------------+
                           
@@ -115,5 +121,9 @@ Options
 Benefits
 --------------
 
-* The plugin will give you a report on how much every plugin will be used in all of your jobs . Therefore it will analyze the used extension points of each job.
+* The plugin will give you a report on how much every plugin will be used in all of your jobs . Therefore it will analyze the used extension 
+  points of each job.
 * This plugin gives you the possibility to analyze the usage of your installed plugins.
+* Non case sensitivity
+* Well-to-do in Ubuntu and CentOS.
+

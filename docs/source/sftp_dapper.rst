@@ -16,7 +16,7 @@ Help command used to find information about a specified command. For more inform
 
 .. code-block:: bash
    
-	        dapperstrano SFTP help
+	        ptdeploy SFTP help
 
 
 The following screen shot guides you.
@@ -24,7 +24,7 @@ The following screen shot guides you.
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano sftp help
+ kevell@corp:/# ptdeploy sftp help
  ******************************
 
 
@@ -34,15 +34,15 @@ The following screen shot guides you.
 
         - put
         Will ask you for details for servers, then copy a file or directory from local to remote
-        example: cleopatra sftp put
-        example: cleopatra sftp put --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
-        example: cleopatra sftp put --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
+        example: ptconfigure sftp put
+        example: ptconfigure sftp put --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
+        example: ptconfigure sftp put --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
 
         - get
         Will ask you for details for servers, then copy a file or directory from remote to local
-        example: cleopatra sftp get
-        example: cleopatra sftp get --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
-        example: cleopatra sftp get --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
+        example: ptconfigure sftp get
+        example: ptconfigure sftp get --yes --environment-name=staging --source="/tmp/file" --target="/home/user/file"
+        example: ptconfigure sftp get --yes --source="/tmp/file" --target="/home/user/file" # will ask for server details
 
  ------------------------------
  End Help
@@ -53,12 +53,12 @@ The following screen shot guides you.
 Installation
 -----------------
 
-As a company, and as individuals, SFTP has been dedicated to meeting each partner’s technology challenges, fulfilling their engineering requirements, and satisfying their business goals. It is an obvious process to install SFTP module under Dapperstrano by just using the command given below,
+As a company, and as individuals, SFTP has been dedicated to meeting each partner’s technology challenges, fulfilling their engineering requirements, and satisfying their business goals. It is an obvious process to install SFTP module under ptdeploy by just using the command given below,
 
 
 .. code-block:: bash
   
-		dapperstrano SFTP  install 
+		ptdeploy SFTP  install 
 
 
 After giving the command then the system will raise the question as,
@@ -90,7 +90,7 @@ If the user input as N previous server name can be accessed.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra sftp put
+ kevell@corp:/# ptconfigure sftp put
  SFTP on Server group? (Y/N) 
  Y
  Please Enter SSH Timeout in seconds
@@ -123,13 +123,13 @@ Options
 
 .. cssclass:: table-bordered
 
- +--------------------+--------------------------------+----------------------------------------------+
- | Parameters         | Syntax			       | Comments			              |
- +====================+================================+==============================================+
- |put		      | Source to target	       | The file can transferred		      |
- +--------------------+--------------------------------+----------------------------------------------+
- |get		      | Path to source		       | The file can downloaded from remote system|  |
- +--------------------+--------------------------------+----------------------------------------------+
+ +-------------+------------------------+----------------------+----------------------------------------------+
+ | Parameters  | Alternative Parameters | Syntax	       | Comments			              |
+ +=============+========================+======================+==============================================+
+ |put	       | SFTP, sftp             | Source to target     | The file can transferred		      |
+ +-------------+------------------------+----------------------+----------------------------------------------+
+ |get	       | SFTP, sftp             | Path to source       | The file can downloaded from remote system|  |
+ +-------------+------------------------+----------------------+----------------------------------------------+
 
 
 

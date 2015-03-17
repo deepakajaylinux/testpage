@@ -20,7 +20,7 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 	
-		cleopatra PHPAPC help
+		ptconfigure PHPAPC help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Php APC.
@@ -28,7 +28,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPAPC help
+ kevell@corp:/# ptconfigure PHPAPC help
 
  ******************************
 
@@ -39,7 +39,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Install PHP APC.
-        example: cleopatra phpapc install
+        example: ptconfigure phpapc install
 
  ------------------------------
  End Help
@@ -54,7 +54,7 @@ The command used for installing the Php APC in the users machine is shown below:
 
 .. code-block:: bash
 	
-		cleopatra phpapc install
+		ptconfigure phpapc install
 
 
 After inputting the command above, the following process occurs as shown in the tabular format.
@@ -91,7 +91,7 @@ Finally, the process of installation gets completed. The following screenshot vi
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra phpapc install
+ kevell@corp:/# ptconfigure phpapc install
 
  Install PHP APC? (Y/N) 
  Y

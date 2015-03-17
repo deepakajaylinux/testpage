@@ -10,18 +10,18 @@ A standardized non-executable file type used by system software as a pre-formatt
 Help command
 -------------------------
 
-The help command leads the users regarding the purpose and as well as about the options that are included in the template modules. The help command lists out the alternative parameters of templating testingkamen module. It also describes the syntax for detecting the user’s machine. The help command for templating shown below.
+The help command leads the users regarding the purpose and as well as about the options that are included in the template modules. The help command lists out the alternative parameters of templating pttest module. It also describes the syntax for detecting the user’s machine. The help command for templating shown below.
 
 .. code-block:: bash
 
-		testingkamen templating help
+		pttest templating help
 
 The following screenshot explains about templating.
 
 
 .. code-block:: bash
 
- kevells@corp:/# testingkamen templating help
+ kevell@corp:/# pttest templating help
  ******************************
 
 
@@ -32,7 +32,7 @@ The following screenshot explains about templating.
 
         - install
         Installs a template
-        example: testingkamen template install
+        example: pttest template install
 
  ------------------------------
  End Help
@@ -52,14 +52,14 @@ Installation typically involves code being copied/generated from the installatio
 
 .. code-block:: bash
 
-		testingkamen templating install
+		pttest templating install
 
 after input as the above said command it starts installation. The following snap shots guides the user about installation.
 
 
 .. code-block:: bash
 
- kevells@corp:/# testingkamen templating install
+ kevell@corp:/# pttest templating install
  Install Templating Functionality? (Y/N) 
  Y
  *******************************
@@ -89,9 +89,9 @@ Options
 .. cssclass:: table-bordered
 
  +-------------------------------+-------------------------------------+--------------------+------------------------------------------------+
- | Parameters			 | Alternative Parametrs	       | Syntax		    | Comments					     |
+ | Parameters			 | Alternative Parametrs	       | Options	    | Comments					     |
  +===============================+=====================================+====================+================================================+
- |Install templating 		 |Instead of using templating the      |Y(Yes)		    |Templating can be installed under Testingkamen. |
+ |Install templating 		 |Instead of using templating the      |Y(Yes)		    |Templating can be installed under pttest.       |
  |functionality (Y/N)		 |user can use Templating, templating, |		    |						     |
  |				 |template			       |		    |						     |
  +-------------------------------+-------------------------------------+--------------------+------------------------------------------------+

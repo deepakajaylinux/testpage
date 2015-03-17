@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Python" href="python.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="PTBuild" href="ptbuild.html" />
     <link rel="prev" title="PostgresServer" href="postgresserver.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -113,8 +113,8 @@
                 
   <li><a href="postgresserver.html"
          title="Previous Chapter: PostgresServer">&laquo; PostgresServer</a></li>
-  <li><a href="python.html"
-         title="Next Chapter: Python">Python &raquo;</a></li>
+  <li><a href="ptbuild.html"
+         title="Next Chapter: PTBuild">PTBuild &raquo;</a></li>
               
             
             
@@ -148,19 +148,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="process">
@@ -172,38 +160,61 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command serves the users regarding how to handle and to work with process as per their needs. It also lists out the alternative parameters of process. It describes the syntax for killing a process, and also about how to specify killing a process on the basis of their needs. The help command for process module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screenshot as shown below, depicts how to kill a process, and how to define killing a process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure process help
+******************************
+
+
+ This command handles process functions, kill a process for now
+
+ Process, process
+
+       - kill
+       Will ask you for process name, aa file or directory from local to remote
+       example: ptconfigure process kill
+       example: ptconfigure process kill --yes --name=&quot;selenium&quot; --use-psax # default, will look for string in result of
+       example: ptconfigure process kill --yes --name=&quot;selenium&quot; --use-pkill # will allow pkill to find  by string to kill
+       example: ptconfigure process kill --yes
+                                       --guess
+                                       --id=&quot;1234 # will kill a process by id
+                                       --level # will guess a 9
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="how-to-define-and-to-use-the-process">
 <h2>How to define and to use the process<a class="headerlink" href="#how-to-define-and-to-use-the-process" title="Permalink to this headline">¶</a></h2>
 <p>To kill a process the following syntax can be used.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">kill</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span> --yes --name<span class="o">=</span><span class="s2">&quot;selenium&quot;</span> --use-psax <span class="c"># default</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">kill</span> --yes --name<span class="o">=</span><span class="s2">&quot;selenium&quot;</span> --use-psax <span class="c"># default</span>
 </pre></div>
 </div>
 <p>The syntax as shown above will looks for string in result of.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span> --yes --name<span class="o">=</span><span class="s2">&quot;selenium&quot;</span> --use-pkill <span class="c">#</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">kill</span> --yes --name<span class="o">=</span><span class="s2">&quot;selenium&quot;</span> --use-pkill <span class="c">#</span>
 </pre></div>
 </div>
 <p>The syntax as shown above is used to specify or find a string which is to be killed.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span> --yes
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process kill --yes
                 --guess
-                <span class="nv">id</span><span class="o">=</span><span class="s2">&quot;1234 #</span>
+                id=&quot;1234 #
 </pre></div>
 </div>
 <p>The command as shown above will kills a process as per the given id.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span> --yes
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">kill</span> --yes
         --level <span class="c">#</span>
 </pre></div>
 </div>
 <p>The command as above is used to kill a process as per the specified level.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra process <span class="nb">kill</span> --yes --guess --name<span class="o">=</span><span class="s2">&quot;skype&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure process <span class="nb">kill</span> --yes --guess --name<span class="o">=</span><span class="s2">&quot;skype&quot;</span>
 </pre></div>
 </div>
 <p>The command as above is used to kill a process by specifying its name. The following screenshot depicts the working of killing a process.</p>
@@ -214,7 +225,7 @@
 <div class="highlight-bash"><div class="highlight"><pre><span class="c"># kill 3486</span>
 </pre></div>
 </div>
-<p>OR</p>
+<p>or</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sudo <span class="nb">kill </span>3486
 </pre></div>
 </div>
@@ -223,7 +234,7 @@
 <div class="section" id="how-do-i-verify-that-the-process-is-gone-killed">
 <h2>How do I verify that the process is gone / killed?<a class="headerlink" href="#how-do-i-verify-that-the-process-is-gone-killed" title="Permalink to this headline">¶</a></h2>
 <p>Use the ps or pidof command:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>ps aux <span class="p">|</span> grep lighttpd
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>ps aux | grep lighttpd
 <span class="nv">$ </span>pidof lighttpd
 </pre></div>
 </div>
@@ -234,7 +245,7 @@
 <div class="highlight-bash"><div class="highlight"><pre><span class="nb">kill  </span>pid1 pid2 pid3
 <span class="nb">kill</span> -15  pid1 pid2 pid3
 <span class="nb">kill</span> -9  pid1 pid2 pid3
-<span class="nb">kill</span>  -9 <span class="m">3546</span> <span class="m">5557</span> 4242
+<span class="nb">kill</span>  -9 3546 5557 4242
 </pre></div>
 </div>
 </div>
@@ -249,7 +260,7 @@
 <div class="highlight-bash"><div class="highlight"><pre><span class="c"># killall -15 lighttpd</span>
 </pre></div>
 </div>
-<p>OR
+<p>or
 .. code-block:: bash</p>
 <blockquote>
 <div># killall -9 lighttpd</div></blockquote>
@@ -302,7 +313,7 @@
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Skipfish" href="skipfish.html" />
-    <link rel="prev" title="Run Command" href="runcommand.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="SFTP" href="sftp_cleo.html" />
+    <link rel="prev" title="Selenium Server" href="seleniumserver.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,10 +107,10 @@
             
               
                 
-  <li><a href="runcommand.html"
-         title="Previous Chapter: Run Command">&laquo; Run Command</a></li>
-  <li><a href="skipfish.html"
-         title="Next Chapter: Skipfish">Skipfish &raquo;</a></li>
+  <li><a href="seleniumserver.html"
+         title="Previous Chapter: Selenium Server">&laquo; Selenium Server</a></li>
+  <li><a href="sftp_cleo.html"
+         title="Next Chapter: SFTP">SFTP &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="service">
@@ -168,10 +156,10 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>Help command used to find information about a specified command. For more information about changes to functionality of service we can use this help command. The following screen shot will guide you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Service <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Service <span class="nb">help</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra Service <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure Service <span class="nb">help</span>
 
 ******************************
 
@@ -182,28 +170,28 @@
 
 - start
 Start a system service
-example: cleopatra service start --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service start --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 - stop
 Stop a system service
-example: cleopatra service restart --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service restart --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 - restart
 Restart a system service
-example: cleopatra service restart --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service restart --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 - ensure-running
 Ensure a system service is running. If it is already running, dont attempt to start it
 If it is not running, start it
-example: cleopatra service ensure-running --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service ensure-running --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 - is-running
 Checks whether a system service is running.
-example: cleopatra service is-running --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service is-running --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 - run-at-reboots
 Ensure a system service will auto start on reboots.
-example: cleopatra service run-at-reboots --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+example: ptconfigure service run-at-reboots --service-name<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 ------------------------------
 End Help
@@ -215,42 +203,55 @@ End Help
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
+<col width="12%" />
 <col width="17%" />
-<col width="40%" />
-<col width="43%" />
+<col width="29%" />
+<col width="42%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameter</th>
 <th class="head">Functions</th>
 <th class="head">Comment</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>start</td>
+<td>Service, service</td>
 <td>Start a system  service</td>
-<td>Cleopatra service start –service-name=”apache2”</td>
+<td>ptconfigure service start –service-name=”apache2”</td>
 </tr>
 <tr class="row-odd"><td>stop</td>
+<td>Service, service</td>
 <td>Stop asystem service</td>
-<td>Cleopatra service stop –service-name=”apache2”</td>
+<td>ptconfigure service stop –service-name=”apache2”</td>
 </tr>
 <tr class="row-even"><td>Restart</td>
-<td>Restart a system  service</td>
-<td>Cleopatra service restart –service-name=”apache2”</td>
+<td>Service, service</td>
+<td>Restart a system service</td>
+<td>ptconfigure service restart –service-name=”apache2”</td>
 </tr>
 <tr class="row-odd"><td>Ensure-running</td>
-<td>Ensure a system service is running.In case of not
-running start it else don’t attempt</td>
-<td>Cleopatra service ensure-running –service-name=”apache2”</td>
+<td>Service, service</td>
+<td>Ensure a system service is running.
+In case of not running start it else
+don’t attempt</td>
+<td>ptconfigure service ensure-running –service-
+name=”apache2”</td>
 </tr>
 <tr class="row-even"><td>Is-running</td>
-<td>Check whether a system service is running or not
-running start it else don’t attempt</td>
-<td>Cleopatra service is-running –service-name=”apache2”</td>
+<td>Service, service</td>
+<td>Check whether a system service is
+running or not running start it else
+don’t attempt</td>
+<td>ptconfigure service is-running –service-name=”apache2”</td>
 </tr>
 <tr class="row-odd"><td>Run-at-reboots</td>
-<td>Ensure a system service auto start on reboots</td>
-<td>Cleopatra service run-at-reboots –service-name=”apache2|</td>
+<td>Service, service</td>
+<td>Ensure a system service auto start
+on reboots</td>
+<td>ptconfigure service run-at-reboots –service-
+name=”apache2|</td>
 </tr>
 </tbody>
 </table>
@@ -303,7 +304,7 @@ running start it else don’t attempt</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Redis" href="redis.html" />
-    <link rel="prev" title="Process" href="process.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Ra" href="ra.html" />
+    <link rel="prev" title="PTVirtualize" href="ptvirtualize_cleo.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,6 +96,7 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#benefits-to-the-users">Benefits to the users</a></li>
 </ul>
 </li>
@@ -107,10 +108,10 @@
             
               
                 
-  <li><a href="process.html"
-         title="Previous Chapter: Process">&laquo; Process</a></li>
-  <li><a href="redis.html"
-         title="Next Chapter: Redis">Redis &raquo;</a></li>
+  <li><a href="ptvirtualize_cleo.html"
+         title="Previous Chapter: PTVirtualize">&laquo; PTVirtualize</a></li>
+  <li><a href="ra.html"
+         title="Next Chapter: Ra">Ra &raquo;</a></li>
               
             
             
@@ -144,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="python">
@@ -169,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the user to provide what is necessary to accomplish the task. The command to make use of help under the terminal is given as follows,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra python <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure python <span class="nb">help</span>
 </pre></div>
 </div>
-<p>The snapshot below gives you a pictorial representation of help command and it listed two parameters as Python and python. ( Paramters are case insensitive )</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Python <span class="nb">help</span>
+<p>The snapshot below gives you a pictorial representation of help command and it listed two parameters as Python and python. ( Parameters are case insensitive )</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Python <span class="nb">help</span>
 ******************************
 
 
@@ -184,7 +173,7 @@ Python, python
 
 - install
  Installs the latest version of Python
- example: cleopatra python install
+ example: ptconfigure python install
 
 ------------------------------
 End Help
@@ -195,23 +184,117 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing python module is given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra python install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure python install
 </pre></div>
 </div>
+<p>The screenshot for the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure python install
+
+Install Python? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         !Python!!        *
+*******************************
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ python is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package python from the Packager Apt is already installed, so not installing.
+dpkg: warning: parsing file <span class="s1">&#39;/var/lib/dpkg/available&#39;</span> near line 47618 package <span class="s1">&#39;ptconfigure&#39;</span>:
+ missing maintainer
+dpkg: warning: parsing file <span class="s1">&#39;/var/lib/dpkg/available&#39;</span> near line 47618 package <span class="s1">&#39;ptconfigure&#39;</span>:
+missing architecture
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ docutils-common docutils-doc python-pygments python-roman
+Suggested packages:
+ texlive-latex-recommended texlive-latex-base texlive-lang-french
+ ttf-linux-libertine ttf-bitstream-vera
+The following NEW packages will be installed:
+ docutils-common docutils-doc python-docutils python-pygments python-roman
+0 upgraded, 5 newly installed, 0 to remove and 13 not upgraded.
+Need to get 2,190 kB of archives.
+After this operation, 8,623 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main docutils-common all 0.8.1-4ubuntu1 <span class="o">[</span>153 kB<span class="o">]</span>
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main docutils-doc all 0.8.1-4ubuntu1 <span class="o">[</span>1,289 kB<span class="o">]</span>
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/main python-roman all 0.8.1-4ubuntu1 <span class="o">[</span>12.6 kB<span class="o">]</span>
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main python-docutils all 0.8.1-4ubuntu1 <span class="o">[</span>382 kB<span class="o">]</span>
+Get:5 http://us.archive.ubuntu.com/ubuntu/ precise/main python-pygments all 1.4+dfsg-2 <span class="o">[</span>353 kB<span class="o">]</span>
+Fetched 2,190 kB in 7s <span class="o">(</span>277 kB/s<span class="o">)</span>
+Selecting previously unselected package docutils-common.
+<span class="o">(</span>Reading database ... 254879 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../docutils-common_0.8.1-4ubuntu1_all.deb ...
+Unpacking docutils-common <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package docutils-doc.
+Preparing to unpack .../docutils-doc_0.8.1-4ubuntu1_all.deb ...
+Unpacking docutils-doc <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package python-roman.
+Preparing to unpack .../python-roman_0.8.1-4ubuntu1_all.deb ...
+Unpacking python-roman <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package python-docutils.
+Preparing to unpack .../python-docutils_0.8.1-4ubuntu1_all.deb ...
+Unpacking python-docutils <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package python-pygments.
+Preparing to unpack .../python-pygments_1.4+dfsg-2_all.deb ...
+Unpacking python-pygments <span class="o">(</span>1.4+dfsg-2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>sgml-base <span class="o">(</span>1.26+nmu4ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>doc-base <span class="o">(</span>0.10.5<span class="o">)</span> ...
+Processing 1 added doc-base file...
+Setting up docutils-common <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+update-catalog: Suppressing action on super catalog. Invoking trigger instead.
+Setting up docutils-doc <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Setting up python-roman <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+Setting up python-pygments <span class="o">(</span>1.4+dfsg-2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>sgml-base <span class="o">(</span>1.26+nmu4ubuntu1<span class="o">)</span> ...
+Setting up python-docutils <span class="o">(</span>0.8.1-4ubuntu1<span class="o">)</span> ...
+update-alternatives: using /usr/share/docutils/scripts/python2/rst-buildhtml to provide /usr/bin/rst-buildhtml <span class="o">(</span>rst-buildhtml<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2html to provide /usr/bin/rst2html <span class="o">(</span>rst2html<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2latex to provide /usr/bin/rst2latex <span class="o">(</span>rst2latex<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2man to provide /usr/bin/rst2man <span class="o">(</span>rst2man<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2odt to provide /usr/bin/rst2odt <span class="o">(</span>rst2odt<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2odt_prepstyles to provide /usr/bin/rst2odt_prepstyles <span class="o">(</span>rst2odt_prepstyles<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2pseudoxml to provide /usr/bin/rst2pseudoxml <span class="o">(</span>rst2pseudoxml<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2s5 to provide /usr/bin/rst2s5 <span class="o">(</span>rst2s5<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2xetex to provide /usr/bin/rst2xetex <span class="o">(</span>rst2xetex<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rst2xml to provide /usr/bin/rst2xml <span class="o">(</span>rst2xml<span class="o">)</span> in auto mode
+update-alternatives: using /usr/share/docutils/scripts/python2/rstpep2html to provide /usr/bin/rstpep2html <span class="o">(</span>rstpep2html<span class="o">)</span> in auto mode
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package python-docutils from the Packager Apt executed correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+Python: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="option">
+<h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="28%" />
+<col width="27%" />
 <col width="25%" />
-<col width="47%" />
+<col width="48%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Paramaters</th>
+<tr class="row-odd"><th class="head">Parameters</th>
 <th class="head">Required</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra python install</td>
+<tr class="row-even"><td>ptconfigure python install</td>
 <td>Yes</td>
 <td>This command will install the python module</td>
 </tr>
@@ -224,7 +307,7 @@ fresh package.</td>
 </tr>
 <tr class="row-even"><td>Install python ( Y/N)</td>
 <td>N</td>
-<td>If the user inputs N, the installation was aborted.</td>
+<td>If the user inputs N, the installation was aborted.|</td>
 </tr>
 </tbody>
 </table>
@@ -275,7 +358,7 @@ fresh package.</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

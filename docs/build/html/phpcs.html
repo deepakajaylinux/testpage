@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHPDox" href="phpdox.html" />
     <link rel="prev" title="Phpci" href="phpci.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpcs">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the users regarding the purpose and as well as about the options that are included in the php cs module. It also describes the syntax for installing php cs. The help command for php cs is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPCS <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPCS <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHPCS.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra PHPCS <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPCS <span class="nb">help</span>
 ******************************
 
 
@@ -181,7 +169,7 @@ This <span class="nb">command </span>allows you to install PHPCS from a GC Repo.
 PHPCS
 - install
 Installs the latest version of PHPCS
-example: cleopatra phpcs install
+example: ptconfigure phpcs install
 
 ------------------------------
 End Help
@@ -192,7 +180,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Installing the PHP CS is simpler by using the following command as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra PHPCS install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPCS install
 </pre></div>
 </div>
 <p>After inputting the command above the following operations as shown in the tabular format occurs.</p>
@@ -224,9 +212,9 @@ they can input as N.|</td>
 <p>If the user proceeds the installation process the following operations occurs as shown in the tabular format.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="30%" />
-<col width="18%" />
-<col width="18%" />
+<col width="31%" />
+<col width="17%" />
+<col width="17%" />
 <col width="34%" />
 </colgroup>
 <thead valign="bottom">
@@ -276,28 +264,28 @@ in hand specify they own location.|</td>
 </tbody>
 </table>
 <p>After these process as shown in the tabular format, the results are clearly reported along with the status. The following screen shot explains you graphically about the process involved in installation of PHPCS.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra PHPCS install
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure PHPCS install
 Install PHP Code Sniffer ? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *        Pharaoh Tools        *
 *         PHP CSniffer        *
 *******************************
-What is the program data directory? Found <span class="s2">&quot;/opt/phpcs&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, no end slash<span class="o">)</span>
+What is the program data directory? Found <span class="s2">&quot;/opt/phpcs&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
 
-What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, No Trailing Slash<span class="o">)</span>
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
 
-git clone <span class="s1">&#39;https://github.com/phpengine/cleopatra-phpcs.git&#39;</span>  /tmp/phpcs/phpcsCloning into <span class="s1">&#39;/tmp/phpcs/phpcs&#39;</span>...
+git clone <span class="s1">&#39;https://github.com/phpengine/ptconfigure-phpcs.git&#39;</span>  /tmp/phpcs/phpcsCloning into <span class="s1">&#39;/tmp/phpcs/phpcs&#39;</span>...
 remote: Counting objects: 862, <span class="k">done</span>.
-remote: Total <span class="m">862</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-Receiving objects: 100% <span class="o">(</span>862/862<span class="o">)</span>, 491.23 KiB <span class="p">|</span> 64.00 KiB/s, <span class="k">done</span>.
+remote: Total 862 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>862/862<span class="o">)</span>, 491.23 KiB | 64.00 KiB/s, <span class="k">done</span>.
 Resolving deltas: 100% <span class="o">(</span>378/378<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
 Program Data folder populated
-Program Executor Deleted <span class="k">if</span> existed
+Program Executor Deleted <span class="k">if </span>existed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -355,7 +343,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

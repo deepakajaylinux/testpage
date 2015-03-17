@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHPStorm" href="phpstorm.html" />
     <link rel="prev" title="PHPModules" href="phpmodules1.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,7 +96,6 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -145,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="php-ssh">
@@ -165,34 +152,47 @@
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>PhpSSH has now become even easier to get it up and running. Making it much easier to auto upgrade Cleopatra via PhpSSH. Taking remote shell, for carrying out different tasks is a norm, if the user have multiple server machine&#8217;s in an infrastructure.</div></blockquote>
+<div>PhpSSH has now become even easier to get it up and running. Making it much easier to auto upgrade ptconfigure via PhpSSH. Taking remote shell,
+for carrying out different tasks is a norm, if the user have multiple server machine&#8217;s in an infrastructure.</div></blockquote>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>In this help command, the user will be discussing one such tool that was designed to eliminate the flaws in previous remote shell programs. Cleopatra topic of interest for this command is none other than the Secure Sell, better known as phpSSH. The command for help as follows</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra PHP SSH <span class="nb">help</span>
+<p>The help command guides the users regarding the purpose and as well as about the options that are included in the Php SSH. It lists out the alternative parameters of Php SSH. It also describes the syntax for Php SSH modules. The help command for Php SSH  module is shown as below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPSSH <span class="nb">help</span>
 </pre></div>
 </div>
-<p>The following screen shot can envisage the help command.</p>
+<p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under PHP SSH.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPSSH <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install the PHP SSH default Module
+
+ PHPSSH, php-ssh, phpssh
+
+       - install
+       Installs the PECL PHP SSH Extension.
+       example: ptconfigure phpssh install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>This is a prominent process to install Phpssh module under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra phpssh install
+<p>This is a prominent process to install Phpssh module under ptconfigure by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure phpssh install
 </pre></div>
 </div>
-<p>After key in the command, it can asks</p>
-<p>Install phpssh? (Y/N)</p>
-<p>In case the user input as Y, it can install phpssh from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>After inputting the command above, the following steps are involved during the process of installation as described in the table,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="24%" />
-<col width="35%" />
-<col width="8%" />
-<col width="32%" />
+<col width="18%" />
+<col width="34%" />
+<col width="12%" />
+<col width="36%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
@@ -202,26 +202,86 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Cleopatra PHPSSH Install</td>
-<td>Instead of using PHP SSH We  can use
+<tr class="row-even"><td>Install PHP SSH? (Y/N)</td>
+<td>Instead of using PHP SSH We can use
 PHPSSH, phpssh,php-ssh</td>
-<td>Y</td>
-<td>System starts installation process</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed the installation
+process they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td>Cleopatra PHPSSH Install</td>
-<td>Instead of using PHP SSH We  can use
+<tr class="row-odd"><td>Install PHP SSH? (Y/N)</td>
+<td>Instead of using PHP SSH We can use
 PHPSSH, phpssh,php-ssh</td>
-<td>N</td>
-<td>System stops installation process|</td>
+<td>N(No)</td>
+<td>If the user wish to quit the installation
+process they can input as N.|</td>
 </tr>
 </tbody>
 </table>
+<p>If the user proceeds the installation, during the process of installation is described in the below lists:</p>
+<ul class="simple">
+<li>builds the dependency tree.</li>
+<li>Reads the state information.</li>
+<li>list outs the extra packages that are installing.</li>
+<li>list outs the new packages that are installing.</li>
+<li>details regarding the number of files upgraded, newly installed, removed and not upgraded.</li>
+</ul>
+<p>The following screenshot pictorially depicts the above described process of installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure phpssh install
+Install PHP SSH? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         PHP SSH!        *
+*******************************
+
+Creating config file /etc/php5/mods-available/ssh2.ini with new version
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libssh2-1
+The following NEW packages will be installed:
+ libssh2-1 libssh2-php
+0 upgraded, 2 newly installed, 0 to remove and 301 not upgraded.
+Need to get 91.0 kB of archives.
+After this operation, 389 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libssh2-1 amd64 1.4.3-2 <span class="o">[</span>66.3 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libssh2-php amd64 0.12-1build1 <span class="o">[</span>24.7 kB<span class="o">]</span>
+Fetched 91.0 kB in 4s <span class="o">(</span>19.8 kB/s<span class="o">)</span>
+Selecting previously unselected package libssh2-1:amd64.
+<span class="o">(</span>Reading database ... 183000 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libssh2-1_1.4.3-2_amd64.deb ...
+Unpacking libssh2-1:amd64 <span class="o">(</span>1.4.3-2<span class="o">)</span> ...
+Selecting previously unselected package libssh2-php.
+Preparing to unpack .../libssh2-php_0.12-1build1_amd64.deb ...
+Unpacking libssh2-php <span class="o">(</span>0.12-1build1<span class="o">)</span> ...
+Setting up libssh2-1:amd64 <span class="o">(</span>1.4.3-2<span class="o">)</span> ...
+Setting up libssh2-php <span class="o">(</span>0.12-1build1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package libssh2-php from the Packager Apt executed correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+PHPSSH: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The first and the foremost is the privacy of the communication. This means the connection, which provides a remote shell login, must be encrypted to prevent eavesdropping.</li>
-<li>There must be a mechanism to check whether the data send by either party is not altered, or tampered with. In short, integrity check is necessary.</li>
+<li>The first and the foremost is the privacy of the communication. This means the connection, which provides a remote shell login, must be
+encrypted to prevent eavesdropping.</li>
+<li>There must be a mechanism to check whether the data send by either party is not altered, or tampered with. In short, integrity check is
+necessary.</li>
 <li>Identity of both the server and the client must be provided to each other, to establish a proper authentication.</li>
 <li>Encryption and authentication mechanisms provided by PhpSSH enhances security to a greater extent.</li>
 </ul>
@@ -263,7 +323,7 @@ PHPSSH, phpssh,php-ssh</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

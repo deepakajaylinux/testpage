@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Cassandra" href="cassandra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Boxify" href="boxify.html" />
     <link rel="prev" title="Awstats" href="awstats.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="awstats.html"
          title="Previous Chapter: Awstats">&laquo; Awstats</a></li>
-  <li><a href="cassandra.html"
-         title="Next Chapter: Cassandra">Cassandra &raquo;</a></li>
+  <li><a href="boxify.html"
+         title="Next Chapter: Boxify">Boxify &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="behat">
@@ -168,13 +156,13 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command guides the user get aware of the uses, and also the options and actions that can be performed.</p>
+<p>The help command guides the user get aware of the uses, and also the options and actions that can be performed. It lists outs the alternative parameters that can be used in declaration. It specifies the command for installing the latest version of behat.</p>
 <p>The coding to make use of help command under behat, is given as follows:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra behat <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure behat <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The screen shot as given below explains you graphically about the usage of the help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra behat <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure behat <span class="nb">help</span>
 ******************************
 
 
@@ -184,7 +172,7 @@
 
        - install
        Installs the latest version of behat
-       example: cleopatra behat install
+       example: ptconfigure behat install
 
 ------------------------------
 End Help
@@ -194,56 +182,110 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>If the user needs to install the latest version of behat, they can achieve installation, by using the following command,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure behat install
+</pre></div>
+</div>
+<p>After entering the command above, the following process are involved in installation as shown in the tabular format,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="38%" />
-<col width="19%" />
-<col width="43%" />
+<col width="21%" />
+<col width="33%" />
+<col width="11%" />
+<col width="35%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Required</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra behat Install</td>
+<tr class="row-even"><td>Install Behat? (Y/N)</td>
+<td>Instead of behat, we can use Behat also</td>
 <td>Yes</td>
-<td>This command is used for installing the behat to
-your machine.</td>
+<td>If the user gives input as yes, it will
+proceed installation.</td>
 </tr>
-<tr class="row-odd"><td>Install behat (Y/N)</td>
-<td>Y(Yes)</td>
-<td>If the user gives input as Y, then behat will gets
-installed.</td>
+<tr class="row-odd"><td>Install Behat? (Y/N)</td>
+<td>Instead of behat, we can use Behat also</td>
+<td>No</td>
+<td>If the user gives input as no, it will
+quit the installation process.|</td>
 </tr>
-<tr class="row-even"><td>Install behat (Y/N)</td>
-<td>N(No)</td>
-<td>If the user gives input as N, then the process gets
-quits from installation.|</td>
+</tbody>
+</table>
+<p>If the user proceeds the installation by inputting as Y, the following steps are involved in installing behat,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="25%" />
+<col width="31%" />
+<col width="10%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Path</th>
+<th class="head">Option</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Program data directory (default)</td>
+<td>&#8220;/opt/behat(corresponding module)&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with
+the default program data directory they
+can input as Yes</td>
+</tr>
+<tr class="row-odd"><td>Program data directory</td>
+<td>User specific</td>
+<td>No (End
+Slash)</td>
+<td>If the user wish to proceed with their
+own program data directory, they can input
+as N, and in hand specify they own location</td>
+</tr>
+<tr class="row-even"><td>Program executor directory
+(Default)</td>
+<td>&#8220;/usr/bin&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with
+the default program executor directory they
+can input as yes</td>
+</tr>
+<tr class="row-odd"><td>Program executor directory</td>
+<td>User specific</td>
+<td>No (End
+slash)</td>
+<td>If the user wish to proceed installation
+with thir own program executor directory,
+they can input as N, and in hand specify
+they own location|</td>
 </tr>
 </tbody>
 </table>
 <p>The screenshot shown below will gives you an pictorial representation about the steps involved in the installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra behat install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure behat install
 Install Behat ? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *          Behat         *
 *******************************
-What is the program data directory? Found <span class="s2">&quot;/opt/behat&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, no end slash<span class="o">)</span>
+What is the program data directory? Found <span class="s2">&quot;/opt/behat&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
 
-What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, No Trailing Slash<span class="o">)</span>
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
 
-Creating /tmp/cleopatra-temp-script-69243074239.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-69243074239.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-69243074239.sh Permissions
-Executing /tmp/cleopatra-temp-script-69243074239.sh
+Creating /tmp/ptconfigure-temp-script-69243074239.sh
+chmod 755 /tmp/ptconfigure-temp-script-69243074239.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-69243074239.sh Permissions
+Executing /tmp/ptconfigure-temp-script-69243074239.sh
 --2015-01-27 15:31:39--  https://getcomposer.org/installer
 Resolving getcomposer.org <span class="o">(</span>getcomposer.org<span class="o">)</span>... 87.98.253.108
-Connecting to getcomposer.org <span class="o">(</span>getcomposer.org<span class="o">)</span><span class="p">|</span>87.98.253.108<span class="p">|</span>:443... connected.
-HTTP request sent, awaiting response... <span class="m">200</span> OK
+Connecting to getcomposer.org <span class="o">(</span>getcomposer.org<span class="o">)</span>|87.98.253.108|:443... connected.
+HTTP request sent, awaiting response... 200 OK
 Length: unspecified <span class="o">[</span>text/plain<span class="o">]</span>
 Saving to: ‘installer’
 
@@ -251,7 +293,7 @@ Saving to: ‘installer’
 
 2015-01-27 15:31:47 <span class="o">(</span>48.9 KB/s<span class="o">)</span> - ‘installer’ saved <span class="o">[</span>274634<span class="o">]</span>
 
-All settings correct <span class="k">for</span> using Composer
+All settings correct <span class="k">for </span>using Composer
 Downloading...
 
 Composer successfully installed to: /opt/behat/behat/composer.phar
@@ -263,15 +305,18 @@ Composer successfully installed to: /opt/behat/behat/composer.phar
 <div class="section" id="version">
 <h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
 <p>While installing the behat, the most-recent version will be installed in your machine.</p>
-<p>This is an added advantage of behat module under Cleopatra when compared to other.</p>
+<p>This is an added advantage of behat module under ptconfigure when compared to other.</p>
 </div>
 <div class="section" id="benefits-to-the-users">
 <h2>Benefits to the users<a class="headerlink" href="#benefits-to-the-users" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>It guides the users to identify the errors in php script.</li>
-<li>No need to search the most-recent version, as the updated version is automatically available to the users while executing the installation pr  ocess.</li>
+<li>No need to search the most-recent version, as the updated version is automatically available to the users while executing the installation
+process.</li>
 <li>Using the features of behat the users can frame and specify the behavior of driven development.</li>
 <li>By the aid of behavior driven development, the users can ensure the qualities of their own script.</li>
+<li>It is well-to-do in Cent Os and as well as in ubuntu.</li>
+<li>The parameters used in declaration is not case sensitive, which is an added advantage.</li>
 </ul>
 </div>
 </div>
@@ -311,7 +356,7 @@ Composer successfully installed to: /opt/behat/behat/composer.phar
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

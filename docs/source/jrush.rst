@@ -14,14 +14,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra JRush help
+		ptconfigure JRush help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under JRush.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra JRush help
+ kevell@corp:/# ptconfigure JRush help
  ******************************
 
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest version of jRush
-        example: cleopatra jRush install
+        example: ptconfigure jRush install
 
  ------------------------------
  End Help
@@ -47,14 +47,19 @@ The command used for installing the JRush to the users machine is shown below.
 
 .. code-block:: bash
 
-		cleopatra JRush install
+		ptconfigure JRush install
+
+
+
+Options
+---------
 
 After inputting the command above, the following operations occurs as shown in the tabular format.
 
 .. cssclass:: table-bordered
 
  +-----------------------------+----------------------------------+----------------+---------------------------------------------+
- |	Parameters  	       | Alternative Parameter            |	Options	   | 		Comments		         |
+ | Parameters  	               | Alternative Parameter            | Options	   | 	Comments		         	 |
  +=============================+==================================+================+=============================================+
  |Install JRush - Joomla       |Instead of JRush we can use:	  |Y(Yes)	   |If the user wish to proceed the installation |
  |Command Line ? (Y/N) 	       |jrush, Jrush, jRush.		  |		   |process they can input as Y.		 |
@@ -70,23 +75,23 @@ If the user proceeds the installation process the following operations occurs as
 
 .. cssclass:: table-bordered
 
- +----------------------+----------------------+----------------------+----------------------------------------------------------+
- |	Parameters      | Path		       |	Option	      | 		Comments			         |
- +======================+======================+======================+==========================================================+
- |Program data directory|"/opt/jrush	       |Yes		      |If the user to proceed installation with the default	 |
- |(Default)	        |(corresponding module)|		      |program data directory they can input as Yes		 |
- +----------------------+----------------------+----------------------+----------------------------------------------------------+
- |Program data directory|User specific	       |No(End slash)	      |If the user wish to proceed with their own program        |
- |		        |		       |		      |data directory, they can input as N, and in hand specify  |
- |		        |		       |                      |their own location					 |
- +----------------------+----------------------+----------------------+----------------------------------------------------------+	
- |Program executor      |"/usr/bin"	       |Yes		      |If the user to proceed installation with the default      |
- |directory (default)   |		       |		      |program executor directory they can input as Yes          |
- +----------------------+----------------------+----------------------+----------------------------------------------------------+	
- |Program executor      |User specific	       |No(End slash)	      |If the user wish to proceed with their own program 	 |
- |directory	        |		       |		      |executor directory, they can input as N, and in hand 	 |
- |		        |		       |		      |specify they own location.|				 |
- +----------------------+----------------------+----------------------+----------------------------------------------------------+	
+ +------------------------+------------------------+------------------+----------------------------------------------------------+
+ |	Parameters        | Path		   | Option	      | 		Comments			         |
+ +========================+========================+==================+==========================================================+
+ |Program data directory  |"/opt/jrush	           |Yes		      |If the user to proceed installation with the default	 |
+ |(Default)	          |(corresponding module)  |		      |program data directory they can input as Yes		 |
+ +------------------------+------------------------+------------------+----------------------------------------------------------+
+ |Program data directory  |User specific	   |No(End slash)     |If the user wish to proceed with their own program        |
+ |		          |		           |		      |data directory, they can input as N, and in hand specify  |
+ |		          |		           |                  |their own location					 |
+ +------------------------+------------------------+------------------+----------------------------------------------------------+	
+ |Program executor        |"/usr/bin"	           |Yes		      |If the user to proceed installation with the default      |
+ |directory (default)     |		           |		      |program executor directory they can input as Yes          |
+ +------------------------+------------------------+------------------+----------------------------------------------------------+	
+ |Program executor        |User specific	   |No(End slash)     |If the user wish to proceed with their own program 	 |
+ |directory	          |		           |		      |executor directory, they can input as N, and in hand 	 |
+ |		          |		           |		      |specify they own location.|				 |
+ +------------------------+------------------------+------------------+----------------------------------------------------------+	
 
 
 
@@ -104,7 +109,7 @@ Finally, The installation of Jrush is completed. The following screen shot depic
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra JRush install
+ kevell@corp:/# ptconfigure JRush install
  Install JRush - Joomla Command Line ? (Y/N) 
  Y
  *******************************

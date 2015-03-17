@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Host name" href="hostname.html" />
-    <link rel="prev" title="Git tools" href="gittools.html" />
+    <link rel="prev" title="HAProxy" href="haproxy.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,8 +108,8 @@
             
               
                 
-  <li><a href="gittools.html"
-         title="Previous Chapter: Git tools">&laquo; Git tools</a></li>
+  <li><a href="haproxy.html"
+         title="Previous Chapter: HAProxy">&laquo; HAProxy</a></li>
   <li><a href="hostname.html"
          title="Next Chapter: Host name">Host name &raquo;</a></li>
               
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="hhvm">
@@ -169,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the HHVM module. It lists out the alternative parameters of HHVM module. It also describes the syntax for installing the HHVM module. The help command for HHVM module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra HHVM <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure HHVM <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under HHVM.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra HHVM <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure HHVM <span class="nb">help</span>
 ******************************
 
 
@@ -183,11 +171,11 @@
 
        - install
        Installs HHVM through package manager
-       example: cleopatra hhvm install
+       example: ptconfigure hhvm install
 
        - uninstall
        Uninstalls HHVM through package manager
-       example: cleopatra hhvm uninstall
+       example: ptconfigure hhvm uninstall
 
 ------------------------------
 End Help
@@ -198,7 +186,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the HHVM to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra HHVM install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure HHVM install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
@@ -217,17 +205,15 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install The Oracle Java
-JDK 1.7? (Y/N)</td>
-<td>Inspite of HHVM we can use hhvm
+<tr class="row-even"><td>Install HHVM? (Y/N)</td>
+<td>Instead of HHVM we can use hhvm
 also.</td>
 <td>Y(Yes)</td>
 <td>If the user wish to proceed the installation
 process they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td>Install The Oracle Java
-JDK 1.7? (Y/N)</td>
-<td>Inspite of HHVM we can use hhvm
+<tr class="row-odd"><td>Install HHVM? (Y/N)</td>
+<td>Instead of HHVM we can use hhvm
 also.</td>
 <td>N(No)</td>
 <td>If the user wish to quit the installation
@@ -236,17 +222,17 @@ process they can input as N.|</td>
 </tbody>
 </table>
 <p>Finally, installation process gets completed. The following screenshot pictorially represents the process of installing HHVM.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra HHVM install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure HHVM install
 Install HHVM? (Y/N)
 Y
 *******************************
 *        Pharaoh Tools        *
 *          ! HHVM !        *
 *******************************
-Creating /tmp/cleopatra-temp-script-41870275104.sh
-chmod 755 /tmp/cleopatra-temp-script-41870275104.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-41870275104.sh Permissions
-Executing /tmp/cleopatra-temp-script-41870275104.sh
+Creating /tmp/ptconfigure-temp-script-41870275104.sh
+chmod 755 /tmp/ptconfigure-temp-script-41870275104.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-41870275104.sh Permissions
+Executing /tmp/ptconfigure-temp-script-41870275104.sh
 --2015-01-16 14:19:14--  http://dl.hhvm.com/conf/hhvm.gpg.key
 Resolving dl.hhvm.com (dl.hhvm.com)... 140.211.166.134
 Connecting to dl.hhvm.com (dl.hhvm.com)|140.211.166.134|:80... connected.
@@ -360,7 +346,7 @@ Ign http://in.archive.ubuntu.com trusty/restricted Translation-en_IN
 Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
 Fetched 2,347 kB in 42s (55.6 kB/s)
 Reading package lists...
-Temp File /tmp/cleopatra-temp-script-41870275104.sh Removed
+Temp File /tmp/ptconfigure-temp-script-41870275104.sh Removed
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -481,16 +467,45 @@ Installer Finished
 <div class="section" id="un-installation">
 <h2>Un installation<a class="headerlink" href="#un-installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for un installing the hhvm is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra HHVM uninstall
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure HHVM uninstall
+</pre></div>
+</div>
+<p>The screenshot for the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure hhvm uninstall
+
+Uninstall HHVM? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*          ! HHVM !        *
+*******************************
+PHP Warning:  Illegal string offset <span class="s1">&#39;object&#39;</span> in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+PHP Warning:  Illegal string offset <span class="s1">&#39;method&#39;</span> in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+PHP Warning:  Illegal string offset <span class="s1">&#39;params&#39;</span> in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+PHP Warning:  call_user_func_array<span class="o">()</span> expects parameter 1 to be a valid callback, class <span class="s1">&#39;p&#39;</span> not found in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Uninstaller:
+------------------------------
+HHVM: Success
+------------------------------
+Installer Finished
+******************************
 </pre></div>
 </div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while compared to others.</li>
+<li>The parameters used in help and installation and un installation operations are not case sensitive which is an added advantage while
+compared to others.</li>
 <li>It is well-to-do in both Ubuntu and as well as Cent OS.</li>
-<li>HHVM has the ability to use live type information to produce more efficient&nbsp;native code, leading to higher web server&nbsp;throughput&nbsp;and lower&nbsp;latency.</li>
+<li>HHVM has the ability to use live type information to produce more efficient&nbsp;native code, leading to higher web server&nbsp;throughput&nbsp;and
+lower&nbsp;latency.</li>
 </ul>
 </div>
 </div>
@@ -530,7 +545,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

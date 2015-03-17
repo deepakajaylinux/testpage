@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Newrelic" href="newrelic.html" />
-    <link rel="prev" title="MysqlTools" href="mysqltool.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="NetworkTools" href="networktools.html" />
+    <link rel="prev" title="NagiosServer" href="nagiosserver.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="mysqltool.html"
-         title="Previous Chapter: MysqlTools">&laquo; MysqlTools</a></li>
-  <li><a href="newrelic.html"
-         title="Next Chapter: Newrelic">Newrelic &raquo;</a></li>
+  <li><a href="nagiosserver.html"
+         title="Previous Chapter: NagiosServer">&laquo; NagiosServer</a></li>
+  <li><a href="networktools.html"
+         title="Next Chapter: NetworkTools">NetworkTools &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="netbeans">
@@ -165,20 +153,20 @@
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <p>NetBeans is an integrated development environment (IDE) for developing primarily with Java, but also with other languages, in particular PHP, C/C++, and HTML. It is also an application platform framework for Java desktop applications and others.</p>
-<p>The NetBeans IDE is written in Java and can run on Windows, OS X, Linux, Solaris and other platforms supporting a compatible JVM. NetBeans IDE is a free, open-source, cross-platform IDE with built-in-support for Java Programming Language.</p>
+<p>The NetBeans IDE is written in Java and can run on Windows, OS X, Linux, Solaris and other platforms supporting a compatible JVM. NetBeans IDE is a cross-platform IDE with built-in-support for Java Programming Language.</p>
 <p>The NetBeans Platform allows applications to be developed from a set of modular software components called modules. Applications based on the NetBeans Platform (including the NetBeans IDE itself) can be extended by third party developers.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Netbeans module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Netbeans <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Netbeans <span class="nb">help</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This command helps in installing Netbeans in system. The below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra netbeans install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure netbeans install
 </pre></div>
 </div>
 </div>
@@ -199,21 +187,21 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra Netbeans  Install</td>
+<tr class="row-even"><td>Install Netbeans? (Y/N)</td>
 <td>There are Three alternative parameters
 which can be used in command line.
 Netbeans , NetBeans , netbeans
-Eg: cleopatra NetBeans install
-cleopatra netbeans install</td>
+Eg: ptconfigure NetBeans install,
+ptconfigure netbeans install</td>
 <td>Y</td>
 <td>System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra Netbeans  Install</td>
+<tr class="row-odd"><td>Install Netbeans? (Y/N)</td>
 <td>There are Three alternative parameters
 which can be used in command line.
 Netbeans , NetBeans , netbeans
-Eg: cleopatra NetBeans install
-cleopatra netbeans install|</td>
+Eg: ptconfigure NetBeans install,
+ptconfigure netbeans install|</td>
 <td>N</td>
 <td>System stops installation process</td>
 </tr>
@@ -269,7 +257,7 @@ cleopatra netbeans install|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

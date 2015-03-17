@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Phake" href="phake.html" />
-    <link rel="prev" title="OpenOffice" href="openoffice.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Pear" href="pear.html" />
+    <link rel="prev" title="PackageManager" href="packagemanager.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,10 +107,10 @@
             
               
                 
-  <li><a href="openoffice.html"
-         title="Previous Chapter: OpenOffice">&laquo; OpenOffice</a></li>
-  <li><a href="phake.html"
-         title="Next Chapter: Phake">Phake &raquo;</a></li>
+  <li><a href="packagemanager.html"
+         title="Previous Chapter: PackageManager">&laquo; PackageManager</a></li>
+  <li><a href="pear.html"
+         title="Next Chapter: Pear">Pear &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="parallax">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command leads the user in working with this parallax. It also specifies the command used for installing the parallax and also the syntax for two types of declaring installation. The help command also list out the alternative parameters that can be used. The command used for help option under the parallax is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra parallax <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure parallax <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The display of results after the input of help command is represented in the screenshot below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>root@deepak:~# cleopatra Parallax help
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Parallax help
 ******************************
 
 
@@ -183,8 +171,8 @@ Parallax, parallax
 
 - cli
 Go through all questions to execute parallel programs
-example: cleopatra parallax cli
-example: cleopatra parallax cli --yes --command-1=&quot;pwd&quot; --command-2=&quot;ls&quot;
+example: ptconfigure parallax cli
+example: ptconfigure parallax cli --yes --command-1=&quot;pwd&quot; --command-2=&quot;ls&quot;
 
 - child
 Unlikely you&#39;ll use this, its used by cli to spawn child processes
@@ -204,11 +192,11 @@ End Help
 <li>Or , by mentioning the types of tasks while running(Run-time) installation.</li>
 </ul>
 <p>The command used for specifying the multi-tasks at the time of declaring installation command is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra parallax cli --yes --command-1<span class="o">=</span><span class="s2">&quot;pwd&quot;</span> --command-2<span class="o">=</span><span class="s2">&quot;who&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure parallax cli --yes --command-1<span class="o">=</span><span class="s2">&quot;pwd&quot;</span> --command-2<span class="o">=</span><span class="s2">&quot;who&quot;</span>
 </pre></div>
 </div>
 <p>After mentioning this command, the parallax executes both of the tasks as specified above in command-1 and command-2. The two tasks are performed parallel and result are displayed. The screen shot attached below is an very good example for type of declaration defined above.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:~# cleopatra parallax cli --yes --command-1<span class="o">=</span><span class="s2">&quot;pwd&quot;</span> --command-2<span class="o">=</span><span class="s2">&quot;who&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure parallax cli --yes --command-1<span class="o">=</span><span class="s2">&quot;pwd&quot;</span> --command-2<span class="o">=</span><span class="s2">&quot;who&quot;</span>
 Completed task: <span class="nb">pwd</span>
 Completed task: who
 ******************************
@@ -239,7 +227,7 @@ In Cli
 </pre></div>
 </div>
 <p>The command used for declaring the multi tasks at run-time is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra parallax cli
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure parallax cli
 </pre></div>
 </div>
 <p>After inputting the command above the following process occurs:</p>
@@ -260,31 +248,27 @@ In Cli
 <tbody valign="top">
 <tr class="row-even"><td>Run Commands in Parallel? (Y/N)</td>
 <td>In Spite of parallax, the
-following alternatives can also
-be used:
+following alternatives can
+also be used:
 parallax, Parallax</td>
 <td>Y(yes)</td>
-<td>If the user wish to proceed the installation process
-they can input as Y.</td>
+<td>If the user wish to proceed the installation
+process they can input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Run Commands in Parallel? (Y/N)</td>
 <td>In Spite of parallax, the
-following alternatives can also
-be used:
-parallax, Parallax</td>
+following alternatives can
+also be used:
+parallax, Parallax|</td>
 <td>N(No)</td>
-<td><p class="first">If the user wish to Quit the installation process
-they can input as N.</p>
-<div class="last line-block">
-<div class="line"><br /></div>
-</div>
-</td>
+<td>If the user wish to Quit the installation process
+they can input as N.</td>
 </tr>
 </tbody>
 </table>
 <p>If the user wish to proceed installation, the user can specify the multiple tasks as per their requirements. After completion of specifying the multiple tasks, if the users wish to stop they can stop by simply entering none.</p>
 <p>Finally, the results of completed tasks along with its status are defined at the end. The following screen shots can you an graphical representation regarding the above mentioned process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:~# cleopatra parallax cli
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure parallax cli
 
 Run Commands in Parallel? <span class="o">(</span>Y/N<span class="o">)</span>
 y
@@ -370,7 +354,7 @@ In Cli
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

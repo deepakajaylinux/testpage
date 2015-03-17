@@ -21,7 +21,7 @@ This command helps to determine the usage of file module. The user will come to 
 
 .. code-block:: bash
         
-	        cleopatra file help
+	        ptconfigure file help
 
 Create
 ------------
@@ -30,19 +30,19 @@ When the user needs to Create a new system file, the below given command will ex
  
 .. code-block:: bash
 
-                cleopatra file create --file="somename"
+                ptconfigure file create --file="somename"
 
 The below given commands overwrite files that exist
 
 .. code-block:: bash
          
-	       cleopatra file create --file="somename” --overwrite-existing
+	       ptconfigure file create --file="somename” --overwrite-existing
 
 The below given command for write the data in the file
 
 .. code-block:: bash
            
-		cleopatra file create –file="somename” --data="things to put in the file" 
+		ptconfigure file create –file="somename” --data="things to put in the file" 
 
 Delete
 ----------
@@ -51,7 +51,7 @@ When the user needs to delete a system file, the below given command will execut
 
 .. code-block:: bash
 	
-		cleopatra file delete --file="somename"
+		ptconfigure file delete --file="somename"
 
 Exists
 -----------
@@ -60,7 +60,7 @@ When the user needs to check the existence of a file, the below given command wi
 
 .. code-block:: bash
 
-		cleopatra file exists --filename="somename"
+		ptconfigure file exists --filename="somename"
 
 Append
 ------------
@@ -69,7 +69,7 @@ When the user needs to append a line to a file, the below given command will exe
 
 .. code-block:: bash
 	
-		cleopatra file append --filename="somename" --line="a line"
+		ptconfigure file append --filename="somename" --line="a line"
 
 * Line option – you can insert a line to be appended
 
@@ -80,7 +80,7 @@ When the user needs to ensure that a file contains a particular line, the below 
 
 .. code-block:: bash
 	
-		cleopatra file should-have-line --filename="somename" --line="a line"
+		ptconfigure file should-have-line --filename="somename" --line="a line"
 
 * Line option – Statement that needs to be checked
 
@@ -90,16 +90,17 @@ Options
 
 .. cssclass:: table-bordered
 
- +-----------------------+----------------------------------------------------+------------------------------------------+
- |	Parameters	 |		Alternative Parameter		      |		Comments			 |
- +-----------------------+----------------------------------------------------+------------------------------------------+
- |Cleopatra file help    |Either of the two alternative parameter can be used |Once the user provides the option, System |
- |			 |in command- File, file			      |starts processing			 |
- |			 |eg: Cleopatra File Install/ Cleopatra file Install| |						 |
- +-----------------------+----------------------------------------------------+------------------------------------------+
+ +-----------------------+---------------------------------------------------------+
+ |	Parameters	 |		Alternative Parameter		           |
+ +-----------------------+---------------------------------------------------------+
+ |ptconfigure file help  |Either of the two alternative parameter can be used      |
+ |			 |in command- File, file			           |
+ |			 |eg: ptconfigure File Install/ ptconfigure file Install|  |
+ +-----------------------+---------------------------------------------------------+
 
 
 Benefits
 -----------
 
-* Specify a file specially formatted containing position-sensitive tests; default position-sensitive tests and context-sensitive tests will not be performed.
+* Specify a file specially formatted containing position-sensitive tests; default position-sensitive tests and context-sensitive tests will
+  not be performed.

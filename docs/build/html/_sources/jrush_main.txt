@@ -11,6 +11,7 @@ Jrush
  extension
  jarticle
  jconfiguration
+ jfeatures
  juser
  systemdetection_jrush
  testmodule

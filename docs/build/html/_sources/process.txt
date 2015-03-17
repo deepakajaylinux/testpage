@@ -14,9 +14,34 @@ The help command serves the users regarding how to handle and to work with proce
 
 .. code-block:: bash
 
-		cleopatra process help
+		ptconfigure process help
 
 The following screenshot as shown below, depicts how to kill a process, and how to define killing a process.
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure process help
+ ******************************
+
+
+  This command handles process functions, kill a process for now
+
+  Process, process
+
+        - kill
+        Will ask you for process name, aa file or directory from local to remote
+        example: ptconfigure process kill
+        example: ptconfigure process kill --yes --name="selenium" --use-psax # default, will look for string in result of
+        example: ptconfigure process kill --yes --name="selenium" --use-pkill # will allow pkill to find  by string to kill
+        example: ptconfigure process kill --yes
+                                        --guess
+                                        --id="1234 # will kill a process by id
+                                        --level # will guess a 9
+
+ ------------------------------
+ End Help
+ ******************************
 
 How to define and to use the process
 -------------------------------------
@@ -25,25 +50,25 @@ To kill a process the following syntax can be used.
 
 .. code-block:: bash
 
-		cleopatra process kill
+		ptconfigure process kill
 
 or
 
 .. code-block:: bash
 
-		cleopatra process kill --yes --name="selenium" --use-psax # default
+		ptconfigure process kill --yes --name="selenium" --use-psax # default
 
 The syntax as shown above will looks for string in result of.
 
 .. code-block:: bash
 
-		cleopatra process kill --yes --name="selenium" --use-pkill #
+		ptconfigure process kill --yes --name="selenium" --use-pkill #
 
 The syntax as shown above is used to specify or find a string which is to be killed.
 
 .. code-block:: bash
 
-		cleopatra process kill --yes
+		ptconfigure process kill --yes
 				--guess
 				id="1234 # 
 
@@ -51,14 +76,14 @@ The command as shown above will kills a process as per the given id.
 
 .. code-block:: bash
 
-		cleopatra process kill --yes
+		ptconfigure process kill --yes
 			--level #
 
 The command as above is used to kill a process as per the specified level. 
 
 .. code-block:: bash
 
-	cleopatra process kill --yes --guess --name="skype"
+	ptconfigure process kill --yes --guess --name="skype"
 
 The command as above is used to kill a process by specifying its name. The following screenshot depicts the working of killing a process.
 
@@ -71,7 +96,7 @@ If the PID # 3486 is assigned to the lighttpd process. To kill the lighttpd serv
 
  # kill 3486
 
-OR
+or
 
 .. code-block:: bash
  
@@ -118,7 +143,7 @@ To kill the lighttpd server, enter:
  
  # killall -15 lighttpd
 
-OR
+or
 .. code-block:: bash
 
  # killall -9 lighttpd

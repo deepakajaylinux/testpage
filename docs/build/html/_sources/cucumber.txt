@@ -11,17 +11,17 @@ This module assists the user to initialize and execute the cucumber test suite. 
 Help Command
 --------------------
 
-The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute the cucumber under the testingkamen. The command used for declaring help is shown below:
+The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute the cucumber under the pttest. The command used for declaring help is shown below:
 
 .. code-block:: bash
 
-		testingkamen cucumber help
+		pttest cucumber help
 
 The following screen shot depicts pictorially about the working of help command.
 
 .. code-block:: bash
 
- kevells@corp:/# testingkamen cucumber help
+ kevell@corp:/# pttest cucumber help
  ******************************
 
 
@@ -31,12 +31,12 @@ The following screen shot depicts pictorially about the working of help command.
 
         - init, initialize
         Initialises the Cucumber test suite of this project
-        example: testingkamen cucumber init
-        example: testingkamen cucumber initialize
+        example: pttest cucumber init
+        example: pttest cucumber initialize
 
         - execute
         Executes the Cucumber test suite of this project
-        example: testingkamen cucumber execute
+        example: pttest cucumber execute
 
  ------------------------------
  End Help
@@ -46,17 +46,17 @@ The following screen shot depicts pictorially about the working of help command.
 How to initialize cucumber
 -----------------------------------
 
-The command used for initialize the cucumber under testingkamen is shown:
+The command used for initialize the cucumber under pttest is shown:
 
 .. code-block:: bash
 
-		testingkamen cucumber init
+		pttest cucumber init
 
 or 
 
 .. code-block:: bash
 
-		testingkamen cucumber initialize
+		pttest cucumber initialize
 
 After inputting the command above, the process of initialize occurs as depicted in the below table.
 
@@ -76,29 +76,29 @@ After inputting the command above, the process of initialize occurs as depicted 
 
 
 
-Finally the testingkamen cucumber gets initialized as shown in the following screenshot.
+Finally the pttest cucumber gets initialized as shown in the following screenshot.
 
 
 .. code-block:: bash
 
 
- kevells@corp:/# testingkamen cucumber init
+ kevell@corp:/# pttest cucumber init
  Initialize Cucumber? (Y/N) 
  Y
  *******************************
  *   Golden Contact Computing  *
  *          Cucumber         *
  *******************************
- Creating /tmp/cleopatra-temp-script-81470621814.sh
- chmod 755 /tmp/cleopatra-temp-script-81470621814.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-81470621814.sh Permissions
- Executing /tmp/cleopatra-temp-script-81470621814.sh
- Temp File /tmp/cleopatra-temp-script-81470621814.sh Removed
- Creating /tmp/cleopatra-temp-script-65310697385.sh
- chmod 755 /tmp/cleopatra-temp-script-65310697385.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-65310697385.sh Permissions
- Executing /tmp/cleopatra-temp-script-65310697385.sh
- Temp File /tmp/cleopatra-temp-script-65310697385.sh Removed
+ Creating /tmp/ptconfigure-temp-script-81470621814.sh
+ chmod 755 /tmp/ptconfigure-temp-script-81470621814.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-81470621814.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-81470621814.sh
+ Temp File /tmp/ptconfigure-temp-script-81470621814.sh Removed
+ Creating /tmp/ptconfigure-temp-script-65310697385.sh
+ chmod 755 /tmp/ptconfigure-temp-script-65310697385.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-65310697385.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-65310697385.sh
+ Temp File /tmp/ptconfigure-temp-script-65310697385.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.gcsoftshop.co.uk for more
@@ -119,11 +119,11 @@ Finally the testingkamen cucumber gets initialized as shown in the following scr
 How to Execute the Cucumber
 ----------------------------------------
 
-The command used for executing the cucumber under testingkamen is shown:
+The command used for executing the cucumber under pttest is shown:
 
 .. code-block:: bash
 
-		testingkamen cucumber execute
+		pttest cucumber execute
 
 After inputting the command above, the process of execution occurs as depicted in the below table.
 

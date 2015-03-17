@@ -22,7 +22,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
 .. code-block:: bash
 
- kevells@corp:/# jrush systemdetection help
+ kevell@corp:/# jrush systemdetection help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -34,7 +34,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
         - detect
         Detects the Operating System
-        example: cleopatra system-detection detect
+        example: ptconfigure system-detection detect
 
  ------------------------------
  End Help
@@ -67,7 +67,7 @@ Finally, after detection the information regarding the above mentioned features 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra system-detection detect
+ kevell@corp:/# ptconfigure system-detection detect
  ******************************
 
 
@@ -101,7 +101,8 @@ Benefits
 -------------
 
 * The users can configure the application settings using this system detections.
-* The parameters used for declaring help command, system detection are not case sensitive which an added advantage while compared to others is.
+* The parameters used for declaring help command, system detection are not case sensitive which an added advantage while compared to others
+  is.
 * It is well-to-do in both Cent OS and as well as in Ubuntu.
 * Protection and security is possible. Preventing harm to the system and to resources, through internal processes or malicious outsiders. 
   Authentication, ownership, and restricted access are obvious parts of this system.

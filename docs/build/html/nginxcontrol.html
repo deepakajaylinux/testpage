@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="Project" href="project.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="NginxSBEditor" href="nginxsbeditor.html" />
     <link rel="prev" title="Logging" href="logging_dapper.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -113,8 +113,8 @@
                 
   <li><a href="logging_dapper.html"
          title="Previous Chapter: Logging">&laquo; Logging</a></li>
-  <li><a href="project.html"
-         title="Next Chapter: Project">Project &raquo;</a></li>
+  <li><a href="nginxsbeditor.html"
+         title="Next Chapter: NginxSBEditor">NginxSBEditor &raquo;</a></li>
               
             
             
@@ -148,19 +148,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="nginx-control">
@@ -173,9 +161,9 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Nginx  module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>       dapperstrano nginxcontrol <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>       ptdeploy nginxcontrol <span class="nb">help</span>
 
-kevells@corp:/# dapperstrano NginxControl <span class="nb">help</span>
+kevell@corp:/# ptdeploy NginxControl <span class="nb">help</span>
 ******************************
 
 
@@ -185,19 +173,19 @@ kevells@corp:/# dapperstrano NginxControl <span class="nb">help</span>
 
          - start
          Start the Nginx server
-         example: dapperstrano nginxcontrol start
+         example: ptdeploy nginxcontrol start
 
          - stop
          Stop the Nginx server
-         example: dapperstrano nginxcontrol stop
+         example: ptdeploy nginxcontrol stop
 
          - restart
          Restart the Nginx server
-         example: dapperstrano nginxcontrol restart
+         example: ptdeploy nginxcontrol restart
 
          - reload
          Reloads the Nginx server configuration without restarting
-         example: dapperstrano nginxcontrol reload
+         example: ptdeploy nginxcontrol reload
 
 ------------------------------
 End Help
@@ -208,7 +196,7 @@ End Help
 <div class="section" id="start">
 <h2>Start<a class="headerlink" href="#start" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to start the Nginx server, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano nginxcontrol start
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy nginxcontrol start
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -216,7 +204,7 @@ End Help
 <div class="section" id="stop">
 <h2>Stop<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to stop the Nginx server, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano nginxcontrol stop
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy nginxcontrol stop
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -224,7 +212,7 @@ End Help
 <div class="section" id="restart">
 <h2>Restart<a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to Restart the Nginx server(when there are any changes happened in configuration file this option will be used), the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano nginxcontrol restart
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy nginxcontrol restart
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -232,7 +220,7 @@ End Help
 <div class="section" id="reload">
 <h2>Reload<a class="headerlink" href="#reload" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to Reload the Nginx server without restarting, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano nginxcontrol reload
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy nginxcontrol reload
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -250,12 +238,12 @@ End Help
 <td>Alternative Parameter</td>
 <td>Comments</td>
 </tr>
-<tr class="row-even"><td>dapperstrano ngnixcontrolhelp</td>
+<tr class="row-even"><td>ptdeploy ngnixcontrolhelp</td>
 <td>Either of the three alternative parameter can
 be used in command- ngnixcontrol ,
 NgnixControl and nginxcil
-eg: dapperstrano ngnixcontrol help/
-dapperstrano ngnixControl help|</td>
+eg: ptdeploy ngnixcontrol help/
+ptdeploy ngnixControl help|</td>
 <td>Once the user provides the option, System starts
 processing</td>
 </tr>
@@ -265,7 +253,7 @@ processing</td>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Ability to handle more than 10,000 simultaneous connections with a low          memory footprint</li>
+<li>Ability to handle more than 10,000 simultaneous connections with a low memory footprint</li>
 <li>Handling of static files, index files, and auto-indexing</li>
 <li>Reverse proxy with caching</li>
 <li>Load balancing with in-band health checks</li>
@@ -328,7 +316,7 @@ processing</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

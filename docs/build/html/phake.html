@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="PHPAPC" href="phpapc.html" />
-    <link rel="prev" title="Parallax" href="parrallax.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="PharaohTools" href="pharaohtools.html" />
+    <link rel="prev" title="PECL" href="pecl.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -97,7 +97,6 @@
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#options">Options</a></li>
-<li><a class="reference internal" href="#ensure">Ensure</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -109,10 +108,10 @@
             
               
                 
-  <li><a href="parrallax.html"
-         title="Previous Chapter: Parallax">&laquo; Parallax</a></li>
-  <li><a href="phpapc.html"
-         title="Next Chapter: PHPAPC">PHPAPC &raquo;</a></li>
+  <li><a href="pecl.html"
+         title="Previous Chapter: PECL">&laquo; PECL</a></li>
+  <li><a href="pharaohtools.html"
+         title="Next Chapter: PharaohTools">PharaohTools &raquo;</a></li>
               
             
             
@@ -146,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phake">
@@ -170,10 +157,10 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Phake module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra Phake <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>               ptconfigure Phake <span class="nb">help</span>
 
 
-kevells@corp:/# cleopatra Phake <span class="nb">help</span>
+kevell@corp:/# ptconfigure Phake <span class="nb">help</span>
 ******************************
 
 
@@ -183,11 +170,11 @@ kevells@corp:/# cleopatra Phake <span class="nb">help</span>
 
        - install
        Installs the latest version of phake
-       example: cleopatra phake install
+       example: ptconfigure phake install
 
        - ensure
-       Installs the latest version of phake, only <span class="k">if</span> a version is not installed
-       example: cleopatra phake ensure
+       Installs the latest version of phake, only <span class="k">if </span>a version is not installed
+       example: ptconfigure phake ensure
 
 ------------------------------
 End Help
@@ -198,7 +185,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to install Phake in machine, the below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Phake install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Phake install
 </pre></div>
 </div>
 <p>The system ask for the directory name, if you wants to set up your PATH you can define your path. Define your path followed by &#8216;/&#8217; symbol. Press Enter if there is no changes to be done.</p>
@@ -206,28 +193,28 @@ End Help
 <p>Then the system ask for executing directory name, if you wants to set up your PATH you can define your path. Define your path followed by &#8216;/&#8217; symbol. Press Enter if there is no changes to be done</p>
 <p>&#8220;What is the program executer directory? Found &#8220;/usr/bin&#8221; - Use this? &#8220;</p>
 <p>The below screenshot shows the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Phake install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Phake install
 Install Phake ? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *          Phake         *
 *******************************
-What is the program data directory? Found <span class="s2">&quot;/opt/phake&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, no end slash<span class="o">)</span>
+What is the program data directory? Found <span class="s2">&quot;/opt/phake&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
 
-What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, No Trailing Slash<span class="o">)</span>
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
 
 git clone <span class="s1">&#39;http://github.com/jaz303/phake.git&#39;</span>  /tmp/phake/phakeCloning into <span class="s1">&#39;/tmp/phake/phake&#39;</span>...
 remote: Counting objects: 552, <span class="k">done</span>.
-remote: Total <span class="m">552</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-Receiving objects: 100% <span class="o">(</span>552/552<span class="o">)</span>, 91.36 KiB <span class="p">|</span> 76.00 KiB/s, <span class="k">done</span>.
+remote: Total 552 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>552/552<span class="o">)</span>, 91.36 KiB | 76.00 KiB/s, <span class="k">done</span>.
 Resolving deltas: 100% <span class="o">(</span>314/314<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
 Program Data folder populated
-Program Executor Deleted <span class="k">if</span> existed
+Program Executor Deleted <span class="k">if </span>existed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -257,20 +244,20 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Cleopatra Phake Install</td>
+<tr class="row-even"><td>ptconfigure Phake Install</td>
 <td>Either of the two alternative
 parameter can be used in command- Phake,
 phake
-eg: Cleopatra  phake Install</td>
+eg: ptconfigure  phake Install</td>
 <td>Y</td>
 <td>Once the user provides the option,
 System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>Cleopatra Phake Install</td>
+<tr class="row-odd"><td>ptconfigure Phake Install</td>
 <td>Either of the two alternative
 parameter can be used in command- Phake,
 phake
-eg: Cleopatra phake Install|</td>
+eg: ptconfigure phake Install|</td>
 <td>N</td>
 <td>Once the user provides the option,
 System stops installation process</td>
@@ -278,20 +265,13 @@ System stops installation process</td>
 </tbody>
 </table>
 </div>
-<div class="section" id="ensure">
-<h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
-<p>Installs the latest version of Phake, only if a version is not available. The below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleapatra Phake ensure
-</pre></div>
-</div>
-<p>The system ask for the directory name, define your path followed by &#8216;/&#8217; symbol. Press Enter if there is no changes to be done.</p>
-<p>&#8220;What is the program data directory? Found &#8220;/opt/phake&#8221; - use this?</p>
-<p>Then the system ask for executing directory name, define your path followed by &#8216;/&#8217; symbol. Press Enter if there is no changes to be done</p>
-<p>&#8220;What is the program executer directory? Found &#8220;/usr/bin&#8221; - Use this? &#8220;</p>
-</div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
-<p>Phake is a great mocking library and can be easily integrated into PHPUnit. Its new approach to prototype mocks and stubs and the separation between stubbing and verification phases is very refreshing and easy to use.</p>
+<ul class="simple">
+<li>Phake is a great mocking library and can be easily integrated into PHPUnit.</li>
+<li>Its new approach to prototype mocks and stubs and the separation between stubbing and verification phases is very refreshing and easy to
+use.</li>
+</ul>
 </div>
 </div>
 
@@ -330,7 +310,7 @@ System stops installation process</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

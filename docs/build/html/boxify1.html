@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Boxify &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Cassandra" href="cassandra.html" />
+    <link rel="prev" title="Boxify" href="boxify.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Boxify</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#help-command">Help Command</a></li>
+<li><a class="reference internal" href="#install-generic-autopilots">Install-generic-autopilots</a></li>
+<li><a class="reference internal" href="#box-add">Box-add</a></li>
+<li><a class="reference internal" href="#optional">Optional</a></li>
+<li><a class="reference internal" href="#box-destroy">Box-destroy</a></li>
+<li><a class="reference internal" href="#box-remove">Box-Remove</a></li>
+<li><a class="reference internal" href="#list-papyrus">List-papyrus</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="boxify.html"
+         title="Previous Chapter: Boxify">&laquo; Boxify</a></li>
+  <li><a href="cassandra.html"
+         title="Next Chapter: Cassandra">Cassandra &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/boxify1.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+    <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  
+  <div class="section" id="boxify">
+<h1>Boxify<a class="headerlink" href="#boxify" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>Boxify is a WordPress Plugin that lets you organize your Post/Page’s content in separate, dedicated boxes for each specific section. You can either choose to separate all the content in boxes, or only a chosen section (the ‘Coming Soon’ box to the right, for example). You can also import and export boxes for usage in other posts &amp;  pages.</p>
+<p>The Boxes are generated using straight-forward shortcode, with logical parameters. You can control almost anything in those boxes with those Parameters – from Color and Opacity, to background Images, added Icons and Border Radius</p>
+<p>There is also a quick way to create boxes using themes – boxify comes with a collection of themes that you can quickly use</p>
+</div>
+<div class="section" id="help-command">
+<h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to determine the usage of boxify. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Boxify <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>provides a generic Box Management wrapper around all of the Box Providers <span class="o">(</span>Cloud and Otherwise<span class="o">)</span> so that we have a
+ generic way to create and destroy boxes.
+
+ Boxify, boxify
+
+       - install-generic-autopilots
+       Install the generic Boxify autopilot templates <span class="k">for </span>a Tiny or Medium <span class="o">(</span>Current Default<span class="o">)</span> <span class="nb">set </span>of Environments
+       example: ptconfigure boxify install-generic-autopilots
+       example: ptconfigure boxify install-generic-autopilots
+                   --yes
+                   --guess <span class="c"># will set --destination-dir=*this dir +*build/config/ptconfigure/boxify/autopilots/</span>
+                   --template-group<span class="o">=</span>tiny
+                   --destination-dir<span class="o">=</span>*path-to-destination*
+
+       - box-add
+       Installs a Box through a cloud provider
+       example: ptconfigure boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span>
+           --server-prefix<span class="o">=</span><span class="s2">&quot;my-app&quot;</span>
+           --provider<span class="o">=</span><span class="s2">&quot;DigitalOcean&quot;</span> // DigitalOcean, Rackspace, VSphere
+           --image-id<span class="o">=</span><span class="s2">&quot;3101045&quot;</span> // <span class="nv">DO</span><span class="o">=</span>3101045 , <span class="nv">RAX</span><span class="o">=</span>ffd597d6-2cc4-4b43-b8f4-b1006715b84e
+           --size-id<span class="o">=</span><span class="s2">&quot;66&quot;</span> // <span class="nv">DO</span> <span class="o">=</span> 66, <span class="nv">RAX</span> <span class="o">=</span> 2
+           --region-id<span class="o">=</span><span class="s2">&quot;2&quot;</span> // <span class="nv">DO</span> <span class="o">=</span> 2, <span class="nv">RAX</span> <span class="o">=</span> LON
+           --box-amount<span class="o">=</span>1 // An Integer number of boxes to create
+           --force-name<span class="o">=</span><span class="s2">&quot;a-box-name&quot;</span> // optional, will override other options <span class="k">for </span>name creation. may cause a conflict <span class="k">if </span>creating more than 1 box.
+           --parallax // optional, when adding more than one box, <span class="k">if </span>the provider supports it we can execute all requests in parallel
+
+       - box-remove
+       Removes a Box from the papyrus
+       example: ptconfigure boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+
+       - box-destroy
+       Removes a Box from both papyrus and the cloud provider
+       example: ptconfigure boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+           --destroy-all-boxes
+           --destroy
+
+       - list-papyrus
+       List all servers in papyrus, or those of a particular environment
+       example: ptconfigure boxify list-papyrus --yes
+       example: ptconfigure boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-generic-autopilots">
+<h2>Install-generic-autopilots<a class="headerlink" href="#install-generic-autopilots" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to install the generic Boxify autopilot templates for a Tiny or Medium (Current Default) set of Environments. The below given command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify install-generic-autopilots
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify install-generic-autopilots --yes --guess <span class="c"># will set --destination-dir=*this dir +*build/config/ptconfigure/boxify/autopilots/ --template-group=tiny --destination-dir=*path-to-destination*</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-add">
+<h2>Box-add<a class="headerlink" href="#box-add" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to install a Box through a cloud provider. The below given command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span> --server-prefix<span class="o">=</span><span class="s2">&quot;my-app&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;DigitalOcean&quot;</span> --image-id<span class="o">=</span><span class="s2">&quot;3101045&quot;</span> --size-id<span class="o">=</span><span class="s2">&quot;66&quot;</span> --region-id<span class="o">=</span><span class="s2">&quot;2&quot;</span> --box-amount<span class="o">=</span>1 --force-name<span class="o">=</span><span class="s2">&quot;a-box-name&quot;</span> --parallax
+</pre></div>
+</div>
+</div>
+<div class="section" id="optional">
+<h2>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h2>
+<p>Provider -  DigitalOcean, Rackspace, VSphere</p>
+<p>Image ID - DO=3101045 , RAX=ffd597d6-2cc4-4b43-b8f4-b1006715b84e</p>
+<p>Size - DO = 66, RAX = 2</p>
+<p>Region id - DO = 2, RAX = LON</p>
+<p>Box amount - An Integer number of boxes to create</p>
+<p>Force name - optional, will override other options for name creation. may cause a conflict if creating more than 1 box</p>
+<p>Parallax - optional, when adding more than one box, if the provider supports it we can execute all requests in parallel</p>
+</div>
+<div class="section" id="box-destroy">
+<h2>Box-destroy<a class="headerlink" href="#box-destroy" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to remove a Box from both papyrus and the cloud provider. The below given command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --destroy-all-boxes  --destroy
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-remove">
+<h2>Box-Remove<a class="headerlink" href="#box-remove" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to remove a Box from the papyrus.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-papyrus">
+<h2>List-papyrus<a class="headerlink" href="#list-papyrus" title="Permalink to this headline">¶</a></h2>
+<p>This command helps to List all servers in papyrus, or those of a particular environment. The below given command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>       ptconfigure boxify list-papyrus --yes
+
+
+
+kevell@corp:/# ptconfigure boxify list-papyrus --yes
+
+******************************
+
+
+Boxify Listing:
+--------------------------------------------
+
+Boxify your Environments: Success
+
+Environment: 1
+ db-cluster-db-balancer
+Servers:
+ Server 0:
+   target : 134.213.52.130
+   target_public : 134.213.52.130
+   target_private : 10.181.192.30
+   user : root
+   password : /root/.ssh/id_rsa
+   provider : Rackspace
+   id : ba91728b-3d11-4d2a-b5a2-628877a8ef75
+   name : default-project-db-cluster-db-balancer-0
+
+Environment: 2
+ db-cluster-db-nodes
+Servers:
+ Server 0:
+   target : 134.213.52.174
+   target_public : 134.213.52.174
+   target_private : 10.181.192.89
+   user : root
+   password : /root/.ssh/id_rsa
+   provider : Rackspace
+   id : 01435859-bfec-4180-b801-95dbaa024670
+   name : default-project-db-cluster-db-nodes-0
+ Server 1:
+   target : 134.213.52.233
+   target_public : 134.213.52.233
+   target_private : 10.181.192.113
+   user : root
+   password : /root/.ssh/id_rsa
+   provider : Rackspace
+   id : d082c509-5c7f-425f-87af-36a22d345ce2
+   name : default-project-db-cluster-db-nodes-1
+
+------------------------------
+Boxify Listing Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>There are two alternative parameters which can be used in command line.</p>
+<p>Boxify, boxify</p>
+</div>
+<div class="section" id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<p>Custom Global Styling: Various style properties can be passed in to the boxify constructor to allow you to easily control the appearance.</p>
+<p>Individual Box Styling: Attributes can be added to each box to give it its own style. Notice how the title box is dark with light text.</p>
+<p>Boxify presents a highly modular way to put specific sections of your post/page content, or the entire content into Boxes.</p>
+<p>On the current version :</p>
+<ul class="simple">
+<li>Infinite combination of boxes per row.</li>
+<li>Pixel precision spacing.</li>
+<li>Ability to add images.</li>
+<li>Assign classes for detailed styling.</li>
+<li>Control border, opacity and background with shortcode.</li>
+<li>Cross posts boxification.</li>
+<li>TinyMCE Plugin for easy integration.</li>
+<li>Backend Design Helper to easily design your boxes.</li>
+<li>Use Box Themes (Alerts, Strip, Info, etc).</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/boxify1.rst">
+          Boxify
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

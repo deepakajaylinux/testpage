@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Logging" href="logging_cleo.html" />
     <link rel="prev" title="Jetty" href="jetty.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,37 +145,26 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="lighttpdserver-module">
 <h1>LigHTTPDServer  module<a class="headerlink" href="#lighttpdserver-module" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>xLighttpd  is an open-source web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible. It is an alternative web server for apache.
-Lighttpd  supports the FastCGI, SCGI and CGI interfaces to external programs, Auth, Output-Compression, URL-Rewriting, permitting web applications written in any programming language to be used with the server. Lighttpd are the best known asynchronous servers. The main advantage of the asynchronous approach is scalability.
-This module aims to install the latest version of Lighttpd server and its dependencies.</p>
+<blockquote>
+<div>Lighttpd  is a  web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible. It is an alternative web server for apache.</div></blockquote>
+<p>Lighttpd  supports the FastCGI, SCGI and CGI interfaces to external programs, Auth, Output-Compression, URL-Rewriting, permitting web applications written in any programming language to be used with the server. Lighttpd are the best known asynchronous servers. The main advantage of the asynchronous approach is scalability.</p>
+<p>This module aims to install the latest version of Lighttpd server and its dependencies.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the user to provide what is necessary to accomplish the task. The command to make use of help under the terminal is given as follows,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra lighttpdserver <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure lighttpdserver <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The snapshot below gives you a pictorial representation of help command and it listed three parameters as LigHTTPDServer, lighttpd-server, lighttpdserver. (Parameters are case insensitive)</p>
-<div class="highlight-bash"><div class="highlight"><pre> Kevells@corp:/kevellphara/docs/source# cleopatra LigHTTPDServer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre> Kevell@corp:/# ptconfigure LigHTTPDServer <span class="nb">help</span>
 
  ******************************
 
@@ -187,7 +176,7 @@ LigHTTPDServer, lighttpd-server, lighttpdserver
 
 - install
 Installs LigHTTPD HTTP Server
-example: cleopatra lighttpd-server install
+example: ptconfigure lighttpd-server install
 
 ------------------------------
 End Help
@@ -198,10 +187,10 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing Lighttpd module is given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra lighttpd-server  install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure lighttpd-server  install
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra lighttpd-server install
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure lighttpd-server install
 
 Install LigHTTPD Server? (Y/N)
 y
@@ -286,23 +275,31 @@ Installer Finished
 <h2>options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="34%" />
-<col width="23%" />
-<col width="43%" />
+<col width="33%" />
+<col width="20%" />
+<col width="10%" />
+<col width="37%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Paramaeters</th>
+<th class="head">Alternative Parameter</th>
 <th class="head">Required</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra lighttpd-server install</td>
+<tr class="row-even"><td>ptconfigure lighttpd-server install</td>
+<td>LigHTTPDServer,
+lighttpd-server,
+lighttpdserver</td>
 <td>Yes</td>
 <td>This command will install the
 LigHTTPD module</td>
 </tr>
-<tr class="row-odd"><td>install lighttpd-server(Y/N)</td>
+<tr class="row-odd"><td>Install lighttpd-server(Y/N)</td>
+<td>LigHTTPDServer,
+lighttpd-server,
+lighttpdserver</td>
 <td>Y</td>
 <td>If the user inputs Y, this module
 checks for previously installed
@@ -310,10 +307,13 @@ version, if exits it was updated to
 latest version or else it installs the
 fresh package.</td>
 </tr>
-<tr class="row-even"><td>install lighttpd-server(Y/N)</td>
+<tr class="row-even"><td>Install lighttpd-server(Y/N)</td>
+<td>LigHTTPDServer,
+lighttpd-server,
+lighttpdserver|</td>
 <td>N</td>
 <td>If the user inputs N, the
-installation was aborted.|</td>
+installation was aborted.</td>
 </tr>
 </tbody>
 </table>
@@ -324,6 +324,8 @@ installation was aborted.|</td>
 <li>Install LigHTTPDServer in a single environment without any browser.</li>
 <li>Ease use of access and installation</li>
 <li>Coding is case insensitive.</li>
+<li>Non case sensitivity</li>
+<li>Well-to-do in Ubuntu and CentOS.</li>
 </ul>
 </div>
 </div>
@@ -363,7 +365,7 @@ installation was aborted.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

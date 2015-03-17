@@ -7,7 +7,7 @@ NginxServer
 Synopsis
 ---------
 
-Nginx, pronounced “Engine X”, is a high-performance Web server. The Nginx Web Server is a light weight and versatile server that can be configured for all the different tasks that many modern websites demand. Ngnix server acts as a facilitator to the users in configuring applications settings. Few examples for applications settings includes mysql admin user, host, pass. Nginx is making headlines as the new Web server of choice for many webmasters. The top reason for its popularity is its speed. Nginx is faster than Apache in non-testing environments because its architecture is event driven while Apache’s is process driven. The Cleopatra modules acts as a way through for installing this Nginx Server.
+Nginx, pronounced “Engine X”, is a high-performance Web server. The Nginx Web Server is a light weight and versatile server that can be configured for all the different tasks that many modern websites demand. Ngnix server acts as a facilitator to the users in configuring applications settings. Few examples for applications settings includes mysql admin user, host, pass. Nginx is making headlines as the new Web server of choice for many webmasters. The top reason for its popularity is its speed. Nginx is faster than Apache in non-testing environments because its architecture is event driven while Apache’s is process driven. The ptconfigure modules acts as a way through for installing this Nginx Server.
 
 Help Command
 ------------
@@ -16,14 +16,14 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
 
-	cleopatra nginx-server help
+	ptconfigure nginx-server help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Nginx Server.
 
 .. code-block:: bash
 
 
-	kevells@corp:/# cleopatra NginxServer help
+	kevell@corp:/# ptconfigure NginxServer help
 	******************************
 
 
@@ -34,7 +34,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs Nginx HTTP Server
-        example: cleopatra nginx-server install
+        example: ptconfigure nginx-server install
 
 	------------------------------
 	End Help
@@ -48,32 +48,32 @@ Installing the Nginx server is simpler by using the following command as shown:
 
 .. code-block:: bash
 
-	cleopatra nginx-server install
+	ptconfigure nginx-server install
 
 After inputting the command above the following operations as shown in the tabular format occurs.
 
 .. cssclass:: table-bordered
 
-  +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
-  |   Paramaters 		    | Alternative Parameter         | Options	    |	comments			                 |
-  +=================================+===============================+===============+====================================================+
-  |Install PHP Code Sniffer ? (Y/N) |In Spite of Nginx Server, the  |		    |If the user wish to proceed the installation process|
-  |				    |following alternatives can also|  Y(yes)       |they can input as Y.			    	 |
-  |				    |be used: NginxServer, 	    |		    |							 |
-  |				    |nginx-server, nginxserver.     |		    | 							 |
-  +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
-  |Install PHP Code Sniffer ? (Y/N) |In Spite of Nginx Server, the  |		    |If the user wish to Quit the installation process   |
-  |				    |following alternatives can also|  Y(yes)       |they can input as N.|			    	 |
-  |				    |be used: NginxServer, 	    |		    |							 |
-  |				    |nginx-server, nginxserver.     |		    || 							 |
-  +---------------------------------+-------------------------------+---------------+----------------------------------------------------+
+  +-------------------------------+---------------------------------+--------------+-----------------------------------------------------+
+  |   Parameters 		  | Alternative Parameter           | Options	   | Comments			                         |
+  +===============================+===================================+============+=====================================================+
+  |Install Nginx Server? (Y/N)    | Instead of Nginx Server, the    | Y(Yes)	   | If the user wish to proceed the installation        |
+  |                      	  | following alternatives can also |              | process they can input as Y.	         	 |
+  |				  | be used: NginxServer, 	    |		   |							 |
+  |				  | nginx-server, nginxserver.      |		   | 							 |
+  +-------------------------------+---------------------------------+--------------+-----------------------------------------------------+
+  |Install Nginx Server? (Y/N)    | Instead of Nginx Server, the    | N(No)	   | If the user wish to Quit the installation process   |
+  |                      	  | following alternatives can also |              | they can input as N.			    	 |
+  |				  | be used: NginxServer, 	    |		   |							 |
+  |				  | nginx-server, nginxserver.|     |		   | 							 |
+  +-------------------------------+---------------------------------+--------------+-----------------------------------------------------+
 
 If the user proceeds the installation process, the Nginx HTTP Server will be installed. If the package of Nginx is already exists in the users machine, then a message will appear to instruct the user as Nginx is already exists in that machine. Finally reports are generated with clear results and status. The following screen shot explains the above mentioned process pictorially.
 
 .. code-block:: bash
 	
 
-	Kevells@corp:/# cleopatra nginx-server install
+	Kevell@corp:/# ptconfigure nginx-server install
 	
 	Install Nginx Server? (Y/N) 
 	y	

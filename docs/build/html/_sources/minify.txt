@@ -18,13 +18,13 @@ The following help command guides the user to handle minify.
 
 .. code-block:: bash
 
-                cleopatra minify help
+                ptconfigure minify help
 
 This screen shot shows the help command usage
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra minify help
+ kevell@corp:/# ptconfigure minify help
 
  ******************************
 
@@ -35,7 +35,7 @@ This screen shot shows the help command usage
 
         - install
         Installs the latest version of minify
-        example: cleopatra minify install
+        example: ptconfigure minify install
 
  ------------------------------
  End Help
@@ -48,7 +48,7 @@ It works with existing conventions for code structure, adding efficient tools to
 
 .. code-block:: bash
 
-                cleopatra minify install
+                ptconfigure minify install
 
 The following screenshot explains it.
 
@@ -65,7 +65,7 @@ Minify source code is especially useful for interpreted languages deployed and t
  | Parameters			 | Alternate Parameters			  | Oprion	  | Comments			     |
  +===============================+========================================+===============+==================================+
  |Install minify?(Y/N)           | Instead of using minify we can         | Y		  | It installs  minify under 	     |
- | 				 | use Minify				  |		  | cleopatra 			     |
+ | 				 | use Minify				  |		  | ptconfigure 		     |
  +-------------------------------+----------------------------------------+---------------+----------------------------------+
  |Install minify?(Y/N)           | Instead of using minify we can use     | N		  | The system exit the installation |
  |				 | Minify|				  |		  |				     |

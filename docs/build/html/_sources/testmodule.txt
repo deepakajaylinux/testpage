@@ -21,7 +21,7 @@ After typing the command it lists the options as action. The following image vis
 
 .. code-block:: bash
 
- kevells@corp:/# jrush TestModule help
+ kevell@corp:/# jrush TestModule help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -72,7 +72,7 @@ After gives the command it shows the current details and titles of articles. The
 
 .. code-block:: bash
 
- kevells@corp:/# jrush test-module action-one --config-file="/var/www/html/joomla/configuration.php"
+ kevell@corp:/# jrush test-module action-one --config-file="/var/www/html/joomla/configuration.php"
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************

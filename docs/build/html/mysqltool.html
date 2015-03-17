@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="NetBeans" href="netbeans.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="NagiosServer" href="nagiosserver.html" />
     <link rel="prev" title="MysqlAdmins" href="mysqladmin.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -109,8 +109,8 @@
                 
   <li><a href="mysqladmin.html"
          title="Previous Chapter: MysqlAdmins">&laquo; MysqlAdmins</a></li>
-  <li><a href="netbeans.html"
-         title="Next Chapter: NetBeans">NetBeans &raquo;</a></li>
+  <li><a href="nagiosserver.html"
+         title="Next Chapter: NagiosServer">NagiosServer &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="mysqltools">
@@ -168,29 +156,49 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command instructs the users in handling this module. In addition to this, it will also specifies the alternative parameters. The command used for help option is given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra MysqlTools <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure MysqlTools <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The help command also specifies the command used for installing this mysqltools module. Look at the screen shot given below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mysqltools <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>allows you to install some tools to <span class="nb">help </span>with MySQL Server. Installs the MySQL
+ Workbench GUI and also the mytop Command Line Tool.
+
+ MysqlTools, mysql-tools, mysqltools
+
+       - install
+       Installs Mysql Tools through apt-get.
+       example: ptconfigure mysql-tools install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This module installs the mysql tools that supports the mysql server with the aid of apt-get. The command used for installing mysqltools to your machine is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra MysqlTools install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure MysqlTools install
 </pre></div>
 </div>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="30%" />
-<col width="25%" />
-<col width="19%" />
-<col width="26%" />
+<col width="32%" />
+<col width="29%" />
+<col width="11%" />
+<col width="9%" />
+<col width="20%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
 <th class="head">Alternative Parameter</th>
 <th class="head">option</th>
-<th class="head">Comments</th>
+<th class="head" colspan="2">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -200,7 +208,7 @@ these alternative names can be
 used:MysqlTools,mysql-tools,
 mysqltools.</td>
 <td>Y(YES)</td>
-<td>If the user wish to proceed the
+<td colspan="2">If the user wish to proceed the
 installation process they
 can input as Y.</td>
 </tr>
@@ -208,14 +216,14 @@ can input as Y.</td>
 <td>In the place of Mysql Tools
 these alternative names can be
 used:MysqlTools,mysql-tools,</td>
-<td>N(YES)</td>
-<td>If the user wish to proceed the
+<td>N(No)</td>
+<td colspan="2">If the user wish to proceed the
 installation process they
 can input as N.|</td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">If the user proceed installing the mysql tools the following operations are performed while installing</p>
+<p>If the user proceed installing the mysql tools the following operations are performed while installing</p>
 <ul class="simple">
 <li>It reads the package lists.</li>
 <li>Builds the dependency tree.</li>
@@ -226,8 +234,75 @@ can input as N.|</td>
 <li>Displays the number of files that are upgraded, newly installed, removed, and not upgraded.</li>
 </ul>
 <p>The Screen shot as shown below gives you an graphical presentation regarding the steps as explained above.</p>
-<p>It will also specifies the name of tools that are installed, for example
-.. rubric:: mysql-server-core-5.5:amd64, mysql-server-5.5: amd64, libaio1:amd64, mysql-server:amd64.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mysqltools install
+
+Install MySQL Tools? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         MySQL Tools!        *
+*******************************
+E: Unable to correct problems, you have held broken packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or <span class="k">if </span>you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may <span class="nb">help </span>to resolve the situation:
+
+The following packages have unmet dependencies:
+mysql-workbench : Depends: libmysqlcppconn7 <span class="o">(</span>&gt;<span class="o">=</span> 1.1.3<span class="o">)</span> but it is not installabl                                                                                        e
+                  Recommends: ttf-bitstream-vera but it is not going to be inst                                                                                        alled
+                  Recommends: mysql-utilities but it is not going to be install                                                                                        ed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package mysql-workbench from the Packager Apt did not e                                                                                        xecute correctly
+dpkg: warning: parsing file <span class="s1">&#39;/var/lib/dpkg/available&#39;</span> near line 47586 package <span class="s1">&#39;c                                                                                        leopatra&#39;</span>:
+missing maintainer
+dpkg: warning: parsing file <span class="s1">&#39;/var/lib/dpkg/available&#39;</span> near line 47586 package <span class="s1">&#39;c                                                                                        leopatra&#39;</span>:
+missing architecture
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libconfig-inifiles-perl
+The following NEW packages will be installed:
+ libconfig-inifiles-perl mytop
+0 upgraded, 2 newly installed, 0 to remove and 13 not upgraded.
+Need to get 73.8 kB of archives.
+After this operation, 288 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libconfig-inifiles-perl                                                                                         all 2.68-1 <span class="o">[</span>39.6 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe mytop all 1.9.1-1 <span class="o">[</span>34                                                                                        .1 kB<span class="o">]</span>
+Fetched 73.8 kB in 7s <span class="o">(</span>10.5 kB/s<span class="o">)</span>
+Selecting previously unselected package libconfig-inifiles-perl.
+<span class="o">(</span>Reading database ... 254866 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libconfig-inifiles-perl_2.68-1_all.deb ...
+Unpacking libconfig-inifiles-perl <span class="o">(</span>2.68-1<span class="o">)</span> ...
+Selecting previously unselected package mytop.
+Preparing to unpack .../archives/mytop_1.9.1-1_all.deb ...
+Unpacking mytop <span class="o">(</span>1.9.1-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Setting up libconfig-inifiles-perl <span class="o">(</span>2.68-1<span class="o">)</span> ...
+Setting up mytop <span class="o">(</span>1.9.1-1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package mytop from the Packager Apt executed correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+MysqlTools: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+<p>It will also specifies the name of tools that are installed, for example</p>
+<div class="highlight-bash"><div class="highlight"><pre>.. rubric:: mysql-server-core-5.5:amd64, mysql-server-5.5: amd64, libaio1:amd64, mysql-server:amd64.
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -274,7 +349,7 @@ can input as N.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

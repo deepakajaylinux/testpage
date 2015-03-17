@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Citadel" href="citadel.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Chrome" href="chrome.html" />
     <link rel="prev" title="Chmode" href="chmod.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -95,7 +95,8 @@
 <li><a class="reference internal" href="#">Chown</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#path">Path</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -109,8 +110,8 @@
                 
   <li><a href="chmod.html"
          title="Previous Chapter: Chmode">&laquo; Chmode</a></li>
-  <li><a href="citadel.html"
-         title="Next Chapter: Citadel">Citadel &raquo;</a></li>
+  <li><a href="chrome.html"
+         title="Next Chapter: Chrome">Chrome &raquo;</a></li>
               
             
             
@@ -144,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="chown">
@@ -168,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This help command explains about the installation of a particular module. The help command is easy to operate by the end user. It also lists out the alternative parameters that are used in declaration. The following command guides the user about the handling this module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra chown <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure chown <span class="nb">help</span>
 </pre></div>
 </div>
 <p>After giving the command, the command will list the help options. The following screen shots will give visual effect for the usage of this module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra chown <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure chown <span class="nb">help</span>
 ******************************
 
  This <span class="nb">command </span>handles file user ownership changing functions.
@@ -181,7 +170,7 @@
 
 - path
 Will change the user ownership of a path
-example: cleopatra chown path --yes --guess --recursive --path<span class="o">=</span>/a/file/path --owner<span class="o">=</span>golden
+example: ptconfigure chown path --yes --guess --recursive --path<span class="o">=</span>/a/file/path --owner<span class="o">=</span>golden
 
 ------------------------------
 End Help
@@ -189,21 +178,21 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>It is an excellent process for this module under Cleopatra by slightly using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra chown path –yes—guess—recursive—path<span class="o">=</span>/Cleopatra—owner<span class="o">=</span>Kevells
+<div class="section" id="path">
+<h2>Path<a class="headerlink" href="#path" title="Permalink to this headline">¶</a></h2>
+<p>It is an excellent process for this module under ptconfigure by slightly using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure chown path –yes—guess—recursive—path<span class="o">=</span>/ptconfigure—owner<span class="o">=</span>Kevells
 </pre></div>
 </div>
-<p>Then we can enter the input.
-Enter Ownership User
-After typing the owner name
-It will display Chown result success.</p>
+<p>Then we can enter the input.</p>
+<p>Enter Ownership User</p>
+<p>After typing the owner name</p>
+<p>It will display Chown result success.</p>
 <p>This is Visually shown by the following screen shot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra chown path --yes --guess --recursive --path<span class="o">=</span>/phj.php --owner<span class="o">=</span>deepak
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure chown path --yes --guess --recursive --path<span class="o">=</span>/phj.php --owner<span class="o">=</span>deepak
 
 Enter ownership user:
-deepak
+kevell
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>Chown<span class="o">]</span> Executing chown -R deepak /phj.php
 ******************************
 
@@ -214,55 +203,19 @@ Chown Finished
 ******************************
 </pre></div>
 </div>
-<table border="1" class="table-bordered docutils">
-<colgroup>
-<col width="41%" />
-<col width="10%" />
-<col width="24%" />
-<col width="25%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Required</th>
-<th class="head">option</th>
-<th class="head">Comments</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Chown</td>
-<td>Yes</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>Path</td>
-<td>Yes</td>
-<td>&nbsp;</td>
-<td>The user has to give the
-path</td>
-</tr>
-<tr class="row-even"><td>Owner</td>
-<td>Yes</td>
-<td>Chown</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>Owner</td>
-<td>No</td>
-<td>Chown</td>
-<td>The user gives input as no,
-it will ask the owner name|</td>
-</tr>
-</tbody>
-</table>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>There are two alternative parameter available.</p>
+<p>Chown, chown</p>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li>The module can change the owner at any time with Cleopatra.</li>
+<ul class="simple">
+<li>The module can change the owner at any time with ptconfigure.</li>
 <li>While doing recursive process if you change single file the entire folder can also be changed.</li>
 <li>We can verify the current status of the owner.</li>
 </ul>
-</div></blockquote>
 </div>
 </div>
 
@@ -301,7 +254,7 @@ it will ask the owner name|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="SVN" href="svn.html" />
-    <link rel="prev" title="Ssh Harden" href="sshharden.html" />
+    <link rel="prev" title="Storyplayer" href="storyplayer.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,8 +108,8 @@
             
               
                 
-  <li><a href="sshharden.html"
-         title="Previous Chapter: Ssh Harden">&laquo; Ssh Harden</a></li>
+  <li><a href="storyplayer.html"
+         title="Previous Chapter: Storyplayer">&laquo; Storyplayer</a></li>
   <li><a href="svn.html"
          title="Next Chapter: SVN">SVN &raquo;</a></li>
               
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="sudonopass">
@@ -169,20 +157,20 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This help command guide the user about sudonopass module. This is suitable for all type of business users. The help command shows a short list of the commands built into the sudonopass module. The following screen shot enumerate it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra SudoNoPass <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure SudoNoPass <span class="nb">help</span>
 ******************************
 
 
  This <span class="nb">command </span>allows you to add an entry to the system sudo file that will
  allow your user to have passwordless sudo. This is required <span class="k">for</span>
- quite a few of the  builds provided by Golden Contact, as
+<span class="k"> </span>quite a few of the  builds provided by Golden Contact, as
  will perform <span class="nb">test </span>execution, software installs and more, silently.
 
  SudoNoPass, sudonopass, sudo-nopass, sudo-passwordless
 
 - install
 Installs the sudo without password entry
-example: cleopatra sudo-nopass install
+example: ptconfigure sudo-nopass install
 
 ------------------------------
 End Help
@@ -193,13 +181,13 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Use this module to install sudonopass on Ubuntu Linux system packages.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra sudonopass install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure sudonopass install
 </pre></div>
 </div>
 <p>Install sudonopass ?(Y/N)</p>
 <p>When the user gives input, as yes automatically it will install configure the root pass access for everybody. The following screen shot will explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra sudo-nopass install
-Install Sudo w/o Pass <span class="k">for</span> User? <span class="o">(</span>Y/N<span class="o">)</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sudo-nopass install
+Install Sudo w/o Pass <span class="k">for </span>User? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *        Pharaoh Tools        *
@@ -208,14 +196,14 @@ y
 Enter User To Install As:
 Kevells
 The following will be written to /etc/sudoers
-Please check <span class="k">if</span> it looks wrong
-You may not be able to use Sudo <span class="k">if</span> it is incorrect!!!
+Please check <span class="k">if </span>it looks wrong
+You may not be able to use Sudo <span class="k">if </span>it is incorrect!!!
 Kevells <span class="nv">ALL</span><span class="o">=</span>NOPASSWD: ALL
 Is this okay? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -232,20 +220,20 @@ Installer Finished
 <h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="24%" />
+<col width="23%" />
 <col width="27%" />
-<col width="49%" />
+<col width="50%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Dirctory(default)</th>
+<th class="head">Option</th>
 <th class="head">Output</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install sudonopass</td>
 <td>yes</td>
-<td>It will install sudonopass under Cleopatra</td>
+<td>It will install sudonopass under ptconfigure</td>
 </tr>
 <tr class="row-odd"><td>Install sudonopass</td>
 <td>No</td>
@@ -257,10 +245,14 @@ Installer Finished
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Sudonopass makes sure that root privileges are there for a specific command (or for a specific time) and not for the complete session as that may result in accidental misuse of root privileges.</li>
-<li>The user can use sudonopass even grant limited privileges to a user. This is helpful when the user do not want a user to have control of all the root powers while doing a sudonopass.</li>
-<li>The best advantage is that sudonopass requires user’s own login password rather than root password. This helps in keeping root password private and there is no need to change it even when a user (sudoer) leaves.</li>
-<li>This file provides information on the commands that were execute using sudo and their time of execution. This helps administrator to keep track of even trusted users</li>
+<li>Sudonopass makes sure that root privileges are there for a specific command (or for a specific time) and not for the complete session as
+that may result in accidental misuse of root privileges.</li>
+<li>The user can use sudonopass even grant limited privileges to a user. This is helpful when the user do not want a user to have control of
+all the root powers while doing a sudonopass.</li>
+<li>The best advantage is that sudonopass requires user’s own login password rather than root password. This helps in keeping root password
+private and there is no need to change it even when a user (sudoer) leaves.</li>
+<li>This file provides information on the commands that were execute using sudo and their time of execution. This helps administrator to keep
+track of even trusted users</li>
 </ul>
 </div>
 </div>
@@ -300,7 +292,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

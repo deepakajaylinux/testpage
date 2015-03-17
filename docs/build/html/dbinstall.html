@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="EnvironmentConfig" href="environmentconfigdapper.html" />
-    <link rel="prev" title="Apache Control" href="apachecontrol.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="Drupal" href="drupal.html" />
+    <link rel="prev" title="DBConfigure" href="dbconfigure.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,10 +110,10 @@
             
               
                 
-  <li><a href="apachecontrol.html"
-         title="Previous Chapter: Apache Control">&laquo; Apache Control</a></li>
-  <li><a href="environmentconfigdapper.html"
-         title="Next Chapter: EnvironmentConfig">EnvironmentConfi... &raquo;</a></li>
+  <li><a href="dbconfigure.html"
+         title="Previous Chapter: DBConfigure">&laquo; DBConfigure</a></li>
+  <li><a href="drupal.html"
+         title="Next Chapter: Drupal">Drupal &raquo;</a></li>
               
             
             
@@ -147,19 +147,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="dbinstall">
@@ -174,11 +162,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of DBinstall module. The user will come to know about the different ways/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screen shot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano DBInstall <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy DBInstall <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is shown below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano DBInstall help
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy DBInstall help
 ******************************
 
 
@@ -188,15 +176,15 @@
 
          - install
          install the database for a project. run DBConfigure first to set up users unless you already have them.
-         example: dapperstrano db-install install
+         example: ptdeploy db-install install
 
          - save
          save the database for a project. run DBConfigure first to set up users unless you already have them.
-         example: dapperstrano db-install save
+         example: ptdeploy db-install save
 
          - drop
          drop the database for a project.
-         example: dapperstrano db-install drop
+         example: ptdeploy db-install drop
 
 
 --------------
@@ -207,7 +195,7 @@
  Wordpress module adds the actions wordpress-install and wp-install to DBInstall, requiresd to allow the Post DB
  Install hooks for Wordpress, the DB restore won&#39;t work correctly without at least the url.
 
- dapperstrano dbinstall wordpress-install --yes --guess --hook-url=www.site.env
+ ptdeploy dbinstall wordpress-install --yes --guess --hook-url=www.site.env
 ------------------------------
 End Help
 ******************************
@@ -217,7 +205,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to install, the user can issue the following commands for DBIstall. The system will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano dbinstall install
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall install
 </pre></div>
 </div>
 <p>The system ask for the Mysql host, Press Enter to use the default host.</p>
@@ -243,7 +231,7 @@ End Help
 <div class="section" id="save">
 <h2>Save<a class="headerlink" href="#save" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to save the database for a project, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano dbinstall save
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall save
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -269,7 +257,7 @@ End Help
 <div class="section" id="drop">
 <h2>Drop<a class="headerlink" href="#drop" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to drop the database for a project, the below given command will execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano dbinstall drop
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall drop
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
@@ -295,7 +283,7 @@ End Help
 <div class="section" id="alternative-parameter">
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
 <p>Either of the three alternative parameter can be used in command-  dbinstall, DBInstall and db-install</p>
-<p>eg: dapperstrano DBInstall help/  dapperstrano db-install help</p>
+<p>eg: ptdeploy DBInstall help/  ptdeploy db-install help</p>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -342,7 +330,7 @@ End Help
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

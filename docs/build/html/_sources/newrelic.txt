@@ -10,26 +10,26 @@ Newrelic used to monitoring the server. Collaboration across the different roles
 Help command
 ----------------------
 
-The help command leads the users regarding the purpose and as well as about the options that are included in the newrelic modules. The help command lists out the alternative parameters of newrelic under cleopatra module. It also describes the syntax for detecting the user’s machine. The help command for newrelic is shown below.
+The help command leads the users regarding the purpose and as well as about the options that are included in the newrelic modules. The help command lists out the alternative parameters of newrelic under ptconfigure module. It also describes the syntax for detecting the user’s machine. The help command for newrelic is shown below.
 
 .. code-block:: bash
 
-		cleopatra newrelic help
+		ptconfigure newrelic help
 
 The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under newrelic.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra NewRelic help
+ kevell@corp:/# ptconfigure NewRelic help
  ******************************
 
   This command allows you to update Newrelic.
    NewRelic, newrelic, Newrelic
 
   - install
-  Installs the latest version of cleopatra
-  example: cleopatra newrelic install
+  Installs the latest version of ptconfigure
+  example: ptconfigure newrelic install
 
  ------------------------------
  End Help
@@ -39,7 +39,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 Installation
 -------------------
 
-These installation procedures are for system administrators. This section provides information about compatibility and requirements, basic instructions on how to install and configure cleopatra to more detailed information.
+These installation procedures are for system administrators. This section provides information about compatibility and requirements, basic instructions on how to install and configure ptconfigure to more detailed information.
 
 Before installation the user has to follow:
 
@@ -62,7 +62,7 @@ Before installation the user has to follow:
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra newrelic install
+ kevell@corp:/# ptconfigure newrelic install
 
  Install NewRelic? (Y/N) 
  y
@@ -70,10 +70,10 @@ Before installation the user has to follow:
  *        Pharaoh Tools        *
  *         NewRelic!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-97361213995.sh
- chmod 755 /tmp/cleopatra-temp-script-97361213995.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-97361213995.sh Permissions
- Executing /tmp/cleopatra-temp-script-97361213995.sh
+ Creating /tmp/ptconfigure-temp-script-97361213995.sh
+ chmod 755 /tmp/ptconfigure-temp-script-97361213995.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-97361213995.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-97361213995.sh
  --2015-01-28 13:05:04--  https://download.newrelic.com/548C16BF.gpg
  Resolving download.newrelic.com (download.newrelic.com)... 50.31.164.159
  Connecting to download.newrelic.com (download.newrelic.com)|50.31.164.159|:443... connected.
@@ -294,7 +294,7 @@ Before installation the user has to follow:
  Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
  Fetched 2,420 kB in 2min 58s (13.6 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-97361213995.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-97361213995.sh Removed
  dpkg: error processing package zend-server-php-5.3 (--configure):
  subprocess installed post-installation script returned error exit status 2
  Errors were encountered while processing:
@@ -365,10 +365,10 @@ Before installation the user has to follow:
  [Pharaoh Logging] Adding Package newrelic-sysmond from the Packager Apt executed correctly
  Enter Your Licence Key:
                             
- Creating /tmp/cleopatra-temp-script-5830489845.sh
- chmod 755 /tmp/cleopatra-temp-script-5830489845.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-5830489845.sh Permissions
- Executing /tmp/cleopatra-temp-script-5830489845.sh
+ Creating /tmp/ptconfigure-temp-script-5830489845.sh
+ chmod 755 /tmp/ptconfigure-temp-script-5830489845.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-5830489845.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-5830489845.sh
  Error: no value specified for license_key
 
  *********************************************************************
@@ -391,7 +391,7 @@ Before installation the user has to follow:
  *********************************************************************
  *********************************************************************
  
- Temp File /tmp/cleopatra-temp-script-5830489845.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-5830489845.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -410,15 +410,15 @@ Options
 
 .. cssclass:: table-bordered
 
- +------------------------+---------------+--------------------------------------+-------------------------------------------+
- | Parameters	          | Options	  | Alternative Parameters		 | Comments				     |
- +========================+===============+======================================+===========================================+
- |Install newrelic?(Y/N)  | Y		  | Instead of using newrelic the user   | It starts installing newrelic under	     |
- |			  |	          | can use NewRellic, Newrelic		 | cleopatra				     |
- +------------------------+---------------+--------------------------------------+-------------------------------------------+
- |Install newrelic?(Y/N)  | N		  | Instead of using newrelic the user   | It terminates the installation	     |
- |			  | 		  | can use NewRellic, Newrelic.| 	 |					     |
- +------------------------+---------------+--------------------------------------+-------------------------------------------+
+ +------------------------+--------------------------------------+---------------+-------------------------------------------+
+ | Parameters	          |  Alternative Parameters		 | Options       |Comments				     |
+ +========================+======================================+===============+===========================================+
+ |Install newrelic?(Y/N)  | Instead of using newrelic the user   | Y(Yes)        |It starts installing newrelic under	     |
+ |			  | can use NewRellic, Newrelic		 |               |ptconfigure				     |
+ +------------------------+--------------------------------------+---------------+-------------------------------------------+
+ |Install newrelic?(Y/N)  | Instead of using newrelic the user   | N(No)         |It terminates the installation	     |
+ |			  | can use NewRellic, Newrelic.| 	 |		 |			                     |
+ +------------------------+--------------------------------------+---------------+-------------------------------------------+
 
 
 Benefits

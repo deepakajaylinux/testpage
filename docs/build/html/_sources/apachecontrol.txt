@@ -16,14 +16,14 @@ The syntax for help command under the Apache control is shown below:
 
 .. code-block:: bash
 
-		dapperstrano ApacheControl help
+		ptdeploy ApacheControl help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The help command also lists out the alternative parameters that can be used in declaration. The following screenshot visualize you about the help command under Apache Control.
 
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano ApacheControl help
+ kevell@corp:/# ptdeploy ApacheControl help
  ******************************
 
 
@@ -33,33 +33,34 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
           - start
           Start the Apache server
-          example: dapperstrano apachecontrol start
-          example: dapperstrano apachecontrol start --yes --guess
-          example: dapperstrano apachecontrol start --yes --apache-command="apache2"
+          example: ptdeploy apachecontrol start
+          example: ptdeploy apachecontrol start --yes --guess
+          example: ptdeploy apachecontrol start --yes --apache-command="apache2"
 
           - stop
           Stop the Apache server
-          example: dapperstrano apachecontrol stop
-          example: dapperstrano apachecontrol stop --yes --guess
-          example: dapperstrano apachecontrol stop --yes --apache-command="apache2"
+          example: ptdeploy apachecontrol stop
+          example: ptdeploy apachecontrol stop --yes --guess
+          example: ptdeploy apachecontrol stop --yes --apache-command="apache2"
 
           - restart
           Restart the Apache server
-          example: dapperstrano apachecontrol restart
-          example: dapperstrano apachecontrol restart --yes --guess
-          example: dapperstrano apachecontrol restart --yes --apache-command="apache2"
+          example: ptdeploy apachecontrol restart
+          example: ptdeploy apachecontrol restart --yes --guess
+          example: ptdeploy apachecontrol restart --yes --apache-command="apache2"
 
           - reload
           Reloads the Apache server configuration without restarting
-          example: dapperstrano apachecontrol reload
-          example: dapperstrano apachecontrol reload --yes --guess
-          example: dapperstrano apachecontrol reload --yes --apache-command="apache2"
+          example: ptdeploy apachecontrol reload
+          example: ptdeploy apachecontrol reload --yes --guess
+          example: ptdeploy apachecontrol reload --yes --apache-command="apache2"
 
  ------------------------------
  End Help
  ******************************
 
 The four basic control functions included in the Apache server are :
+
 * Start
 * Stop
 * Restart
@@ -69,19 +70,19 @@ There is three possible ways in defining a control functions. For example, if we
 
 .. code-block:: bash
 		
-		dapperstrano ApacheControl start
+		ptdeploy ApacheControl start
 
 or 
 
 .. code-block:: bash
 
-		dapperstrano ApacheControl start --yes --guess
+		ptdeploy ApacheControl start --yes --guess
 
 or
 
 .. code-block:: bash
 
-		dapperstrano ApacheControl start --yes --apache-command="apache2"
+		ptdeploy ApacheControl start --yes --apache-command="apache2"
 
 Let us see the usage of three different syntax in declaring in upcoming topics.
 
@@ -89,6 +90,7 @@ Alternative parameters
 -------------------------------
 
 The following are the alternative parameters that can be defined in declarations:
+
 ApacheControl, apachecontrol, apachectl
 
 Start function
@@ -98,17 +100,20 @@ If the user wish to start the apache control function, the can use the following
 
 .. code-block:: bash
 
-		dapperstrano ApacheControl start
+		ptdeploy ApacheControl start
 
 		(This is the first type of syntax in defining a control functions for apche server)
 
 After inputting the command as above, the following steps are performed:
 
 Step 1: Do you want to start Apache? (Y/N).
+
 The user have to specify Y or N.
 
 Step 2: What is the apache service name?
+
 (0) apache2
+
 (1) httpd
 
 The user should specify whether 0 or 1 as per the requirement.
@@ -119,7 +124,7 @@ The following screenshot depicts the start process pictorially.
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano apachecontrol start
+ kevell@corp:/# ptdeploy apachecontrol start
  Do you want to Start Apache? (Y/N)
  y
  What is the apache service name?
@@ -142,7 +147,7 @@ If the user wish to stop the apache control function, the can use the following 
 
 .. code-block:: bash
 
-		dapperstrano apachecontrol stop --yes --guess
+		ptdeploy apachecontrol stop --yes --guess
 		
 		(This is the second type of syntax in defining a control functions for apache server)
 
@@ -156,7 +161,7 @@ The following screenshot depicts you about the stop function and purpose of gues
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano apachecontrol stop --yes --guess
+ kevell@corp:/# ptdeploy apachecontrol stop --yes --guess
  Stopping Apache...
  * Stopping web server apache2
  *
@@ -173,7 +178,7 @@ If the user wish to restart the apache control function, the can use the followi
 
 .. code-block:: bash
 	
-		dapperstrano apachecontrol restart --yes --apache-command="apache2"
+		ptdeploy apachecontrol restart --yes --apache-command="apache2"
 	
 		(This is the third type of syntax in defining a control functions for apche server)
 
@@ -181,7 +186,7 @@ The user can use this third type of syntax to specify the value of the required 
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano apachecontrol restart --yes --apache-command="apache2"
+ kevell@corp:/# ptdeploy apachecontrol restart --yes --apache-command="apache2"
  Restarting Apache...
  AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globa lly to suppress this message
  * Restarting web server apache2
@@ -200,18 +205,18 @@ If the user wish to reload the apache control function, the can use the followin
 
 .. code-block:: bash
 
-		dapperstrano apachecontrol reload
+		ptdeploy apachecontrol reload
 
 or
 
 .. code-block:: bash
 
-		dapperstrano apachecontrol --yes --guess
+		ptdeploy apachecontrol --yes --guess
 or
 
 .. code-block:: bash
 
-		dapperstrano apachecontrol --yes --apache-command="apache2"
+		ptdeploy apachecontrol --yes --apache-command="apache2"
 
 The reload function performs reloading the apache server without restarting.
 

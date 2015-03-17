@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Php SSH" href="phpssh.html" />
-    <link rel="prev" title="Php Modules" href="phpmodules.html" />
+    <link rel="prev" title="PHPMD" href="phpmd.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,8 +107,8 @@
             
               
                 
-  <li><a href="phpmodules.html"
-         title="Previous Chapter: Php Modules">&laquo; Php Modules</a></li>
+  <li><a href="phpmd.html"
+         title="Previous Chapter: PHPMD">&laquo; PHPMD</a></li>
   <li><a href="phpssh.html"
          title="Next Chapter: Php SSH">Php SSH &raquo;</a></li>
               
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpmodules">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Php module. It lists out the alternative parameters of Php module. It also describes the syntax for installing the Php module. The help command for Php module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPModules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPModules <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Php module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra PHPModules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPModules <span class="nb">help</span>
 
 ******************************
 
@@ -184,8 +172,8 @@
        - install
        Installs some common PHP Modules. These include php5-gd the image libs,
        php5-imagick the image libs, php5-curl the remote file handling libs,
-       php5-mysql the libs <span class="k">for</span> handling mysql connections.
-       example: cleopatra phpmods install
+       php5-mysql the libs <span class="k">for </span>handling mysql connections.
+       example: ptconfigure phpmods install
 
 ------------------------------
 End Help
@@ -196,7 +184,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the php modules in the users machine is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra phpmods install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure phpmods install
 </pre></div>
 </div>
 <p>After inputting the command above, the following process occurs as shown in the tabular format.</p>
@@ -242,7 +230,7 @@ process they can input as N.</td>
 <li>details regarding the number of files upgraded, newly installed, removed and not upgraded.</li>
 </ul>
 <p>The following screenshot pictorially depicts the above described process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra phpmods install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure phpmods install
 
 Install PHP Modules? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
@@ -268,7 +256,7 @@ E: dpkg was interrupted, you must manually run <span class="s1">&#39;sudo dpkg -
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package php5-mongo from the Packager Apt did not execute correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -326,7 +314,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -17,13 +17,13 @@ This command helps to determine the usage of jetty module. The user will come to
 
 .. code-block:: bash
         
-	        cleopatra jetty help
+	        ptconfigure jetty help
 
 The pictorial representation of the above command is shown below,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Jetty help
+ kevell@corp:/# ptconfigure Jetty help
 
  ******************************
 
@@ -34,7 +34,7 @@ The pictorial representation of the above command is shown below,
 
         - install
         Installs Jetty.  
-        example: cleopatra jetty install
+        example: ptconfigure jetty install
 
  ------------------------------
  End Help
@@ -49,7 +49,7 @@ This command helps in installing jetty in system. The below given command will e
 
 .. code-block:: bash
         
-	        cleopatra jetty install
+	        ptconfigure jetty install
 
 
 Options
@@ -57,19 +57,19 @@ Options
 
 .. cssclass:: table-bordered
 
- +--------------------------+-----------------------------------------------+--------------+-----------------------------------------+
- | Parameters		    | Alternative Parameters			    | Options	   | Comments				     |
- +==========================+===============================================+==============+=========================================+
- |Cleopatra jetty  Install  | There are two alternative parameters which    | Y		   | System starts installation process	     |
- |			    | can be used in command line. Jetty , jetty    |		   | 					     |
- |			    | Eg: cleopatra jetty install		    |		   | 					     |
- |			    | cleopatra Jetty install                       |              |					     |
- +--------------------------+-----------------------------------------------+--------------+-----------------------------------------+
- |Cleopatra jetty  Install  | There are two alternative parameters which    | N            | System stops installation process       |
- |                          | can be used in command line. Jetty , jetty    |              |                                         |
- |                          | Eg: cleopatra jetty install                   |              |                                         |
- |                          | cleopatra Jetty install|                      |              |                                         |
- +--------------------------+-----------------------------------------------+--------------+-----------------------------------------+
+ +----------------------------+---------------------------------------------+--------------+-----------------------------------------+
+ | Parameters		      | Alternative Parameters			    | Options	   | Comments				     |
+ +============================+=============================================+==============+=========================================+
+ |ptconfigure jetty  Install  | There are two alternative parameters which  | Y		   | System starts installation process	     |
+ |			      | can be used in command line. Jetty , jetty  |		   | 					     |
+ |			      | Eg: ptconfigure jetty install		    |		   | 					     |
+ |			      | ptconfigure Jetty install                   |              |					     |
+ +----------------------------+---------------------------------------------+--------------+-----------------------------------------+
+ |ptconfigure jetty  Install  | There are two alternative parameters which  | N            | System stops installation process       |
+ |                            | can be used in command line. Jetty , jetty  |              |                                         |
+ |                            | Eg: ptconfigure jetty install               |              |                                         |
+ |                            | ptconfigure Jetty install|                  |              |                                         |
+ +----------------------------+---------------------------------------------+--------------+-----------------------------------------+
 
 
 
@@ -78,7 +78,6 @@ Benefits
 --------------
 
 * Full-featured and standards-based
-* Open source and commercially usable
 * Flexible and extensible
 * Small footprint
 * Embeddable

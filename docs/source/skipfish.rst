@@ -15,13 +15,13 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash	
 
-		cleopatra Skipfish help
+		ptconfigure Skipfish help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Skipfish.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Skipfish help
+ kevell@corp:/# ptconfigure Skipfish help
 
  ******************************
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs Skipfish. 
-        example: cleopatra skipfish install
+        example: ptconfigure skipfish install
 
  ------------------------------
  End Help
@@ -47,14 +47,14 @@ This command authorize to install skipfish with interactive site map . When the 
 
 .. code-block:: bash
 
-                cleopatra skipfish install
+                ptconfigure skipfish install
 
 after typing this command the system asks users wish. The other process explains the installation through the screenshot.
 
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra Skipfish install
+ kevell@corp:/# ptconfigure Skipfish install
  Install  Skipfish? (Y/N) 
  y
  *******************************

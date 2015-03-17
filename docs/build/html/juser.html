@@ -33,7 +33,7 @@
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="Jrush" href="jrush_main.html" />
     <link rel="next" title="System Detection" href="systemdetection_jrush.html" />
-    <link rel="prev" title="JConfiguration" href="jconfiguration.html" />
+    <link rel="prev" title="JFeature" href="jfeatures.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
             
               
                 
-  <li><a href="jconfiguration.html"
-         title="Previous Chapter: JConfiguration">&laquo; JConfiguration</a></li>
+  <li><a href="jfeatures.html"
+         title="Previous Chapter: JFeature">&laquo; JFeature</a></li>
   <li><a href="systemdetection_jrush.html"
          title="Next Chapter: System Detection">System Detection &raquo;</a></li>
               
@@ -147,19 +147,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="juser">
@@ -176,7 +164,7 @@
 <div class="highlight-bash"><div class="highlight"><pre>jrush juser <span class="nb">help</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# jrush juser <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# jrush juser <span class="nb">help</span>
 ****************************************
 GC JRush - The Joomla Command Line Shell
 ****************************************
@@ -210,7 +198,7 @@ End Help
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# jrush juser delete --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# jrush juser delete --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
 Enter a JUser ID. To enter email/username use --user-email or --username parameters
 2
 ****************************************
@@ -239,7 +227,7 @@ JUser Delete Finished
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# jrush juser info --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# jrush juser info --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
 Enter a JUser ID. To enter email/username use --user-email or --username parameters
 1
 ****************************************
@@ -271,7 +259,7 @@ JUser Info Finished
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
 <p>Either of the two alternative parameter can be used in command- juser and JUser</p>
 <p>eg: jrush juser info ..config file=”bootstrap file path” / jrush JUser info ..config file=”bootstrap file path”</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# jrush juser password --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# jrush juser password --config-file<span class="o">=</span><span class="s2">&quot;/var/www/html/joomla/configuration.php&quot;</span>
 Enter a JUser ID. To enter email/username use --user-email or --username parameters
 5
 Enter a new Password. To enter as parameter use --password
@@ -340,7 +328,7 @@ JUser Password Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

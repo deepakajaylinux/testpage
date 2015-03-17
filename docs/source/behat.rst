@@ -10,17 +10,17 @@ This module allows the user to initialize behat test suite. The behat helps in t
 Help Command
 ---------------------
 
-The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute a behat under the testingkamen. The command used for declaring help is shown below:
+The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute a behat under the pttest. The command used for declaring help is shown below:
 
 .. code-block:: bash
 
- 		testingkamen behat help
+ 		pttest behat help
 
 The following screen shot depicts pictorially about the working of help command.
 
 .. code-block:: bash
 
- kevells@corp:/# testingkamen Behat help
+ kevell@corp:/# pttest Behat help
  ******************************
 
 
@@ -30,12 +30,12 @@ The following screen shot depicts pictorially about the working of help command.
 
         - init, initialize
         Initialises the Behat test suite of this project
-        example: testingkamen behat init
-        example: testingkamen behat initialize
+        example: pttest behat init
+        example: pttest behat initialize
 
         - execute
         Executes the Behat test suite of this project
-        example: testingkamen behat execute
+        example: pttest behat execute
 
  ------------------------------
  End Help
@@ -45,17 +45,17 @@ The following screen shot depicts pictorially about the working of help command.
 How to Initialize Behat
 -----------------------------
 
-The command used for initialize the behat under testingkamen is shown:
+The command used for initialize the behat under pttest is shown:
 
 .. code-block:: bash
 
-		testingkamen behat init
+		pttest behat init
 
 or 
 
 .. code-block:: bash
 
-		testingkamen behat initialize
+		pttest behat initialize
 
 
 After inputting the command above, the process of initialize occurs as depicted in the below table.
@@ -75,28 +75,28 @@ After inputting the command above, the process of initialize occurs as depicted 
 
 
 
-Finally the testingkamen behat gets initialized as shown in the following screenshot.
+Finally the pttest behat gets initialized as shown in the following screenshot.
 
 .. code-block:: bash
 
- kevells@corp:/# testingkamen behat execute
- Execute Behat? (Y/N) 
+ kevell@corp:/# pttest behat init
+ Initialize Behat? (Y/N) 
  Y
  *******************************
  *   Golden Contact Computing  *
- *            Behat!           *
+ *          Behat         *
  *******************************
- Creating /tmp/cleopatra-temp-script-70101140190.sh
- chmod 755 /tmp/cleopatra-temp-script-70101140190.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-70101140190.sh Permissions
- Executing /tmp/cleopatra-temp-script-70101140190.sh
- /tmp/cleopatra-temp-script-70101140190.sh: 2: /tmp/cleopatra-temp-script-70101140190.sh: behat: not found
- Temp File /tmp/cleopatra-temp-script-70101140190.sh Removed
- Creating /tmp/cleopatra-temp-script-48748886450.sh
- chmod 755 /tmp/cleopatra-temp-script-48748886450.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-48748886450.sh Permissions
- Executing /tmp/cleopatra-temp-script-48748886450.sh
- Temp File /tmp/cleopatra-temp-script-48748886450.sh Removed
+ Creating /tmp/ptconfigure-temp-script-72748278108.sh
+ chmod 755 /tmp/ptconfigure-temp-script-72748278108.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-72748278108.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-72748278108.sh
+ /tmp/ptconfigure-temp-script-72748278108.sh: 3: /tmp/ptconfigure-temp-script-72748278108.sh: behat: not found
+ Temp File /tmp/ptconfigure-temp-script-72748278108.sh Removed
+ Creating /tmp/ptconfigure-temp-script-35600300430.sh
+ chmod 755 /tmp/ptconfigure-temp-script-35600300430.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-35600300430.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-35600300430.sh
+ Temp File /tmp/ptconfigure-temp-script-35600300430.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.gcsoftshop.co.uk for more
@@ -117,11 +117,11 @@ Finally the testingkamen behat gets initialized as shown in the following screen
 How to Execute the Behat
 ---------------------------
 
-The command used for executing the behat under testingkamen is shown:
+The command used for executing the behat under pttest is shown:
 
 .. code-block:: bash
 
-		testingkamen behat execute
+		pttest behat execute
 
 
 After inputting the command above, the process of execution occurs as depicted in the below table.
@@ -143,24 +143,24 @@ If the user proceed the execution, the process of execution will occur as depict
 
 .. code-block:: bash
 
- kevells@corp:/kevellphara# testingkamen behat execute
+ kevell@corp:/# pttest behat execute
  Execute Behat? (Y/N) 
  y
  *******************************
  *   Golden Contact Computing  *
  *            Behat!           *
  *******************************
- Creating /tmp/cleopatra-temp-script-93439425208.sh
- chmod 755 /tmp/cleopatra-temp-script-93439425208.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-93439425208.sh Permissions
- Executing /tmp/cleopatra-temp-script-93439425208.sh
- /tmp/cleopatra-temp-script-93439425208.sh: 2: /tmp/cleopatra-temp-script-93439425208.sh: behat: not found
- Temp File /tmp/cleopatra-temp-script-93439425208.sh Removed
- Creating /tmp/cleopatra-temp-script-97268122064.sh
- chmod 755 /tmp/cleopatra-temp-script-97268122064.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-97268122064.sh Permissions
- Executing /tmp/cleopatra-temp-script-97268122064.sh
- Temp File /tmp/cleopatra-temp-script-97268122064.sh Removed
+ Creating /tmp/ptconfigure-temp-script-93439425208.sh
+ chmod 755 /tmp/ptconfigure-temp-script-93439425208.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-93439425208.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-93439425208.sh
+ /tmp/ptconfigure-temp-script-93439425208.sh: 2: /tmp/ptconfigure-temp-script-93439425208.sh: behat: not found
+ Temp File /tmp/ptconfigure-temp-script-93439425208.sh Removed
+ Creating /tmp/ptconfigure-temp-script-97268122064.sh
+ chmod 755 /tmp/ptconfigure-temp-script-97268122064.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-97268122064.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-97268122064.sh
+ Temp File /tmp/ptconfigure-temp-script-97268122064.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.gcsoftshop.co.uk for more
@@ -183,6 +183,6 @@ Benefits
 
 * It guides the users to identify the errors in php script.
 * Using the features of behat the users can frame and specify the behavior of driven development.
-* The process of initialization and execution can be done under this behat of testingkament.
+* The process of initialization and execution can be done under this behat of pttestt.
 * It is well-to-do in both cent OS and as well as in ubuntu.
 * The parameters used in declaration are not case sensitive which is an added advantage while compared to others.

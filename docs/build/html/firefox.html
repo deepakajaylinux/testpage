@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="FireFox 14" href="firefox14.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="FireFox14" href="firefox14.html" />
     <link rel="prev" title="File" href="file.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -111,7 +111,7 @@
   <li><a href="file.html"
          title="Previous Chapter: File">&laquo; File</a></li>
   <li><a href="firefox14.html"
-         title="Next Chapter: FireFox 14">FireFox 14 &raquo;</a></li>
+         title="Next Chapter: FireFox14">FireFox14 &raquo;</a></li>
               
             
             
@@ -145,36 +145,23 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="firefox">
 <h1>FireFox<a class="headerlink" href="#firefox" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div>This module is open source web browser. It used to install firefox. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the &#8216;Ubuntu stack&#8217; (cloud computing infrastructure). It is comfortable with Ubuntu and Cent OS.</div></blockquote>
+<p>This module used to install firefox. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the cloud computing infrastructure. It is comfortable with Ubuntu and Cent OS.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command can function about the objectives and commands available under Firefox module. It also explains the command to install firefox. Before installation, the user can read this help command explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure firefox <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following image also helps you to understand this module clearly.</p>
-<div class="highlight-bash"><div class="highlight"><pre> kevells@corp:/# cleopatra firefox <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre> kevell@corp:/# ptconfigure firefox <span class="nb">help</span>
 
  ******************************
 
@@ -186,7 +173,7 @@
 
 - install
 Installs Firefox
-example: cleopatra firefox install
+example: ptconfigure firefox install
 
 ------------------------------
 End Help
@@ -196,14 +183,14 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>It is a glaring process to install firefox module under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox install
+<p>It is a glaring process to install firefox module under ptconfigure by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure firefox install
 </pre></div>
 </div>
-<p>After key in the command, it can asks
-Install firefox?(Y/N)
-In case the user input as Y, it can install firefox from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Firefox17 install
+<p>After key in the command, it can asks</p>
+<p>Install firefox?(Y/N)</p>
+<p>In case the user input as Y, it can install firefox from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure firefox install
 
 Install Firefox? <span class="o">(</span>Y/N<span class="o">)</span>
 y
@@ -211,26 +198,26 @@ y
 *        Pharaoh Tools        *
 *          Firefox            *
 *******************************
-Creating /tmp/cleopatra-temp-script-51942043520.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-51942043520.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-51942043520.sh Permissions
-Executing /tmp/cleopatra-temp-script-51942043520.sh
-Cloning into <span class="s1">&#39;firefox17&#39;</span>...
+Creating /tmp/ptconfigure-temp-script-51942043520.sh
+chmod 755 /tmp/ptconfigure-temp-script-51942043520.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-51942043520.sh Permissions
+Executing /tmp/ptconfigure-temp-script-51942043520.sh
+Cloning into <span class="s1">&#39;firefox&#39;</span>...
 remote: Counting objects: 78, <span class="k">done</span>.
-remote: Total <span class="m">78</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
+remote: Total 78 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
 Unpacking objects: 100% <span class="o">(</span>78/78<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
-Temp File /tmp/cleopatra-temp-script-51942043520.sh Removed
-Program Executor Deleted <span class="k">if</span> existed
+Temp File /tmp/ptconfigure-temp-script-51942043520.sh Removed
+Program Executor Deleted <span class="k">if </span>existed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
 Single App Installer:
 --------------------------------------------
-Firefox17: Success
+Firefox: Success
 ------------------------------
 Installer Finished
 ******************************
@@ -250,23 +237,23 @@ Installer Finished
 <tr class="row-odd"><th class="head">Parameters</th>
 <th class="head">Alternative Parameter</th>
 <th class="head">Options</th>
-<th class="head">Comment</th>
+<th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra firefox Install</td>
-<td>Firefox</td>
+<tr class="row-even"><td>ptconfigure firefox Install</td>
+<td>We can use Firefox,
+firefox</td>
 <td>Y(YES)</td>
 <td>System starts installation
 process they can input as Y</td>
 </tr>
-<tr class="row-odd"><td>cleopatra firefox Install</td>
-<td>Firefox</td>
+<tr class="row-odd"><td>ptconfigure Firefox Install</td>
+<td>We can use Firefix,
+firefox</td>
 <td>N(No)</td>
-<td>If the user wish to
-quit the installation
-process they can
-input as N.|</td>
+<td>System stops installation
+process|</td>
 </tr>
 </tbody>
 </table>
@@ -275,7 +262,7 @@ input as N.|</td>
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Firefox uses support for new hardware and integration of all the updates published in that series to date.</li>
-<li>Firefox is an open source Web browser for Linux.</li>
+<li>It is comfortable with Ubuntu and centOS.</li>
 <li>Firefox is non-case sensitive.</li>
 <li>Privacy and security measures, smart searching</li>
 </ul>
@@ -317,7 +304,7 @@ input as N.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

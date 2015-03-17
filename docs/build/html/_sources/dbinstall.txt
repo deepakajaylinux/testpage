@@ -21,13 +21,13 @@ This command helps to determine the usage of DBinstall module. The user will com
 
 .. code-block:: bash
 	
-		dapperstrano DBInstall help
+		ptdeploy DBInstall help
        
 The pictorial representation of the above command is shown below,
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano DBInstall help
+ kevell@corp:/# ptdeploy DBInstall help
  ******************************
 
 
@@ -37,15 +37,15 @@ The pictorial representation of the above command is shown below,
 
           - install
           install the database for a project. run DBConfigure first to set up users unless you already have them.
-          example: dapperstrano db-install install
+          example: ptdeploy db-install install
 
           - save
           save the database for a project. run DBConfigure first to set up users unless you already have them.
-          example: dapperstrano db-install save
+          example: ptdeploy db-install save
 
           - drop
           drop the database for a project.
-          example: dapperstrano db-install drop
+          example: ptdeploy db-install drop
 
       
  --------------
@@ -56,7 +56,7 @@ The pictorial representation of the above command is shown below,
   Wordpress module adds the actions wordpress-install and wp-install to DBInstall, requiresd to allow the Post DB
   Install hooks for Wordpress, the DB restore won't work correctly without at least the url.
 
-  dapperstrano dbinstall wordpress-install --yes --guess --hook-url=www.site.env
+  ptdeploy dbinstall wordpress-install --yes --guess --hook-url=www.site.env
  ------------------------------
  End Help
  ******************************
@@ -74,16 +74,7 @@ When the user needs to install, the user can issue the following commands for DB
 
 .. code-block:: bash
 	
-		 dapperstrano dbinstall install
-
-
-
-
-
-
-
-
-
+		 ptdeploy dbinstall install
 
 
 The system ask for the Mysql host, Press Enter to use the default host. 
@@ -133,7 +124,7 @@ When the user needs to save the database for a project, the below given command 
 
 .. code-block:: bash
 	
-		dapperstrano dbinstall save	
+		ptdeploy dbinstall save	
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
@@ -176,7 +167,7 @@ When the user needs to drop the database for a project, the below given command 
 
 .. code-block:: bash
 	
-		dapperstrano dbinstall drop      
+		ptdeploy dbinstall drop      
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
                    
@@ -218,7 +209,7 @@ Alternative Parameter
 
 Either of the three alternative parameter can be used in command-  dbinstall, DBInstall and db-install
 
-eg: dapperstrano DBInstall help/  dapperstrano db-install help                 
+eg: ptdeploy DBInstall help/  ptdeploy db-install help                 
 
 Benefits
 --------------

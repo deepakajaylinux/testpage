@@ -14,7 +14,7 @@ The help command guides the users regarding the purpose of the module, its alter
 
 .. code-block:: bash
 
-		dapperstrano envconfig help
+		ptdeploy envconfig help
 
 The following screen shot depicts pictorially about the working of help command.
 
@@ -22,30 +22,30 @@ The following screen shot depicts pictorially about the working of help command.
 .. code-block:: bash
 
 
- kevells@corp:/# dapperstrano EnvironmentConfig help
+ kevell@corp:/# ptdeploy EnvironmentConfig help
  ******************************
 
 
   This command is part of a default Module and provides you with a method by which you can
   configure environments for your project from the command line. Currently compliant with
-  both Dapperstrano and Cleopatra.
+  both ptdeploy and ptconfigure.
 
 
   EnvironmentConfig, environmentconfig, environment-config, envconfig, env-config
 
         - list
         List current environments
-        example: cleopatra envconfig list --yes
+        example: ptconfigure envconfig list --yes
 
         - configure, config
         Configure the environments for your project to use
-        example: cleopatra envconfig config
-        example: cleopatra envconfig config --keep-current-environments
+        example: ptconfigure envconfig config
+        example: ptconfigure envconfig config --keep-current-environments
 
         - delete, del
         Configure the environments for your project to use
-        example: cleopatra envconfig delete
-        example: cleopatra envconfig del --environment-name="staging"
+        example: ptconfigure envconfig delete
+        example: ptconfigure envconfig del --environment-name="staging"
 
 
  ------------------------------
@@ -60,7 +60,7 @@ For the purpose of configuring the environments the user can use the following c
 
 .. code-block:: bash
 
-		dapperstrano envconfig config
+		ptdeploy envconfig config
 
 After inputting the command above the following operations takes place as shown:
 
@@ -97,7 +97,7 @@ Finally, the environment configuration gets success as depicted in the below scr
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra envconfig config
+ kevell@corp:/# ptconfigure envconfig config
  Configure Environments Here? (Y/N) 
  Y
  Environment 1  : 
@@ -127,7 +127,7 @@ While configuring an environment, if the user wish to configure with current env
 
 .. code-block:: bash
 
-		dapperstrano envconfig config --keep-current-environments
+		ptdeploy envconfig config --keep-current-environments
 
 
 After inputting the command above, it will asks the following details as shown in the tabular format:
@@ -168,7 +168,7 @@ The following screenshot pictorially represents the above mentioned process:
 .. code-block:: bash
 
 
- kevells@corp:/# dapperstrano envconfig config --keep-current-environments
+ kevell@corp:/# ptdeploy envconfig config --keep-current-environments
  Configure Environments Here? (Y/N) 
  Y
  Use existing environment settings? (Y/N) 
@@ -192,7 +192,7 @@ If the user needs to delete the environment configuration, they can input the fo
 
 .. code-block:: bash
 
-		dapperstrano envconfig del --environment-name="kevells"
+		ptdeploy envconfig del --environment-name="kevells"
 
 The user can specify the name of the environment they wish to delete as shown above.
 
@@ -219,7 +219,7 @@ Finally, the specified environment gets deleted as shown in the screenshot.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra envconfig del --environment-name="kevells"
+ kevell@corp:/# ptconfigure envconfig del --environment-name="kevells"
  Delete Environments Here?
  WARNING: Deleting an environment from papyrus is final. You may be looking for boxify box-destroy instead (Y/N) 
  Y
@@ -239,7 +239,7 @@ Another way of deleting an environment by without specifying the name of the env
 
 .. code-block:: bash
 
-		dapperstrano envconfig delete
+		ptdeploy envconfig delete
 
 After inputting the command above, it will ask 
 
@@ -260,12 +260,12 @@ Finally, the environment gets deleted as shown in the screenshot:
 .. code-block:: bash
 
 
- kevells@corp:/# dapperstrano envconfig delete
+ kevell@corp:/# ptdeploy envconfig delete
  Delete Environments Here?
  WARNING: Deleting an environment from papyrus is final. You may be looking for boxify box-destroy instead (Y/N) 
  Y
- PHP Notice:  Undefined index: environment-name in /opt/dapperstrano/dapperstrano/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
- PHP Notice:  Undefined index: environment-name in /opt/dapperstrano/dapperstrano/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
+ PHP Notice:  Undefined index: environment-name in /opt/ptdeploy/ptdeploy/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
+ PHP Notice:  Undefined index: environment-name in /opt/ptdeploy/ptdeploy/src/Modules/EnvironmentConfig/Model/EnvironmentConfigAllLinux .php on line 161
  ******************************
 
 
@@ -282,7 +282,7 @@ If the user wish to view the list of details regarding the environment configura
 
 .. code-block:: bash
 
-		dapperstrano envconfig list
+		ptdeploy envconfig list
 
 After inputting the command above, it will asks 
 
@@ -292,7 +292,7 @@ if the user specifies as Y, it will generate the display of output as shown in t
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano envconfig list
+ kevell@corp:/# ptdeploy envconfig list
  List Environments Here? (Y/N) 
  Y
  ******************************
@@ -364,5 +364,6 @@ Benefits
 
 * It is well-to-do in both cent OS and as well as in ubuntu.
 * The parameters used in declaration are not case sensitive which is an added advantage while compared to others.
-* This module leads the users how to configure the environment, how to delete the unwanted environment, how to use the list option for listing   the available environments.
+* This module leads the users how to configure the environment, how to delete the unwanted environment, how to use the list option for
+  listing   the available environments.
 

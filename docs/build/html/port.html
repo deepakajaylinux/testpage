@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PostgresServer" href="postgresserver.html" />
-    <link rel="prev" title="Phlagrant" href="cleophlagrant.html" />
+    <link rel="prev" title="Ping" href="ping.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -95,8 +95,7 @@
 <li><a class="reference internal" href="#">Port</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help">Help</a></li>
-<li><a class="reference internal" href="#local-host">Local Host</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#process">Process</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -108,8 +107,8 @@
             
               
                 
-  <li><a href="cleophlagrant.html"
-         title="Previous Chapter: Phlagrant">&laquo; Phlagrant</a></li>
+  <li><a href="ping.html"
+         title="Previous Chapter: Ping">&laquo; Ping</a></li>
   <li><a href="postgresserver.html"
          title="Next Chapter: PostgresServer">PostgresServer &raquo;</a></li>
               
@@ -145,36 +144,24 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="port">
 <h1>Port<a class="headerlink" href="#port" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>Port certify to check the status of ports and services. This module helps to check the port service under Cleopatra. This module is most comfortable with Ubuntu and cent OS.</p>
+<p>Port certify to check the status of ports and services. This module helps to check the port service under ptconfigure. This module is most comfortable with Ubuntu and cent OS.</p>
 </div>
 <div class="section" id="help">
 <h2>Help<a class="headerlink" href="#help" title="Permalink to this headline">¶</a></h2>
 <p>This help command guide the user about Port module. This is suitable for all type of IT people.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra port <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure port <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The help command shows a short list of the commands built into the port module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Port  <span class="nb">help</span>
- ******************************
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Port  <span class="nb">help</span>
+******************************
 
 
   This <span class="nb">command </span>allows you to <span class="nb">test </span>the status of ports and services running on them
@@ -182,12 +169,12 @@
   Port, port
 
 - is-responding
-Test <span class="k">if</span> a port is responding
-example: cleopatra port is-responding --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
+Test <span class="k">if </span>a port is responding
+example: ptconfigure port is-responding --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
 
 - process
 See which process is using a port
-example: cleopatra port process --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
+example: ptconfigure port process --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
 
 ------------------------------
 End Help
@@ -195,57 +182,38 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="local-host">
-<h2>Local Host<a class="headerlink" href="#local-host" title="Permalink to this headline">¶</a></h2>
-<p>When the user want to check the status of the port in local host then it can ask the user IP address. The following screenshot will explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra port process --port-number<span class="o">=</span><span class="s2">&quot;22&quot;</span>
-
-     <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Port <span class="m">22</span> is being used by the process sshd
-     ******************************
-
-
-     Port Modifications:
-     --------------------------------------------
-
-     Port: Success
-
-     ------------------------------
-     Port Mods Finished
-     ******************************
+<div class="section" id="process">
+<h2>Process<a class="headerlink" href="#process" title="Permalink to this headline">¶</a></h2>
+<p>If the user needs to see which process is using a particular port, the below command process the same.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure port process --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
+</pre></div>
+</div>
+<p>The following screenshot depicts the above mentioned procees</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure port process --port-number<span class="o">=</span><span class="s2">&quot;22&quot;</span>
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Port 22 is being used by the process sshd
+*****************************
+Port Modifications:
+--------------------------------------------
+Port: Success
+------------------------------
+Port Mods Finished
+******************************
+Is-responding
+---------------
+</pre></div>
+</div>
+<p>If the user needs to test if a particular port is responding or not, the below command process the same.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure port process --port-number<span class="o">=</span><span class="s2">&quot;25&quot;</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="table-bordered docutils">
-<colgroup>
-<col width="14%" />
-<col width="40%" />
-<col width="46%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Fuctions</th>
-<th class="head">Output</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>is-responding</td>
-<td>Test of port is responding  Or not</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-odd"><td>Process</td>
-<td>Test the process  status  Of port</td>
-<td>It will display the process of port|</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
-<p>The user can check the current working status of the port.
-It is a user friendly module.
-Less time consuming.</p>
+<ul class="simple">
+<li>The user can check the current working status of the port.</li>
+<li>It is a user friendly module.</li>
+<li>Less time consuming.</li>
+</ul>
 </div>
 </div>
 
@@ -284,7 +252,7 @@ Less time consuming.</p>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

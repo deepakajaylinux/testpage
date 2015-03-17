@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="IntelliJ" href="intellij.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="InstallPackage" href="installpackage.html" />
     <link rel="prev" title="HHVM" href="hhvm.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -111,8 +111,8 @@
                 
   <li><a href="hhvm.html"
          title="Previous Chapter: HHVM">&laquo; HHVM</a></li>
-  <li><a href="intellij.html"
-         title="Next Chapter: IntelliJ">IntelliJ &raquo;</a></li>
+  <li><a href="installpackage.html"
+         title="Next Chapter: InstallPackage">InstallPackage &raquo;</a></li>
               
             
             
@@ -146,19 +146,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="host-name">
@@ -170,23 +158,61 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command can function about the objectives and commands available under host name module. It also explains the command to modify host name module. Before modify host name, the user read this help command explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot can bring to mind it.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure hostname <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>allows you to view or modify hostname
+
+ Hostname, hostname
+
+       - change
+       Change the system hostname
+       example: ptconfigure hostname change --hostname<span class="o">=</span><span class="s2">&quot;my-laptop&quot;</span>
+
+       - show
+       Show the system hostname
+       example: ptconfigure hostname show
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="change">
 <h2>Change<a class="headerlink" href="#change" title="Permalink to this headline">¶</a></h2>
 <p>Hostnames are typically used in an administrative capacity and may appear in computer browser lists, active directory lists, IP address to hostname resolutions, email headers, etc. When the user want to change the host name, can use the following command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname change –hostname<span class="o">=</span>”kevellcorp”
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname change –hostname<span class="o">=</span>”kevellcorp”
 </pre></div>
 </div>
 <p>From the above command the new host name can enter.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure hostname change –hostname<span class="o">=</span>”kevellcorp”
+Enter Hostname:
+kevellcorp
+******************************
+
+
+Hostname Modifications:
+--------------------------------------------
+
+Hostname: Success
+
+------------------------------
+Hostname Mods Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="show">
 <h2>Show<a class="headerlink" href="#show" title="Permalink to this headline">¶</a></h2>
-<p>This module is a perceptible process to view host name under Cleopatra by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname show
+<p>This module is a perceptible process to view host name under ptconfigure by just using the command given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname show
 </pre></div>
 </div>
 <p>After key in the command, it shows the host name.</p>
@@ -208,20 +234,20 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra host name</td>
+<tr class="row-even"><td>ptconfigure hostname</td>
 <td>Instead of Hostname we can use
-Hostname,hostname</td>
+hostname</td>
 <td>Show</td>
 <td>System starts showing the host name
-process under cleopatra</td>
+process under ptconfigure</td>
 </tr>
-<tr class="row-odd"><td>cleopatra hostname change
+<tr class="row-odd"><td>ptconfigure hostname change
 &#8211;hostname=&#8221;Name&#8221;</td>
 <td>Instead of Hostname we can use
-Hostname,hostname</td>
+hostname</td>
 <td>Change</td>
 <td>System starts changing the host name
-process under cleopatra|</td>
+process under ptconfigure|</td>
 </tr>
 </tbody>
 </table>
@@ -271,7 +297,7 @@ process under cleopatra|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

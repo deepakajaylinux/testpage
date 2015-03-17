@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="DBInstall" href="dbinstall.html" />
-    <link rel="prev" title="Dapperstrano" href="Dapperstrano_main.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="ApacheVHostEditor" href="apachevirtualhost.html" />
+    <link rel="prev" title="PTDeploy" href="ptdeploy_main.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -111,10 +111,10 @@
             
               
                 
-  <li><a href="Dapperstrano_main.html"
-         title="Previous Chapter: Dapperstrano">&laquo; Dapperstrano</a></li>
-  <li><a href="dbinstall.html"
-         title="Next Chapter: DBInstall">DBInstall &raquo;</a></li>
+  <li><a href="ptdeploy_main.html"
+         title="Previous Chapter: PTDeploy">&laquo; PTDeploy</a></li>
+  <li><a href="apachevirtualhost.html"
+         title="Next Chapter: ApacheVHostEditor">ApacheVHostEdito... &raquo;</a></li>
               
             
             
@@ -148,19 +148,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="apache-control">
@@ -173,11 +161,11 @@
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command acts as a brief user guide that leads the users how to handle and use this particular module.</p>
 <p>The syntax for help command under the Apache control is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano ApacheControl <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ApacheControl <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The help command also lists out the alternative parameters that can be used in declaration. The following screenshot visualize you about the help command under Apache Control.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano ApacheControl <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy ApacheControl <span class="nb">help</span>
 ******************************
 
 
@@ -187,75 +175,79 @@
 
          - start
          Start the Apache server
-         example: dapperstrano apachecontrol start
-         example: dapperstrano apachecontrol start --yes --guess
-         example: dapperstrano apachecontrol start --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+         example: ptdeploy apachecontrol start
+         example: ptdeploy apachecontrol start --yes --guess
+         example: ptdeploy apachecontrol start --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
          - stop
          Stop the Apache server
-         example: dapperstrano apachecontrol stop
-         example: dapperstrano apachecontrol stop --yes --guess
-         example: dapperstrano apachecontrol stop --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+         example: ptdeploy apachecontrol stop
+         example: ptdeploy apachecontrol stop --yes --guess
+         example: ptdeploy apachecontrol stop --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
          - restart
          Restart the Apache server
-         example: dapperstrano apachecontrol restart
-         example: dapperstrano apachecontrol restart --yes --guess
-         example: dapperstrano apachecontrol restart --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+         example: ptdeploy apachecontrol restart
+         example: ptdeploy apachecontrol restart --yes --guess
+         example: ptdeploy apachecontrol restart --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
          - reload
          Reloads the Apache server configuration without restarting
-         example: dapperstrano apachecontrol reload
-         example: dapperstrano apachecontrol reload --yes --guess
-         example: dapperstrano apachecontrol reload --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+         example: ptdeploy apachecontrol reload
+         example: ptdeploy apachecontrol reload --yes --guess
+         example: ptdeploy apachecontrol reload --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
 ------------------------------
 End Help
 ******************************
 </pre></div>
 </div>
-<p>The four basic control functions included in the Apache server are :
-* Start
-* Stop
-* Restart
-* Reload</p>
+<p>The four basic control functions included in the Apache server are :</p>
+<ul class="simple">
+<li>Start</li>
+<li>Stop</li>
+<li>Restart</li>
+<li>Reload</li>
+</ul>
 <p>There is three possible ways in defining a control functions. For example, if we take start function, it can be defined in three different ways as required by the user as shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano ApacheControl start
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ApacheControl start
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano ApacheControl start --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ApacheControl start --yes --guess
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano ApacheControl start --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ApacheControl start --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 </pre></div>
 </div>
 <p>Let us see the usage of three different syntax in declaring in upcoming topics.</p>
 </div>
 <div class="section" id="alternative-parameters">
 <h2>Alternative parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
-<p>The following are the alternative parameters that can be defined in declarations:
-ApacheControl, apachecontrol, apachectl</p>
+<p>The following are the alternative parameters that can be defined in declarations:</p>
+<p>ApacheControl, apachecontrol, apachectl</p>
 </div>
 <div class="section" id="start-function">
 <h2>Start function<a class="headerlink" href="#start-function" title="Permalink to this headline">¶</a></h2>
 <p>If the user wish to start the apache control function, the can use the following syntaxes as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano ApacheControl start
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ApacheControl start
 
-<span class="o">(</span>This is the first <span class="nb">type </span>of syntax in defining a control functions <span class="k">for</span> apche server<span class="o">)</span>
+<span class="o">(</span>This is the first <span class="nb">type </span>of syntax in defining a control functions <span class="k">for </span>apche server<span class="o">)</span>
 </pre></div>
 </div>
 <p>After inputting the command as above, the following steps are performed:</p>
-<p>Step 1: Do you want to start Apache? (Y/N).
-The user have to specify Y or N.</p>
-<p>Step 2: What is the apache service name?
-(0) apache2
-(1) httpd</p>
+<p>Step 1: Do you want to start Apache? (Y/N).</p>
+<p>The user have to specify Y or N.</p>
+<p>Step 2: What is the apache service name?</p>
+<ol class="arabic simple" start="0">
+<li>apache2</li>
+<li>httpd</li>
+</ol>
 <p>The user should specify whether 0 or 1 as per the requirement.</p>
 <p>After getting the input of the apache service name, it will starts the process.</p>
 <p>The following screenshot depicts the start process pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano apachecontrol start
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol start
 Do you want to Start Apache? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 What is the apache service name?
@@ -276,16 +268,16 @@ Starting Apache...
 <div class="section" id="stop-function">
 <h2>Stop Function<a class="headerlink" href="#stop-function" title="Permalink to this headline">¶</a></h2>
 <p>If the user wish to stop the apache control function, the can use the following syntaxes as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano apachecontrol stop --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy apachecontrol stop --yes --guess
 
-<span class="o">(</span>This is the second <span class="nb">type </span>of syntax in defining a control functions <span class="k">for</span> apache server<span class="o">)</span>
+<span class="o">(</span>This is the second <span class="nb">type </span>of syntax in defining a control functions <span class="k">for </span>apache server<span class="o">)</span>
 </pre></div>
 </div>
 <p>The guess option can be used to perform a default values of the particular defined functions.</p>
 <p>For ubuntu the apche2 is the default value.</p>
 <p>For Cent OS httpd is the default value.</p>
 <p>The following screenshot depicts you about the stop function and purpose of guess options pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano apachecontrol stop --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol stop --yes --guess
 Stopping Apache...
 * Stopping web server apache2
 *
@@ -300,13 +292,13 @@ Stopping Apache...
 <div class="section" id="restart-a-function">
 <h2>Restart a function<a class="headerlink" href="#restart-a-function" title="Permalink to this headline">¶</a></h2>
 <p>If the user wish to restart the apache control function, the can use the following syntaxes as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano apachecontrol restart --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy apachecontrol restart --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 
-<span class="o">(</span>This is the third <span class="nb">type </span>of syntax in defining a control functions <span class="k">for</span> apche server<span class="o">)</span>
+<span class="o">(</span>This is the third <span class="nb">type </span>of syntax in defining a control functions <span class="k">for </span>apche server<span class="o">)</span>
 </pre></div>
 </div>
 <p>The user can use this third type of syntax to specify the value of the required apache command. The screen shot as shown below depicts this third type of syntax and process of restarting a function pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano apachecontrol restart --yes --apache-command=&quot;apache2&quot;
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol restart --yes --apache-command=&quot;apache2&quot;
 Restarting Apache...
 AH00558: apache2: Could not reliably determine the server&#39;s fully qualified domain name, using 127.0.1.1. Set the &#39;ServerName&#39; directive globa lly to suppress this message
 * Restarting web server apache2
@@ -323,15 +315,15 @@ AH00558: apache2: Could not reliably determine the server&#39;s fully qualified 
 <div class="section" id="reloading-a-function">
 <h2>Reloading a function<a class="headerlink" href="#reloading-a-function" title="Permalink to this headline">¶</a></h2>
 <p>If the user wish to reload the apache control function, the can use the following syntaxes as shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano apachecontrol reload
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy apachecontrol reload
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano apachecontrol --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy apachecontrol --yes --guess
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano apachecontrol --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy apachecontrol --yes --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
 </pre></div>
 </div>
 <p>The reload function performs reloading the apache server without restarting.</p>
@@ -382,7 +374,7 @@ AH00558: apache2: Could not reliably determine the server&#39;s fully qualified 
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

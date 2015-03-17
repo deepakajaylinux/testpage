@@ -14,14 +14,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 	
-		cleopatra PHPModules help
+		ptconfigure PHPModules help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Php module.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPModules help
+ kevell@corp:/# ptconfigure PHPModules help
 
  ******************************
 
@@ -34,7 +34,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
         Installs some common PHP Modules. These include php5-gd the image libs,
         php5-imagick the image libs, php5-curl the remote file handling libs,
         php5-mysql the libs for handling mysql connections.
-        example: cleopatra phpmods install
+        example: ptconfigure phpmods install
 
  ------------------------------
  End Help
@@ -48,7 +48,7 @@ The command used for installing the php modules in the users machine is shown be
 
 .. code-block:: bash
 
-		cleopatra phpmods install
+		ptconfigure phpmods install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
@@ -83,7 +83,7 @@ The following screenshot pictorially depicts the above described process of inst
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra phpmods install
+ kevell@corp:/# ptconfigure phpmods install
  
  Install PHP Modules? (Y/N) 
  Y
@@ -124,6 +124,7 @@ The following screenshot pictorially depicts the above described process of inst
 
 Benefits
 ------------
+
 * The parameters used in help and installation are not case sensitive which is an added advantage while compared to others.
 * It is well-to-do in both Ubuntu and as well as Cent OS.
 * All the frequently used php modules installation gets enveloped under a single process.

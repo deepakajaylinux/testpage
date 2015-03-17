@@ -12,12 +12,18 @@ Help command
 
 The help command describes about the purpose and the commands available under this modules. It also explains the command to install the particular module.
 
+.. code-block:: bash
+
+ 		ptconfigure ApacheServer help
+
+
 The screen shot as shown below, visually represent the usage of the help command under this module.
+
 
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra ApacheServer help
+ kevell@corp:/# ptconfigure ApacheServer help
  ******************************
 
 
@@ -27,7 +33,7 @@ The screen shot as shown below, visually represent the usage of the help command
 
         - install
         Installs Apache HTTP Server
-        example: cleopatra apacheserver install
+        example: ptconfigure apacheserver install
 
  ------------------------------
  End Help
@@ -38,11 +44,11 @@ The screen shot as shown below, visually represent the usage of the help command
 Installation
 -------------
 
-It is easier to install this particular tool under Cleopatra by simply using the command given below,
+It is easier to install this particular tool under ptconfigure by simply using the command given below,
 
 .. code-block:: bash
 
-		cleopatra ApacheServer install
+		ptconfigure ApacheServer install
 
 After giving the command above, the tool will ask as
 
@@ -54,7 +60,7 @@ The screen shot given below explains visually about the steps and commands invol
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra apacheserver install
+ kevell@corp:/# ptconfigure apacheserver install
  Install Apache Server? (Y/N) 
  Y
  *******************************
@@ -63,13 +69,9 @@ The screen shot given below explains visually about the steps and commands invol
  *******************************
  [Pharaoh Logging] Package apache2 from the Packager Apt is already installed, so not installing
  [Pharaoh Logging] Restarting apache2 service
- Output of config test was:
- apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or dir ectory
- Action 'configtest' failed.
- The Apache error log may have more information.
+ AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
  * Restarting web server apache2
-   ...fail!
- * The apache2 configtest failed.
+   ...done.
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -89,14 +91,15 @@ Options
 
 .. cssclass:: table-bordered
 
- +--------------------------+------------------------+-------------------------------------------------------------+
- | Parameter		    | Required	             | Comments							   |
- +==========================+========================+=============================================================+
- |Install 		    |Yes		     |If the user gives the input as Y it will install the 	   |
- |			    |			     |apache server						   |
- +--------------------------+------------------------+-------------------------------------------------------------+
- |Install		    |No			     |If the user gives input as N, it will get exit.|		   |
- +--------------------------+------------------------+-------------------------------------------------------------+
+ +-----------------------------+-----------------------------------------+------------+--------------------------------------+
+ | Parameters		       | Alternative Parameters			 | Required   | Comments			     |
+ +=============================+=========================================+============+======================================+
+ |Install Apache Server? (Y/N) | Instead of ApacheServer, we can use     | Yes	      | If the user gives input as yes, it   |
+ |			       | apache-server, apacheserver also.       |  	      |	will proceed installation	     |
+ +-----------------------------+-----------------------------------------+------------+--------------------------------------+
+ |Install Apache Server? (Y/N) | Instead of ApacheServer, we can use     | No         | If the user gives input as no, it    |
+ |                             | apache-server, apacheserver also.       |            | will quit the installation process|  |
+ +-----------------------------+-----------------------------------------+------------+--------------------------------------+
 
 
 
@@ -109,4 +112,8 @@ While the tool is processing it will automatically grabs the most-recent updated
 Benefits to the end users
 ---------------------------
 
-This modules helps the users in installing the apache server. It simplifies the work of the users while installing the server as its automatically check the current version of apache server.
+* This modules helps the users in installing the apache server. It simplifies the work of the users while installing the server as its 
+  automatically check the current version of apache server.
+* It is well-to-do in Cent OS and as well as in Ubuntu.
+* The parameters used in declaration is not case sensitive, which is an added advantage.
+

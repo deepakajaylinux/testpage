@@ -20,7 +20,7 @@ The following screen shot depicts pictorially about the working of help command.
 
 .. code-block:: bash
 
- kevells@corp:/# jrush jconf help
+ kevell@corp:/# jrush jconf help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -31,13 +31,13 @@ The following screen shot depicts pictorially about the working of help command.
 
       - configure, conf
       set up db user & pw for a project, use admins to create new resources as needed.
-      example: dapperstrano jconf conf joomla
-      example: dapperstrano jconf conf --yes --platform=joomla30 --mysql-host=127.0.0.1 --mysql-admin-user=""
+      example: ptdeploy jconf conf joomla
+      example: ptdeploy jconf conf --yes --platform=joomla30 --mysql-host=127.0.0.1 --mysql-admin-user=""
 
       - reset
-      reset current db to generic values so dapperstrano can write them. may need to be run before db conf.
-      example: dapperstrano jconf reset drupal
-      example: dapperstrano jconf reset --yes --platform=joomla30
+      reset current db to generic values so ptdeploy can write them. may need to be run before db conf.
+      example: ptdeploy jconf reset drupal
+      example: ptdeploy jconf reset --yes --platform=joomla30
 
       
  ------------------------------
@@ -92,7 +92,7 @@ Finally, the process of configuration gets completed as depicted in the screensh
 
 .. code-block:: bash
 
- kevells@corp:/# jrush jconf conf joomla
+ kevell@corp:/# jrush jconf conf joomla
  PHP Notice:  Undefined index: config-file in /opt/jrush/jrush/src/Modules/JConfiguration/Model/JConfigurationDataJoomla3.php on line 141
  PHP Notice:  Undefined index: config-file in /opt/jrush/jrush/src/Modules/JConfiguration/Model/JConfigurationDataJoomla3.php on line 141
  PHP Notice:  Undefined index: config-file in /opt/jrush/jrush/src/Modules/JConfiguration/Model/JConfigurationDataJoomla3.php on line 141

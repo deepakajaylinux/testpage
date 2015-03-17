@@ -14,13 +14,13 @@ The help command leads the users regarding the purpose and as well as about the 
 
 .. code-block:: bash
 
-	cleopatra systemdetection help
+	ptconfigure systemdetection help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under system detection.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra SystemDetection help
+	kevell@corp:/# ptconfigure SystemDetection help
 	******************************
 
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - detect
         Detects the Operating System
-        example: cleopatra system-detection detect
+        example: ptconfigure system-detection detect
 
 	------------------------------
 	End Help
@@ -44,7 +44,7 @@ The command used for system detection is given below.
 
 .. code-block:: bash
 
-		cleopatra systemdetection detect
+		ptconfigure systemdetection detect
 
 After inputting the command above, the process of system detection starts. During system detection the following information's regarding the corresponding machine are reported:
 
@@ -61,7 +61,7 @@ Finally, After detection the information regarding the above mentioned features 
 
 .. code-block:: bash
 
-        Kevells@corp:/# cleopatra system-detection detect
+        Kevell@corp:/# ptconfigure system-detection detect
 	******************************
 
 
@@ -95,5 +95,6 @@ Benefits
 ------------
 
 * The users can configure the application settings using this system detections.
-* The parameters used for declaring help command, system detection are not case sensitive which is an added advantage while compared to others.
+* The parameters used for declaring help command, system detection are not case sensitive which is an added advantage while compared to
+  others.
 * It is well-to-do in both Cent OS and as well as in Ubuntu.

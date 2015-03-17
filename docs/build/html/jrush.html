@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Jetty" href="jetty.html" />
     <link rel="prev" title="Jmeter" href="jmeter.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,6 +96,7 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -144,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="jrush">
@@ -168,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Jrush module. It lists out the alternative parameters of Jrush module. It also describes the syntax for installing the Jrush module. The help command for Jrush module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra JRush <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure JRush <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under JRush.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra JRush <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure JRush <span class="nb">help</span>
 ******************************
 
 
@@ -182,7 +171,7 @@
 
        - install
        Installs the latest version of jRush
-       example: cleopatra jRush install
+       example: ptconfigure jRush install
 
 ------------------------------
 End Help
@@ -193,9 +182,12 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the JRush to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra JRush install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure JRush install
 </pre></div>
 </div>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <p>After inputting the command above, the following operations occurs as shown in the tabular format.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
@@ -233,9 +225,9 @@ process they can input as N.|</td>
 <p>If the user proceeds the installation process the following operations occurs as shown in the tabular format.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="18%" />
-<col width="18%" />
-<col width="18%" />
+<col width="19%" />
+<col width="19%" />
+<col width="15%" />
 <col width="47%" />
 </colgroup>
 <thead valign="bottom">
@@ -287,28 +279,28 @@ specify they own location.|</td>
 <li>deletes the program executor if already existed.</li>
 </ul>
 <p>Finally, The installation of Jrush is completed. The following screen shot depicts the process of installing the JRush to your machine:</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra JRush install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure JRush install
 Install JRush - Joomla Command Line ? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *         JRush CLI !!        *
 *******************************
-What is the program data directory? Found <span class="s2">&quot;/opt/jrush&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, no end slash<span class="o">)</span>
+What is the program data directory? Found <span class="s2">&quot;/opt/jrush&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
 
-What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for</span> yes, No Trailing Slash<span class="o">)</span>
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
 
 git clone <span class="s1">&#39;https://github.com/PharaohTools/jrush.git&#39;</span>  /tmp/jrush/jrushCloning into <span class="s1">&#39;/tmp/jrush/jrush&#39;</span>...
 remote: Counting objects: 3452, <span class="k">done</span>.
-remote: Total <span class="m">3452</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-Receiving objects: 100% <span class="o">(</span>3452/3452<span class="o">)</span>, 2.04 MiB <span class="p">|</span> 50.00 KiB/s, <span class="k">done</span>.
+remote: Total 3452 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>3452/3452<span class="o">)</span>, 2.04 MiB | 50.00 KiB/s, <span class="k">done</span>.
 Resolving deltas: 100% <span class="o">(</span>2097/2097<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
 Program Data folder populated
-Program Executor Deleted <span class="k">if</span> existed
+Program Executor Deleted <span class="k">if </span>existed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -368,7 +360,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

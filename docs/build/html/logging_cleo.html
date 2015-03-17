@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Media Tools" href="mediatool.html" />
     <link rel="prev" title="LigHTTPDServer module" href="lighthttpd.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="logging">
@@ -169,12 +157,12 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>This command can function about the objectives and commands available in Logging  under Cleopatra module. It also explains the command to install logging module. Before installation, the user can read this help command explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra logging <span class="nb">help</span>
+<p>This command can function about the objectives and commands available in Logging  under ptconfigure module. It also explains the command to install logging module. Before installation, the user can read this help command explains its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure logging <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screenshots can visualize the help command</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Logging <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Logging <span class="nb">help</span>
 
 ******************************
 
@@ -185,8 +173,8 @@
 
        - log
        Logs a message to the console and optionally the php log
-       example: cleopatra logging log --log-message<span class="o">=</span><span class="s2">&quot;Here is something logging to the console and error log&quot;</span>
-       example: cleopatra logging log --php-log --log-message<span class="o">=</span><span class="s2">&quot;Here is something logging to the console and error log&quot;</span>
+       example: ptconfigure logging log --log-message<span class="o">=</span><span class="s2">&quot;Here is something logging to the console and error log&quot;</span>
+       example: ptconfigure logging log --php-log --log-message<span class="o">=</span><span class="s2">&quot;Here is something logging to the console and error log&quot;</span>
 
 ------------------------------
 End Help
@@ -196,12 +184,12 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>These installation procedures are for control php log. This section provides information about compatibility and requirements, basic instructions on how to install and configure cleopatra to more detailed information. This command can function about the objectives and commands available under Cleopatra logging module. It also explains the command to install logging module. Before installation, the user can read this help command explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra logging  log
+<p>These installation procedures are for control php log. This section provides information about compatibility and requirements, basic instructions on how to install and configure ptconfigure to more detailed information. This command can function about the objectives and commands available under ptconfigure logging module. It also explains the command to install logging module. Before installation, the user can read this help command explains its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure logging  log
 </pre></div>
 </div>
 <p>The following screenshots can visualize the help command</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra logging log
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure logging log
 
 Install Logging? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
@@ -214,7 +202,7 @@ Good Morning
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Good Morning
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -244,17 +232,17 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra logging Install</td>
+<tr class="row-even"><td>ptconfigure logging Install</td>
 <td>We can use Logging, logging</td>
 <td>Y</td>
-<td>System starts installation process
-under cleopatra</td>
+<td>System starts log process under
+ptconfigure</td>
 </tr>
-<tr class="row-odd"><td>cleopatra logging Install</td>
+<tr class="row-odd"><td>ptconfigure logging Install</td>
 <td>We can use Logging, logging</td>
 <td>N</td>
-<td>System stops installation process
-under cleopatra|</td>
+<td>System stops log process under
+ptconfigure|</td>
 </tr>
 </tbody>
 </table>
@@ -307,7 +295,7 @@ under cleopatra|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

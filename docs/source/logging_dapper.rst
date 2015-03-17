@@ -16,13 +16,13 @@ The help command acts as a brief user manual that leads the user about its usage
 
 .. code-block:: bash
 
-		dapperstrano Logging help
+		ptdeploy Logging help
 
 The following screen shot depicts pictorially about the working of help command.
 
 .. code-block:: bash
 
- kevells@corp:/# dapperstrano Logging help
+ kevell@corp:/# ptdeploy Logging help
  ******************************
 
 
@@ -32,7 +32,7 @@ The following screen shot depicts pictorially about the working of help command.
 
         - log
         Logs a message the console or
-        example: cleopatra logging log --php-log --log-message="Here is something logging to the console and error log"
+        example: ptconfigure logging log --php-log --log-message="Here is something logging to the console and error log"
 
  ------------------------------
  End Help
@@ -42,11 +42,11 @@ The following screen shot depicts pictorially about the working of help command.
 Installation
 ---------------
 
-The command used for installing the logging under dapperstrano is given below:
+The command used for installing the logging under ptdeploy is given below:
 
 .. code-block:: bash
 
-		dapperstrano logging log
+		ptdeploy logging log
 
 
 After inputting, the command above, the process of installation is depicted in the following tabular column.
@@ -85,7 +85,7 @@ Finally, installation gets completed. The following screenshot depicts the proce
 
 .. code-block:: bash
 
- kevells@corp:/#  dapperstrano logging log
+ kevell@corp:/#  ptdeploy logging log
  Install Logging? (Y/N) 
  Y
  *******************************
@@ -119,7 +119,7 @@ The syntax for declaring the log for php error log is shown below:
 
 .. code-block:: bash
 
-	cleopatra logging log --php- log --log-message="Here is something logging to the console and error log"
+	ptconfigure logging log --php- log --log-message="Here is something logging to the console and error log"
 
 Instead of 
 

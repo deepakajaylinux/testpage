@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Apache Module &mdash; KEVELL 0.1 documentation</title>
+    <title>ApacheModules &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Apache Reverse proxy modules" href="apachereverseproxy.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="ApacheReverseProxyModules" href="apachereverseproxy.html" />
     <link rel="prev" title="ApacheConf" href="apacheconf.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -92,10 +92,11 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Apache Module</a><ul>
+<li><a class="reference internal" href="#">ApacheModules</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -110,7 +111,7 @@
   <li><a href="apacheconf.html"
          title="Previous Chapter: ApacheConf">&laquo; ApacheConf</a></li>
   <li><a href="apachereverseproxy.html"
-         title="Next Chapter: Apache Reverse proxy modules">Apache Reverse p... &raquo;</a></li>
+         title="Next Chapter: ApacheReverseProxyModules">ApacheReversePro... &raquo;</a></li>
               
             
             
@@ -144,23 +145,11 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
-  <div class="section" id="apache-module">
-<h1>Apache Module<a class="headerlink" href="#apache-module" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="apachemodules">
+<h1>ApacheModules<a class="headerlink" href="#apachemodules" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <p>This module facilitates to install the Apache modules. It specifies the configuration of your environment. The checking availability of modules is possible. It is comfortable in Ubuntu as well as in Cent OS.</p>
@@ -168,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This help command explains about the purpose of a particular module. The syntax for installation is depicted under the help command. It also lists out the alternative parameters that can be used for declaration. The help command is easy to operate by the end user. The following command guides the user about using this module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra apache modules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure apache modules <span class="nb">help</span>
 </pre></div>
 </div>
 <p>After giving the command, the command will list the help options. The following screen shots will give visual effect for the usage of this module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra ApacheModules <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ApacheModules <span class="nb">help</span>
 ******************************
 
 
@@ -183,7 +172,7 @@
 
        - install
        Installs common apache Modules
-       example: cleopatra apache-modules install
+       example: ptconfigure apache-modules install
 
 ------------------------------
 End Help
@@ -193,7 +182,7 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Installation is not a difficult process to install this module under Cleopatra by merely using the command given below,</p>
+<p>Installation is not a difficult process to install this module under ptconfigure by merely using the command given below,</p>
 <div class="highlight-bash"><div class="highlight"><pre>Install apache-modules install
 </pre></div>
 </div>
@@ -201,11 +190,11 @@ End Help
 <div class="highlight-bash"><div class="highlight"><pre>Install Apache module? <span class="o">(</span>Y/N<span class="o">)</span>
 
 If you give an input as ‘Y’, the module will be installed successfully.
-If you give an input as ‘N’, <span class="k">then</span> it will come out of the installation.
+If you give an input as ‘N’, <span class="k">then </span>it will come out of the installation.
 </pre></div>
 </div>
 <p>The following screen shots will give visual effect for the installation of this module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/#  cleopatra apache-modules install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/#  ptconfigure apache-modules install
 Install Apache Modules? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
@@ -217,59 +206,59 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
  libxml2-dev
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">229</span> not upgraded.
-Need to get <span class="m">630</span> kB of archives.
+0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
+Need to get 630 kB of archives.
 After this operation, 2,928 kB of additional disk space will be used.
-Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2-dev amd64 2.9.1+dfsg1-3ubuntu4.4 <span class="o">[</span><span class="m">630</span> kB<span class="o">]</span>
-Fetched <span class="m">630</span> kB in 2min 38s <span class="o">(</span>3,990 B/s<span class="o">)</span>
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libxml2-dev amd64 2.9.1+dfsg1-3ubuntu4.4 <span class="o">[</span>630 kB<span class="o">]</span>
+Fetched 630 kB in 2min 38s <span class="o">(</span>3,990 B/s<span class="o">)</span>
 Selecting previously unselected package libxml2-dev:amd64.
-<span class="o">(</span>Reading database ... <span class="m">181481</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 181481 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3ubuntu4.4_amd64.deb ...
 Unpacking libxml2-dev:amd64 <span class="o">(</span>2.9.1+dfsg1-3ubuntu4.4<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
 Setting up libxml2-dev:amd64 <span class="o">(</span>2.9.1+dfsg1-3ubuntu4.4<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package libxml2-dev from the Packager Apt executed correctly
-Creating /tmp/cleopatra-temp-script-11435369770.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-11435369770.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-11435369770.sh Permissions
-Executing /tmp/cleopatra-temp-script-11435369770.sh
+Creating /tmp/ptconfigure-temp-script-11435369770.sh
+chmod 755 /tmp/ptconfigure-temp-script-11435369770.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-11435369770.sh Permissions
+Executing /tmp/ptconfigure-temp-script-11435369770.sh
 Enabling module rewrite.
 To activate the new configuration, you need to run:
  service apache2 restart
-Temp File /tmp/cleopatra-temp-script-11435369770.sh Removed
-Creating /tmp/cleopatra-temp-script-95277456152.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-95277456152.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-95277456152.sh Permissions
-Executing /tmp/cleopatra-temp-script-95277456152.sh
-Considering dependency filter <span class="k">for</span> deflate:
+Temp File /tmp/ptconfigure-temp-script-11435369770.sh Removed
+Creating /tmp/ptconfigure-temp-script-95277456152.sh
+chmod 755 /tmp/ptconfigure-temp-script-95277456152.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-95277456152.sh Permissions
+Executing /tmp/ptconfigure-temp-script-95277456152.sh
+Considering dependency filter <span class="k">for </span>deflate:
 Module filter already enabled
 Module deflate already enabled
-Temp File /tmp/cleopatra-temp-script-95277456152.sh Removed
-Creating /tmp/cleopatra-temp-script-1351048337.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-1351048337.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-1351048337.sh Permissions
-Executing /tmp/cleopatra-temp-script-1351048337.sh
-Considering dependency setenvif <span class="k">for</span> ssl:
+Temp File /tmp/ptconfigure-temp-script-95277456152.sh Removed
+Creating /tmp/ptconfigure-temp-script-1351048337.sh
+chmod 755 /tmp/ptconfigure-temp-script-1351048337.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-1351048337.sh Permissions
+Executing /tmp/ptconfigure-temp-script-1351048337.sh
+Considering dependency setenvif <span class="k">for </span>ssl:
 Module setenvif already enabled
-Considering dependency mime <span class="k">for</span> ssl:
+Considering dependency mime <span class="k">for </span>ssl:
 Module mime already enabled
-Considering dependency socache_shmcb <span class="k">for</span> ssl:
+Considering dependency socache_shmcb <span class="k">for </span>ssl:
 Enabling module socache_shmcb.
 Enabling module ssl.
 See /usr/share/doc/apache2/README.Debian.gz on how to configure SSL and create self-signed certificates.
 To activate the new configuration, you need to run:
   service apache2 restart
-Temp File /tmp/cleopatra-temp-script-1351048337.sh Removed
+Temp File /tmp/ptconfigure-temp-script-1351048337.sh Removed
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package libapache2-mod-php5 from the Packager Apt is already installed, so not installing
-Creating /tmp/cleopatra-temp-script-89813944614.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-89813944614.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-89813944614.sh Permissions
-Executing /tmp/cleopatra-temp-script-89813944614.sh
+Creating /tmp/ptconfigure-temp-script-89813944614.sh
+chmod 755 /tmp/ptconfigure-temp-script-89813944614.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-89813944614.sh Permissions
+Executing /tmp/ptconfigure-temp-script-89813944614.sh
 Module php5 already enabled
-Temp File /tmp/cleopatra-temp-script-89813944614.sh Removed
+Temp File /tmp/ptconfigure-temp-script-89813944614.sh Removed
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Restarting apache2 service
 Output of config <span class="nb">test </span>was:
-apache2: Syntax error on line <span class="m">214</span> of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or
+apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or
 directory
 Action <span class="s1">&#39;configtest&#39;</span> failed.
 The Apache error log may have more information.
@@ -278,7 +267,7 @@ The Apache error log may have more information.
 * The apache2 configtest failed.
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -290,30 +279,39 @@ Installer Finished
 ******************************
 </pre></div>
 </div>
-<table border="1" class="table-bordered docutils" id="making-a-table">
+</div>
+<div class="section" id="option">
+<span id="making-a-table"></span><h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="24%" />
-<col width="16%" />
-<col width="60%" />
+<col width="15%" />
+<col width="32%" />
+<col width="29%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
 <th class="head">Required</th>
+<th class="head">Alternative Parameters</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install</td>
+<tr class="row-even"><td>Install Apache Module? (Y/N)</td>
 <td>Yes</td>
-<td>It will install the apache module under Cleopatra</td>
+<td>Instead of using apachemodules the
+user can use ApacheModules, apachemods
+apache-modules</td>
+<td>If the user wish to install they can
+input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Install Apache Module? (Y/N)</td>
-<td>Yes</td>
-<td>If the user gives input as yes, it will install the module.</td>
-</tr>
-<tr class="row-even"><td>Install Apache Module? (Y/N)</td>
 <td>No</td>
-<td>If the user gives input as no, it will be exited.|</td>
+<td>Instead of using apachemodules the
+user can use ApacheModules, apachemods
+apache-modules|</td>
+<td>If the user wish to quit
+uninstallation they can input as N.</td>
 </tr>
 </tbody>
 </table>
@@ -322,7 +320,7 @@ Installer Finished
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li>The module is an aid to Link with Cleopatra.</li>
+<li>The module is an aid to Link with ptconfigure.</li>
 <li>While installing the Apache modules, it will acquiesce the configuration files.</li>
 <li>If the configuration files are not available in the system this module will automatically install it.</li>
 </ul>
@@ -365,7 +363,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>
@@ -387,7 +385,7 @@ Installer Finished
         <li>
           Go to
         <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/ApacheModules.rst">
-          Apache Module
+          ApacheModules
         </a> on GitHub.
       </li>
 

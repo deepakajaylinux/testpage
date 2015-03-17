@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Copy" href="copy1.html" />
-    <link rel="prev" title="Cleopatra" href="cleo.html" />
+    <link rel="prev" title="Cleofy" href="cleofy.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,8 +107,8 @@
             
               
                 
-  <li><a href="cleo.html"
-         title="Previous Chapter: Cleopatra">&laquo; Cleopatra</a></li>
+  <li><a href="cleofy.html"
+         title="Previous Chapter: Cleofy">&laquo; Cleofy</a></li>
   <li><a href="copy1.html"
          title="Next Chapter: Copy">Copy &raquo;</a></li>
               
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="composer">
@@ -169,10 +157,10 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of composer module. The user will come to know about the different ways/format to execute this module. This command guides the end user regarding the alternative parameters and command for installation. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra composer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure composer <span class="nb">help</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra composer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure composer <span class="nb">help</span>
 ******************************
 
 
@@ -182,7 +170,7 @@
 
        - install
        Installs the latest version of composer
-       example: cleopatra composer install
+       example: ptconfigure composer install
 
 ------------------------------
 End Help
@@ -193,7 +181,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to install composer module in machine, the below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra composer install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure composer install
 </pre></div>
 </div>
 <p>While installing, the system ask for the directory name, if you wants to set up your PATH, you can define your path. Define your path has to be followed by &#8216;/&#8217; symbol. Press Enter to use default path.</p>
@@ -202,10 +190,10 @@ End Help
 <p>&#8220;What is the program executer directory? Found &#8220;/usr/bin&#8221; - Use this? &#8220;</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="22%" />
+<col width="24%" />
 <col width="20%" />
 <col width="19%" />
-<col width="39%" />
+<col width="38%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
@@ -215,24 +203,60 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra composer Install</td>
+<tr class="row-even"><td>ptconfigure composer Install</td>
 <td>Composer , composer</td>
 <td>Y</td>
 <td>System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra composer Install</td>
+<tr class="row-odd"><td>ptconfigure composer Install</td>
 <td>Composer , composer</td>
 <td>N</td>
 <td>System stops installation process|</td>
 </tr>
 </tbody>
 </table>
+<p>The screenshot for the installation command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/<span class="nv">$ </span>ptconfigure composer install
+Install Composer - Update to latest version ? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+******************************
+*        Pharaoh Tools        *
+*          Composer!         *
+*******************************
+What is the program data directory? Found <span class="s2">&quot;/opt/composer&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
+
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
+
+git clone <span class="s1">&#39;https://github.com/phpengine/composer-phar.git&#39;</span>  /tmp/composer/composerCloning into <span class="s1">&#39;/tmp/composer/composer&#39;</span>...
+
+remote: Counting objects: 6, <span class="k">done</span>.
+remote: Total 6 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 6
+Unpacking objects: 100% <span class="o">(</span>6/6<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+Program Data Folder /opt/composer Deleted <span class="k">if </span>existed
+Program Data folder populated
+Program Executor Deleted <span class="k">if </span>existed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+Composer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>It installs dependencies (e.g. libraries) for an application.</li>
-<li>It also allows users to install PHP applications that are available on &#8220;Packagist&#8221; which is its main repository containing available packages.</li>
+<li>It also allows users to install PHP applications that are available on &#8220;Packagist&#8221; which is its main repository containing available
+packages.</li>
 <li>It also provides auto load capabilities for libraries that specify auto load information to ease usage of third-party code.</li>
 </ul>
 </div>
@@ -273,7 +297,7 @@ End Help
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

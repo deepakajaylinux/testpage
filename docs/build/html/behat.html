@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Testingkamen" href="Testingkamen_main.html" />
+    <link rel="up" title="PTTest" href="pttest_main.html" />
     <link rel="next" title="Cucumber" href="cucumber.html" />
-    <link rel="prev" title="Testingkamen" href="Testingkamen_main.html" />
+    <link rel="prev" title="PTTest" href="pttest_main.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,8 +108,8 @@
             
               
                 
-  <li><a href="Testingkamen_main.html"
-         title="Previous Chapter: Testingkamen">&laquo; Testingkamen</a></li>
+  <li><a href="pttest_main.html"
+         title="Previous Chapter: PTTest">&laquo; PTTest</a></li>
   <li><a href="cucumber.html"
          title="Next Chapter: Cucumber">Cucumber &raquo;</a></li>
               
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="behat">
@@ -168,12 +156,12 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute a behat under the testingkamen. The command used for declaring help is shown below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen behat <span class="nb">help</span>
+<p>The help command guides the user regarding the purpose and options available under a module. It lists out the alternative parameters that are used in declaration. It describes the syntax for initialize and to execute a behat under the pttest. The command used for declaring help is shown below:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest behat <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot depicts pictorially about the working of help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# testingkamen Behat <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest Behat <span class="nb">help</span>
 ******************************
 
 
@@ -183,12 +171,12 @@
 
        - init, initialize
        Initialises the Behat <span class="nb">test </span>suite of this project
-       example: testingkamen behat init
-       example: testingkamen behat initialize
+       example: pttest behat init
+       example: pttest behat initialize
 
        - execute
        Executes the Behat <span class="nb">test </span>suite of this project
-       example: testingkamen behat execute
+       example: pttest behat execute
 
 ------------------------------
 End Help
@@ -198,12 +186,12 @@ End Help
 </div>
 <div class="section" id="how-to-initialize-behat">
 <h2>How to Initialize Behat<a class="headerlink" href="#how-to-initialize-behat" title="Permalink to this headline">¶</a></h2>
-<p>The command used for initialize the behat under testingkamen is shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen behat init
+<p>The command used for initialize the behat under pttest is shown:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest behat init
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen behat initialize
+<div class="highlight-bash"><div class="highlight"><pre>pttest behat initialize
 </pre></div>
 </div>
 <p>After inputting the command above, the process of initialize occurs as depicted in the below table.</p>
@@ -236,28 +224,28 @@ process they can input as N.|</td>
 </tr>
 </tbody>
 </table>
-<p>Finally the testingkamen behat gets initialized as shown in the following screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# testingkamen behat execute
-Execute Behat? <span class="o">(</span>Y/N<span class="o">)</span>
+<p>Finally the pttest behat gets initialized as shown in the following screenshot.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest behat init
+Initialize Behat? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *   Golden Contact Computing  *
-*            Behat!           *
+*          Behat         *
 *******************************
-Creating /tmp/cleopatra-temp-script-70101140190.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-70101140190.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-70101140190.sh Permissions
-Executing /tmp/cleopatra-temp-script-70101140190.sh
-/tmp/cleopatra-temp-script-70101140190.sh: 2: /tmp/cleopatra-temp-script-70101140190.sh: behat: not found
-Temp File /tmp/cleopatra-temp-script-70101140190.sh Removed
-Creating /tmp/cleopatra-temp-script-48748886450.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-48748886450.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-48748886450.sh Permissions
-Executing /tmp/cleopatra-temp-script-48748886450.sh
-Temp File /tmp/cleopatra-temp-script-48748886450.sh Removed
+Creating /tmp/ptconfigure-temp-script-72748278108.sh
+chmod 755 /tmp/ptconfigure-temp-script-72748278108.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-72748278108.sh Permissions
+Executing /tmp/ptconfigure-temp-script-72748278108.sh
+/tmp/ptconfigure-temp-script-72748278108.sh: 3: /tmp/ptconfigure-temp-script-72748278108.sh: behat: not found
+Temp File /tmp/ptconfigure-temp-script-72748278108.sh Removed
+Creating /tmp/ptconfigure-temp-script-35600300430.sh
+chmod 755 /tmp/ptconfigure-temp-script-35600300430.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-35600300430.sh Permissions
+Executing /tmp/ptconfigure-temp-script-35600300430.sh
+Temp File /tmp/ptconfigure-temp-script-35600300430.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.gcsoftshop.co.uk <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.gcsoftshop.co.uk <span class="k">for </span>more
 ******************************
 
 
@@ -275,8 +263,8 @@ Installer Finished
 </div>
 <div class="section" id="how-to-execute-the-behat">
 <h2>How to Execute the Behat<a class="headerlink" href="#how-to-execute-the-behat" title="Permalink to this headline">¶</a></h2>
-<p>The command used for executing the behat under testingkamen is shown:</p>
-<div class="highlight-bash"><div class="highlight"><pre>testingkamen behat execute
+<p>The command used for executing the behat under pttest is shown:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest behat execute
 </pre></div>
 </div>
 <p>After inputting the command above, the process of execution occurs as depicted in the below table.</p>
@@ -310,27 +298,27 @@ execution process they can input as N.|</td>
 </tbody>
 </table>
 <p>If the user proceed the execution, the process of execution will occur as depicted in the following screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/kevellphara# testingkamen behat execute
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest behat execute
 Execute Behat? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *   Golden Contact Computing  *
 *            Behat!           *
 *******************************
-Creating /tmp/cleopatra-temp-script-93439425208.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-93439425208.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-93439425208.sh Permissions
-Executing /tmp/cleopatra-temp-script-93439425208.sh
-/tmp/cleopatra-temp-script-93439425208.sh: 2: /tmp/cleopatra-temp-script-93439425208.sh: behat: not found
-Temp File /tmp/cleopatra-temp-script-93439425208.sh Removed
-Creating /tmp/cleopatra-temp-script-97268122064.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-97268122064.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-97268122064.sh Permissions
-Executing /tmp/cleopatra-temp-script-97268122064.sh
-Temp File /tmp/cleopatra-temp-script-97268122064.sh Removed
+Creating /tmp/ptconfigure-temp-script-93439425208.sh
+chmod 755 /tmp/ptconfigure-temp-script-93439425208.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-93439425208.sh Permissions
+Executing /tmp/ptconfigure-temp-script-93439425208.sh
+/tmp/ptconfigure-temp-script-93439425208.sh: 2: /tmp/ptconfigure-temp-script-93439425208.sh: behat: not found
+Temp File /tmp/ptconfigure-temp-script-93439425208.sh Removed
+Creating /tmp/ptconfigure-temp-script-97268122064.sh
+chmod 755 /tmp/ptconfigure-temp-script-97268122064.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-97268122064.sh Permissions
+Executing /tmp/ptconfigure-temp-script-97268122064.sh
+Temp File /tmp/ptconfigure-temp-script-97268122064.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.gcsoftshop.co.uk <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.gcsoftshop.co.uk <span class="k">for </span>more
 ******************************
 
 
@@ -351,7 +339,7 @@ Installer Finished
 <ul class="simple">
 <li>It guides the users to identify the errors in php script.</li>
 <li>Using the features of behat the users can frame and specify the behavior of driven development.</li>
-<li>The process of initialization and execution can be done under this behat of testingkament.</li>
+<li>The process of initialization and execution can be done under this behat of pttestt.</li>
 <li>It is well-to-do in both cent OS and as well as in ubuntu.</li>
 <li>The parameters used in declaration are not case sensitive which is an added advantage while compared to others.</li>
 </ul>
@@ -393,7 +381,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

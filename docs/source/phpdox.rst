@@ -14,14 +14,14 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 	
-		cleopatra Phpdox help
+		ptconfigure Phpdox help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Phpdox.
 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPDox help
+ kevell@corp:/# ptconfigure PHPDox help
 
  ******************************
 
@@ -31,7 +31,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
          - install
          Installs the latest version of Docker
-         example: cleopatra phpdox install
+         example: ptconfigure phpdox install
 
  ------------------------------
  End Help
@@ -44,22 +44,22 @@ The command used for installing the phpdox in the users machine is shown below:
 
 .. code-block:: bash
 
-		cleopatra phpdox install
+		ptconfigure phpdox install
 
 After inputting the command above, the following process occurs as shown in the tabular format.
 
 
 .. cssclass:: table-bordered
 
- +---------------------------+------------------------------+--------------+-------------------------------------------------+
- | Parameters		     | Alternative Parameter	    | Options      | Comments					     |
- +===========================+==============================+==============+=================================================+
- |Install PHPDox? (Y/N)      | Instead of phpdox, we can use|Y(Yes)        | If the user wish to proceed the installation    |
- |                           | PHPDox also.                 |              | process they can input as Y.		     |
- +---------------------------+------------------------------+--------------+-------------------------------------------------+
- |Install PHPDox? (Y/N)      | Instead of phpdox, we can use|N(No)	   | If the user wish to quit the installation       |
- |			     | PHPDox also		    |		   | process they can input as N.|		     |
- +---------------------------+------------------------------+--------------+-------------------------------------------------+
+ +---------------------------+--------------------------------+--------------+-------------------------------------------------+
+ | Parameters		     | Alternative Parameter	      | Options      | Comments					       |
+ +===========================+================================+==============+=================================================+
+ |Install PHPDox? (Y/N)      | Instead of phpdox, we can use  |Y(Yes)        | If the user wish to proceed the installation    |
+ |                           | PHPDox also.                   |              | process they can input as Y.		       |
+ +---------------------------+--------------------------------+--------------+-------------------------------------------------+
+ |Install PHPDox? (Y/N)      | Instead of phpdox, we can use  |N(No)	     | If the user wish to quit the installation       |
+ |			     | PHPDox also		      |		     | process they can input as N.|		       |
+ +---------------------------+--------------------------------+--------------+-------------------------------------------------+
 
 
 
@@ -69,7 +69,7 @@ If the user proceeds the installation, the process of installation looks like th
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra phpdox install
+ kevell@corp:/# ptconfigure phpdox install
 
  Install PHPDox? (Y/N) 
  y
@@ -77,10 +77,10 @@ If the user proceeds the installation, the process of installation looks like th
  *        Pharaoh Tools        *
  *         PHPDox!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-27804177792.sh
- chmod 755 /tmp/cleopatra-temp-script-27804177792.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-27804177792.sh Permissions
- Executing /tmp/cleopatra-temp-script-27804177792.sh
+ Creating /tmp/ptconfigure-temp-script-27804177792.sh
+ chmod 755 /tmp/ptconfigure-temp-script-27804177792.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-27804177792.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-27804177792.sh
  --2015-01-28 15:42:36--  http://phpdox.de/releases/phpdox.phar
  Resolving phpdox.de (phpdox.de)... 188.94.27.6
  Connecting to phpdox.de (phpdox.de)|188.94.27.6|:80... connected.
@@ -121,7 +121,7 @@ If the user proceeds the installation, the process of installation looks like th
 
  phpDox 0.7.0 - Copyright (C) 2010 - 2015 by Arne Blankerts
 
- Temp File /tmp/cleopatra-temp-script-27804177792.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-27804177792.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more

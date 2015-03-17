@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Mysqlserver" href="mysqlserver.html" />
     <link rel="prev" title="ModuleManager" href="modulemanager.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="mongodb">
@@ -169,25 +157,29 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>This command can function about the objectives and commands available under Mongo DB module. It also explains the command to install server. Before installation you read this help command explains its function</div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre>  kevells@corp:/# cleopatra MongoDB <span class="nb">help</span>
+<div>This command can function about the objectives and commands available under Mongo DB module. It also explains the command to install server.</div></blockquote>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure MongoDB <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Before installation you read this help command explains its function</p>
+<div class="highlight-bash"><div class="highlight"><pre>  kevell@corp:/# ptconfigure MongoDB <span class="nb">help</span>
   ******************************
 
 
  This <span class="nb">command </span>allows you to install the MongoDB Server. Currently only
  MongoDB Workbench, the Database management GUI provided by Oracle <span class="k">for</span>
- MongoDB.
+<span class="k"> </span>MongoDB.
 
  MongoDB, mongo-db-server, mongodb-server, mongodbserver, mongodb, mongo-db
 
        - install
        Install MongoDB Server
-       example: cleopatra mongodb install
+       example: ptconfigure mongodb install
 
  Notes, during mongodb install a root password will be set. First, it<span class="s1">&#39;ll look</span>
 <span class="s1"> for the parameter --mongodb-root-pass, if this is not set, it&#39;</span>ll look in the
- cleopatra config <span class="k">for</span> a mongodb-default-root-pass setting, and failing both of
- those it will just <span class="nb">set </span>the password <span class="k">for</span> root to cleopatra.
+ ptconfigure config <span class="k">for </span>a mongodb-default-root-pass setting, and failing both of
+ those it will just <span class="nb">set </span>the password <span class="k">for </span>root to ptconfigure.
 
 ------------------------------
 End Help
@@ -198,12 +190,13 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Use this module to install Mongo DB on Ubuntu Linux systems from .deb packages. While Ubuntu includes its own Mongo DB packages, the official Mongo DB packages are generally more up-to-date.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra mongoDB  server install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure mongodb-server install
 </pre></div>
 </div>
 <p>Install mongo DB server?(Y/N)</p>
+<p>If the user gives No it will exit.</p>
 <p>When the user gives input as Yes automatically it will install all depencies in root pass ass default and also install updated version. The following screen shot will explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra mongodb-server install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure mongodb-server install
 
 Install MongoDB Server? (Y/N)
 y
@@ -312,42 +305,43 @@ Installer Finished
 ******************************
 </pre></div>
 </div>
-<p>If the user gives No it will exit.</p>
 </div>
 <div class="section" id="options">
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordred docutils">
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="24%" />
-<col width="36%" />
+<col width="23%" />
+<col width="27%" />
+<col width="9%" />
+<col width="41%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Directory</th>
-<th class="head">Option</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Options</th>
 <th class="head">Comment</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install mongoDB server</td>
-<td>YES</td>
-<td>In Spite of mongoDB, the
+<tr class="row-even"><td>Install mongoDB
+Server? (Y/N)</td>
+<td>Instead of mongoDB, the
 following alternatives can
 also be used: MongoDB,
 mongo-db-server,mongo-db,
 mongodb-server, mongodb,</td>
-<td>It will install mongoDB under Cleopatra</td>
+<td>Yes</td>
+<td>It installs mongoDB under ptconfigure</td>
 </tr>
-<tr class="row-odd"><td>Install mongoDB server</td>
-<td>NO</td>
-<td>In Spite of mongoDB, the
+<tr class="row-odd"><td>Install mongoDB
+Server? (Y/N)</td>
+<td>Instead of mongoDB, the
 following alternatives can
 also be used: MongoDB,
 mongo-db-server,mongo-db,
 mongodb-server, mongodb|</td>
-<td>It will exit</td>
+<td>No</td>
+<td>It exits</td>
 </tr>
 </tbody>
 </table>
@@ -358,7 +352,7 @@ mongodb-server, mongodb|</td>
 <li>Mongo DB is document oriented database.</li>
 <li>Mongo DB can updated the latest version.</li>
 <li>While installing mongo DB all depencies, libraries can also installed automatically without searching from the web.</li>
-<li>MongoDB can store the business subject in the minimal number of                    documents.</li>
+<li>MongoDB can store the business subject in the minimal number of documents.</li>
 <li>Speed enhancements.</li>
 <li>Great advantage of load balancing and data replication features over multiple machines for storing files.</li>
 </ul>
@@ -400,7 +394,7 @@ mongodb-server, mongodb|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

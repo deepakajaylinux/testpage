@@ -14,13 +14,13 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 	
-		cleopatra svn help
+		ptconfigure svn help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under SVN.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra svn help
+ kevell@corp:/# ptconfigure svn help
  ******************************
 
 
@@ -31,15 +31,15 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest available (In your package manager) version of SVN
-        example: cleopatra svn install
+        example: ptconfigure svn install
 
         - ensure
         Ensures SVN is installed
-        example: cleopatra svn ensure
+        example: ptconfigure svn ensure
 
         - uninstall
         Installs the latest version of SVN
-        example: cleopatra svn uninstall
+        example: ptconfigure svn uninstall
 
  ------------------------------
  End Help
@@ -54,7 +54,7 @@ The command used for installing the SVN to the ubuntu is shown below.
 
 .. code-block:: bash
 		
-		cleopatra svn install
+		ptconfigure svn install
 
 After inputting the command above, the following operations occurs as shown in tabular format.
 
@@ -83,7 +83,7 @@ If the user proceeds the installation process, during execution of installation 
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra svn install
+ kevell@corp:/# ptconfigure svn install
  Install SVN? (Y/N) 
  Y
  *******************************
@@ -143,7 +143,7 @@ The command used for un installing the SVN to the ubuntu is shown below.
 
 .. code-block:: bash
 
-		cleopatra svn uninstall
+		ptconfigure svn uninstall
 
 After inputting the command above, the following operations occurs as shown in the tabular format.
 
@@ -178,7 +178,7 @@ Finally, the un installation of SVN gets completed. The following screenshot dep
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra svn uninstall
+ kevell@corp:/# ptconfigure svn uninstall
  Uninstall SVN? (Y/N) 
  Y
  *******************************
@@ -220,7 +220,7 @@ The command used for ensuring SVN is shown below.
 
 .. code-block:: bash
 
-		cleopatra svn ensure
+		ptconfigure svn ensure
 
 The ensure process performs the following functions:
 
@@ -233,7 +233,7 @@ The following screenshots depicts the process of ensuring.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra svn ensure
+ kevell@corp:/# ptconfigure svn ensure
  [Pharaoh Logging] Ensure module install is not checking versions
  sh: 1: svn: not found
  [Pharaoh Logging] Module SVN reports itself as Not Installed 
@@ -268,6 +268,7 @@ The following screenshots depicts the process of ensuring.
 Benefits
 -----------
 
-* The parameters used in declaring the help and installations, uninstall, ensure are not case sensitive, which is added advantage while compared to others.
+* The parameters used in declaring the help and installations, uninstall, ensure are not case sensitive, which is added advantage while
+  compared to others.
 * The user can ensure about the availability before proceeding the installation.
 * It will not overwrite the packages, hence it is less time-consuming.

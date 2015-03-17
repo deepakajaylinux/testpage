@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="VNCPasswd" href="vncpasswd.html" />
-    <link rel="prev" title="Virtual box" href="virtualbox.html" />
+    <link rel="prev" title="VMwareWorkstation" href="vmwareworkstation.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,8 +107,8 @@
             
               
                 
-  <li><a href="virtualbox.html"
-         title="Previous Chapter: Virtual box">&laquo; Virtual box</a></li>
+  <li><a href="vmwareworkstation.html"
+         title="Previous Chapter: VMwareWorkstation">&laquo; VMwareWorkstatio...</a></li>
   <li><a href="vncpasswd.html"
          title="Next Chapter: VNCPasswd">VNCPasswd &raquo;</a></li>
               
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="vnc">
@@ -169,11 +157,11 @@
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command provides an awareness regarding the VNC module. It also describes about the options that can be performed under this VNC module.
 The help command for this VNC module is given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra vnc <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure vnc <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The screen shot given below shows you an pictorial representation regarding the usage of help command under VNC module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra vnc <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure vnc <span class="nb">help</span>
 ******************************
 
 
@@ -183,7 +171,7 @@ The help command for this VNC module is given below,</p>
 
        - install
        Installs VNC through apt-get
-       example: cleopatra vnc install
+       example: ptconfigure vnc install
 
        ------------------------------
        End Help
@@ -193,40 +181,36 @@ The help command for this VNC module is given below,</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra vnc install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure vnc install
 </pre></div>
 </div>
 <p>After inputting the command as given above, the following operations takes places.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="52%" />
-<col width="14%" />
-<col width="34%" />
+<col width="19%" />
+<col width="23%" />
+<col width="9%" />
+<col width="49%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Required</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
 <th class="head">Comment</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install VNC? (Y/N)</td>
-<td>Y(YES)</td>
-<td>If the user wish to proceed
-with installation process,
-they can input as Y.</td>
+<td>VNC, vnc</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed with installation
+process, they can input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Install VNC? (Y/N)</td>
-<td>N(NO)</td>
-<td>If the user wish to quit the
-installation process, they
-can quit simply by using N.</td>
-</tr>
-<tr class="row-even"><td>Install ApacheReverseProxyModules (Y/N)</td>
-<td>N(NO)</td>
-<td>If the user inputs as N,the
-process will gets quit from
-installation|</td>
+<td>VNC, vnc</td>
+<td>N(No)</td>
+<td>If the user wish to quit the installation
+process, they can quit simply by using N.|</td>
 </tr>
 </tbody>
 </table>
@@ -239,7 +223,7 @@ installation|</td>
 <li>It also displays the number of files upgraded, newly installed, removed, not upgraded.</li>
 </ul>
 <p>The screen shot as given below, explains the users graphically regarding the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra vnc install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure vnc install
 Install VNC? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -255,20 +239,20 @@ Suggested packages:
  vnc-java
 The following NEW packages will be installed:
  vnc4server xbase-clients
-<span class="m">0</span> upgraded, <span class="m">2</span> newly installed, <span class="m">0</span> to remove and <span class="m">8</span> not upgraded.
+0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
 Need to get 1,579 kB of archives.
 After this operation, 5,418 kB of additional disk space will be used.
 Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe xbase-clients all 1:7.7+1ubuntu8 <span class="o">[</span>2,752 B<span class="o">]</span>
 Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/universe vnc4server amd64 4.1.1+xorg4.3.0-37ubuntu5.0.1 <span class="o">[</span>1,577 kB<span class="o">]</span>
 Fetched 1,579 kB in 33s <span class="o">(</span>46.6 kB/s<span class="o">)</span>
 Selecting previously unselected package xbase-clients.
-<span class="o">(</span>Reading database ... <span class="m">211210</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 211210 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../xbase-clients_1%3a7.7+1ubuntu8_all.deb ...
 Unpacking xbase-clients <span class="o">(</span>1:7.7+1ubuntu8<span class="o">)</span> ...
 Selecting previously unselected package vnc4server.
 Preparing to unpack .../vnc4server_4.1.1+xorg4.3.0-37ubuntu5.0.1_amd64.deb ...
 Unpacking vnc4server <span class="o">(</span>4.1.1+xorg4.3.0-37ubuntu5.0.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
 Setting up xbase-clients <span class="o">(</span>1:7.7+1ubuntu8<span class="o">)</span> ...
 Setting up vnc4server <span class="o">(</span>4.1.1+xorg4.3.0-37ubuntu5.0.1<span class="o">)</span> ...
 update-alternatives: using /usr/bin/vnc4server to provide /usr/bin/vncserver <span class="o">(</span>vncserver<span class="o">)</span> in auto mode
@@ -279,7 +263,7 @@ update-alternatives: using /usr/bin/vnc4config to provide /usr/bin/vncconfig <sp
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package vnc4server from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -292,7 +276,7 @@ Installer Finished
 </pre></div>
 </div>
 <p>If the vnc server already exists in the users machine, it will throws an exception message as the vnc server is already installed. The following screenshot gives an pictorial representation regarding the exception message.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra vnc install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure vnc install
 Install VNC? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -302,7 +286,7 @@ Y
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package vnc4server from the Packager Apt is already installed, so not installing
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -361,7 +345,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

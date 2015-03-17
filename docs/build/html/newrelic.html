@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="NginxServer" href="ngnix.html" />
-    <link rel="prev" title="NetBeans" href="netbeans.html" />
+    <link rel="prev" title="NetworkTools" href="networktools.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
             
               
                 
-  <li><a href="netbeans.html"
-         title="Previous Chapter: NetBeans">&laquo; NetBeans</a></li>
+  <li><a href="networktools.html"
+         title="Previous Chapter: NetworkTools">&laquo; NetworkTools</a></li>
   <li><a href="ngnix.html"
          title="Next Chapter: NginxServer">NginxServer &raquo;</a></li>
               
@@ -147,19 +147,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="newrelic">
@@ -170,20 +158,20 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command leads the users regarding the purpose and as well as about the options that are included in the newrelic modules. The help command lists out the alternative parameters of newrelic under cleopatra module. It also describes the syntax for detecting the user’s machine. The help command for newrelic is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra newrelic <span class="nb">help</span>
+<p>The help command leads the users regarding the purpose and as well as about the options that are included in the newrelic modules. The help command lists out the alternative parameters of newrelic under ptconfigure module. It also describes the syntax for detecting the user’s machine. The help command for newrelic is shown below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure newrelic <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under newrelic.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra NewRelic <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NewRelic <span class="nb">help</span>
 ******************************
 
  This <span class="nb">command </span>allows you to update Newrelic.
   NewRelic, newrelic, Newrelic
 
  - install
- Installs the latest version of cleopatra
- example: cleopatra newrelic install
+ Installs the latest version of ptconfigure
+ example: ptconfigure newrelic install
 
 ------------------------------
 End Help
@@ -193,7 +181,7 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>These installation procedures are for system administrators. This section provides information about compatibility and requirements, basic instructions on how to install and configure cleopatra to more detailed information.</p>
+<p>These installation procedures are for system administrators. This section provides information about compatibility and requirements, basic instructions on how to install and configure ptconfigure to more detailed information.</p>
 <p>Before installation the user has to follow:</p>
 <ol class="arabic simple">
 <li>Make sure your system meets New Relic&#8217;s PHP compatibility and requirements.</li>
@@ -205,7 +193,7 @@ End Help
 <li>Restart Apache or your PHP host program (such as php-fpm) as applicable.</li>
 <li>If no data appears after a few minutes, see Troubleshooting your installation.</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra newrelic install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure newrelic install
 
 Install NewRelic? (Y/N)
 y
@@ -213,10 +201,10 @@ y
 *        Pharaoh Tools        *
 *         NewRelic!        *
 *******************************
-Creating /tmp/cleopatra-temp-script-97361213995.sh
-chmod 755 /tmp/cleopatra-temp-script-97361213995.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-97361213995.sh Permissions
-Executing /tmp/cleopatra-temp-script-97361213995.sh
+Creating /tmp/ptconfigure-temp-script-97361213995.sh
+chmod 755 /tmp/ptconfigure-temp-script-97361213995.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-97361213995.sh Permissions
+Executing /tmp/ptconfigure-temp-script-97361213995.sh
 --2015-01-28 13:05:04--  https://download.newrelic.com/548C16BF.gpg
 Resolving download.newrelic.com (download.newrelic.com)... 50.31.164.159
 Connecting to download.newrelic.com (download.newrelic.com)|50.31.164.159|:443... connected.
@@ -437,7 +425,7 @@ Ign http://in.archive.ubuntu.com trusty/restricted Translation-en_IN
 Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
 Fetched 2,420 kB in 2min 58s (13.6 kB/s)
 Reading package lists...
-Temp File /tmp/cleopatra-temp-script-97361213995.sh Removed
+Temp File /tmp/ptconfigure-temp-script-97361213995.sh Removed
 dpkg: error processing package zend-server-php-5.3 (--configure):
 subprocess installed post-installation script returned error exit status 2
 Errors were encountered while processing:
@@ -508,10 +496,10 @@ Processing triggers for ureadahead (0.100.0-16) ...
 [Pharaoh Logging] Adding Package newrelic-sysmond from the Packager Apt executed correctly
 Enter Your Licence Key:
 
-Creating /tmp/cleopatra-temp-script-5830489845.sh
-chmod 755 /tmp/cleopatra-temp-script-5830489845.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-5830489845.sh Permissions
-Executing /tmp/cleopatra-temp-script-5830489845.sh
+Creating /tmp/ptconfigure-temp-script-5830489845.sh
+chmod 755 /tmp/ptconfigure-temp-script-5830489845.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-5830489845.sh Permissions
+Executing /tmp/ptconfigure-temp-script-5830489845.sh
 Error: no value specified for license_key
 
 *********************************************************************
@@ -534,7 +522,7 @@ Error: no value specified for license_key
 *********************************************************************
 *********************************************************************
 
-Temp File /tmp/cleopatra-temp-script-5830489845.sh Removed
+Temp File /tmp/ptconfigure-temp-script-5830489845.sh Removed
 ... All done!
 *******************************
 Thanks for installing , visit www.pharaohtools.com for more
@@ -555,29 +543,29 @@ Installer Finished
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="20%" />
-<col width="13%" />
 <col width="32%" />
+<col width="13%" />
 <col width="36%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Options</th>
 <th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install newrelic?(Y/N)</td>
-<td>Y</td>
 <td>Instead of using newrelic the user
 can use NewRellic, Newrelic</td>
+<td>Y(Yes)</td>
 <td>It starts installing newrelic under
-cleopatra</td>
+ptconfigure</td>
 </tr>
 <tr class="row-odd"><td>Install newrelic?(Y/N)</td>
-<td>N</td>
 <td>Instead of using newrelic the user
 can use NewRellic, Newrelic.|</td>
+<td>N(No)</td>
 <td>It terminates the installation</td>
 </tr>
 </tbody>
@@ -641,7 +629,7 @@ can use NewRellic, Newrelic.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

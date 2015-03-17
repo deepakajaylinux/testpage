@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHPEdit" href="phpedit.html" />
     <link rel="prev" title="PHPDox" href="phpdox.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpeclipse">
@@ -170,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of PhpEclipse module. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPeclipse <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPeclipse <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is shown below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra PHPEclipse <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPEclipse <span class="nb">help</span>
 
 ******************************
 
@@ -185,7 +173,7 @@
 
        - install
        Installs the latest version of PHPEclipse
-       example: cleopatra phpeclipse install
+       example: ptconfigure phpeclipse install
 
 ------------------------------
 End Help
@@ -196,7 +184,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This command helps in installing the latest version of PHPeclipse in system. The below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra PHPEclipse install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPEclipse install
 </pre></div>
 </div>
 </div>
@@ -217,23 +205,23 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra PHPEclipse
-Install</td>
+<tr class="row-even"><td>ptconfigure PHPEclipse
+Install? (Y/N)</td>
 <td>There are three alternative parameters which
 can be used in command line.
 PHP-Eclipse, PHPEclipse, phpeclipse
-Eg: cleopatra PHPEclipse install
-cleopatra PHP-Eclipse install</td>
+Eg: ptconfigure PHPEclipse install
+ptconfigure PHP-Eclipse install</td>
 <td>Y</td>
 <td>System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>cleopatra PHPEclipse
-Install</td>
+<tr class="row-odd"><td>ptconfigure PHPEclipse
+Install? (Y/N)</td>
 <td>There are three alternative parameters which
 can be used in command line.
 PHP-Eclipse, PHPEclipse, phpeclipse
-Eg: cleopatra PHPEclipse install
-cleopatra PHP-Eclipse install|</td>
+Eg: ptconfigure PHPEclipse install
+ptconfigure PHP-Eclipse install|</td>
 <td>N</td>
 <td>System stops installation process</td>
 </tr>
@@ -286,7 +274,7 @@ cleopatra PHP-Eclipse install|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

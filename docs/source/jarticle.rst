@@ -22,7 +22,7 @@ This command helps to determine the usage of jarticle module. The user will come
 
 .. code-block:: bash
 
- kevells@corp:/# jrush  jarticle help
+ kevell@corp:/# jrush  jarticle help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -73,7 +73,7 @@ The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# jrush jarticle info --config-file="/var/www/html/joomla/configuration.php"
+ kevell@corp:/# jrush jarticle info --config-file="/var/www/html/joomla/configuration.php"
  Enter a JArticle ID. To enter title/alias/asset-id use --jarticle-title, --jarticle-alias or --jarticle-asset-id parameters
  2
  ****************************************
@@ -116,6 +116,7 @@ eg:  jrush jarticle disable/ jrush JArticle disable
 
 Benefits
 --------------
+
 * Provide an optional method for organizing your articles
 * It contains some text and can contain pictures and other types of content
 * Helps to get the information about an article in easy way

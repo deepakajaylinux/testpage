@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="JAVA" href="java.html" />
-    <link rel="prev" title="Host name" href="hostname.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Invoke" href="invoke_cleo.html" />
+    <link rel="prev" title="InstallPackage" href="installpackage.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="hostname.html"
-         title="Previous Chapter: Host name">&laquo; Host name</a></li>
-  <li><a href="java.html"
-         title="Next Chapter: JAVA">JAVA &raquo;</a></li>
+  <li><a href="installpackage.html"
+         title="Previous Chapter: InstallPackage">&laquo; InstallPackage</a></li>
+  <li><a href="invoke_cleo.html"
+         title="Next Chapter: Invoke">Invoke &raquo;</a></li>
               
             
             
@@ -145,35 +145,24 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="intellij">
 <h1>IntelliJ<a class="headerlink" href="#intellij" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>This module expedite the installation of IntelliJ which is an Jet Brains IDE with a latest version. The IntelliJ Platform is a platform for building smart, language-aware IDEs with a comprehensive set of&nbsp;components, that includes virtual file system, UI framework, text editor, lexing, parsing, abstract syntax trees and other language-specific infrastructure, frameworks for implementing navigation, code completion, inspections, intentions, refactorings, version control integration, debugger framework, graphical unit test runner. The IntelliJ Platform is open source, and the code is covered by the Apache 2.0 license. This means that you can build both open source and commercial products on top of the platform without paying any royalties to JetBrains. Let us see about the functionalities of IntelliJ under this module.</p>
+<p>This module expedite the installation of IntelliJ which is an Jet Brains IDE with a latest version. The IntelliJ Platform is a platform for building smart, language-aware IDEs with a comprehensive set of&nbsp;components, that includes virtual file system, UI framework, text editor, lexing, parsing, abstract syntax trees and other language-specific infrastructure, frameworks for implementing navigation, code completion, inspections, intentions, refactorings, version control integration, debugger framework, graphical unit test runner.</p>
+<p>The IntelliJ Platform source code is covered by the Apache 2.0 license. This means that you can build both open source and commercial products on top of the platform without paying any royalties to JetBrains. Let us see about the functionalities of IntelliJ under this module.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the IntelliJ module. It lists out the alternative parameters of IntelliJ module. It also describes the syntax for installing the IntelliJ module. The help command for IntelliJ module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra IntelliJ <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure IntelliJ <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under IntelliJ.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra IntelliJ <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure IntelliJ <span class="nb">help</span>
 ******************************
 
 
@@ -183,7 +172,7 @@
 
        - install
        Installs the latest version of Developer Tools
-       example: cleopatra gittools install
+       example: ptconfigure gittools install
 
 ------------------------------
 End Help
@@ -194,7 +183,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the JRush to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra IntelliJ install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure IntelliJ install
 </pre></div>
 </div>
 <p>After inputting the command above, the following operations occurs:</p>
@@ -205,7 +194,7 @@ End Help
 <li>While installing it will asks the user to enter the Java install Directory.</li>
 </ul>
 <p>Finally, the installation of IntelliJ gets completed. The screenshot as shown below depicts the process of installing IntelliJ.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra IntelliJ install
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# ptconfigure IntelliJ install
 Install IntelliJ IDE? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -213,30 +202,30 @@ Y
 *         IntelliJ IDE        *
 *******************************
 Enter IntelliJ Version
-PHP Notice:  Undefined offset: <span class="m">0</span> in /opt/cleopatra/cleopatra/src/Core/Base/Model/Base.php on line 187
+PHP Notice:  Undefined offset: 0 in /opt/ptconfigure/ptconfigure/src/Core/Base/Model/Base.php on line 187
 <span class="o">(</span>0<span class="o">)</span>
-PHP Notice:  Undefined offset: <span class="m">1</span> in /opt/cleopatra/cleopatra/src/Core/Base/Model/Base.php on line 187
+PHP Notice:  Undefined offset: 1 in /opt/ptconfigure/ptconfigure/src/Core/Base/Model/Base.php on line 187
 <span class="o">(</span>1<span class="o">)</span>
 
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module Java reports itself as Installed
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
-Creating /tmp/cleopatra-temp-script-98824051629.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-98824051629.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-98824051629.sh Permissions
-Executing /tmp/cleopatra-temp-script-98824051629.sh
+Creating /tmp/ptconfigure-temp-script-98824051629.sh
+chmod 755 /tmp/ptconfigure-temp-script-98824051629.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-98824051629.sh Permissions
+Executing /tmp/ptconfigure-temp-script-98824051629.sh
 Cloning into <span class="s1">&#39;intellij&#39;</span>...
 remote: Counting objects: 1026, <span class="k">done</span>.
-remote: Total <span class="m">1026</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-Receiving objects: 100% <span class="o">(</span>1026/1026<span class="o">)</span>, 205.06 MiB <span class="p">|</span> 410.00 KiB/s, <span class="k">done</span>.
+remote: Total 1026 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Receiving objects: 100% <span class="o">(</span>1026/1026<span class="o">)</span>, 205.06 MiB | 410.00 KiB/s, <span class="k">done</span>.
 Resolving deltas: 100% <span class="o">(</span>60/60<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
 Checking out files: 100% <span class="o">(</span>744/744<span class="o">)</span>, <span class="k">done</span>.
-Temp File /tmp/cleopatra-temp-script-98824051629.sh Removed
-Program Executor Deleted <span class="k">if</span> existed
+Temp File /tmp/ptconfigure-temp-script-98824051629.sh Removed
+Program Executor Deleted <span class="k">if </span>existed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -300,7 +289,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

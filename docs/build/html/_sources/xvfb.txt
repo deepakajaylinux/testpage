@@ -14,13 +14,13 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra Xvfb help
+		ptconfigure Xvfb help
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under xvfb module.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Xvfb help
+ kevell@corp:/# ptconfigure Xvfb help
  ******************************
 
 
@@ -30,7 +30,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs Xvfb through apt-get
-        example: cleopatra xvfb install
+        example: ptconfigure xvfb install
 
  ------------------------------
  End Help
@@ -45,21 +45,21 @@ The command used for installing the xvfb to the users machine is shown below.
 
 .. code-block:: bash
 
-		cleopatra xvfb install
+		ptconfigure xvfb install
 
 After inputting the command above, the following operations occurs as shown in the tabular format.
 
 .. cssclass:: table-bordered
 
-	+-----------------------------+----------------------------------------+----------------+--------------------------------------------+
-	|	Parameters  	      | Alternative Parameter                  |	Option  | 		Comments	             |
-	+=============================+========================================+================+============================================+
-	|Install Xvfb? (Y/N)	      |In Spite of Xvfb, xvfb can also be used.|Y(Yes)	        |If the user wish to proceed the installation|
-	|		 	      |					       |                |process they can input as Y.	             |
-	+-----------------------------+----------------------------------------+----------------+--------------------------------------------+
-	|Install Xvfb? (Y/N)	      |In Spite of Xvfb, xvfb can also be used.|N(No)	        |If the user wish to quit the installation   |
-	|		 	      |					       |                |process they can input as N.|	             |
-	+-----------------------------+----------------------------------------+----------------+--------------------------------------------+
+	+-----------------------------+-----------------------------------------+--------+----------------------------------------------+
+	|	Parameters  	      | Alternative Parameter                   | Option | Comments	                                |
+	+=============================+=========================================+========+==============================================+
+	|Install Xvfb? (Y/N)	      | Instead of Xvfb, xvfb can also be used  | Y(Yes) | If the user wish to proceed the installation |
+	|		 	      |					        |        | process they can input as Y.	                |
+	+-----------------------------+-----------------------------------------+--------+----------------------------------------------+
+	|Install Xvfb? (Y/N)	      | Instead of Xvfb, xvfb can also be used  | N(No)	 | If the user wish to quit the installation    |
+	|		 	      |					        |        | process they can input as N.|	        |
+	+-----------------------------+-----------------------------------------+--------+----------------------------------------------+
 
 If the user proceeds the installation process, during execution of installation the following process occurs:
 
@@ -76,7 +76,7 @@ If the xvfb module is already existing in the users machine, it will show an mes
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra xvfb install
+ kevell@corp:/# ptconfigure xvfb install
  Install Xvfb? (Y/N) 
  Y
  *******************************
@@ -127,6 +127,7 @@ Benefits
 Xvfb is primarily used for testing:
 
 * Since it shares code with the real X server, it can be used to test the parts of the code that are not related to the specific hardware.
-* It can be used to test clients in various conditions that would otherwise require a range of different hardware; for example, it can be used to test whether clients work correctly at depths or screen sizes that are rarely supported by hardware.
+* It can be used to test clients in various conditions that would otherwise require a range of different hardware; for example, it can be
+  used to test whether clients work correctly at depths or screen sizes that are rarely supported by hardware.
 * Background running of clients. (the xwd program or a similar program for capturing a screenshot can be used to actually see the result)
 * Running programs that require an X server to be active even when they do not use it. (e.g. Clover html reports)

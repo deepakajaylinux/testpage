@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Service" href="service.html" />
-    <link rel="prev" title="Redis" href="redis.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Selenium Server" href="seleniumserver.html" />
+    <link rel="prev" title="RubySystem" href="rubysystem.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,10 +107,10 @@
             
               
                 
-  <li><a href="redis.html"
-         title="Previous Chapter: Redis">&laquo; Redis</a></li>
-  <li><a href="service.html"
-         title="Next Chapter: Service">Service &raquo;</a></li>
+  <li><a href="rubysystem.html"
+         title="Previous Chapter: RubySystem">&laquo; RubySystem</a></li>
+  <li><a href="seleniumserver.html"
+         title="Next Chapter: Selenium Server">Selenium Server &raquo;</a></li>
               
             
             
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="run-command">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command describes the uses of run command, its major functionality, its alternative parameters, the commands used for executing a command, and also about the syntax for specifying the command, name of the user and also to run the either in background or front-end. The syntax used for declaring the help command is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra RunCommand <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure RunCommand <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The following screen shot depicts pictorially about the working of help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra RunCommand <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure RunCommand <span class="nb">help</span>
 ******************************
 
 
@@ -182,7 +170,7 @@
 
        - execute
        Execute a Command
-       example: cleopatra run-command --yes --command<span class="o">=</span><span class="s2">&quot;ls -lah /tmp&quot;</span> --run-as-user<span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> --background
+       example: ptconfigure run-command --yes --command<span class="o">=</span><span class="s2">&quot;ls -lah /tmp&quot;</span> --run-as-user<span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> --background
 
 ------------------------------
 End Help
@@ -193,18 +181,20 @@ End Help
 <div class="section" id="how-to-use-run-command">
 <h2>How to use Run command<a class="headerlink" href="#how-to-use-run-command" title="Permalink to this headline">¶</a></h2>
 <p>The syntax used for specifying the run command in shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra run-command --yes --command<span class="o">=</span><span class="s2">&quot;ls -lah /tmp&quot;</span> --run-as-user<span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> --background
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure run-command --yes --command<span class="o">=</span><span class="s2">&quot;ls -lah /tmp&quot;</span> --run-as-user<span class="o">=</span><span class="s2">&quot;ubuntu&quot;</span> --background
 </pre></div>
 </div>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="27%" />
-<col width="37%" />
-<col width="37%" />
+<col width="18%" />
+<col width="36%" />
+<col width="19%" />
+<col width="28%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
 <th class="head">Function</th>
+<th class="head">Alternative parameters</th>
 <th class="head">Usage</th>
 </tr>
 </thead>
@@ -212,21 +202,30 @@ End Help
 <tr class="row-even"><td>command=&#8221;ls -lah /tmp&#8221;</td>
 <td>It allows the user to specify the command
 and its purpose.</td>
-<td>By using this, the user can specify their own
-command as per their requirements.</td>
+<td>Runcommand, runcommand,
+run-command</td>
+<td>By using this, the user can specify
+their own command as per their
+requirements.</td>
 </tr>
 <tr class="row-odd"><td>run-as-user=&#8221;ubuntu&#8221;</td>
 <td>By using this the user can specify the name
 of the user.</td>
-<td>By using this, the user can specify their
-required user login as per their requirements.</td>
+<td>Runcommand, runcommand,
+run-command</td>
+<td>By using this, the user can specify
+their required user login as per
+their requirements.</td>
 </tr>
 <tr class="row-even"><td>&#8221; &#8211;background</td>
 <td>It allows the user to specify where to run the
 particular command either in background or in
-the front-end.|</td>
-<td>By using this, the user can specify their
-platform of usage as per their requirements.</td>
+the front-end.</td>
+<td>Runcommand, runcommand,
+run-command</td>
+<td>By using this, the user can specify
+their platform of usage as per their
+requirements.|</td>
 </tr>
 </tbody>
 </table>
@@ -277,7 +276,7 @@ platform of usage as per their requirements.</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="System Detection" href="systemdetectio.html" />
     <link rel="prev" title="Sudonopass" href="sudonopass.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -146,19 +146,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="svn">
@@ -170,11 +158,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the SVN. It lists out the alternative parameters of SVN. It also describes the syntax for install, uninstall, ensuring the SVN. The help command for SVN module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra svn <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure svn <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under SVN.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra svn <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure svn <span class="nb">help</span>
 ******************************
 
 
@@ -185,15 +173,15 @@
 
        - install
        Installs the latest available <span class="o">(</span>In your package manager<span class="o">)</span> version of SVN
-       example: cleopatra svn install
+       example: ptconfigure svn install
 
        - ensure
        Ensures SVN is installed
-       example: cleopatra svn ensure
+       example: ptconfigure svn ensure
 
        - uninstall
        Installs the latest version of SVN
-       example: cleopatra svn uninstall
+       example: ptconfigure svn uninstall
 
 ------------------------------
 End Help
@@ -204,7 +192,7 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the SVN to the ubuntu is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra svn install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure svn install
 </pre></div>
 </div>
 <p>After inputting the command above, the following operations occurs as shown in tabular format.</p>
@@ -249,7 +237,7 @@ process they can input as N.|</td>
 <li>number of files upgraded, newly installed, removed, not upgraded.</li>
 <li>Finally, the installation of SVN gets completed. The following screenshot depicts you about the process of installing SVN in ubuntu.</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra svn install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure svn install
 Install SVN? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -265,15 +253,15 @@ Suggested packages:
  subversion-tools db5.3-util
 The following NEW packages will be installed:
  libserf-1-1 libsvn1 subversion
-<span class="m">0</span> upgraded, <span class="m">3</span> newly installed, <span class="m">0</span> to remove and <span class="m">8</span> not upgraded.
+0 upgraded, 3 newly installed, 0 to remove and 8 not upgraded.
 Need to get 1,240 kB of archives.
 After this operation, 4,701 kB of additional disk space will be used.
 Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libserf-1-1 amd64 1.3.3-1ubuntu0.1 <span class="o">[</span>42.2 kB<span class="o">]</span>
-Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libsvn1 amd64 1.8.8-1ubuntu3.1 <span class="o">[</span><span class="m">917</span> kB<span class="o">]</span>
-Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main subversion amd64 1.8.8-1ubuntu3.1 <span class="o">[</span><span class="m">280</span> kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libsvn1 amd64 1.8.8-1ubuntu3.1 <span class="o">[</span>917 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main subversion amd64 1.8.8-1ubuntu3.1 <span class="o">[</span>280 kB<span class="o">]</span>
 Fetched 1,240 kB in 43s <span class="o">(</span>28.3 kB/s<span class="o">)</span>
 Selecting previously unselected package libserf-1-1:amd64.
-<span class="o">(</span>Reading database ... <span class="m">211229</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 211229 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../libserf-1-1_1.3.3-1ubuntu0.1_amd64.deb ...
 Unpacking libserf-1-1:amd64 <span class="o">(</span>1.3.3-1ubuntu0.1<span class="o">)</span> ...
 Selecting previously unselected package libsvn1:amd64.
@@ -282,15 +270,15 @@ Unpacking libsvn1:amd64 <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">
 Selecting previously unselected package subversion.
 Preparing to unpack .../subversion_1.8.8-1ubuntu3.1_amd64.deb ...
 Unpacking subversion <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
 Setting up libserf-1-1:amd64 <span class="o">(</span>1.3.3-1ubuntu0.1<span class="o">)</span> ...
 Setting up libsvn1:amd64 <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
 Setting up subversion <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> libc-bin <span class="o">(</span>2.19-0ubuntu6.5<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6.5<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package subversion from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -306,7 +294,7 @@ Installer Finished
 <div class="section" id="un-install">
 <h2>Un install<a class="headerlink" href="#un-install" title="Permalink to this headline">¶</a></h2>
 <p>The command used for un installing the SVN to the ubuntu is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra svn uninstall
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure svn uninstall
 </pre></div>
 </div>
 <p>After inputting the command above, the following operations occurs as shown in the tabular format.</p>
@@ -351,7 +339,7 @@ process they can input as N.|</td>
 <li>number of files upgraded, newly installed, removed, not upgraded.</li>
 </ul>
 <p>Finally, the un installation of SVN gets completed. The following screenshot depicts you about the process of un installing SVN in ubuntu.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra svn uninstall
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure svn uninstall
 Uninstall SVN? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
@@ -367,15 +355,15 @@ The following packages were automatically installed and are no longer required:
 Use <span class="s1">&#39;apt-get autoremove&#39;</span> to remove them.
 The following packages will be REMOVED:
  subversion
-<span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">1</span> to remove and <span class="m">8</span> not upgraded.
+0 upgraded, 0 newly installed, 1 to remove and 8 not upgraded.
 After this operation, 1,425 kB disk space will be freed.
-<span class="o">(</span>Reading database ... <span class="m">211322</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 211322 files and directories currently installed.<span class="o">)</span>
 Removing subversion <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Removed Package subversion from the Packager Apt
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -391,7 +379,7 @@ Installer Finished
 <div class="section" id="ensure">
 <h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
 <p>The command used for ensuring SVN is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra svn ensure
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure svn ensure
 </pre></div>
 </div>
 <p>The ensure process performs the following functions:</p>
@@ -401,7 +389,7 @@ Installer Finished
 <li>If the module is not available in the user machine, then it will proceed installation.</li>
 </ul>
 <p>The following screenshots depicts the process of ensuring.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra svn ensure
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure svn ensure
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
 sh: 1: svn: not found
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module SVN reports itself as Not Installed
@@ -417,19 +405,19 @@ Suggested packages:
  subversion-tools db5.3-util
 The following NEW packages will be installed:
  subversion
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">8</span> not upgraded.
-Need to get <span class="m">0</span> B/280 kB of archives.
+0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+Need to get 0 B/280 kB of archives.
 After this operation, 1,425 kB of additional disk space will be used.
 Selecting previously unselected package subversion.
-<span class="o">(</span>Reading database ... <span class="m">211282</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 211282 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../subversion_1.8.8-1ubuntu3.1_amd64.deb ...
 Unpacking subversion <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
 Setting up subversion <span class="o">(</span>1.8.8-1ubuntu3.1<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package subversion from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 </pre></div>
 </div>
@@ -437,7 +425,8 @@ Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span 
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The parameters used in declaring the help and installations, uninstall, ensure are not case sensitive, which is added advantage while compared to others.</li>
+<li>The parameters used in declaring the help and installations, uninstall, ensure are not case sensitive, which is added advantage while
+compared to others.</li>
 <li>The user can ensure about the availability before proceeding the installation.</li>
 <li>It will not overwrite the packages, hence it is less time-consuming.</li>
 </ul>
@@ -479,7 +468,7 @@ Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span 
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

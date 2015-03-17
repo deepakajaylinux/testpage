@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Virtual box" href="virtualbox.html" />
-    <link rel="prev" title="Ubuntu Compiler" href="ubuntucompiler.html" />
+    <link rel="prev" title="User" href="user.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -107,8 +107,8 @@
             
               
                 
-  <li><a href="ubuntucompiler.html"
-         title="Previous Chapter: Ubuntu Compiler">&laquo; Ubuntu Compiler</a></li>
+  <li><a href="user.html"
+         title="Previous Chapter: User">&laquo; User</a></li>
   <li><a href="virtualbox.html"
          title="Next Chapter: Virtual box">Virtual box &raquo;</a></li>
               
@@ -144,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="varnish">
@@ -168,11 +156,11 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the varnish module. The help command lists out the alternative parameters of varnish. It also describes the syntax for installing varnish. The help command under the varnish module is given below:</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra varnish <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure varnish <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot depicts you about the help command under varnish module.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Varnish <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Varnish <span class="nb">help</span>
 ******************************
 
 
@@ -182,7 +170,7 @@ Varnish, varnish
 
 - install
 Installs Varnish through apt-get
-example: cleopatra varnish install
+example: ptconfigure varnish install
 
 ------------------------------
 End Help
@@ -193,14 +181,14 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>The command used for installing the varnish to the users machine is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra varnish install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure varnish install
 </pre></div>
 </div>
 <p>After inputting the command above, the following operations occurs as shown in the tabular format.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="23%" />
-<col width="25%" />
+<col width="26%" />
 <col width="13%" />
 <col width="39%" />
 </colgroup>
@@ -213,14 +201,14 @@ End Help
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Install Varnish? (Y/N)</td>
-<td>In Spite of Varnish, varnish can
+<td>Instead of Varnish, varnish can
 also be used.</td>
 <td>Y(Yes)</td>
 <td>If the user wish to proceed the installation
 process they can input as Y.</td>
 </tr>
 <tr class="row-odd"><td>Install Varnish? (Y/N)</td>
-<td>In Spite of Varnish, varnish can
+<td>Instead of Varnish, varnish can
 also be used.</td>
 <td>N(No)</td>
 <td>If the user wish to Quit the installation
@@ -240,17 +228,17 @@ process they can input as N.|</td>
 <li>Finally, starting HTTP accelerator varnished.</li>
 <li>The following screen shot depicts the above mentioned process:</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre>Kevells@corp:/# cleopatra varnish install
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure varnish install
 Install Varnish? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *        Pharaoh Tools        *
 *          ! Varnish !        *
 *******************************
-Creating /tmp/cleopatra-temp-script-95745650915.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-95745650915.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-95745650915.sh Permissions
-Executing /tmp/cleopatra-temp-script-95745650915.sh
+Creating /tmp/ptconfigure-temp-script-95745650915.sh
+chmod 755 /tmp/ptconfigure-temp-script-95745650915.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-95745650915.sh Permissions
+Executing /tmp/ptconfigure-temp-script-95745650915.sh
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -260,15 +248,15 @@ Suggested packages:
 varnish-doc
 The following NEW packages will be installed:
 libjemalloc1 libvarnishapi1 varnish
-<span class="m">0</span> upgraded, <span class="m">3</span> newly installed, <span class="m">0</span> to remove and <span class="m">6</span> not upgraded.
-Need to get <span class="m">518</span> kB of archives.
+0 upgraded, 3 newly installed, 0 to remove and 6 not upgraded.
+Need to get 518 kB of archives.
 After this operation, 1,653 kB of additional disk space will be used.
 Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libvarnishapi1 amd64 3.0.5-2 <span class="o">[</span>29.9 kB<span class="o">]</span>
 Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libjemalloc1 amd64 3.5.1-2 <span class="o">[</span>76.8 kB<span class="o">]</span>
-Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe varnish amd64 3.0.5-2 <span class="o">[</span><span class="m">411</span> kB<span class="o">]</span>
-Fetched <span class="m">518</span> kB in 3s <span class="o">(</span><span class="m">152</span> kB/s<span class="o">)</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/universe varnish amd64 3.0.5-2 <span class="o">[</span>411 kB<span class="o">]</span>
+Fetched 518 kB in 3s <span class="o">(</span>152 kB/s<span class="o">)</span>
 Selecting previously unselected package libvarnishapi1.
-<span class="o">(</span>Reading database ... <span class="m">201582</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 201582 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../libvarnishapi1_3.0.5-2_amd64.deb ...
 Unpacking libvarnishapi1 <span class="o">(</span>3.0.5-2<span class="o">)</span> ...
 Selecting previously unselected package libjemalloc1.
@@ -277,19 +265,19 @@ Unpacking libjemalloc1 <span class="o">(</span>3.5.1-2<span class="o">)</span> .
 Selecting previously unselected package varnish.
 Preparing to unpack .../varnish_3.0.5-2_amd64.deb ...
 Unpacking varnish <span class="o">(</span>3.0.5-2<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
 Setting up libvarnishapi1 <span class="o">(</span>3.0.5-2<span class="o">)</span> ...
 Setting up libjemalloc1 <span class="o">(</span>3.5.1-2<span class="o">)</span> ...
 Setting up varnish <span class="o">(</span>3.0.5-2<span class="o">)</span> ...
  * Starting HTTP accelerator varnishd
    ...done.
-Processing triggers <span class="k">for</span> libc-bin <span class="o">(</span>2.19-0ubuntu6.4<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
-Temp File /tmp/cleopatra-temp-script-95745650915.sh Removed
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6.4<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Temp File /tmp/ptconfigure-temp-script-95745650915.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -347,7 +335,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

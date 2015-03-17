@@ -16,11 +16,11 @@ This command helps to determine the usage of composer module. The user will come
 
 .. code-block:: bash
               
-		 cleopatra composer help
+	 ptconfigure composer help
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra composer help
+ kevell@corp:/# ptconfigure composer help
  ******************************
 
 
@@ -30,7 +30,7 @@ This command helps to determine the usage of composer module. The user will come
 
         - install
         Installs the latest version of composer
-        example: cleopatra composer install
+        example: ptconfigure composer install
 
  ------------------------------
  End Help
@@ -44,7 +44,7 @@ When the user needs to install composer module in machine, the below given comma
 
 .. code-block:: bash
                
-		 cleopatra composer install
+		 ptconfigure composer install
 
 While installing, the system ask for the directory name, if you wants to set up your PATH, you can define your path. Define your path has to be followed by '/' symbol. Press Enter to use default path.
 
@@ -59,18 +59,57 @@ While installing, the system ask for executing directory name, if you wants to s
 .. cssclass:: table-bordered
 
 
-	+---------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|	Parameters  	    | Alternative Parameter  |	Option		     | 		Comments			     |
-	+===========================+========================+=======================+===============================================+
-	|cleopatra composer Install |Composer , composer     |Y			     |System starts installation process	     |
-	+---------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|cleopatra composer Install |Composer , composer     |N			     |System stops installation process|	     |
-	+---------------------------+------------------------+-----------------------+-----------------------------------------------+
+	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
+	|	Parameters  	      | Alternative Parameter  |	Option	       | 		Comments		       |
+	+=============================+========================+=======================+===============================================+
+	|ptconfigure composer Install |Composer , composer     |Y		       |System starts installation process	       |
+	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
+	|ptconfigure composer Install |Composer , composer     |N		       |System stops installation process|	       |
+	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
+
+
+The screenshot for the installation command is listed below,
+
+.. code-block:: bash
+
+ kevell@corp:/$ ptconfigure composer install
+ Install Composer - Update to latest version ? (Y/N) 
+ Y
+ ******************************
+ *        Pharaoh Tools        *
+ *          Composer!         *
+ *******************************
+ What is the program data directory? Found "/opt/composer" - use this? (Enter nothing for yes, no end slash)
+
+ What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
+
+ git clone 'https://github.com/phpengine/composer-phar.git'  /tmp/composer/composerCloning into '/tmp/composer/composer'...
+
+ remote: Counting objects: 6, done.
+ remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+ Unpacking objects: 100% (6/6), done.
+ Checking connectivity... done.
+ Program Data Folder /opt/composer Deleted if existed
+ Program Data folder populated
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ Composer: Success
+ ------------------------------
+ Installer Finished
+ ******************************
 
 
 Benefits
 --------
 
 * It installs dependencies (e.g. libraries) for an application.
-* It also allows users to install PHP applications that are available on "Packagist" which is its main repository containing available packages. 
+* It also allows users to install PHP applications that are available on "Packagist" which is its main repository containing available
+  packages. 
 * It also provides auto load capabilities for libraries that specify auto load information to ease usage of third-party code.

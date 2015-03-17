@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Dapperstrano" href="Dapperstrano_main.html" />
-    <link rel="next" title="LighttpdControl" href="lighttpdControl_dapper.html" />
-    <link rel="prev" title="EnvironmentConfig" href="environmentconfigdapper.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="Joomla" href="joomla.html" />
+    <link rel="prev" title="Grafana" href="grafana.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -112,10 +112,10 @@
             
               
                 
-  <li><a href="environmentconfigdapper.html"
-         title="Previous Chapter: EnvironmentConfig">&laquo; EnvironmentConfi...</a></li>
-  <li><a href="lighttpdControl_dapper.html"
-         title="Next Chapter: LighttpdControl">LighttpdControl &raquo;</a></li>
+  <li><a href="grafana.html"
+         title="Previous Chapter: Grafana">&laquo; Grafana</a></li>
+  <li><a href="joomla.html"
+         title="Next Chapter: Joomla">Joomla &raquo;</a></li>
               
             
             
@@ -149,94 +149,80 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="host-editor">
 <h1>Host Editor<a class="headerlink" href="#host-editor" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<p>This module supports to handle Apache Virtual Host Editor under dapperstrano. It can function in two ways. They are add and remove. Vhost Editor is a PHP Tool written to make adding virtual hosts to apache a breeze. Vhost Editor will enable the user to add, edit, or delete Virtual Host information on user’s webserver. It is convenient to work with Ubuntu and cent OS.  Let’s see how the apache Vhost Editor can function under dapperstarano.</p>
+<p>This module supports to handle Apache Virtual Host Editor under ptdeploy. It can function in two ways. They are add and remove. Vhost Editor is a PHP Tool written to make adding virtual hosts to apache a breeze. Vhost Editor will enable the user to add, edit, or delete Virtual Host information on user’s webserver. It is convenient to work with Ubuntu and cent OS.  Let’s see how the apache Vhost Editor can function under
+ptdeploy.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This help command guides the user to create a virtual host. This also displays to add a virtual host, remove a virtual host, Enable a virtual host, and Disable a virtual host.</p>
 <p>The help command for Apachevhosteditor  is shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano Apachevhosteditor <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy Apachevhosteditor <span class="nb">help</span>
 </pre></div>
 </div>
 <p>After inputs the above command, it starts functioning to add a virtual host editor. It catechesis the functions in the screenshots.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano Apachevhosteditor help
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy ApacheVHostEditor <span class="nb">help</span>
 ******************************
 
 
-Dapperstrano by Golden Contact Computing
--------------------
+ This <span class="nb">command </span>is part of Default Modules and handles Apache VHosts Functions.
 
-About:
------------------
-This tool helps with setting up projects. It&#39;s really cool for
-cloning/installing/spinning up webs apps easily and quickly.
+ ApacheVHostEditor, apachevhosteditor, vhosteditor, vhe, vhosted
 
-Very cool for CI, you can install your web app in one line like:
+         - add
+         create a Virtual Host
+         example: sudo ptdeploy vhe add
+         example: sudo ptdeploy vhe add --yes --vhe-docroot<span class="o">=</span>/var/www/the-app --vhe-url<span class="o">=</span>www.dave.com --vhe-file-ext<span class="o">=</span><span class="s2">&quot;&quot;</span> --vhe-apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span> --vhe-ip-port<span class="o">=</span><span class="s2">&quot;127.0.0.1:80&quot;</span> --vhe-vhost-dir<span class="o">=</span><span class="s2">&quot;/etc/apache2/sites-available&quot;</span> --vhe-template<span class="o">=</span><span class="s2">&quot;*template data*&quot;</span>
+         example: sudo ptdeploy vhe add --yes --guess --vhe-url<span class="o">=</span>www.dave.com
+             <span class="c"># will attempt to guess the following but you can override any</span>
+             <span class="c"># --vhe-docroot=*current working dir*</span>
+             <span class="c"># --vhe-file-ext=&quot;ubuntu none, others .conf&quot;</span>
+             <span class="c"># --vhe-apache-command=&quot;apache2 or httpd depends on system&quot;</span>
+             <span class="c"># --vhe-ip-port=&quot;127.0.0.1:80&quot;</span>
+             <span class="c"># --vhe-vhost-dir=&quot;/etc/apache2/sites-available or /etc/httpd/vhosts.d&quot;</span>
+             <span class="c"># --vhe-template=&quot;*template data*&quot;</span>
+             <span class="c"># --vhe-default-template-name=&quot;docroot-src-suffix&quot; // from default templates</span>
 
-dapperstrano install autopilot *autopilot-file*
+         - add-balancer
+         create a Virtual Host
+         example: sudo ptdeploy vhe add
+         example: sudo ptdeploy vhe add --yes --vhe-docroot<span class="o">=</span>/var/www/the-app --vhe-url<span class="o">=</span>www.dave.com --vhe-file-ext<span class="o">=</span><span class="s2">&quot;&quot;</span> --vhe-apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span> --vhe-ip-port<span class="o">=</span><span class="s2">&quot;127.0.0.1:80&quot;</span> --vhe-vhost-dir<span class="o">=</span><span class="s2">&quot;/etc/apache2/sites-available&quot;</span> --vhe-template<span class="o">=</span><span class="s2">&quot;*template data*&quot;</span>
+         example: sudo ptdeploy vhe add --yes --guess --vhe-url<span class="o">=</span>www.dave.com
+             <span class="c"># will attempt to guess the following but you can override any</span>
+             <span class="c"># --vhe-docroot=*current working dir*</span>
+             <span class="c"># --vhe-file-ext=&quot;ubuntu none, others .conf&quot;</span>
+             <span class="c"># --vhe-apache-command=&quot;apache2 or httpd depends on system&quot;</span>
+             <span class="c"># --vhe-ip-port=&quot;127.0.0.1:80&quot;</span>
+             <span class="c"># --vhe-vhost-dir=&quot;/etc/apache2/sites-available or /etc/httpd/vhosts.d&quot;</span>
+             <span class="c"># --vhe-template=&quot;*template data*&quot;</span>
+             <span class="c"># --vhe-default-template-name=&quot;docroot-src-suffix&quot; // from default templates</span>
 
-With code configured settings for (at least the core parts, and
-more if want to extend) Project Checkout / Download, Cucumber
-Configuration, Database Management Functions, Host File
-Management Functions, Installation Functions, SSH Invocation
-Functions, Dapperstrano Project Management Functions, Apache
-Virtual Host Functions and Versioning - On 1 or 100 servers, so
-you now have a fully code controlled deploy system, from
-Personal or Development machine to Large Enterprise.
+         - rm
+         example: ptdeploy vhe rm
+         example: ptdeploy vhe rm --yes --
+         example: ptdeploy vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
+         example: ptdeploy vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
 
--------------------------------------------------------------
+         - list
+         List current Virtual Hosts
+         example: ptdeploy vhe list
 
-Available Commands:
----------------------------------------
+         - <span class="nb">enable</span>
+<span class="nb">         enable </span>a Server Block
+         example: ptdeploy vhe <span class="nb">enable</span>
 
-ApacheControl - Apache Server Control
-ApacheVHostEditor - Apache Virtual Host Functions
-AppSettings - Dapperstrano Application Settings
-Autopilot - Cleopatra Autopilot - User Defined Installations
-Builderfy - Dapperstrano Builderfyer - Create some standard autopilots for your project
-CukeConf - Cucumber Configuration
-DBConfigure - Database Connection Configuration Functions
-DBInstall - Database Installation Management Functions
-Dapperfy - Dapperstrano Dapperfyer - Automated Application Deployment autopilots for your project
-Drupal - Drupal - Integration and Templates for Drupal
-EnvironmentConfig - Environment Configuration - Configure Environments for a project
-GitClone - GitClone Source Control Clone Functions
-HostEditor - Host File Management Functions
-Invoke - SSH Invocation Functions
-Joomla - Joomla - Integration and Templates for Joomla
-LighttpdControl - Lighttpd Server Control
-Logging - Logging - Output errors to the logging
-NginxControl - Nginx Server Control
-NginxSBEditor - Nginx Server Block Functions
-ParallelSshChild - Command Execution Functions
-Project - Dapperstrano Project Management Functions
-RunCommand - Execute a Command
-SFTP - SFTP Functionality
-SVN - SVN Source Control Project Checkout/Download Functions
-SystemDetection - System Detection - Detect the Running Operating System
-Templating - Templating
-Version - Versioning Functions
-Wordpress - Wordpress - Integration and Templates for Wordpress
+         - disable
+         disable a Server Block
+         example: ptdeploy vhe disable
 
+------------------------------
+End Help
 ******************************
 </pre></div>
 </div>
@@ -249,7 +235,7 @@ Wordpress - Wordpress - Integration and Templates for Wordpress
 <div class="section" id="add">
 <h2>Add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
 <p>This facilitates the user to create a virtual host. While adding Virtual host it can asks vhe-docroot, vhe-file-ext, vhe-apache-command, vhe-ip port,vhe-host-dir, vhe-templates,vhe-default-template-name. The user can enter the according to their wish.</p>
-<div class="highlight-bash"><div class="highlight"><pre>sudo dapperstrano vhe add
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptdeploy vhe add
 </pre></div>
 </div>
 <p>After input as the above command the user can fill the following process.</p>
@@ -268,12 +254,12 @@ Wordpress - Wordpress - Integration and Templates for Wordpress
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Dapperstrano vhe add (Default)</td>
+<tr class="row-even"><td>ptdeploy vhe add (Default)</td>
 <td>Yes</td>
 <td>It can ask the user for
 Document root</td>
 <td>Added virtual host in the specified document root
-under dapperstrano</td>
+under ptdeploy</td>
 </tr>
 <tr class="row-odd"><td>What’s the server name</td>
 <td><ul class="first last simple">
@@ -282,7 +268,7 @@ under dapperstrano</td>
 </td>
 <td>It can ask the user for
 server name</td>
-<td>Added server name under dapperstrano</td>
+<td>Added server name under ptdeploy</td>
 </tr>
 <tr class="row-even"><td>What IP:Port (default)</td>
 <td>127.0.0.1:80</td>
@@ -298,7 +284,7 @@ used? (Default)</td>
 extension</td>
 <td>The user gives input as file extension</td>
 </tr>
-<tr class="row-even"><td>Dapperstrano vhe add</td>
+<tr class="row-even"><td>ptdeploy vhe add</td>
 <td>No</td>
 <td>It can asks the user for
 input.|</td>
@@ -314,7 +300,7 @@ input.|</td>
 <p>4 for docroot-suffix used for document root suffix</p>
 <p>The user wishes to select the values according to their needs. Then the system can ask the vhost name ,IP address and root user etc is correct or wrong. If the user says yes, then it displays the vhost directory and enable this vhost?</p>
 <p>The user answers yes it can enable the vhost else it can exit.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# dapperstrano vhe add
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# ptdeploy vhe add
 Do you want to add a VHost? (Y/N)
 Y
 What&#39;s the document root? Enter nothing for /
@@ -367,56 +353,134 @@ the virtual host open, the virtual host is deleted and the space it was using is
 <p>If the name was the last link to a virtual host, but any processes still have
 the virtual host open, the virtual host will remain in existence until the last virtual host descriptor referring to it is closed.</p>
 <p>If the name referred to a symbolic link, the link is removed. The following command used to delete the virtual host.</p>
-<div class="highlight-bash"><div class="highlight"><pre>sudo dapperstrano vhe rm –yes –guess –vhe-deletion-vhost<span class="o">=</span>www.kevell.com
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptdeploy vhe rm –yes –guess –vhe-deletion-vhost<span class="o">=</span>www.kevell.com
 </pre></div>
 </div>
 <p>The following screen shot can explain its functions.</p>
 <div class="highlight-bash"><div class="highlight"><pre>- rm
-         example: dapperstrano vhe rm
-         example: dapperstrano vhe rm --yes --
-         example: dapperstrano vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
-         example: dapperstrano vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
+         example: ptdeploy vhe rm
+         example: ptdeploy vhe rm --yes --
+         example: ptdeploy vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
+         example: ptdeploy vhe rm --yes --guess --vhe-deletion-vhost<span class="o">=</span>www.site.com
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy vhe rm
+Do you want to delete VHost/s? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Deleting vhost
+What is your VHost directory? Found <span class="s2">&quot;/etc/apache2/sites-available&quot;</span> - Enter nothing to use this
+
+Please Choose VHost:
+--- All Virtual Hosts: ---
+<span class="o">(</span>0<span class="o">)</span> 000-default.conf
+<span class="o">(</span>1<span class="o">)</span> default-ssl.conf
+
+0
+Do you want to disable this VHost? <span class="o">(</span>hint - ubuntu probably yes, centos probably no<span class="o">)</span> <span class="o">(</span>Y/N<span class="o">)</span>
+yes
+Site 000-default disabled.
+To activate the new configuration, you need to run:
+ service apache2 reload
+a2dissite 000-default.conf <span class="k">done</span>
+VHost 000-default.conf Deleted  <span class="k">if </span>existed
+******************************
+
+
+1Apache VHost Editor Finished
+******************************
 </pre></div>
 </div>
 </div>
 <div class="section" id="list">
 <h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
 <p>List information about the Virtual host (the current directory by default). Sort entries alphabetically. Mandatory arguments has long options as well as short options too. A list invoked with a URL specifying both the list name and also the underlying view which will provide and organize the data. The following command used to list the virtual host.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano vhe list
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy vhe list
 </pre></div>
 </div>
 <p>Note that whether a list can be used with a variety of views, or might be tailored to produce an elaborate page from a view designed specifically to organize data for it. Lists stored under the lists field of a design document. It can be visualized by the screen shots.</p>
 <div class="highlight-bash"><div class="highlight"><pre>- list
          List current Virtual Hosts
-         example: dapperstrano vhe list
+         example: ptdeploy vhe list
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy vhe list
+What is your VHost directory? Found <span class="s2">&quot;/etc/apache2/sites-available&quot;</span> - Enter nothing to use this
+
+You have a sites available dir, so also listing available sites.
+Current Installed VHosts:
+--- Enabled Virtual Hosts: ---
+<span class="o">(</span>0<span class="o">)</span> 000-default.conf
+<span class="o">(</span>1<span class="o">)</span> default-ssl.conf
+--- All Available Virtual Hosts: ---
+<span class="o">(</span>2<span class="o">)</span> 000-default.conf
+<span class="o">(</span>3<span class="o">)</span> default-ssl.conf
+******************************
+
+
+1Apache VHost Editor Finished
+******************************
 </pre></div>
 </div>
 </div>
 <div class="section" id="enable">
 <h2>Enable<a class="headerlink" href="#enable" title="Permalink to this headline">¶</a></h2>
 <p>Secure Boot is a feature designed to prevent malicious software and unauthorized media from loading during the boot process. This enable option enabled the server block. In virtual host when the used typed the following command,</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano vhe <span class="nb">enable</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy vhe <span class="nb">enable</span>
 </pre></div>
 </div>
 <p>This option is enabled by default. This option allows the virtual host server enable.</p>
 <p>Assists module develop many of the enabling capabilities required to service high performing environments through our understanding of the interdependencies between people, process and technology. The following screen shot explains the same.</p>
 <div class="highlight-bash"><div class="highlight"><pre>- <span class="nb">enable</span>
 <span class="nb">         enable </span>a Server Block
-         example: dapperstrano vhe <span class="nb">enable</span>
+         example: ptdeploy vhe <span class="nb">enable</span>
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy vhe <span class="nb">enable</span>
+Do you want to <span class="nb">enable </span>this VHost? <span class="o">(</span>hint - ubuntu probably yes, centos probably no<span class="o">)</span> <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Please Choose VHost:
+--- All Virtual Hosts: ---
+<span class="o">(</span>0<span class="o">)</span> default-ssl.conf
+
+0
+ERROR: Site default-ssl.conf does not exist!
+a2ensite default-ssl.conf.conf <span class="k">done</span>
+******************************
+
+
+1Apache VHost Editor Finished
+******************************
 </pre></div>
 </div>
 </div>
 <div class="section" id="disable">
 <h2>Disable<a class="headerlink" href="#disable" title="Permalink to this headline">¶</a></h2>
 <p>This disable used to disable the server. Inactive or idle virtual host editor connections are normally disconnected by the server after a certain period of time. The following command is used to disable the virtual host editor.</p>
-<div class="highlight-bash"><div class="highlight"><pre>dapperstrano vhe disable
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy vhe disable
 </pre></div>
 </div>
 <p>After typing this command it can ask the user to disable the server. If the user inputs as yes it disable the server i.e. it won’t allow any body to work in that server.</p>
 <p>The following screen shot visualize it evidently.</p>
 <div class="highlight-bash"><div class="highlight"><pre>- disable
          disable a Server Block
-         example: dapperstrano vhe disable
+         example: ptdeploy vhe disable
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy vhe disable
+Do you want to disable this VHost? <span class="o">(</span>hint - ubuntu probably yes, centos probably no<span class="o">)</span> <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Please Choose VHost:
+--- All Virtual Hosts: ---
+<span class="o">(</span>0<span class="o">)</span> default-ssl.conf
+
+0
+Site default-ssl already disabled
+a2dissite default-ssl.conf <span class="k">done</span>
+******************************
+
+
+1Apache VHost Editor Finished
+******************************
 </pre></div>
 </div>
 </div>
@@ -466,7 +530,7 @@ the virtual host open, the virtual host will remain in existence until the last 
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

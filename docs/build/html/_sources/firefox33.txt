@@ -1,11 +1,11 @@
 ===================
-FireFox 33
+FireFox33
 ===================
 
 Synopsis 
 --------------------
 
- This module is open source web browser. It used to install firefox33. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the 'Ubuntu stack' (cloud computing infrastructure). It is comfortable with Ubuntu and Cent OS.
+ This module used to install firefox33. Ubuntu releases updated versions periodically. It implements current and anticipated web standards. Long-term support includes updates for new hardware, security patches and updates to the cloud computing infrastructure. It is comfortable with Ubuntu and Cent OS.
 
 Help Command 
 -----------------------
@@ -14,13 +14,13 @@ This command can function about the objectives and commands available under Fire
 
 .. code-block:: bash
       
-	        cleopatra firefox33 help
+	        ptconfigure firefox33 help
 
 The following image also helps you to understand this module clearly.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Firefox33 help
+ kevell@corp:/# ptconfigure Firefox33 help
  ******************************
 
 
@@ -30,7 +30,7 @@ The following image also helps you to understand this module clearly.
 
         - install
         Installs the latest version of Firefox 33
-        example: cleopatra firefox33 install
+        example: ptconfigure firefox33 install
 
  ------------------------------
  End Help
@@ -42,11 +42,11 @@ The following image also helps you to understand this module clearly.
 Installation
 -------------------
 
-It is a glaring process to install firefox33 module under Cleopatra by just using the command given below,
+It is a glaring process to install firefox33 module under ptconfigure by just using the command given below,
 
 .. code-block:: bash
     
-                cleopatra firefox33 install
+                ptconfigure firefox33 install
 
 After key in the command, it can asks
 
@@ -56,24 +56,24 @@ In case the user input as Y, it can install firefox33 from the package. Else, it
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra Firefox33 install
+ kevells@corp:/# ptconfigure Firefox33 install
  Install Firefox 33? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          Firefox 33         *
  *******************************
- Creating /tmp/cleopatra-temp-script-5246928428.sh
- chmod 755 /tmp/cleopatra-temp-script-5246928428.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-5246928428.sh Permissions
- Executing /tmp/cleopatra-temp-script-5246928428.sh
+ Creating /tmp/ptconfigure-temp-script-5246928428.sh
+ chmod 755 /tmp/ptconfigure-temp-script-5246928428.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-5246928428.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-5246928428.sh
  Cloning into 'firefox33'...
  remote: Counting objects: 79, done.
  Unpacking objects:  81% (64/79)   
  remote: Total 79 (delta 0), reused 0 (delta 0)
  Unpacking objects: 100% (79/79), done.
  Checking connectivity... done.
- Temp File /tmp/cleopatra-temp-script-5246928428.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-5246928428.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -95,25 +95,21 @@ Options
 
 .. cssclass:: table-bordered
 
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|	Parameters  	      | Alternative Parameter  |	Options	       | 		Comments		       |
-	+=============================+========================+=======================+===============================================+
-	|Cleopatra firefox33 Install  |Firefox33	       |Y		       |System starts installation process under       |
-	| 			      |		    	       |		       |cleopatra				       |
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|Cleopatra firefox33 Install  |Ff33		       |Y		       |System starts installation process under       |
-	|                             |		 	       |		       |cleopatra                                      |       
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-	|Cleopatra firefox33 Install  |Firefox33	       |N		       |System stops installation process under        |
-	|                             |		 	       |		       |cleopatra|                                     |
-	+-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-
+	+-------------------------------+----------------------------+-----------------------+-------------------------------------------+
+	|	Parameters  	        | Alternative Parameter      |	Options	             | 	Comments		                 |
+	+===============================+============================+=======================+===========================================+
+	|ptconfigure firefox33 Install  |Instead of using firefox33  |Y			     |System starts installation process under   |
+	| 			        |we can use Firefox33, ff33  |    	             |ptconfigure				 |
+	+-------------------------------+----------------------------+-----------------------+-------------------------------------------+
+        |ptconfigure firefox33 Install  |Instead of using firefox33  |N                      |System stops installation process under    |
+        |                               |we can use Firefox33, ff33  |                       |ptconfigure|                               |
+        +-------------------------------+----------------------------+-----------------------+-------------------------------------------+
 
 
 Benefits
 ------------------
 
 * Firefox33 uses support for new hardware and integration of all the updates published in that series to date.
-* Firefox33 is an open source Web browser for Linux.
+* Firefox33 is suitable to work with Ubuntu and centOS.
 * Firefox33 is non-case sensitive.
 * Privacy and security measures, smart searching is possible.

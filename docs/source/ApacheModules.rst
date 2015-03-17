@@ -1,5 +1,6 @@
-Apache Module
-=============
+==============
+ApacheModules
+==============
 
 Synopsis
 --------
@@ -13,13 +14,13 @@ This help command explains about the purpose of a particular module. The syntax 
 
 .. code-block:: bash
 
- cleopatra apache modules help
+ ptconfigure apache modules help
 
 After giving the command, the command will list the help options. The following screen shots will give visual effect for the usage of this module.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra ApacheModules help
+ kevell@corp:/# ptconfigure ApacheModules help
  ******************************
 
 
@@ -30,7 +31,7 @@ After giving the command, the command will list the help options. The following 
 
         - install
         Installs common apache Modules
-        example: cleopatra apache-modules install
+        example: ptconfigure apache-modules install
 
  ------------------------------
  End Help
@@ -39,7 +40,7 @@ After giving the command, the command will list the help options. The following 
 Installation
 ------------
 
-Installation is not a difficult process to install this module under Cleopatra by merely using the command given below,
+Installation is not a difficult process to install this module under ptconfigure by merely using the command given below,
 
 .. code-block:: bash
 
@@ -58,7 +59,7 @@ The following screen shots will give visual effect for the installation of this 
 
 .. code-block:: bash
 
- kevells@corp:/#  cleopatra apache-modules install
+ kevell@corp:/#  ptconfigure apache-modules install
  Install Apache Modules? (Y/N) 
  y
  *******************************
@@ -82,26 +83,26 @@ The following screen shots will give visual effect for the installation of this 
  Processing triggers for man-db (2.6.7.1-1) ...
  Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.4) ...
  [Pharaoh Logging] Adding Package libxml2-dev from the Packager Apt executed correctly
- Creating /tmp/cleopatra-temp-script-11435369770.sh
- chmod 755 /tmp/cleopatra-temp-script-11435369770.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-11435369770.sh Permissions
- Executing /tmp/cleopatra-temp-script-11435369770.sh
+ Creating /tmp/ptconfigure-temp-script-11435369770.sh
+ chmod 755 /tmp/ptconfigure-temp-script-11435369770.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-11435369770.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-11435369770.sh
  Enabling module rewrite.
  To activate the new configuration, you need to run:
   service apache2 restart
- Temp File /tmp/cleopatra-temp-script-11435369770.sh Removed
- Creating /tmp/cleopatra-temp-script-95277456152.sh
- chmod 755 /tmp/cleopatra-temp-script-95277456152.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-95277456152.sh Permissions
- Executing /tmp/cleopatra-temp-script-95277456152.sh
+ Temp File /tmp/ptconfigure-temp-script-11435369770.sh Removed
+ Creating /tmp/ptconfigure-temp-script-95277456152.sh
+ chmod 755 /tmp/ptconfigure-temp-script-95277456152.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-95277456152.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-95277456152.sh
  Considering dependency filter for deflate:
  Module filter already enabled
  Module deflate already enabled
- Temp File /tmp/cleopatra-temp-script-95277456152.sh Removed
- Creating /tmp/cleopatra-temp-script-1351048337.sh
- chmod 755 /tmp/cleopatra-temp-script-1351048337.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-1351048337.sh Permissions
- Executing /tmp/cleopatra-temp-script-1351048337.sh
+ Temp File /tmp/ptconfigure-temp-script-95277456152.sh Removed
+ Creating /tmp/ptconfigure-temp-script-1351048337.sh
+ chmod 755 /tmp/ptconfigure-temp-script-1351048337.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-1351048337.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-1351048337.sh
  Considering dependency setenvif for ssl:
  Module setenvif already enabled
  Considering dependency mime for ssl:
@@ -112,14 +113,14 @@ The following screen shots will give visual effect for the installation of this 
  See /usr/share/doc/apache2/README.Debian.gz on how to configure SSL and create self-signed certificates.
  To activate the new configuration, you need to run:
    service apache2 restart
- Temp File /tmp/cleopatra-temp-script-1351048337.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-1351048337.sh Removed
  [Pharaoh Logging] Package libapache2-mod-php5 from the Packager Apt is already installed, so not installing
- Creating /tmp/cleopatra-temp-script-89813944614.sh
- chmod 755 /tmp/cleopatra-temp-script-89813944614.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-89813944614.sh Permissions
- Executing /tmp/cleopatra-temp-script-89813944614.sh
+ Creating /tmp/ptconfigure-temp-script-89813944614.sh
+ chmod 755 /tmp/ptconfigure-temp-script-89813944614.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-89813944614.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-89813944614.sh
  Module php5 already enabled
- Temp File /tmp/cleopatra-temp-script-89813944614.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-89813944614.sh Removed
  [Pharaoh Logging] Restarting apache2 service
  Output of config test was:
  apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or 
@@ -144,23 +145,29 @@ The following screen shots will give visual effect for the installation of this 
 
 .. _making-a-table:
 
+
+Option
+----------
+
 .. cssclass:: table-bordered
 
- +-------------------------------+--------------------+------------------------------------------------------------------------------+
- |Parameters	   		 | Required	      |  Comments 								     |
- +===============================+====================+==============================================================================+
- |Install		   	 |Yes		      |  It will install the apache module under Cleopatra			     |
- +-------------------------------+--------------------+------------------------------------------------------------------------------+
- |Install Apache Module? (Y/N)	 |Yes                 |  If the user gives input as yes, it will install the module.                 |
- +-------------------------------+--------------------+------------------------------------------------------------------------------+
- |Install Apache Module? (Y/N)	 |No 		      |  If the user gives input as no, it will be exited.|			     |
- +-------------------------------+--------------------+------------------------------------------------------------------------------+
+ +-------------------------------+--------------------+-----------------------------------------+--------------------------------------+
+ |Parameters	   		 | Required	      |  Alternative Parameters		        | Comments                             |
+ +===============================+====================+=========================================+======================================+
+ |Install Apache Module? (Y/N)	 |Yes                 |  Instead of using apachemodules the     | If the user wish to install they can |
+ |                               |                    |  user can use ApacheModules, apachemods | input as Y.                          |
+ |                               |                    |  apache-modules                         |                                      |
+ +-------------------------------+--------------------+-----------------------------------------+--------------------------------------+
+ |Install Apache Module? (Y/N)	 |No 		      |  Instead of using apachemodules the     | If the user wish to quit             |
+ |                               |                    |  user can use ApacheModules, apachemods | uninstallation they can input as N.  |  
+ |                               |                    |  apache-modules|                        |                                      |
+ +-------------------------------+--------------------+-----------------------------------------+--------------------------------------+
 
 
 Benefits 
 --------
 
- * The module is an aid to Link with Cleopatra.
+ * The module is an aid to Link with ptconfigure.
  * While installing the Apache modules, it will acquiesce the configuration files.
  * If the configuration files are not available in the system this module will automatically install it.
 

@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Run Command" href="runcommand.html" />
-    <link rel="prev" title="Python" href="python.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="RubyBDD" href="rubybdd.html" />
+    <link rel="prev" title="Rackspace" href="rackspace.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="python.html"
-         title="Previous Chapter: Python">&laquo; Python</a></li>
-  <li><a href="runcommand.html"
-         title="Next Chapter: Run Command">Run Command &raquo;</a></li>
+  <li><a href="rackspace.html"
+         title="Previous Chapter: Rackspace">&laquo; Rackspace</a></li>
+  <li><a href="rubybdd.html"
+         title="Next Chapter: RubyBDD">RubyBDD &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="redis">
@@ -168,12 +156,12 @@
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>The help command leads the users regarding the purpose and as well as about the options that are included in the redis module. The help command lists out the alternative parameters of redis under cleopatra module. It also describes the syntax for initializing the user’s machine. The help command for redis shown below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra redis <span class="nb">help</span>
+<p>The help command leads the users regarding the purpose and as well as about the options that are included in the redis module. The help command lists out the alternative parameters of redis under ptconfigure module. It also describes the syntax for initializing the user’s machine. The help command for redis shown below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure redis <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The pictorial representation of the above command is listed below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Redis <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Redis <span class="nb">help</span>
 
 ******************************
 
@@ -183,7 +171,7 @@
 
   - install
   Installs the latest version of redis
-  example: cleopatra redis install
+  example: ptconfigure redis install
 
 ------------------------------
 End Help
@@ -193,14 +181,14 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Installation of a phlagrant module is including device drivers and plugins, act of making the program ready for execution. While installing this module the following command will be passed.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Phlagrant install
+<p>Installation of a redis module is including device drivers and plugins, act of making the program ready for execution. While installing this module the following command will be passed.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure redis install
 </pre></div>
 </div>
 <p>After inputs the command the system can ask</p>
-<p>Install Phlagrant? (Y/N)</p>
-<p>If the user gives Y then Phlagrant will be installed. The following Screen shot demonstrate it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra redis install
+<p>Install Redis? (Y/N)</p>
+<p>If the user gives Y then redis will be installed. The following Screen shot demonstrate it.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure redis install
 
 Install Redis? (Y/N)
 y
@@ -208,10 +196,10 @@ y
 *        Pharaoh Tools        *
 *         Redis!        *
 *******************************
-Creating /tmp/cleopatra-temp-script-78539017469.sh
-chmod 755 /tmp/cleopatra-temp-script-78539017469.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-78539017469.sh Permissions
-Executing /tmp/cleopatra-temp-script-78539017469.sh
+Creating /tmp/ptconfigure-temp-script-78539017469.sh
+chmod 755 /tmp/ptconfigure-temp-script-78539017469.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-78539017469.sh Permissions
+Executing /tmp/ptconfigure-temp-script-78539017469.sh
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
 W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn&#39;t be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
@@ -411,7 +399,7 @@ Ign http://in.archive.ubuntu.com trusty/restricted Translation-en_IN
 Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
 Fetched 2,441 kB in 1min 15s (32.5 kB/s)
 Reading package lists...
-Temp File /tmp/cleopatra-temp-script-78539017469.sh Removed
+Temp File /tmp/ptconfigure-temp-script-78539017469.sh Removed
 [Pharaoh Logging] Package redis-server from the Packager Apt is already installed, so not installing
 ... All done!
 *******************************
@@ -434,28 +422,26 @@ Installer Finished
 <colgroup>
 <col width="20%" />
 <col width="19%" />
-<col width="31%" />
-<col width="29%" />
+<col width="7%" />
+<col width="54%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Directory(default)</th>
-<th class="head">Alternative Options</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install Redis ?</td>
-<td>Yes</td>
-<td>Instead of using redis, the user
-can use Redis</td>
-<td>It installs redis under cleopatra</td>
+<tr class="row-even"><td>Install Redis? (Y/N)</td>
+<td>Redis, redis</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed installation, they can input as Y</td>
 </tr>
-<tr class="row-odd"><td>Install Redis ?</td>
-<td>No</td>
-<td>Instead of using redis, the user can
-use Redis.|</td>
-<td>It stops the installation process.</td>
+<tr class="row-odd"><td>Install Redis? (Y/N)</td>
+<td>Redis, redis</td>
+<td>N(No)</td>
+<td>If the user wish to quit installation, they can input as N.|</td>
 </tr>
 </tbody>
 </table>
@@ -508,7 +494,7 @@ use Redis.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

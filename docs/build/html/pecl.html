@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PECL &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Phake" href="phake.html" />
+    <link rel="prev" title="Pear" href="pear.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PECL</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a></li>
+<li><a class="reference internal" href="#help-command">Help command</a></li>
+<li><a class="reference internal" href="#create">Create</a></li>
+<li><a class="reference internal" href="#remove">Remove</a></li>
+<li><a class="reference internal" href="#set-passward">Set passward</a></li>
+<li><a class="reference internal" href="#exists">Exists</a></li>
+<li><a class="reference internal" href="#show-group">Show-Group</a></li>
+<li><a class="reference internal" href="#add-to-groups">Add-to-Groups</a></li>
+<li><a class="reference internal" href="#remove-from-group">Remove-from-group</a></li>
+<li><a class="reference internal" href="#benefits">Benefits</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="pear.html"
+         title="Previous Chapter: Pear">&laquo; Pear</a></li>
+  <li><a href="phake.html"
+         title="Next Chapter: Phake">Phake &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/pecl.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+    <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  
+  <div class="section" id="pecl">
+<h1>PECL<a class="headerlink" href="#pecl" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<p>PECL stands for “Positive Emitter Coupled Logic”. Pecl are differential logic outputs commonly used in high-speed clock distribution circuits. This command provides the user to create, remove, setpassward, exist . Group activities also possible through this command. This command main function is based on the system. It is suitable with Ubuntu and CentOS.</p>
+</div>
+<div class="section" id="help-command">
+<h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
+<p>Pecl makes package development a breeze: it works with exist, modify, create, to support the set passward for system pecl. With pecl, modifying a package becomes so easy that it will be the user default layout whenever the user is writing a significant amount of code.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl <span class="nb">help</span>
+</pre></div>
+</div>
+<p>The following screenshot explains its function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PECL <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>allows you to modify create or modify pecls
+
+ PECL, pecl
+
+       - create
+       Create a new system pecl, overwriting <span class="k">if </span>it exists
+       example: ptconfigure pecl create --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - remove
+       Remove a system pecl
+       example: ptconfigure pecl remove --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - <span class="nb">set</span>-password
+       Set the password of a system pecl
+       example: ptconfigure pecl <span class="nb">set</span>-password --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+
+       - exists
+       Check the existence of a pecl
+       example: ptconfigure pecl exists --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - show-groups
+       Show groups to which a pecl belongs
+       example: ptconfigure pecl show-groups --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
+       - add-to-group
+       Add pecl to a group
+       example: ptconfigure pecl add-to-group --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
+       - remove-from-group
+       Remove pecl from a group
+       example: ptconfigure pecl remove-from-group --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="create">
+<h2>Create<a class="headerlink" href="#create" title="Permalink to this headline">¶</a></h2>
+<p>This command allow the user to create a new system pecl. Overwriting is possible in case of existence. New pecl name can be mentioned in a single command itself.</p>
+<p>The command used for create is as follows</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl create
+</pre></div>
+</div>
+<p>After input as the above command, it starts creating pecl. In case of file existing the indication message appears. The command and its function explains with the screen shots.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- create
+Create a new system pecl, overwriting <span class="k">if </span>it exists
+example: ptconfigure pecl create --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove">
+<h2>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
+<p>This command allow the user to remove a pecl. Removable pecl name can be mentioned in a single command line itself.
+The command used for create is as follows</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl remove
+</pre></div>
+</div>
+<p>After input as the above command, it starts removing pecl. In case of file already removed from the pecl  the indication message appears. The command and its function explains with the screen shots.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- remove
+Remove a system pecl
+example: ptconfigure pecl remove --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="set-passward">
+<h2>Set passward<a class="headerlink" href="#set-passward" title="Permalink to this headline">¶</a></h2>
+<p>Setpassward used to run a particular command with root permissions in pecl. The interesting thing is that when the user use passward for a particular command, system prompts the user for current user’s password. The command used for create is as follows</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl  <span class="nb">set</span>-passward
+</pre></div>
+</div>
+<p>Pecl name and new passward also mention in the same command line. This makes another benefit for this module. The following screen shot visualize its functions.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- <span class="nb">set</span>-password
+Set the password of a system pecl
+example: ptconfigure pecl <span class="nb">set</span>-password --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exists">
+<h2>Exists<a class="headerlink" href="#exists" title="Permalink to this headline">¶</a></h2>
+<p>This command used to check the existence of a pecl. Simple command makes this command work properly. Firstly it checks pecl name in the system then it indicates whether it is existing or not. The following command used to do this function</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl Exists
+</pre></div>
+</div>
+<p>The following screen shot visualize its functions.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- exists
+Check the existence of a pecl
+example: ptconfigure pecl exists --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="show-group">
+<h2>Show-Group<a class="headerlink" href="#show-group" title="Permalink to this headline">¶</a></h2>
+<p>This command used to check the work group of a pecl. Simple command makes this command work properly. Firstly it checks group name then pecl name in the system then it indicates the group name to which a pecl belongs. The following command used to do this function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- show-groups
+Show groups to which a pecl belongs
+example: ptconfigure pecl show-groups --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-to-groups">
+<h2>Add-to-Groups<a class="headerlink" href="#add-to-groups" title="Permalink to this headline">¶</a></h2>
+<p>This facilitates the user to add a pecl to a group. While adding it can asks pecl name and group name. The user can enter the according to their wish.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl add-to-group
+</pre></div>
+</div>
+<p>After input the command it add a pecl in group.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- add-to-group
+Add pecl to a group
+example: ptconfigure pecl add-to-group --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-from-group">
+<h2>Remove-from-group<a class="headerlink" href="#remove-from-group" title="Permalink to this headline">¶</a></h2>
+<p>This command allow the user to remove a pecl from group. Removable pecl name can be mentioned in a single command line itself.
+The command used for create is as follows</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pecl remove-from-group
+</pre></div>
+</div>
+<p>After input as the above command, it starts removing pecl from group. In case of file already removed from the pecl  the indication message appears. The command and its function explains with the screen shots.</p>
+<div class="highlight-bash"><div class="highlight"><pre>- remove-from-group
+Remove pecl from a group
+example: ptconfigure pecl remove-from-group --peclname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Non case sensitivity.</li>
+<li>Well-to-do in Ubuntu and CentOS.</li>
+<li>Lower power consumption.</li>
+<li>Create a new system pecl</li>
+<li>Remove a pecl</li>
+<li>Add to  group  is possible</li>
+<li>Remove group is possible</li>
+<li>Show group is possible</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/pecl.rst">
+          PECL
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

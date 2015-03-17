@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="Ssh Harden" href="sshharden.html" />
-    <link rel="prev" title="Service" href="service.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="SshEncrypt" href="sshencrypt.html" />
+    <link rel="prev" title="SFTP" href="sftp_cleo.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -108,10 +108,10 @@
             
               
                 
-  <li><a href="service.html"
-         title="Previous Chapter: Service">&laquo; Service</a></li>
-  <li><a href="sshharden.html"
-         title="Next Chapter: Ssh Harden">Ssh Harden &raquo;</a></li>
+  <li><a href="sftp_cleo.html"
+         title="Previous Chapter: SFTP">&laquo; SFTP</a></li>
+  <li><a href="sshencrypt.html"
+         title="Next Chapter: SshEncrypt">SshEncrypt &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="skipfish">
@@ -169,11 +157,11 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guides the users regarding the purpose and as well as about the options that are included in the Skipfish module. It lists out the alternative parameters of Skipfish module. It also describes the syntax for installing the Skipfish module. The help command for Skipfish module is shown as below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Skipfish <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Skipfish <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Skipfish.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Skipfish <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Skipfish <span class="nb">help</span>
 
 ******************************
 
@@ -183,7 +171,7 @@
 
        - install
        Installs Skipfish.
-       example: cleopatra skipfish install
+       example: ptconfigure skipfish install
 
 ------------------------------
 End Help
@@ -194,11 +182,11 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This command authorize to install skipfish with interactive site map . When the user want to install skipfish the following command guides  the user to install.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra skipfish install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure skipfish install
 </pre></div>
 </div>
 <p>after typing this command the system asks users wish. The other process explains the installation through the screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Skipfish install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Skipfish install
 Install  Skipfish? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
@@ -210,21 +198,21 @@ Building dependency tree...
 Reading state information...
 The following NEW packages will be installed:
  skipfish
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">15</span> not upgraded.
-Need to get <span class="m">233</span> kB of archives.
-After this operation, <span class="m">574</span> kB of additional disk space will be used.
-Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/universe skipfish amd64 2.10b-1 <span class="o">[</span><span class="m">233</span> kB<span class="o">]</span>
-Fetched <span class="m">233</span> kB in 29s <span class="o">(</span>7,910 B/s<span class="o">)</span>
+0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
+Need to get 233 kB of archives.
+After this operation, 574 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/universe skipfish amd64 2.10b-1 <span class="o">[</span>233 kB<span class="o">]</span>
+Fetched 233 kB in 29s <span class="o">(</span>7,910 B/s<span class="o">)</span>
 Selecting previously unselected package skipfish.
-<span class="o">(</span>Reading database ... <span class="m">199429</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 199429 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../skipfish_2.10b-1_amd64.deb ...
 Unpacking skipfish <span class="o">(</span>2.10b-1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
 Setting up skipfish <span class="o">(</span>2.10b-1<span class="o">)</span> ...
 <span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package skipfish from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -323,7 +311,7 @@ input as N.|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

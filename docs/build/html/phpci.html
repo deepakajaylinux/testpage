@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="PHPCS" href="phpcs.html" />
     <link rel="prev" title="phpconf" href="phpconf.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,7 +96,6 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -145,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="phpci">
@@ -165,78 +152,258 @@
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>PHPCI is an open source continuous integration tool specifically designed for Cleopatra. The user have built it with simplicity in mind, so whilst it does not do everything Jenkins can do, it is a breeze to set up and use. This is ease with Ubuntu and cent OS.</div></blockquote>
+<div>PHPCI is an open source continuous integration tool specifically designed for ptconfigure. The user have built it with simplicity in mind, so whilst it does not do everything Jenkins can do, it is a breeze to set up and use. This is ease with Ubuntu and cent OS.</div></blockquote>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>This help command guide the user to perform certain operation about Phpci   module. This is suitable for all type of corporate users.</div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra PHPCI <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PHPCI <span class="nb">help</span>
 </pre></div>
 </div>
 <p>The help command shows a short list of the commands built into the Phpci module. The following screen shot visualize it.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PHPCI <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install PHPCI, the popular Build Server.
+
+ PHPCI, phpci
+
+       - install
+       Installs PHPCI through git, with its dependencies
+       example: ptconfigure phpci install
+
+       - config-default, default-config
+       Installs a default config.yml file <span class="k">for </span>PHPCI
+       example: ptconfigure phpci config-default --yes --guess
+
+       - install-default-database
+       Installs a default database and user <span class="k">for </span>PHPCI
+       example: ptconfigure phpci install-default-database --yes --guess
+           --mysql-admin-user<span class="o">=</span><span class="s2">&quot;root&quot;</span> <span class="c"># guess will provide root</span>
+           --mysql-admin-pass<span class="o">=</span><span class="s2">&quot;some-pass&quot;</span> <span class="c"># guess will provide ptconfigure</span>
+
+ You can install a <span class="nb">complete local </span>version of PHPCI with the following:
+
+ sudo ptconfigure phpci install --yes --guess
+ sudo ptconfigure phpci install-default-database --yes --guess
+ sudo ptconfigure phpci config-default --yes --guess
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>This module helps to install phpci. First step this module have to check   composer is available in the system or not. If it is not available in the system automatically, it will install it.</div></blockquote>
-<div class="highlight-bash"><div class="highlight"><pre>Cleopatra Phpci install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Phpci install
 </pre></div>
 </div>
-<p>After typing this command, the system asks like this.
-Install PHPCI? (Y/N)
-The user inputs as y, automatically it can check the composer and install the updated version in default directory “/apt/”the following screen appears</p>
-<p>The inputs as N, it exit the screen.</p>
-</div>
-<div class="section" id="option">
-<h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
+<p>After inputting the command above, the following process are involved during the process of installation as depicted in the tabular format,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="20%" />
-<col width="26%" />
-<col width="54%" />
+<col width="29%" />
+<col width="11%" />
+<col width="39%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameter</th>
 <th class="head">Options</th>
-<th class="head">Output</th>
+<th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install PHPCI</td>
-<td>yes</td>
-<td>It will install composer as well as PHPCI under
-cleopatra</td>
+<tr class="row-even"><td>Install PHPCI? (Y/N)</td>
+<td>Instead of PHPCI, we can use phpci
+also.</td>
+<td>Y(Yes)</td>
+<td>If the user wish to proceed the installation
+process they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td><dl class="first last docutils">
-<dt>Install config-</dt>
-<dd>default</dd>
-</dl>
-</td>
-<td>Yes</td>
-<td><dl class="first last docutils">
-<dt>It will install configuration files .yml file</dt>
-<dd>for editing under Cleopatra</dd>
-</dl>
-</td>
-</tr>
-<tr class="row-even"><td>Install default
-Database</td>
-<td>Yes</td>
-<td><dl class="first last docutils">
-<dt>the user has to enter the root user id</dt>
-<dd>and passward under Cleopatra</dd>
-</dl>
-</td>
-</tr>
-<tr class="row-odd"><td>Install default
-database</td>
-<td>No</td>
-<td>the user has to exit the screen
-|</td>
+<tr class="row-odd"><td>Install PHPCI? (Y/N)</td>
+<td>Instead of PHPCI, we can use phpci
+also.</td>
+<td>N(No)</td>
+<td>If the user wish to quit the installation
+process they can input as N.|</td>
 </tr>
 </tbody>
 </table>
+<p>If the user proceeds installation, during the process of installation the following steps are involved,</p>
+<ul class="simple">
+<li>builds the dependency tree.</li>
+<li>Reads the state information.</li>
+<li>list outs the extra packages that are automatically installed.</li>
+<li>list outs the suggested packages that are installing.</li>
+<li>list outs the new packages that are installing.</li>
+<li>details regarding the number of files upgraded, newly installed, removed and not upgraded.</li>
+</ul>
+<p>And then, it will asks input from the users, as depicted in tabular format</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="17%" />
+<col width="31%" />
+<col width="12%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Path</th>
+<th class="head">Option</th>
+<th class="head">Comment</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Program data
+directory (Default)</td>
+<td>&#8220;/opt/phpunit(corresponding module)&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with the
+default program data directory they can input
+as Yes</td>
+</tr>
+<tr class="row-odd"><td>Program data
+directory</td>
+<td>User Specific</td>
+<td>No(End Slash)</td>
+<td>If the user wish to proceed with their own
+program data directory, they can input as N, and
+in hand specify they own location.</td>
+</tr>
+<tr class="row-even"><td>Program executor
+directory (Dafault)</td>
+<td>&#8220;/usr/bin&#8221;</td>
+<td>Yes</td>
+<td>If the user to proceed installation with the
+default program executor directory they can
+input as Yes</td>
+</tr>
+<tr class="row-odd"><td>Program executor
+directory</td>
+<td>User specific</td>
+<td>No(End Slash)</td>
+<td>If the user wish to proceed with their own
+program executor directory, they can input as N,
+and in hand specify they own location.|</td>
+</tr>
+</tbody>
+</table>
+<p>The following screenshot pictorially depicts the above described process of installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/#  ptconfigure phpci install
+Install PHPCI? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*          ! PHPCI !        *
+*******************************
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libmcrypt4
+Suggested packages:
+ libmcrypt-dev mcrypt
+The following NEW packages will be installed:
+ libmcrypt4 php5-mcrypt
+0 upgraded, 2 newly installed, 0 to remove and 301 not upgraded.
+Need to get 77.3 kB of archives.
+After this operation, 324 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libmcrypt4 amd64 2.5.8-3.1ubuntu1 <span class="o">[</span>61.9 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/universe php5-mcrypt amd64 5.4.6-0ubuntu5 <span class="o">[</span>15.4 kB<span class="o">]</span>
+Fetched 77.3 kB in 4s <span class="o">(</span>19.1 kB/s<span class="o">)</span>
+Selecting previously unselected package libmcrypt4.
+<span class="o">(</span>Reading database ... 182037 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libmcrypt4_2.5.8-3.1ubuntu1_amd64.deb ...
+Unpacking libmcrypt4 <span class="o">(</span>2.5.8-3.1ubuntu1<span class="o">)</span> ...
+Selecting previously unselected package php5-mcrypt.
+Preparing to unpack .../php5-mcrypt_5.4.6-0ubuntu5_amd64.deb ...
+Unpacking php5-mcrypt <span class="o">(</span>5.4.6-0ubuntu5<span class="o">)</span> ...
+Setting up libmcrypt4 <span class="o">(</span>2.5.8-3.1ubuntu1<span class="o">)</span> ...
+Setting up php5-mcrypt <span class="o">(</span>5.4.6-0ubuntu5<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package php5-mcrypt from the Packager Apt executed correctly
+Creating /tmp/ptconfigure-temp-script-82480901916.sh
+chmod 755 /tmp/ptconfigure-temp-script-82480901916.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-82480901916.sh Permissions
+Executing /tmp/ptconfigure-temp-script-82480901916.sh
+Temp File /tmp/ptconfigure-temp-script-82480901916.sh Removed
+Creating /tmp/ptconfigure-temp-script-43828918328.sh
+chmod 755 /tmp/ptconfigure-temp-script-43828918328.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-43828918328.sh Permissions
+Executing /tmp/ptconfigure-temp-script-43828918328.sh
+Enabling module rewrite.
+To activate the new configuration, you need to run:
+ service apache2 restart
+Temp File /tmp/ptconfigure-temp-script-43828918328.sh Removed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+sh: 1: composer: not found
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module Composer reports itself as Not Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Installing as not installed
+*******************************
+*        Pharaoh Tools        *
+*          Composer!         *
+*******************************
+What is the program data directory? Found <span class="s2">&quot;/opt/composer&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, no end slash<span class="o">)</span>
+
+What is the program executor directory? Found <span class="s2">&quot;/usr/bin&quot;</span> - use this? <span class="o">(</span>Enter nothing <span class="k">for </span>yes, No Trailing Slash<span class="o">)</span>
+
+git clone <span class="s1">&#39;https://github.com/phpengine/composer-phar.git&#39;</span>  /tmp/composer/composerCloning into <span class="s1">&#39;/tmp/composer/composer&#39;</span>...
+
+
+remote: Counting objects: 6, <span class="k">done</span>.
+remote: Total 6 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+Unpacking objects: 100% <span class="o">(</span>6/6<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+Program Data folder populated
+Program Executor Deleted <span class="k">if </span>existed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+Creating /tmp/ptconfigure-temp-script-34508236330.sh
+chmod 755 /tmp/ptconfigure-temp-script-34508236330.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-34508236330.sh Permissions
+Executing /tmp/ptconfigure-temp-script-34508236330.sh
+<span class="c">#!/usr/bin/env php</span>
+Installing block8/phpci <span class="o">(</span>1.5.2<span class="o">)</span>
+ - Installing block8/phpci <span class="o">(</span>1.5.2<span class="o">)</span>
+   Downloading: 100%
+
+Created project in phpci
+Loading composer repositories with package information
+Installing dependencies from lock file
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. Run update to update them.
+Your requirements could not be resolved to an installable <span class="nb">set </span>of packages.
+
+ Problem 1
+   - The requested PHP extension ext-pdo_mysql * is missing from your system.
+
+Temp File /tmp/ptconfigure-temp-script-34508236330.sh Removed
+Creating /tmp/ptconfigure-temp-script-28990655696.sh
+chmod 755 /tmp/ptconfigure-temp-script-28990655696.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-28990655696.sh Permissions
+Executing /tmp/ptconfigure-temp-script-28990655696.sh
+sudo: dapperstrano: <span class="nb">command </span>not found
+Temp File /tmp/ptconfigure-temp-script-28990655696.sh Removed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+PHPCI: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -287,7 +454,7 @@ database</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -21,7 +21,7 @@ The pictorial representation of the help command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# jrush  version help
+ kevell@corp:/# jrush  version help
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -57,7 +57,7 @@ The pictorial representation of the screenshot is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# jrush version available --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush version available --config-file="/var/www/html/joomla/configuration.php" 
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************
@@ -93,7 +93,7 @@ The pictorial representation of the above command is listed below,
 
 .. code-block:: bash
 
- kevells@corp:/# jrush version current --config-file="/var/www/html/joomla/configuration.php" 
+ kevell@corp:/# jrush version current --config-file="/var/www/html/joomla/configuration.php" 
  ****************************************
  GC JRush - The Joomla Command Line Shell
  ****************************************

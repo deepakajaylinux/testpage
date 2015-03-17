@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
     <link rel="next" title="Process" href="process.html" />
     <link rel="prev" title="Port" href="port.html" />
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -96,7 +96,6 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -145,19 +144,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="postgresserver">
@@ -170,10 +157,10 @@ It allows you to add custom functions developed using different programming lang
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of PostgresServer module. User will come to know about the different ways/format to execute this module. This command will guide the end user to know when and how the command to be used. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleapatra PostgresServer <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PostgresServer <span class="nb">help</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>root@deepak:~# cleopatra PostgresServer  <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PostgresServer  <span class="nb">help</span>
 ******************************
 
 
@@ -185,12 +172,12 @@ PostgresServer, postgres-server, postgresserver
 
 - install
 Install some Postgres Server Tools through apt-get.
-example: cleopatra postgres-server install
+example: ptconfigure postgres-server install
 
 Notes, during postgres install a root password will be set. First, it<span class="s1">&#39;ll look</span>
 <span class="s1">for the parameter --postgres-root-pass, if this is not set, it&#39;</span>ll look in the
-cleopatra config <span class="k">for</span> a postgres-default-root-pass setting, and failing both of
-those it will just <span class="nb">set </span>the password <span class="k">for</span> root to cleopatra.
+ptconfigure config <span class="k">for </span>a postgres-default-root-pass setting, and failing both of
+those it will just <span class="nb">set </span>the password <span class="k">for </span>root to ptconfigure.
 
 ------------------------------
 End Help
@@ -201,18 +188,16 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to install the module in machine. The below given command will execute the process of installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Cleapatra PostgresServer install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PostgresServer install
 </pre></div>
 </div>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>After inputting the command above, the process of execution involves as described in the tabular format,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="31%" />
-<col width="22%" />
-<col width="15%" />
-<col width="32%" />
+<col width="20%" />
+<col width="37%" />
+<col width="10%" />
+<col width="34%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
@@ -222,21 +207,148 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Cleopatra postgres-server Install</td>
-<td>PostgresServer,
-postgresserver,
-postgres-server</td>
+<tr class="row-even"><td>Install Postgres
+Server? (Y/N)</td>
+<td>PostgresServer, postgresserver,
+postgres-server.
+The user can use any one of the above.</td>
 <td>Y</td>
-<td>System starts installation process</td>
+<td>If the user wish to proceed installation
+they can input as Y.</td>
 </tr>
-<tr class="row-odd"><td>Cleopatra postgres-server Install</td>
-<td>PostgresServer,postgres
-server,postgres-server|</td>
+<tr class="row-odd"><td>Install Postgres
+Server? (Y/N)</td>
+<td>PostgresServer, postgresserver,
+postgres-server.
+The user can use any one of the above.|</td>
 <td>N</td>
-<td>System stops  installation process</td>
+<td>If the user wish to quit installation
+they can input as N.</td>
 </tr>
 </tbody>
 </table>
+<p>If the user proceeds installation, during the process of installation the following steps are involved,</p>
+<ul class="simple">
+<li>builds the dependency tree.</li>
+<li>Reads the state information.</li>
+<li>list outs the extra packages that are automatically installed.</li>
+<li>list outs the suggested packages that are installing.</li>
+<li>list outs the new packages that are installing.</li>
+<li>details regarding the number of files upgraded, newly installed, removed and not upgraded.</li>
+</ul>
+<p>The following screenshot pictorially depicts the above described process of installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PostgresServer install
+Install Postgres Server? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         Postgres Server!        *
+*******************************                                                                                                                                        Adding user postgres to group ssl-cert
+
+Creating config file /etc/logrotate.d/postgresql-common with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+ en_us
+Removing obsolete dictionary files:
+* No PostgreSQL clusters exist; see <span class="s2">&quot;man pg_createcluster&quot;</span>
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libpq5 postgresql-9.3 postgresql-client-9.3 postgresql-client-common
+ postgresql-common
+Suggested packages:
+ oidentd ident-server locales-all postgresql-doc-9.3
+The following NEW packages will be installed:
+ libpq5 postgresql postgresql-9.3 postgresql-client-9.3
+ postgresql-client-common postgresql-common
+0 upgraded, 6 newly installed, 0 to remove and 301 not upgraded.
+Need to get 3,666 kB of archives.
+After this operation, 15.4 MB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main libpq5 amd64 9.3.5-0ubuntu0.14.04.1 <span class="o">[</span>80.6 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/main postgresql-client-common all 154 <span class="o">[</span>25.4 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main postgresql-client-9.3 amd64 9.3.5-0ubuntu0.14.04.1 <span class="o">[</span>782 kB<span class="o">]</span>
+Get:4 http://in.archive.ubuntu.com/ubuntu/ trusty/main postgresql-common all 154 <span class="o">[</span>103 kB<span class="o">]</span>
+Get:5 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main postgresql-9.3 amd64 9.3.5-0ubuntu0.14.04.1 <span class="o">[</span>2,670 kB<span class="o">]</span>
+Get:6 http://in.archive.ubuntu.com/ubuntu/ trusty/main postgresql all 9.3+154 <span class="o">[</span>5,088 B<span class="o">]</span>
+Preconfiguring packages ...
+Fetched 3,666 kB in 8min 13s <span class="o">(</span>7,435 B/s<span class="o">)</span>
+Selecting previously unselected package libpq5.
+<span class="o">(</span>Reading database ... 181615 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../libpq5_9.3.5-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking libpq5 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../postgresql-client-common_154_all.deb ...
+Unpacking postgresql-client-common <span class="o">(</span>154<span class="o">)</span> ...
+Selecting previously unselected package postgresql-client-9.3.
+Preparing to unpack .../postgresql-client-9.3_9.3.5-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking postgresql-client-9.3 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../postgresql-common_154_all.deb ...
+Adding <span class="s1">&#39;diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common&#39;</span>
+Unpacking postgresql-common <span class="o">(</span>154<span class="o">)</span> ...
+Selecting previously unselected package postgresql-9.3.
+Preparing to unpack .../postgresql-9.3_9.3.5-0ubuntu0.14.04.1_amd64.deb ...
+Unpacking postgresql-9.3 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_9.3+154_all.deb ...
+Unpacking postgresql <span class="o">(</span>9.3+154<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+ureadahead will be reprofiled on next reboot
+Setting up libpq5 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+Setting up postgresql-client-common <span class="o">(</span>154<span class="o">)</span> ...
+Setting up postgresql-client-9.3 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+update-alternatives: using /usr/share/postgresql/9.3/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz <span class="o">(</span>psql.1.gz<span class="o">)</span> in auto mode
+Setting up postgresql-common <span class="o">(</span>154<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Setting up postgresql-9.3 <span class="o">(</span>9.3.5-0ubuntu0.14.04.1<span class="o">)</span> ...
+Creating new cluster 9.3/main ...
+ config /etc/postgresql/9.3/main
+ data   /var/lib/postgresql/9.3/main
+ locale en_IN
+ port   5432
+update-alternatives: using /usr/share/postgresql/9.3/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz <span class="o">(</span>postmaster.1.gz<span class="o">)</span> in auto mode
+* Starting PostgreSQL 9.3 database server
+  ...done.
+Setting up postgresql <span class="o">(</span>9.3+154<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package postgresql from the Packager Apt executed correctly
+E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/p/postgresql-common/postgresql-contrib_9.3+154_all.deb  Connection failed <span class="o">[</span>IP: 91.189.88.149 80<span class="o">]</span>
+
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+ libossp-uuid16 postgresql-contrib-9.3
+Suggested packages:
+ uuid libdbd-pg-perl
+The following NEW packages will be installed:
+ libossp-uuid16 postgresql-contrib postgresql-contrib-9.3
+0 upgraded, 3 newly installed, 0 to remove and 301 not upgraded.
+Need to get 435 kB of archives.
+After this operation, 2,038 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main libossp-uuid16 amd64 1.6.2-1.3ubuntu1 <span class="o">[</span>29.6 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main postgresql-contrib-9.3 amd64 9.3.5-0ubuntu0.14.04.1 <span class="o">[</span>400 kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/main postgresql-contrib all 9.3+154 <span class="o">[</span>5,106 B<span class="o">]</span>
+Err http://in.archive.ubuntu.com/ubuntu/ trusty/main postgresql-contrib all 9.3+154
+ Connection failed <span class="o">[</span>IP: 91.189.88.149 80<span class="o">]</span>
+Fetched 430 kB in 6min 25s <span class="o">(</span>1,114 B/s<span class="o">)</span>
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package postgresql-contrib from the Packager Apt did not execute correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+PostgresServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
@@ -286,7 +398,7 @@ server,postgres-server|</td>
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

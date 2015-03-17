@@ -6,7 +6,8 @@ phpconf
 Synopsis
 ---------
 
-This module assists in installing and as well as managing the configuration of php. The user can install Apache HTTP Server. The user can frame their configuration as per their requirement at the time of executing installation. The parameters used for declaring installation and help are not case sensitive.
+This module assists in installing and as well as managing the configuration of php. The user can frame their configuration as per their requirement at the time of executing installation. 
+
 
 Help Command
 -------------
@@ -15,13 +16,13 @@ The help command leads the user in working with this php config. It also specifi
 
 .. code-block:: bash
 
-	cleopatra PHPConf help
+	ptconfigure PHPConf help
 
 The screen shot as given below shows pictorial representation regarding the help usage in php config.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPConf help
+ kevell@corp:/# ptconfigure PHPConf help
  ******************************
 
 
@@ -31,7 +32,7 @@ The screen shot as given below shows pictorial representation regarding the help
 
         - install
         Installs a configuration for PHP
-        example: cleopatra phpconf install
+        example: ptconfigure phpconf install
 
  ------------------------------
  End Help
@@ -46,13 +47,13 @@ Installing the php config is more beneficial for the users as they can frame the
 
 .. code-block:: bash
 
-		cleopatra PHPConf install
+		ptconfigure PHPConf install
 
 After inputting the command as shown above the following operations occurs as shown in the tabular format.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra PHPConf install
+ kevell@corp:/# ptconfigure PHPConf install
  Install PHP Conf? (Y/N)
  y
  *******************************
@@ -154,14 +155,14 @@ Options
         +-------------------------------+------------------------------+--------------------------+------------------------------+
         |    Parameters        		| Alternative Parameters       | Required  		  | Comment                      |
         +===============================+==============================+==========================+==============================+
-        |Install PHPConf?(Y/N) 		| In Spite of PHP              |           		  |If the user wish to 	         |
-        |                      		| Conf these alternative       |Y(YES)     		  |proceed the nstallation       |
+        |Install PHPConf?(Y/N) 		| Instead of PHP               |           		  |If the user wish to 	         |
+        |                      		| Conf these alternative       | Y(YES)     		  |proceed the nstallation       |
         |         	       		| names can be used:           |              		  |process they can input as Y   |
         |                      		| php-configure, php-conf      |           		  |	                         |
         |    		       		| php-configuration,           |                  	  |			         |
         |          			| phpconf              	       |            		  |           		         |
         +-------------------------------+------------------------------+--------------------------+------------------------------+ 
-        |Install PHPConf? (Y/N)		| In Spite of PHP              | Y(Yes)                   |If the user wish to           |
+        |Install PHPConf? (Y/N)		| Instead of PHP               | N(No)                    |If the user wish to           |
         |                      		| Conf these alternative       |                          |quit the installation	 | 
         |                               | names can be used:           |                          |process they can  	         |
         |		        	| php-configure, php-conf      |	                  |input as N.|                  |

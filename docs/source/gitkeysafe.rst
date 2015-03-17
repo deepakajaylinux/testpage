@@ -11,11 +11,11 @@ Git key safe which helps you to installs Git key safe. This allows permission in
 Help command
 ----------------------
 
-The help command leads the users regarding the purpose and as well as about the options that are included in the Gitkeysafe modules. The help command lists out the alternative parameters of Gitkeysafe under Cleopatra module. It also describes the syntax for installing the user’s keysafe. The help command for Gitkeysafe is shown below.
+The help command leads the users regarding the purpose and as well as about the options that are included in the Gitkeysafe modules. The help command lists out the alternative parameters of Gitkeysafe under ptconfigure module. It also describes the syntax for installing the user’s keysafe. The help command for Gitkeysafe is shown below.
 
 .. code-block:: bash
 
-		cleopatra GitkeySafe help
+		ptconfigure GitkeySafe help
 
 
 The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under the syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under gitkeysafe.
@@ -24,7 +24,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra GitKeySafe help
+ kevell@corp:/# ptconfigure GitKeySafe help
 
  ******************************
 
@@ -35,7 +35,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
         - install
         Installs Git Key-Safe Server
-        example: cleopatra gitkeysafe install
+        example: ptconfigure gitkeysafe install
 
         script example: git-safe-key -i /path/to/key clone http://git.com/repo.git
 
@@ -51,13 +51,13 @@ Installation typically involves code being copied/generated from the installatio
 
 .. code-block:: bash
 
-		cleopatra gitkeysafe install
+		ptconfigure gitkeysafe install
 
 While installing this module the following screen shot will be appeared.
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra gitkeysafe install
+ kevell@corp:/# ptconfigure gitkeysafe install
 
  Install Git Key-Safe Server? (Y/N) 
  Y
@@ -91,7 +91,7 @@ Option
  | Parameters		     | Alternate Parameters			   | Options	       | Comments			   |
  +===========================+=============================================+===================+===================================+
  |Install gitkeysafe         | Instead of using gitkeysafe we can use 	   | Y		       | It installs  gitkeysafe under     |	
- |			     | GitKeySafe,git-key-safe			   |		       | cleopatra			   |
+ |			     | GitKeySafe,git-key-safe			   |		       | ptconfigure			   |
  +---------------------------+---------------------------------------------+-------------------+-----------------------------------+
  |Install gitkeysafe         | Instead of using gitkeysafe we can use      | N                 | The system exit the installation  |    
  |                           | GitKeySafe,git-key-safe|                    |                   | 	                           |

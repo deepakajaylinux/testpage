@@ -31,8 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="cleopatra.html" />
-    <link rel="next" title="VNC" href="vnc.html" />
+    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
+    <link rel="next" title="Vmplayer" href="vmplayer.html" />
     <link rel="prev" title="Varnish" href="varnish.html" />
 
 
@@ -80,11 +80,11 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
 </ul>
 </li>
@@ -110,8 +110,8 @@
                 
   <li><a href="varnish.html"
          title="Previous Chapter: Varnish">&laquo; Varnish</a></li>
-  <li><a href="vnc.html"
-         title="Next Chapter: VNC">VNC &raquo;</a></li>
+  <li><a href="vmplayer.html"
+         title="Next Chapter: Vmplayer">Vmplayer &raquo;</a></li>
               
             
             
@@ -145,19 +145,7 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cleopatra.html">Cleopatra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phlagrant.html">Phlagrant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dapperstrano_main.html">Dapperstrano</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Testingkamen_main.html">Testingkamen</a></li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-    <div class="col-md-9">
+    <div class="col-md-12">
       
   
   <div class="section" id="virtual-box">
@@ -169,7 +157,7 @@
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>The help command guide the user to install virtual box. The following screen shot shows about installation of virtual box.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Virtualbox <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Virtualbox <span class="nb">help</span>
 ******************************
 
 
@@ -179,7 +167,7 @@
 
 - install
 Installs Virtualbox through apt-get
-example: cleopatra virtualbox install
+example: ptconfigure virtualbox install
 
 ------------------------------
 End Help
@@ -190,23 +178,23 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>This module instruct the user to install. To activate virtual box follow the command as,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra virtual box install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure virtual box install
 </pre></div>
 </div>
 <p>Then the system can enquire
-cleopatra virtual box install? (Y/N)
+ptconfigure virtual box install? (Y/N)
 If the user enters Y then it will be installed, else it will exit the screen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra Virtualbox install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Virtualbox install
 Install Virtualbox? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 *******************************
 *        Pharaoh Tools        *
 *          ! Virtualbox !        *
 *******************************
-Creating /tmp/cleopatra-temp-script-27415379023.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-27415379023.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-27415379023.sh Permissions
-Executing /tmp/cleopatra-temp-script-27415379023.sh
+Creating /tmp/ptconfigure-temp-script-27415379023.sh
+chmod 755 /tmp/ptconfigure-temp-script-27415379023.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-27415379023.sh Permissions
+Executing /tmp/ptconfigure-temp-script-27415379023.sh
 invoke-rc.d: initscript virtualbox, action <span class="s2">&quot;restart&quot;</span> failed.
 Reading package lists...
 Building dependency tree...
@@ -217,17 +205,17 @@ Suggested packages:
  debhelper virtualbox-guest-additions-iso vde2
 The following NEW packages will be installed:
   dkms libgsoap4 virtualbox virtualbox-dkms virtualbox-qt
-<span class="m">0</span> upgraded, <span class="m">5</span> newly installed, <span class="m">0</span> to remove and <span class="m">6</span> not upgraded.
+0 upgraded, 5 newly installed, 0 to remove and 6 not upgraded.
 Need to get 21.2 MB of archives.
 After this operation, 85.7 MB of additional disk space will be used.
-Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libgsoap4 amd64 2.8.16-2 <span class="o">[</span><span class="m">525</span> kB<span class="o">]</span>
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/universe libgsoap4 amd64 2.8.16-2 <span class="o">[</span>525 kB<span class="o">]</span>
 Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/multiverse virtualbox amd64 4.3.10-dfsg-1 <span class="o">[</span>15.5 MB<span class="o">]</span>
 Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main dkms all 2.2.0.3-1.1ubuntu5.14.04 <span class="o">[</span>64.6 kB<span class="o">]</span>
-Get:4 http://in.archive.ubuntu.com/ubuntu/ trusty/multiverse virtualbox-dkms all 4.3.10-dfsg-1 <span class="o">[</span><span class="m">538</span> kB<span class="o">]</span>
+Get:4 http://in.archive.ubuntu.com/ubuntu/ trusty/multiverse virtualbox-dkms all 4.3.10-dfsg-1 <span class="o">[</span>538 kB<span class="o">]</span>
 Get:5 http://in.archive.ubuntu.com/ubuntu/ trusty/multiverse virtualbox-qt amd64 4.3.10-dfsg-1 <span class="o">[</span>4,592 kB<span class="o">]</span>
-Fetched 21.2 MB in 54s <span class="o">(</span><span class="m">389</span> kB/s<span class="o">)</span>
+Fetched 21.2 MB in 54s <span class="o">(</span>389 kB/s<span class="o">)</span>
 Selecting previously unselected package libgsoap4:amd64.
-<span class="o">(</span>Reading database ... <span class="m">203014</span> files and directories currently installed.<span class="o">)</span>
+<span class="o">(</span>Reading database ... 203014 files and directories currently installed.<span class="o">)</span>
 Preparing to unpack .../libgsoap4_2.8.16-2_amd64.deb ...
 Unpacking libgsoap4:amd64 <span class="o">(</span>2.8.16-2<span class="o">)</span> ...
 Selecting previously unselected package virtualbox.
@@ -242,29 +230,29 @@ Unpacking virtualbox-dkms <span class="o">(</span>4.3.10-dfsg-1<span class="o">)
 Selecting previously unselected package virtualbox-qt.
 Preparing to unpack .../virtualbox-qt_4.3.10-dfsg-1_amd64.deb ...
 Unpacking virtualbox-qt <span class="o">(</span>4.3.10-dfsg-1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> hicolor-icon-theme <span class="o">(</span>0.13-1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> shared-mime-info <span class="o">(</span>1.2-0ubuntu3<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> mime-support <span class="o">(</span>3.54ubuntu1.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> gnome-menus <span class="o">(</span>3.10.1-0ubuntu2<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> desktop-file-utils <span class="o">(</span>0.22-1ubuntu1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> bamfdaemon <span class="o">(</span>0.5.1+14.04.20140409-0ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>man-db <span class="o">(</span>2.6.7.1-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>hicolor-icon-theme <span class="o">(</span>0.13-1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>shared-mime-info <span class="o">(</span>1.2-0ubuntu3<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>mime-support <span class="o">(</span>3.54ubuntu1.1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>gnome-menus <span class="o">(</span>3.10.1-0ubuntu2<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>desktop-file-utils <span class="o">(</span>0.22-1ubuntu1<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>bamfdaemon <span class="o">(</span>0.5.1+14.04.20140409-0ubuntu1<span class="o">)</span> ...
 Rebuilding /usr/share/applications/bamf-2.index...
 Setting up libgsoap4:amd64 <span class="o">(</span>2.8.16-2<span class="o">)</span> ...
 Setting up virtualbox <span class="o">(</span>4.3.10-dfsg-1<span class="o">)</span> ...
 * Stopping VirtualBox kernel modules
   ...done.
 * Starting VirtualBox kernel modules
-* No suitable module <span class="k">for</span> running kernel found
+* No suitable module <span class="k">for </span>running kernel found
   ...fail!
 Setting up dkms <span class="o">(</span>2.2.0.3-1.1ubuntu5.14.04<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for </span>ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
 Setting up virtualbox-dkms <span class="o">(</span>4.3.10-dfsg-1<span class="o">)</span> ...
 Loading new virtualbox-4.3.10 DKMS files...
 First Installation: checking all kernels...
-Building <span class="k">for</span> 3.13.0-32-generic and 3.13.0-43-generic
-Building initial module <span class="k">for</span> 3.13.0-32-generic
+Building <span class="k">for </span>3.13.0-32-generic and 3.13.0-43-generic
+Building initial module <span class="k">for </span>3.13.0-32-generic
 Done.
 
 vboxdrv:
@@ -298,7 +286,7 @@ Running module version sanity check.
 depmod.......
 
 DKMS: install completed.
-Building initial module <span class="k">for</span> 3.13.0-43-generic
+Building initial module <span class="k">for </span>3.13.0-43-generic
 Done.
 
 vboxdrv:
@@ -337,11 +325,11 @@ DKMS: install completed.
 * Starting VirtualBox kernel modules
   ...done.
 Setting up virtualbox-qt <span class="o">(</span>4.3.10-dfsg-1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> libc-bin <span class="o">(</span>2.19-0ubuntu6.4<span class="o">)</span> ...
-Temp File /tmp/cleopatra-temp-script-27415379023.sh Removed
+Processing triggers <span class="k">for </span>libc-bin <span class="o">(</span>2.19-0ubuntu6.4<span class="o">)</span> ...
+Temp File /tmp/ptconfigure-temp-script-27415379023.sh Removed
 ... All <span class="k">done</span>!
 *******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
 ******************************
 
 
@@ -358,36 +346,28 @@ Installer Finished
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="29%" />
-<col width="17%" />
-<col width="24%" />
-<col width="29%" />
+<col width="27%" />
+<col width="16%" />
+<col width="22%" />
+<col width="35%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Syntax</th>
 <th class="head">Option</th>
+<th class="head">Alternative Parameter</th>
 <th class="head">Comments</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install Virtual box</td>
+<tr class="row-even"><td>Install Virtualbox? (Y/N)</td>
 <td>Yes</td>
-<td>Virtualbox</td>
-<td>Installed successfully</td>
+<td>Virtualbox, virtualbox</td>
+<td>System starts installation process</td>
 </tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>Virtualbox</td>
-<td>Installed successfully</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
+<tr class="row-odd"><td>Install Virtualbox? (Y/N)</td>
 <td>No</td>
-<td><ul class="first last simple">
-<li></li>
-</ul>
-</td>
-<td>Exit the screen|</td>
+<td>Virtualbox, virtualbox</td>
+<td>Exit the installation process|</td>
 </tr>
 </tbody>
 </table>
@@ -437,7 +417,7 @@ Installer Finished
     </p>
     <p>
         &copy; Copyright 2015, kevell.<br/>
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
     </p>
   </div>
 </footer>

@@ -15,7 +15,7 @@ The help command guides the users regarding the purpose and as well as about the
 
 .. code-block:: bash
 
-		cleopatra Phpvm help
+		ptconfigure Phpvm help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under Phpvm.
@@ -23,7 +23,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra phpvm help
+ kevell@corp:/# ptconfigure phpvm help
 
  ******************************
 
@@ -34,7 +34,7 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install
         Installs the latest version of PHPVM
-        example: cleopatra phpvm install
+        example: ptconfigure phpvm install
 
  ------------------------------
  End Help
@@ -49,7 +49,7 @@ The command used for installing the phpvm in the users machine is shown below:
 .. code-block:: bash
 
 
-		cleopatra phpvm install
+		ptconfigure phpvm install
 
 
 After inputting the command above, the following process occurs as shown in the tabular format.
@@ -86,7 +86,7 @@ The following screenshot pictorially depicts the above described process of inst
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra phpvm install
+ kevell@corp:/# ptconfigure phpvm install
 
  Install PHPVM? (Y/N) 
  Y
@@ -94,10 +94,10 @@ The following screenshot pictorially depicts the above described process of inst
  *        Pharaoh Tools        *
  *         PHPVM!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-45523327550.sh
- chmod 755 /tmp/cleopatra-temp-script-45523327550.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-45523327550.sh Permissions
- Executing /tmp/cleopatra-temp-script-45523327550.sh
+ Creating /tmp/ptconfigure-temp-script-45523327550.sh
+ chmod 755 /tmp/ptconfigure-temp-script-45523327550.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-45523327550.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-45523327550.sh
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
  W: GPG error: http://packages.elasticsearch.org stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY D27D666CD88E42B4
@@ -291,7 +291,7 @@ The following screenshot pictorially depicts the above described process of inst
  Hit http://in.archive.ubuntu.com trusty-backports/universe Translation-en
  Fetched 1364 kB in 51s (26.6 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-45523327550.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-45523327550.sh Removed
  [Pharaoh Logging] Package apache2 from the Packager Apt is already installed, so not installing
  [Pharaoh Logging] Package mysql-server from the Packager Apt is already installed, so not installing
  [Pharaoh Logging] Package php5 from the Packager Apt is already installed, so not installing

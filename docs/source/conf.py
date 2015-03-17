@@ -138,11 +138,6 @@ html_style = 'labibi.css'
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
 
-html_sidebars = {
-   '**': ['my_custom_sidebar.html'],
-   'using/windows': ['windowssidebar.html', 'searchbox.html'],
-}
-
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
 #html_additional_pages = {}
@@ -261,12 +256,15 @@ texinfo_documents = [
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
 
-
-language = 'en'
-
 locale_dirs = [
-		'locale/'
+		'../doc/source/locale/'
 	      ]  
 
-gettext_compact = True
+gettext_compact = False 
+
+locale_dirs = [
+                'locale/'
+              ]
+
+gettext_compact = False
 
