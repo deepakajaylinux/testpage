@@ -93,13 +93,11 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">PTConfigure</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
-<li><a class="reference internal" href="#installation">Installation</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#command-to-install-git-and-php5-in-ubuntu">command to install git and php5 in ubuntu</a></li>
 <li><a class="reference internal" href="#command-to-install-git-and-php5-in-cent-os">command to install git and php5 in cent OS</a></li>
 <li><a class="reference internal" href="#for-mac-linux-or-unix">For Mac, Linux or Unix</a></li>
 <li><a class="reference internal" href="#for-windows">For Windows</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#available-modules">Available Modules</a></li>
 <li><a class="reference internal" href="#how-to-use">How to Use</a></li>
 <li><a class="reference internal" href="#video-cast-instruction">Video Cast Instruction</a></li>
@@ -174,8 +172,9 @@
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Before installing the ptconfigure to your machine, ensure whether git and php5 exists in your machine or not.
 if not follow as given below</p>
+</div>
 <div class="section" id="command-to-install-git-and-php5-in-ubuntu">
-<h3>command to install git and php5 in ubuntu<a class="headerlink" href="#command-to-install-git-and-php5-in-ubuntu" title="Permalink to this headline">¶</a></h3>
+<h2>command to install git and php5 in ubuntu<a class="headerlink" href="#command-to-install-git-and-php5-in-ubuntu" title="Permalink to this headline">¶</a></h2>
 <p class="rubric">git</p>
 <div class="highlight-bash"><div class="highlight"><pre>apt-get install git
 </pre></div>
@@ -186,7 +185,7 @@ if not follow as given below</p>
 </div>
 </div>
 <div class="section" id="command-to-install-git-and-php5-in-cent-os">
-<h3>command to install git and php5 in cent OS<a class="headerlink" href="#command-to-install-git-and-php5-in-cent-os" title="Permalink to this headline">¶</a></h3>
+<h2>command to install git and php5 in cent OS<a class="headerlink" href="#command-to-install-git-and-php5-in-cent-os" title="Permalink to this headline">¶</a></h2>
 <p class="rubric">git</p>
 <div class="highlight-bash"><div class="highlight"><pre>yum install git
 </pre></div>
@@ -198,18 +197,17 @@ if not follow as given below</p>
 <p>after completion of git and php5 installation, let&#8217;s see how to install the ptconfigure in your machine.</p>
 </div>
 <div class="section" id="for-mac-linux-or-unix">
-<h3>For Mac, Linux or Unix<a class="headerlink" href="#for-mac-linux-or-unix" title="Permalink to this headline">¶</a></h3>
+<h2>For Mac, Linux or Unix<a class="headerlink" href="#for-mac-linux-or-unix" title="Permalink to this headline">¶</a></h2>
 <p>It is simple by using the coding</p>
 <div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/PharaohTools/ptconfigure.git <span class="o">&amp;&amp;</span> sudo php ptconfigure/install-silent
 </pre></div>
 </div>
 </div>
 <div class="section" id="for-windows">
-<h3>For Windows<a class="headerlink" href="#for-windows" title="Permalink to this headline">¶</a></h3>
+<h2>For Windows<a class="headerlink" href="#for-windows" title="Permalink to this headline">¶</a></h2>
 <p>It is simple, get the terminal open via the option &#8220;Run as Administrator&#8221;, and then apply the following coding,</p>
 <div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/PharaohTools/ptconfigure.git <span class="o">&amp;&amp;</span> php ptconfigure<span class="se">\i</span>nstall-silent
 </pre></div>
-</div>
 </div>
 </div>
 <div class="section" id="available-modules">
@@ -543,10 +541,13 @@ End Help
 <li class="toctree-l2"><a class="reference internal" href="amazoncloudfront.html#benefits">Benefits</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="amazoncloudwatch.html">Synopsis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="amazoncloudwatch.html#help-command">Help Command</a></li>
-<li class="toctree-l1"><a class="reference internal" href="amazoncloudwatch.html#installation">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="amazoncloudwatch.html#benefits">Benefits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="amazoncloudwatch.html">Amazon CloudWatch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="amazoncloudwatch.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazoncloudwatch.html#help-command">Help Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazoncloudwatch.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazoncloudwatch.html#benefits">Benefits</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="amazondynamodb.html">Amazon DynamoDB</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="amazondynamodb.html#synopsis">Synopsis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="amazondynamodb.html#help-command">Help Command</a></li>
@@ -569,6 +570,47 @@ End Help
 <li class="toctree-l2"><a class="reference internal" href="amazonelasticache.html#list">List</a></li>
 <li class="toctree-l2"><a class="reference internal" href="amazonelasticache.html#alternative-parameter">Alternative Parameter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="amazonelasticache.html#benefits">Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="amazonrds.html">AWS RDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#help-command">Help Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#describe-instance">Describe-instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#delete-instance">Delete-instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#create-db-snapshot">Create-db-snapshot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#delete-db-snapshot">Delete-db-snapshot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#copy-db-snapshot">Copy-db-snapshot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#create-instance">Create-instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#reboot-instance">Reboot-instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#create-instance-read-replica">Create-instance-read replica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#list">List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonrds.html#benefits">Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="amazonroute.html">AMAZON ROUTE 53</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#help-command">Help Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#create-hosted-zone">Create-hosted-zone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#create-health-check">Create-health-check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#delete-hosted-zone">Delete-hosted-zone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#delete-health-check">Delete-health-check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#list">List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazonroute.html#benefits">Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="amazons3.html">Amazon S3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#help-command">Help Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#ensure-bucket-exists">Ensure-bucket-exists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#add-object">Add-object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#remove-bucket">Remove-bucket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#remove-object-all">Remove-object-all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#remove-object">Remove-object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#list">List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="amazons3.html#benefits">Benefits</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="apacheconf.html">ApacheConf</a><ul>
@@ -656,7 +698,6 @@ End Help
 <li class="toctree-l2"><a class="reference internal" href="awstats.html#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="awstats.html#features-of-awstats">Features of Awstats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="awstats.html#requirements-of-awstats">Requirements of Awstats</a></li>
-<li class="toctree-l2"><a class="reference internal" href="awstats.html#files">Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="awstats.html#benefits">Benefits</a></li>
 </ul>
 </li>

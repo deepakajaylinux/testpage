@@ -3,7 +3,7 @@ PTConfigure
 
 
 Synopsis
-**********
+------------
 
 The ptconfigure is an automation drive that allows DevOps Engineers, system administrators, infrastructure managers in performing the Configuration Management, Systems Automation and Infrastructure with the aid of php. It provisions the entire projects of the users automatically.
 
@@ -26,7 +26,7 @@ It is extensible, as if any of the extra modules is required the users can frame
 And also it is easier to rewrite the code as per the needs of the users. Its documentation includes the ptconfigure's current released version as 1.1.1.
 
 Installation
-**************
+--------------------
 
 Before installing the ptconfigure to your machine, ensure whether git and php5 exists in your machine or not.
 if not follow as given below
@@ -82,7 +82,7 @@ It is simple, get the terminal open via the option "Run as Administrator", and t
 
 
 Available Modules
-******************
+-------------------
 
  DummyLinuxModule - Dummy Linux Module
 
@@ -325,7 +325,7 @@ Available Modules
 
 
 How to Use
-***********
+---------------
 
 Let us see, how to use the ptconfigure tool, 
 first, simply type as
@@ -489,7 +489,7 @@ here, the screenshot denotes the display of all modules available under ptconfig
 
 
 Video Cast Instruction
-***********************
+------------------------
 
 .. raw:: html
 
@@ -505,7 +505,7 @@ Video Cast Instruction
 
 
 The Help command
-*****************
+--------------------
 
 If you want to know the purpose of a particular module, just type the command as follows:
 
@@ -534,7 +534,7 @@ The screenshot shown under explains the usage of the module Behat under ptconfig
 
 
 Playing with ptconfigure Modules
-**********************************
+------------------------------------
 
 .. toctree::
    :maxdepth: 6
@@ -545,6 +545,9 @@ Playing with ptconfigure Modules
    amazoncloudwatch   
    amazondynamodb
    amazonelasticache
+   amazonrds
+   amazonroute
+   amazons3
    apacheconf
    ApacheModules
    apachereverseproxy

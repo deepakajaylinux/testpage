@@ -5,7 +5,7 @@ Behat
 Synopsis
 ------------
 
-This module allows the user to initialize behat test suite. The behat helps in testing an php script. It can highlight the enabled and disabled templates. Let us see how to init and execute the teskingkamen behat.
+This module allows the user to initialize behat test suite. The behat helps in testing an php script. It can highlight the enabled and disabled templates. Let us see how to init and execute the pttest behat.
 
 Help Command
 ---------------------
@@ -14,7 +14,7 @@ The help command guides the user regarding the purpose and options available und
 
 .. code-block:: bash
 
- 		pttest behat help
+	pttest behat help
 
 The following screen shot depicts pictorially about the working of help command.
 
@@ -183,6 +183,6 @@ Benefits
 
 * It guides the users to identify the errors in php script.
 * Using the features of behat the users can frame and specify the behavior of driven development.
-* The process of initialization and execution can be done under this behat of pttestt.
+* The process of initialization and execution can be done under this behat of pttest.
 * It is well-to-do in both cent OS and as well as in ubuntu.
 * The parameters used in declaration are not case sensitive which is an added advantage while compared to others.

@@ -7,7 +7,7 @@ Synopsis
 
 Phpunit is a unit testing framework for the PHP programming language in tesingkamen. It is an instance of the architecture for unit testing frameworks that originated with initializes php test suite and became popular with pttest. 
 
-It functions in two ways. They are init and execute. It is valuable to work with Ubuntu and centos.
+It functions in two ways. They are init and execute. It is valuable to work with Ubuntu and centOS.
 
 Help command
 ---------------
@@ -157,7 +157,7 @@ Option
 .. cssclass:: table-bordered
 
  +------------------------------+-----------------------+--------------------------------------------------+
- | Parameters			| Syntax		| Comments	                           	   |
+ | Parameters			| Options		| Comments	                           	   |
  +==============================+=======================+==================================================+
  |Initialize Phpunit? (Y/N)	| Yes			| phpunit can be initialized under pttest.         |
  +------------------------------+-----------------------+--------------------------------------------------+

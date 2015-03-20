@@ -91,20 +91,16 @@ When the user needs to Reload the Nginx server without restarting, the below giv
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
-Options
------------                               
 
-.. cssclass:: table-bordered
+Alternative Parameter
 
- +--------------------------------+------------------------------------------------+--------------------------------------------------+
- | Parameters			  | Alternative Parameter			   | Comments					      |
- +--------------------------------+------------------------------------------------+--------------------------------------------------+
- |ptdeploy ngnixcontrolhelp       | Either of the three alternative parameter can  | Once the user provides the option, System starts |
- |				  | be used in command- ngnixcontrol ,  	   | processing					      |	
- |				  | NgnixControl and nginxcil			   |						      |
- |				  | eg: ptdeploy ngnixcontrol help/ 	           |						      |
- |				  | ptdeploy ngnixControl help|		           |						      |
- +--------------------------------+------------------------------------------------+--------------------------------------------------+
+--------------------------------------
+
+Either of the three alternative parameter can be used in command- ngnixcontrol , NgnixControl and nginxcil 
+
+
+eg: ptdeploy ngnixcontrol help/ ptdeploy ngnixControl help
+
 
 Benefits
 --------------

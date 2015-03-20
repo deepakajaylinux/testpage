@@ -18,8 +18,8 @@ This command helps to determine the usage of Amazon CloudFront. The user will co
 .. code-block:: bash
 
 
-Alternative Parameter 
-------------------------------       
+Alternative Parameter
+------------------------------
 
 There are three alternative parameters which can be used in command line.
 

@@ -141,65 +141,6 @@ To run awstats as a CGI (for real-time statistics), your web server must also be
 
   http://www.perl.com/pub/language/info/software.html (All OS)
 
-Files
--------
-
-The distribution of AWStats package includes the following files:
-
-
-.. cssclass:: table-bordered
-
-
-
- +------------------------------------+-------------------------------------------+
- | Packages			      |	Files					  |
- +====================================+===========================================+
- |README.TXT			      |This file				  |
- +------------------------------------+-------------------------------------------+
- |docs/LICENSE			      |GNU General Public Licence 		  |
- +------------------------------------+-------------------------------------------+
- |docs/*			      |AWStats documentation (setup/usage...)     |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/awstats.pl	      |THE MAIN AWSTATS PROGRAM (CLI/CGI)	  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/awredir.pl	      |A tool to track exit clicks                |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/awstats.model.conf  |An model configuration file                |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/lang		      |Directory with languages files		  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/lib		      |Directory with awstats reference info	  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/cgi-bin/plugins	      |Directory with optional plugins            |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/browser		      |Directory with browsers icons		  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/clock		      |Directory with clock icons		  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/cpu 		      |Directory with cpu icons			  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/flags		      |Directory with country flag icons	  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/os		      |Directory with OS icons			  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/icon/other		      |Directory with all others icons 		  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/classes		      |Java applet for graphapplet plugin	  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/css			      |Samples of CSS files			  |
- +------------------------------------+-------------------------------------------+
- |wwwroot/js			      |Javascript sources for "Misc" feature	  |
- +------------------------------------+-------------------------------------------+
- |tools/*			      |Other provided tools			  |
- +------------------------------------+-------------------------------------------+
- |tools/webmin/awstats-x.x.wbm	      |A Webmin module for AWStats		  |
- +------------------------------------+-------------------------------------------+
- |tools/xslt/awstats61.xsd	      |AWStats XML database schema descriptor	  |
- +------------------------------------+-------------------------------------------+
- |tools/xslt/*			      |Demo to manipulate AWStats XML database|	  |
- +------------------------------------+-------------------------------------------+
- 
-
 
 
 Benefits

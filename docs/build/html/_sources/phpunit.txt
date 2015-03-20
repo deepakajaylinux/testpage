@@ -50,7 +50,7 @@ After inputting the command above, the following operations occurs as shown in t
 .. cssclass:: table-bordered
 
  +---------------------------------+-----------------------+---------------------------------------------------------------------+
- |	Parameters       	   |	Options		   |				Comments			   	 |	
+ | Parameters       	           | Options		   | Comments			                                       	 |	
  +---------------------------------+-----------------------+---------------------------------------------------------------------+
  |Install PHP Unit? (Y/N)	   |Y(Yes)		   |If the user wish to proceed the installation process they can input  |
  |				   |			   |as Y.								 |
@@ -67,7 +67,7 @@ If the user proceeds the installation process the following operations occurs as
 .. cssclass:: table-bordered
 
  +-----------------------+------------------------+----------------------+----------------------------------------------------------+
- |	Parameters       | Path		          |	Option	         | 		Comments			    	    |
+ | Parameters            | Path		          | Option	         | Comments			    	                    |
  +=======================+========================+======================+==========================================================+
  |Program data directory |"/opt/phpunit	          |Yes		         |If the user to proceed installation with the default      |
  |		         |(corresponding module)" |		         |program data directory they can input as Yes		    |
