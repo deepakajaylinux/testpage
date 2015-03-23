@@ -140,6 +140,38 @@ The following screenshot depicts the start process pictorially.
  1Apache Controller Finished
  ******************************
 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy apachecontrol start --yes  --apache-command="apache2" 
+
+ Starting Apache... 
+ * Starting web server apache2 
+ * 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+ kevell@corp:/# ptdeploy apachecontrol stop 
+
+ Do you want to Stop Apache? (Y/N) 
+ y 
+ What is the apache service name? 
+ (0) apache2 
+ (1) httpd 
+ 0 
+ Stopping Apache... 
+ * Stopping web server apache2 
+ * 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+
+
+
+
 Stop Function
 ------------------
 
@@ -186,17 +218,59 @@ The user can use this third type of syntax to specify the value of the required 
 
 .. code-block:: bash
 
- kevell@corp:/# ptdeploy apachecontrol restart --yes --apache-command="apache2"
- Restarting Apache...
- AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globa lly to suppress this message
- * Restarting web server apache2
-  
-  ....done.
- ******************************
+ kevell@corp:/# ptdeploy apachecontrol restart 
+
+ Do you want to Restart Apache? (Y/N) 
+ y 
+ What is the apache service name? 
+ (0) apache2 
+ (1) httpd 
+ 0 
+ Restarting Apache... 
+ * Restarting web server apache2 
+   ...done. 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
 
 
- 1Apache Controller Finished
- ******************************
+.. code-block:: bash
+
+ kevell@corp:/# ptdeployapachecontrol restart --yes  --guess 
+
+ Restarting Apache... 
+ * Restarting web server apache2 
+   ...done. 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeployapachecontrol restart --yes  --apache-command="apache2" 
+
+ Restarting Apache... 
+ * Restarting web server apache2 
+   ...done. 
+ ****************************** 
+
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+
+ Restarting Apache... 
+ * Restarting web server apache2 
+   ...done. 
+ ****************************** 
+
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+
 
 Reloading a function
 ----------------------------
@@ -219,6 +293,53 @@ or
 		ptdeploy apachecontrol --yes --apache-command="apache2"
 
 The reload function performs reloading the apache server without restarting.
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy apachecontrol reload 
+
+ Do you want to Reload Apache? (Y/N) 
+ y 
+ What is the apache service name? 
+ (0) apache2 
+ (1) httpd 
+ 0 
+ Reloading Apache Configuration... 
+ * Reloading web server apache2 
+ * 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy apachecontrol reload --yes  --guess 
+
+ Reloading Apache Configuration... 
+ * Reloading web server apache2 
+ * 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy apachecontrol reload --yes  --apache-command="apache2" 
+
+ Reloading Apache Configuration... 
+ * Reloading web server apache2 
+ * 
+ ****************************** 
+
+ 1Apache Controller Finished 
+ ****************************** 
+
+
+
+
 
 Benefits
 -----------

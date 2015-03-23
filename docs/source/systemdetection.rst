@@ -22,9 +22,9 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
 .. code-block:: bash
 
- kevell@corp:/# ptdeploy systemdetection help
- ******************************
+ kevell@corp:/# ptdeploy SystemDetection help
 
+ ******************************
 
   This is a default Module and provides you with a method by which you can configure Application Settings.
   You can configure default application settings, ie: mysql admin user, host, pass
@@ -33,7 +33,7 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
         - detect
         Detects the Operating System
-        example: ptconfigure system-detection detect
+        example: ptdeploy system-detection detect
 
  ------------------------------
  End Help
@@ -41,14 +41,14 @@ The syntax for the help command non case sensitive which adds an advantage for t
 
 
 Detect
------------ 
+-----------
 
 Detect used to detect the system settings. By using a single command the user can get all the information about the system application. 
 The command used for system detection is given below.
 
 .. code-block:: bash
 
-		ptconfigure systemdetection detect
+		ptdeploy systemdetection detect
 
 After keying the above command, the process of system detection starts. During system detection the following information's regarding the corresponding machine are reported:
 
@@ -66,26 +66,25 @@ Finally, after detection the information regarding the above mentioned features 
 
 .. code-block:: bash
 
- kevell@corp:/# ptconfigure system-detection detect
- ******************************
+ kevell@corp:/# ptdeploy system-detection detect 
 
+ ****************************** 
 
- Systems Detection:
- --------------------------------------------
+ Systems Detection: 
+ -------------------------------------------- 
 
- Operating System: Linux
- Linux Type: Debian
- Distro: Ubuntu
- Version: 14.04
- Architecture: 64
- Host Name: Kevells
- IP Address 0: 127.0.0.1
- IP Address 1: 192.168.1.18
+ Operating System: Linux 
+ Linux Type: Debian 
+ Distro: Ubuntu 
+ Version: 14.04 
+ Architecture: 64 
+ Host Name: kevell 
+ IP Address 0: 172.17.42.1 
+ IP Address 1: 192.168.1.29 
 
- ------------------------------
- Detection Finished
- ******************************
-
+ ------------------------------ 
+ Detection Finished 
+ ****************************** 
 
 
 
@@ -101,6 +100,7 @@ Instead of system detection, the following parameters can be used:
 
 Benefits
 -------------
+
 * The users can configure the application settings using this system detections.
 * The parameters used for declaring help command, system detection are not case sensitive which an added advantage while compared to 
   others is.

@@ -58,6 +58,20 @@ When the user needs to start the Nginx server, the below given command will exec
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol start 
+
+ Do you want to Start Nginx? (Y/N) 
+ y 
+ Starting Nginx... 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
+
+
 Stop
 ----------------
 
@@ -68,6 +82,19 @@ When the user needs to stop the Nginx server, the below given command will execu
 		ptdeploy nginxcontrol stop	
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol stop 
+
+ Do you want to Stop Nginx? (Y/N) 
+ y 
+ Stopping Nginx... 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
 
 Restart
 ----------------
@@ -80,6 +107,24 @@ When the user needs to Restart the Nginx server(when there are any changes happe
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol restart 
+
+ Do you want to Restart Nginx? (Y/N) 
+ y 
+ Restarting Nginx... 
+ * Restarting nginx nginx 
+   ...fail! 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
+
+
+
 Reload
 ----------------
 
@@ -91,9 +136,23 @@ When the user needs to Reload the Nginx server without restarting, the below giv
 
 Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol reload
+
+ Do you want to Reload Nginx? (Y/N) 
+ y
+ Reloading Nginx...
+ * Reloading nginx configuration nginx
+   ...done.
+ ******************************
+
+ 1Nginx Controller Finished
+ ******************************
+
+
 
 Alternative Parameter
-
 --------------------------------------
 
 Either of the three alternative parameter can be used in command- ngnixcontrol , NgnixControl and nginxcil 

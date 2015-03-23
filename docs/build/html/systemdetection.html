@@ -161,9 +161,9 @@
 </pre></div>
 </div>
 <p>The syntax for the help command non case sensitive which adds an advantage for this module. The following screenshot visualize the user about the help command under system detection.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy systemdetection <span class="nb">help</span>
-******************************
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy SystemDetection <span class="nb">help</span>
 
+******************************
 
  This is a default Module and provides you with a method by which you can configure Application Settings.
  You can configure default application settings, ie: mysql admin user, host, pass
@@ -172,7 +172,7 @@
 
        - detect
        Detects the Operating System
-       example: ptconfigure system-detection detect
+       example: ptdeploy system-detection detect
 
 ------------------------------
 End Help
@@ -184,7 +184,7 @@ End Help
 <h2>Detect<a class="headerlink" href="#detect" title="Permalink to this headline">¶</a></h2>
 <p>Detect used to detect the system settings. By using a single command the user can get all the information about the system application.
 The command used for system detection is given below.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure systemdetection detect
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy systemdetection detect
 </pre></div>
 </div>
 <p>After keying the above command, the process of system detection starts. During system detection the following information&#8217;s regarding the corresponding machine are reported:</p>
@@ -199,9 +199,9 @@ The command used for system detection is given below.</p>
 <li>IP Address 1.</li>
 </ul>
 <p>Finally, after detection the information regarding the above mentioned features are clearly reported. The following screen shot depicts you about the process of system detection.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure system-detection detect
-******************************
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy system-detection detect
 
+******************************
 
 Systems Detection:
 --------------------------------------------
@@ -211,9 +211,9 @@ Linux Type: Debian
 Distro: Ubuntu
 Version: 14.04
 Architecture: 64
-Host Name: Kevells
-IP Address 0: 127.0.0.1
-IP Address 1: 192.168.1.18
+Host Name: kevell
+IP Address 0: 172.17.42.1
+IP Address 1: 192.168.1.29
 
 ------------------------------
 Detection Finished

@@ -56,8 +56,7 @@ Autopilot act as a default module and also provides user defined executions. The
 
 		ptdeploy autopilot install
 
-After input as the above said command it starts installation. The following snap shots guides the user about autopilot installation.
-
+After input as the above said command it starts installation. 
 
 
 Options

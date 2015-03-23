@@ -264,6 +264,33 @@ Starting Apache...
 ******************************
 </pre></div>
 </div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol start --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Starting Apache...
+* Starting web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+
+kevell@corp:/# ptdeploy apachecontrol stop
+
+Do you want to Stop Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
+Stopping Apache...
+* Stopping web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="stop-function">
 <h2>Stop Function<a class="headerlink" href="#stop-function" title="Permalink to this headline">¶</a></h2>
@@ -298,12 +325,49 @@ Stopping Apache...
 </pre></div>
 </div>
 <p>The user can use this third type of syntax to specify the value of the required apache command. The screen shot as shown below depicts this third type of syntax and process of restarting a function pictorially.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol restart --yes --apache-command=&quot;apache2&quot;
-Restarting Apache...
-AH00558: apache2: Could not reliably determine the server&#39;s fully qualified domain name, using 127.0.1.1. Set the &#39;ServerName&#39; directive globa lly to suppress this message
-* Restarting web server apache2
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol restart
 
- ....done.
+Do you want to Restart Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeployapachecontrol restart --yes  --guess
+
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeployapachecontrol restart --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
+******************************
+
+
+1Apache Controller Finished
+******************************
+
+
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
 ******************************
 
 
@@ -327,6 +391,45 @@ AH00558: apache2: Could not reliably determine the server&#39;s fully qualified 
 </pre></div>
 </div>
 <p>The reload function performs reloading the apache server without restarting.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload
+
+Do you want to Reload Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload --yes  --guess
+
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>

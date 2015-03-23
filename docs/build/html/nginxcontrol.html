@@ -99,6 +99,7 @@
 <li><a class="reference internal" href="#stop">Stop</a></li>
 <li><a class="reference internal" href="#restart">Restart</a></li>
 <li><a class="reference internal" href="#reload">Reload</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -199,6 +200,17 @@ End Help
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol start
+
+Do you want to Start Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Starting Nginx...
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="stop">
 <h2>Stop<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
@@ -207,6 +219,17 @@ End Help
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol stop
+
+Do you want to Stop Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Stopping Nginx...
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="restart">
 <h2>Restart<a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h2>
@@ -215,6 +238,19 @@ End Help
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol restart
+
+Do you want to Restart Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Restarting Nginx...
+* Restarting nginx nginx
+  ...fail!
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="reload">
 <h2>Reload<a class="headerlink" href="#reload" title="Permalink to this headline">¶</a></h2>
@@ -223,8 +259,22 @@ End Help
 </pre></div>
 </div>
 <p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
-<p>Alternative Parameter</p>
-<hr class="docutils" />
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol reload
+
+Do you want to Reload Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Reloading Nginx...
+* Reloading nginx configuration nginx
+  ...done.
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
 <p>Either of the three alternative parameter can be used in command- ngnixcontrol , NgnixControl and nginxcil</p>
 <p>eg: ptdeploy ngnixcontrol help/ ptdeploy ngnixControl help</p>
 </div>

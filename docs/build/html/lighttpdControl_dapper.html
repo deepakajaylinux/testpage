@@ -211,6 +211,30 @@ End Help
 </pre></div>
 </div>
 <p>after typing the command, it allows the user to start the lighttpd server functioning.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol start
+
+Do you want to Start Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Starting Lighttpd...
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol start --yes
+
+Starting Lighttpd...
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="stop">
 <h2>Stop<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
@@ -219,6 +243,30 @@ End Help
 </pre></div>
 </div>
 <p>After input as the above command, the service stops the function.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol stop
+
+Do you want to Stop Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Stopping Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol stop --yes
+
+Stopping Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="restart">
 <h2>Restart<a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h2>
@@ -227,11 +275,63 @@ End Help
 </pre></div>
 </div>
 <p>After input as the above command, the service restart the lighttpd service.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol restart
+
+Do you want to Restart Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Restarting Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol restart --yes
+
+Restarting Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="reload">
 <h2>Reload<a class="headerlink" href="#reload" title="Permalink to this headline">¶</a></h2>
 <p>Reload means things are changing. The lighttpd is undergoing an overhaul and a clean-up. It facilitates the reuse of lighttpd and services. Without kill the process it can reload lighttpd. The following command assis the user to reload. Along with the command if the user use yes.. options without asking any questions automatically it can function.</p>
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol reload
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol reload
+
+Do you want to Reload Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Reloading Lighttpd...
+* Reloading web server configuration lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol reload --yes
+
+Reloading Lighttpd...
+* Reloading web server configuration lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
 </pre></div>
 </div>
 </div>
