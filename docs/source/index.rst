@@ -1,8 +1,8 @@
 Pharaohtools Documentation
-==========================
+============================
 
 About pharaohtools
-==================
+====================
 
 Welcome to the pharaohtools documentation!
 
@@ -20,11 +20,4 @@ Commands
  pttest_main
  ptvirtualize_main
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

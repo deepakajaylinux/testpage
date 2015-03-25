@@ -86,6 +86,27 @@ This module is a perceptible process to view host name under ptconfigure by just
 
 After key in the command, it shows the host name.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure hostname show
+
+ ******************************
+
+
+ Hostname Modifications:
+ --------------------------------------------
+
+ Hostname: Success
+ my-laptop
+
+
+ ------------------------------
+ Hostname Mods Finished
+ ******************************
+
+
+
+
 Option
 ------------
 

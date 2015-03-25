@@ -534,7 +534,7 @@ The screenshot shown under explains the usage of the module Behat under ptconfig
 
 
 Playing with ptconfigure Modules
-------------------------------------
+**********************************
 
 .. toctree::
    :maxdepth: 6
@@ -559,7 +559,6 @@ Playing with ptconfigure Modules
    awstats
    behatcleo
    boxify
-   boxify1
    cassandra
    chgrp1
    chmod
@@ -572,11 +571,9 @@ Playing with ptconfigure Modules
    copy1
    devtools
    digitalocean
-   digitalocean1
    dnsify
    encryption
    environmentconfig
-   environmentconfig1
    file
    firefox
    firefox14
