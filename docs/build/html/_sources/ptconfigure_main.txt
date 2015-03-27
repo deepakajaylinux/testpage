@@ -572,6 +572,7 @@ Playing with ptconfigure Modules
    devtools
    digitalocean
    dnsify
+   docker
    encryption
    environmentconfig
    file
@@ -594,6 +595,7 @@ Playing with ptconfigure Modules
    installpackage
    intellij   
    invoke_cleo
+   jasmine
    java   
    jenkins   
    jenkinsplugins
@@ -660,6 +662,7 @@ Playing with ptconfigure Modules
    seleniumserver
    service
    sftp_cleo
+   simpletest
    skipfish
    sshencrypt
    sshharden
@@ -683,6 +686,7 @@ Playing with ptconfigure Modules
    vnc
    vncpasswd
    wireframesketcher
+   xcache
    xvfb
    zendserver
    

@@ -238,6 +238,7 @@ here, the screenshot denotes the display of all modules available under ptconfig
  gitclone
  grafana
  hosteditor
+ invoke_deploy
  joomla
  lighttpdControl_dapper
  logging_dapper
