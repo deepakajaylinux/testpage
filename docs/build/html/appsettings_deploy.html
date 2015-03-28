@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SFTP &mdash; KEVELL 0.1 documentation</title>
+    <title>Appsettings &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -31,9 +31,9 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="PTConfigure" href="ptconfigure_main.html" />
-    <link rel="next" title="Simpletest" href="simpletest.html" />
-    <link rel="prev" title="Service" href="service.html" />
+    <link rel="up" title="PTDeploy" href="ptdeploy_main.html" />
+    <link rel="next" title="Autopilot" href="autopilot.html" />
+    <link rel="prev" title="ApacheVHostEditor" href="apachevirtualhost.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -81,8 +81,8 @@
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="jrush_main.html">Jrush</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="ptdeploy_main.html">PTDeploy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pttest_main.html">PTTest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ptvirtualize_main.html">PTVirtualize</a></li>
 </ul>
@@ -92,11 +92,14 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">SFTP</a><ul>
+<li><a class="reference internal" href="#">Appsettings</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#set">Set</a></li>
+<li><a class="reference internal" href="#get">Get</a></li>
+<li><a class="reference internal" href="#delete">Delete</a></li>
+<li><a class="reference internal" href="#list">List</a></li>
+<li><a class="reference internal" href="#alternative-parameters">Alternative Parameters</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -108,10 +111,10 @@
             
               
                 
-  <li><a href="service.html"
-         title="Previous Chapter: Service">&laquo; Service</a></li>
-  <li><a href="simpletest.html"
-         title="Next Chapter: Simpletest">Simpletest &raquo;</a></li>
+  <li><a href="apachevirtualhost.html"
+         title="Previous Chapter: ApacheVHostEditor">&laquo; ApacheVHostEdito...</a></li>
+  <li><a href="autopilot.html"
+         title="Next Chapter: Autopilot">Autopilot &raquo;</a></li>
               
             
             
@@ -119,7 +122,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/sftp_cleo.txt"
+  <a href="_sources/appsettings_deploy.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -150,39 +153,45 @@
     <div class="col-md-12">
       
   
-  <div class="section" id="sftp">
-<h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="appsettings">
+<h1>Appsettings<a class="headerlink" href="#appsettings" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="synopsis">
 <h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div>This module assist in transferring files from one system to another. It can upload or download the files to the system. Automation is possible. Put and get options are available in this module. It specifies the configuration of your environment. It is user friendly with Ubuntu and cent OS.</div></blockquote>
+<p>AppSetting that allows us to keep configurable and application wide settings that an application requires in order to perform the tasks properly. This helps in easy maintenance and deployment of the application. By using appsetting we can define user-defined values.</p>
 </div>
 <div class="section" id="help-command">
 <h2>Help command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
-<p>Help command used to find information about a specified command. For more information about changes to functionality of SFTP we can use this help command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure sftp <span class="nb">help</span>
+<p>This command helps to determine the usage of appsettings. It lists out the alternative parameters and syntax for functioning of appsettings
+module. The help command for appsettings is shown as below.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy appsettings <span class="nb">help</span>
 </pre></div>
 </div>
-<p>The following screen shot will guide you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp <span class="nb">help</span>
+<p>The pictorial representation of the help command is given below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy appsettings <span class="nb">help</span>
+
 ******************************
 
 
- This <span class="nb">command </span>handles SFTP Transfer Functions.
+ This <span class="nb">command </span>is part of Default Modules and provides you  with a method by which you can configure Application Settings.
+ You can configure default application settings, ie: mysql admin user, host, pass
 
- SFTP, sftp
+ AppSettings, appsettings
 
-       - put
-       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from <span class="nb">local </span>to remote
-       example: ptconfigure sftp put
-       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       - <span class="nb">set</span>
+<span class="nb">       </span>Set a configuration value
+       example: ptdeploy appsettings <span class="nb">set</span>
 
        - get
-       Will ask you <span class="k">for </span>details <span class="k">for </span>servers, <span class="k">then </span>copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: ptconfigure sftp get
-       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       Get the value of a setting you have configured
+       example: ptdeploy appsettings get
+
+       - delete
+       Delete a setting you have configured
+       example: ptdeploy appsettings delete
+
+       - list
+       Display a list of all default available settings
+       example: ptdeploy appsettings list
 
 ------------------------------
 End Help
@@ -190,143 +199,157 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>As a company, and as individuals, SFTP has been dedicated to meeting each partner’s technology challenges, fulfilling their engineering requirements, and satisfying their business goals. It is an obvious process to install SFTP module under ptconfigure by just using the command given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SFTP put
+<div class="section" id="set">
+<h2>Set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>The set command helps to set a configuration value. The below command will execute the process.</div></blockquote>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy appsettings <span class="nb">set</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
+<p>The pictorial representation of the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy appsettings set
 
-SFTP on Server group? (Y/N)
+Do you want to Configure Application Settings? (Y/N)
 y
-Please Enter SSH Timeout in seconds
-100
-Please Enter remote SSH Port
-22
-***********************************
-*   Due to a software limitation, *
-*    The user that you use here   *
-*  will have their command prompt *
-*    changed to PHARAOHPROMPT     *
-*  ... I&#39;m working on that one... *
-*  Exit program to stop (CTRL+C)  *
-***********************************
-Enter Server Info:
-Please Enter SSH Server Target Host Name/IP
-192.168.1.4
-Please Enter SSH User
-murali
-Please Enter Server Password or Key Path
-123456
-Add Another Server? (Y/N)
-n
-[Pharaoh Logging] Attempting to load SFTP connections...
-[Pharaoh Logging] Connection to Server 192.168.1.4 failed.
-Enter local source file path
-/home/kevells/Desktop/graphs
-Enter remote target file path
-/home/murali/Desktop/graphs
-[Pharaoh Logging] Opening SFTP Connections...
-[192.168.1.4]Connection failure. Will not execute commands on this box..
-[Pharaoh Logging] All SFTP Puts Completed
+What&#39;s the App Config Variable?
+
+(0) **ENTER PLAIN TEXT**
+(1) mysql-admin-user
+(2) mysql-admin-host
+(3) mysql-admin-pass
+(4) linux-user
+(5) linux-user-dir
+(6) program-dir
+(7) temp-base-dir
+(8) distro
+(9) op-sys
+(10) linux-type
+5
+What Value do you want to give this variable?
+/tmp/
 ******************************
 
-
-
-SFTP Put: Success
-
-------------------------------
-Installer Finished
+Seems Fine...
+In Application Config
 ******************************
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp get
+</div>
+<div class="section" id="get">
+<h2>Get<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h2>
+<p>The Get command helps to get the value of a setting you have configured already. The below command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy appsettings get
+</pre></div>
+</div>
+<p>The pictorial representation of the above command is listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy appsettings get
 
-SFTP on Server group? (Y/N)
+Do you want to Configure Application Settings? (Y/N)
 y
-Please Enter SSH Timeout in seconds
-100
-Please Enter remote SSH Port
-22
-***********************************
-*   Due to a software limitation, *
-*    The user that you use here   *
-*  will have their command prompt *
-*    changed to PHARAOHPROMPT     *
-*  ... I&#39;m working on that one... *
-*  Exit program to stop (CTRL+C)  *
-***********************************
-Enter Server Info:
-Please Enter SSH Server Target Host Name/IP
-192.168.1.4
-Please Enter SSH User
-murali
-Please Enter Server Password or Key Path
-123456
-Add Another Server? (Y/N)
-n
-[Pharaoh Logging] Attempting to load SFTP connections...
-[Pharaoh Logging] Connection to Server 192.168.1.4 failed.
-Enter remote source file path
-/home/murali/Desktop/graphs
-Enter local target file path
-/hoem/kevells/Desktop/graphs1
-[Pharaoh Logging] Opening SFTP Connections...
-[Pharaoh Logging] [192.168.1.4] Executing SFTP Get...
-[Pharaoh Logging] No SFTP Object
-[Pharaoh Logging]
-[Pharaoh Logging] [192.168.1.4] SFTP Get Completed...
-[Pharaoh Logging] All SFTP Gets Completed
+What&#39;s the App Config Variable?
+
+(0) **ENTER PLAIN TEXT**
+(1) mysql-admin-user
+(2) mysql-admin-host
+(3) mysql-admin-pass
+(4) linux-user
+(5) linux-user-dir
+(6) program-dir
+(7) temp-base-dir
+(8) distro
+(9) op-sys
+(10) linux-type
+4
 ******************************
 
 
-Shell Result: Success
-SFTP Get
+Variable Name: linux-user
+Variable Value: karuna
 
-------------------------------
-Installer Finished
+In Application Config
 ******************************
 </pre></div>
 </div>
 </div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="table-bordered docutils">
-<colgroup>
-<col width="20%" />
-<col width="25%" />
-<col width="56%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Syntax</th>
-<th class="head">Comments</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>put</td>
-<td>Source to target</td>
-<td>The file can transferred</td>
-</tr>
-<tr class="row-odd"><td>get</td>
-<td>Path to source</td>
-<td>The file can downloaded from remote system|</td>
-</tr>
-</tbody>
-</table>
+<div class="section" id="delete">
+<h2>Delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
+<p>The delete command helps to delete a setting you have configured. The below command will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy appsettings delete
+</pre></div>
+</div>
+<p>The pictorial representation of the above command is  listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy appsettings delete
+
+Do you want to Configure Application Settings? (Y/N)
+y
+What&#39;s the App Config Variable?
+
+(0) **ENTER PLAIN TEXT**
+(1) mysql-admin-user
+(2) mysql-admin-host
+(3) mysql-admin-pass
+(4) linux-user
+(5) linux-user-dir
+(6) program-dir
+(7) temp-base-dir
+(8) distro
+(9) op-sys
+(10) linux-type
+5
+******************************
+
+
+Seems Fine...
+In Application Config
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="list">
+<h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<p>The list command helps to display a list of all default available settings. The below commad will execute the process.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy appsettings list
+</pre></div>
+</div>
+<p>The pictorial representation of the above command is  listed below,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy appsettings list
+
+Do you want to Configure Application Settings? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+******************************
+
+
+Variable Type is: allSet
+  linux-user is: karuna
+  mysql-admin-user is: mani
+Variable Type is: allTotal
+  mysql-admin-user
+  mysql-admin-host
+  mysql-admin-pass
+  linux-user
+  linux-user-dir
+  program-dir
+  temp-base-dir
+  distro
+  op-sys
+  linux-type
+
+In Application Config
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameters">
+<h2>Alternative Parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
+<p>There are two alternative parameters which can be used in command line.</p>
+<p>AppSettings, appsettings</p>
 </div>
 <div class="section" id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Multi server from remote area.</li>
-<li>Specified file is not available error message will come.</li>
-<li>Accessability is difficult without permission.</li>
-<li>Automatically overwrite in case of already in case of file exist.</li>
-<li>Non case sensitive.</li>
-<li>Secrecy and security is possible.</li>
+<li>Strongly typed access</li>
+<li>Non case sensitivity</li>
 </ul>
-<p>Solving customers most challenging technology problems and enabling their success is the SFTP mission and passion.</p>
 </div>
 </div>
 
@@ -386,8 +409,8 @@ Installer Finished
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/sftp_cleo.rst">
-          SFTP
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/appsettings_deploy.rst">
+          Appsettings
         </a> on GitHub.
       </li>
 

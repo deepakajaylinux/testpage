@@ -98,7 +98,6 @@
 <li><a class="reference internal" href="#alternative-parameters">Alternative parameters</a></li>
 <li><a class="reference internal" href="#put">Put</a></li>
 <li><a class="reference internal" href="#get">Get</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -205,38 +204,51 @@ End Help
 </pre></div>
 </div>
 <p>The following screen shot denotes the usage of this command.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:ptconfigure sftp put
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
 
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
+SFTP on Server group? (Y/N)
+y
 Please Enter SSH Timeout in seconds
-90
+100
 Please Enter remote SSH Port
 22
-Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-N
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
-Enter <span class="nb">local source </span>file path
-/root/vv
+***********************************
+*   Due to a software limitation, *
+*    The user that you use here   *
+*  will have their command prompt *
+*    changed to PHARAOHPROMPT     *
+*  ... I&#39;m working on that one... *
+*  Exit program to stop (CTRL+C)  *
+***********************************
+Enter Server Info:
+Please Enter SSH Server Target Host Name/IP
+192.168.1.4
+Please Enter SSH User
+murali
+Please Enter Server Password or Key Path
+123456
+Add Another Server? (Y/N)
+n
+[Pharaoh Logging] Attempting to load SFTP connections...
+[Pharaoh Logging] Connection to Server 192.168.1.4 failed.
+Enter local source file path
+/home/kevells/Desktop/graphs
 Enter remote target file path
-/root/gg/vv
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Puts Completed
+/home/murali/Desktop/graphs
+[Pharaoh Logging] Opening SFTP Connections...
+[192.168.1.4]Connection failure. Will not execute commands on this box..
+[Pharaoh Logging] All SFTP Puts Completed
+******************************
+
+
+
+SFTP Put: Success
+
+------------------------------
+Installer Finished
 ******************************
 </pre></div>
 </div>
-<p>SFTP on server group? Y/N</p>
-<p>If the user input as Y then</p>
-<p>SSh timeout section?</p>
-<p>The user has to enter the value</p>
-<p>Please enter remote ssh port</p>
-<p>Default value is 22. The user can enter any value</p>
-<p>Enter environments configured in project? (Y/N)</p>
-<p>The user has to enter y then it starts loading.</p>
-<p>Enter local source file path?</p>
-<p>The user  has to enter the file path</p>
-<p>Then everything will be connected.</p>
-<p>If the user input as N, it can be terminated.</p>
 </div>
 <div class="section" id="get">
 <h2>Get<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h2>
@@ -246,21 +258,42 @@ Enter remote target file path
 </div>
 <p>The following screen shot explains it.</p>
 <div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp get
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
+
+SFTP on Server group? (Y/N)
+y
 Please Enter SSH Timeout in seconds
-
+100
 Please Enter remote SSH Port
-
-Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
-Enter remote <span class="nb">source </span>file path
-
-Enter <span class="nb">local </span>target file path
-
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Gets Completed
+22
+***********************************
+*   Due to a software limitation, *
+*    The user that you use here   *
+*  will have their command prompt *
+*    changed to PHARAOHPROMPT     *
+*  ... I&#39;m working on that one... *
+*  Exit program to stop (CTRL+C)  *
+***********************************
+Enter Server Info:
+Please Enter SSH Server Target Host Name/IP
+192.168.1.4
+Please Enter SSH User
+murali
+Please Enter Server Password or Key Path
+123456
+Add Another Server? (Y/N)
+n
+[Pharaoh Logging] Attempting to load SFTP connections...
+[Pharaoh Logging] Connection to Server 192.168.1.4 failed.
+Enter remote source file path
+/home/murali/Desktop/graphs
+Enter local target file path
+/hoem/kevells/Desktop/graphs1
+[Pharaoh Logging] Opening SFTP Connections...
+[Pharaoh Logging] [192.168.1.4] Executing SFTP Get...
+[Pharaoh Logging] No SFTP Object
+[Pharaoh Logging]
+[Pharaoh Logging] [192.168.1.4] SFTP Get Completed...
+[Pharaoh Logging] All SFTP Gets Completed
 ******************************
 
 
@@ -272,35 +305,6 @@ Installer Finished
 ******************************
 </pre></div>
 </div>
-<p>SFTP on server group? Y/N</p>
-<p>If the user input as Y then</p>
-<p>SSh timeout section?</p>
-<p>The user has to enter the value</p>
-<p>Please enter remote ssh port</p>
-<p>Default value is 22. The user can enter any value</p>
-<p>Enter environments configured in project? (Y/N)</p>
-<p>The user has to enter y then it starts loading.</p>
-<p>Enter local target file path?</p>
-<p>The user has to enter the local target file path</p>
-<p>Then everything will be connected.</p>
-<p>If the user input as N, it can be terminated. The following screenshots shows its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp get
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-N
-******************************
-
-
-Shell Result: Failure
-SFTP Get
-
-------------------------------
-Installer Finished
-******************************
-</pre></div>
-</div>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="21%" />

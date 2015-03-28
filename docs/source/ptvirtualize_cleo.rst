@@ -47,37 +47,41 @@ If the user gives Y then ptvirtualize will be installed. The following Screen sh
 
 .. code-block:: bash
 
-	Kevell@corp:/# ptconfigure ptvirtualize install
-	Install ptvirtualize ? (Y/N) 
-	y
-	*******************************
-	*        Pharaoh Tools        *
-	*          ptvirtualize         *
-	*******************************
-	What is the program data directory? Found "/opt/ptvirtualize" - use this? (Enter nothing for yes, no end slash)
 
-	What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
+ kevell@corp:/# ptconfigure ptvirtualize install
+ Install ptvirtualize ? (Y/N) 
+ y
+ *******************************
+ *        Pharaoh Tools        *
+ *          ptvirtualize         *
+ *******************************
+ What is the program data directory? Found "/opt/ptvirtualize" - use this? (Enter nothing for yes, no end slash)
 
-	git clone 'https://github.com/PharaohTools/ptvirtualize.git'  /tmp/ptvirtualize/ptvirtualizeCloning into '/tmp/ptvirtualize/ptvirtualize'...
-	remote: Counting objects: 4063, done.
-	remote: Total 4063 (delta 0), reused 0 (delta 0)
-	Receiving objects: 100% (4063/4063), 2.13 MiB | 393.00 KiB/s, done.
-	Resolving deltas: 100% (2530/2530), done.
-	Checking connectivity... done.
-	Program Data folder populated
-	Program Executor Deleted if existed
-	... All done!
-	*******************************
-	Thanks for installing , visit www.pharaohtools.com for more
-	******************************
-	
-	
-	Single App Installer:
-	--------------------------------------------
-	ptvirtualize: Success
-	------------------------------
-	Installer Finished
-	******************************
+ What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
+
+ git clone 'https://github.com/PharaohTools/ptvirtualize.git'  /tmp/ptvirtualize/ptvirtualizeCloning into '/tmp/ptvirtualize/ptvirtualize'...
+ remote: Counting objects: 4691, done.
+ remote: Total 4691 (delta 0), reused 0 (delta 0), pack-reused 4691
+ Receiving objects: 100% (4691/4691), 2.20 MiB | 2.00 KiB/s, done.
+ Resolving deltas: 100% (2983/2983), done.
+ Checking connectivity... done.
+ Program Data Folder /opt/ptvirtualize Deleted if existed
+ Program Data folder populated
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ ptvirtualize: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+
 
 If the user gives N then it will Exit the screen. The following Screen shot demonstrate it .
 

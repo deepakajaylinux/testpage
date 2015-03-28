@@ -71,49 +71,49 @@ The following screen shot denotes the usage of this command.
 
 .. code-block:: bash
 
- kevell@corp:ptconfigure sftp put
- 
+ kevell@corp:/# ptconfigure sftp put
+
  SFTP on Server group? (Y/N) 
- Y
+ y
  Please Enter SSH Timeout in seconds
- 90
+ 100
  Please Enter remote SSH Port
  22
- Use Environments Configured in Project? (Y/N) 
- N
+ ***********************************
+ *   Due to a software limitation, *
+ *    The user that you use here   *
+ *  will have their command prompt *
+ *    changed to PHARAOHPROMPT     *
+ *  ... I'm working on that one... *
+ *  Exit program to stop (CTRL+C)  *
+ ***********************************
+ Enter Server Info:
+ Please Enter SSH Server Target Host Name/IP
+ 192.168.1.4
+ Please Enter SSH User
+ murali
+ Please Enter Server Password or Key Path
+ 123456
+ Add Another Server? (Y/N) 
+ n
  [Pharaoh Logging] Attempting to load SFTP connections...
+ [Pharaoh Logging] Connection to Server 192.168.1.4 failed.
  Enter local source file path
- /root/vv
+ /home/kevells/Desktop/graphs
  Enter remote target file path
- /root/gg/vv
+ /home/murali/Desktop/graphs
  [Pharaoh Logging] Opening SFTP Connections...
+ [192.168.1.4]Connection failure. Will not execute commands on this box..
  [Pharaoh Logging] All SFTP Puts Completed
  ******************************
 
 
-SFTP on server group? Y/N
 
-If the user input as Y then
+ SFTP Put: Success
 
-SSh timeout section?
-
-The user has to enter the value
-
-Please enter remote ssh port
-
-Default value is 22. The user can enter any value
-
-Enter environments configured in project? (Y/N)
-
-The user has to enter y then it starts loading.
-
-Enter local source file path?
-
-The user  has to enter the file path
-
-Then everything will be connected.
-
-If the user input as N, it can be terminated.
+ ------------------------------
+ Installer Finished
+ ******************************
 
 
 
@@ -131,24 +131,48 @@ The following screen shot explains it.
 
 .. code-block:: bash
 
+
+
+
  kevell@corp:/# ptconfigure sftp get
+
  SFTP on Server group? (Y/N) 
- Y
+ y
  Please Enter SSH Timeout in seconds
-
+ 100
  Please Enter remote SSH Port
-
- Use Environments Configured in Project? (Y/N) 
-
+ 22
+ ***********************************
+ *   Due to a software limitation, *
+ *    The user that you use here   *
+ *  will have their command prompt *
+ *    changed to PHARAOHPROMPT     *
+ *  ... I'm working on that one... *
+ *  Exit program to stop (CTRL+C)  *
+ ***********************************
+ Enter Server Info:
+ Please Enter SSH Server Target Host Name/IP
+ 192.168.1.4
+ Please Enter SSH User
+ murali
+ Please Enter Server Password or Key Path
+ 123456
+ Add Another Server? (Y/N) 
+ n
  [Pharaoh Logging] Attempting to load SFTP connections...
+ [Pharaoh Logging] Connection to Server 192.168.1.4 failed.
  Enter remote source file path
-
+ /home/murali/Desktop/graphs
  Enter local target file path
-
+ /hoem/kevells/Desktop/graphs1
  [Pharaoh Logging] Opening SFTP Connections...
+ [Pharaoh Logging] [192.168.1.4] Executing SFTP Get...
+ [Pharaoh Logging] No SFTP Object
+ [Pharaoh Logging] 
+ [Pharaoh Logging] [192.168.1.4] SFTP Get Completed...
  [Pharaoh Logging] All SFTP Gets Completed
  ******************************
-
+ 
 
  Shell Result: Success
  SFTP Get
@@ -158,50 +182,6 @@ The following screen shot explains it.
  ******************************
 
 
-SFTP on server group? Y/N
-
-If the user input as Y then
-
-SSh timeout section?
-
-The user has to enter the value
-
-Please enter remote ssh port
-
-Default value is 22. The user can enter any value
-
-Enter environments configured in project? (Y/N)
-
-The user has to enter y then it starts loading.
-
-Enter local target file path?
-
-The user has to enter the local target file path
-
-Then everything will be connected.
-
-If the user input as N, it can be terminated. The following screenshots shows its function.
-
-
-.. code-block:: bash
-
- kevell@corp:/# ptconfigure sftp get
- SFTP on Server group? (Y/N) 
- N
- ******************************
-
-
- Shell Result: Failure
- SFTP Get
-
- ------------------------------
- Installer Finished
- ******************************
-
-
-
-Options
--------------
 
 .. cssclass:: table-bordered
 

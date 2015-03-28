@@ -79,6 +79,29 @@ To implement this function, the user have to specify the following fields in the
 * encryption file group
 
 
+.. code-block:: bash
+
+ kevell@corp:/# sudo ptconfigure encryption install --yes --unencrypted-data="/home/kevells/Desktop/graphs" --encryption-target-file="/home/kevells/Desktop/graphs" --encryption-key=/root/.ptconfigure/SSH/key --encryption-file-permissions="755" --encryption-file-owner="kevells" --encryption-file-group="kevells"
+
+ *******************************
+ *        Pharaoh Tools        *
+ *         Encryption !        *
+ *******************************
+ [Pharaoh Logging] Package php5-mcrypt from the Packager Apt is already installed, so not installing
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ Encryption: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+
 Uninstall
 -----------
 
