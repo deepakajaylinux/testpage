@@ -614,6 +614,7 @@ Playing with ptconfigure Modules
    modulemanager
    mongodb
    mysqlserver
+   mysqlservergalera
    mysqladmin
    mysqltool
    nagiosserver

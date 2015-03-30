@@ -96,6 +96,7 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#uninstallation">UnInstallation</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
 </li>
@@ -166,8 +167,7 @@
 <div class="section" id="help-command">
 <h2>Help Command<a class="headerlink" href="#help-command" title="Permalink to this headline">¶</a></h2>
 <p>This command helps to determine the usage of Storyplayer. The user will come to know about the different way/format to execute this module. This command guides the end user to know the purpose of this command. Below given are the command and the screenshot of the same.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Storyplayer <span class="nb">help</span>
-
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure storyplayer <span class="nb">help</span>
 ******************************
 
 
@@ -176,8 +176,12 @@
  Storyplayer
 
        - install
-       Installs the latest GC Repo version of PHPUnit
-       example: ptconfigure storyplayer install
+       Install Storyplayer
+       example: cleopatra storyplayer install
+
+       - remove
+       Remove Storyplayer
+       example: cleopatra storyplayer uninstall
 
 ------------------------------
 End Help
@@ -560,6 +564,37 @@ Single App Installer:
 Storyplayer: Success
 ------------------------------
 Installer Finished
+</pre></div>
+</div>
+</div>
+<div class="section" id="uninstallation">
+<h2>UnInstallation<a class="headerlink" href="#uninstallation" title="Permalink to this headline">¶</a></h2>
+<p>If the user need to uninstall storyplayer module in machine, the below given command will execute the process of uninstallation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure storyplayer uninstall
+
+Uninstall Storyplayer? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*          Storyplayer         *
+*******************************
+Creating /tmp/ptconfigure-temp-script-32245879129.sh
+chmod 755 /tmp/ptconfigure-temp-script-32245879129.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-32245879129.sh Permissions
+Executing /tmp/ptconfigure-temp-script-32245879129.sh
+Temp File /tmp/ptconfigure-temp-script-32245879129.sh Removed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.pharaohtools.com <span class="k">for </span>more
+******************************
+
+
+Single App Uninstaller:
+------------------------------
+Storyplayer: Success
+------------------------------
+Installer Finished
+******************************
 </pre></div>
 </div>
 </div>
