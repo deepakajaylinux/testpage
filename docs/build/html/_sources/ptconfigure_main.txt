@@ -603,7 +603,9 @@ Playing with ptconfigure Modules
    jmeter
    jrush 
    jetty
+   kvm
    lighthttpd
+   loadrunner
    logging_cleo
    mediatool
    memcached
