@@ -123,6 +123,44 @@ The pictorial representation for the command allow, deny, reject and reset is li
 
 .. code-block:: bash
 
+ kevell@corp:/# ptconfigure firewall enable 
+
+
+ Firewall is active and enabled on system startup 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptconfigure firewall disable 
+
+
+ Firewall stopped and disabled on system startup 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ****************************** 
+
+
+.. code-block:: bash
+
  kevell@corp:/# ptconfigure firewall allow --firewall-rule="ssh/tcp"
 
  Rules updated
@@ -203,6 +241,82 @@ The pictorial representation for the command allow, deny, reject and reset is li
  Firewall Mods Finished
  ******************************
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure firewall limit --firewall-rule="1" 
+
+
+ Rules updated 
+ Rules updated (v6) 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure firewall delete --firewall-rule="1" 
+
+
+ Rules updated 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure firewall insert --RowNum="1" --firewall-rule="ssh" 
+
+ Rules updated 
+ Rules updated (v6) 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+ 
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptconfigure firewall default --policy="deny" 
+
+
+ [Pharaoh Logging] Policy param for set default must be allow, deny or reject 
+ Default incoming policy changed to 'deny' 
+ (be sure to update your rules accordingly) 
+ ****************************** 
+
+
+ Firewall Modifications: 
+ -------------------------------------------- 
+
+ Firewall: Success 
+
+ ------------------------------ 
+ Firewall Mods Finished 
+ ******************************
 
 
 Benefits

@@ -600,9 +600,10 @@ Playing with ptconfigure Modules
    jenkins   
    jenkinsplugins
    jenkinssudonoPass
+   jetty
    jmeter
    jrush 
-   jetty
+   jsunit
    kvm
    lighthttpd
    loadrunner
@@ -662,6 +663,7 @@ Playing with ptconfigure Modules
    rubyrvm
    rubysystem
    runcommand   
+   sauceLabs
    seleniumserver
    service
    sftp_cleo

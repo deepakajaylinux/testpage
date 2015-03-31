@@ -24,8 +24,8 @@ The following screenshot visualize the output and working of help option under t
 
 .. code-block:: bash
 
- kevell@corp:/# ptconfigure gem help
 
+ kevell@corp:/# ptconfigure gem help
  ******************************
 
 
@@ -33,33 +33,17 @@ The following screenshot visualize the output and working of help option under t
 
   Gem, gem
 
-        - create
-        Create a new system gem, overwriting if it exists
-        example: ptconfigure gem create --gemname="somename"
+        - install
+        Install
+        example: ptconfigure gem pkg-install --package-name="somename"
 
         - remove
-        Remove a system gem
-        example: ptconfigure gem remove --gemname="somename"
+        Remove
+        example: ptconfigure gem pkg-remove --package-name="somename"
 
-        - set-password
-        Set the password of a system gem
-        example: ptconfigure gem set-password --gemname="somename" --new-password=                                                                                        "somepassword"
-
-        - exists
-        Check the existence of a gem
-        example: ptconfigure gem exists --gemname="somename"
-
-        - show-groups
-        Show groups to which a gem belongs
-        example: ptconfigure gem show-groups --gemname="somename"
-
-        - add-to-group
-        Add gem to a group
-        example: ptconfigure gem add-to-group --gemname="somename" --groupname="so                                                                                        megroupname"
-
-        - remove-from-group
-        Remove gem from a group
-        example: ptconfigure gem remove-from-group --gemname="somename" --groupnam                                                                                        e="somegroupname"
+        - ensure
+        Ensure
+        example: ptconfigure gem pkg-ensure --package-name="somename"
 
  ------------------------------
  End Help
@@ -71,27 +55,12 @@ Different features of Gem
 
 As depicted from the above help command, the various features of Gem is listed as below,
 
-* Create 
 * Remove
-* Set Password
-* Exists
-* Show_groups
-* Add_to_group
-* Remove_from_group
+* Ensure
 
 
 Let us see in detail about these features.
 
-Create
---------
-
-This functions aims at creating a new system gem, and as well as overwrites in case of already existing. This function of gem using this module can be achieved by the following syntax,
-
-.. code-block:: bash
-
-	ptconfigure gem create --gemname="somename"
-
-In the place of gemname the user can specify the name of the gem which is to be created. After entering the command as specified above, the new gem will be created with the specified name.
 
 REMOVE
 -----------
@@ -104,71 +73,37 @@ This functions aims at removing an existing gem. This function of gem using this
 
 In the place of gemname the user can specify the name of the gem which is to be deleted. After entering the command as specified above, the specified gem will be deleted.
 
-SET PASSWORD
---------------------
-
-This function facilitates setting a new password to a system gem as per the requirements. This can be done by applying the command as given below,
-
 .. code-block:: bash
 
-	ptconfigure gem set-password --gemname="somename" --new-password="somepassword"
-
-To implement this functions, the user have to specify the two fields,
-
-* Gem name
-* New password
-
-After specifying the two fields in the format of above mentioned command, the new password for the specified gem will be created.
-
-EXISTS
+	
+Ensure
 --------
 
-This functions aims at checking the existence of a gem. This can be done simply, by using the command below,
+This functions ensures the package is installed correctly in the machine.
 
 .. code-block:: bash
 
-	ptconfigure gem exists --gemname="somename"
-
-After applying the command as above, the existence of a mentioned gem will be ensured with the results.
-
-SHOW GROUPS
---------------------
-
-This function assists the users to know about to which group does the gem belongs to. This can be achieved simply by using the command below,
+	ptconfigure gem pkg-ensure --package="ssh"
 
 .. code-block:: bash
 
-	ptconfigure gem show-groups --gemname="somename"
 
-The user have to specify the name of the gem in the field of gemname, in order to know the details of its group.
+ kevell@corp:/# ptconfigure gem pkg-ensure --package="ssh" 
 
-ADD _TO_GROUP
------------------------
+ true 
+ [Pharaoh Logging] Package ssh from the Packager Gem is Installed 
+ ****************************** 
 
-The main objective of this function is to add the required gem to the required group by simply applying the command as given below,
 
-.. code-block:: bash
+ Gem Modifications: 
+ -------------------------------------------- 
 
-	ptconfigure gem add-to-group --gemname="somename" --groupname="somegroupname"
+ Gem: Success 
 
-To implement this function, the user have to specify the following two fields as per their needs in the format of above mentioned command,
+ ------------------------------ 
+ Gem Mods Finished 
+ ****************************** 
 
-* Gemname
-* group name
-
-REMOVE_FROM_GROUP
---------------------------------
-
-The main objective of this function is to remove the gem from a group by simply applying the command as given below,
-
-.. code-block:: bash
-
-	ptconfigure gem remove-from-group --gemname="somename" --groupname="somegroupname"
-
-To implement this function, the user have to specify the following two fields as per their needs in the format of above mentioned command,
-
-* Gemname
-* group name
 
 Alternative Parameters
 -----------------------------

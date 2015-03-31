@@ -96,13 +96,8 @@
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help Command</a></li>
 <li><a class="reference internal" href="#different-features-of-gem">Different features of Gem</a></li>
-<li><a class="reference internal" href="#create">Create</a></li>
 <li><a class="reference internal" href="#remove">REMOVE</a></li>
-<li><a class="reference internal" href="#set-password">SET PASSWORD</a></li>
-<li><a class="reference internal" href="#exists">EXISTS</a></li>
-<li><a class="reference internal" href="#show-groups">SHOW GROUPS</a></li>
-<li><a class="reference internal" href="#add-to-group">ADD _TO_GROUP</a></li>
-<li><a class="reference internal" href="#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li><a class="reference internal" href="#ensure">Ensure</a></li>
 <li><a class="reference internal" href="#alternative-parameters">Alternative Parameters</a></li>
 <li><a class="reference internal" href="#benefits">Benefits</a></li>
 </ul>
@@ -173,7 +168,6 @@
 </div>
 <p>The following screenshot visualize the output and working of help option under this module.</p>
 <div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem <span class="nb">help</span>
-
 ******************************
 
 
@@ -181,33 +175,17 @@
 
  Gem, gem
 
-       - create
-       Create a new system gem, overwriting <span class="k">if </span>it exists
-       example: ptconfigure gem create --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+       - install
+       Install
+       example: ptconfigure gem pkg-install --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
        - remove
-       Remove a system gem
-       example: ptconfigure gem remove --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+       Remove
+       example: ptconfigure gem pkg-remove --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
-       - <span class="nb">set</span>-password
-       Set the password of a system gem
-       example: ptconfigure gem <span class="nb">set</span>-password --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span>                                                                                        <span class="s2">&quot;somepassword&quot;</span>
-
-       - exists
-       Check the existence of a gem
-       example: ptconfigure gem exists --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-
-       - show-groups
-       Show groups to which a gem belongs
-       example: ptconfigure gem show-groups --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-
-       - add-to-group
-       Add gem to a group
-       example: ptconfigure gem add-to-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;so                                                                                        megroupname&quot;</span>
-
-       - remove-from-group
-       Remove gem from a group
-       example: ptconfigure gem remove-from-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupnam                                                                                        <span class="nv">e</span><span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+       - ensure
+       Ensure
+       example: ptconfigure gem pkg-ensure --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
 ------------------------------
 End Help
@@ -219,23 +197,10 @@ End Help
 <h2>Different features of Gem<a class="headerlink" href="#different-features-of-gem" title="Permalink to this headline">¶</a></h2>
 <p>As depicted from the above help command, the various features of Gem is listed as below,</p>
 <ul class="simple">
-<li>Create</li>
 <li>Remove</li>
-<li>Set Password</li>
-<li>Exists</li>
-<li>Show_groups</li>
-<li>Add_to_group</li>
-<li>Remove_from_group</li>
+<li>Ensure</li>
 </ul>
 <p>Let us see in detail about these features.</p>
-</div>
-<div class="section" id="create">
-<h2>Create<a class="headerlink" href="#create" title="Permalink to this headline">¶</a></h2>
-<p>This functions aims at creating a new system gem, and as well as overwrites in case of already existing. This function of gem using this module can be achieved by the following syntax,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem create --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-</pre></div>
-</div>
-<p>In the place of gemname the user can specify the name of the gem which is to be created. After entering the command as specified above, the new gem will be created with the specified name.</p>
 </div>
 <div class="section" id="remove">
 <h2>REMOVE<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
@@ -244,59 +209,33 @@ End Help
 </pre></div>
 </div>
 <p>In the place of gemname the user can specify the name of the gem which is to be deleted. After entering the command as specified above, the specified gem will be deleted.</p>
-</div>
-<div class="section" id="set-password">
-<h2>SET PASSWORD<a class="headerlink" href="#set-password" title="Permalink to this headline">¶</a></h2>
-<p>This function facilitates setting a new password to a system gem as per the requirements. This can be done by applying the command as given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem <span class="nb">set</span>-password --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>
 </pre></div>
 </div>
-<p>To implement this functions, the user have to specify the two fields,</p>
-<ul class="simple">
-<li>Gem name</li>
-<li>New password</li>
-</ul>
-<p>After specifying the two fields in the format of above mentioned command, the new password for the specified gem will be created.</p>
 </div>
-<div class="section" id="exists">
-<h2>EXISTS<a class="headerlink" href="#exists" title="Permalink to this headline">¶</a></h2>
-<p>This functions aims at checking the existence of a gem. This can be done simply, by using the command below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem exists --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="section" id="ensure">
+<h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
+<p>This functions ensures the package is installed correctly in the machine.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
 </pre></div>
 </div>
-<p>After applying the command as above, the existence of a mentioned gem will be ensured with the results.</p>
-</div>
-<div class="section" id="show-groups">
-<h2>SHOW GROUPS<a class="headerlink" href="#show-groups" title="Permalink to this headline">¶</a></h2>
-<p>This function assists the users to know about to which group does the gem belongs to. This can be achieved simply by using the command below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem show-groups --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
+
+<span class="nb">true</span>
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package ssh from the Packager Gem is Installed
+******************************
+
+
+Gem Modifications:
+--------------------------------------------
+
+Gem: Success
+
+------------------------------
+Gem Mods Finished
+******************************
 </pre></div>
 </div>
-<p>The user have to specify the name of the gem in the field of gemname, in order to know the details of its group.</p>
-</div>
-<div class="section" id="add-to-group">
-<h2>ADD _TO_GROUP<a class="headerlink" href="#add-to-group" title="Permalink to this headline">¶</a></h2>
-<p>The main objective of this function is to add the required gem to the required group by simply applying the command as given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem add-to-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
-</pre></div>
-</div>
-<p>To implement this function, the user have to specify the following two fields as per their needs in the format of above mentioned command,</p>
-<ul class="simple">
-<li>Gemname</li>
-<li>group name</li>
-</ul>
-</div>
-<div class="section" id="remove-from-group">
-<h2>REMOVE_FROM_GROUP<a class="headerlink" href="#remove-from-group" title="Permalink to this headline">¶</a></h2>
-<p>The main objective of this function is to remove the gem from a group by simply applying the command as given below,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem remove-from-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
-</pre></div>
-</div>
-<p>To implement this function, the user have to specify the following two fields as per their needs in the format of above mentioned command,</p>
-<ul class="simple">
-<li>Gemname</li>
-<li>group name</li>
-</ul>
 </div>
 <div class="section" id="alternative-parameters">
 <h2>Alternative Parameters<a class="headerlink" href="#alternative-parameters" title="Permalink to this headline">¶</a></h2>
