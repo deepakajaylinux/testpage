@@ -589,6 +589,7 @@ Playing with ptconfigure Modules
    gitkeysafe  
    gitlab
    gittools
+   go
    haproxy
    hhvm
    hostname   
@@ -642,6 +643,7 @@ Playing with ptconfigure Modules
    phpedit
    phpmd
    phpmodules1
+   phpspec
    phpssh   
    phpstorm
    phpunit
@@ -694,6 +696,7 @@ Playing with ptconfigure Modules
    xcache
    xvfb
    zendserver
+   zendstudio
    
 
 

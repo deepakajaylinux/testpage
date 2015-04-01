@@ -39,50 +39,51 @@ The pictorial representation of the above command is listed below,
 
   Pear, pear
 
-        - create
-        Create a new system pear, overwriting if it exists
-        example: ptconfigure pear create --pearname="somename"
+        - install
+        Install
+        example: ptconfigure pear pkg-install --package-name="somename"
 
         - remove
-        Remove a system pear
-        example: ptconfigure pear remove --pearname="somename"
+        Remove
+        example: ptconfigure pear pkg-remove --package-name="somename"
 
-        - set-password
-        Set the password of a system pear
-        example: ptconfigure pear set-password --pearname="somename" --new-password="somepassword"
-
-        - exists
-        Check the existence of a pear
-        example: ptconfigure pear exists --pearname="somename"
-
-        - show-groups
-        Show groups to which a pear belongs
-        example: ptconfigure pear show-groups --pearname="somename"
-
-        - add-to-group
-        Add pear to a group
-        example: ptconfigure pear add-to-group --pearname="somename" --groupname="somegroupname"
-
-        - remove-from-group
-        Remove pear from a group
-        example: ptconfigure pear remove-from-group --pearname="somename" --groupname="somegroupname"
-
+        - ensure
+        Ensure
+        example: ptconfigure pear pkg-ensure --package-name="somename"
+        
  ------------------------------
  End Help
+
+
+Install
+----------
+
+When the user need to install a pear, the below given command will execute the process.
+
+.. code-block:: bash
+
+	ptconfigure pear pkg-install --package-name="somename"
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure pear pkg-install --package-name="file"
+ downloading File-1.4.1.tgz ...
+ Starting to download File-1.4.1.tgz (8,164 bytes)
+ .....done: 8,164 bytes
+ install ok: channel://pear.php.net/File-1.4.1
  ******************************
 
 
+ Pear Modifications:
+ --------------------------------------------
 
-Create
-------------
+ Pear: Success
+
+ ------------------------------
+ Pear Mods Finished
+ ******************************
 
 
-When the user needs to create a new system pear or needs to overwrite the existing one, the below given command will execute the process.
-
-
-.. code-block:: bash
-	
-	ptconfigure pear create - -pearname=”somename”
 
 Remove
 ------------
@@ -91,54 +92,56 @@ When the user needs to remove a system pear, the below given command will execut
 
 .. code-block:: bash
 
-	ptconfigure pear remove - -pearname=”somename”
-
-Set Password
----------------------
-
-When the user needs to set password of a system pear, the below given command will execute the process.
+	ptconfigure pear pkg-remove --package-name="somename"
 
 .. code-block:: bash
-	
-	ptconfigure pear setpassword - -pearname=”somename”- - new-password=”somepassword”
 
-Exists
----------------------
-
-When the user needs to know the existence of pear, the below given command will execute the process.
-
-.. code-block:: bash
-	
-	ptconfigure pear exists - -pearname=”somename”
-
-Show-groups
----------------------
-
-When the user needs to know the group to which a pear belongs, the below given command will execute the process.
-
-.. code-block:: bash
-	
-	ptconfigure pear show-groups - -pearname=”somename”
+ kevell@corp:/# ptconfigure pear pkg-remove --package-name="file"
+ pear/File (version >= 1.4.0) is required by installed package "pear/File_CSV"
+ pear/File (version >= 1.4.0) is required by installed package "pear/File_Util"
+ pear/File cannot be uninstalled, other installed packages depend on this package
+ [Pharaoh Logging] Removing Package file from the Packager Pear did not execute correctly
+ ******************************
 
 
-Add to group
----------------------
+ Pear Modifications:
+ --------------------------------------------
 
-When the user needs to allocate pear to a particular group, the below given command will execute the process.
+ Pear: Failure
+
+ ------------------------------
+ Pear Mods Finished
+ ******************************
+
+
+
+Ensure
+---------
+
+When the user needs to ensure a pear, the below given command will execute the process..
 
 .. code-block:: bash
-	
- 	ptconfigure pear add-to-group - -pearname=”somename” - - groupname=”somegroupname”
 
-
-Remove from group
-----------------------------
-
-When the user needs to remove pear from a group, the below given command will execute the process.
+	ptconfigure pear pkg-ensure --package-name="somename"
 
 .. code-block:: bash
-	
- 		ptconfigure pear remove-from-group - -pearname=”name” - -groupname=”groupname”
+
+ kevell@corp:/# ptconfigure pear pkg-ensure --package-name="file"
+ downloading File-1.4.1.tgz ...
+ Starting to download File-1.4.1.tgz (8,164 bytes)
+ .....done: 8,164 bytes
+ install ok: channel://pear.php.net/File-1.4.1
+ ******************************
+
+
+ Pear Modifications:
+ --------------------------------------------
+
+ Pear: Success
+
+ ------------------------------
+ Pear Mods Finished
+ ******************************
 
 
 Alternative Parameter 
@@ -148,9 +151,6 @@ There are two alternative parameters which can be used in command line.
 
 Pear, pear
 
-.. code-block:: bash
-
- Eg: ptconfigure pear create - -pearname=”somename”/ ptconfigure Pear create - -pearname=”somename”
 
 Benefits
 --------------

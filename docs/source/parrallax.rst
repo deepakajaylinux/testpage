@@ -99,7 +99,7 @@ The command used for declaring the multi tasks at run-time is shown below:
 
 .. code-block:: bash
 
-	ptconfigure parallax cli
+	ptconfigure parallax cli child
 
 After inputting the command above the following process occurs:
 
@@ -127,7 +127,7 @@ Finally, the results of completed tasks along with its status are defined at the
 .. code-block:: bash
 
    
-	kevell@corp:/# ptconfigure parallax cli 
+	kevell@corp:/# ptconfigure parallax cli child
 	
 	Run Commands in Parallel? (Y/N) 
 	y
