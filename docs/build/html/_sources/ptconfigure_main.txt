@@ -586,11 +586,13 @@ Playing with ptconfigure Modules
    generator
    gimp
    gitbucket 
+   gitcommand
    gitkeysafe  
    gitlab
    gittools
    go
    haproxy
+   hardycssregression
    hhvm
    hostname   
    installpackage
@@ -697,6 +699,6 @@ Playing with ptconfigure Modules
    xvfb
    zendserver
    zendstudio
-   
+   zephir
 
 

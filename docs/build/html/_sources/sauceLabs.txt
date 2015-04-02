@@ -13,7 +13,7 @@ platforms for both manual and automated testing. SauceLabs is a cross-browser au
 Help Command
 ----------------
 
- The help command guides the users regarding the purpose and as well as about the options that are included in the saucelab module. It lists out the alternative parameters of saucelab module. It also describes the syntax for installing the saucelab module. The help command for saucelabis shown as below.
+The help command guides the users regarding the purpose and as well as about the options that are included in the saucelab module. It lists out the alternative parameters of saucelab module. It also describes the syntax for installing the saucelab module. The help command for saucelabis shown as below.
 
 
 .. code-block:: bash

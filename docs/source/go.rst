@@ -12,7 +12,7 @@ Go is an advanced Continuous Integration and Release Management system. It takes
 Help Command
 -------------
 
- The help command guides the users regarding the purpose and as well as about the options that are included in the Go  module. It lists out the alternative parameters of Go module. It also describes the syntax for installing the Go. The help command for Go module is shown as below.
+The help command guides the users regarding the purpose and as well as about the options that are included in the Go  module. It lists out the alternative parameters of Go module. It also describes the syntax for installing the Go. The help command for Go module is shown as below.
 
 
 .. code-block:: bash

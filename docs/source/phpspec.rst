@@ -6,14 +6,14 @@ PHPSpec
 Synopsis
 -------------------
 
- PHPSpec is a design tool which can help you write clean and working PHP code using behaviour driven development or BDD. BDD is a technique 
+PHPSpec is a design tool which can help you write clean and working PHP code using behaviour driven development or BDD. BDD is a technique 
 derived from test-first development. PHPSpec helps you describe the internal behavior of your application, by writing small "specs" in the PHP language - hence SpecBDD. These specs are testing that your code has the desired behavior. PHPSpec responds to the behaviour in the lower level, from the internal of the classes.
 
 
 Help Command
 ------------------
 
- The help command guides the users regarding the purpose and as well as about the options that are included in the PHPSpec module. It also 
+The help command guides the users regarding the purpose and as well as about the options that are included in the PHPSpec module. It also 
 describes the syntax for installing the phpspec module. The help command for phpspec module is shown as below.
 
 .. code-block:: bash

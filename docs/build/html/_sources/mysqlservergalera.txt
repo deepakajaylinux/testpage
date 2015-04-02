@@ -11,7 +11,7 @@ Galera Cluster is a synchronous multi-master database cluster, based on synchron
 Help Command
 -----------------
 
- The help command guides the users regarding the purpose and as well as about the options that are included in the mysqlservergalera module. It lists out the alternative parameters of mysqlservergalera module. It also describes the syntax for installing the mysqlgqlera module. The help command for mysqlservergalera module is shown as below.
+The help command guides the users regarding the purpose and as well as about the options that are included in the mysqlservergalera module. It lists out the alternative parameters of mysqlservergalera module. It also describes the syntax for installing the mysqlgqlera module. The help command for mysqlservergalera module is shown as below.
 
 .. code-block:: bash
 
