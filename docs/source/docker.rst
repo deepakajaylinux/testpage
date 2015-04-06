@@ -6,15 +6,15 @@ Docker
 Synopsis
 ----------
 
-	Docker is an open platform for distributed applications for developers and sysadmins. Docker is a tool that can package an application and its dependencies in a virtual container that can run on any Linux server. 
+Docker is an open platform for distributed applications for developers and sysadmins. Docker is a tool that can package an application and its dependencies in a virtual container that can run on any Linux server. 
 	
-	It consists of Docker Engine, a portable. lightweight runtime and packaging tool. and Docker Hub, a cloud service for sharing applications and automating workflows, Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments.
+It consists of Docker Engine, a portable. lightweight runtime and packaging tool. and Docker Hub, a cloud service for sharing applications and automating workflows, Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments.
 
 
 Help command
 --------------
 
- The help command guides the users regarding the purpose and as well as about the options that are included in the docker module. It lists out the alternative parameters of docker module. It also describes the syntax for installing the docker module. The help command for docker module is shown as below.
+The help command guides the users regarding the purpose and as well as about the options that are included in the docker module. It lists out the alternative parameters of docker module. It also describes the syntax for installing the docker module. The help command for docker module is shown as below.
 
 .. code-block:: bash
 

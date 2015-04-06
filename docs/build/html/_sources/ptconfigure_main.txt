@@ -686,6 +686,7 @@ Playing with ptconfigure Modules
    teamcity
    templating_ptconfigure
    tomcat
+   tracelytics
    ubuntucompiler   
    user
    varnish
