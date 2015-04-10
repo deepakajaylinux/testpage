@@ -76,45 +76,44 @@ When the user needs to install, the user can issue the following commands for DB
 	
 		 ptdeploy dbinstall install
 
-
-The system ask for the Mysql host, Press Enter to use the default host. 
-
 .. code-block:: bash
 
- What's the Mysql Host? Enter for 127.0.0.1
 
+ kevell@corp:/# ptdeploy DBInstall install
+ Do you want to install a database? (Y/N) 
+ y
+ What's the Mysql Host? Enter for 127.0.0.1 
 
-Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password. 
+ What's the MySQL Admin User? 
 
-.. code-block:: bash
+ You must enter a value. Please try again.
+ What's the MySQL Admin User?
 
+ You must enter a value. Please try again.
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root
+ What's the application DB User?
+ (0) **CREATE NEW USER** 
+ (1) phpci 
+ (2) debian-sys-maint 
+ (3) phpci 
+ (4) phpmyadmin 
+ 1
+ What's the application DB Password?
+ phpci_pass
+ What's the application DB Name?
+ Current Db's are:
+ hps
+ phpci
+ phpmyadmin
 
- 
-Then the system ask for the application DB user, you can continue with the existing users or create a new user. Once you provide with the option '0' for new user the system ask for the New user name, application DB password and application DB name. 
-
-.. code-block:: bash
-
-
-
-
-
-
-Once the above details provided, the system ask for confirmation. After confirmation, the system  execute the process.
-
-.. code-block:: bash
-
-
-
-
-
-
-
-
-
+ phpci
+ Database script executed
+ **************************************
+ Seems Fine...Database Actions Finished
+ **************************************
 
 
 Save
@@ -126,38 +125,34 @@ When the user needs to save the database for a project, the below given command 
 	
 		ptdeploy dbinstall save	
 
-Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
-
 .. code-block:: bash
 
 
-
-
-
-
-
-
-
-The system ask for the Mysql host, Press Enter to use the default host.
-
-.. code-block:: bash
-
+ kevell@corp:/# ptdeploy DBInstall save
+ Do you want to save a database? (Y/N) 
+ y
  What's the Mysql Host? Enter for 127.0.0.1
-
-
-Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.
-
-.. code-block:: bash
 
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root
+ What's the application DB Name?
+ Current Db's are:
+ asdf
+ hps
+ phpci 
 
- 
-Then the system ask for the application DB user. 
+ asdf
+ Cannot connect with these details. Sure you want to continue? (Y/N) 
+ y
+ Exporting DB to /opt/db/database.sql 
+ Database Dumping...
+ **************************************
+ Seems Fine...Database Actions Finished
+ ************************************** 
 
-.. code-block:: bash
+
 
 
 Drop
@@ -169,43 +164,36 @@ When the user needs to drop the database for a project, the below given command 
 	
 		ptdeploy dbinstall drop      
 
-Before execution, the system ask for the confirmation to proceed, if you want to proceed enter 'Y', if no enter 'N'. 
-                   
-
 .. code-block:: bash
 
 
+ kevell@corp:/# ptdeploy db-install drop 
 
-
-
-
-
-
-The system ask for the Mysql host, Press Enter to use the default host.
-
-.. code-block:: bash
-
- What's the Mysql Host? Enter for 127.0.0.1
-
-
-Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.
-
-.. code-block:: bash
+ Do you want to perform drop actions (user/db)? (Y/N) 
+ y
+ Do you want to drop a database? (Y/N) 
+ y
+ What's the Mysql Host? Enter for 127.0.0.1 
 
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root123
+ What's the application DB Name?
+ (0) karuna 
+ (1) test1 
+ (2) test2 
+ 2
+ Database test2 dropped
+ **************************************
+ Seems Fine...Database Actions Finished
+ **************************************
 
- 
-Then the system ask for the application DB user.
-
-.. code-block:: bash
 
 
 
 Alternative Parameter
-------------------------------              
+----------------------------
 
 Either of the three alternative parameter can be used in command-  dbinstall, DBInstall and db-install
 

@@ -364,6 +364,98 @@ The following screenshot depicts the working of list option visually.
  1ServerBlock Creator Finished
  ******************************
 
+Enable
+---------
+
+The enable function is used to enable a serverblock. The command used for enable is shown below,
+
+.. code-block:: bash
+
+	ptdeploy nginxsbe enable
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy nginxsbe enable
+
+ Do you want to enable a ServerBlock? (Y/N) 
+ y
+ What is your Enabled Symlink ServerBlock directory? Found "/etc/nginx/sites-enabled" - Enter nothing to use this
+
+ Please Choose ServerBlock:
+ --- All Server Blocks: ---
+ (0) ServerBlocktemp
+ (1) aaaaaa
+ (2) as
+ (3) ddd
+ (4) default
+ (5) default.dpkg-old
+ (6) dfdkdfsd.com
+ (7) dfsdfssfdfdfdf.com
+ (8) google
+ (9) karuna
+ (10) kkkkkkk
+ (11) kumark
+ (12) sites-available
+ (13) vijay
+ (14) www.amazon.com
+ (15) www.deepak.com
+ (16) www.google.com
+ (17) www.kkk.com
+
+ 1
+ Server Block Enabled Symlink Created
+ ******************************
+ ServerBlock Creator Finished
+ ******************************
+
+
+Disable
+-----------
+
+The disable function is used to disable a server block. The command for disable is listed below,
+
+.. code-block:: bash
+
+	ptdeploy nginxsbe disable
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxsbe disable
+
+ Do you want to disable a ServerBlock? (Y/N) 
+ y
+ What is your Enabled Symlink ServerBlock directory? Found "/etc/nginx/sites-enabled" - Enter nothing to use this
+
+ Please Choose ServerBlock:
+ --- All Server Blocks: ---
+ (0) ServerBlocktemp
+ (1) aaaaaa
+ (2) as
+ (3) ddd
+ (4) default
+ (5) default.dpkg-old
+ (6) dfdkdfsd.com
+ (7) dfsdfssfdfdfdf.com
+ (8) google
+ (9) karuna
+ (10) kkkkkkk
+ (11) kumark
+ (12) sites-available
+ (13) vijay
+ (14) www.amazon.com
+ (15) www.deepak.com
+ (16) www.google.com
+ (17) www.kkk.com
+
+ 1
+ Server Block aaaaaa Disabled  if exist
+ ******************************
+ ServerBlock Creator Finished
+ ******************************
+
+
+
 Benefits
 ----------
 

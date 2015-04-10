@@ -210,23 +210,41 @@ End Help
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall install
 </pre></div>
 </div>
-<p>The system ask for the Mysql host, Press Enter to use the default host.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What&#39;s the Mysql Host? Enter for 127.0.0.1
-</pre></div>
-</div>
-<p>Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What<span class="s1">&#39;s the MySQL Admin User?</span>
-<span class="s1">root</span>
-<span class="s1">What&#39;</span>s the MySQL Admin Password?
-123456
-</pre></div>
-</div>
-<p>Then the system ask for the application DB user, you can continue with the existing users or create a new user. Once you provide with the option &#8216;0&#8217; for new user the system ask for the New user name, application DB password and application DB name.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
-</pre></div>
-</div>
-<p>Once the above details provided, the system ask for confirmation. After confirmation, the system  execute the process.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy DBInstall install
+Do you want to install a database? (Y/N)
+y
+What&#39;s the Mysql Host? Enter for 127.0.0.1
+
+What&#39;s the MySQL Admin User?
+
+You must enter a value. Please try again.
+What&#39;s the MySQL Admin User?
+
+You must enter a value. Please try again.
+What&#39;s the MySQL Admin User?
+root
+What&#39;s the MySQL Admin Password?
+root
+What&#39;s the application DB User?
+(0) **CREATE NEW USER**
+(1) phpci
+(2) debian-sys-maint
+(3) phpci
+(4) phpmyadmin
+1
+What&#39;s the application DB Password?
+phpci_pass
+What&#39;s the application DB Name?
+Current Db&#39;s are:
+hps
+phpci
+phpmyadmin
+
+phpci
+Database script executed
+**************************************
+Seems Fine...Database Actions Finished
+**************************************
 </pre></div>
 </div>
 </div>
@@ -236,23 +254,29 @@ End Help
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall save
 </pre></div>
 </div>
-<p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
-</pre></div>
-</div>
-<p>The system ask for the Mysql host, Press Enter to use the default host.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What&#39;s the Mysql Host? Enter for 127.0.0.1
-</pre></div>
-</div>
-<p>Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What<span class="s1">&#39;s the MySQL Admin User?</span>
-<span class="s1">root</span>
-<span class="s1">What&#39;</span>s the MySQL Admin Password?
-123456
-</pre></div>
-</div>
-<p>Then the system ask for the application DB user.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy DBInstall save
+Do you want to save a database? (Y/N)
+y
+What&#39;s the Mysql Host? Enter for 127.0.0.1
+
+What&#39;s the MySQL Admin User?
+root
+What&#39;s the MySQL Admin Password?
+root
+What&#39;s the application DB Name?
+Current Db&#39;s are:
+asdf
+hps
+phpci
+
+asdf
+Cannot connect with these details. Sure you want to continue? (Y/N)
+y
+Exporting DB to /opt/db/database.sql
+Database Dumping...
+**************************************
+Seems Fine...Database Actions Finished
+**************************************
 </pre></div>
 </div>
 </div>
@@ -262,23 +286,27 @@ End Help
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy dbinstall drop
 </pre></div>
 </div>
-<p>Before execution, the system ask for the confirmation to proceed, if you want to proceed enter &#8216;Y&#8217;, if no enter &#8216;N&#8217;.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
-</pre></div>
-</div>
-<p>The system ask for the Mysql host, Press Enter to use the default host.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What&#39;s the Mysql Host? Enter for 127.0.0.1
-</pre></div>
-</div>
-<p>Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.</p>
-<div class="highlight-bash"><div class="highlight"><pre>What<span class="s1">&#39;s the MySQL Admin User?</span>
-<span class="s1">root</span>
-<span class="s1">What&#39;</span>s the MySQL Admin Password?
-123456
-</pre></div>
-</div>
-<p>Then the system ask for the application DB user.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy db-install drop
+
+Do you want to perform drop actions <span class="o">(</span>user/db<span class="o">)</span>? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Do you want to drop a database? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What<span class="s1">&#39;s the Mysql Host? Enter for 127.0.0.1</span>
+
+<span class="s1">What&#39;</span>s the MySQL Admin User?
+root
+What<span class="s1">&#39;s the MySQL Admin Password?</span>
+<span class="s1">root123</span>
+<span class="s1">What&#39;</span>s the application DB Name?
+<span class="o">(</span>0<span class="o">)</span> karuna
+<span class="o">(</span>1<span class="o">)</span> test1
+<span class="o">(</span>2<span class="o">)</span> test2
+2
+Database test2 dropped
+**************************************
+Seems Fine...Database Actions Finished
+**************************************
 </pre></div>
 </div>
 </div>
