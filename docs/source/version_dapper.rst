@@ -58,20 +58,146 @@ Alternative parameter
 
 There are two alternatives available in version. They are
 
-Version, version, VERSION
+Version, version, vrs
 
-Installation
-----------------
 
-Installation includes installation of version required to make the installation in an updated version. It is a manifest process to install version module under ptdeploy. version by just using the command given below,
+
+Specific
+-----------
+
+The Specific option allows the user to change back the current version directory to make specific version. The command for specific option is shown below, 
 
 .. code-block:: bash
 
-		ptdeploy version Install
+	ptdeploy version specific
 
-After vitalize the command it will catechize input.
+or 
 
-When the user input as yes automatically it will install version with checking from the system. If not exit the installation. The following screen shot demonstrate version and its functions.
+.. code-block:: bash
+
+	ptdeploy version specific --limit=4 --container=/opt/versiontest/ --version=2
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version specific
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ Please Choose Version to make current (Showing newest first, Enter none for newest):
+ --- All Versions: ---
+ (0) karuna 
+
+ 0
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 2
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
+ 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version specific --limit=4 --container=/opt/versiontest/ --version=2
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+Latest
+----------
+
+
+The latest option allows to user to change back the available link to latest version. The command for latest execution process is shown below,
+
+.. code-block:: bash 
+
+	ptdeploy version latest
+
+or
+
+.. code-block:: bash
+
+	ptdeploy version latest --limit=3 --container=/var/www/applications/the-app
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy version latest
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 5
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version latest --limit=3 --container=/opt/versiontest/
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
+
+
+Rollback
+----------
+
+The rollback option allows to user to make changes to the existing version. The rollback execution process is shown below,
+
+.. code-block:: bash
+
+	ptdeploy version rollback
+
+or
+
+.. code-block:: bash
+
+	ptdeploy version rollback --limit=3 --container=/opt/versiontest/
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy version rollback
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 4
+ Removed Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version rollback --limit=3 --container=/opt/versiontest/
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
+
 
 Option
 ------------
@@ -82,10 +208,10 @@ Option
  | Parameters		    | Option 	      | Alternative Parameter                 | Comments			     |
  +==========================+=================+=======================================+======================================+
  |Install version?(Y/N)	    | Yes	      | Instead of using version the user     | Installed successfully		     |
- |			    |		      | can use Version, VERSION	      | under ptdeploy module     	     |
+ |			    |		      | can use Version, version, vrs	      | under ptdeploy module     	     |
  +--------------------------+-----------------+---------------------------------------+--------------------------------------+
- |Install version?(Y/N)	    | No	      | Instead of using version the user     | Exit the screen			     |
- |			    |		      |	can use Version, VERSION.|	      | 				     |
+ |Install version?(Y/N)	    | No	      | Instead oif using version the user    | Exit the screen			     |
+ |			    |		      |	can use Version, version,vrs|	      | 				     |
  +--------------------------+-----------------+---------------------------------------+--------------------------------------+
 
 
