@@ -231,6 +231,7 @@ here, the screenshot denotes the display of all modules available under ptconfig
  apachevirtualhost
  appsettings_deploy
  autopilot
+ builderfyer_deploy
  dapperfy
  dbconfigure
  dbinstall
