@@ -95,7 +95,6 @@
 <li><a class="reference internal" href="#">Joomla</a><ul>
 <li><a class="reference internal" href="#synopsis">Synopsis</a></li>
 <li><a class="reference internal" href="#help-command">Help command</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#dapperfy">Dapperfy</a></li>
 <li><a class="reference internal" href="#builderfy">Builderfy</a></li>
 <li><a class="reference internal" href="#execute">Execute</a></li>
@@ -195,15 +194,6 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>This module adds multiple actions to both builderfy and dapperfy. This is easy to install and set up even if the user’s not an advanced user.Since Joomla is so easy to use, as a Web designer or developer, the user can quickly build sites for their clients. The command used to install joomla is as follows,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptdeploy joomla install
-</pre></div>
-</div>
-<p>After vitalize the command it will catechize input.</p>
-<p>When the user input as yes automatically it will install joomla from the system. If not exit the installation. The following screen shot demonstrate joomla and its functions.</p>
-</div>
 <div class="section" id="dapperfy">
 <h2>Dapperfy<a class="headerlink" href="#dapperfy" title="Permalink to this headline">¶</a></h2>
 <p>This dapperfy used to create the user auto deploy files. Dapperfy can work for a lot of projects without complex configurations with a couple of minutes worth of setting up. Using Dapperfy is very quick, and is probably the best starting point, even for complex configurations as the user can always just modify the files afterwards with their own customizations. The following command used for dapperfy.</p>
@@ -278,11 +268,67 @@ In Dapperfy
 <div class="section" id="builderfy">
 <h2>Builderfy<a class="headerlink" href="#builderfy" title="Permalink to this headline">¶</a></h2>
 <p>It creates templates to install build. The user can add more templates. When we make changes to the user repository, deploying a new version to the user target Production. The command used for builderfy is as follows,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptdeploy builderfy joomla
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy builderfy continuous-joomla
 </pre></div>
 </div>
 <p>The following screen shot explains its function.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy builderfy continuous-joomla
+Install Builderfy? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*   Golden Contact Computing  *
+*           Builderfy!          *
+*******************************
+Enter the data handling <span class="nb">type</span>
+<span class="o">(</span>0<span class="o">)</span> code
+<span class="o">(</span>1<span class="o">)</span> replication
+<span class="o">(</span>2<span class="o">)</span> capture
+0
+checkWhat is your Jenkins home? Found <span class="s2">&quot;/var/lib/jenkins&quot;</span> - use this?
+
+What is the target Job Name?
+my-project-continuous
+Enter a description <span class="k">for </span>your project
+This is the Continuous Delivery build <span class="k">for </span>My Project
+Enter a Primary SCM URL <span class="k">for </span>your project
+http://146.185.129.66:8080/git/root/first-pharaoh-cd.git
+Enter a Source Branch Spec <span class="k">for </span>your project
+origin/master
+Enter a Source SCM URL <span class="k">for </span>your project
+http://146.185.129.66:8080/git/root/first-pharaoh-cd.git
+Enter the number of days to keep builds <span class="k">for</span>
+1
+Enter the max number of builds results to keep
+10
+Enter the path of the autopilot <span class="nb">test </span>environment invoke install file <span class="o">(</span>Relative to project root<span class="o">)</span>
+build/config/ptdeploy/autopilots/tiny-staging-invoke-code-no-dbconf.php
+Enter the path of the autopilot prod environment invoke install file <span class="o">(</span>Relative to project root<span class="o">)</span>
+build/config/ptdeploy/autopilots/tiny-staging-invoke-code-no-dbconf.php
+Enter the data handling <span class="nb">type</span>
+<span class="o">(</span>0<span class="o">)</span> code
+<span class="o">(</span>1<span class="o">)</span> replication
+<span class="o">(</span>2<span class="o">)</span> capture
+0
+Enter build failure Email address. Whitespace-separated list of recipient addresses
+phpengine@hotmail.co.uk
+Copying Files...
+Enter the data handling <span class="nb">type</span>
+<span class="o">(</span>0<span class="o">)</span> code
+<span class="o">(</span>1<span class="o">)</span> replication
+<span class="o">(</span>2<span class="o">)</span> capture
+0
+Changing Folder Permissions...
+Changing Folder Owner...
+Changing Folder Group...
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for </span>installing , visit www.gcsoftshop.co.uk <span class="k">for </span>more
+******************************
+
+
+Success
+In Builderfy
+******************************
 </pre></div>
 </div>
 </div>
